@@ -3,3 +3,6 @@ import { load, save } from '../core/store.js';
 
 export const PRESETS = {
   short: { label: '25 min focus, 5 min break', focus: 25, short: 5, long: 15, rounds: 4 },
+  long: { label: '50 min focus, 10 min break', focus: 50, short: 10, long: 20, rounds: 3 },
+};
+
