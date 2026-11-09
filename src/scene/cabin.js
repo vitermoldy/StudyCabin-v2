@@ -139,3 +139,5 @@ export class Cabin {
     shape.lineTo(3.12, 0.05);
     shape.lineTo(3.12, WALL_TOP);
     shape.lineTo(0, RIDGE);
+    shape.lineTo(-3.15, WALL_TOP);
+    shape.closePath();
