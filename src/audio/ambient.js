@@ -93,3 +93,5 @@ export class Ambient extends Emitter {
     this.g = {
       canopy: gain(), leaves: gain(), rain: gain(), rainLow: gain(), wind: gain(),
       wildlife: gain(), fire: gain(), fireLow: gain(),
+    };
+    // The wood: a low rush of branches under the gusts, and the high rustle of leaves.
