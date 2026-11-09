@@ -44,3 +44,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Firs stay dark green; broadleaf crowns follow the season; bushes and ferns along the edge | Pine and moss greens from SongPlay; the edge planting makes the clearing run into the wood instead of stopping at a wall. |
 | A pond in front of the cabin instead of the sea | Keeps v1's water (clear edge, caustics, the ripple simulation the owner asked for) in a forest setting, and gives the deer somewhere to drink. It freezes in winter. |
 | Animals on game trails, by the hour, the weather and the season | The owner asked for animals that pass by. Deer at dawn and dusk, the fox at night, the squirrel by day, as they live; rain sends them under cover. Trees keep the trails open. |
+| One animal already standing in the clearing when the page opens, if the hour suits it | The first view, and the still frame under reduced motion, shows what v2 is about. |
+| The animal in view gets one sentence in the story line | Says what is happening without a new control or panel (RHYTHM 1). |
