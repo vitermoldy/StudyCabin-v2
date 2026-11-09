@@ -216,3 +216,5 @@ export class World {
     glass.color.copy(this.atmo.horizon).lerp(WHITE, 0.25);
   }
 
+  /** Mouse position over the scene (CSS pixels), for the grass that parts round it. */
+  setPointer(x, y, on = true) {
