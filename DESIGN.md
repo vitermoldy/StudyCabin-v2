@@ -46,3 +46,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Animals on game trails, by the hour, the weather and the season | The owner asked for animals that pass by. Deer at dawn and dusk, the fox at night, the squirrel by day, as they live; rain sends them under cover. Trees keep the trails open. |
 | One animal already standing in the clearing when the page opens, if the hour suits it | The first view, and the still frame under reduced motion, shows what v2 is about. |
 | The animal in view gets one sentence in the story line | Says what is happening without a new control or panel (RHYTHM 1). |
+| The owl on the roof ridge, fireflies, frogs | Night needs life too: something to see (the owl's shape, the fireflies) and to hear (hoots, frogs, crickets). |
+| Eyeshine after dark | Animals stay findable at night without lighting them up. |
