@@ -67,3 +67,5 @@ const CAUSTIC = /* glsl */ `
 
 /** Sway shared by the grass and the ferns: a gust front rolling across, plus a fine flutter. */
 const WIND_GLSL = /* glsl */ `
+  vec3 ip = (instanceMatrix * vec4(position, 1.0)).xyz;
+  vec2 wdir = normalize(vec2(1.0, -0.35));
