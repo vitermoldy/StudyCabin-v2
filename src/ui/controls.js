@@ -199,3 +199,5 @@ export function mountFocus({ focus }) {
       : 'No focus blocks finished today.';
     dockLabel.textContent = focus.running ? remaining : 'Focus';
     document.title = focus.running ? `${remaining} ${focus.phaseLabel.toLowerCase()} · StudyCabin` : baseTitle;
+  };
+  focus.on('change', render);
