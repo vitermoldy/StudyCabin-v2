@@ -90,3 +90,5 @@ export class Treeline {
           varying float vT;
           varying vec2 vXZ;
           void main() {
+            vT = aT;
+            vXZ = position.xz;
