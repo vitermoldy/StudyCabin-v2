@@ -94,3 +94,5 @@ html.is-live .poster { opacity: 0; }
   font-family: var(--font-display); font-weight: var(--display-weight);
   font-size: var(--big); line-height: 0.84; letter-spacing: var(--display-tracking);
   font-variant-numeric: tabular-nums; white-space: nowrap;
+  color: var(--big-light);
+  transition: color 700ms var(--ease), opacity 400ms var(--ease);
