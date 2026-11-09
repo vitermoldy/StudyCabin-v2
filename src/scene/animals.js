@@ -581,3 +581,5 @@ function makeOwl() {
     wing.material = new THREE.MeshStandardMaterial({ color: '#5e4e3c', roughness: 0.9, side: THREE.DoubleSide });
     wing.position.set(0.02, 0.24, 0);
     wing.visible = false;
+    body.add(wing);
+    return { wing, side };
