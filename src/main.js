@@ -283,3 +283,6 @@ function frame(now) {
     return;
   }
   const dt = Math.min(realDt, 0.1);
+  elapsed += dt;
+
+  // The clock runs on real elapsed time, so a hidden tab catches up on return.
