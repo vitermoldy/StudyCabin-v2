@@ -46,3 +46,6 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
   };
   material.userData.weathered = local;
   return material;
+}
+
+export function std(color, opts = {}) {
