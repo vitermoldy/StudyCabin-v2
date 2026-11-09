@@ -68,3 +68,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | No shadows on UI (R-12) | The scene has real shadows; flat panels keep the two apart. |
 | Hand-drawn filled glyphs for transport and tabs (R-04) | Each one names its action (play, pause, next, cloud for weather, timer for focus); real YouTube and YouTube Music marks name where a link comes from. |
 | Sentence-case labels, no tracked capitals | taste-skill rule; the reference's tracked caps are dropped, its layout kept. |
+| "↳" before "Add music" (R-08) | The reference's own glyph for its one top-right action; used once. |
+| Dark ground behind the canvas | The page is a scene that runs through day and night; the ground only shows before the first frame. |
