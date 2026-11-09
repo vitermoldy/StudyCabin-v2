@@ -350,3 +350,6 @@ overlay.setWord(activity.word);
 overlay.setTime(clock.minutes);
 {
   const s = storyText();
+  overlay.setStory(s.line, s.meta);
+}
+
