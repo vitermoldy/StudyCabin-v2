@@ -592,3 +592,6 @@ function makeOwl() {
 function createOwl(rand) {
   const m = makeOwl();
   const o = { state: 'away', t: 0, from: new THREE.Vector3(), to: new THREE.Vector3(), mid: new THREE.Vector3(), wait: 5 + rand() * 30, look: 0, blink: 3, flap: 0 };
+  const facing = -Math.PI / 2; // toward the clearing (+z)
+  const tmp = new THREE.Vector3();
+
