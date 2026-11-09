@@ -240,3 +240,5 @@ export class Terrain {
         if (inNear(x, z) || Math.hypot(x - CLEARING.x, z - CLEARING.z) > 76) continue;
         consider(x + (r() - 0.5) * 2, z + (r() - 0.5) * 2, 2.1);
       }
+    }
+    const mesh = new THREE.InstancedMesh(geo, mat, spots.length);
