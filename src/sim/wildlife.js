@@ -84,3 +84,5 @@ const HOURS = {
 
 // Rain sends most of them under cover; a storm sends all of them.
 const WEATHER = {
+  deer: { rain: 0.3, snow: 0.8 },
+  fox: { rain: 0.4, snow: 0.8 },
