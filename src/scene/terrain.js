@@ -124,3 +124,5 @@ export class Terrain {
           '#include <roughnessmap_fragment>',
           `#include <roughnessmap_fragment>
           float bank = smoothstep(0.1, -0.02, vWorldG.y) * vMix.x;
+          roughnessFactor = mix(roughnessFactor, 0.4, clamp(uWet * 0.45 + bank * 0.5, 0.0, 1.0) * (1.0 - snowAmt));`,
+        );
