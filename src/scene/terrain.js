@@ -94,3 +94,5 @@ export class Terrain {
         .replace(
           '#include <common>',
           `#include <common>
+          varying vec3 vMix; varying float vShade; varying float vUp; varying vec3 vWorldG;
+          uniform vec3 uSoil; uniform vec3 uMud; uniform vec3 uVeg; uniform float uSnow; uniform float uWet;
