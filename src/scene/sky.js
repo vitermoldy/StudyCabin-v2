@@ -211,3 +211,6 @@ export class Atmosphere {
     this.dome = new THREE.Mesh(new THREE.SphereGeometry(1000, 48, 24), mat);
     this.dome.frustumCulled = false;
     this.dome.renderOrder = -10;
+    scene.add(this.dome);
+
+    this.fog = new THREE.FogExp2(0xc3c6c4, 0.004);
