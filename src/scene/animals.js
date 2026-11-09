@@ -575,3 +575,5 @@ function makeOwl() {
     tuft.position.set(-0.01, 0.09, side * 0.05);
     tuft.rotation.x = side * 0.3;
     head.add(tuft);
+  }
+  const wings = [-1, 1].map((side) => {
