@@ -132,3 +132,6 @@ export function floorTexture() {
   }
   grain(ctx, 256, 256, rand, 1300, 0.05);
   return finish(c, { repeat: [1 / 1.1, 1 / 1.1] });
+}
+
+/** Vertical wood panelling for the inside walls. */
