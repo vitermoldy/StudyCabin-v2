@@ -39,3 +39,5 @@ const FRAG = /* glsl */ `
     return mix(mix(h21(i), h21(i + vec2(1, 0)), u.x), mix(h21(i + vec2(0, 1)), h21(i + vec2(1, 1)), u.x), u.y); }
 
   void main(){
+    if (vDepth < -0.02) discard;
+    vec3 V = normalize(cameraPosition - vWorld);
