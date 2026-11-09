@@ -31,3 +31,5 @@ shows a still picture and the music, timer and ambient sound still work.
   pond to ring it, Shift+drag to draw ripples; raindrops ring it by themselves. It freezes in
   winter and snow settles on the ice.
 - **Animals.** A doe (with her fawn in spring and summer) and a buck at dawn and dusk, a fox from
+  dusk into the night, a hare round the edges of the day, a squirrel by day. Each comes out of the
+  wood on its own trail, stops to graze, drink at the pond, look round or sit up, and goes back in
