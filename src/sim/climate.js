@@ -191,3 +191,6 @@ export class Climate extends Emitter {
     // Blend toward the target over about 20 game minutes, never slower than 6 real seconds.
     const rate = Math.max(0.6, gameDt > 0 ? (gameDt / dt) * 0.12 : 0.6);
     const target = WEATHERS[this.weather];
+    for (const k of PARAM_KEYS) this.params[k] = damp(this.params[k], target[k], rate, dt);
+
+    const s = SEASONS[this.season];
