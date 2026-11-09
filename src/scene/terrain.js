@@ -222,3 +222,5 @@ export class Terrain {
 
     const r = rng(99);
     const spots = [];
+    const consider = (x, z, scale) => {
+      const cover = grassCover(x, z);
