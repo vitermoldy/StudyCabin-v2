@@ -6,3 +6,5 @@ const $ = (id) => document.getElementById(id);
 const ICON = { YouTube: './icons/youtube.svg', 'YouTube Music': './icons/youtubemusic.svg' };
 
 function svgUse(id) {
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
