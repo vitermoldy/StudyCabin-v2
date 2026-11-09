@@ -251,3 +251,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       nowSrc.src = ICON[item.source] || ICON.YouTube;
       nowSrc.alt = item.source;
       nowSrc.hidden = false;
+    } else {
+      nowTitle.textContent = 'No song playing';
