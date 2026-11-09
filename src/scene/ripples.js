@@ -97,3 +97,5 @@ export class Ripples {
         uDelta: { value: new THREE.Vector2(1 / RES, 1 / RES) },
         uOrigin: { value: new THREE.Vector2(RIPPLE_AREA.x0, RIPPLE_AREA.z0) },
         uSize: { value: RIPPLE_AREA.size },
+      },
+      vertexShader: QUAD_VERT,
