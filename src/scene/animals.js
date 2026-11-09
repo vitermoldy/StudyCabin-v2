@@ -529,3 +529,5 @@ function createFlocks(rand, count) {
       for (const b of birds) {
         if (!b.on) continue;
         b.x += b.dir * b.speed * dt;
+        b.glide -= dt;
+        if (b.glide < -2.4 - rand() * 2) b.glide = 0.8 + rand() * 1.4;
