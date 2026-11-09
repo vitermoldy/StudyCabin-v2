@@ -112,3 +112,5 @@ export function deckTexture() {
 
 /** Warm interior floorboards. */
 export function floorTexture() {
+  const [c, ctx] = canvas(256, 256);
+  const rand = rng(41);
