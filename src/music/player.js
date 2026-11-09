@@ -287,3 +287,5 @@ export class MusicPlayer extends Emitter {
         this.persist();
       }
       if (this._seekToVideo) {
+        const list = this.player.getPlaylist?.() || [];
+        const k = list.indexOf(this._seekToVideo);
