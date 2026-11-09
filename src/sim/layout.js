@@ -77,3 +77,5 @@ function hubOf(area, point) {
   return YARD_HUB;
 }
 
+/** A polyline from spot a to spot b (both spot ids). */
+export function route(fromSpot, toSpot, from = null) {
