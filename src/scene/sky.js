@@ -217,3 +217,6 @@ export class Atmosphere {
     scene.fog = this.fog;
 
     this.hemi = new THREE.HemisphereLight(0xc8d2d8, 0x6f6a60, 1);
+    scene.add(this.hemi);
+
+    this.sun = new THREE.DirectionalLight(0xffffff, 2.5);
