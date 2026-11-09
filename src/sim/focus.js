@@ -99,3 +99,5 @@ export class FocusTimer extends Emitter {
       if (this.doneDate !== today()) {
         this.doneDate = today();
         this.done = 0;
+      }
+      this.done += 1;
