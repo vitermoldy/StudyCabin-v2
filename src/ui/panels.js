@@ -84,3 +84,5 @@ export function toast(text, ms = 3600) {
   const el = document.getElementById('toast');
   el.textContent = text;
   el.classList.add('is-on');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
