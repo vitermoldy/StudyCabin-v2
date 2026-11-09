@@ -45,3 +45,5 @@ export function parseLink(raw) {
 
   if (!videoId && !listId) throw new LinkError('This link has no video or playlist in it. Open the song, then copy the link again.');
   const kind = listId ? 'playlist' : 'video';
+  const clean = kind === 'playlist'
+    ? `https://www.youtube.com/playlist?list=${listId}`
