@@ -190,3 +190,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       b.appendChild(svgUse(icon));
       b.addEventListener('click', fn);
       tools.appendChild(b);
+      return b;
+    };
