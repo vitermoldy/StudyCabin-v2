@@ -52,3 +52,5 @@ export class Clock extends Emitter {
   tick(dt) {
     const passed = dt * this.rate;
     if (passed <= 0) return 0;
+    this.minutes += passed;
+    while (this.minutes >= 1440) {
