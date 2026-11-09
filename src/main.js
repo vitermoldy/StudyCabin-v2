@@ -188,3 +188,5 @@ focus.on('finished', (phase) => {
 });
 focus.on('change', () => refreshActivity());
 climate.on('season', (id) => {
+  if (world) world.resident.setSeason(id);
+});
