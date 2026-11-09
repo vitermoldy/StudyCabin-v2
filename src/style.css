@@ -276,3 +276,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 }
 .switch[aria-checked="true"]::before { background: var(--action); }
 .switch[aria-checked="true"]::after { transform: translateX(20px); background: #111; }
+.switch:hover::before { background: rgba(228, 229, 225, 0.3); }
+.switch[aria-checked="true"]:hover::before { background: color-mix(in oklab, var(--action) 86%, white); }
+
