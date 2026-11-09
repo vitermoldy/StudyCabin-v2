@@ -127,3 +127,5 @@ html.is-live .poster { opacity: 0; }
 
 html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; visibility: hidden; }
 
+/* ------------------------------------------------------------ top right */
+.top {
