@@ -89,3 +89,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     pointers.delete(e.pointerId);
     if (pointers.size === 0) {
       html.classList.remove('is-dragging');
+      const w = getWorld();
+      if (tap && e.type === 'pointerup' && w) w.poke(e.clientX, e.clientY, 0.7);
