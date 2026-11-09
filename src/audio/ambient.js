@@ -72,3 +72,5 @@ export class Ambient extends Emitter {
       s.loop = true;
       s.start(0, offset);
       return s;
+    };
+    const filter = (type, freq, q = 0.7) => {
