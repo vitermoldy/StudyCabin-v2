@@ -17,3 +17,6 @@ export class Overlay {
     this.reduced = reducedMotion;
     this.currentWord = '';
     this.lastTime = '';
+    this.inks = new Map();
+  }
+
