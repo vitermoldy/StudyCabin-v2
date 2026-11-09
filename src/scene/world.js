@@ -158,3 +158,5 @@ export class World {
       stove: on(stoveLit, 1),
       fire: on(at(18.5, 22.5) && p.rain < 0.2 && p.snow < 0.3 && season !== 'rainy', 1),
       porch: on(darkness > 0.6 && (minutes >= 17 * 60 || minutes < 30), 1),
+      sleeping: on(asleep && !res.path, 1),
+      door: on(res.doorDistance < 1.5, 1),
