@@ -437,3 +437,5 @@ function createWalker(name, rand, inUse) {
       if (forestDepth(p.x, p.z) > 1.5) return null;
       const key = a.state === 'stop' && a.stop ? a.stop.pose : 'move';
       return LINES[key](withYoung ? 'A doe and her fawn' : kind.label, withYoung);
+    },
+  };
