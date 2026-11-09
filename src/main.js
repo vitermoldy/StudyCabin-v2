@@ -209,3 +209,5 @@ clock.on('jump', () => {
 
 // Hand-moved camera and ripples on the pond (madebyevan.com/webgl-water).
 let needsStill = false;
+mountCameraInput(document.getElementById('scene'), {
+  getWorld: () => world,
