@@ -92,3 +92,5 @@ export class MusicPlayer extends Emitter {
     this.emit('change');
   }
 
+  clear() {
+    this.queue = [];
