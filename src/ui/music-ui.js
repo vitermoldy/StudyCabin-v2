@@ -230,3 +230,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     qClear.hidden = !has;
     qLabel.textContent = has ? `Queue: ${q.length} ${q.length === 1 ? 'link' : 'links'}` : 'Queue is empty';
 
+    // State over the video area (empty, loading, error, end)
+    let msg = '';
