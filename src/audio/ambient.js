@@ -138,3 +138,5 @@ export class Ambient extends Emitter {
         return;
       }
       try {
+        await this.ctx.resume();
+      } catch {
