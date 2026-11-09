@@ -12,3 +12,5 @@ function readAll() {
     cache = raw ? JSON.parse(raw) : {};
     if (!cache || typeof cache !== 'object') cache = {};
   } catch {
+    cache = {};
+  }
