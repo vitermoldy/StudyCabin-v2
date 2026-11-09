@@ -99,3 +99,5 @@ export class Ambient extends Emitter {
     chain(src(0.3), this.canopyFilter, this.g.canopy, this.master);
     this.leafFilter = filter('bandpass', 3000, 0.8);
     chain(src(1.1), this.leafFilter, this.g.leaves, this.master);
+    chain(src(2.2), filter('highpass', 1100), filter('lowpass', 7000), this.g.rain, this.master);
+    chain(src(0.7), filter('lowpass', 260), this.g.rainLow, this.master);
