@@ -176,3 +176,6 @@ export class Ambient extends Emitter {
     this._applyMaster(0.4);
     this.persist();
     this.emit('change');
+  }
+
+  setMusicPlaying(on) {
