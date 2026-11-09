@@ -49,3 +49,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
 }
 
 export function std(color, opts = {}) {
+  return new THREE.MeshStandardMaterial({ color, roughness: 0.8, metalness: 0, ...opts });
+}
