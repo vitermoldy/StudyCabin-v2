@@ -383,3 +383,5 @@ startWorld()
     if (wordsShown) overlay.applyInk(world.sampleLuminance(overlay.rects()));
     refreshWords();
     requestAnimationFrame(() => {
+      html.classList.add('is-live');
+      html.dataset.ready = '1';
