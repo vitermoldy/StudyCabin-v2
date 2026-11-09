@@ -201,3 +201,5 @@ export class Terrain {
             vec3 windW = vec3(wdir.x, 0.0, wdir.y) * s * h2 * 0.85 - vec3(0.0, s * h2 * 0.22, 0.0);
             // the blades part round the pointer
             vec2 away = ip.xz - uPush.xy;
+            float dd = length(away);
+            float near = uPush.z * smoothstep(2.4, 0.2, dd);
