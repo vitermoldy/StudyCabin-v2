@@ -76,3 +76,6 @@ function segmentDistance(px, pz, ax, az, bx, bz) {
   const dz = bz - az;
   const t = Math.min(1, Math.max(0, ((px - ax) * dx + (pz - az) * dz) / (dx * dx + dz * dz)));
   return Math.hypot(px - (ax + dx * t), pz - (az + dz * t));
+}
+
+/** Rough distance in metres from the trodden path. */
