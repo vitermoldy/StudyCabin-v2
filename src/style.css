@@ -133,3 +133,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   display: flex; gap: var(--s-2); align-items: center;
 }
 .chip {
+  display: inline-flex; align-items: center; gap: var(--s-2);
+  height: 44px; padding: 0 var(--s-4); max-width: min(360px, 60vw);
