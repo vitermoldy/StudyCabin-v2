@@ -11,3 +11,5 @@ export const DAY = [
     wet: { line: 'Coffee in the armchair, rain on the glass', spot: 'armchair', pose: 'sitDrink' },
     cold: { line: 'Coffee in the armchair by the stove', spot: 'armchair', pose: 'sitDrink' },
   },
+  { id: 'breakfast', start: h(7, 50), end: h(8, 20), word: 'Breakfast', line: 'Breakfast at the table', spot: 'dine', pose: 'sitEat' },
+  { id: 'study-am', start: h(8, 20), end: h(10, 40), word: 'Study', line: 'Studying at the desk by the glass', spot: 'desk', pose: 'sitType' },
