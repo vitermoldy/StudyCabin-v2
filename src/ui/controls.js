@@ -122,3 +122,5 @@ export function mountWeather({ climate }) {
   };
 }
 
+export function mountSound({ ambient }) {
+  const onBtn = $('amb-on');
