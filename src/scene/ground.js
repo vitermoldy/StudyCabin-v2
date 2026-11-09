@@ -48,3 +48,5 @@ export const POND = { x: 8.5, z: 14, rx: 6.2, rz: 4.0 };
 export const CLEARING = { x: 1, z: 9, rx: 27, rz: 21 };
 
 /** The pond is an oval with a slightly uneven bank. */
+export function pondWobble(a) {
+  return 1 + 0.07 * Math.sin(3 * a + 0.8) + 0.04 * Math.sin(5 * a + 2.1);
