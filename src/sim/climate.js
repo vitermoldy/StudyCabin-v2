@@ -160,3 +160,6 @@ export class Climate extends Emitter {
     this.autoSeason = !!on;
     this.emit('auto-season', this.autoSeason);
     this.persist();
+  }
+
+  setWeatherMode(mode) {
