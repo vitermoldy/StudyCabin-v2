@@ -272,3 +272,6 @@ function createWalker(name, rand, inUse) {
     }
     inUse.add(route);
     model.root.visible = true;
+    place(0);
+  }
+
