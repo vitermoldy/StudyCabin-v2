@@ -167,3 +167,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const icon = document.createElement('img');
     icon.src = ICON[item.source] || ICON.YouTube;
     icon.alt = item.source;
+    icon.width = 16;
+    icon.height = 12;
