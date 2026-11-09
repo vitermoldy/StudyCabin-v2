@@ -205,3 +205,5 @@ export class World {
       params: p,
       look: climate.look,
       camera: this.camera,
+      light: 0.15 + this.atmo.dayFactor * 0.85,
+      stove: this.cabin.state.stove,
