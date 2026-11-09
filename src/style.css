@@ -352,3 +352,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 /* day */
 .timeline { list-style: none; margin: 0; padding: 0; }
 .timeline button {
+  display: grid; grid-template-columns: 56px 1fr auto; gap: var(--s-3); align-items: center; width: 100%;
+  min-height: 44px; padding: 0 var(--s-2); border: 0; border-bottom: 1px solid var(--line);
