@@ -209,3 +209,5 @@ export class Cabin {
     }
     this._cb(roof, 15.4, 0.1, 0.32, 0, RIDGE + 0.12, 0);
     // stove flue through the roof
+    const { stove } = F;
+    this._cyl(this.mat.metal, 0.085, 0.085, RIDGE + 1.0 - (FLOOR + 0.62), stove.x, (FLOOR + 0.62 + RIDGE + 1.0) / 2, stove.z);
