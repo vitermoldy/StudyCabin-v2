@@ -418,3 +418,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   .top { left: var(--edge); justify-content: flex-end; }
   .chip { max-width: calc(100vw - 2 * var(--edge) - 52px); }
   .toast { top: calc(var(--edge) + 52px); max-width: calc(100vw - 2 * var(--edge)); }
+}
+@media (prefers-reduced-motion: reduce) {
