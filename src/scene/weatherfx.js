@@ -147,3 +147,5 @@ export class WeatherFX {
               vec4 mv = modelViewMatrix * vec4(p, 1.0);
               vA = step(aId, uAmount) * (1.0 - insideCabin(p)) * smoothstep(34.0, 12.0, -mv.z) * smoothstep(1.5, 4.0, -mv.z);
               vRot = uTime * (1.2 + aSeed.x * 2.5) + aSeed.z * 6.28;
+              vMix = aSeed.y;
+              gl_PointSize = min((0.09 + aSeed.z * 0.07) * uScale / max(-mv.z, 0.5), 16.0);
