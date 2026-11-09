@@ -65,3 +65,5 @@ export class Ripples {
     this.ok = false;
     const gl = renderer.getContext();
     // three.js is WebGL 2 only now; float targets still need this extension.
+    const canFloat = gl.getExtension('EXT_color_buffer_float') || gl.getExtension('EXT_color_buffer_half_float');
+    if (!canFloat) return;
