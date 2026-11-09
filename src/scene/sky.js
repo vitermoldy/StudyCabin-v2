@@ -108,3 +108,5 @@ const FRAG = /* glsl */ `
     cover *= horizonFade;
     cirrus *= horizonFade;
     float self = fbm(uv + warp * 0.8 + uSunDir.xz * 0.12);
+    float lit = clamp((n - self) * 2.4 + 0.55 + pow(sd, 3.0) * 0.5, 0.0, 1.0);
+    vec3 cloudCol = mix(uCloudDark, uCloudLit, lit);
