@@ -111,3 +111,5 @@ export class Ripples {
       renderer.setRenderTarget(t);
       renderer.setClearColor(0x000000, 0);
       renderer.clear(true, false, false);
+    }
+    renderer.setRenderTarget(prev);
