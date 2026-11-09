@@ -223,3 +223,5 @@ export class Ambient extends Emitter {
     const seasonBirds = { spring: 1, summer: 0.8, autumn: 0.45, rainy: 0.35, winter: 0.2 }[env.season] ?? 0.5;
     const seasonCrickets = { spring: 0.5, summer: 1, autumn: 0.55, rainy: 0.7, winter: 0 }[env.season] ?? 0.5;
     const birds = m.wildlife * env.day * seasonBirds * (1 - env.rain * 0.85) * (env.morning ? 1 : 0.45);
+    const crickets = m.wildlife * env.night * seasonCrickets * (1 - env.rain * 0.8);
+    set(this.g.wildlife, 1, 0.3);
