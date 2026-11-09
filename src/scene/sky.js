@@ -290,3 +290,6 @@ export class Atmosphere {
     this.zenith.lerp(this.horizon, fogAmt * 0.55);
     const darken = 1 - storm * 0.38 - params.rain * 0.1;
     this.horizon.multiplyScalar(darken);
+    this.zenith.multiplyScalar(darken);
+
+    u.uZenith.value.copy(this.zenith);
