@@ -107,3 +107,5 @@ export function mountWeather({ climate }) {
   const setWeather = radios(
     $('weather-group'),
     'weather',
+    [['auto', 'Follow the season'], ...WEATHER_ORDER.map((k) => [k, WEATHERS[k].label])],
+    climate.weatherMode,
