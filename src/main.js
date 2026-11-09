@@ -292,3 +292,6 @@ function frame(now) {
   refreshActivity({ teleport: jumped });
   const timeJumped = jumped;
   jumped = false;
+  overlay.setTime(clock.minutes);
+
+  uiIn -= realDt;
