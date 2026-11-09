@@ -31,3 +31,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const input = $('link');
   const err = $('link-error');
   const state = $('player-state');
+  const playBtn = $('playpause');
+  const dockPlay = $('dock-play');
