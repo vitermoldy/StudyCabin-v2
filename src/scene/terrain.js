@@ -116,3 +116,5 @@ export class Terrain {
           if (under > 0.0) {
             diffuseColor.rgb *= mix(vec3(0.8, 0.88, 0.78), vec3(0.32, 0.42, 0.34), smoothstep(0.0, 1.0, under));
             float cz = caustic(mod(vWorldG.xz * 2.6, 6.28318) - 250.0, uTime * 0.6);
+            float fade = smoothstep(0.0, 0.12, under) * exp(-under * 1.4);
+            diffuseColor.rgb += vec3(0.75, 0.9, 0.7) * cz * fade * uCaustic * 0.8;
