@@ -288,3 +288,5 @@ function maskWords(h1) {
   const words = [];
   const walk = node => [...node.childNodes].forEach(n => {
     if (n.nodeType === 1) return walk(n);
+    if (n.nodeType !== 3) return;
+    const frag = document.createDocumentFragment();
