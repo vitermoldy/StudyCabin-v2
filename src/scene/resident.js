@@ -119,3 +119,6 @@ export class Resident {
     this.loopIndex = 0;
     this.loopPause = 0;
     this.head = new THREE.Vector3();
+    this.season = 'spring';
+  }
+
