@@ -256,3 +256,5 @@ export class WeatherFX {
     }
   }
 
+  update({ time, params, look, camera, light, stove, viewportHeight, fireflies = 0 }) {
+    this.flyU.uAmount.value = fireflies;
