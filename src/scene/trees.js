@@ -7,3 +7,5 @@ import { allTrails } from '../sim/wildlife.js';
 
 // The forest round the clearing: dark firs that keep their colour (and hold snow in winter) and
 // broadleaf trees whose crowns follow the season, with low bushes along the edge so the clearing
+// runs into the wood instead of stopping at a wall. Trees stand thicker and taller the deeper into
+// the wood; the animals' trails stay open. All of them sway a little with the wind, more toward
