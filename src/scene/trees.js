@@ -135,3 +135,6 @@ function onTrail(x, z, room) {
 
 // Trees this close to the cabin cast shadows.
 const SHADOW_REACH = 34;
+const REACH = 74;
+
+export class Trees {
