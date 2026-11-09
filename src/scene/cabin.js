@@ -104,3 +104,5 @@ export class Cabin {
       cushion: std('#d1c9ba', { map: fab, roughness: 0.95 }),
       rug: std('#8f8577', { map: fab, roughness: 1 }),
       wood: std('#a7825f', { roughness: 0.7 }),
+      woodDark: std('#6c5240', { roughness: 0.75 }),
+      deckWood: weathered(std('#87827a', { roughness: 0.85 }), { snow: 0.8 }),
