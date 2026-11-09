@@ -242,3 +242,5 @@ export class Terrain {
       }
     }
     const mesh = new THREE.InstancedMesh(geo, mat, spots.length);
+    const m = new THREE.Matrix4();
+    const q = new THREE.Quaternion();
