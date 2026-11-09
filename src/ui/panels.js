@@ -68,3 +68,5 @@ export class Panels extends Emitter {
   _hide(id) {
     const panel = this.panels.get(id);
     if (!panel) return;
+    if (panel.contains(document.activeElement)) document.activeElement.blur();
+    panel.dataset.open = 'false';
