@@ -18,3 +18,5 @@ export class Cabin {
   constructor(scene) {
     this.group = new THREE.Group();
     scene.add(this.group);
+    this._makeMaterials();
+    this._shell();
