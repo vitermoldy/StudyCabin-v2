@@ -154,3 +154,5 @@ export function mountSound({ ambient }) {
     return { layer, input, out };
   });
   bindSwitch($('amb-duck'), () => ambient.duckWhenMusic, (v) => ambient.setDuck(v));
+  ambient.on('error', (msg) => {
+    err.textContent = msg;
