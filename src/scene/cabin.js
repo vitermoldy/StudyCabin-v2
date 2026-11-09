@@ -467,3 +467,5 @@ export class Cabin {
       return l;
     };
     const warm = '#ffc98a';
+    this.lights = {
+      kitchen: mk(warm, -5.2, FLOOR + 1.95, 0.2, 9),
