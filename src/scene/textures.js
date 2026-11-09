@@ -173,3 +173,5 @@ export function fabricTexture() {
 }
 
 /** A print of misty fir ridges and a low sun for the frame above the sofa. */
+export function printTexture() {
+  const [c, ctx] = canvas(256, 192);
