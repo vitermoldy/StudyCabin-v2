@@ -80,3 +80,5 @@ export class Panels extends Emitter {
 }
 
 let toastTimer = 0;
+export function toast(text, ms = 3600) {
+  const el = document.getElementById('toast');
