@@ -85,3 +85,6 @@ shows a still picture and the music, timer and ambient sound still work.
 | `src/sim/wildlife.js` | The animals' trails, their hours, weather and seasons; fireflies, frogs, the owl's hours |
 | `src/scene/animals.js` | The animal models and how they walk, stop and leave; bird flocks; the owl |
 | `src/scene/trees.js`, `treeline.js` | The 3D forest and the rings of far trees |
+| `src/scene/pond.js`, `ripples.js` | The pond's water, ice and lily pads; the ripple simulation |
+| `src/scene/terrain.js`, `props.js` | The ground, grass and ferns; stones, the fallen trunk and the stump |
+
