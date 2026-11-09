@@ -199,3 +199,5 @@ export class Ambient extends Emitter {
     if (!this.ctx || !this.enabled || this.ctx.state !== 'running') return;
     const now = this.ctx.currentTime;
     this._t += dt;
+    const t = this._t;
+    const m = this.mix;
