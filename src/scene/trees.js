@@ -116,3 +116,6 @@ function swayShader(material, { leaves = false } = {}) {
     }
   };
   return material;
+}
+
+function segmentDistance(px, pz, [ax, az], [bx, bz]) {
