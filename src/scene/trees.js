@@ -67,3 +67,5 @@ function broadleafGeometry() {
     const blob = new THREE.IcosahedronGeometry(s, 1);
     const p = blob.attributes.position;
     for (let i = 0; i < p.count; i++) {
+      const k = 0.88 + r() * 0.24;
+      p.setXYZ(i, p.getX(i) * k, p.getY(i) * k * 0.86, p.getZ(i) * k);
