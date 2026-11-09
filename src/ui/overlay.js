@@ -36,3 +36,5 @@ export class Overlay {
       s.textContent = ch;
       s.style.setProperty('--i', i);
       el.appendChild(s);
+      if (!this.reduced) requestAnimationFrame(() => s.classList.add('is-in'));
+    });
