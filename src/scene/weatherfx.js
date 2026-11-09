@@ -283,3 +283,5 @@ function lowPowerFlies() {
 
 /** Where the fireflies hang: over the clearing, most of them near the trees and the water. */
 function fireflyGeometry(count) {
+  const r = rng(23);
+  const pos = [];
