@@ -71,3 +71,5 @@ export class Clock extends Emitter {
     return passed;
   }
 
+  /** Move the clock to a time of day. Moving backwards starts the next day. */
+  jumpTo(minutes, { sameDay = false } = {}) {
