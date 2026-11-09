@@ -86,3 +86,5 @@ export class Treeline {
           uFlash: this.flash,
         },
         vertexShader: /* glsl */ `
+          attribute float aT;
+          varying float vT;
