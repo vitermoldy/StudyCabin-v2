@@ -213,3 +213,6 @@ export class Ambient extends Emitter {
     this.canopyFilter.frequency.setTargetAtTime(380 + sway * 360, now, 0.6);
     this.leafFilter.frequency.setTargetAtTime(2400 + sway * 1600, now, 0.5);
 
+    set(this.g.rain, m.rain * env.rain * 0.55);
+    set(this.g.rainLow, m.rain * (env.rain * 0.25 + env.storm * 0.35));
+
