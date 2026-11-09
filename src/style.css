@@ -209,3 +209,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .hint { margin-top: var(--s-2); font-size: var(--t-small); line-height: 1.5; color: var(--muted); }
 .readout { display: flex; align-items: baseline; gap: var(--s-3); margin-bottom: var(--s-4); font-size: 28px; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
 .readout__sub { font-size: var(--t-small); color: var(--muted); letter-spacing: 0; }
+.field__error { margin-top: var(--s-2); font-size: var(--t-small); color: #f0b37a; }
+
+/* buttons */
