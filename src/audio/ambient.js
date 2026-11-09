@@ -5,3 +5,5 @@ export const LAYERS = [
   { id: 'leaves', label: 'Leaves and branches' },
   { id: 'rain', label: 'Rain' },
   { id: 'wind', label: 'Wind' },
+  { id: 'wildlife', label: 'Birds, crickets, frogs and the owl' },
+  { id: 'fire', label: 'Stove fire' },
