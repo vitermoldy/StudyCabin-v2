@@ -35,3 +35,5 @@ export class Props {
     const r = rng(83);
     const stoneMat = weathered(new THREE.MeshStandardMaterial({ color: '#ffffff', vertexColors: true, roughness: 0.9 }), { snow: 1, wet: 0.8 });
     const geos = [stoneGeometry(1), stoneGeometry(2), stoneGeometry(3)];
+    const m = new THREE.Matrix4();
+    const q = new THREE.Quaternion();
