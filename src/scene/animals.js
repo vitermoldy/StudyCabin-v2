@@ -521,3 +521,5 @@ function createFlocks(rand, count) {
       wait -= dt;
       if (wait <= 0) {
         const p = ctx.params;
+        const fine = ctx.day > 0.6 && p.rain < 0.2 && p.storm < 0.2 && p.fog < 0.7;
+        const seasonal = { spring: 1, summer: 0.9, autumn: 0.8, rainy: 0.5, winter: 0.35 }[ctx.season] ?? 0.7;
