@@ -47,3 +47,5 @@ export class Cabin {
   /** Axis-aligned box from bounds, UVs in metres. */
   _bx(mat, x0, x1, y0, y1, z0, z1, opts) {
     const w = x1 - x0;
+    const h = y1 - y0;
+    const d = z1 - z0;
