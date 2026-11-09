@@ -66,3 +66,6 @@ export function activityAt(minutes, conditions, focusPhase = null) {
   if (conditions.badWeather && base.wet) resolved = { ...base, ...base.wet };
   else if (conditions.cold && base.cold) resolved = { ...base, ...base.cold };
   return { ...resolved, key: `${base.id}:${resolved.spot}:${resolved.pose}` };
+}
+
+export function isOutside(spot) {
