@@ -107,3 +107,5 @@ export class Ripples {
     this.ok = true;
     // Start flat.
     const prev = renderer.getRenderTarget();
+    for (const t of [this.a, this.b]) {
+      renderer.setRenderTarget(t);
