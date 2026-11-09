@@ -19,3 +19,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     const [a, b] = two();
     return Math.hypot(a.x - b.x, a.y - b.y) || 1;
   };
+  const middle = () => {
+    const [a, b] = two();
