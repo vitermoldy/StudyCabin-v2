@@ -283,3 +283,5 @@ export class Terrain {
       const point = (t, side) => {
         // leaflets: every other step a little narrower, so the edge reads as cut fronds
         const k = Math.round(t * segs);
+        const w = 0.12 * L * Math.pow(Math.sin(Math.PI * Math.min(1, t * 1.08)), 0.7) * (k % 2 ? 1 : 0.6);
+        const r0 = L * t;
