@@ -323,3 +323,5 @@ function frame(now) {
   }
 
   audioIn -= dt;
+  if (audioIn <= 0) {
+    audioIn = 0.1;
