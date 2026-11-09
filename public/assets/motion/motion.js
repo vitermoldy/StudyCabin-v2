@@ -184,3 +184,5 @@ function counts() {
           if (k < 1) requestAnimationFrame(step); else state = 'done';
         };
         requestAnimationFrame(step);
+      },
+    };
