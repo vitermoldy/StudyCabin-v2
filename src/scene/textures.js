@@ -254,3 +254,4 @@ export function metricBoxUV(geo, w, h, d) {
   }
   uv.needsUpdate = true;
   return geo;
+}
