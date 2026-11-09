@@ -57,3 +57,5 @@ export class FocusTimer extends Emitter {
   }
 
   setPreset(id) {
+    if (!(id in PRESETS) || id === this.preset) return;
+    this.preset = id;
