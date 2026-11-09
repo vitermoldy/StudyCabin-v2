@@ -40,3 +40,6 @@ export const DAY = [
   { id: 'sleep', start: h(23, 0), end: h(24, 0), word: 'Sleep', line: 'Asleep under the duvet', spot: 'bed', pose: 'sleep' },
 ];
 
+export const FOCUS_ACTIVITY = { id: 'focus', word: 'Focus', line: 'Studying with you at the desk', spot: 'desk', pose: 'sitType' };
+export const BREAK_ACTIVITY = { id: 'break', word: 'Break', line: 'A short break at the window', spot: 'deskWindow', pose: 'stretch' };
+
