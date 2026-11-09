@@ -15,3 +15,5 @@ function warp(u) {
 /** One sheet of ground out to the hills, finest round the clearing. */
 function buildGround() {
   const NX = 280;
+  const NZ = 260;
+  const pos = [];
