@@ -373,3 +373,5 @@ startWorld()
       onWords: setWords,
       wordsShown: () => wordsShown,
       onFullscreen: toggleFullscreen,
+    });
+    addEventListener('resize', () => world.resize());
