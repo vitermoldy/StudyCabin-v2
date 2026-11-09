@@ -118,3 +118,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     if (!clearArmed) {
       qClear.textContent = `Clear all ${player.queue.length}? Press again`;
       clearArmed = setTimeout(() => {
+        clearArmed = 0;
+        qClear.textContent = 'Clear the queue';
