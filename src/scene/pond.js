@@ -164,3 +164,5 @@ function lilies(scene) {
   pads.forEach((p, i) => {
     q.setFromAxisAngle(Y, p.yaw);
     m.compose(new THREE.Vector3(p.x, WATER_Y + 0.006, p.z), q, new THREE.Vector3(p.s, 1, p.s));
+    padMesh.setMatrixAt(i, m);
+  });
