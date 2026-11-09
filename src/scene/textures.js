@@ -57,3 +57,5 @@ export function sidingTexture() {
     ctx.fillRect(x + 2, 0, 3, 256); // batten edge catching light
     ctx.fillStyle = 'rgba(30,34,30,0.25)';
     ctx.fillRect(x + 5, 0, 1, 256);
+  }
+  return finish(c, { repeat: [1 / 1.2, 1 / 1.2] });
