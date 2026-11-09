@@ -18,3 +18,5 @@ export class CameraRig {
     this.travel = 1; // 0..1 progress of a move between views
     this.travelTime = 1.4;
     this.pointer = new THREE.Vector2();
+    this.pointerSmooth = new THREE.Vector2();
+    this.followTarget = new THREE.Vector3();
