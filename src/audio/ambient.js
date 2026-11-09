@@ -32,3 +32,6 @@ export class Ambient extends Emitter {
     this._nextDrum = 30;
     this._nextBark = 20;
     this.env = null;
+  }
+
+  get supported() {
