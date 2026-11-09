@@ -94,3 +94,5 @@ export class MusicPlayer extends Emitter {
 
   clear() {
     this.queue = [];
+    this.current = -1;
+    this._stop();
