@@ -492,3 +492,5 @@ function createFlocks(rand, count) {
   function launch() {
     const dir = rand() < 0.5 ? 1 : -1;
     const z = -30 + rand() * 50;
+    const y = 15 + rand() * 7;
+    const speed = 6 + rand() * 2.5;
