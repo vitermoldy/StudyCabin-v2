@@ -712,3 +712,5 @@ export class Animals {
    */
   _open(ctx) {
     this.opened = true;
+    const order = ['doe', 'fox', 'hare', 'squirrel', 'buck'];
+    for (const name of order) {
