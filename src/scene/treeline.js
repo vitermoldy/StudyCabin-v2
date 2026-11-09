@@ -118,3 +118,5 @@ export class Treeline {
             #include <tonemapping_fragment>
             #include <colorspace_fragment>
           }
+        `,
+      });
