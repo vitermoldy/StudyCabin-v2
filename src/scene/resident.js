@@ -268,3 +268,5 @@ export class Resident {
       this.j = this._targetJoints(0);
       return;
     }
+    if (target === this.spot && !this.path) {
+      this.pose = activity.pose;
