@@ -278,3 +278,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     onPlayingChange(playing);
   }
 
+  player.on('change', render);
+  render();
+
