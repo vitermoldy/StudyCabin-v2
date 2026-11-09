@@ -17,3 +17,6 @@ function svgUse(id) {
 
 function setIcon(button, id) {
   const use = button.querySelector('use');
+  if (use && use.getAttribute('href') !== `#${id}`) use.setAttribute('href', `#${id}`);
+}
+
