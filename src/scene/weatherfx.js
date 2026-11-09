@@ -73,3 +73,5 @@ export class WeatherFX {
             p = wrapBox(p, uCenter, uBox);
             p -= normalize(vel) * aEnd * (0.32 + uAmount * 0.3);
             float on = step(aId, uAmount) * (1.0 - insideCabin(p)) * step(-0.2, p.y);
+            vec4 mv = modelViewMatrix * vec4(p, 1.0);
+            float far = smoothstep(42.0, 18.0, -mv.z);
