@@ -155,3 +155,6 @@ export class CameraRig {
     }
 
     // Entrance: the camera settles a little closer once, on load.
+    if (this.entrance > 0) this.entrance = Math.max(0, this.entrance - dt / 1.6);
+    const settle = this.reduced ? 0 : easeInOut(this.entrance) * 0.06;
+
