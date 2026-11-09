@@ -227,3 +227,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     qItems.replaceChildren(...q.map(row));
     if (focusedIndex >= 0 && !qItems.contains(document.activeElement)) focusRow(Math.min(focusedIndex, q.length - 1), 0);
     qEmpty.hidden = has;
+    qClear.hidden = !has;
+    qLabel.textContent = has ? `Queue: ${q.length} ${q.length === 1 ? 'link' : 'links'}` : 'Queue is empty';
+
