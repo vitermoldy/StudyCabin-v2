@@ -359,3 +359,5 @@ startWorld()
     world.onThunder = (s) => ambient.thunder(s);
     world.resident.setSeason(climate.season);
     world.resident.setActivity(activity, { teleport: true });
+    const view = prefs.view in VIEWS ? prefs.view : FIRST_VIEW;
+    world.rig.view = view;
