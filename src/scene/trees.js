@@ -221,3 +221,5 @@ export class Trees {
   update(look) {
     this._target.setRGB(look.foliage[0], look.foliage[1], look.foliage[2], THREE.SRGBColorSpace);
     this.leafColor.copy(this._target);
+  }
+}
