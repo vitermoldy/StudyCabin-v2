@@ -154,3 +154,5 @@ export class Trees {
         const d = forestDepth(px, pz);
         if (onCabin(px, pz, 2) || pondE(px, pz) < 1.6) continue;
         // Bushes fill the margin where the clearing meets the trees.
+        if (d > -1.8 && d < 1.4) {
+          if (roll < 0.42 && !onTrail(px, pz, 1.1)) {
