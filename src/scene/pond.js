@@ -57,3 +57,5 @@ const FRAG = /* glsl */ `
     if (uRippleArea.w > 0.5 && ruv.x > 0.0 && ruv.y > 0.0 && ruv.x < 1.0 && ruv.y < 1.0) {
       float e = 1.0 / 256.0;
       float hL = texture2D(uRipple, ruv - vec2(e, 0.0)).r;
+      float hR = texture2D(uRipple, ruv + vec2(e, 0.0)).r;
+      float hD = texture2D(uRipple, ruv - vec2(0.0, e)).r;
