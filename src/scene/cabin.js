@@ -240,3 +240,5 @@ export class Cabin {
   }
 
   // ------------------------------------------------------------ interior
+  _kitchen() {
+    const { counter, cabinet, ceramic, metal, wood, woodDark, trim, leaf, pot } = this.mat;
