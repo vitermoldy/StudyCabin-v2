@@ -43,3 +43,5 @@ export const DAY = [
 export const FOCUS_ACTIVITY = { id: 'focus', word: 'Focus', line: 'Studying with you at the desk', spot: 'desk', pose: 'sitType' };
 export const BREAK_ACTIVITY = { id: 'break', word: 'Break', line: 'A short break at the window', spot: 'deskWindow', pose: 'stretch' };
 
+/** The scheduled entry for a time of day, before weather changes. */
+export function entryAt(minutes) {
