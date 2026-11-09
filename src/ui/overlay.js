@@ -26,3 +26,5 @@ export class Overlay {
     const el = this.word;
     el.textContent = '';
     const said = document.createElement('span');
+    said.className = 'sr-only';
+    said.textContent = text;
