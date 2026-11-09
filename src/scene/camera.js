@@ -53,3 +53,5 @@ export class CameraRig {
     const need = v.width / 2 / Math.tan(hfov / 2);
     const dist = Math.max(dist0, Math.min(need, dist0 * 2.6));
     outPos.copy(outTarget).addScaledVector(dir, dist);
+    if (id === 'window' || (id === 'follow' && follow && follow.z < 3.2)) {
+      // Never pass through the glass.
