@@ -648,3 +648,5 @@ function createOwl(rand) {
         m.head.rotation.y = damp(m.head.rotation.y, o.look, 3, dt);
         o.blink -= dt;
         const shut = o.blink < 0.12;
+        if (o.blink < 0) o.blink = 2.5 + rand() * 4;
+        m.lids.forEach((e) => { e.scale.y = shut ? 0.004 : 0.018; });
