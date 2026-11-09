@@ -318,3 +318,4 @@ const LIN = new Float32Array(256).map((_, i) => {
 });
 function lin(v) {
   return LIN[v];
+}
