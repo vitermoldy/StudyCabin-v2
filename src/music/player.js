@@ -224,3 +224,5 @@ export class MusicPlayer extends Emitter {
 
   prev() {
     if (this._ready && this.player.getCurrentTime && this.player.getCurrentTime() > 4) {
+      this.player.seekTo(0, true);
+      return;
