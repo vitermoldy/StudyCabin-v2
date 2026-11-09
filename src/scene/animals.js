@@ -563,3 +563,5 @@ function makeOwl() {
   head.position.set(0.01, 0.39, 0);
   body.add(head);
   head.add(blob(plumage, [0.1, 0.09, 0.1], [0, 0, 0]));
+  head.add(blob(face, [0.035, 0.07, 0.085], [0.07, -0.005, 0]));
+  const lids = [];
