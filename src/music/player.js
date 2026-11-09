@@ -12,3 +12,5 @@ const newId = () => `q${Date.now().toString(36)}${(uid++).toString(36)}`;
 export class MusicPlayer extends Emitter {
   constructor(host) {
     super();
+    this.host = host;
+    const saved = load('music', {});
