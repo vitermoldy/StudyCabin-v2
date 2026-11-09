@@ -164,3 +164,5 @@ export class CameraRig {
     const sway = this.reduced ? 0 : 1;
     const dist = this.pos.distanceTo(this.target);
     const right = tmpC.subVectors(this.target, this.pos).cross(UP).normalize();
+    cam.position.copy(this.pos)
+      .addScaledVector(tmpD.subVectors(this.pos, this.target), settle)
