@@ -200,3 +200,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       focusRow(Math.min(i, player.queue.length - 1), 2);
     });
     li.appendChild(tools);
+    return li;
+  }
+
