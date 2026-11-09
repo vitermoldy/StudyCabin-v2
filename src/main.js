@@ -223,3 +223,5 @@ addEventListener('pointermove', (e) => {
 document.addEventListener('pointerleave', () => world && world.setPointer(0, 0, false));
 
 // Audio needs a gesture before it may start.
+const wake = () => ambient.resumeIfWanted();
+addEventListener('pointerdown', wake, { once: true });
