@@ -332,3 +332,5 @@ export class Atmosphere {
     const dir = useMoon ? this.moonDir : this.sunDir;
     this.sun.position.copy(this.sun.target.position).addScaledVector(dir, 70);
     if (useMoon) {
+      this.sun.color.copy(MOON_LIGHT);
+      this.sun.intensity = 0.42 * moonUp * (1 - overcast * 0.75);
