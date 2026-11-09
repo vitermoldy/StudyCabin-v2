@@ -100,3 +100,6 @@ shows a still picture and the music, timer and ambient sound still work.
   fewer on phones). The page lowers its resolution by itself when frames run slow.
 - Settings are kept under their own key, so v1 and v2 opened on the same address do not share them.
 
+## Before launch
+
+- The wordmark "StudyCabin" and the "S" favicon are placeholders; no logo was given.
