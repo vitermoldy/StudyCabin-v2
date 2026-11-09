@@ -74,3 +74,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       input.value = '';
       toast(item.kind === 'playlist' ? 'Playlist added to the queue.' : 'Added to the queue.');
     } catch (ex) {
+      if (ex instanceof LinkError) {
+        showError(ex.message);
