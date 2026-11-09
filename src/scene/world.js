@@ -40,3 +40,6 @@ export class World {
       if (this.onShaderFail) this.onShaderFail();
     };
     this.maxDpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    this.dpr = this.maxDpr;
+    this.renderer.setPixelRatio(this.dpr);
+
