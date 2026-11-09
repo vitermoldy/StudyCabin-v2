@@ -118,3 +118,5 @@ function format(v, p) {
   let [i, d] = v.toFixed(p.decimals).split('.');
   if (p.group) i = i.replace(/\B(?=(\d{3})+(?!\d))/g, p.group);
   return d ? i + p.dec + d : i;
+}
+// the web fonts, or 3 s at most: a number measured in the fallback font comes out narrower
