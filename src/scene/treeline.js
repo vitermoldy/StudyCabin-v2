@@ -15,3 +15,5 @@ const RINGS = [
 ];
 
 function ringGeometry({ R, seed, tall, spacing, hill }) {
+  const rand = rng(seed);
+  const circ = Math.PI * 2 * R;
