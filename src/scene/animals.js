@@ -401,3 +401,5 @@ function createWalker(name, rand, inUse) {
         return;
       }
       place(dt);
+      pose(dt, time, true);
+    },
