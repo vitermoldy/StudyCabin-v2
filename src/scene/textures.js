@@ -170,3 +170,6 @@ export function fabricTexture() {
     ctx.fillRect(x, 0, 1, 64);
   }
   return finish(c, { repeat: [3, 3] });
+}
+
+/** A print of misty fir ridges and a low sun for the frame above the sofa. */
