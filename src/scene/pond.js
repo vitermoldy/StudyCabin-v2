@@ -86,3 +86,6 @@ const FRAG = /* glsl */ `
     vec3 glint = (uSunColor * spec * uSunVis + vec3(0.6, 0.7, 0.68) * mspec * uMoonVis * 0.8) * (1.0 - trees * 0.9) * water;
 
     // Premultiplied mix so the shallows stay see-through while reflections stay bright.
+    vec3 col = body * absorb * (1.0 - fres) + sky * fres + glint;
+    float alpha = absorb * (1.0 - fres) + fres + min(1.0, dot(glint, vec3(0.33)));
+
