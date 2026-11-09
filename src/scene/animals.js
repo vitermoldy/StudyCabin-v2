@@ -485,3 +485,5 @@ function createFlocks(rand, count) {
   birds.forEach((b) => {
     b.root.visible = false;
     b.root.traverse((o) => { o.castShadow = false; });
+    group.add(b.root);
+  });
