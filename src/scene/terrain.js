@@ -211,3 +211,5 @@ export class Terrain {
         );
       shader.fragmentShader = shader.fragmentShader
         .replace('#include <common>', '#include <common>\nuniform float uSnow; varying float vTip;')
+        .replace(
+          '#include <color_fragment>',
