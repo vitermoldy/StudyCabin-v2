@@ -285,3 +285,5 @@ export class Cabin {
     const g = new THREE.Group();
     g.position.set(x, 0, z);
     g.rotation.y = rot;
+    this.group.add(g);
+    this._cb(mat, 0.46, 0.04, 0.44, 0, FLOOR + 0.45, 0, { parent: g });
