@@ -7,3 +7,6 @@ export const LAYERS = [
   { id: 'wind', label: 'Wind' },
   { id: 'wildlife', label: 'Birds, crickets, frogs and the owl' },
   { id: 'fire', label: 'Stove fire' },
+];
+
+/**
