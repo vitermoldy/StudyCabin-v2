@@ -22,3 +22,5 @@ function finish(c, { repeat = [1, 1], srgb = true } = {}) {
 
 function grain(ctx, w, h, rand, amount, alpha = 0.06) {
   for (let i = 0; i < amount; i++) {
+    const x = rand() * w;
+    const y = rand() * h;
