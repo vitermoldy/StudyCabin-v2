@@ -256,3 +256,5 @@ export class Atmosphere {
     const el = Math.sin(theta) * (Math.sin(theta) >= 0 ? peak : 0.6);
     const hx = Math.cos(theta);
     const hz = -0.8 + 1.4 * Math.max(Math.sin(theta), -0.3);
+    const hl = Math.hypot(hx, hz) || 1;
+    return out.set((hx / hl) * Math.cos(el), Math.sin(el), (hz / hl) * Math.cos(el));
