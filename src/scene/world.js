@@ -71,3 +71,5 @@ export class World {
     this.resident = new Resident(this.scene);
     this.fx = new WeatherFX(this.scene, this.cabin.flueTop);
 
+    this.flash = 0;
+    this._nextBolt = 6;
