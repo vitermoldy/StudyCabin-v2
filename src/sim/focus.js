@@ -81,3 +81,5 @@ export class FocusTimer extends Emitter {
     else this.start();
   }
 
+  reset() {
+    this.running = false;
