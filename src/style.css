@@ -283,3 +283,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .choices legend { padding: 0; }
 .choices__row { display: flex; flex-wrap: wrap; gap: var(--s-2); }
 .choice { position: relative; display: inline-flex; }
+.choice input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.choice span {
