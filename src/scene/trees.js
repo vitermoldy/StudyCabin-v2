@@ -28,3 +28,5 @@ function paint(geo, r, g, b, vary = 0) {
   return geo;
 }
 
+/** A pine 1 unit tall: trunk plus four stacked cones. */
+function pineGeometry() {
