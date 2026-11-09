@@ -266,3 +266,5 @@ export class Cabin {
     const T = F.table;
     this._bx(wood, T.x - T.w / 2, T.x + T.w / 2, FLOOR + 0.71, FLOOR + 0.76, T.z - T.d / 2, T.z + T.d / 2);
     this._legs(woodDark, T.x, T.z, T.w - 0.08, T.d - 0.08, 0.71);
+    this._chair(T.x, 0.42, 0);
+    this._chair(T.x - 0.38, 2.02, Math.PI);
