@@ -329,3 +329,5 @@ export class Cabin {
     this.group.add(ag);
     this._soft(cushion, 0.78, 0.3, 0.74, 0.06, 0, FLOOR + 0.24, 0, { parent: ag });
     this._soft(cushion, 0.78, 0.55, 0.18, 0.06, 0, FLOOR + 0.62, -0.32, { parent: ag });
+    for (const ex of [-0.36, 0.36]) this._soft(cushion, 0.12, 0.42, 0.7, 0.05, ex, FLOOR + 0.38, 0, { parent: ag });
+    this._legs(woodDark, 0, 0, 0.7, 0.66, 0.1, FLOOR, 0.04, ag);
