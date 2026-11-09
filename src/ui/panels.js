@@ -10,3 +10,6 @@ export class Panels extends Emitter {
     this.panels = new Map(this.tabs.map((t) => [t.dataset.panel, document.getElementById(t.getAttribute('aria-controls'))]));
     this.extraOpeners = new Map(); // other buttons that open a panel, e.g. "Add music"
     this.current = null;
+    this.opener = null;
+
+    for (const t of this.tabs) t.addEventListener('click', (e) => this.toggle(t.dataset.panel, t, e.detail === 0));
