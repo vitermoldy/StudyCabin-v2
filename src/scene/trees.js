@@ -73,3 +73,5 @@ function broadleafGeometry() {
     blob.translate(x, y, z);
     crownParts.push(flat(blob));
   }
+  const trunkG = paint(mergeGeometries(trunkParts), 0.38, 0.3, 0.24);
+  const crownG = paint(mergeGeometries(crownParts), 1, 1, 1, 0.5);
