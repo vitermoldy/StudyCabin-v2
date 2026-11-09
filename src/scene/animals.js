@@ -652,3 +652,5 @@ function createOwl(rand) {
         m.lids.forEach((e) => { e.scale.y = shut ? 0.004 : 0.018; });
         return;
       }
+      // In the air: along a gentle curve, flapping, then gliding the last part in.
+      o.t = Math.min(1, o.t + dt / 7);
