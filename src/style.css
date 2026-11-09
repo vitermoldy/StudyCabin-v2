@@ -203,3 +203,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   margin: 0 calc(-1 * var(--s-2)) var(--s-3) 0; padding-top: var(--s-1);
   background: linear-gradient(rgba(19, 19, 18, 0.98) 70%, rgba(19, 19, 18, 0));
 }
+.panel h2 { font-size: 20px; font-weight: 500; letter-spacing: -0.01em; }
+.subhead { margin: var(--s-6) 0 var(--s-3); font-size: 16px; font-weight: 500; }
