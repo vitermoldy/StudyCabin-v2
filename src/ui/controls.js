@@ -218,3 +218,5 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
   wordsSwitch.addEventListener('click', () => { onWords(!wordsShown()); sync(); });
   dockWords.addEventListener('click', () => { onWords(!wordsShown()); sync(); });
   $('cam-reset').addEventListener('click', () => rig.resetUser && rig.resetUser());
+  const fs = $('fullscreen');
+  if (!document.fullscreenEnabled) fs.hidden = true;
