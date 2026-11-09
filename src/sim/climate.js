@@ -149,3 +149,5 @@ export class Climate extends Emitter {
     this.season = id;
     if (!fromAuto) this.emit('season-picked', id);
     if (this.weatherMode === 'auto' && !(this.weather in SEASONS[id].odds)) {
+      this._setWeather(this._roll());
+      this.nextChange = this._now() + this._span();
