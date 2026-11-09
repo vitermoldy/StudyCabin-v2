@@ -50,3 +50,5 @@ const UPDATE_FRAG = /* glsl */ `
     float average = (texture2D(uTex, vUv - dx).r + texture2D(uTex, vUv - dy).r + texture2D(uTex, vUv + dx).r + texture2D(uTex, vUv + dy).r) * 0.25;
     info.g += (average - info.r) * 2.0;
     info.g *= 0.992;
+    info.r += info.g;
+    // Rings die out against the bank and at the edges of the simulated patch.
