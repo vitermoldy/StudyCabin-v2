@@ -220,3 +220,5 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
   $('cam-reset').addEventListener('click', () => rig.resetUser && rig.resetUser());
   const fs = $('fullscreen');
   if (!document.fullscreenEnabled) fs.hidden = true;
+  fs.addEventListener('click', onFullscreen);
+  document.addEventListener('fullscreenchange', () => {
