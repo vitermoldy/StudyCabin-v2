@@ -154,3 +154,5 @@ function lilies(scene) {
     if (pondE(x, z) > 0.9) continue;
     pads.push({ x, z, s: 0.12 + r() * 0.12, yaw: r() * Math.PI * 2 });
   }
+  const padGeo = new THREE.CircleGeometry(1, 18, 0.35, Math.PI * 2 - 0.45);
+  padGeo.rotateX(-Math.PI / 2);
