@@ -250,3 +250,5 @@ export class Terrain {
     const Y = new THREE.Vector3(0, 1, 0);
     spots.forEach(([x, z, scale], i) => {
       p.set(x, groundHeight(x, z) - 0.03, z);
+      q.setFromAxisAngle(Y, r() * Math.PI * 2);
+      const tall = 0.72 + r() * 0.25 + fbm(x * 0.12, z * 0.12, 2) * 0.4;
