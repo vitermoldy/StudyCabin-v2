@@ -25,3 +25,5 @@ export const ROUTES = {
       pts: [[-31, 26], [-12, 22], [-4, 25], [8, 26], [20, 24], [33, 29]],
       stops: [{ at: 1, pose: 'graze' }, { at: 3, pose: 'graze' }],
     },
+  ],
+  fox: [
