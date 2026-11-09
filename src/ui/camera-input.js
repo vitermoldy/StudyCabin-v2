@@ -76,3 +76,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
         w.poke(e.clientX, e.clientY, 0.35);
       }
       return;
+    }
+    html.classList.add('is-dragging');
