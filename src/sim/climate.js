@@ -214,3 +214,5 @@ export class Climate extends Emitter {
   }
 
   temperature(minutes = this.clock.minutes) {
+    const [mean, amp] = SEASONS[this.season].temp;
+    const diurnal = Math.cos(((minutes - 900) / 1440) * Math.PI * 2); // warmest at 15:00
