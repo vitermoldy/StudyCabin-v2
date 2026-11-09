@@ -387,3 +387,5 @@ function createWalker(name, rand, inUse) {
       const hurry = ctx.params.storm > 0.4 || ctx.params.rain > 0.5 ? 1.6 : 1;
       const ds = kind.speed * hurry * dt;
       a.s += ds;
+      a.step += (ds / kind.stride) * Math.PI * 2;
+      a.hop += ds * 7;
