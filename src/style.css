@@ -193,3 +193,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   scrollbar-width: thin; scrollbar-color: rgba(228, 229, 225, 0.25) transparent;
 }
 #panel-music { width: min(430px, calc(100vw - 2 * var(--edge))); }
+.panel[data-open="true"] {
+  opacity: 1; visibility: visible; transform: translate(-50%, 0);
