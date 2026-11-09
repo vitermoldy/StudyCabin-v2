@@ -200,3 +200,5 @@ export class Trees {
         mesh.setColorAt(i, c);
       });
       mesh.instanceMatrix.needsUpdate = true;
+      if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
+      mesh.castShadow = shadows;
