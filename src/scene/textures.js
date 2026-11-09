@@ -43,3 +43,5 @@ export function sidingTexture() {
     ctx.fillStyle = `rgb(${Math.round(150 * tone)},${Math.round(158 * tone)},${Math.round(146 * tone)})`;
     ctx.fillRect(i * bw, 0, bw, 256);
     // weathering streaks run down the board
+    for (let k = 0; k < 18; k++) {
+      ctx.fillStyle = `rgba(60,66,58,${0.04 + rand() * 0.07})`;
