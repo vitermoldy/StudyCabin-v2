@@ -34,3 +34,5 @@ const FRAG = /* glsl */ `
   ${NOISE}
 
   // Northern lights: three curtains with a bright lower edge and soft rays.
+  vec3 aurora(vec3 d, float t){
+    if (d.y < 0.015) return vec3(0.0);
