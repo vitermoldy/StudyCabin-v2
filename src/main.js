@@ -318,3 +318,5 @@ function frame(now) {
     sampleIn -= realDt;
     if (sampleIn <= 0 && wordsShown) {
       sampleIn = 0.8;
+      overlay.applyInk(world.sampleLuminance(overlay.rects()));
+    }
