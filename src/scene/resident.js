@@ -323,3 +323,5 @@ export class Resident {
   }
 
   update(dt, t, { speedUp = 1, walkOn = true } = {}) {
+    // Walking along the route
+    let moving = false;
