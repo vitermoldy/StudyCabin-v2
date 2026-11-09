@@ -472,3 +472,5 @@ function makeBird(material) {
     const wing = new THREE.Mesh(wingGeometry(side), material);
     root.add(wing);
     return { wing, side };
+  });
+  return { root, wings };
