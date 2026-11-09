@@ -128,3 +128,6 @@ export class Terrain {
         );
     };
     this.ground = new THREE.Mesh(buildGround(), mat);
+    this.ground.receiveShadow = true;
+    scene.add(this.ground);
+
