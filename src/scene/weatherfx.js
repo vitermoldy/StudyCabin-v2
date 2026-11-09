@@ -260,3 +260,5 @@ export class WeatherFX {
     this.flyU.uAmount.value = fireflies;
     const c = this.common;
     c.uTime.value = time;
+    c.uWind.value = params.wind;
+    c.uLight.value = light;
