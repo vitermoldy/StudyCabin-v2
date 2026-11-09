@@ -39,3 +39,6 @@ export function load(section, fallback) {
 
 export function save(section, value) {
   readAll()[section] = value;
+  if (!timer) timer = setTimeout(flush, 250);
+}
+
