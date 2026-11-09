@@ -52,3 +52,5 @@ const POSES = {
   sitType: (t, seat) => sitBase(seat, {
     spineX: 0.2, headX: 0.32,
     shLx: -0.62, shLz: 0.14, elL: -0.95 + 0.05 * Math.max(0, Math.sin(t * 13)),
+    shRx: -0.62, shRz: -0.14, elR: -0.95 + 0.05 * Math.max(0, Math.sin(t * 11 + 2)),
+  }),
