@@ -92,3 +92,5 @@ export class WeatherFX {
     this.snowU = { ...this.common, uAmount: { value: 0 }, uBox: { value: new THREE.Vector3(50, 22, 46) } };
     const snow = new THREE.Points(
       seeds(5000, 1, 5),
+      new THREE.ShaderMaterial({
+        uniforms: this.snowU,
