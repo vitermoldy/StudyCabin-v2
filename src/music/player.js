@@ -76,3 +76,5 @@ export class MusicPlayer extends Emitter {
         if (this.isPlaying) this.play(this.current);
         else this._cue(this.current);
       }
+    }
+    this.persist();
