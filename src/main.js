@@ -230,3 +230,5 @@ addEventListener('keydown', wake, { once: true });
 // Keyboard shortcuts (never while typing).
 addEventListener('keydown', (e) => {
   const t = e.target;
+  if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (t instanceof HTMLElement && (t.closest('input, textarea, select') || t.isContentEditable)) return;
