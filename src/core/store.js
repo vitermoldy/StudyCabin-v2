@@ -49,3 +49,4 @@ export function saveNow() {
   }
 }
 
+addEventListener('pagehide', saveNow);
