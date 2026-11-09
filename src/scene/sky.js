@@ -31,3 +31,6 @@ const FRAG = /* glsl */ `
   uniform float uTime; uniform float uWind; uniform float uFlash; uniform float uGlow; uniform float uFogAmt;
   uniform float uAurora;
   varying vec3 vDir;
+  ${NOISE}
+
+  // Northern lights: three curtains with a bright lower edge and soft rays.
