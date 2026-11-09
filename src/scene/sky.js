@@ -98,3 +98,5 @@ const FRAG = /* glsl */ `
     // Clouds: puffy lumps that catch the sun on one side, plus thin high streaks.
     vec2 drift = vec2(uTime * 0.006 * (0.25 + uWind), uTime * 0.002);
     vec2 uv = d.xz / (h + 0.16) * 1.4 + drift;
+    vec2 warp = vec2(fbm(uv * 0.6 + 4.0), fbm(uv * 0.6 + 9.0)) - 0.5;
+    float n = fbm(uv + warp * 0.8);
