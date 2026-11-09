@@ -66,3 +66,6 @@ export class CameraRig {
     this.from.target.copy(this.target);
     this.view = id;
     this.travel = this.reduced ? 1 : 0;
+    this.resetUser();
+  }
+
