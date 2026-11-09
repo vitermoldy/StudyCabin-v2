@@ -71,3 +71,5 @@ const WIND_GLSL = /* glsl */ `
   vec2 wdir = normalize(vec2(1.0, -0.35));
   float roll = sin(dot(ip.xz, wdir) * 0.3 - uTime * 1.6);
   float gust = pow(roll * 0.5 + 0.5, 2.0);
+  float flutter = sin(uTime * 3.7 + ip.x * 1.9 + ip.z * 2.3) * 0.1;
+  float s = (0.25 + gust * 0.9 + flutter) * (0.2 + uWind * 1.05);
