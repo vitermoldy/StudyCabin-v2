@@ -50,3 +50,5 @@ export class Panels extends Emitter {
       const target = (panel.dataset.focus && panel.querySelector(panel.dataset.focus)) || panel.querySelector(FOCUSABLE);
       // The panel is visible as soon as data-open is set, so it can take focus now.
       if (target) target.focus({ preventScroll: true });
+    }
+    this.emit('open', id);
