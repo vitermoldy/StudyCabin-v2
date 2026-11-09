@@ -291,3 +291,5 @@ export class World {
           const cx = Math.round((r.x + (r.w * (gx + 0.5)) / 4) * ratio);
           const cy = Math.round(H - (r.y + (r.h * (gy + 0.5)) / 3) * ratio);
           const x = clamp(cx - 6, 0, gl.drawingBufferWidth - 12);
+          const y = clamp(cy - 3, 0, H - 6);
+          gl.readPixels(x, y, 12, 6, gl.RGBA, gl.UNSIGNED_BYTE, buf);
