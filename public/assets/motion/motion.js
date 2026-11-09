@@ -246,3 +246,5 @@ function loops() {
     hostOf(el).addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') restart(el); });   // a mouse or pen, never a tap
     hostOf(el).addEventListener('focusin', e => { if (!e.target.closest('.loop-pause')) restart(el); });
   });
+}
+// one listener for every pause button: its own (m-own) toggles; a ui.js one is mirrored after ui.js ran
