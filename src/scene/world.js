@@ -201,3 +201,5 @@ export class World {
     // Fireflies follow the night and the warmth; they ease in rather than switching on.
     this.fireflies += (fireflies(wild) - this.fireflies) * (1 - Math.exp(-dt * 0.5));
     this.fx.update({
+      time: t,
+      params: p,
