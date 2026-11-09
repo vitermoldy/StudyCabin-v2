@@ -104,3 +104,6 @@ export function route(fromSpot, toSpot, from = null) {
   for (const s of steps) pts.push({ ...s });
   pts.push(hubOf(areaB, b.via[0]));
   for (const v of b.via) pts.push({ ...v });
+  pts.push({ ...b.at });
+
+  // Drop points that repeat the one before.
