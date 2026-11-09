@@ -288,3 +288,5 @@ function frame(now) {
   // The clock runs on real elapsed time, so a hidden tab catches up on return.
   const gameDt = clock.tick(realDt);
   if (gameDt > 30) jumped = true;
+  climate.update(dt, gameDt);
+  refreshActivity({ teleport: jumped });
