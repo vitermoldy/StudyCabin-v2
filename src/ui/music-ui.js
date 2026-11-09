@@ -110,3 +110,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
 
   qToggle.addEventListener('click', () => {
     const open = qToggle.getAttribute('aria-expanded') !== 'true';
+    qToggle.setAttribute('aria-expanded', String(open));
+    qList.hidden = !open;
