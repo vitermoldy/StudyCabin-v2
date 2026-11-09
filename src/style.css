@@ -412,3 +412,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
     max-height: calc(100dvh - var(--dock-h) - 96px);
     padding: var(--s-2) var(--s-4) var(--s-4);
   }
+  .panel[data-open="true"] { transform: none; }
+  .add__row { flex-direction: column; }
