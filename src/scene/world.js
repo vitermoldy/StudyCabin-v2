@@ -240,3 +240,5 @@ export class World {
   /** Raindrops ring the pond. */
   _rain(dt, rain) {
     if (!this.ripples.ok || rain < 0.05 || this.pond.ice > 0.5) return;
+    this._rainDrops += dt * rain * 30;
+    while (this._rainDrops >= 1) {
