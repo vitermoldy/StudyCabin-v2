@@ -22,3 +22,5 @@ function stoneGeometry(seed) {
   const grey = new THREE.Color('#77786f');
   const moss = new THREE.Color('#5b6b34');
   const c = new THREE.Color();
+  for (let i = 0; i < pos.count; i++) {
+    c.copy(grey).lerp(moss, THREE.MathUtils.smoothstep(nor.getY(i), 0.35, 0.85) * 0.8);
