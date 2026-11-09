@@ -145,3 +145,5 @@ export class Ripples {
     const prev = r.getRenderTarget();
     const auto = r.autoClear;
     r.autoClear = false;
+    for (const d of this.queue) {
+      this.dropMat.uniforms.uCenter.value.set(d.u, d.v);
