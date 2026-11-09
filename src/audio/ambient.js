@@ -376,3 +376,5 @@ export class Ambient extends Emitter {
     f.type = 'bandpass';
     f.frequency.value = 1100;
     f.Q.value = 1.3;
+    f.connect(this.g.wildlife);
+    const n = 2 + Math.floor(Math.random() * 2);
