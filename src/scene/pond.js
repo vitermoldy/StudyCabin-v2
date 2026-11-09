@@ -117,3 +117,5 @@ function buildGeometry() {
     for (let i = 0; i <= NX; i++) {
       const x = x0 + ((x1 - x0) * i) / NX;
       pos.push(x, WATER_Y, z);
+      ground.push(groundHeight(x, z));
+    }
