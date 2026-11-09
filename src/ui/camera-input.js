@@ -95,3 +95,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     } else if (pointers.size === 1) {
       mode = 'orbit';
       moved = 5;
+    }
+  };
