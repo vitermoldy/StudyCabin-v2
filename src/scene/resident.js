@@ -184,3 +184,5 @@ export class Resident {
       el.add(hand);
       const grip = new THREE.Group();
       grip.position.y = -0.29;
+      el.add(grip);
+      return { sh, el, grip };
