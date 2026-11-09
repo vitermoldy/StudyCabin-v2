@@ -225,3 +225,5 @@ export function booksTexture() {
 /** Soft round sprite for snow, smoke and lights. */
 export function dotTexture() {
   const [c, ctx] = canvas(64, 64);
+  const g = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+  g.addColorStop(0, 'rgba(255,255,255,1)');
