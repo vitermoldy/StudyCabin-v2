@@ -214,3 +214,6 @@ export class Trees {
       grove(broadGeo, leafMat, broad.filter((t) => !near(t)), false),
     ];
     this.count = pines.length + broad.length;
+    this._target = new THREE.Color();
+  }
+
