@@ -355,3 +355,5 @@ export class Ambient extends Emitter {
     f.Q.value = 2.5;
     f.connect(this.g.wildlife);
     for (let i = 0; i < knocks; i++) {
+      const t0 = now + i / rate;
+      const s = ctx.createBufferSource();
