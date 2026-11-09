@@ -106,3 +106,6 @@ shows a still picture and the music, timer and ambient sound still work.
 - `og:image` points at `share.jpg` (a frame of the scene); add `<link rel="canonical">` once the
   site has a domain.
 
+## Credits
+
+YouTube and YouTube Music marks: Gil Barbara's SVG Logos and Simple Icons (CC0), trademarks of
