@@ -226,3 +226,5 @@ export class Atmosphere {
     const sc = this.sun.shadow.camera;
     sc.left = -19; sc.right = 19; sc.top = 15; sc.bottom = -13; sc.near = 5; sc.far = 160;
     this.sun.shadow.bias = -0.0005;
+    this.sun.shadow.normalBias = 0.035;
+    this.sun.target.position.set(-0.5, 0, 2.5);
