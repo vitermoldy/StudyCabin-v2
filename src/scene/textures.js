@@ -214,3 +214,5 @@ export function booksTexture() {
     const h = 40 + rand() * 24;
     ctx.fillStyle = palette[Math.floor(rand() * palette.length)];
     ctx.fillRect(x, 64 - h, w - 1, h);
+    x += w;
+  }
