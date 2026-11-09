@@ -10,3 +10,5 @@ export const WORLD = {
 
 /**
  * Outdoor surfaces: snow settles on faces that look up, rain darkens and
+ * shines them. `snow` scales how much snow this surface holds.
+ */
