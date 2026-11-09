@@ -20,3 +20,5 @@ export class Cabin {
     scene.add(this.group);
     this._makeMaterials();
     this._shell();
+    this._front();
+    this._roof();
