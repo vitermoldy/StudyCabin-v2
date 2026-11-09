@@ -358,3 +358,5 @@ export class Resident {
     // The walk goes round the pond on the path, stopping now and then to look at the water.
     if (!this.path && this.pose === 'walkLoop') {
       if (this.loopPause > 0) {
+        this.loopPause -= dt;
+        this.facing = turn(this.facing, Math.atan2(POND.x - this.pos.x, POND.z - this.pos.z), 2 * dt);
