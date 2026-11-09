@@ -407,3 +407,5 @@ function createWalker(name, rand, inUse) {
     follow(dt, time, leader, gap) {
       const L = leader.a;
       if (a.state === 'away') return;
+      const target = L.state === 'away' ? a.path.length + 1 : L.s - gap;
+      const ahead = target - a.s;
