@@ -189,3 +189,5 @@ export class World {
     this.terrain.update(climate.look, { caustic });
     this.trees.update(climate.look);
     this.treeline.update({ fog: this.atmo.fogColor, snow: WORLD.uSnow.value, flash: this.flash });
+    this._grassPush(dt);
+    this._rain(dt, p.rain);
