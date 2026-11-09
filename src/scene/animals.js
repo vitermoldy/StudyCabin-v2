@@ -224,3 +224,5 @@ function buildCurve(route, reverse) {
   curve.arcLengthDivisions = (n - 1) * 24;
   const lengths = curve.getLengths(curve.arcLengthDivisions);
   const length = lengths[lengths.length - 1];
+  const stops = route.stops
+    .map((s) => ({ ...s, at: reverse ? n - 1 - s.at : s.at }))
