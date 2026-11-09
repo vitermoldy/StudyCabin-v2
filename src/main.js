@@ -218,3 +218,5 @@ mountCameraInput(document.getElementById('scene'), {
 addEventListener('pointermove', (e) => {
   if (!world || e.pointerType !== 'mouse') return;
   world.rig.setPointer((e.clientX / innerWidth) * 2 - 1, -((e.clientY / innerHeight) * 2 - 1));
+  world.setPointer(e.clientX, e.clientY, e.target === document.getElementById('scene'));
+}, { passive: true });
