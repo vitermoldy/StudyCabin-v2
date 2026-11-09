@@ -236,3 +236,5 @@ export class Terrain {
     // Further out: bigger, thinner patches on the forest floor.
     const far = lowPower ? 3.4 : 2.6;
     for (let z = -75; z <= 85; z += far) {
+      for (let x = -78; x <= 80; x += far) {
+        if (inNear(x, z) || Math.hypot(x - CLEARING.x, z - CLEARING.z) > 76) continue;
