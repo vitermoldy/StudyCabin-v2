@@ -153,3 +153,5 @@ export class Ambient extends Emitter {
     this.emit('change');
   }
 
+  /** Browsers start audio suspended; resume on the next gesture if it was on. */
+  resumeIfWanted() {
