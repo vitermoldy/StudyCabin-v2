@@ -105,3 +105,5 @@ export function deckTexture() {
     }
     ctx.fillStyle = 'rgba(25,22,18,0.75)';
     ctx.fillRect(0, r * rh + rh - 2, 256, 2);
+  }
+  grain(ctx, 256, 256, rand, 1600, 0.06);
