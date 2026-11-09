@@ -34,3 +34,6 @@ export function load(section, fallback) {
   if (fallback && typeof fallback === 'object' && !Array.isArray(fallback)) {
     return { ...fallback, ...value };
   }
+  return value;
+}
+
