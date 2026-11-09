@@ -197,3 +197,5 @@ export class Cabin {
       slab.position.set(0, RIDGE - Math.tan(alpha) * (hRun / 2) + 0.07, zc);
       slab.rotation.x = side * alpha;
       // barge boards on both gable ends
+      for (const ex of [-1, 1]) {
+        const bg = new THREE.BoxGeometry(0.06, 0.22, len);
