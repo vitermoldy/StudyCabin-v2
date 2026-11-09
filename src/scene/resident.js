@@ -244,3 +244,5 @@ export class Resident {
     const hole = new THREE.Mesh(new THREE.CircleGeometry(0.05, 16), m.guitarDark);
     hole.position.set(0.12, 0, 0.047);
     guitar.add(bodyA, bodyB, neckG, hole);
+    guitar.position.set(-0.05, -0.06, 0.24);
+    guitar.rotation.set(0, 0, 0.32);
