@@ -112,3 +112,5 @@ export const ERROR_TEXT = {
   5: 'This video cannot play in the browser player.',
   100: 'This video was removed or is private.',
   101: 'The owner does not allow this video to play outside YouTube.',
+  150: 'The owner does not allow this video to play outside YouTube.',
+  153: 'YouTube refused to play this here.',
