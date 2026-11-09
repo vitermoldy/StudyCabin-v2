@@ -494,3 +494,5 @@ function createFlocks(rand, count) {
     const z = -30 + rand() * 50;
     const y = 15 + rand() * 7;
     const speed = 6 + rand() * 2.5;
+    const size = 2 + Math.floor(rand() * 5);
+    birds.slice(0, size).forEach((b, i) => {
