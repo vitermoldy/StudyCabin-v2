@@ -78,3 +78,5 @@ export function roofTexture() {
     ctx.fillStyle = 'rgba(25,27,29,0.2)';
     ctx.fillRect(x + 4, 0, 3, 256);
   }
+  // faint rain stains
+  for (let k = 0; k < 30; k++) {
