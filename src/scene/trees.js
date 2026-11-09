@@ -148,3 +148,5 @@ export class Trees {
         const px = x + r() * cell;
         const pz = z + r() * cell;
         const roll = r();
+        const tone = 0.82 + r() * 0.34;
+        const yaw = r() * Math.PI * 2;
