@@ -50,3 +50,5 @@ export function mountDay({ clock, onJump }) {
   clock.on('speed', setSpeed);
   const scrub = $('time-scrub');
   const scrubOut = $('time-scrub-out');
+  scrub.addEventListener('input', () => {
+    const m = Number(scrub.value);
