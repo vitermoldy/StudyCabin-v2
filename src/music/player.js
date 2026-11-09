@@ -243,3 +243,5 @@ export class MusicPlayer extends Emitter {
     if (!n) return;
     let next;
     if (this.shuffle && n > 1 && dir > 0) {
+      do next = Math.floor(Math.random() * n); while (next === this.current);
+    } else {
