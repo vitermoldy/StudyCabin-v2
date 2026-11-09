@@ -219,3 +219,5 @@ export class WeatherFX {
         uniform float uTime; uniform float uScale; uniform float uAmount;
         attribute vec3 aSeed; attribute float aId;
         varying float vA; varying float vWarm;
+        void main(){
+          vec3 p = position;
