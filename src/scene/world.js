@@ -156,3 +156,5 @@ export class World {
       desk: on(spot === 'desk' && !res.path && darkness > 0.25, 1),
       screen: on(spot === 'desk' && !res.path && (activity.pose === 'sitType'), 1),
       stove: on(stoveLit, 1),
+      fire: on(at(18.5, 22.5) && p.rain < 0.2 && p.snow < 0.3 && season !== 'rainy', 1),
+      porch: on(darkness > 0.6 && (minutes >= 17 * 60 || minutes < 30), 1),
