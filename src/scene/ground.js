@@ -25,3 +25,5 @@ export function vnoise(x, y) {
   const v = yf * yf * (3 - 2 * yf);
   const a = hash(xi, yi);
   const b = hash(xi + 1, yi);
+  const c = hash(xi, yi + 1);
+  const d = hash(xi + 1, yi + 1);
