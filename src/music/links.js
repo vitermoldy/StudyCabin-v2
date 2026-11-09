@@ -22,3 +22,5 @@ export function parseLink(raw) {
   } catch {
     throw new LinkError('That is not a link. Copy it from the address bar or the Share button.');
   }
+  const host = url.hostname.toLowerCase().replace(/^(www\.|m\.)/, '');
+  const known = ['youtube.com', 'music.youtube.com', 'youtu.be', 'youtube-nocookie.com'];
