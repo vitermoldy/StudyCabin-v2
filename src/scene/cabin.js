@@ -461,3 +461,5 @@ export class Cabin {
 
   _lights() {
     const mk = (color, x, y, z, distance) => {
+      const l = new THREE.PointLight(color, 0, distance, 2);
+      l.position.set(x, y, z);
