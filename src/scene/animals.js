@@ -628,3 +628,5 @@ function createOwl(rand) {
       const want = owlOut(ctx);
       if (ctx.jumped) {
         if (want) perch();
+        else if (o.state !== 'away') gone();
+        return;
