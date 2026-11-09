@@ -106,3 +106,5 @@ export class Terrain {
           vec3 soil = uSoil * (0.85 + vMix.z * 0.3);
           soil = mix(soil, soil * 0.6, vShade);
           float moss = smoothstep(0.42, 0.72, vMix.z) * vShade;
+          soil = mix(soil, uVeg * 0.4, moss * 0.65);
+          vec3 earth = mix(soil, uMud, clamp(vMix.x + uWet * 0.3, 0.0, 1.0));
