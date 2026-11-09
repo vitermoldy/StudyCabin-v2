@@ -273,3 +273,5 @@ export class Terrain {
     const col = [];
     const nrm = [];
     const fronds = 7;
+    const segs = 8;
+    for (let f = 0; f < fronds; f++) {
