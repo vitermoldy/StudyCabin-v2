@@ -59,3 +59,5 @@ const FRAG = /* glsl */ `
     float g = dot(d, n);
     float band = exp(-g * g / 0.018);
     vec2 q = vec2(atan(d.x, d.z) * 2.2, g * 9.0);
+    float cloud = fbm(q * 2.0 + 3.0);
+    float dust = smoothstep(0.45, 0.7, fbm(q * 3.4 + 11.0)) * exp(-g * g / 0.004);
