@@ -188,3 +188,5 @@ export class Trees {
     const c = new THREE.Color();
     const Y = new THREE.Vector3(0, 1, 0);
     const grove = (geo, mat, list, shadows) => {
+      const mesh = new THREE.InstancedMesh(geo, mat, Math.max(1, list.length));
+      mesh.count = list.length;
