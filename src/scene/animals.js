@@ -710,3 +710,5 @@ export class Animals {
    * The first frame: if the hour suits one of them, someone is already standing in the clearing,
    * so the opening view (and the still frame under reduced motion) shows an animal.
    */
+  _open(ctx) {
+    this.opened = true;
