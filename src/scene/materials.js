@@ -44,3 +44,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
         roughnessFactor = mix(roughnessFactor, 0.85, snowAmt);`,
       );
   };
+  material.userData.weathered = local;
+  return material;
