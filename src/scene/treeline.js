@@ -88,3 +88,5 @@ export class Treeline {
         vertexShader: /* glsl */ `
           attribute float aT;
           varying float vT;
+          varying vec2 vXZ;
+          void main() {
