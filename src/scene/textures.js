@@ -248,3 +248,5 @@ export function metricBoxUV(geo, w, h, d) {
   const perFace = uv.count / 6;
   for (let f = 0; f < 6; f++) {
     for (let i = 0; i < perFace; i++) {
+      const idx = f * perFace + i;
+      uv.setXY(idx, uv.getX(idx) * dims[f][0], uv.getY(idx) * dims[f][1]);
