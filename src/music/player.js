@@ -305,3 +305,5 @@ export class MusicPlayer extends Emitter {
         if (list.length && at >= 0 && at < list.length - 1) return; // YouTube moves to the next song itself
       }
       this._advance(1);
+      return;
+    }
