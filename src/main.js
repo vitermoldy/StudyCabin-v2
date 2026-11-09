@@ -220,3 +220,6 @@ addEventListener('pointermove', (e) => {
   world.rig.setPointer((e.clientX / innerWidth) * 2 - 1, -((e.clientY / innerHeight) * 2 - 1));
   world.setPointer(e.clientX, e.clientY, e.target === document.getElementById('scene'));
 }, { passive: true });
+document.addEventListener('pointerleave', () => world && world.setPointer(0, 0, false));
+
+// Audio needs a gesture before it may start.
