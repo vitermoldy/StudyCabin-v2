@@ -109,3 +109,5 @@ function buildGeometry() {
   const z0 = POND.z - POND.rz * 1.2;
   const z1 = POND.z + POND.rz * 1.2;
   const NX = 96;
+  const NZ = 64;
+  const pos = [];
