@@ -333,3 +333,5 @@ export class Terrain {
 
     const r = rng(57);
     const spots = [];
+    const max = lowPower ? 320 : 720;
+    for (let i = 0; i < 9000 && spots.length < max; i++) {
