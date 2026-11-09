@@ -75,3 +75,5 @@ function broadleafGeometry() {
   }
   const trunkG = paint(mergeGeometries(trunkParts), 0.38, 0.3, 0.24);
   const crownG = paint(mergeGeometries(crownParts), 1, 1, 1, 0.5);
+  // Mark crown vertices so the shader can tint only the leaves.
+  const leafT = new Float32Array(trunkG.attributes.position.count).fill(0);
