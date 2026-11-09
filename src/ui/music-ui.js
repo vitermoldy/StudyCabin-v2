@@ -216,3 +216,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     });
   }
 
+  function render() {
+    const q = player.queue;
