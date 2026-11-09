@@ -199,3 +199,5 @@ export class Terrain {
             ${WIND_GLSL}
             float h2 = hh * hh;
             vec3 windW = vec3(wdir.x, 0.0, wdir.y) * s * h2 * 0.85 - vec3(0.0, s * h2 * 0.22, 0.0);
+            // the blades part round the pointer
+            vec2 away = ip.xz - uPush.xy;
