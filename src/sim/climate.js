@@ -153,3 +153,6 @@ export class Climate extends Emitter {
       this.nextChange = this._now() + this._span();
     }
     if (changed) this.emit('season', id);
+    this.persist();
+  }
+
