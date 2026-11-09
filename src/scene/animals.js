@@ -345,3 +345,5 @@ function createWalker(name, rand, inUse) {
     root: model.root,
     plan,
     leave,
+    get visible() {
+      return model.root.visible;
