@@ -68,3 +68,5 @@ export function roofTexture() {
   ctx.fillStyle = '#7b7f81';
   ctx.fillRect(0, 0, 256, 256);
   grain(ctx, 256, 256, rand, 900, 0.05);
+  const seams = 4;
+  for (let i = 0; i < seams; i++) {
