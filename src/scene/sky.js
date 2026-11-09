@@ -266,3 +266,5 @@ export class Atmosphere {
     Atmosphere.sunDirection((minutes + 720) % 1440, season, this.moonDir);
     this.moonDir.x *= -1; // the moon crosses the other way round, so it is not a second sun
 
+    const sy = this.sunDir.y;
+    const day = smoothstep(-0.1, 0.14, sy);
