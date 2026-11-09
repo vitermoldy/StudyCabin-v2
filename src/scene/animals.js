@@ -34,3 +34,5 @@ function blob(material, [sx, sy, sz], [x, y, z], tilt = 0) {
   return mesh;
 }
 
+function eyes(head, x, y, z, r) {
+  for (const side of [-1, 1]) {
