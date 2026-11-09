@@ -71,3 +71,5 @@ export class WeatherFX {
             vec3 vel = vec3(uWind * 6.0, -14.0 - aSeed.z * 4.0, -uWind * 1.5);
             vec3 p = aSeed * uBox + vel * uTime;
             p = wrapBox(p, uCenter, uBox);
+            p -= normalize(vel) * aEnd * (0.32 + uAmount * 0.3);
+            float on = step(aId, uAmount) * (1.0 - insideCabin(p)) * step(-0.2, p.y);
