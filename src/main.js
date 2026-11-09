@@ -26,3 +26,6 @@ const focus = new FocusTimer();
 const ambient = new Ambient();
 const music = new MusicPlayer(document.getElementById('yt-host'));
 const overlay = new Overlay({ reducedMotion: reduced });
+const panels = new Panels();
+
+const prefs = load('view', { view: FIRST_VIEW, words: true });
