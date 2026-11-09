@@ -181,3 +181,5 @@ export function printTexture() {
   ctx.fillStyle = '#c98f5a';
   ctx.beginPath();
   ctx.arc(170, 78, 18, 0, Math.PI * 2);
+  ctx.fill();
+  // three ridges of firs, paler with distance
