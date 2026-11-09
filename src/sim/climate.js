@@ -50,3 +50,6 @@ export const SEASONS = {
     snow: 1, petals: 0, leaves: 0, warmth: 0.3,
     odds: { clear: 0.2, cloudy: 0.25, fog: 0.15, snow: 0.4 },
     line: 'Short days, snow on the roof, ice on the pond, the stove lit by four.',
+  },
+};
+
