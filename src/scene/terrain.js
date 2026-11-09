@@ -376,3 +376,5 @@ export class Terrain {
     this.uniforms.uVeg.value.setRGB(look.grass[0], look.grass[1], look.grass[2], THREE.SRGBColorSpace);
     this.grass.material.color.setRGB(look.grass[0], look.grass[1], look.grass[2], THREE.SRGBColorSpace);
     this.ferns.material.color.setRGB(look.fern[0], look.fern[1], look.fern[2], THREE.SRGBColorSpace);
+  }
+}
