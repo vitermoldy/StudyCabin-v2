@@ -378,3 +378,5 @@ export class Ambient extends Emitter {
     f.Q.value = 1.3;
     f.connect(this.g.wildlife);
     const n = 2 + Math.floor(Math.random() * 2);
+    for (let i = 0; i < n; i++) {
+      const t0 = now + i * (0.5 + Math.random() * 0.25);
