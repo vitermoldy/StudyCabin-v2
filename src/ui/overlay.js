@@ -71,3 +71,6 @@ export class Overlay {
       const r = el.getBoundingClientRect();
       return { x: r.left, y: r.top + r.height * 0.15, w: Math.max(1, r.width), h: Math.max(1, r.height * 0.7) };
     });
+  }
+
+  /**
