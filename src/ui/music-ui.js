@@ -49,3 +49,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const qLabel = $('queue-label');
   const nowTitle = $('now-title');
   const nowSub = $('now-sub');
+  const nowSrc = $('now-src');
+  const openMusic = $('open-music');
