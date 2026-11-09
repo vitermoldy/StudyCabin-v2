@@ -128,3 +128,5 @@ export function mountSound({ ambient }) {
   const volOut = $('amb-vol-out');
   const err = $('amb-error');
   const mix = $('amb-mix');
+  onBtn.addEventListener('click', () => ambient.setEnabled(!ambient.enabled));
+  vol.addEventListener('input', () => ambient.setVolume(Number(vol.value) / 100));
