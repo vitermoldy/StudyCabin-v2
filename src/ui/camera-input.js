@@ -70,3 +70,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     }
     if (moved < 5) return;
     if (mode === 'ripple') {
+      const now = performance.now();
+      if (now - lastRipple > 30) {
