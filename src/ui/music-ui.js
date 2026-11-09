@@ -211,3 +211,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
         return;
       }
       const btns = li.querySelectorAll('.qrow__tools .icon-btn');
+      const target = btns[toolIndex] && !btns[toolIndex].disabled ? btns[toolIndex] : li.querySelector('.qrow__main');
+      target.focus();
