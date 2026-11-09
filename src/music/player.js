@@ -45,3 +45,5 @@ export class MusicPlayer extends Emitter {
       if (playNow || this.current < 0) this.play(dup);
       throw new LinkError(this.current === dup ? 'That link is already playing.' : 'That link is already in the queue.');
     }
+    const item = { id: newId(), ...parsed, title: '', author: '', thumb: '', status: 'ready', error: '' };
+    this.queue.push(item);
