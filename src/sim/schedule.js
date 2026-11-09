@@ -56,3 +56,5 @@ export function entryAt(minutes) {
  * @param {'focus'|'break'|null} focusPhase  set while the focus timer runs
  */
 export function activityAt(minutes, conditions, focusPhase = null) {
+  const base = entryAt(minutes);
+  // The timer only takes over while the resident is awake.
