@@ -79,3 +79,5 @@ const FRAG = /* glsl */ `
 
     // Clear over the floor at the edge, peat-dark in the middle.
     float depth = max(vDepth, 0.0);
+    float absorb = 1.0 - exp(-depth * 2.4);
+    vec3 body = mix(uShallow, uDeep, smoothstep(0.05, 0.9, depth)) * uLight;
