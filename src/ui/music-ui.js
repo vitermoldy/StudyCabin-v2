@@ -72,3 +72,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     try {
       const item = player.add(input.value);
       input.value = '';
+      toast(item.kind === 'playlist' ? 'Playlist added to the queue.' : 'Added to the queue.');
+    } catch (ex) {
