@@ -125,3 +125,6 @@ export class Ambient extends Emitter {
     this.thunderBus = gain(1);
     this.thunderBus.connect(this.master);
     return true;
+  }
+
+  /** Turn sound on or off. Must run from a click or key press the first time. */
