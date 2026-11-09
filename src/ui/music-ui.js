@@ -194,3 +194,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     };
     tool('i-up', `Move ${titleOf(item)} up`, () => { player.move(i, -1); focusRow(i - 1, 0); }, i === 0);
     tool('i-down', `Move ${titleOf(item)} down`, () => { player.move(i, 1); focusRow(i + 1, 1); }, i === player.queue.length - 1);
+    tool('i-remove', `Remove ${titleOf(item)}`, () => {
+      player.remove(i);
