@@ -695,3 +695,5 @@ export class Animals {
     // The doe brings her fawn in spring and summer.
     this._onPlan = (walker) => {
       this.recent.unshift(walker);
+      if (walker.name === 'doe' && (this.season === 'spring' || this.season === 'summer') && rand() < 0.75) {
+        const fawn = this.byName.fawn;
