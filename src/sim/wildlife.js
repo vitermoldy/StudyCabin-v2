@@ -66,3 +66,5 @@ export function allTrails() {
 const h = (hh, mm = 0) => hh * 60 + mm;
 
 /** 1 inside [a, b] (game minutes, may wrap past midnight), easing out over `fade` minutes. */
+function band(m, a, b, fade = 40) {
+  const inside = a <= b ? m >= a && m <= b : m >= a || m <= b;
