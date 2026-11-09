@@ -197,3 +197,5 @@ export function mountFocus({ focus }) {
     $('focus-done').textContent = focus.done
       ? `${focus.done} focus ${focus.done === 1 ? 'block' : 'blocks'} finished today.`
       : 'No focus blocks finished today.';
+    dockLabel.textContent = focus.running ? remaining : 'Focus';
+    document.title = focus.running ? `${remaining} ${focus.phaseLabel.toLowerCase()} · StudyCabin` : baseTitle;
