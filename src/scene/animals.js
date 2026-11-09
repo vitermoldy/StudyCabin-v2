@@ -347,3 +347,5 @@ function createWalker(name, rand, inUse) {
     leave,
     get visible() {
       return model.root.visible;
+    },
+    get position() {
