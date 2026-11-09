@@ -7,3 +7,5 @@ const OUTFIT = {
   summer: '#e4ded2',
   spring: '#9ba78b',
   rainy: '#b8954f',
+  autumn: '#a6604a',
+  winter: '#4d5154',
