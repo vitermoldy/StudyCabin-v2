@@ -195,3 +195,5 @@ function counts() {
   addEventListener('beforeprint', () => items.forEach(el => el.__mCount.show()));
 }
 
+/* ---------------------------------------------------------------- loops inside cards */
+const ICON_PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="4.25" y="3.25" width="2.75" height="9.5" rx="0.9"/><rect x="9" y="3.25" width="2.75" height="9.5" rx="0.9"/></svg>';
