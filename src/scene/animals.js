@@ -691,3 +691,5 @@ export class Animals {
     this.owl = createOwl(rand);
     this.group.add(this.owl.root);
     this.opened = false;
+    this.recent = [];
+    // The doe brings her fawn in spring and summer.
