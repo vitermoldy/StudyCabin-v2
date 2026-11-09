@@ -356,3 +356,5 @@ function enter() {
     done();
   };
   // the fonts first (a line set in the fallback face breaks elsewhere), 250ms at most: the words are
+  // hidden meanwhile, so nothing is seen twice
+  Promise.race([document.fonts?.ready ?? Promise.resolve(), new Promise(r => setTimeout(r, 250))]).then(() => {
