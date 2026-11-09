@@ -104,3 +104,5 @@ export class WeatherFX {
           void main(){
             vec3 vel = vec3(uWind * 1.8, -0.9 - aSeed.y * 0.6, -uWind * 0.4);
             vec3 p = aSeed * uBox + vel * uTime;
+            p.x += sin(uTime * 0.7 + aSeed.z * 31.0) * 0.6;
+            p.z += cos(uTime * 0.5 + aSeed.x * 23.0) * 0.5;
