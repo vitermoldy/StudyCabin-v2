@@ -259,3 +259,5 @@ export class World {
     if (!this.ripples.ok || this.pond.ice > 0.5) return false;
     const ndc = new THREE.Vector2((x / this.width) * 2 - 1, -(y / this.height) * 2 + 1);
     this.raycaster.setFromCamera(ndc, this.camera);
+    const hit = this.raycaster.ray.intersectPlane(this.waterPlane, tmpHit);
+    if (!hit || pondE(hit.x, hit.z) > 0.98 || groundHeight(hit.x, hit.z) > WATER_Y - 0.02) return false;
