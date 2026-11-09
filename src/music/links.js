@@ -114,3 +114,4 @@ export const ERROR_TEXT = {
   101: 'The owner does not allow this video to play outside YouTube.',
   150: 'The owner does not allow this video to play outside YouTube.',
   153: 'YouTube refused to play this here.',
+};
