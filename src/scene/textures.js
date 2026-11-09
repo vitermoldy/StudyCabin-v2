@@ -137,3 +137,5 @@ export function floorTexture() {
 /** Vertical wood panelling for the inside walls. */
 export function panelTexture() {
   const [c, ctx] = canvas(256, 256);
+  const rand = rng(53);
+  const n = 5;
