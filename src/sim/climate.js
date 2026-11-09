@@ -224,3 +224,5 @@ export class Climate extends Emitter {
     return this.params.rain > 0.35 || this.params.snow > 0.4 || this.params.storm > 0.3 || this.weather === 'rain' || this.weather === 'storm' || this.weather === 'snow';
   }
 
+  describe() {
+    const w = this.weather;
