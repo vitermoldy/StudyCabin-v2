@@ -270,3 +270,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   content: ""; position: absolute; left: 6px; top: 10px; width: 44px; height: 24px; border-radius: 12px;
   background: rgba(228, 229, 225, 0.2); transition: background-color 180ms var(--ease);
 }
+.switch::after {
+  content: ""; position: absolute; left: 9px; top: 13px; width: 18px; height: 18px; border-radius: 50%;
