@@ -186,3 +186,5 @@ export class Trees {
     const s = new THREE.Vector3();
     const p = new THREE.Vector3();
     const c = new THREE.Color();
+    const Y = new THREE.Vector3(0, 1, 0);
+    const grove = (geo, mat, list, shadows) => {
