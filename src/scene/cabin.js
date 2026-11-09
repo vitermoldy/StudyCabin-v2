@@ -67,3 +67,6 @@ export class Cabin {
     const mesh = this._m(new RoundedBoxGeometry(w, h, d, 3, r), mat, opts);
     mesh.position.set(x, y, z);
     return mesh;
+  }
+
+  _cyl(mat, rt, rb, h, x, y, z, seg = 16, opts) {
