@@ -228,3 +228,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 }
 .link-btn:hover { text-decoration-color: currentColor; transition-duration: 150ms; }
 .icon-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; color: var(--ink);
