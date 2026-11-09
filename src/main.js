@@ -42,3 +42,5 @@ async function startWorld() {
   w.onShaderFail = () => {
     world = null;
     showStill();
+  };
+  canvas.addEventListener('webglcontextlost', (e) => {
