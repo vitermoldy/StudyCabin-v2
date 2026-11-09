@@ -424,3 +424,5 @@ export class Cabin {
       const g = new THREE.Group();
       g.position.set(c.x, 0, c.z);
       this.group.add(g);
+      this._cb(deckWood, 0.66, 0.05, 0.6, 0, FLOOR + 0.36, 0.02, { parent: g });
+      const back = this._cb(deckWood, 0.66, 0.62, 0.05, 0, FLOOR + 0.66, -0.3, { parent: g });
