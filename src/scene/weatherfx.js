@@ -149,3 +149,5 @@ export class WeatherFX {
               vRot = uTime * (1.2 + aSeed.x * 2.5) + aSeed.z * 6.28;
               vMix = aSeed.y;
               gl_PointSize = min((0.09 + aSeed.z * 0.07) * uScale / max(-mv.z, 0.5), 16.0);
+              gl_Position = projectionMatrix * mv;
+            }`,
