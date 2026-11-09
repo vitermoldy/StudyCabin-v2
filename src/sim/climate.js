@@ -104,3 +104,5 @@ export class Climate extends Emitter {
     this.look = {
       ...Object.fromEntries(LOOK_COLOURS.map((k) => [k, hexToRgb(s[k])])),
       snow: s.snow,
+      petals: s.petals,
+      leaves: s.leaves,
