@@ -63,3 +63,6 @@ export class Ambient extends Emitter {
     this.noise = buf;
 
     this.master = ctx.createGain();
+    this.master.gain.value = 0;
+    this.master.connect(ctx.destination);
+
