@@ -254,3 +254,5 @@ addEventListener('keydown', (e) => {
   } else if (world && (k === '+' || k === '=' || k === '-' || k === '_')) {
     world.rig.zoomBy(k === '+' || k === '=' ? 0.85 : 1.18);
     needsStill = true;
+  } else if (world && k === 'r') {
+    world.rig.resetUser();
