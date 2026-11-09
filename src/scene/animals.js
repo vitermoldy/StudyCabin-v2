@@ -515,3 +515,5 @@ function createFlocks(rand, count) {
     });
   }
 
+  return {
+    group,
