@@ -181,3 +181,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   bottom: calc(var(--edge) + var(--dock-h) + 10px);
   width: min(440px, calc(100vw - 2 * var(--edge)));
   max-height: calc(100vh - var(--dock-h) - 2 * var(--edge) - 84px);
+  max-height: calc(100dvh - var(--dock-h) - 2 * var(--edge) - 84px);
+  overflow-y: auto; overscroll-behavior: contain;
