@@ -487,3 +487,6 @@ function createFlocks(rand, count) {
     b.root.traverse((o) => { o.castShadow = false; });
     group.add(b.root);
   });
+  let wait = 6;
+
+  function launch() {
