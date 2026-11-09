@@ -103,3 +103,5 @@ export class Ambient extends Emitter {
     chain(src(0.7), filter('lowpass', 260), this.g.rainLow, this.master);
     this.windFilter = filter('bandpass', 420, 1.3);
     chain(src(3.1), this.windFilter, this.g.wind, this.master);
+    chain(src(1.7), filter('lowpass', 170), this.g.fireLow, this.master);
+    this.g.wildlife.connect(this.master);
