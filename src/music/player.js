@@ -310,3 +310,5 @@ export class MusicPlayer extends Emitter {
     this.emit('change');
   }
 
+  _onError(code) {
+    const item = this.item;
