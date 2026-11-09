@@ -278,3 +278,6 @@ export class Cabin {
       s.scale.set(1, 0.8, 1);
     }
     // pendants over the island and the table
+    for (const [x, z] of [[I.x, I.z], [T.x, T.z]]) this._pendant(x, z, this.shades.kitchen);
+  }
+
