@@ -168,3 +168,5 @@ function sample(table, y, key, out) {
 }
 
 const SUN_LOW = C('#ffa868');
+const SUN_HIGH = C('#fff0d2');
+const MOON_LIGHT = C('#9cc0b8');
