@@ -282,3 +282,5 @@ export class Ambient extends Emitter {
       o.frequency.exponentialRampToValueAtTime(base * (1.15 + Math.random() * 0.3), t0 + 0.07);
       g.gain.setValueAtTime(0.0001, t0);
       g.gain.exponentialRampToValueAtTime(0.045 * level, t0 + 0.015);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.09);
+      o.connect(g).connect(this.g.wildlife);
