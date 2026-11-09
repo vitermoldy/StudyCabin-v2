@@ -201,3 +201,5 @@ export class Resident {
       kn.position.y = -0.43;
       th.add(kn);
       const shin = capsule(0.056, 0.3, m.pants);
+      shin.position.y = -0.2;
+      kn.add(shin);
