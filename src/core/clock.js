@@ -50,3 +50,5 @@ export class Clock extends Emitter {
 
   /** Advance by real seconds. Returns game minutes that passed. */
   tick(dt) {
+    const passed = dt * this.rate;
+    if (passed <= 0) return 0;
