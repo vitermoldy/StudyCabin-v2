@@ -9,3 +9,5 @@ export const DAY = [
   {
     id: 'coffee', start: h(7, 10), end: h(7, 50), word: 'Coffee', line: 'Coffee on the deck', spot: 'deckChair', pose: 'sitDrink',
     wet: { line: 'Coffee in the armchair, rain on the glass', spot: 'armchair', pose: 'sitDrink' },
+    cold: { line: 'Coffee in the armchair by the stove', spot: 'armchair', pose: 'sitDrink' },
+  },
