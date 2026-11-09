@@ -293,3 +293,5 @@ export class World {
           const x = clamp(cx - 6, 0, gl.drawingBufferWidth - 12);
           const y = clamp(cy - 3, 0, H - 6);
           gl.readPixels(x, y, 12, 6, gl.RGBA, gl.UNSIGNED_BYTE, buf);
+          let blk = 0;
+          for (let i = 0; i < buf.length; i += 4) {
