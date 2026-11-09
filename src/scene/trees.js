@@ -210,3 +210,5 @@ export class Trees {
     this.meshes = [
       grove(pineGeo, pineMat, pines.filter(near), true),
       grove(pineGeo, pineMat, pines.filter((t) => !near(t)), false),
+      grove(broadGeo, leafMat, broad.filter(near), true),
+      grove(broadGeo, leafMat, broad.filter((t) => !near(t)), false),
