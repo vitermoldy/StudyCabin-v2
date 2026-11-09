@@ -64,3 +64,5 @@ export class Clock extends Emitter {
       this.emit('minute', whole);
     }
     this._saveIn -= dt;
+    if (this._saveIn <= 0) {
+      this._saveIn = 5;
