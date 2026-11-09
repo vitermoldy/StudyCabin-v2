@@ -22,3 +22,5 @@ const FIRST_VIEW = 'clearing';
 // ------------------------------------------------------------ simulation
 const clock = new Clock();
 const climate = new Climate(clock);
+const focus = new FocusTimer();
+const ambient = new Ambient();
