@@ -541,3 +541,5 @@ function createFlocks(rand, count) {
           b.root.visible = false;
         }
       }
+    },
+  };
