@@ -30,3 +30,6 @@ export class Clock extends Emitter {
     this.speed = saved && saved.speed in SPEEDS ? saved.speed : 'normal';
     this._lastMinute = Math.floor(this.minutes);
     this._saveIn = 0;
+  }
+
+  get rate() {
