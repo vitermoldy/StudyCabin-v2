@@ -168,3 +168,5 @@ export class Resident {
       const sh = new THREE.Group();
       sh.position.set(0.2 * side, -0.02, 0);
       this.chest.add(sh);
+      const up = capsule(0.052, 0.2, m.top);
+      up.position.y = -0.14;
