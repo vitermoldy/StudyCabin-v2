@@ -324,3 +324,5 @@ export class MusicPlayer extends Emitter {
     setTimeout(() => {
       if (this.current !== failed) return;
       const others = this.queue.some((q, i) => i !== failed && q.status !== 'error');
+      if (others) this._advance(1);
+    }, 1800);
