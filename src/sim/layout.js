@@ -27,3 +27,5 @@ export const FURNITURE = {
   nightR: { x: 5.78, z: -2.72 },
   desk: { x: 5.6, z: 2.48, w: 1.45, d: 0.66 },
   deckChair: { x: -4.2, z: 4.95 },
+  deckChair2: { x: -2.9, z: 4.95 },
+  deckTable: { x: 4.85, z: 5.05 },
