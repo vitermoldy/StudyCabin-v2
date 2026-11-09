@@ -146,3 +146,5 @@ export class Trees {
     for (let z = CLEARING.z - REACH; z < CLEARING.z + REACH; z += cell) {
       for (let x = CLEARING.x - REACH; x < CLEARING.x + REACH; x += cell) {
         const px = x + r() * cell;
+        const pz = z + r() * cell;
+        const roll = r();
