@@ -603,3 +603,5 @@ function createOwl(rand) {
     o.t = 0;
     o.state = state;
     m.root.visible = true;
+    m.wings.forEach(({ wing }) => { wing.visible = true; });
+  }
