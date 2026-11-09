@@ -6,3 +6,5 @@ import { Climate, SEASONS } from './sim/climate.js';
 import { activityAt, isOutside } from './sim/schedule.js';
 import { frogs } from './sim/wildlife.js';
 import { FocusTimer } from './sim/focus.js';
+import { Ambient } from './audio/ambient.js';
+import { MusicPlayer } from './music/player.js';
