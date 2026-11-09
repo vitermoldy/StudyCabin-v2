@@ -97,3 +97,6 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
       moved = 5;
     }
   };
+  canvas.addEventListener('pointerup', end);
+  canvas.addEventListener('pointercancel', end);
+
