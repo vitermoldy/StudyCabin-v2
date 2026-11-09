@@ -222,3 +222,5 @@ export class Cabin {
     this._bx(deckWood, DECK.x0, DECK.x0 + 0.06, 0.05, FLOOR - 0.1, DECK.z0, DECK.z1);
     this._bx(deckWood, DECK.x1 - 0.06, DECK.x1, 0.05, FLOOR - 0.1, DECK.z0, DECK.z1);
     for (let x = DECK.x0 + 0.4; x < DECK.x1; x += 2.4) {
+      this._bx(found, x - 0.07, x + 0.07, -0.3, FLOOR - 0.1, DECK.z1 - 0.35, DECK.z1 - 0.21);
+    }
