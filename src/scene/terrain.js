@@ -285,3 +285,5 @@ export class Terrain {
         const k = Math.round(t * segs);
         const w = 0.12 * L * Math.pow(Math.sin(Math.PI * Math.min(1, t * 1.08)), 0.7) * (k % 2 ? 1 : 0.6);
         const r0 = L * t;
+        const y = L * (rise * t - 0.78 * t * t);
+        return [dx * r0 - dz * w * side, Math.max(0, y), dz * r0 + dx * w * side];
