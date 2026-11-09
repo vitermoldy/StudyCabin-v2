@@ -489,3 +489,5 @@ export class Cabin {
     for (const k of Object.keys(this.target)) {
       const rate = k === 'door' ? 5 : k === 'sleeping' ? 2.4 : 2.2;
       s[k] = damp(s[k], this.target[k], rate, dt);
+    }
+    const flick = (seed) => 0.86 + Math.sin(time * 9.1 + seed) * 0.05 + Math.sin(time * 23.7 + seed * 3) * 0.05 + Math.sin(time * 4.3 + seed) * 0.04;
