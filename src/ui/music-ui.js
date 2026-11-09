@@ -241,3 +241,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     state.hidden = !msg;
 
     // Now playing
+    if (item) {
+      nowTitle.textContent = item.kind === 'playlist' && player.nowTitle ? player.nowTitle : titleOf(item);
