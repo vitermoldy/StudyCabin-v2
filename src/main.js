@@ -348,3 +348,5 @@ function frame(now) {
 // ------------------------------------------------------------ boot
 overlay.setWord(activity.word);
 overlay.setTime(clock.minutes);
+{
+  const s = storyText();
