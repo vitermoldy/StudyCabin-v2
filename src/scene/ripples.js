@@ -85,3 +85,5 @@ export class Ripples {
     this.quad.frustumCulled = false;
     this.scene.add(this.quad);
     this.dropMat = new THREE.ShaderMaterial({
+      uniforms: { uTex: { value: null }, uCenter: { value: new THREE.Vector2() }, uRadius: { value: 0.02 }, uStrength: { value: 0.5 } },
+      vertexShader: QUAD_VERT,
