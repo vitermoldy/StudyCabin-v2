@@ -201,3 +201,5 @@ export class Atmosphere {
       uAurora: { value: 0 },
     };
     const mat = new THREE.ShaderMaterial({
+      uniforms: this.uniforms,
+      vertexShader: VERT,
