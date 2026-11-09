@@ -92,3 +92,6 @@ export class FocusTimer extends Emitter {
   skip() {
     this._advancePhase(this.running);
     this._commit();
+  }
+
+  _advancePhase(keepRunning) {
