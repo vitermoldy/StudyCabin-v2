@@ -151,3 +151,5 @@ export function panelTexture() {
     ctx.fillStyle = 'rgba(50,32,20,0.45)';
     ctx.fillRect(Math.round(i * w), 0, 1, 256);
   }
+  grain(ctx, 256, 256, rand, 800, 0.04);
+  return finish(c, { repeat: [1 / 1.4, 1 / 1.4] });
