@@ -141,3 +141,5 @@ function makeFox() {
   return { root, body, neck, head, legs, tail, ears: null };
 }
 
+function makeHare() {
+  const fur = coat('#a8865e');
