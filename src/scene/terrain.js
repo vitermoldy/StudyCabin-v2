@@ -69,3 +69,5 @@ const CAUSTIC = /* glsl */ `
 const WIND_GLSL = /* glsl */ `
   vec3 ip = (instanceMatrix * vec4(position, 1.0)).xyz;
   vec2 wdir = normalize(vec2(1.0, -0.35));
+  float roll = sin(dot(ip.xz, wdir) * 0.3 - uTime * 1.6);
+  float gust = pow(roll * 0.5 + 0.5, 2.0);
