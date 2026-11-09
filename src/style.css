@@ -420,3 +420,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   .toast { top: calc(var(--edge) + 52px); max-width: calc(100vw - 2 * var(--edge)); }
 }
 @media (prefers-reduced-motion: reduce) {
+  .panel, .panel[data-open="true"] { transform: translate(-50%, 0); transition: opacity 120ms linear, visibility 0s; }
+  .chip:active, .dock__btn:active, .dock__tab:active, .icon-btn:active { transform: none; }
