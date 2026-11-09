@@ -40,3 +40,6 @@ export function parseLink(raw) {
   const unplayableList = listId && (/^RD/.test(listId) || listId === 'LL' || listId === 'WL' || /^LM$/.test(listId));
   if (unplayableList) {
     if (videoId) listId = null;
+    else throw new LinkError('Mixes and private lists cannot play outside YouTube. Paste a song, an album or a public playlist.');
+  }
+
