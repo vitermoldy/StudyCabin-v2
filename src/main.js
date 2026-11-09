@@ -70,3 +70,5 @@ function inkFromPoster() {
     try {
       const W = innerWidth;
       const H = innerHeight;
+      const c = document.createElement('canvas');
+      c.width = W;
