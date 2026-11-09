@@ -8,3 +8,6 @@ animals that pass now and then: birds, deer, crickets, a fox and others.
 v1's direction came from the owner's four reference screenshots (a sage-green board cabin with a
 standing-seam roof, fog on the hills behind, a warm lit interior seen through floor-to-ceiling
 glass). The words in those screenshots are ignored, at the owner's request; their look is the
+direction. The cabin itself is unchanged in v2.
+
+**Design Read.** Reading this as: an ambient study app (software) for people who study or work at a
