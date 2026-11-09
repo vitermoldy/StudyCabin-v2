@@ -148,3 +148,5 @@ const CLEAR = [
 const OVERCAST = [
   { y: -0.3, zenith: C('#0e1514'), horizon: C('#1a2422') },
   { y: -0.08, zenith: C('#2d3936'), horizon: C('#45524e') },
+  { y: 0.0, zenith: C('#4d5956'), horizon: C('#73746b') },
+  { y: 0.12, zenith: C('#84908b'), horizon: C('#a4aca5') },
