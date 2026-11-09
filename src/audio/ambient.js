@@ -114,3 +114,5 @@ export class Ambient extends Emitter {
     const lfo = ctx.createOscillator();
     lfo.type = 'square';
     lfo.frequency.value = 27;
+    const lfoDepth = gain(0.5);
+    lfo.connect(lfoDepth).connect(am.gain);
