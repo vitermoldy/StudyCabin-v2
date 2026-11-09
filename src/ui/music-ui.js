@@ -29,3 +29,5 @@ export function titleOf(item) {
 export function mountMusic(player, panels, { onPlayingChange }) {
   const form = $('add-form');
   const input = $('link');
+  const err = $('link-error');
+  const state = $('player-state');
