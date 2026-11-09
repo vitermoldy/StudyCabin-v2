@@ -301,3 +301,5 @@ export class World {
           sum += blk;
           max = Math.max(max, blk);
           min = Math.min(min, blk);
+          n++;
+        }
