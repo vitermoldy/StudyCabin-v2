@@ -71,3 +71,5 @@ export class FocusTimer extends Emitter {
 
   pause() {
     if (!this.running) return;
+    this.remainingMs = Math.max(0, this.endAt - Date.now());
+    this.running = false;
