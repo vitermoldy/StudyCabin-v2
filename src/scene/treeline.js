@@ -112,3 +112,5 @@ export class Treeline {
             c = mix(c, uFog * 1.12, uSnow * 0.35 * smoothstep(0.2, 1.0, vT));
             // mist pooling at the foot of the trees
             float mist = 1.0 - smoothstep(-0.25, 0.55, vT);
+            c = mix(c, uFog, mist * 0.82);
+            c += vec3(0.6, 0.66, 0.75) * uFlash * 0.12;
