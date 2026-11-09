@@ -96,3 +96,5 @@ export class Climate extends Emitter {
     if (this.weatherMode !== 'auto') this.weather = this.weatherMode;
     this.nextChange = Number.isFinite(saved.nextChange) ? saved.nextChange : this._now() + this._span();
 
+    // Blended values the scene reads every frame.
+    this.params = {};
