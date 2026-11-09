@@ -156,3 +156,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   outline: none;
 }
 .dock__tabs { display: flex; gap: 2px; }
+.dock__btn, .dock__tab {
+  position: relative; display: flex; align-items: center; justify-content: center;
