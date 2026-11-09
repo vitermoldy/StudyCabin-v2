@@ -76,3 +76,5 @@ const WIND_GLSL = /* glsl */ `
 `;
 
 export class Terrain {
+  constructor(scene, { lowPower = false } = {}) {
+    this.uniforms = {
