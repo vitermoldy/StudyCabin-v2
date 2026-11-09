@@ -108,3 +108,5 @@ export class Climate extends Emitter {
       leaves: s.leaves,
       warmth: s.warmth,
     };
+    this.lightning = 0; // 0..1 flash level, set by the scene
+    clock.on('day', (day) => this._onDay(day));
