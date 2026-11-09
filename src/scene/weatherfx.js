@@ -94,3 +94,5 @@ export class WeatherFX {
       seeds(5000, 1, 5),
       new THREE.ShaderMaterial({
         uniforms: this.snowU,
+        transparent: true,
+        depthWrite: false,
