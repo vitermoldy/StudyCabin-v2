@@ -238,3 +238,5 @@ export class Resident {
     bodyA.rotation.x = Math.PI / 2;
     const bodyB = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.15, 0.09, 20), m.guitar);
     bodyB.rotation.x = Math.PI / 2;
+    bodyB.position.x = 0.22;
+    const neckG = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.05, 0.03), m.guitarDark);
