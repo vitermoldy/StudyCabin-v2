@@ -357,3 +357,5 @@ export class Ambient extends Emitter {
     for (let i = 0; i < knocks; i++) {
       const t0 = now + i / rate;
       const s = ctx.createBufferSource();
+      s.buffer = this.noise;
+      const g = ctx.createGain();
