@@ -62,3 +62,6 @@ function stick(material, length, radius, [x, y, z], tiltZ, tiltX = 0) {
   mesh.position.set(x, y, z);
   mesh.rotation.set(tiltX, 0, tiltZ);
   return mesh;
+}
+
+function makeDeer({ buck = false, fawn = false } = {}) {
