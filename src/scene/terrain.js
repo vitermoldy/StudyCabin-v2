@@ -58,3 +58,5 @@ const CAUSTIC = /* glsl */ `
       float tt = t * (1.0 - (3.5 / float(n + 1)));
       i = p + vec2(cos(tt - i.x) + sin(tt + i.y), sin(tt - i.y) + cos(tt + i.x));
       c += 1.0 / length(vec2(p.x / (sin(i.x + tt) / inten), p.y / (cos(i.y + tt) / inten)));
+    }
+    c /= 4.0;
