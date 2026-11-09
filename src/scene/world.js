@@ -135,3 +135,5 @@ export class World {
   _house(state) {
     const { minutes, climate, activity } = state;
     const atmo = this.atmo;
+    const p = climate.params;
+    const darkness = clamp(1 - atmo.dayFactor + atmo.overcast * 0.4 + p.rain * 0.2 + p.fog * 0.15, 0, 1);
