@@ -231,3 +231,5 @@ export class World {
       if (hit && hit.distanceTo(this.camera.position) < 70) {
         push.x = hit.x;
         push.y = hit.z;
+        want = 1;
+      }
