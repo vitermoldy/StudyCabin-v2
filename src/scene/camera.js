@@ -136,3 +136,5 @@ export class CameraRig {
       this.target.copy(baseTarget);
     }
 
+    // The visitor's own camera moves, eased so a drag feels smooth.
+    for (const k of Object.keys(this.user)) this.userS[k] = damp(this.userS[k], this.user[k], 12, dt);
