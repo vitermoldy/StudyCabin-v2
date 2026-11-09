@@ -77,3 +77,5 @@ function band(m, a, b, fade = 40) {
 // the night, the hare round the edges of the day, the squirrel by day.
 const HOURS = {
   deer: (m) => Math.max(band(m, h(4, 30), h(10)), band(m, h(16), h(21, 30)), 0.3),
+  fox: (m) => Math.max(band(m, h(17, 30), h(7)), 0.12),
+  hare: (m) => Math.max(band(m, h(5), h(9, 30)), band(m, h(17), h(21)), band(m, h(9, 30), h(17)) * 0.4, 0.12),
