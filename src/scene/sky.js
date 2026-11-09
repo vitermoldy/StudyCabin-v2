@@ -268,3 +268,5 @@ export class Atmosphere {
 
     const sy = this.sunDir.y;
     const day = smoothstep(-0.1, 0.14, sy);
+    this.dayFactor = day;
+    this.night = 1 - smoothstep(-0.16, 0.02, sy);
