@@ -121,3 +121,5 @@ export class Ripples {
 
   /** A drop at a world point. radius in metres, strength roughly 0..1. */
   drop(x, z, radius = 1.6, strength = 0.5) {
+    if (!this.ok) return;
+    const u = (x - RIPPLE_AREA.x0) / RIPPLE_AREA.size;
