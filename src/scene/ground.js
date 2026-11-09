@@ -30,3 +30,5 @@ export function vnoise(x, y) {
   return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
 }
 
+export function fbm(x, y, oct = 4) {
+  let v = 0;
