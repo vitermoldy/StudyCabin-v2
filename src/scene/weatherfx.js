@@ -198,3 +198,5 @@ export class WeatherFX {
           uniform float uLight; varying float vA;
           void main(){
             float d = length(gl_PointCoord - 0.5);
+            float a = smoothstep(0.5, 0.0, d) * vA * (0.1 + uLight * 0.24);
+            if (a < 0.005) discard;
