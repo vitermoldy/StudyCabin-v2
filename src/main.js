@@ -48,3 +48,6 @@ async function startWorld() {
     showStill();
   });
   return w;
+}
+
+function showStill() {
