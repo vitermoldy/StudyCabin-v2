@@ -213,3 +213,5 @@ export class WeatherFX {
     const flies = new THREE.Points(fireflyGeometry(lowPowerFlies() ? 170 : 340), new THREE.ShaderMaterial({
       uniforms: this.flyU,
       transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
