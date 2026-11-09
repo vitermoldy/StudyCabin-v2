@@ -122,3 +122,5 @@ export class Terrain {
         )
         .replace(
           '#include <roughnessmap_fragment>',
+          `#include <roughnessmap_fragment>
+          float bank = smoothstep(0.1, -0.02, vWorldG.y) * vMix.x;
