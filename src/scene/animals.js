@@ -727,3 +727,5 @@ export class Animals {
   update(dt, time, ctx) {
     this.season = ctx.season;
     const night = ctx.night;
+    eyeMat.color.copy(EYE_DARK).lerp(EYE_SHINE, night * 0.9);
+    if (!this.opened) this._open(ctx);
