@@ -133,3 +133,5 @@ export class WeatherFX {
           uniforms: u,
           transparent: true,
           depthWrite: false,
+          vertexShader: /* glsl */ `
+            uniform float uTime; uniform float uWind; uniform float uAmount; uniform vec3 uCenter; uniform vec3 uBox; uniform float uScale;
