@@ -565,3 +565,5 @@ function makeOwl() {
   head.add(blob(plumage, [0.1, 0.09, 0.1], [0, 0, 0]));
   head.add(blob(face, [0.035, 0.07, 0.085], [0.07, -0.005, 0]));
   const lids = [];
+  for (const side of [-1, 1]) {
+    const e = new THREE.Mesh(ball, eyeMat);
