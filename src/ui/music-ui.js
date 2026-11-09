@@ -15,3 +15,5 @@ function svgUse(id) {
   return svg;
 }
 
+function setIcon(button, id) {
+  const use = button.querySelector('use');
