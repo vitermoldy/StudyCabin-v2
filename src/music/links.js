@@ -43,3 +43,5 @@ export function parseLink(raw) {
     else throw new LinkError('Mixes and private lists cannot play outside YouTube. Paste a song, an album or a public playlist.');
   }
 
+  if (!videoId && !listId) throw new LinkError('This link has no video or playlist in it. Open the song, then copy the link again.');
+  const kind = listId ? 'playlist' : 'video';
