@@ -18,3 +18,6 @@ const VERT = /* glsl */ `
     gl_Position = projectionMatrix * mvPosition;
     #include <fog_vertex>
   }
+`;
+
+const FRAG = /* glsl */ `
