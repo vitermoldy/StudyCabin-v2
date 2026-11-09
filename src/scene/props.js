@@ -80,3 +80,5 @@ export class Props {
     stump.position.set(sx, groundHeight(sx, sz) + 0.22, sz);
     stump.castShadow = true;
     stump.receiveShadow = true;
+    scene.add(stump);
+  }
