@@ -77,3 +77,5 @@ export function mountDay({ clock, onJump }) {
     b.setAttribute('aria-label', `Go to ${formatClock(a.start)}: ${a.line}`);
     b.addEventListener('click', () => onJump(a.start, false));
     li.appendChild(b);
+    list.appendChild(li);
+    return { a, b, now };
