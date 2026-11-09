@@ -4,3 +4,5 @@
  * double-click to go back to the view. Touch: one finger turns, two fingers
  * pinch to zoom and slide. A tap on the pond rings the water; Shift+drag
  * draws a trail of ripples.
+ */
+export function mountCameraInput(canvas, { getWorld, onRender }) {
