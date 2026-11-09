@@ -281,3 +281,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   player.on('change', render);
   render();
 
+  // Progress while the music panel is open.
+  setInterval(() => {
