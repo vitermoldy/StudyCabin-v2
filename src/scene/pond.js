@@ -41,3 +41,5 @@ const FRAG = /* glsl */ `
   void main(){
     if (vDepth < -0.02) discard;
     vec3 V = normalize(cameraPosition - vWorld);
+    vec2 p = vWorld.xz;
+    float t = uTime;
