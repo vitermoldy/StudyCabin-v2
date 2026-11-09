@@ -134,3 +134,5 @@ const FRAG = /* glsl */ `
 
 const C = (hex) => new THREE.Color(hex);
 
+// Clear sky by sun height (y of the sun direction), in the forest colours of SongPlay's scene:
+// deep teal at night, a teal blue hour, a peach horizon at sunset, sage haze by day.
