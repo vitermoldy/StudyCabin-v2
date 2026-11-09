@@ -5,3 +5,6 @@ export const WORLD = {
   uSnow: { value: 0 }, // 0..1 snow cover
   uWet: { value: 0 }, // 0..1 rain on surfaces
   uTime: { value: 0 },
+  uWind: { value: 0.3 },
+};
+
