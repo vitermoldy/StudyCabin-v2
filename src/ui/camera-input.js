@@ -27,3 +27,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
   canvas.addEventListener('contextmenu', (e) => e.preventDefault());
 
   canvas.addEventListener('pointerdown', (e) => {
+    const w = getWorld();
+    try {
