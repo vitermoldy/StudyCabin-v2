@@ -88,3 +88,5 @@ export class Overlay {
       const dark = Math.min(ratio(L_DARK, s.min), ratio(L_DARK, s.mean));
       const prev = this.inks.get(el) || 'light';
       // A little hysteresis so the words do not flicker at the threshold.
+      let next = prev;
+      if (prev === 'light' && dark > light * 1.25) next = 'dark';
