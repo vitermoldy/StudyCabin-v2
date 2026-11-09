@@ -132,3 +132,5 @@ export function mountSound({ ambient }) {
   vol.addEventListener('input', () => ambient.setVolume(Number(vol.value) / 100));
   const sliders = LAYERS.map((layer) => {
     const row = document.createElement('div');
+    row.className = 'slider-row';
+    const id = `mix-${layer.id}`;
