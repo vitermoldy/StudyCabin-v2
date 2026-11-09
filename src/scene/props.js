@@ -78,3 +78,5 @@ export class Props {
     const sx = -19.2;
     const sz = 22.6;
     stump.position.set(sx, groundHeight(sx, sz) + 0.22, sz);
+    stump.castShadow = true;
+    stump.receiveShadow = true;
