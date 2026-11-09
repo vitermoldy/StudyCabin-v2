@@ -54,3 +54,5 @@ export class World {
     this.terrain = new Terrain(this.scene, { lowPower });
     this.trees = new Trees(this.scene, { lowPower });
     this.treeline = new Treeline(this.scene);
+    this.props = new Props(this.scene);
+    this.pond = new Pond(this.scene);
