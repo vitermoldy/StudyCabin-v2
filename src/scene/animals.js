@@ -290,3 +290,5 @@ function createWalker(name, rand, inUse) {
     a.path.curve.getTangentAt(u, tan);
     let want = Math.atan2(-tan.z, tan.x);
     if (a.state === 'stop' && a.stop?.face) want = Math.atan2(-(a.stop.face[1] - pos.z), a.stop.face[0] - pos.x);
+    // Turn the short way round.
+    const turn = THREE.MathUtils.euclideanModulo(want - a.yaw + Math.PI, Math.PI * 2) - Math.PI;
