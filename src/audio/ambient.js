@@ -35,3 +35,6 @@ export class Ambient extends Emitter {
   }
 
   get supported() {
+    return typeof window.AudioContext === 'function' || typeof window.webkitAudioContext === 'function';
+  }
+
