@@ -193,3 +193,5 @@ export class Atmosphere {
       uMoonVis: { value: 0 },
       uStars: { value: 0 },
       uCloud: { value: 0.2 },
+      uTime: { value: 0 },
+      uWind: { value: 0.3 },
