@@ -347,3 +347,5 @@ export class Resident {
           this.pos.x += dx * k;
           this.pos.z += dz * k;
           this.pos.y += (target.y - this.pos.y) * k;
+          this.facing = turn(this.facing, Math.atan2(dx, dz), 9 * dt);
+          remaining = 0;
