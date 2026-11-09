@@ -44,3 +44,5 @@ async function startWorld() {
     showStill();
   };
   canvas.addEventListener('webglcontextlost', (e) => {
+    e.preventDefault();
+    showStill();
