@@ -205,3 +205,5 @@ export class Atmosphere {
       vertexShader: VERT,
       fragmentShader: FRAG,
       side: THREE.BackSide,
+      depthWrite: false,
+      fog: false,
