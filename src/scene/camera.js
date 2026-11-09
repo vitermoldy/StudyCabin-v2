@@ -160,3 +160,5 @@ export class CameraRig {
 
     // A slow breathing drift and a small answer to the pointer.
     this.pointerSmooth.x = damp(this.pointerSmooth.x, this.pointer.x, 2.5, dt);
+    this.pointerSmooth.y = damp(this.pointerSmooth.y, this.pointer.y, 2.5, dt);
+    const sway = this.reduced ? 0 : 1;
