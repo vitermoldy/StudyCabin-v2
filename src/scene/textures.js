@@ -242,3 +242,5 @@ export function metricBoxUV(geo, w, h, d) {
   const uv = geo.attributes.uv;
   const dims = [
     [d, h], [d, h],
+    [w, d], [w, d],
+    [w, h], [w, h],
