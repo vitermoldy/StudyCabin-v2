@@ -457,3 +457,5 @@ function openingRoute(routes) {
 }
 
 // One bird: a small body and two swept wings that flap round the line of flight.
+function wingGeometry(side, span = 0.46) {
+  const g = new THREE.BufferGeometry();
