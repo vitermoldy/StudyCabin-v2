@@ -450,3 +450,5 @@ const tmp = new THREE.Vector3();
 
 function turn(current, target, maxStep) {
   let d = target - current;
+  while (d > Math.PI) d -= Math.PI * 2;
+  while (d < -Math.PI) d += Math.PI * 2;
