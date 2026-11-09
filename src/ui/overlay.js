@@ -41,3 +41,5 @@ export class Overlay {
   }
 
   setTime(minutes) {
+    const text = formatClock(minutes);
+    if (text === this.lastTime) return;
