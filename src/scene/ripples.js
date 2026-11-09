@@ -71,3 +71,5 @@ export class Ripples {
       type: THREE.HalfFloatType,
       format: THREE.RGBAFormat,
       minFilter: THREE.LinearFilter,
+      magFilter: THREE.LinearFilter,
+      wrapS: THREE.ClampToEdgeWrapping,
