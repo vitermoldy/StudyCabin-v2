@@ -5,3 +5,5 @@
   --p-bg: #e4e5e1; --p-surface: #d6d8d3; --p-ink: #171716; --p-muted: #565a55;
   --p-accent: #d9a05b; --p-accent-ink: #111111; --p-action: #171716; --p-action-ink: #e4e5e1;
   --p-inv-bg: #171716; --p-inv-surface: #232321; --p-inv-ink: #e4e5e1; --p-inv-muted: #8e8f8c;
+  --p-inv-accent: #d9a05b; --p-inv-accent-ink: #111111; --p-inv-action: #d9a05b; --p-inv-action-ink: #111111;
+  --font-display: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif;
