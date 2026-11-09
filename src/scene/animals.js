@@ -12,3 +12,6 @@ import { CABIN, FLOOR } from '../sim/layout.js';
 // the other. Every model faces +x with its feet at y = 0.
 
 const ball = new THREE.SphereGeometry(1, 14, 10);
+const ease = (dt, rate) => 1 - Math.exp(-dt * rate);
+
+// Eyes catch the light after dark (eyeshine): one material for every animal, brightened at night.
