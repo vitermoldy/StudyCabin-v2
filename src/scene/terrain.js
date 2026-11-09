@@ -65,3 +65,5 @@ const CAUSTIC = /* glsl */ `
   }
 `;
 
+/** Sway shared by the grass and the ferns: a gust front rolling across, plus a fine flutter. */
+const WIND_GLSL = /* glsl */ `
