@@ -17,3 +17,5 @@ const WRAP = /* glsl */ `
   }
 `;
 
+function seeds(count, perItem, seed) {
+  const r = rng(seed);
