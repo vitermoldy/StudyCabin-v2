@@ -183,3 +183,5 @@ export class World {
       flash: this.flash,
       cameraPos: this.camera.position,
     });
+    // Caustics need sun on the water; a little stays under cloud, none under ice.
+    const sunVis = this.atmo.uniforms.uSunVis.value;
