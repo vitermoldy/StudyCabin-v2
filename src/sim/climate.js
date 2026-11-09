@@ -32,3 +32,5 @@ export const SEASONS = {
     snow: 0, petals: 1, leaves: 0, warmth: 0.75,
     odds: { clear: 0.35, cloudy: 0.3, fog: 0.15, rain: 0.2 },
     line: 'Blossom in the air, birds at dawn, frogs in the pond at night.',
+  },
+  rainy: {
