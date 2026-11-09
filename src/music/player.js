@@ -18,3 +18,5 @@ export class MusicPlayer extends Emitter {
     this.current = Number.isInteger(saved.current) && saved.current < this.queue.length ? saved.current : -1;
     this.volume = Number.isFinite(saved.volume) ? clamp(saved.volume, 0, 100) : 70;
     this.loop = saved.loop === true;
+    this.shuffle = saved.shuffle === true;
+    this.status = 'idle';
