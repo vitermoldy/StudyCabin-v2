@@ -186,3 +186,5 @@ export class WeatherFX {
           uniform float uTime; uniform float uWind; uniform float uAmount; uniform vec3 uOrigin; uniform float uScale;
           attribute vec3 aSeed; attribute float aId;
           varying float vA;
+          void main(){
+            float age = fract(uTime / 7.0 + aId);
