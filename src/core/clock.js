@@ -60,3 +60,5 @@ export class Clock extends Emitter {
     }
     const whole = Math.floor(this.minutes);
     if (whole !== this._lastMinute) {
+      this._lastMinute = whole;
+      this.emit('minute', whole);
