@@ -63,3 +63,6 @@ export function allTrails() {
   return Object.values(ROUTES).flat().map((r) => r.pts);
 }
 
+const h = (hh, mm = 0) => hh * 60 + mm;
+
+/** 1 inside [a, b] (game minutes, may wrap past midnight), easing out over `fade` minutes. */
