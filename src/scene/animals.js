@@ -322,3 +322,5 @@ function createWalker(name, rand, inUse) {
   function stopPose(time, poseName) {
     if (poseName === 'graze' || poseName === 'drink') {
       // Head down, up now and then to look round (less often while drinking).
+      const look = Math.sin(time * 0.45 + a.wave) > (poseName === 'drink' ? 0.75 : 0.35);
+      a.neckAim = look ? 0 : poseName === 'drink' ? -1.95 : -1.8;
