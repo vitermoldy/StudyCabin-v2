@@ -84,3 +84,5 @@ export class World {
   resize() {
     const w = this.canvas.clientWidth || window.innerWidth;
     const h = this.canvas.clientHeight || window.innerHeight;
+    this.width = w;
+    this.height = h;
