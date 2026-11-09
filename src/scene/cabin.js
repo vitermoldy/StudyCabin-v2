@@ -40,3 +40,5 @@ export class Cabin {
     const mesh = new THREE.Mesh(geo, mat);
     mesh.castShadow = cast;
     mesh.receiveShadow = receive;
+    parent.add(mesh);
+    return mesh;
