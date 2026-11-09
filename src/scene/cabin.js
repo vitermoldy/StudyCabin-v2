@@ -303,3 +303,5 @@ export class Cabin {
 
   _living() {
     const { sofa, cushion, rug, wood, woodDark, metal, ceramic, print, books, trim, stoveGlass } = this.mat;
+    this._bx(rug, -2.9, 0.2, FLOOR, FLOOR + 0.012, -2.2, 0.35, { cast: false });
+    // sofa facing the glass
