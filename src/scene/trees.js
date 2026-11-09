@@ -190,3 +190,5 @@ export class Trees {
     const grove = (geo, mat, list, shadows) => {
       const mesh = new THREE.InstancedMesh(geo, mat, Math.max(1, list.length));
       mesh.count = list.length;
+      list.forEach((t, i) => {
+        p.set(t.x, t.y, t.z);
