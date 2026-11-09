@@ -247,3 +247,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       if (item.kind === 'playlist') bits.push(`From ${titleOf(item)}`);
       else if (item.author) bits.push(item.author);
       if (item.status === 'error') bits.push(item.error);
+      nowSub.textContent = bits.join(' · ') || item.source;
+      nowSrc.src = ICON[item.source] || ICON.YouTube;
