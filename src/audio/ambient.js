@@ -426,3 +426,5 @@ export class Ambient extends Emitter {
     const peak = 0.9 * strength * this.mix.rain;
     g.gain.setValueAtTime(0.0001, now);
     g.gain.exponentialRampToValueAtTime(Math.max(0.0002, peak), now + 0.18);
+    g.gain.exponentialRampToValueAtTime(0.0001, now + 4.2);
+    s.connect(f).connect(g).connect(this.thunderBus);
