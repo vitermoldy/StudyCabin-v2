@@ -286,3 +286,5 @@ function createWalker(name, rand, inUse) {
 
   function place(dt) {
     const u = Math.min(1, Math.max(0, a.s / a.path.length));
+    a.path.curve.getPointAt(u, pos);
+    a.path.curve.getTangentAt(u, tan);
