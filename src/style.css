@@ -137,3 +137,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   height: 44px; padding: 0 var(--s-4); max-width: min(360px, 60vw);
   background: var(--plate); color: var(--ink);
   border: 1px solid var(--line); border-radius: var(--r-sm);
+  font-size: 15px; font-weight: 500;
+  transition: background-color 120ms var(--ease), border-color 120ms var(--ease), transform 90ms var(--ease);
