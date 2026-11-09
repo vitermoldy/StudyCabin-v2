@@ -112,3 +112,5 @@ export class Ambient extends Emitter {
     carrier.frequency.value = 4400;
     const am = gain(0);
     const lfo = ctx.createOscillator();
+    lfo.type = 'square';
+    lfo.frequency.value = 27;
