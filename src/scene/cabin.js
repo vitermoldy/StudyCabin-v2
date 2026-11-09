@@ -49,3 +49,5 @@ export class Cabin {
     const w = x1 - x0;
     const h = y1 - y0;
     const d = z1 - z0;
+    const geo = metricBoxUV(new THREE.BoxGeometry(w, h, d), w, h, d);
+    const mesh = this._m(geo, mat, opts);
