@@ -214,6 +214,7 @@ mountCameraInput(document.getElementById('scene'), {
   onRender: () => { needsStill = true; },
 });
 
+//
 // Pointer for the camera's small answer to the mouse.
 addEventListener('pointermove', (e) => {
   if (!world || e.pointerType !== 'mouse') return;
