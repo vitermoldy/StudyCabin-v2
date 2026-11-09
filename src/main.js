@@ -225,3 +225,6 @@ document.addEventListener('pointerleave', () => world && world.setPointer(0, 0, 
 // Audio needs a gesture before it may start.
 const wake = () => ambient.resumeIfWanted();
 addEventListener('pointerdown', wake, { once: true });
+addEventListener('keydown', wake, { once: true });
+
+// Keyboard shortcuts (never while typing).
