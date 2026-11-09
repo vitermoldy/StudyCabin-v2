@@ -92,3 +92,5 @@ export class Terrain {
         .replace('#include <defaultnormal_vertex>', '#include <defaultnormal_vertex>\n vUp = inverseTransformDirection(transformedNormal, viewMatrix).y;');
       shader.fragmentShader = shader.fragmentShader
         .replace(
+          '#include <common>',
+          `#include <common>
