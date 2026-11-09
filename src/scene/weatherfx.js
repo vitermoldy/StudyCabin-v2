@@ -278,3 +278,6 @@ export class WeatherFX {
 const tmp = new THREE.Vector3();
 
 function lowPowerFlies() {
+  return matchMedia('(max-width: 700px), (pointer: coarse)').matches;
+}
+
