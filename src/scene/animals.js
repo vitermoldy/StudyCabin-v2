@@ -383,3 +383,5 @@ function createWalker(name, rand, inUse) {
       a.neckAim = 0;
       a.headAim = 0;
       a.bodyAim = 0;
+      // Hurry when the weather turns or a storm comes in.
+      const hurry = ctx.params.storm > 0.4 || ctx.params.rain > 0.5 ? 1.6 : 1;
