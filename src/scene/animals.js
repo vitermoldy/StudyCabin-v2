@@ -369,3 +369,5 @@ function createWalker(name, rand, inUse) {
       }
       a.since += dt;
       if (a.state === 'stop') {
+        a.timer -= dt;
+        stopPose(time, a.stop.pose);
