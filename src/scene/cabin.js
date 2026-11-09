@@ -359,3 +359,6 @@ export class Cabin {
     this._bx(stoveGlass, W.x - 0.17, W.x + 0.17, FLOOR + 0.24, FLOOR + 0.52, W.z + 0.22, W.z + 0.225, { cast: false });
     this._bx(this.mat.ceramic, W.x - 0.5, W.x + 0.5, FLOOR, FLOOR + 0.02, W.z - 0.4, W.z + 0.55, { cast: false });
     // log basket
+    this._cyl(woodDark, 0.2, 0.17, 0.3, W.x + 0.75, FLOOR + 0.15, W.z + 0.1, 14);
+  }
+
