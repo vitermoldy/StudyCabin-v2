@@ -235,3 +235,6 @@ export class Ambient extends Emitter {
     }
     if (birds > 0.05 && now > this._nextBird) {
       this._bird(birds);
+      this._nextBird = now + 1.2 + Math.random() * 4 / (0.4 + birds);
+    }
+
