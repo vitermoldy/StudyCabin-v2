@@ -51,3 +51,5 @@ function leg(material, length, top, bottom, [x, y, z]) {
   pivot.position.set(x, y, z);
   const mesh = new THREE.Mesh(geometry, material);
   mesh.castShadow = true;
+  pivot.add(mesh);
+  return pivot;
