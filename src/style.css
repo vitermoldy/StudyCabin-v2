@@ -90,3 +90,5 @@ html.is-live .poster { opacity: 0; }
 .hero { position: relative; height: 100vh; height: 100dvh; z-index: 2; pointer-events: none; overflow: clip; }
 .hero__words { position: absolute; inset: 0 var(--gut); z-index: 1; }
 .big {
+  position: absolute; margin: 0;
+  font-family: var(--font-display); font-weight: var(--display-weight);
