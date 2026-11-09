@@ -14,3 +14,5 @@ const VERT = /* glsl */ `
     vec4 wp = modelMatrix * vec4(position, 1.0);
     vDepth = wp.y - aGround;
     vWorld = wp.xyz;
+    vec4 mvPosition = viewMatrix * wp;
+    gl_Position = projectionMatrix * mvPosition;
