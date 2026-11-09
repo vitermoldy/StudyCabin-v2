@@ -343,3 +343,5 @@ export class Terrain {
       const want = smooth(-1.5, 2, d) * smooth(18, 6, d) * smooth(0.35, 0.65, fbm(x * 0.09 + 4, z * 0.09, 3));
       if (r() > want) continue;
       spots.push([x, z]);
+    }
+    const mesh = new THREE.InstancedMesh(geo, mat, spots.length);
