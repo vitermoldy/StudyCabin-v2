@@ -218,3 +218,5 @@ const LINES = {
 };
 
 function buildCurve(route, reverse) {
+  const pts = reverse ? [...route.pts].reverse() : route.pts;
+  const n = pts.length;
