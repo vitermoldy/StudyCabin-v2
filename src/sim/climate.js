@@ -181,3 +181,5 @@ export class Climate extends Emitter {
     this.emit('weather', id);
   }
 
+  /** dt in real seconds, gameDt in game minutes. */
+  update(dt, gameDt) {
