@@ -98,3 +98,5 @@ export class Treeline {
         fragmentShader: /* glsl */ `
           uniform vec3 uNearTop; uniform vec3 uNearLow; uniform vec3 uFarTop; uniform vec3 uFarLow; uniform vec3 uFog;
           uniform float uMix; uniform float uSnow; uniform float uFlash;
+          varying float vT; varying vec2 vXZ;
+          float h21(vec2 p){ p = fract(p * vec2(234.34, 435.345)); p += dot(p, p + 34.23); return fract(p.x * p.y); }
