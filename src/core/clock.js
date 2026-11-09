@@ -36,3 +36,5 @@ export class Clock extends Emitter {
     return SPEEDS[this.speed];
   }
 
+  /** Hours as a float, 0..24. */
+  get hours() {
