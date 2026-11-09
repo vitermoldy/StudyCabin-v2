@@ -239,3 +239,5 @@ export class MusicPlayer extends Emitter {
   }
 
   _advance(dir) {
+    const n = this.queue.length;
+    if (!n) return;
