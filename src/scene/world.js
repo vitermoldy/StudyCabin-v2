@@ -175,3 +175,5 @@ export class World {
     this._lightning(dt, p.storm);
     this.rig.update(dt, t, this.resident.head);
 
+    this.atmo.update({
+      minutes,
