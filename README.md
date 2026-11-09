@@ -12,3 +12,5 @@ colours of the SongPlay scene.
 
 ```bash
 npm install
+npm run dev        # http://localhost:5173
+npm run build      # static files in dist/, open with any static server
