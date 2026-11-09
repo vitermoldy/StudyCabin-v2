@@ -52,3 +52,5 @@ export class World {
     this.atmo = new Atmosphere(this.scene, this.renderer);
     const lowPower = matchMedia('(max-width: 700px), (pointer: coarse)').matches;
     this.terrain = new Terrain(this.scene, { lowPower });
+    this.trees = new Trees(this.scene, { lowPower });
+    this.treeline = new Treeline(this.scene);
