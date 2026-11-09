@@ -143,3 +143,5 @@ export function panelTexture() {
   for (let i = 0; i < n; i++) {
     const tone = 0.86 + rand() * 0.18;
     ctx.fillStyle = `rgb(${Math.round(150 * tone)},${Math.round(116 * tone)},${Math.round(86 * tone)})`;
+    ctx.fillRect(i * w, 0, w, 256);
+    for (let k = 0; k < 10; k++) {
