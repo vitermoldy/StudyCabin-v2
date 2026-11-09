@@ -415,3 +415,5 @@ function createWalker(name, rand, inUse) {
         const ds = Math.min(ahead, kind.speed * (ahead > 1 ? 1.35 : 1) * dt);
         a.s += ds;
         a.step += (ds / kind.stride) * Math.PI * 2;
+        a.state = 'move';
+        a.neckAim = 0;
