@@ -93,3 +93,5 @@ export function deckTexture() {
   const rows = 8;
   const rh = 256 / rows;
   for (let r = 0; r < rows; r++) {
+    let x = -rand() * 200;
+    while (x < 256) {
