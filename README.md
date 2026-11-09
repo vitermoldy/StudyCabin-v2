@@ -75,3 +75,7 @@ shows a still picture and the music, timer and ambient sound still work.
 | H | Show or hide the big words |
 | P | Pause or move the scene |
 | F | Full screen |
+| Esc | Close the open panel |
+
+## Where things live
+
