@@ -44,3 +44,5 @@ export const SEASONS = {
   },
   winter: {
     label: 'Winter',
+    sunrise: 450, sunset: 1005, noonElevation: 26,
+    temp: [-1, 3],
