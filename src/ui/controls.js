@@ -82,3 +82,5 @@ export function mountDay({ clock, onJump }) {
   });
 
   let lastId = '';
+  return function update() {
+    $('day-clock').textContent = formatClock(clock.minutes);
