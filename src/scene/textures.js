@@ -97,3 +97,5 @@ export function deckTexture() {
     while (x < 256) {
       const len = 120 + rand() * 160;
       const tone = 0.84 + rand() * 0.22;
+      ctx.fillStyle = `rgb(${Math.round(162 * tone)},${Math.round(158 * tone)},${Math.round(150 * tone)})`;
+      ctx.fillRect(x, r * rh, len, rh);
