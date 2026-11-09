@@ -218,3 +218,5 @@ export class Cabin {
   _deck() {
     const { deck, deckWood, found } = this.mat;
     this._bx(deck, DECK.x0, DECK.x1, FLOOR - 0.1, FLOOR, DECK.z0, DECK.z1);
+    this._bx(deckWood, DECK.x0, DECK.x1, 0.05, FLOOR - 0.1, DECK.z1 - 0.06, DECK.z1);
+    this._bx(deckWood, DECK.x0, DECK.x0 + 0.06, 0.05, FLOOR - 0.1, DECK.z0, DECK.z1);
