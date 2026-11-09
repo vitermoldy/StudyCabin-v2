@@ -583,3 +583,5 @@ function makeOwl() {
     wing.visible = false;
     body.add(wing);
     return { wing, side };
+  });
+  root.scale.setScalar(1.25);
