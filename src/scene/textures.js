@@ -206,3 +206,5 @@ export function printTexture() {
 /** Spines of books on a shelf. */
 export function booksTexture() {
   const [c, ctx] = canvas(256, 64);
+  const rand = rng(71);
+  const palette = ['#7d4a36', '#3f5560', '#c9b48e', '#6b6f4b', '#a7643c', '#2f3a3f', '#d8cdb8', '#8a7a62'];
