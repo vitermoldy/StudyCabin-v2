@@ -45,3 +45,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
     const x = CLEARING.x + Math.sin(a) * R;
     const z = CLEARING.z - Math.cos(a) * R;
     const floor = groundHeight(x, z) + wave(s) - 0.5;
+    pos.push(x, floor - 8, z, x, floor + top, z);
+    tAttr.push(-8 / tall, top / tall);
