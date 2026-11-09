@@ -44,3 +44,5 @@ const POSES = {
   standDrink: (t) => {
     const p = (t % 9) / 9;
     const lift = p > 0.55 && p < 0.8 ? Math.sin(((p - 0.55) / 0.25) * Math.PI) : 0;
+    return base({ shRx: -0.45 - 0.75 * lift, shRz: -0.2, elR: -1.55 - 0.65 * lift, headX: 0.05 - 0.25 * lift, shLx: 0.08, elL: -0.2, headY: 0.12 * Math.sin(t * 0.17) });
+  },
