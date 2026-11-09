@@ -239,3 +239,5 @@ export class Climate extends Emitter {
   }
 
   persist() {
+    save('climate', {
+      season: this.season,
