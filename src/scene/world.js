@@ -162,3 +162,6 @@ export class World {
       door: on(res.doorDistance < 1.5, 1),
     });
     this.stoveLit = this.cabin.state.stove;
+  }
+
+  update(dt, t, state) {
