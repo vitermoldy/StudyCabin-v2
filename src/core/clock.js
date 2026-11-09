@@ -48,3 +48,5 @@ export class Clock extends Emitter {
     this.persist();
   }
 
+  /** Advance by real seconds. Returns game minutes that passed. */
+  tick(dt) {
