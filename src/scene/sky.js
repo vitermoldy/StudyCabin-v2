@@ -191,3 +191,5 @@ export class Atmosphere {
       uCloudDark: { value: C('#8d9396') },
       uSunVis: { value: 1 },
       uMoonVis: { value: 0 },
+      uStars: { value: 0 },
+      uCloud: { value: 0.2 },
