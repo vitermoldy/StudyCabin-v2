@@ -106,3 +106,5 @@ export function keenness(kind, { minutes, params, season }) {
   if (params.storm > 0.4) return 0;
   let k = HOURS[kind](minutes);
   const w = WEATHER[kind];
+  if (params.rain > 0.3) k *= w.rain;
+  if (params.snow > 0.4) k *= w.snow;
