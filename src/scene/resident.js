@@ -18,3 +18,5 @@ const JOINTS = ['hipY', 'spineX', 'spineZ', 'headX', 'headY', 'shLx', 'shLz', 'e
 
 function base(o = {}) {
   return {
+    hipY: 0.93, spineX: 0, spineZ: 0, headX: 0, headY: 0,
+    shLx: 0.05, shLz: 0.09, elL: -0.18, shRx: 0.05, shRz: -0.09, elR: -0.18,
