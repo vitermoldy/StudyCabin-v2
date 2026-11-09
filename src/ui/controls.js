@@ -201,3 +201,5 @@ export function mountFocus({ focus }) {
     document.title = focus.running ? `${remaining} ${focus.phaseLabel.toLowerCase()} · StudyCabin` : baseTitle;
   };
   focus.on('change', render);
+  render();
+  return render;
