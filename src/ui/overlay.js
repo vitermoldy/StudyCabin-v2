@@ -82,3 +82,5 @@ export class Overlay {
     const L_DARK = 0.0118; // #1b1c1a
     const ratio = (a, b) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
     [this.word, this.at, this.timeWrap].forEach((el, i) => {
+      const s = samples[i];
+      if (!s) return;
