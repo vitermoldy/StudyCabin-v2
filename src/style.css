@@ -20,3 +20,5 @@
   --action-ink: var(--p-inv-action-ink);
   --line: rgba(228, 229, 225, 0.12);
   --line-strong: rgba(228, 229, 225, 0.3);
+  --plate: rgba(19, 19, 18, 0.93);
+  --dock: #121211;
