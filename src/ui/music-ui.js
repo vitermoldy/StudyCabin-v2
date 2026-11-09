@@ -186,3 +186,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       b.type = 'button';
       b.className = 'icon-btn';
       b.setAttribute('aria-label', label);
+      b.disabled = !!disabled;
+      b.appendChild(svgUse(icon));
