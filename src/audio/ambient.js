@@ -208,3 +208,5 @@ export class Ambient extends Emitter {
     const sway = Math.pow(0.5 + 0.5 * Math.sin(t * 0.37) * Math.sin(t * 0.13 + 1), 1.4);
     const air = 0.15 + env.wind * 0.85;
     const foliage = { winter: 0.45, autumn: 1.15 }[env.season] ?? 1;
+    set(this.g.canopy, m.leaves * air * (0.3 + sway * 0.7) * 0.75, 0.5);
+    set(this.g.leaves, m.leaves * air * foliage * (0.15 + sway * 0.85) * 0.28, 0.35);
