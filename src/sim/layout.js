@@ -48,3 +48,5 @@ export const SPOTS = {
   bed: { area: 'in', via: [p(3.0, SPINE_Z), p(3.0, -1.35)], at: p(3.1, -1.35), face: Math.PI / 2 },
   bedside: { area: 'in', via: [p(3.0, SPINE_Z), p(3.0, -0.9)], at: p(3.05, -0.9), face: 0.15 },
   cook: { area: 'in', via: [p(-3.65, SPINE_Z), p(-3.65, -1.82)], at: p(-5.35, -1.82), face: 0 },
+  dine: { area: 'in', via: [p(-3.85, SPINE_Z), p(-3.85, 0.42)], at: p(-5.0, 0.42), face: 0 },
+  sofa: { area: 'in', via: [p(-2.85, SPINE_Z), p(-2.85, -1.0), p(-1.55, -1.0)], at: p(-1.55, -1.72), face: 0 },
