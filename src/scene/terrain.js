@@ -277,3 +277,5 @@ export class Terrain {
     for (let f = 0; f < fronds; f++) {
       const ang = (f / fronds) * Math.PI * 2 + (rand() - 0.5) * 0.5;
       const L = 0.55 + rand() * 0.3;
+      const rise = 0.85 + rand() * 0.25;
+      const dx = Math.cos(ang);
