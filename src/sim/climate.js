@@ -73,3 +73,5 @@ function pick(odds, random = Math.random) {
   const total = entries.reduce((s, [, p]) => s + p, 0);
   let r = random() * total;
   for (const [id, p] of entries) {
+    r -= p;
+    if (r <= 0) return id;
