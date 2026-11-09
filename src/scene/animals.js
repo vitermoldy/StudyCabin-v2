@@ -595,3 +595,5 @@ function createOwl(rand) {
   const facing = -Math.PI / 2; // toward the clearing (+z)
   const tmp = new THREE.Vector3();
 
+  function fly(from, to, state) {
+    o.from.copy(from);
