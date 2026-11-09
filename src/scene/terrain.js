@@ -21,3 +21,5 @@ function buildGround() {
   const shade = [];
   for (let j = 0; j <= NZ; j++) {
     const z = CLEARING.z + warp((j / NZ) * 2 - 1) * 480;
+    for (let i = 0; i <= NX; i++) {
+      const x = CLEARING.x + warp((i / NX) * 2 - 1) * 520;
