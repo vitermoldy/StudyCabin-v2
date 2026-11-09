@@ -427,3 +427,5 @@ function createWalker(name, rand, inUse) {
         leave();
         return;
       }
+      place(dt);
+      pose(dt, time, moving);
