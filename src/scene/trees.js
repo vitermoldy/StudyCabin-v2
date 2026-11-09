@@ -192,3 +192,5 @@ export class Trees {
       mesh.count = list.length;
       list.forEach((t, i) => {
         p.set(t.x, t.y, t.z);
+        q.setFromAxisAngle(Y, t.yaw);
+        s.set(t.w, t.h, t.w);
