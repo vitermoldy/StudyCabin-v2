@@ -103,3 +103,6 @@ shows a still picture and the music, timer and ambient sound still work.
 ## Before launch
 
 - The wordmark "StudyCabin" and the "S" favicon are placeholders; no logo was given.
+- `og:image` points at `share.jpg` (a frame of the scene); add `<link rel="canonical">` once the
+  site has a domain.
+
