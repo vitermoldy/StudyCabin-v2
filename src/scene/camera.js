@@ -26,3 +26,6 @@ export class CameraRig {
     this.user = { yaw: 0, tilt: 0, zoom: 1, panX: 0, panZ: 0 };
     this.userS = { ...this.user };
     this._resolve(this.view, this.pos, this.target);
+  }
+
+  /** Base position and target for a view at the current aspect. */
