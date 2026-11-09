@@ -316,3 +316,5 @@ export class Resident {
     return fn(t, seat);
   }
 
+  /** Where the root sits for the current pose (sleep moves onto the bed). */
+  _poseAnchor(out) {
