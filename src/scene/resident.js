@@ -320,3 +320,6 @@ export class Resident {
   _poseAnchor(out) {
     if (this.pose === 'sleep') return out.set(F.bed.x, FLOOR, -1.78);
     return out.copy(this.pos);
+  }
+
+  update(dt, t, { speedUp = 1, walkOn = true } = {}) {
