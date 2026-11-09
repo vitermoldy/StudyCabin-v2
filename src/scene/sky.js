@@ -209,3 +209,5 @@ export class Atmosphere {
       fog: false,
     });
     this.dome = new THREE.Mesh(new THREE.SphereGeometry(1000, 48, 24), mat);
+    this.dome.frustumCulled = false;
+    this.dome.renderOrder = -10;
