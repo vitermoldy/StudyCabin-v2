@@ -172,3 +172,5 @@ export class Resident {
       up.position.y = -0.14;
       sh.add(up);
       const el = new THREE.Group();
+      el.position.y = -0.29;
+      sh.add(el);
