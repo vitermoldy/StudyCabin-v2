@@ -174,6 +174,7 @@ export class CameraRig {
       // Past level ground the camera stays down and the gaze tips up instead.
       const level = Math.PI / 2 - 0.02;
       const want = sph.phi - us.tilt;
+      this.lookUp
       this.pos.copy(this.target).add(tmpE.setFromSpherical(sph));
       // Stay above the ground and the pond, and outside the cabin.
       const floor = Math.max(groundHeight(this.pos.x, this.pos.z), WATER_Y) + 0.45;
