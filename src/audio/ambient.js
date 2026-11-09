@@ -386,3 +386,5 @@ export class Ambient extends Emitter {
       o.frequency.exponentialRampToValueAtTime(940, t0 + 0.05);
       o.frequency.exponentialRampToValueAtTime(480, t0 + 0.18);
       const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, t0);
+      g.gain.exponentialRampToValueAtTime(0.035 * level, t0 + 0.02);
