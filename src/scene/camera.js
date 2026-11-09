@@ -106,3 +106,6 @@ export class CameraRig {
   get settling() {
     const a = this.user;
     const b = this.userS;
+    return Math.abs(a.yaw - b.yaw) + Math.abs(a.tilt - b.tilt) + Math.abs(a.zoom - b.zoom) + Math.abs(a.panX - b.panX) * 0.1 + Math.abs(a.panZ - b.panZ) * 0.1 > 0.0005 || this.travel < 1;
+  }
+
