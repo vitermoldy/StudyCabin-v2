@@ -12,3 +12,6 @@ export class Emitter {
     if (!set) return;
     for (const fn of [...set]) fn(payload);
   }
+}
+
+export const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
