@@ -706,3 +706,5 @@ export class Animals {
     };
   }
 
+  /**
+   * The first frame: if the hour suits one of them, someone is already standing in the clearing,
