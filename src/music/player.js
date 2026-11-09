@@ -142,3 +142,5 @@ export class MusicPlayer extends Emitter {
                 this.player.setVolume(this.volume);
                 resolve();
               },
+              onStateChange: (e) => this._onState(e.data),
+              onError: (e) => this._onError(e.data),
