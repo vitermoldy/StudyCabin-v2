@@ -113,3 +113,5 @@ export function mountWeather({ climate }) {
   );
   const syncAuto = bindSwitch($('auto-season'), () => climate.autoSeason, (v) => climate.setAutoSeason(v));
   climate.on('season', setSeason);
+  climate.on('weather-mode', setWeather);
+  climate.on('auto-season', syncAuto);
