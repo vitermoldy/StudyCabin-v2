@@ -331,3 +331,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .queue__list { margin-top: var(--s-2); }
 .queue__list ol { list-style: none; margin: 0; padding: 0; }
 .qrow {
+  display: grid; grid-template-columns: 56px 1fr auto; gap: var(--s-3); align-items: center;
+  padding: var(--s-2) 0; border-bottom: 1px solid var(--line);
