@@ -68,3 +68,5 @@ export class Props {
     const logGeo = new THREE.CylinderGeometry(0.26, 0.32, 5.2, 10, 1);
     const log = new THREE.Mesh(logGeo, [bark, cut, cut]);
     const lx = -16.5;
+    const lz = 21;
+    log.position.set(lx, groundHeight(lx, lz) + 0.22, lz);
