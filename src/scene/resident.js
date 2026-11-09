@@ -390,3 +390,5 @@ export class Resident {
     // Joint targets
     let target;
     if (moving) {
+      const ph = this.walkPhase;
+      const s = Math.sin(ph);
