@@ -114,3 +114,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     qList.hidden = !open;
   });
   let clearArmed = 0;
+  qClear.addEventListener('click', () => {
+    if (!clearArmed) {
