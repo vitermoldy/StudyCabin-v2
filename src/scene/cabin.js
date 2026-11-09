@@ -24,3 +24,5 @@ export class Cabin {
     this._roof();
     this._deck();
     this._annex();
+    this._kitchen();
+    this._living();
