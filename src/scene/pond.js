@@ -254,3 +254,5 @@ export class Pond {
     L.padMesh.visible = show;
     this._padColor.setRGB(look.fern[0], look.fern[1], look.fern[2], THREE.SRGBColorSpace);
     L.padMat.color.copy(this._padColor).multiplyScalar(0.85);
+    const bloom = show && look.warmth > 0.7 && look.leaves < 0.5;
+    for (const f of L.flowers) f.visible = bloom;
