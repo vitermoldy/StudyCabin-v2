@@ -47,3 +47,5 @@ export class Overlay {
     this.lastTime = text;
     this.clock.setAttribute('datetime', text);
     if (!prev || this.reduced) {
+      this.clock.textContent = text;
+      return;
