@@ -258,3 +258,5 @@ export class Resident {
   }
 
   /** Go to a spot and take a pose. `teleport` skips the walk (after a time jump). */
+  setActivity(activity, { teleport = false } = {}) {
+    this.activity = activity;
