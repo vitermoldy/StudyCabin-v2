@@ -32,3 +32,5 @@ const prefs = load('view', { view: FIRST_VIEW, words: true });
 let wordsShown = prefs.words !== false;
 html.classList.toggle('is-clear', !wordsShown);
 
+// ------------------------------------------------------------ the scene
+let world = null;
