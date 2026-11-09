@@ -35,3 +35,5 @@ export const DAY = [
   { id: 'dinner', start: h(18, 50), end: h(19, 30), word: 'Dinner', line: 'Dinner at the table', spot: 'dine', pose: 'sitEat' },
   { id: 'books', start: h(19, 30), end: h(19, 40), word: 'Books', line: 'Picking a book from the shelf', spot: 'shelf', pose: 'reach' },
   { id: 'evening', start: h(19, 40), end: h(21, 50), word: 'Reading', line: 'Reading on the sofa', spot: 'sofa', pose: 'sitRead' },
+  { id: 'journal', start: h(21, 50), end: h(22, 40), word: 'Journal', line: 'Writing the day down', spot: 'desk', pose: 'sitWrite' },
+  { id: 'bedtime', start: h(22, 40), end: h(23, 0), word: 'Bedtime', line: 'Getting ready for bed', spot: 'bedside', pose: 'stand' },
