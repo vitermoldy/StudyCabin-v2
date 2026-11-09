@@ -68,3 +68,6 @@ export class World {
     this.pointerOn = false;
     this._push = new THREE.Vector3();
     this.cabin = new Cabin(this.scene);
+    this.resident = new Resident(this.scene);
+    this.fx = new WeatherFX(this.scene, this.cabin.flueTop);
+
