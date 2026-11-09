@@ -100,3 +100,5 @@ function inkFromPoster() {
       });
       overlay.applyInk(samples);
     } catch {
+      /* the poster could not be read: keep the default ink */
+    }
