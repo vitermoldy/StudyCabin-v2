@@ -67,3 +67,5 @@ export function mountDay({ clock, onJump }) {
     b.type = 'button';
     const t = document.createElement('span');
     t.className = 'timeline__t';
+    t.textContent = formatClock(a.start);
+    const w = document.createElement('span');
