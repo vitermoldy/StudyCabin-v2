@@ -19,3 +19,5 @@ export const lerp = (a, b, t) => a + (b - a) * t;
 export const smoothstep = (a, b, v) => {
   const t = clamp((v - a) / (b - a), 0, 1);
   return t * t * (3 - 2 * t);
+};
+/** Frame-rate independent approach of `current` toward `target`. */
