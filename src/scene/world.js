@@ -289,3 +289,5 @@ export class World {
       for (let gy = 0; gy < 3; gy++) {
         for (let gx = 0; gx < 4; gx++) {
           const cx = Math.round((r.x + (r.w * (gx + 0.5)) / 4) * ratio);
+          const cy = Math.round(H - (r.y + (r.h * (gy + 0.5)) / 3) * ratio);
+          const x = clamp(cx - 6, 0, gl.drawingBufferWidth - 12);
