@@ -742,3 +742,5 @@ export class Animals {
 
   /** One line about the animal in view, or null. */
   sighting() {
+    const fawn = this.byName.fawn;
+    for (const w of this.recent) {
