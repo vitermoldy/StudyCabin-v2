@@ -418,3 +418,5 @@ export class Cabin {
   }
 
   _deckFurniture() {
+    const { deckWood, metal, flame, ceramic } = this.mat;
+    // low lounge chairs facing the clearing
