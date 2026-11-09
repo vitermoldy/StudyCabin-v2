@@ -118,3 +118,5 @@ export class CameraRig {
     // Wider lens on tall screens.
     const fov = cam.aspect < 1 ? lerp(62, 42, clamp((cam.aspect - 0.45) / 0.55, 0, 1)) : 42;
     if (Math.abs(cam.fov - fov) > 0.01) {
+      cam.fov = fov;
+      cam.updateProjectionMatrix();
