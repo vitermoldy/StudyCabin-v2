@@ -37,3 +37,6 @@ export function formatDuration(totalSeconds) {
   const sec = s % 60;
   if (h) return `${h}:${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
   return `${m}:${String(sec).padStart(2, '0')}`;
+}
+
+/** Deterministic pseudo random generator (mulberry32). */
