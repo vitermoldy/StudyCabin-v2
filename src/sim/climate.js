@@ -226,3 +226,5 @@ export class Climate extends Emitter {
 
   describe() {
     const w = this.weather;
+    const t = this.temperature();
+    const words = {
