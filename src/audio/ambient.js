@@ -233,3 +233,5 @@ export class Ambient extends Emitter {
       this.cricketGate.gain.setTargetAtTime(0, now + onFor, 0.03);
       this._cricketGate = onFor + 0.3 + Math.random() * 0.9;
     }
+    if (birds > 0.05 && now > this._nextBird) {
+      this._bird(birds);
