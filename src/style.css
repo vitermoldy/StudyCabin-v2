@@ -319,3 +319,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .queue { margin-top: var(--s-3); }
 .slider-row--inline { grid-template-columns: auto 1fr auto; margin-top: 0; }
 .slider-row--inline .label { grid-column: auto; }
+.queue__toggle {
+  display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 48px;
