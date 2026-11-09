@@ -49,3 +49,5 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+button, input, select, textarea { font: inherit; color: inherit; }
+button, label[for], .choice, input[type="range"], summary, a[href] { cursor: pointer; }
