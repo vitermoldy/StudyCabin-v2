@@ -175,3 +175,5 @@ function lilies(scene) {
     const f = new THREE.Mesh(flowerGeo, flowerMat);
     f.position.set(p.x + 0.03, WATER_Y + 0.01, p.z - 0.02);
     f.scale.set(0.055, 0.045, 0.055);
+    scene.add(f);
+    return f;
