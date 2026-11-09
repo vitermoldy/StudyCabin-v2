@@ -212,3 +212,5 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
   const sync = () => {
     const on = wordsShown();
     wordsSwitch.setAttribute('aria-checked', String(on));
+    dockWords.setAttribute('aria-pressed', String(on));
+    dockWords.setAttribute('aria-label', on ? 'Hide the big words' : 'Show the big words');
