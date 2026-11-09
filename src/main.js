@@ -385,3 +385,5 @@ startWorld()
     requestAnimationFrame(() => {
       html.classList.add('is-live');
       html.dataset.ready = '1';
+    });
+    if (scenePaused) {
