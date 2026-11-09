@@ -375,3 +375,5 @@ startWorld()
       onFullscreen: toggleFullscreen,
     });
     addEventListener('resize', () => world.resize());
+    // First frames, then fade the canvas over the poster.
+    world.update(0.016, 0, { minutes: clock.minutes, climate, activity, follow: view === 'follow', jumped: true });
