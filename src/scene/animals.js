@@ -632,3 +632,5 @@ function createOwl(rand) {
         return;
       }
       if (o.state === 'away') {
+        if (!want) return;
+        o.wait -= dt;
