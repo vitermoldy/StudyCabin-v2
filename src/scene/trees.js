@@ -32,3 +32,5 @@ function paint(geo, r, g, b, vary = 0) {
 function pineGeometry() {
   const parts = [];
   const trunk = new THREE.CylinderGeometry(0.018, 0.03, 0.3, 6);
+  trunk.translate(0, 0.15, 0);
+  parts.push(paint(trunk, 0.36, 0.27, 0.2));
