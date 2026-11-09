@@ -168,3 +168,5 @@ export class Terrain {
       const push = (v, f) => {
         pos.push(...v);
         const c = 0.12 + Math.pow(f, 0.8) * 0.95;
+        col.push(c * 1.03, c, c * (0.84 - f * 0.14));
+        nrm.push(dx * 0.3, 1, dz * 0.3);
