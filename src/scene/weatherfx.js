@@ -159,3 +159,5 @@ export class WeatherFX {
               float s = sin(vRot), co = cos(vRot);
               c = mat2(co, -s, s, co) * c;
               float flip = abs(sin(vRot * 0.7)) * 0.7 + 0.3;
+              float d = length(c * vec2(1.0 / flip, 2.3));
+              float a = smoothstep(0.5, 0.4, d) * vA;
