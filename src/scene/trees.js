@@ -128,3 +128,5 @@ function segmentDistance(px, pz, [ax, az], [bx, bz]) {
 const TRAILS = allTrails();
 function onTrail(x, z, room) {
   for (const pts of TRAILS) {
+    for (let i = 0; i < pts.length - 1; i++) if (segmentDistance(x, z, pts[i], pts[i + 1]) < room) return true;
+  }
