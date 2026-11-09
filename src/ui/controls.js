@@ -61,3 +61,5 @@ export function mountDay({ clock, onJump }) {
   });
 
   const list = $('timeline');
+  const rows = DAY.filter((a) => a.id !== 'sleep').map((a) => {
+    const li = document.createElement('li');
