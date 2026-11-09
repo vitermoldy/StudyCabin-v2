@@ -72,3 +72,5 @@ export function roofTexture() {
   for (let i = 0; i < seams; i++) {
     const x = Math.round((i * 256) / seams);
     ctx.fillStyle = 'rgba(25,27,29,0.6)';
+    ctx.fillRect(x, 0, 2, 256);
+    ctx.fillStyle = 'rgba(230,232,235,0.4)';
