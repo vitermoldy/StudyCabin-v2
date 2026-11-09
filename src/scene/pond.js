@@ -204,3 +204,5 @@ export class Pond {
         uRippleArea: { value: new THREE.Vector4(0, 0, 1, 0) },
         uIce: { value: 0 },
         uSnow: { value: 0 },
+      },
+    ]);
