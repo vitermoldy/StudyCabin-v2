@@ -128,3 +128,5 @@ export class Climate extends Emitter {
   }
 
   _onDay(day) {
+    if (!this.autoSeason) return;
+    if ((day - 1) % 7 === 0) {
