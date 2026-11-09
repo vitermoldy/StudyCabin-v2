@@ -126,3 +126,5 @@ function segmentDistance(px, pz, [ax, az], [bx, bz]) {
 }
 
 const TRAILS = allTrails();
+function onTrail(x, z, room) {
+  for (const pts of TRAILS) {
