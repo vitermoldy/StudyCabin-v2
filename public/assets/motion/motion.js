@@ -397,3 +397,5 @@ export function init() {
   try { tabs(); } catch (e) { console.warn('motion.js: tabs', e); }
   try { counts(); } catch (e) { console.warn('motion.js: counts', e); }
   try { loops(); } catch (e) { console.warn('motion.js: loops', e); }
+}
+/** call again after the page adds markup (a tab list, a stat, a loop) */
