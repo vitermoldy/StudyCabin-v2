@@ -203,3 +203,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     return li;
   }
 
+  function focusRow(index, toolIndex) {
+    requestAnimationFrame(() => {
