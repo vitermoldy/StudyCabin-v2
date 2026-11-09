@@ -369,3 +369,5 @@ startWorld()
           world.rig.setView(id);
           save('view', { ...load('view', {}), view: id });
         },
+      },
+      onWords: setWords,
