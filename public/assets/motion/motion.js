@@ -33,3 +33,5 @@ const shot = () => /HeadlessChrome/.test(navigator.userAgent) && html.dataset.mo
 const jump = (el, on) => { el.classList.toggle('is-jump', on); };
 
 /* ---------------------------------------------------------------- nav */
+function nav() {
+  const bar = document.querySelector('.nav');
