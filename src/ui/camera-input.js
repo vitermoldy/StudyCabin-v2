@@ -83,3 +83,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     onRender();
   });
 
+  const end = (e) => {
+    if (!pointers.has(e.pointerId)) return;
