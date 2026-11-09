@@ -57,3 +57,5 @@ export class WeatherFX {
     // Rain: short streaks.
     this.rainU = { ...this.common, uAmount: { value: 0 }, uBox: { value: new THREE.Vector3(56, 24, 52) } };
     const rain = new THREE.LineSegments(
+      seeds(7000, 2, 3),
+      new THREE.ShaderMaterial({
