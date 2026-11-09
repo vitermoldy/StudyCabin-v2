@@ -141,3 +141,5 @@ export class Resident {
     torso.position.y = 0.26;
     torso.scale.set(1, 1, 0.78);
     this.spine.add(torso);
+    this.chest = new THREE.Group();
+    this.chest.position.y = 0.47;
