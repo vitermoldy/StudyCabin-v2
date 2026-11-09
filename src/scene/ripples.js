@@ -155,3 +155,5 @@ export class Ripples {
     for (let i = 0; i < steps; i++) this._pass(this.updateMat);
     r.setRenderTarget(prev);
     r.autoClear = auto;
+  }
+}
