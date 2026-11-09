@@ -201,3 +201,5 @@ function makeSquirrel() {
 const KINDS = {
   doe: { make: () => makeDeer(), routes: 'deer', speed: 1.05, stride: 1.6, swing: 0.36, stopFor: [7, 14], away: [25, 70], label: 'A doe' },
   buck: { make: () => makeDeer({ buck: true }), routes: 'deer', speed: 0.95, stride: 1.7, swing: 0.34, stopFor: [6, 12], away: [60, 140], label: 'A buck' },
+  fawn: { make: () => makeDeer({ fawn: true }), routes: 'deer', speed: 1.05, stride: 1.0, swing: 0.42, stopFor: [0, 0], away: [0, 0], label: 'A fawn', follows: 'doe' },
+  fox: { make: makeFox, routes: 'fox', speed: 1.6, stride: 0.75, swing: 0.55, stopFor: [3, 7], away: [30, 80], label: 'A fox' },
