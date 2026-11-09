@@ -120,3 +120,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       clearArmed = setTimeout(() => {
         clearArmed = 0;
         qClear.textContent = 'Clear the queue';
+      }, 3500);
+      return;
