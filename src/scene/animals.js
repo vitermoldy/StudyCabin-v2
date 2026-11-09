@@ -357,3 +357,5 @@ function createWalker(name, rand, inUse) {
         a.timer -= dt;
         if (a.timer > 0) return;
         if (rand() < keenness(KEEN[name], ctx)) {
+          const free = ROUTES[kind.routes].filter((r) => !inUse.has(r));
+          if (free.length) {
