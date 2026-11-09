@@ -268,3 +268,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     nextBtn.disabled = !has || (q.length < 2 && !(item && item.kind === 'playlist'));
     seek.disabled = !(player.status === 'playing' || player.status === 'paused' || player.status === 'buffering');
     shuffle.setAttribute('aria-pressed', String(player.shuffle));
+    loop.setAttribute('aria-pressed', String(player.loop));
+    vol.value = player.volume;
