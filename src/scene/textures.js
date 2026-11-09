@@ -153,3 +153,6 @@ export function panelTexture() {
   }
   grain(ctx, 256, 256, rand, 800, 0.04);
   return finish(c, { repeat: [1 / 1.4, 1 / 1.4] });
+}
+
+/** A soft knit / linen weave used on fabrics. */
