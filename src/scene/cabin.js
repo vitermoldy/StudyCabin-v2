@@ -349,3 +349,5 @@ export class Cabin {
     // floor lamp
     this._cyl(metal, 0.16, 0.16, 0.03, -2.85, FLOOR + 0.015, -2.35, 16);
     this._cyl(metal, 0.012, 0.012, 1.55, -2.85, FLOOR + 0.8, -2.35, 6);
+    const shade = this._m(new THREE.CylinderGeometry(0.17, 0.22, 0.28, 20, 1, true), this.shades.living, { cast: false });
+    shade.material.side = THREE.DoubleSide;
