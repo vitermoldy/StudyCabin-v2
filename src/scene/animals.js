@@ -419,3 +419,5 @@ function createWalker(name, rand, inUse) {
         a.neckAim = 0;
         a.headAim = 0;
         a.bodyAim = 0;
+      } else {
+        a.state = 'stop';
