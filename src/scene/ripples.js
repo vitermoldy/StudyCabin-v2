@@ -147,3 +147,5 @@ export class Ripples {
     r.autoClear = false;
     for (const d of this.queue) {
       this.dropMat.uniforms.uCenter.value.set(d.u, d.v);
+      this.dropMat.uniforms.uRadius.value = d.r;
+      this.dropMat.uniforms.uStrength.value = d.s;
