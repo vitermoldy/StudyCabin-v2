@@ -166,3 +166,5 @@ export class Trees {
         const grow = 0.85 + Math.min(d / 20, 1) * 0.35;
         const pine = r() < 0.56 + (d > 14 ? 0.16 : 0);
         const h = (pine ? 7 + r() * 7 : 6 + r() * 4.5) * grow;
+        const w = h * (pine ? 0.62 + r() * 0.22 : 0.95 + r() * 0.3);
+        (pine ? pines : broad).push({ x: px, z: pz, y: groundHeight(px, pz) - 0.2, h, w, yaw, tone });
