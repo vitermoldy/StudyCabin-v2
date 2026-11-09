@@ -41,3 +41,5 @@ function bindSwitch(button, get, set) {
     set(!get());
     sync();
   });
+  sync();
+  return sync;
