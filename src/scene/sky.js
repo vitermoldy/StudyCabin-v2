@@ -61,3 +61,5 @@ const FRAG = /* glsl */ `
     vec2 q = vec2(atan(d.x, d.z) * 2.2, g * 9.0);
     float cloud = fbm(q * 2.0 + 3.0);
     float dust = smoothstep(0.45, 0.7, fbm(q * 3.4 + 11.0)) * exp(-g * g / 0.004);
+    float core = exp(-pow(length(d - normalize(vec3(-0.55, 0.32, -0.77))), 2.0) * 4.0);
+    vec3 c = vec3(0.7, 0.75, 0.88) * band * (0.25 + cloud * 0.9) * (1.0 - dust * 0.75);
