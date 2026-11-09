@@ -199,3 +199,5 @@ function makeSquirrel() {
 
 // Kinds of walker. `routes` names the trails in ROUTES; `stopFor` is how long a stop lasts (s).
 const KINDS = {
+  doe: { make: () => makeDeer(), routes: 'deer', speed: 1.05, stride: 1.6, swing: 0.36, stopFor: [7, 14], away: [25, 70], label: 'A doe' },
+  buck: { make: () => makeDeer({ buck: true }), routes: 'deer', speed: 0.95, stride: 1.7, swing: 0.34, stopFor: [6, 12], away: [60, 140], label: 'A buck' },
