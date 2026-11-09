@@ -90,3 +90,5 @@ export class Overlay {
       // A little hysteresis so the words do not flicker at the threshold.
       let next = prev;
       if (prev === 'light' && dark > light * 1.25) next = 'dark';
+      if (prev === 'dark' && light > dark * 1.25) next = 'light';
+      if (next !== prev || !el.dataset.ink) {
