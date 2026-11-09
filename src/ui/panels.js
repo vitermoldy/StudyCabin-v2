@@ -15,3 +15,5 @@ export class Panels extends Emitter {
     for (const t of this.tabs) t.addEventListener('click', (e) => this.toggle(t.dataset.panel, t, e.detail === 0));
     for (const p of this.panels.values()) {
       p.querySelector('.panel__close').addEventListener('click', () => this.close());
+    }
+    document.addEventListener('keydown', (e) => {
