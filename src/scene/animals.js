@@ -320,3 +320,5 @@ function createWalker(name, rand, inUse) {
   }
 
   function stopPose(time, poseName) {
+    if (poseName === 'graze' || poseName === 'drink') {
+      // Head down, up now and then to look round (less often while drinking).
