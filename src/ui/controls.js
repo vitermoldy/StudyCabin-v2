@@ -130,3 +130,5 @@ export function mountSound({ ambient }) {
   const mix = $('amb-mix');
   onBtn.addEventListener('click', () => ambient.setEnabled(!ambient.enabled));
   vol.addEventListener('input', () => ambient.setVolume(Number(vol.value) / 100));
+  const sliders = LAYERS.map((layer) => {
+    const row = document.createElement('div');
