@@ -164,3 +164,5 @@ export class Resident {
     bun.position.set(0, 0.2, -0.08);
     this.headG.add(bun);
 
+    const arm = (side) => {
+      const sh = new THREE.Group();
