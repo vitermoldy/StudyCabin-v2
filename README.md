@@ -71,3 +71,5 @@ shows a still picture and the music, timer and ambient sound still work.
 | 1 to 5 | Clearing, deck, window, pond, follow |
 | Arrows | Turn the camera |
 | + and − | Zoom |
+| R | Reset the camera |
+| H | Show or hide the big words |
