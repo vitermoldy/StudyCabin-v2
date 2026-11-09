@@ -240,3 +240,5 @@ addEventListener('keydown', (e) => {
     setWords(!wordsShown);
     viewApi?.sync();
   } else if (k === 'p') {
+    setScenePaused(!scenePaused, { announce: true });
+  } else if (k === 'f') {
