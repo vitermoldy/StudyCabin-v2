@@ -158,3 +158,5 @@ export class Ambient extends Emitter {
     if (this.enabled) this.setEnabled(true);
   }
 
+  setVolume(v) {
+    this.volume = clamp(v, 0, 1);
