@@ -297,3 +297,5 @@ export class World {
           for (let i = 0; i < buf.length; i += 4) {
             blk += 0.2126 * lin(buf[i]) + 0.7152 * lin(buf[i + 1]) + 0.0722 * lin(buf[i + 2]);
           }
+          blk /= buf.length / 4;
+          sum += blk;
