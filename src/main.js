@@ -244,3 +244,5 @@ addEventListener('keydown', (e) => {
   } else if (k === 'f') {
     toggleFullscreen();
   } else if (world && ['arrowleft', 'arrowright', 'arrowup', 'arrowdown'].includes(k) && !(t instanceof HTMLElement && t.closest('[role="dialog"], .dock'))) {
+    e.preventDefault();
+    const step = 28;
