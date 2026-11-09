@@ -203,3 +203,5 @@ export class Cabin {
         b.position.set(ex * (w / 2 + 0.02), slab.position.y - 0.03, zc);
         b.rotation.x = side * alpha;
       }
+      // fascia along the eave
+      const eaveY = RIDGE - Math.tan(alpha) * hRun;
