@@ -91,3 +91,5 @@ const WEATHER = {
 };
 
 const SEASON = {
+  deer: {},
+  fox: {},
