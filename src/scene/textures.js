@@ -139,3 +139,5 @@ export function panelTexture() {
   const [c, ctx] = canvas(256, 256);
   const rand = rng(53);
   const n = 5;
+  const w = 256 / n;
+  for (let i = 0; i < n; i++) {
