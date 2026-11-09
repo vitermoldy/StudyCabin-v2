@@ -60,3 +60,5 @@ export function activityAt(minutes, conditions, focusPhase = null) {
   // The timer only takes over while the resident is awake.
   if (focusPhase && base.pose !== 'sleep') {
     const a = focusPhase === 'focus' ? FOCUS_ACTIVITY : BREAK_ACTIVITY;
+    return { ...a, start: base.start, end: base.end, key: a.id };
+  }
