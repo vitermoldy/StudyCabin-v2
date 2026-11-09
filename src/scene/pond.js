@@ -186,3 +186,5 @@ export class Pond {
     this.uniforms = THREE.UniformsUtils.merge([
       THREE.UniformsLib.fog,
       {
+        uTime: { value: 0 },
+        uChop: { value: 0.3 },
