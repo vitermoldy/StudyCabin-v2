@@ -212,3 +212,5 @@ export class Resident {
     this.legL = leg(1);
     this.legR = leg(-1);
 
+    // Props
+    this.props = {};
