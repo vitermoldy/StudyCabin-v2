@@ -92,3 +92,5 @@ export class Cabin {
       roof: weathered(std('#f2f4f5', { map: roofTexture(), roughness: 0.52, metalness: 0.12 }), { snow: 1 }),
       deck: weathered(std('#f2ece4', { map: deckTexture(), roughness: 0.9 }), { snow: 0.85 }),
       found: std('#3a3936', { roughness: 0.95 }),
+      floor: std('#ffffff', { map: floorTexture(), roughness: 0.62 }),
+      panel: std('#f4ece2', { map: panelTexture(), roughness: 0.82 }),
