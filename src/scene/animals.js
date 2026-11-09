@@ -220,3 +220,5 @@ const LINES = {
 function buildCurve(route, reverse) {
   const pts = reverse ? [...route.pts].reverse() : route.pts;
   const n = pts.length;
+  const curve = new THREE.CatmullRomCurve3(pts.map(([x, z]) => new THREE.Vector3(x, 0, z)));
+  curve.arcLengthDivisions = (n - 1) * 24;
