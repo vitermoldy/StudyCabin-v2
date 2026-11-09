@@ -186,3 +186,5 @@ focus.on('finished', (phase) => {
   toast(phase === 'focus' ? 'Focus block done. Time for a break.' : 'Break over. Back to the desk.');
   refreshActivity();
 });
+focus.on('change', () => refreshActivity());
+climate.on('season', (id) => {
