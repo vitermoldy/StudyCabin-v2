@@ -224,3 +224,5 @@ function pauseButton(loop) {
   btn.type = 'button';
   btn.className = 'loop-pause m-own';
   const show = paused => {
+    btn.innerHTML = paused ? ICON_PLAY : ICON_PAUSE;
+    btn.setAttribute('aria-label', `${paused ? 'Play' : 'Pause'} animation`);
