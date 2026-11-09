@@ -241,3 +241,6 @@ export class Atmosphere {
     this.sunColor = new THREE.Color();
     this._tmpA = new THREE.Color();
     this._tmpB = new THREE.Color();
+  }
+
+  static sunDirection(minutes, season, out) {
