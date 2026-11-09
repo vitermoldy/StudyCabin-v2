@@ -720,3 +720,6 @@ export class Animals {
       w.plan(pick.route, pick.reverse, { atStop: true });
       this._onPlan(w);
       return;
+    }
+  }
+
