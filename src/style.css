@@ -14,3 +14,5 @@
   /* The controls sit on dark plates, so they read the inverse palette. */
   --bg: var(--p-inv-bg);
   --surface: var(--p-inv-surface);
+  --ink: var(--p-inv-ink);
+  --muted: #a7a8a3;
