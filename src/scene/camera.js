@@ -173,3 +173,5 @@ export class CameraRig {
 }
 
 const UP = new THREE.Vector3(0, 1, 0);
+const tmpA = new THREE.Vector3();
+const tmpB = new THREE.Vector3();
