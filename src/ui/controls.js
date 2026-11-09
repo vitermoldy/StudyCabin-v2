@@ -54,3 +54,5 @@ export function mountDay({ clock, onJump }) {
     const m = Number(scrub.value);
     scrubOut.textContent = formatClock(m);
     onJump(m, true);
+  });
+  $('sync-clock').addEventListener('click', () => {
