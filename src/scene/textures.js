@@ -189,3 +189,5 @@ export function printTexture() {
     ctx.moveTo(0, 192);
     for (let x = -6; x <= 262; x += 6 + rand() * 8) {
       const h = tall * (0.55 + rand() * 0.45);
+      ctx.lineTo(x - 5, base);
+      ctx.lineTo(x, base - h);
