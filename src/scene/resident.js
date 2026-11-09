@@ -426,3 +426,6 @@ export class Resident {
     this.legR.kn.rotation.x = j.knR;
 
     const props = moving ? [] : PROPS_FOR[this.pose] || [];
+    for (const [id, p] of Object.entries(this.props)) p.visible = props.includes(id);
+
+    this.headG.getWorldPosition(this.head);
