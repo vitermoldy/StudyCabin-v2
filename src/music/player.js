@@ -247,3 +247,5 @@ export class MusicPlayer extends Emitter {
     } else {
       next = this.current + dir;
     }
+    if (next >= n) {
+      if (!this.loop) {
