@@ -65,3 +65,5 @@ export function pondPoint(e, a) {
   return { x: POND.x + Math.cos(a) * w * POND.rx, z: POND.z + Math.sin(a) * w * POND.rz };
 }
 
+// The path round the pond and the short spur that joins it to the deck steps.
+export const TRAIL_E = 1.32;
