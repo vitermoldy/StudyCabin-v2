@@ -28,3 +28,5 @@ function flush() {
 }
 
 export function load(section, fallback) {
+  const all = readAll();
+  const value = all[section];
