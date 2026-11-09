@@ -195,3 +195,5 @@ export function printTexture() {
     }
     ctx.lineTo(256, 192);
     ctx.closePath();
+    ctx.fill();
+  }
