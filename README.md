@@ -66,7 +66,7 @@ shows a still picture and the music, timer and ambient sound still work.
   pond, the owl's hoot while it sits on the roof, a woodpecker by day, a fox's bark at night, the
   stove fire and thunder, all made in the browser from the weather, the hour and who is about,
   with a mixer. It turns down while music plays.
--
+- **Camera.**
 
 ## Keys
 
