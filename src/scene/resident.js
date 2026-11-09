@@ -222,3 +222,5 @@ export class Resident {
     pageR.position.x = -0.072;
     pageR.rotation.y = 0.25;
     const spineB = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.21, 0.02), m.cover);
+    book.add(pageL, pageR, spineB);
+    book.position.set(0, 0.0, 0.36);
