@@ -89,3 +89,5 @@ export function roofTexture() {
 /** Grey weathered deck planks, 0.14 m wide, laid along x. */
 export function deckTexture() {
   const [c, ctx] = canvas(256, 256);
+  const rand = rng(37);
+  const rows = 8;
