@@ -148,3 +148,5 @@ function lilies(scene) {
     // most of them on the far side, out of the way of the rings near the path
     if (Math.sin(a) < -0.35 && r() < 0.8) continue;
     const u = Math.cos(a) * e;
+    const v = Math.sin(a) * e;
+    const x = POND.x + u * POND.rx;
