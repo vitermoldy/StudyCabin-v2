@@ -670,3 +670,5 @@ function createOwl(rand) {
         else gone();
       }
     },
+    sighting() {
+      return o.state === 'perch' ? 'An owl sits on the roof ridge' : null;
