@@ -311,3 +311,5 @@ export class Ambient extends Emitter {
       const t0 = now + i * gap;
       g.gain.setValueAtTime(0.0001, t0);
       g.gain.exponentialRampToValueAtTime(peak, t0 + 0.006);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + gap * 0.85);
+    }
