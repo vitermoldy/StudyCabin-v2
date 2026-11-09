@@ -24,3 +24,5 @@ export class MusicPlayer extends Emitter {
     this.apiError = '';
     this.player = null;
     this._ready = false;
+    this._pending = null;
+    this._seekToVideo = null;
