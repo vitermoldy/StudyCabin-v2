@@ -43,3 +43,5 @@ export class CameraRig {
       outTarget.copy(follow);
       outTarget.y -= 0.25;
       const inside = follow.z < 3.2;
+      outPos.set(follow.x * 0.85 + 0.3, follow.y + 1.0, inside ? 6.6 : follow.z + 6.8);
+    }
