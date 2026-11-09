@@ -100,3 +100,6 @@ const FRAG = /* glsl */ `
     gl_FragColor = vec4(col / max(alpha, 0.001), alpha);
     #include <tonemapping_fragment>
     #include <colorspace_fragment>
+    #include <fog_fragment>
+  }`;
+
