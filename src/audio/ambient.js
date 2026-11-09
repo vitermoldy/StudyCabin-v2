@@ -315,3 +315,6 @@ export class Ambient extends Emitter {
     }
     o.connect(f).connect(g).connect(this.g.wildlife);
     o.start(now);
+    o.stop(now + pulses * gap + 0.05);
+  }
+
