@@ -252,3 +252,5 @@ export class Pond {
     const L = this.lilies;
     const show = this.ice < 0.15;
     L.padMesh.visible = show;
+    this._padColor.setRGB(look.fern[0], look.fern[1], look.fern[2], THREE.SRGBColorSpace);
+    L.padMat.color.copy(this._padColor).multiplyScalar(0.85);
