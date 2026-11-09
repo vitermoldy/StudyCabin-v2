@@ -347,3 +347,5 @@ export class Ambient extends Emitter {
   _drum(level) {
     const ctx = this.ctx;
     const now = ctx.currentTime + 0.05;
+    const knocks = 12 + Math.floor(Math.random() * 8);
+    const rate = 16 + Math.random() * 5;
