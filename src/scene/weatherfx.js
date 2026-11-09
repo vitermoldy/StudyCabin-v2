@@ -75,3 +75,5 @@ export class WeatherFX {
             float on = step(aId, uAmount) * (1.0 - insideCabin(p)) * step(-0.2, p.y);
             vec4 mv = modelViewMatrix * vec4(p, 1.0);
             float far = smoothstep(42.0, 18.0, -mv.z);
+            vA = on * far * (1.0 - aEnd * 0.7);
+            gl_Position = projectionMatrix * mv;
