@@ -232,3 +232,5 @@ export class Climate extends Emitter {
       cloudy: 'Low cloud',
       fog: 'Fog in the trees',
       rain: 'Rain',
+      storm: 'Storm over the forest',
+      snow: 'Snow falling',
