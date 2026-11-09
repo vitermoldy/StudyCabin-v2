@@ -377,3 +377,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 
 /* toast and fallback */
 .toast {
+  position: fixed; left: 50%; top: var(--edge); z-index: 20; transform: translate(-50%, -8px);
+  max-width: min(420px, calc(100vw - 2 * var(--edge) - 120px));
