@@ -317,3 +317,5 @@ export class Cabin {
     // coffee table with books and a mug
     const C = F.coffeeTable;
     this._bx(wood, C.x - C.w / 2, C.x + C.w / 2, FLOOR + 0.36, FLOOR + 0.42, C.z - C.d / 2, C.z + C.d / 2);
+    this._bx(woodDark, C.x - C.w / 2 + 0.06, C.x + C.w / 2 - 0.06, FLOOR, FLOOR + 0.36, C.z - 0.12, C.z + 0.12);
+    this._cb(this.mat.books, 0.3, 0.05, 0.22, C.x - 0.25, FLOOR + 0.445, C.z);
