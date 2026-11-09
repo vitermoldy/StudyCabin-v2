@@ -19,3 +19,5 @@ function readAll() {
 
 let timer = 0;
 function flush() {
+  timer = 0;
+  try {
