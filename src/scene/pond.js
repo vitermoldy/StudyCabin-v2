@@ -64,3 +64,5 @@ const FRAG = /* glsl */ `
     }
     vec3 N = normalize(vec3(-g.x * 1.3, 1.0, -g.y * 1.3));
 
+    float ndv = max(dot(N, V), 0.0);
+    float fres = (0.04 + 0.96 * pow(1.0 - ndv, 5.0)) * 0.9;
