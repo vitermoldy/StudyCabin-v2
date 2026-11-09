@@ -89,3 +89,5 @@ export class Clock extends Emitter {
     this.jumpTo(realMinutes(), { sameDay: true });
   }
 
+  persist() {
+    save('clock', { minutes: this.minutes, day: this.day, speed: this.speed });
