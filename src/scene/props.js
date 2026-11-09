@@ -39,3 +39,5 @@ export class Props {
     const q = new THREE.Quaternion();
     const e = new THREE.Euler();
     // Stones on the bank, in small groups, none across the path.
+    const spots = [];
+    // (Angles round the pond keep clear of the deer's drinking place and the fox's trail.)
