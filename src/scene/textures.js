@@ -147,3 +147,5 @@ export function panelTexture() {
     for (let k = 0; k < 10; k++) {
       ctx.fillStyle = `rgba(80,52,30,${0.04 + rand() * 0.06})`;
       ctx.fillRect(i * w + rand() * w, 0, 1 + rand() * 2, 256);
+    }
+    ctx.fillStyle = 'rgba(50,32,20,0.45)';
