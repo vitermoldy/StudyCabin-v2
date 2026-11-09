@@ -29,3 +29,6 @@
   --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 128px;
   --r-sm: 4px; --r-md: 6px; --r-lg: 8px; --r-btn: 4px;
   --ease: cubic-bezier(.2, .8, .2, 1);
+  --t-body: 16px; --t-small: 14px; --t-label: 13px;
+
+  --edge: clamp(16px, 2.3vw, 40px); /* fixed controls sit this far from the screen edge */
