@@ -117,3 +117,5 @@ export function forestDepth(x, z) {
   const a = Math.atan2(v, u);
   const w = 1 + 0.08 * Math.sin(a * 5 + 1.7) + 0.05 * Math.sin(a * 9 + 0.4) + 0.03 * Math.sin(x * 0.35 + z * 0.2);
   let d = (Math.hypot(u, v) / w - 1) * 16;
+  if (z > 16 && z < 72) d = Math.min(d, laneEdge(x, z));
+  return d;
