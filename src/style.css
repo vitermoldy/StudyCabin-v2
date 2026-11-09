@@ -345,3 +345,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .qrow__main:hover .qrow__title { text-decoration: underline; text-underline-offset: 3px; }
 .qrow.is-current .qrow__title { color: var(--action); font-weight: 500; }
 .qrow.is-error .qrow__meta { color: #f0b37a; }
+.qrow__tools { display: flex; }
+.qrow__tools .icon-btn { width: 40px; border-radius: var(--r-sm); }
