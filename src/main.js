@@ -320,3 +320,6 @@ function frame(now) {
       sampleIn = 0.8;
       overlay.applyInk(world.sampleLuminance(overlay.rects()));
     }
+  }
+
+  audioIn -= dt;
