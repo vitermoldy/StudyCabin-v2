@@ -14,3 +14,5 @@ export class CameraRig {
     this.view = 'clearing';
     this.pos = new THREE.Vector3();
     this.target = new THREE.Vector3();
+    this.from = { pos: new THREE.Vector3(), target: new THREE.Vector3() };
+    this.travel = 1; // 0..1 progress of a move between views
