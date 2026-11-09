@@ -76,3 +76,5 @@ export class Treeline {
       const material = new THREE.ShaderMaterial({
         side: THREE.DoubleSide,
         uniforms: {
+          uNearTop: { value: this.colors.nearTop },
+          uNearLow: { value: this.colors.nearLow },
