@@ -57,3 +57,6 @@ export class CameraRig {
       // Never pass through the glass.
       outPos.z = Math.max(outPos.z, 3.9);
     }
+    return outPos;
+  }
+
