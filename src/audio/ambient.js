@@ -401,3 +401,5 @@ export class Ambient extends Emitter {
     const s = ctx.createBufferSource();
     s.buffer = this.noise;
     const f = ctx.createBiquadFilter();
+    f.type = 'highpass';
+    f.frequency.value = 1400 + Math.random() * 2500;
