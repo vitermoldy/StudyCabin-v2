@@ -113,3 +113,6 @@ const FRAG = /* glsl */ `
     float moonLit = pow(max(dot(d, uMoonDir), 0.0), 6.0) * uMoonVis;
     cloudCol += vec3(0.25, 0.28, 0.33) * moonLit;
 
+    col += night * uStars * skyUp * (1.0 - max(cover, cirrus));
+    col += aurora(d, uTime) * uAurora * (1.0 - cover * 0.85);
+
