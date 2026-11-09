@@ -145,3 +145,5 @@ export class Resident {
     this.chest.position.y = 0.47;
     this.spine.add(this.chest);
     const neck = capsule(0.05, 0.06, m.skin);
+    neck.position.y = 0.07;
+    this.chest.add(neck);
