@@ -336,3 +336,5 @@ export class Atmosphere {
       this.sun.intensity = 0.42 * moonUp * (1 - overcast * 0.75);
     } else {
       this.sun.color.copy(this.sunColor);
+      this.sun.intensity = 3.1 * sunUp * (1 - overcast * 0.78) * (1 - fogAmt * 0.3);
+    }
