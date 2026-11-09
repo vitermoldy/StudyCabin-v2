@@ -180,3 +180,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     li.appendChild(main);
 
     const tools = document.createElement('div');
+    tools.className = 'qrow__tools';
+    const tool = (icon, label, fn, disabled) => {
