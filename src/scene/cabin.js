@@ -505,3 +505,5 @@ export class Cabin {
       f.position.y = FLOOR + 0.38 + 0.21 * f.scale.y;
     });
     this.shades.porch.emissiveIntensity = s.porch * 2;
+    this.mat.screen.emissiveIntensity = s.screen * 0.9;
+    this.door.position.x = -1.86 * s.door;
