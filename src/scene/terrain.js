@@ -160,3 +160,5 @@ export class Terrain {
       const px = -dz * w;
       const pz = dx * w;
       const at = (f, side) => {
+        const bend = lean * f * f;
+        const width = (1 - f * 0.8) * side;
