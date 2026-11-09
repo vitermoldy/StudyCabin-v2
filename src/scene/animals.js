@@ -38,3 +38,5 @@ function eyes(head, x, y, z, r) {
   for (const side of [-1, 1]) {
     const e = new THREE.Mesh(ball, eyeMat);
     e.scale.setScalar(r);
+    e.position.set(x, y, side * z);
+    head.add(e);
