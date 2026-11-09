@@ -164,3 +164,5 @@ export function mountSound({ ambient }) {
     volOut.textContent = `${vol.value}%`;
     for (const s of sliders) {
       s.input.value = String(Math.round(ambient.mix[s.layer.id] * 100));
+      s.out.textContent = `${s.input.value}%`;
+      s.input.disabled = !ambient.enabled;
