@@ -114,3 +114,5 @@ export class Cabin {
       pot: std('#b19f88', { roughness: 0.8 }),
       print: std('#ffffff', { map: printTexture(), roughness: 0.9 }),
       books: std('#ffffff', { map: booksTexture(), roughness: 0.9 }),
+      stoveGlass: new THREE.MeshStandardMaterial({ color: '#120c08', emissive: '#ff7a2e', emissiveIntensity: 0, roughness: 0.3 }),
+      screen: new THREE.MeshStandardMaterial({ color: '#1b1d1f', emissive: '#d6e4ee', emissiveIntensity: 0, roughness: 0.3 }),
