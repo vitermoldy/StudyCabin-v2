@@ -264,3 +264,5 @@ export class WeatherFX {
     c.uLight.value = light;
     c.uScale.value = viewportHeight * 0.5 / Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
     // Centre the weather a little in front of the camera.
+    const fwd = camera.getWorldDirection(tmp).multiplyScalar(14);
+    c.uCenter.value.copy(camera.position).add(fwd);
