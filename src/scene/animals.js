@@ -431,3 +431,5 @@ function createWalker(name, rand, inUse) {
       pose(dt, time, moving);
     },
     /** A line about this animal while it is out in the clearing; `withYoung` for the doe. */
+    sighting(withYoung = false) {
+      if (!model.root.visible) return null;
