@@ -138,3 +138,6 @@ function storyText() {
   const seen = world?.animals.sighting();
   const line = `${activity.line}. ${climate.describe()}.${seen ? ` ${seen}.` : ''}`;
   const meta = `Day ${clock.day} · ${s} · ${SPEED_LABELS[clock.speed].toLowerCase()}`;
+  return { line, meta };
+}
+
