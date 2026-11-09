@@ -624,3 +624,5 @@ function createOwl(rand) {
     get perched() {
       return o.state === 'perch';
     },
+    update(dt, time, ctx) {
+      const want = owlOut(ctx);
