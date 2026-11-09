@@ -345,3 +345,5 @@ export class Resident {
         } else {
           const k = remaining / dist;
           this.pos.x += dx * k;
+          this.pos.z += dz * k;
+          this.pos.y += (target.y - this.pos.y) * k;
