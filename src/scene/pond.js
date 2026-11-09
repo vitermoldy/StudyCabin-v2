@@ -190,3 +190,5 @@ export class Pond {
         uChop: { value: 0.3 },
         uRain: { value: 0 },
         uLight: { value: 1 },
+        uDeep: { value: new THREE.Color('#14211b') },
+        uShallow: { value: new THREE.Color('#465a3c') },
