@@ -86,3 +86,5 @@ function broadleafGeometry() {
 }
 
 function swayShader(material, { leaves = false } = {}) {
+  const prev = material.onBeforeCompile;
+  // Two programs from one wrapper: give each its own cache key.
