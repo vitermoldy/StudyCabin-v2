@@ -109,3 +109,5 @@ export class Ripples {
     const prev = renderer.getRenderTarget();
     for (const t of [this.a, this.b]) {
       renderer.setRenderTarget(t);
+      renderer.setClearColor(0x000000, 0);
+      renderer.clear(true, false, false);
