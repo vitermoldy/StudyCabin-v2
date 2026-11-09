@@ -206,3 +206,5 @@ export class Ambient extends Emitter {
     // The wood in the wind: gusts come and go every ten seconds or so; bare branches in winter
     // rustle less, dry autumn leaves more.
     const sway = Math.pow(0.5 + 0.5 * Math.sin(t * 0.37) * Math.sin(t * 0.13 + 1), 1.4);
+    const air = 0.15 + env.wind * 0.85;
+    const foliage = { winter: 0.45, autumn: 1.15 }[env.season] ?? 1;
