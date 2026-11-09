@@ -23,3 +23,6 @@ export function webglAvailable() {
   } catch {
     return false;
   }
+}
+
+export class World {
