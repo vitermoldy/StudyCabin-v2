@@ -310,3 +310,5 @@ export class Atmosphere {
     u.uMoonDir.value.copy(this.moonDir);
     u.uSunVis.value = smoothstep(-0.06, 0.04, sy) * (1 - overcast * 0.85);
     u.uGlow.value = 0.6 + lowness * 1.4;
+    u.uMoonVis.value = this.night * smoothstep(-0.05, 0.1, this.moonDir.y);
+    u.uStars.value = this.night * (1 - overcast * 0.9) * (1 - fogAmt * 0.8);
