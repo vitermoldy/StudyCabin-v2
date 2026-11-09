@@ -236,3 +236,5 @@ export class Pond {
     u.uTime.value = time;
     u.uChop.value = params.wind * 0.7 + params.storm * 0.3;
     u.uRain.value = params.rain;
+    u.uLight.value = 0.1 + atmo.dayFactor * 0.9 * (1 - params.storm * 0.35);
+    u.uZenith.value.copy(atmo.zenith);
