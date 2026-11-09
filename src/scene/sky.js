@@ -175,3 +175,5 @@ const MOSS = C('#2c3a1e');
 /**
  * The sky dome, sun, moon, hemisphere light and fog: everything that follows
  * the clock and the weather.
+ */
+export class Atmosphere {
