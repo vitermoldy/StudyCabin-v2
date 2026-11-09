@@ -242,3 +242,5 @@ export class Pond {
     u.uLand.value.copy(this.landBase).multiplyScalar(0.18 + atmo.dayFactor * 0.6).lerp(atmo.fogColor, 0.3);
     u.uSunDir.value.copy(atmo.sunDir);
     u.uSunColor.value.copy(atmo.sunColor);
+    u.uSunVis.value = atmo.uniforms.uSunVis.value;
+    u.uMoonDir.value.copy(atmo.moonDir);
