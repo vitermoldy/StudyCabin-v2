@@ -176,3 +176,5 @@ export class Climate extends Emitter {
   }
 
   _setWeather(id) {
+    if (id === this.weather) return;
+    this.weather = id;
