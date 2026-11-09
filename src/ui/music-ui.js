@@ -145,3 +145,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       img.width = 56;
       img.height = 32;
       img.loading = 'lazy';
+      img.decoding = 'async';
+      li.appendChild(img);
