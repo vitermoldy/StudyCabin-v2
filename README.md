@@ -97,3 +97,6 @@ shows a still picture and the music, timer and ambient sound still work.
 - The video plays in the Music panel at about 400 by 225 px. When the panel is closed the player
   keeps playing out of sight.
 - The scene is heavy on purpose (a full forest and about a million grass triangles on a desktop,
+  fewer on phones). The page lowers its resolution by itself when frames run slow.
+- Settings are kept under their own key, so v1 and v2 opened on the same address do not share them.
+
