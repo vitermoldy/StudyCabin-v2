@@ -8,3 +8,5 @@ export class Emitter {
     return () => this._handlers.get(type)?.delete(fn);
   }
   emit(type, payload) {
+    const set = this._handlers.get(type);
+    if (!set) return;
