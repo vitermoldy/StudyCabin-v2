@@ -60,3 +60,5 @@ export class World {
     this.pond.setRipples(this.ripples.texture, RIPPLE_AREA);
     this.animals = new Animals(this.scene, { lowPower });
     this.raycaster = new THREE.Raycaster();
+    this.waterPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -WATER_Y);
+    this._rainDrops = 0;
