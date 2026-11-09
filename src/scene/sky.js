@@ -286,3 +286,5 @@ export class Atmosphere {
     const grey = this._tmpA.copy(this.horizon);
     const l = (grey.r + grey.g + grey.b) / 3;
     grey.setRGB(lerp(grey.r, l, 0.7), lerp(grey.g, l, 0.7), lerp(grey.b, l, 0.7));
+    this.horizon.lerp(grey, fogAmt * 0.6);
+    this.zenith.lerp(this.horizon, fogAmt * 0.55);
