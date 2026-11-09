@@ -22,3 +22,5 @@ function realMinutes() {
 }
 
 export class Clock extends Emitter {
+  constructor() {
+    super();
