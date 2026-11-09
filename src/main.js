@@ -29,3 +29,6 @@ const overlay = new Overlay({ reducedMotion: reduced });
 const panels = new Panels();
 
 const prefs = load('view', { view: FIRST_VIEW, words: true });
+let wordsShown = prefs.words !== false;
+html.classList.toggle('is-clear', !wordsShown);
+
