@@ -145,3 +145,5 @@ export class Cabin {
       const geo = new THREE.ExtrudeGeometry(shape, { depth: 0.12, bevelEnabled: false });
       geo.rotateY(-Math.PI / 2);
       geo.translate(side > 0 ? 7.12 : -7.0, 0, 0);
+      this._m(geo, siding);
+      const x0 = side > 0 ? 6.97 : CABIN.x0;
