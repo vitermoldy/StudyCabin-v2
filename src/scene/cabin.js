@@ -341,3 +341,5 @@ export class Cabin {
     for (let i = 0; i < 5; i++) {
       const y = FLOOR + 0.05 + i * 0.48;
       this._bx(woodDark, bx0, bx1, y - 0.03, y, -3.0, -3.0 + B.d);
+      if (i < 4) this._bx(books, bx0 + 0.04, bx1 - 0.04, y, y + 0.32, -2.96, -2.72, { cast: false });
+    }
