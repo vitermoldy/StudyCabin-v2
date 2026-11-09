@@ -389,3 +389,5 @@ export class Cabin {
   _desk() {
     const { wood, woodDark, trim, ceramic, metal, leaf, pot, screen } = this.mat;
     const D = F.desk;
+    this._bx(wood, D.x - D.w / 2, D.x + D.w / 2, FLOOR + 0.72, FLOOR + 0.76, D.z - D.d / 2, D.z + D.d / 2);
+    this._legs(woodDark, D.x, D.z, D.w - 0.04, D.d - 0.04, 0.72, FLOOR, 0.04);
