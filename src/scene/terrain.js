@@ -328,3 +328,6 @@ export class Terrain {
         );
       shader.fragmentShader = shader.fragmentShader
         .replace('#include <common>', '#include <common>\nuniform float uSnow; varying float vTip;')
+        .replace('#include <color_fragment>', '#include <color_fragment>\n diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.86, 0.88, 0.9), uSnow * 0.5 * vTip);');
+    };
+
