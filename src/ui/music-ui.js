@@ -35,3 +35,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const dockPlay = $('dock-play');
   const prevBtn = $('prev');
   const nextBtn = $('next');
+  const seek = $('seek');
+  const seekTime = $('seek-time');
