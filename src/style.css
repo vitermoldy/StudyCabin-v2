@@ -83,3 +83,6 @@ html.is-live .poster { opacity: 0; }
 .lines {
   position: absolute; inset: 0 var(--gut); z-index: 0; display: flex; justify-content: space-between;
   pointer-events: none; z-index: 1; transition: opacity 400ms var(--ease);
+}
+.lines span { width: 1px; background: rgba(255, 255, 255, 0.13); }
+
