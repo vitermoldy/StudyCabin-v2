@@ -306,3 +306,5 @@ export class Resident {
     const s = SPOTS[spotId];
     this.spot = spotId;
     this.pos.set(s.at.x, s.at.y, s.at.z);
+    this.facing = s.face;
+    if (spotId === 'trail') this.loopIndex = 0;
