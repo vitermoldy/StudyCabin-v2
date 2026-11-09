@@ -216,3 +216,5 @@ export function booksTexture() {
     ctx.fillRect(x, 64 - h, w - 1, h);
     x += w;
   }
+  const t = finish(c);
+  t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
