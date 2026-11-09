@@ -6,3 +6,7 @@ resident lives through the day while you study, and animals pass through the cle
 a hare, a squirrel, birds overhead and an owl on the roof at night. With your own YouTube music.
 
 Version 2 of StudyCabin: the same app and interface, moved from the beach into a forest in the
+colours of the SongPlay scene.
+
+## Run it
+
