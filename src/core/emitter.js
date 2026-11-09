@@ -24,3 +24,5 @@ export const smoothstep = (a, b, v) => {
 export const damp = (current, target, rate, dt) => lerp(current, target, 1 - Math.exp(-rate * dt));
 
 export function formatClock(minutes) {
+  const m = Math.floor(((minutes % 1440) + 1440) % 1440);
+  const h = Math.floor(m / 60);
