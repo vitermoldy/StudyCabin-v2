@@ -442,3 +442,5 @@ export class Cabin {
     this._cyl(ceramic, 0.045, 0.04, 0.1, t.x + 0.1, FLOOR + 0.62, t.z - 0.05, 12);
     // fire bowl
     const f = F.fireBowl;
+    const pts = [];
+    for (let i = 0; i <= 10; i++) {
