@@ -102,3 +102,5 @@ function swayShader(material, { leaves = false } = {}) {
         ${leaves ? 'vLeaf = aLeaf;' : ''}
         #ifdef USE_INSTANCING
           vec3 base = instanceMatrix[3].xyz;
+          float hh = position.y;
+          float ph = base.x * 0.21 + base.z * 0.17;
