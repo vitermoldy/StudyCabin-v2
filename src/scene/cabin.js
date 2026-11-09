@@ -454,3 +454,5 @@ export class Cabin {
     this.flames = [];
     for (let i = 0; i < 4; i++) {
       const fl = this._m(new THREE.ConeGeometry(0.11 - i * 0.012, 0.42, 10), flame, { cast: false, receive: false });
+      fl.position.set(f.x + Math.sin(i * 1.7) * 0.12, FLOOR + 0.55, f.z + Math.cos(i * 1.7) * 0.12);
+      this.flames.push(fl);
