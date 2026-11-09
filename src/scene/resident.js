@@ -58,3 +58,5 @@ const POSES = {
     spineX: 0.26, headX: 0.45,
     shLx: -0.52, shLz: 0.22, elL: -1.15,
     shRx: -0.66 + 0.03 * Math.sin(t * 5), shRz: -0.16 + 0.05 * Math.sin(t * 2.3), elR: -1.0,
+  }),
+  sitDrink: (t, seat) => {
