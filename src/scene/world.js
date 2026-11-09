@@ -147,3 +147,6 @@ export class World {
     const dark = darkness > 0.42;
     const season = climate.season;
     const cold = season === 'winter' || season === 'autumn' || climate.temperature(minutes) < 14;
+    const stoveLit = (cold && (at(15.5, 23.1) || at(6.6, 9.5))) || (season === 'rainy' && at(18.5, 22.8));
+
+    this.cabin.set({
