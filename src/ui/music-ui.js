@@ -68,3 +68,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    clearError();
+    try {
