@@ -470,3 +470,5 @@ function makeBird(material) {
   root.add(blob(material, [0.04, 0.03, 0.03], [0.12, 0.01, 0]));
   const wings = [-1, 1].map((side) => {
     const wing = new THREE.Mesh(wingGeometry(side), material);
+    root.add(wing);
+    return { wing, side };
