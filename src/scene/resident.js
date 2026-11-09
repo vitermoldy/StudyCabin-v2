@@ -115,3 +115,5 @@ export class Resident {
     this.spot = null;
     this.pose = 'stand';
     this.walkPhase = 0;
+    this.speed = 1.25;
+    this.loopIndex = 0;
