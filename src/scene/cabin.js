@@ -511,3 +511,5 @@ export class Cabin {
     this.duvet.scale.y = 1 + sl * 1.6;
     this.duvet.position.y = FLOOR + 0.58 + sl * 0.07;
     this.duvetFold.visible = sl < 0.5;
+  }
+}
