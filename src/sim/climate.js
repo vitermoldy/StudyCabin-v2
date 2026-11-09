@@ -130,3 +130,5 @@ export class Climate extends Emitter {
   _onDay(day) {
     if (!this.autoSeason) return;
     if ((day - 1) % 7 === 0) {
+      const i = SEASON_ORDER.indexOf(this.season);
+      this.setSeason(SEASON_ORDER[(i + 1) % SEASON_ORDER.length], { fromAuto: true });
