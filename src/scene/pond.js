@@ -212,3 +212,5 @@ export class Pond {
       fragmentShader: FRAG,
       transparent: true,
       fog: true,
+      depthWrite: true,
+    });
