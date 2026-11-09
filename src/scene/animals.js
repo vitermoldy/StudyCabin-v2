@@ -256,3 +256,5 @@ function createWalker(name, rand, inUse) {
   const pos = new THREE.Vector3();
   const tan = new THREE.Vector3();
 
+  function plan(route, reverse, { atStop = false } = {}) {
+    a.route = route;
