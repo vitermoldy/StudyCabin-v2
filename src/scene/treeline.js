@@ -49,3 +49,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
     tAttr.push(-8 / tall, top / tall);
   }
   const idx = [];
+  for (let i = 0; i < n; i++) {
+    const a = i * 2;
