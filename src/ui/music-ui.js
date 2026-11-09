@@ -108,3 +108,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     seeking = false;
   });
 
+  qToggle.addEventListener('click', () => {
+    const open = qToggle.getAttribute('aria-expanded') !== 'true';
