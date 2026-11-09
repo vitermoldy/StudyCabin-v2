@@ -152,3 +152,5 @@ export class Terrain {
       const bx = (rand() - 0.5) * 1.12;
       const bz = (rand() - 0.5) * 1.12;
       const ang = rand() * Math.PI * 2;
+      const lean = 0.1 + rand() * 0.36;
+      const h = 0.24 + Math.pow(rand(), 0.7) * 0.4;
