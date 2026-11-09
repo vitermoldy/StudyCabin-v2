@@ -75,3 +75,5 @@ export function mountDay({ clock, onJump }) {
     now.className = 'timeline__now';
     b.append(t, w, now);
     b.setAttribute('aria-label', `Go to ${formatClock(a.start)}: ${a.line}`);
+    b.addEventListener('click', () => onJump(a.start, false));
+    li.appendChild(b);
