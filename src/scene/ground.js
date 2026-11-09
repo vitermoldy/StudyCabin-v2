@@ -119,3 +119,6 @@ export function forestDepth(x, z) {
   let d = (Math.hypot(u, v) / w - 1) * 16;
   if (z > 16 && z < 72) d = Math.min(d, laneEdge(x, z));
   return d;
+}
+
+/** Height of the ground. */
