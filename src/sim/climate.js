@@ -48,3 +48,5 @@ export const SEASONS = {
     temp: [-1, 3],
     grass: '#8c8f7e', soil: '#6d665a', mud: '#4f4a42', foliage: '#75705f', fern: '#6c6a52',
     snow: 1, petals: 0, leaves: 0, warmth: 0.3,
+    odds: { clear: 0.2, cloudy: 0.25, fog: 0.15, snow: 0.4 },
+    line: 'Short days, snow on the roof, ice on the pond, the stove lit by four.',
