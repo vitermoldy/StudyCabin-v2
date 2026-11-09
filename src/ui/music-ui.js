@@ -91,3 +91,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   dockPlay.addEventListener('click', togglePlay);
   prevBtn.addEventListener('click', () => player.prev());
   nextBtn.addEventListener('click', () => player.next());
+  shuffle.addEventListener('click', () => player.setShuffle(!player.shuffle));
+  loop.addEventListener('click', () => player.setLoop(!player.loop));
