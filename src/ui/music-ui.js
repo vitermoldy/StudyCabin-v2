@@ -273,3 +273,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     volOut.textContent = `${player.volume}%`;
 
     // The top-right chip says what is on.
+    const nowText = item && playing ? `Playing: ${nowTitle.textContent}` : 'Add music';
+    if (openMusicText.textContent !== nowText) openMusicText.textContent = nowText;
