@@ -335,3 +335,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   padding: var(--s-2) 0; border-bottom: 1px solid var(--line);
 }
 .qrow__thumb { width: 56px; height: 32px; object-fit: cover; border-radius: 2px; background: #2a2a28; display: block; }
+.qrow__thumb--list { display: flex; align-items: center; justify-content: center; color: var(--muted); }
+.qrow__main {
