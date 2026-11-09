@@ -12,3 +12,5 @@ const WRAP = /* glsl */ `
     // the roof and walls keep the weather out
     vec3 lo = vec3(-7.7, -1.0, -3.8);
     vec3 hi = vec3(7.7, 6.0, 3.75);
+    vec3 a = step(lo, p) * step(p, hi);
+    return a.x * a.y * a.z;
