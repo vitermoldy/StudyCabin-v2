@@ -158,3 +158,5 @@ function lilies(scene) {
   padGeo.rotateX(-Math.PI / 2);
   const padMat = new THREE.MeshStandardMaterial({ color: '#4f6e2e', roughness: 0.55, metalness: 0 });
   const padMesh = new THREE.InstancedMesh(padGeo, padMat, pads.length);
+  const m = new THREE.Matrix4();
+  const q = new THREE.Quaternion();
