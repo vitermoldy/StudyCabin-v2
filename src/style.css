@@ -145,3 +145,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .chip__glyph { color: var(--action); font-size: 17px; line-height: 1; }
 .chip__text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .chip--round { width: 44px; padding: 0; justify-content: center; border-radius: 50%; }
+.chip[aria-expanded="true"] { border-color: var(--action); }
+
+/* ------------------------------------------------------------ dock */
