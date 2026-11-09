@@ -304,3 +304,5 @@ function frame(now) {
     if (panels.current === 'focus' || focus.running) renderFocus();
   }
 
+  if (world) {
+    const speedUp = clock.rate >= 10 ? 2.2 : 1;
