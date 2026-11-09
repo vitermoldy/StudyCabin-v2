@@ -18,3 +18,5 @@
   --muted: #a7a8a3;
   --action: var(--p-inv-action);
   --action-ink: var(--p-inv-action-ink);
+  --line: rgba(228, 229, 225, 0.12);
+  --line-strong: rgba(228, 229, 225, 0.3);
