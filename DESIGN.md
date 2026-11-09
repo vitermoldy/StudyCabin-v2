@@ -78,3 +78,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 ## Motion and why
 
 - Scene entrance: the canvas fades over the poster still and the camera settles 6% closer over
+  1.6 s (the house arrives).
+- Activity word: blur-in per letter, 60 ms apart, about 900 ms (a new activity started).
