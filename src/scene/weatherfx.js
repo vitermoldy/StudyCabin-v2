@@ -41,3 +41,6 @@ function seeds(count, perItem, seed) {
   geo.setAttribute('aSeed', new THREE.Float32BufferAttribute(s, 3));
   geo.setAttribute('aId', new THREE.Float32BufferAttribute(id, 1));
   geo.setAttribute('aEnd', new THREE.Float32BufferAttribute(end, 1));
+  return geo;
+}
+
