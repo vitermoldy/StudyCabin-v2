@@ -110,3 +110,5 @@ export class WeatherFX {
             vec4 mv = modelViewMatrix * vec4(p, 1.0);
             vA = step(aId, uAmount) * (1.0 - insideCabin(p)) * smoothstep(40.0, 16.0, -mv.z) * smoothstep(1.5, 5.0, -mv.z);
             gl_PointSize = min((0.05 + aSeed.x * 0.05) * uScale / max(-mv.z, 0.5), 9.0);
+            gl_Position = projectionMatrix * mv;
+          }`,
