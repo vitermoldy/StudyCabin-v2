@@ -168,3 +168,5 @@ pauseBtn.addEventListener('click', () => setScenePaused(!scenePaused, { announce
 setScenePaused(scenePaused);
 if (reduced) setTimeout(() => toast('The scene is still because your system asks for less motion. Press play at the top right to start it.', 7000), 1200);
 
+function setWords(on) {
+  wordsShown = on;
