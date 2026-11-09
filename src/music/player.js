@@ -299,3 +299,5 @@ export class MusicPlayer extends Emitter {
     } else if (s === YT.PlayerState.CUED) {
       this.status = 'paused';
     } else if (s === YT.PlayerState.ENDED) {
+      if (item && item.kind === 'playlist') {
+        const list = this.player.getPlaylist?.() || [];
