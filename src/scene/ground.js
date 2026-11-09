@@ -4,3 +4,6 @@
 //
 // The cabin stands at the back of an oval clearing in a forest. A small pond lies to the front
 // right, a trodden path runs from the deck steps round it, and a lane stays open in front of the
+// cabin so the long camera views look down the clearing instead of into trunks.
+
+export const smooth = (a, b, v) => {
