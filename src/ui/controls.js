@@ -79,3 +79,6 @@ export function mountDay({ clock, onJump }) {
     li.appendChild(b);
     list.appendChild(li);
     return { a, b, now };
+  });
+
+  let lastId = '';
