@@ -207,3 +207,5 @@ export class Terrain {
             windW.y -= near * h2 * 0.5;
             mat3 imx = mat3(instanceMatrix);
             transformed += (transpose(imx) * windW) / max(dot(imx[0], imx[0]), 0.0001);
+          #endif`,
+        );
