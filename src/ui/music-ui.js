@@ -264,3 +264,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       b.setAttribute('aria-label', label);
       setIcon(b, playing ? 'i-pause' : 'i-play');
     }
+    prevBtn.disabled = !has;
+    nextBtn.disabled = !has || (q.length < 2 && !(item && item.kind === 'playlist'));
