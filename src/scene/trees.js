@@ -57,3 +57,5 @@ function broadleafGeometry() {
     const limb = new THREE.CylinderGeometry(0.012, 0.022, 0.28, 5);
     limb.translate(0, 0.14, 0);
     limb.rotateZ(tilt);
+    limb.rotateY(ang);
+    limb.translate(0, 0.42, 0);
