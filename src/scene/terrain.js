@@ -234,3 +234,5 @@ export class Terrain {
       for (let x = -32; x <= 34; x += near) consider(x + (r() - 0.5) * near * 0.7, z + (r() - 0.5) * near * 0.7, 1);
     }
     // Further out: bigger, thinner patches on the forest floor.
+    const far = lowPower ? 3.4 : 2.6;
+    for (let z = -75; z <= 85; z += far) {
