@@ -145,3 +145,5 @@ export class World {
     const evening = at(17, 23.5);
     const on = (cond, level = 1) => (cond ? level : 0);
     const dark = darkness > 0.42;
+    const season = climate.season;
+    const cold = season === 'winter' || season === 'autumn' || climate.temperature(minutes) < 14;
