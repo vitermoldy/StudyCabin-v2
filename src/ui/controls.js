@@ -126,3 +126,5 @@ export function mountSound({ ambient }) {
   const onBtn = $('amb-on');
   const vol = $('amb-vol');
   const volOut = $('amb-vol-out');
+  const err = $('amb-error');
+  const mix = $('amb-mix');
