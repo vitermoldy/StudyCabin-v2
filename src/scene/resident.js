@@ -250,3 +250,6 @@ export class Resident {
     this.spine.add(guitar);
     this.props.guitar = guitar;
     for (const p of Object.values(this.props)) p.visible = false;
+  }
+
+  setSeason(id) {
