@@ -122,3 +122,5 @@ export class Treeline {
       });
       const mesh = new THREE.Mesh(ringGeometry(ring), material);
       mesh.frustumCulled = false;
+      mesh.renderOrder = -4;
+      scene.add(mesh);
