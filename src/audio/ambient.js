@@ -91,3 +91,5 @@ export class Ambient extends Emitter {
     };
 
     this.g = {
+      canopy: gain(), leaves: gain(), rain: gain(), rainLow: gain(), wind: gain(),
+      wildlife: gain(), fire: gain(), fireLow: gain(),
