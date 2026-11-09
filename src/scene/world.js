@@ -12,3 +12,5 @@ import { Ripples, RIPPLE_AREA } from './ripples.js';
 import { Trees } from './trees.js';
 import { Treeline } from './treeline.js';
 import { Animals } from './animals.js';
+import { Props } from './props.js';
+import { POND, WATER_Y, groundHeight, pondE } from './ground.js';
