@@ -6,3 +6,5 @@ import { CLEARING, forestDepth, groundHeight, pondE } from './ground.js';
 // rewritten per frame. Each drop, flake or leaf has a seed and wraps inside a
 // box that follows the camera, so the weather is always around the viewer.
 
+const WRAP = /* glsl */ `
+  vec3 wrapBox(vec3 p, vec3 center, vec3 box){ return center + mod(p - center + box * 0.5, box) - box * 0.5; }
