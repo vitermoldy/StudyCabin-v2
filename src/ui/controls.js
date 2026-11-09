@@ -43,3 +43,6 @@ function bindSwitch(button, get, set) {
   });
   sync();
   return sync;
+}
+
+export function mountDay({ clock, onJump }) {
