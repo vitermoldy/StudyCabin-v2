@@ -234,3 +234,5 @@ export class Climate extends Emitter {
       rain: 'Rain',
       storm: 'Storm over the forest',
       snow: 'Snow falling',
+    }[w];
+    return `${words}, ${t}°`;
