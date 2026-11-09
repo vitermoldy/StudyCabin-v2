@@ -77,7 +77,7 @@ function hubOf(area, point) {
   return YARD_HUB;
 }
 
-/** The way
+/** The way into
   const pts = [];
   if (from) pts.push({ ...from });
   else if (a) pts.push({ ...a.at });
