@@ -100,3 +100,5 @@ function swayShader(material, { leaves = false } = {}) {
         '#include <begin_vertex>',
         `#include <begin_vertex>
         ${leaves ? 'vLeaf = aLeaf;' : ''}
+        #ifdef USE_INSTANCING
+          vec3 base = instanceMatrix[3].xyz;
