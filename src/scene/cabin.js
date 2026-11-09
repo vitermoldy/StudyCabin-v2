@@ -501,3 +501,5 @@ export class Cabin {
     this.mat.flame.opacity = s.fire * 0.85;
     this.flames.forEach((f, i) => {
       const k = 0.7 + 0.3 * Math.sin(time * (7 + i * 1.3) + i);
+      f.scale.set(1, (0.2 + s.fire * 0.8) * k, 1);
+      f.position.y = FLOOR + 0.38 + 0.21 * f.scale.y;
