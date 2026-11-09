@@ -21,3 +21,6 @@ export const smoothstep = (a, b, v) => {
   return t * t * (3 - 2 * t);
 };
 /** Frame-rate independent approach of `current` toward `target`. */
+export const damp = (current, target, rate, dt) => lerp(current, target, 1 - Math.exp(-rate * dt));
+
+export function formatClock(minutes) {
