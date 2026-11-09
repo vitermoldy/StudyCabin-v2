@@ -434,3 +434,6 @@ export class Resident {
 
   get isInside() {
     return this.pos.z < 3.0 && this.pos.x > -7 && this.pos.x < 7;
+  }
+
+  get isSleeping() {
