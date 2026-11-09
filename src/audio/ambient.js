@@ -433,3 +433,5 @@ export class Ambient extends Emitter {
 
   /** Two soft bell notes for the end of a focus or break block. Works with ambient off. */
   chime() {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
