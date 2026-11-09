@@ -420,3 +420,5 @@ export class Ambient extends Emitter {
     s.buffer = this.noise;
     const f = ctx.createBiquadFilter();
     f.type = 'lowpass';
+    f.frequency.setValueAtTime(420, now);
+    f.frequency.exponentialRampToValueAtTime(90, now + 3.5);
