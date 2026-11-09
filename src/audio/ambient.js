@@ -332,3 +332,5 @@ export class Ambient extends Emitter {
         const o = ctx.createOscillator();
         const g = ctx.createGain();
         o.frequency.setValueAtTime(pitch * mult * rise, now + at);
+        o.frequency.linearRampToValueAtTime(pitch * mult * rise * 0.94, now + at + dur);
+        g.gain.setValueAtTime(0.0001, now + at);
