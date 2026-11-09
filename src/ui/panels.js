@@ -8,3 +8,5 @@ export class Panels extends Emitter {
     super();
     this.tabs = [...document.querySelectorAll('.dock__tab')];
     this.panels = new Map(this.tabs.map((t) => [t.dataset.panel, document.getElementById(t.getAttribute('aria-controls'))]));
+    this.extraOpeners = new Map(); // other buttons that open a panel, e.g. "Add music"
+    this.current = null;
