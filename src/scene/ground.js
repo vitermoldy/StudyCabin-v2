@@ -19,3 +19,5 @@ function hash(x, y) {
 export function vnoise(x, y) {
   const xi = Math.floor(x);
   const yi = Math.floor(y);
+  const xf = x - xi;
+  const yf = y - yi;
