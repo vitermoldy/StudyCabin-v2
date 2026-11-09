@@ -96,3 +96,5 @@ function inkFromPoster() {
             n++;
           }
         }
+        return { mean: sum / n, max, min };
+      });
