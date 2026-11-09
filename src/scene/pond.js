@@ -177,3 +177,5 @@ function lilies(scene) {
     f.scale.set(0.055, 0.045, 0.055);
     scene.add(f);
     return f;
+  });
+  return { padMesh, padMat, flowers };
