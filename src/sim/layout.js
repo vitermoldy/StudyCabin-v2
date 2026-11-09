@@ -96,3 +96,5 @@ export function route(fromSpot, toSpot, from = null) {
   const cb = chain[areaB];
   if (ca < cb) {
     if (ca === 0) steps.push(DOOR_IN, DOOR_MID, DECK_HUB);
+    if (cb === 2) steps.push(STEP_TOP, STEP_LOW, YARD_HUB);
+  } else if (ca > cb) {
