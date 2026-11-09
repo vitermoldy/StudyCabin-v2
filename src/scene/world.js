@@ -114,3 +114,5 @@ export class World {
       this.flash = Math.max(0, this.flash - dt * 4);
       return;
     }
+    this._nextBolt -= dt;
+    if (this._nextBolt <= 0) {
