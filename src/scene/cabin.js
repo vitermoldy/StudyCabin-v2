@@ -465,3 +465,5 @@ export class Cabin {
       l.position.set(x, y, z);
       this.group.add(l);
       return l;
+    };
+    const warm = '#ffc98a';
