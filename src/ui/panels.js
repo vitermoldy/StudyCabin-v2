@@ -21,3 +21,5 @@ export class Panels extends Emitter {
         e.preventDefault();
         this.close();
       }
+    });
+    // Clicking the scene closes the open panel.
