@@ -371,3 +371,5 @@ startWorld()
         },
       },
       onWords: setWords,
+      wordsShown: () => wordsShown,
+      onFullscreen: toggleFullscreen,
