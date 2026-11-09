@@ -164,3 +164,5 @@ export function bareEarth(x, z) {
 }
 
 /** How much the canopy shades the floor here: none in the clearing, most of it a few trees in. */
+export function canopy(x, z) {
+  return smooth(-0.5, 7, forestDepth(x, z));
