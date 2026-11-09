@@ -81,3 +81,5 @@ function broadleafGeometry() {
   trunkG.setAttribute('aLeaf', new THREE.BufferAttribute(leafT, 1));
   crownG.setAttribute('aLeaf', new THREE.BufferAttribute(leafC, 1));
   const g = mergeGeometries([trunkG, crownG]);
+  g.computeVertexNormals();
+  return g;
