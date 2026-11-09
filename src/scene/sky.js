@@ -50,3 +50,6 @@ const FRAG = /* glsl */ `
       col += c * curtain * rays * (0.55 - fi * 0.13);
     }
     // they hang over the hills behind the cabin, fading toward the viewer's back
+    return col * smoothstep(-0.35, 0.45, -d.z) * smoothstep(0.015, 0.08, d.y);
+  }
+
