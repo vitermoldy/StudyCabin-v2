@@ -118,3 +118,5 @@ function makeFox() {
   body.add(blob(pale, [0.1, 0.1, 0.08], [0.2, 0.34, 0]));
   const neck = new THREE.Group();
   neck.position.set(0.25, 0.43, 0);
+  body.add(neck);
+  const head = new THREE.Group();
