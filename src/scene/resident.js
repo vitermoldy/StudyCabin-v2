@@ -101,3 +101,5 @@ export class Resident {
       top: new THREE.MeshStandardMaterial({ color: OUTFIT.spring, roughness: 0.95 }),
       pants: new THREE.MeshStandardMaterial({ color: '#3d4448', roughness: 0.9 }),
       shoe: new THREE.MeshStandardMaterial({ color: '#2a2725', roughness: 0.8 }),
+      book: new THREE.MeshStandardMaterial({ color: '#ece6da', roughness: 0.9 }),
+      cover: new THREE.MeshStandardMaterial({ color: '#7d4a36', roughness: 0.8 }),
