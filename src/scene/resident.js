@@ -253,3 +253,5 @@ export class Resident {
   }
 
   setSeason(id) {
+    if (OUTFIT[id]) this.mat.top.color.set(OUTFIT[id]);
+    this.season = id;
