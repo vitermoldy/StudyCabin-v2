@@ -21,3 +21,6 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
   Interface motion stays small (hover step, panel fade, a word blurring in when the activity
   changes).
 
+## The deal (taste-skill 2.5.1, unchanged from v1)
+
+- Kind: software (page type software, site-kind software). The live scene is the hero and the
