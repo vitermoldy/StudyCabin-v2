@@ -120,3 +120,6 @@ export function owlOut({ minutes, params, night }) {
 /** 0..1: how many fireflies light up over the grass. */
 export function fireflies({ night, params, season }) {
   const bySeason = { summer: 1, rainy: 0.65, spring: 0.4, autumn: 0.08, winter: 0 }[season] ?? 0;
+  return night * bySeason * (1 - Math.min(1, params.rain * 1.6)) * (1 - params.snow) * (1 - params.wind * 0.5);
+}
+
