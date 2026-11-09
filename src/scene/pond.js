@@ -93,3 +93,6 @@ const FRAG = /* glsl */ `
     float frost = vn(p * 1.4) * 0.5 + vn(p * 5.0) * 0.25;
     vec3 ice = mix(vec3(0.5, 0.6, 0.6), vec3(0.88, 0.91, 0.93), clamp(uSnow * 0.75 + frost * 0.35, 0.0, 1.0));
     ice = ice * (0.22 + uLight * 0.78) + sky * 0.12;
+    col = mix(col, ice, uIce);
+    alpha = mix(alpha, 0.97, uIce);
+
