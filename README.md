@@ -17,3 +17,6 @@ npm run build      # static files in dist/, open with any static server
 npm run preview    # serves dist/
 ```
 
+Needs a browser with WebGL 2 (any current Chrome, Edge, Firefox or Safari). Without it the page
+shows a still picture and the music, timer and ambient sound still work.
+
