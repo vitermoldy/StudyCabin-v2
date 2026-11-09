@@ -26,3 +26,5 @@ export const SEASONS = {
   },
   spring: {
     label: 'Spring',
+    sunrise: 375, sunset: 1125, noonElevation: 55,
+    temp: [16, 4],
