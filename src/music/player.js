@@ -277,3 +277,5 @@ export class MusicPlayer extends Emitter {
   _onState(s) {
     const YT = window.YT;
     const item = this.item;
+    if (s === YT.PlayerState.PLAYING) {
+      this.status = 'playing';
