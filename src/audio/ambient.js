@@ -76,3 +76,5 @@ export class Ambient extends Emitter {
     const filter = (type, freq, q = 0.7) => {
       const f = ctx.createBiquadFilter();
       f.type = type;
+      f.frequency.value = freq;
+      f.Q.value = q;
