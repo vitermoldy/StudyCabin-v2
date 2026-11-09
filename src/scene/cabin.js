@@ -172,3 +172,5 @@ export class Cabin {
     this.door.position.set(0, 0, 2.93);
     this.group.add(this.door);
     const dg = this._bx(glass, -0.93, 0.93, FLOOR + 0.05, GLASS_TOP - 0.06, -0.01, 0.01, { cast: false, receive: false, parent: this.door });
+    dg.renderOrder = 2;
+    this._bx(trim, -0.95, -0.92, FLOOR + 0.05, GLASS_TOP - 0.06, -0.02, 0.02, { parent: this.door });
