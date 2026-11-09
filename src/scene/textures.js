@@ -11,3 +11,5 @@ function canvas(w, h) {
   return [c, c.getContext('2d')];
 }
 
+function finish(c, { repeat = [1, 1], srgb = true } = {}) {
+  const t = new THREE.CanvasTexture(c);
