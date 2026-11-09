@@ -154,3 +154,5 @@ export class World {
       living: on(awake && dark && (['sofa', 'armchair', 'shelf', 'stove', 'window'].includes(spot) || evening), 1),
       bed: (activity.id === 'wake' || activity.id === 'bedtime' || (asleep && at(23, 23.15))) && darkness > 0.3 ? 0.85 : asleep && darkness > 0.5 ? 0.14 : 0,
       desk: on(spot === 'desk' && !res.path && darkness > 0.25, 1),
+      screen: on(spot === 'desk' && !res.path && (activity.pose === 'sitType'), 1),
+      stove: on(stoveLit, 1),
