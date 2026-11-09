@@ -258,3 +258,5 @@ export class Cabin {
     // island with a pot on the hob
     const I = F.island;
     this._bx(cabinet, I.x - I.w / 2, I.x + I.w / 2, FLOOR, FLOOR + 0.86, I.z - I.d / 2, I.z + I.d / 2);
+    this._bx(counter, I.x - I.w / 2 - 0.03, I.x + I.w / 2 + 0.03, FLOOR + 0.86, FLOOR + 0.92, I.z - I.d / 2 - 0.03, I.z + I.d / 2 + 0.03);
+    this._bx(trim, I.x - 0.62, I.x + 0.02, FLOOR + 0.92, FLOOR + 0.925, I.z - 0.3, I.z + 0.3);
