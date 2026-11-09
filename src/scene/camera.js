@@ -91,3 +91,6 @@ export class CameraRig {
   /** factor > 1 moves away, < 1 moves closer. */
   zoomBy(factor) {
     this.user.zoom = clamp(this.user.zoom * factor, 0.22, 3);
+  }
+
+  resetUser() {
