@@ -32,3 +32,5 @@ const FRAG = /* glsl */ `
   // slope of one sine train a*sin(k dot(d,p) + w t)
   vec2 wgrad(vec2 p, vec2 d, float len, float a, float spd, float t){
     float k = 6.2831 / len;
+    return d * (a * k * cos(k * dot(d, p) + t * spd));
+  }
