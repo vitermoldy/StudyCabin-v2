@@ -95,3 +95,5 @@ export class FocusTimer extends Emitter {
   }
 
   _advancePhase(keepRunning) {
+    if (this.phase === 'focus') {
+      if (this.doneDate !== today()) {
