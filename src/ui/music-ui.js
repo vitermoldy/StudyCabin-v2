@@ -198,3 +198,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       player.remove(i);
       toast('Removed from the queue.');
       focusRow(Math.min(i, player.queue.length - 1), 2);
+    });
+    li.appendChild(tools);
