@@ -487,3 +487,5 @@ export class Cabin {
   update(dt, time) {
     const s = this.state;
     for (const k of Object.keys(this.target)) {
+      const rate = k === 'door' ? 5 : k === 'sleeping' ? 2.4 : 2.2;
+      s[k] = damp(s[k], this.target[k], rate, dt);
