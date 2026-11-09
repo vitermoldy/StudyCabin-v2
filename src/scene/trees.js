@@ -79,3 +79,5 @@ function broadleafGeometry() {
   const leafT = new Float32Array(trunkG.attributes.position.count).fill(0);
   const leafC = new Float32Array(crownG.attributes.position.count).fill(1);
   trunkG.setAttribute('aLeaf', new THREE.BufferAttribute(leafT, 1));
+  crownG.setAttribute('aLeaf', new THREE.BufferAttribute(leafC, 1));
+  const g = mergeGeometries([trunkG, crownG]);
