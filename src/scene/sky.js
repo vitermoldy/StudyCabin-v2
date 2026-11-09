@@ -119,3 +119,5 @@ const FRAG = /* glsl */ `
     float disc = smoothstep(0.99935, 0.99965, sd) * uSunVis;
     col += uSunColor * disc * 5.0 * (1.0 - cover * 0.96);
 
+    float md = dot(d, uMoonDir);
+    float moon = smoothstep(0.99925, 0.9995, md) * uMoonVis;
