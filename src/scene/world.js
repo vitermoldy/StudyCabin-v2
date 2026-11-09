@@ -169,3 +169,6 @@ export class World {
     const p = climate.params;
     WORLD.uTime.value = t;
     WORLD.uWind.value = p.wind;
+    WORLD.uSnow.value = climate.look.snow * (0.55 + p.snow * 0.45);
+    WORLD.uWet.value = clamp(p.rain * 1.2, 0, 1);
+
