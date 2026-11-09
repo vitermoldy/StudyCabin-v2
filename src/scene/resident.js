@@ -362,3 +362,5 @@ export class Resident {
         this.facing = turn(this.facing, Math.atan2(POND.x - this.pos.x, POND.z - this.pos.z), 2 * dt);
       } else {
         const target = TRAIL_LOOP[(this.loopIndex + 1) % TRAIL_LOOP.length];
+        const dx = target.x - this.pos.x;
+        const dz = target.z - this.pos.z;
