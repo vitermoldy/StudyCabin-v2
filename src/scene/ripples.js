@@ -3,3 +3,5 @@ import { POND } from './ground.js';
 
 // A height-field ripple simulation on the GPU, after Evan Wallace's WebGL Water
 // (madebyevan.com/webgl-water): every texel keeps a height and a velocity, each
+// step pulls it toward the average of its neighbours, and drops push it down.
+// It covers the pond; the pond shader reads it for normals, so pointer taps and
