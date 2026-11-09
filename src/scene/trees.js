@@ -110,3 +110,5 @@ function swayShader(material, { leaves = false } = {}) {
         #endif`,
       );
     if (leaves) {
+      shader.fragmentShader = shader.fragmentShader
+        .replace('#include <common>', '#include <common>\nuniform vec3 uLeaf; varying float vLeaf;')
