@@ -119,3 +119,5 @@ function buildGeometry() {
       pos.push(x, WATER_Y, z);
       ground.push(groundHeight(x, z));
     }
+  }
+  const idx = [];
