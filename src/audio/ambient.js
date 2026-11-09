@@ -184,3 +184,5 @@ export class Ambient extends Emitter {
   }
 
   _applyMaster(tc) {
+    if (!this.ctx) return;
+    const duck = this.musicPlaying && this.duckWhenMusic ? 0.4 : 1;
