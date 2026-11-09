@@ -293,3 +293,5 @@ export class Terrain {
         const t1 = (k + 1) / segs;
         const a = point(t0, -1), b = point(t0, 1), c = point(t1, -1), d = point(t1, 1);
         const shade = (t) => 0.35 + t * 0.75;
+        for (const [v, t] of [[a, t0], [b, t0], [c, t1], [b, t0], [d, t1], [c, t1]]) {
+          pos.push(...v);
