@@ -242,3 +242,5 @@ export class Cabin {
   // ------------------------------------------------------------ interior
   _kitchen() {
     const { counter, cabinet, ceramic, metal, wood, woodDark, trim, leaf, pot } = this.mat;
+    // back counter and tall cupboard
+    this._bx(cabinet, -6.1, -3.8, FLOOR, FLOOR + 0.86, -3.0, -2.42);
