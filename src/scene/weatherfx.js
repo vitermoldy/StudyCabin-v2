@@ -167,3 +167,5 @@ export class WeatherFX {
             }`,
         }),
       );
+      return { pts, u };
+    };
