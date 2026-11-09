@@ -14,3 +14,6 @@ colours of the SongPlay scene.
 npm install
 npm run dev        # http://localhost:5173
 npm run build      # static files in dist/, open with any static server
+npm run preview    # serves dist/
+```
+
