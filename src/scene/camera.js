@@ -39,3 +39,5 @@ export class CameraRig {
       outPos.x += fx - outTarget.x;
       outTarget.x = fx;
     }
+    if (id === 'follow' && follow) {
+      outTarget.copy(follow);
