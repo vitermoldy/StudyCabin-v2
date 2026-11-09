@@ -211,3 +211,5 @@ export class Cabin {
     // stove flue through the roof
     const { stove } = F;
     this._cyl(this.mat.metal, 0.085, 0.085, RIDGE + 1.0 - (FLOOR + 0.62), stove.x, (FLOOR + 0.62 + RIDGE + 1.0) / 2, stove.z);
+    this._cyl(this.mat.metal, 0.16, 0.16, 0.08, stove.x, RIDGE + 1.04, stove.z);
+    this.flueTop = new THREE.Vector3(stove.x, RIDGE + 1.1, stove.z);
