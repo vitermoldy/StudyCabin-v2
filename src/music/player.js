@@ -275,3 +275,5 @@ export class MusicPlayer extends Emitter {
   }
 
   _onState(s) {
+    const YT = window.YT;
+    const item = this.item;
