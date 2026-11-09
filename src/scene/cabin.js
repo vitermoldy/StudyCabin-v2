@@ -72,3 +72,6 @@ export class Cabin {
   _cyl(mat, rt, rb, h, x, y, z, seg = 16, opts) {
     const mesh = this._m(new THREE.CylinderGeometry(rt, rb, h, seg), mat, opts);
     mesh.position.set(x, y, z);
+    return mesh;
+  }
+
