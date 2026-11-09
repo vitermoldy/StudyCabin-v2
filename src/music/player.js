@@ -160,3 +160,6 @@ export class MusicPlayer extends Emitter {
       }
     })();
     return this._creating;
+  }
+
+  async _load(index, autoplay) {
