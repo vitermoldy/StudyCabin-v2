@@ -66,3 +66,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Amber accent only on: active state, focus ring, primary button, the playing row | One warm note, like the lamps; never on large areas. |
 | Glass blur on the open panel only (R-10) | Keeps the scene readable behind the one open panel; nothing else is frosted. |
 | No shadows on UI (R-12) | The scene has real shadows; flat panels keep the two apart. |
+| Hand-drawn filled glyphs for transport and tabs (R-04) | Each one names its action (play, pause, next, cloud for weather, timer for focus); real YouTube and YouTube Music marks name where a link comes from. |
+| Sentence-case labels, no tracked capitals | taste-skill rule; the reference's tracked caps are dropped, its layout kept. |
