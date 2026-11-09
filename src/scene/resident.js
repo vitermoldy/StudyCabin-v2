@@ -402,3 +402,5 @@ export class Resident {
     } else {
       if (this.pose === 'walkLoop') target = POSES.stand(t);
       else target = this._targetJoints(t);
+    }
+    const rate = moving ? 14 : 5.5;
