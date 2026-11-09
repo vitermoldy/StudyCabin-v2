@@ -160,3 +160,5 @@ export class Trees {
             broad.push({ x: px, z: pz, y: groundHeight(px, pz) - h * 0.3, h, w: h * (1.5 + r() * 0.5), yaw, tone });
           }
           continue;
+        }
+        if (d < 0 || roll > 0.4 + Math.min(d / 8, 1) * 0.42) continue;
