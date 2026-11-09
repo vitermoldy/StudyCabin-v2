@@ -25,3 +25,5 @@ const FRAG = /* glsl */ `
   uniform vec3 uSunDir; uniform vec3 uSunColor; uniform float uSunVis; uniform float uTime;
   uniform float uChop; uniform float uRain; uniform float uLight; uniform vec3 uMoonDir; uniform float uMoonVis;
   uniform sampler2D uRipple; uniform vec4 uRippleArea; uniform vec3 uLand;
+  uniform float uIce; uniform float uSnow;
+  varying vec3 vWorld; varying float vDepth;
