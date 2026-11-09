@@ -84,3 +84,5 @@ const PROPS_FOR = {
   sitGuitar: ['guitar'],
 };
 
+function capsule(r, len, mat) {
+  const m = new THREE.Mesh(new THREE.CapsuleGeometry(r, len, 6, 12), mat);
