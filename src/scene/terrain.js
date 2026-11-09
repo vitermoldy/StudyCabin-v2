@@ -287,3 +287,5 @@ export class Terrain {
         const r0 = L * t;
         const y = L * (rise * t - 0.78 * t * t);
         return [dx * r0 - dz * w * side, Math.max(0, y), dz * r0 + dx * w * side];
+      };
+      for (let k = 0; k < segs; k++) {
