@@ -47,3 +47,5 @@ function pineGeometry() {
 }
 
 /** A broadleaf tree 1 unit tall: trunk, two limbs and a cloud of crown lumps. */
+function broadleafGeometry() {
+  const trunkParts = [];
