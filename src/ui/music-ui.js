@@ -133,3 +133,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
 
   function row(item, i) {
     const li = document.createElement('li');
+    li.className = 'qrow';
+    if (i === player.current) li.classList.add('is-current');
