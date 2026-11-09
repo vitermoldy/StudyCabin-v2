@@ -72,3 +72,5 @@ const SPUR_A = { x: 0, z: 7.6 };
 const SPUR_B = pondPoint(TRAIL_E, TRAIL_START);
 
 function segmentDistance(px, pz, ax, az, bx, bz) {
+  const dx = bx - ax;
+  const dz = bz - az;
