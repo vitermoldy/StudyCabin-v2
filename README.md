@@ -69,3 +69,5 @@ shows a still picture and the music, timer and ambient sound still work.
 | --- | --- |
 | Space | Play or pause music |
 | 1 to 5 | Clearing, deck, window, pond, follow |
+| Arrows | Turn the camera |
+| + and − | Zoom |
