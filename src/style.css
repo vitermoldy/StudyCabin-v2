@@ -294,3 +294,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .choice input:checked + span { border-color: var(--action); background: rgba(217, 160, 91, 0.14); }
 .choice input:focus-visible + span { outline: 2px solid var(--action); outline-offset: 2px; }
 
+/* music */
+.add__row { display: flex; gap: var(--s-2); }
