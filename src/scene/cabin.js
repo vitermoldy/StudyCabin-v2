@@ -313,3 +313,5 @@ export class Cabin {
     this._soft(sofa, 0.22, 0.6, S.d, 0.07, sx0 + 0.11, FLOOR + 0.32, S.z);
     this._soft(sofa, 0.22, 0.6, S.d, 0.07, sx1 - 0.11, FLOOR + 0.32, S.z);
     for (const dx of [-0.42, 0.42]) this._soft(cushion, 0.8, 0.12, 0.62, 0.05, S.x + dx, FLOOR + 0.44, S.z + 0.1);
+    this._soft(cushion, 0.42, 0.36, 0.12, 0.05, sx0 + 0.42, FLOOR + 0.68, S.z - 0.22).rotation.z = 0.15;
+    // coffee table with books and a mug
