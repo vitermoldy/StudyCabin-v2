@@ -62,3 +62,5 @@ export function sidingTexture() {
 }
 
 /** Standing-seam metal roof: seams every 0.45 m along the slope. */
+export function roofTexture() {
+  const [c, ctx] = canvas(256, 256);
