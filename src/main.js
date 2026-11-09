@@ -123,3 +123,5 @@ function conditions() {
   return { badWeather: climate.badWeather, cold };
 }
 
+function refreshActivity({ teleport = false } = {}) {
+  const next = activityAt(clock.minutes, conditions(), focus.residentPhase);
