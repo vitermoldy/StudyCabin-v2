@@ -108,3 +108,5 @@ export class MusicPlayer extends Emitter {
   }
 
   setLoop(on) {
+    this.loop = !!on;
+    this.persist();
