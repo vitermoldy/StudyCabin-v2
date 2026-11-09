@@ -62,3 +62,5 @@ export class Props {
       scene.add(mesh);
     });
 
+    // A fallen trunk where the clearing meets the wood on the left, and the stump it broke from.
+    const bark = weathered(new THREE.MeshStandardMaterial({ color: '#4a3a2c', roughness: 0.95 }), { snow: 1, wet: 0.7 });
