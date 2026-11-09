@@ -11,3 +11,5 @@ export class Overlay {
     this.word = document.getElementById('word-activity');
     this.at = document.querySelector('.big--b');
     this.timeWrap = document.getElementById('word-time');
+    this.clock = document.getElementById('clock');
+    this.story = document.getElementById('story-line');
