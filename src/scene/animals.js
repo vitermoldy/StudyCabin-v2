@@ -557,3 +557,5 @@ function makeOwl() {
   const root = new THREE.Group();
   const body = new THREE.Group();
   root.add(body);
+  body.add(blob(plumage, [0.13, 0.19, 0.12], [0, 0.2, 0]));
+  body.add(blob(breast, [0.08, 0.14, 0.09], [0.06, 0.18, 0]));
