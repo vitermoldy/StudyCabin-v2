@@ -429,3 +429,6 @@ export class Resident {
     for (const [id, p] of Object.entries(this.props)) p.visible = props.includes(id);
 
     this.headG.getWorldPosition(this.head);
+    this.moving = moving;
+  }
+
