@@ -238,3 +238,5 @@ export class Terrain {
     for (let z = -75; z <= 85; z += far) {
       for (let x = -78; x <= 80; x += far) {
         if (inNear(x, z) || Math.hypot(x - CLEARING.x, z - CLEARING.z) > 76) continue;
+        consider(x + (r() - 0.5) * 2, z + (r() - 0.5) * 2, 2.1);
+      }
