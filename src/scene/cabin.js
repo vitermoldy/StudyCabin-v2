@@ -248,3 +248,5 @@ export class Cabin {
     this._bx(cabinet, -6.98, -6.12, FLOOR, FLOOR + 2.2, -3.0, -2.38);
     // open shelves with bowls and jars
     for (const y of [FLOOR + 1.55, FLOOR + 2.0]) {
+      this._bx(wood, -6.0, -3.9, y, y + 0.04, -3.0, -2.74);
+      for (let i = 0; i < 5; i++) {
