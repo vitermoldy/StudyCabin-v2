@@ -213,3 +213,5 @@ const LINES = {
   graze: (who, two) => `${who} ${two ? 'are' : 'is'} grazing in the clearing`,
   drink: (who, two) => `${who} ${two ? 'are' : 'is'} drinking at the pond`,
   look: (who, two) => `${who} ${two ? 'stop' : 'stops'} to look round`,
+  sit: (who) => `${who} sits up in the grass`,
+  move: (who, two) => `${who} ${two ? 'are' : 'is'} crossing the clearing`,
