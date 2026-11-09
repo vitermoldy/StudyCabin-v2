@@ -62,3 +62,5 @@ function showStill() {
  */
 function inkFromPoster() {
   const img = document.getElementById('poster');
+  const lin = (v) => {
+    const c = v / 255;
