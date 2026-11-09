@@ -204,3 +204,6 @@ for (const ev of ['season', 'weather', 'weather-mode']) climate.on(ev, refreshWo
 clock.on('speed', refreshWords);
 clock.on('jump', () => {
   overlay.setTime(clock.minutes);
+  updateDay();
+});
+
