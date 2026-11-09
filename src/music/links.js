@@ -101,3 +101,5 @@ export async function fetchDetails(item) {
   }
 }
 
+export function thumbFor(item) {
+  if (item.thumb) return item.thumb;
