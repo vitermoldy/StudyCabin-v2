@@ -125,3 +125,5 @@ export function fireflies({ night, params, season }) {
 
 /** 0..1: frogs calling from the pond in the warm evenings and nights. */
 export function frogs({ minutes, params, season, iced }) {
+  if (iced > 0.3) return 0;
+  const bySeason = { spring: 1, summer: 0.85, rainy: 1, autumn: 0.25, winter: 0 }[season] ?? 0;
