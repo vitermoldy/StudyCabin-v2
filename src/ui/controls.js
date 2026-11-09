@@ -10,3 +10,5 @@ const $ = (id) => document.getElementById(id);
 
 /** Builds a row of radio chips inside a fieldset. */
 function radios(fieldset, name, options, current, onPick) {
+  const row = document.createElement('div');
+  row.className = 'choices__row';
