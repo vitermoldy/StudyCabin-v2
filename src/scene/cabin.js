@@ -382,3 +382,5 @@ export class Cabin {
       this._cyl(ceramic, 0.07, 0.09, 0.22, n.x, FLOOR + 0.57, n.z, 14);
       const s = this._m(new THREE.CylinderGeometry(0.12, 0.16, 0.2, 18, 1, true), this.shades.bed, { cast: false });
       s.material.side = THREE.DoubleSide;
+      s.position.set(n.x, FLOOR + 0.78, n.z);
+    }
