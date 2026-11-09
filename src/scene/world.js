@@ -235,3 +235,6 @@ export class World {
       }
     }
     push.z += (want - push.z) * (1 - Math.exp(-6 * dt));
+  }
+
+  /** Raindrops ring the pond. */
