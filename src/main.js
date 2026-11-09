@@ -248,3 +248,5 @@ addEventListener('keydown', (e) => {
     const step = 28;
     if (k === 'arrowleft') world.rig.orbit(-step, 0);
     if (k === 'arrowright') world.rig.orbit(step, 0);
+    if (k === 'arrowup') world.rig.orbit(0, -step);
+    if (k === 'arrowdown') world.rig.orbit(0, step);
