@@ -75,3 +75,5 @@ export class World {
     this._nextBolt = 6;
     this._boltSeq = [];
     this.onThunder = null;
+    this._frameAvg = 16;
+    this._dprCheck = 0;
