@@ -211,3 +211,6 @@ export class Climate extends Emitter {
     const dayLen = s.sunset - s.sunrise;
     const t = (minutes - s.sunrise) / dayLen; // 0 at sunrise, 1 at sunset
     return { t, dayLen, noon: s.noonElevation };
+  }
+
+  temperature(minutes = this.clock.minutes) {
