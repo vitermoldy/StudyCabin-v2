@@ -51,3 +51,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
   const idx = [];
   for (let i = 0; i < n; i++) {
     const a = i * 2;
+    idx.push(a, a + 2, a + 1, a + 1, a + 2, a + 3);
+  }
