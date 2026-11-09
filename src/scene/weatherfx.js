@@ -291,3 +291,5 @@ function fireflyGeometry(count) {
     const x = CLEARING.x + (r() * 2 - 1) * CLEARING.rx * 1.2;
     const z = CLEARING.z + (r() * 2 - 1) * CLEARING.rz * 1.2;
     const d = forestDepth(x, z);
+    const e = pondE(x, z);
+    if (d > 6 || e < 0.7 || (x > -11 && x < 10 && z > -3.6 && z < 7.4)) continue;
