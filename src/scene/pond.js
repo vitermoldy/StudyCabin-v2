@@ -256,3 +256,5 @@ export class Pond {
     L.padMat.color.copy(this._padColor).multiplyScalar(0.85);
     const bloom = show && look.warmth > 0.7 && look.leaves < 0.5;
     for (const f of L.flowers) f.visible = bloom;
+  }
+}
