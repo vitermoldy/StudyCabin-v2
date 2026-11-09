@@ -353,3 +353,5 @@ function createWalker(name, rand, inUse) {
     },
     update(dt, time, ctx) {
       if (a.state === 'away') {
+        if (kind.follows) return;
+        a.timer -= dt;
