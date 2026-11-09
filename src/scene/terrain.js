@@ -131,3 +131,5 @@ export class Terrain {
     this.ground.receiveShadow = true;
     scene.add(this.ground);
 
+    this.grassPush = { value: new THREE.Vector3(0, 0, 0) };
+    this.grass = this._buildGrass(lowPower);
