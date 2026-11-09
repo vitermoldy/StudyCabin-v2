@@ -151,3 +151,5 @@ export class WeatherFX {
               gl_PointSize = min((0.09 + aSeed.z * 0.07) * uScale / max(-mv.z, 0.5), 16.0);
               gl_Position = projectionMatrix * mv;
             }`,
+          fragmentShader: /* glsl */ `
+            uniform float uLight; uniform vec3 uColA; uniform vec3 uColB;
