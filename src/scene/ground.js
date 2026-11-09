@@ -97,3 +97,5 @@ export function trailLoop(count = 10) {
 // The lane in front of the cabin that stays clear of trees, out to where the camera stands on a
 // phone held upright (it pulls back further on narrow screens).
 const laneHalf = (z) => 7 + (z - 16) * 0.32;
+function laneEdge(x, z) {
+  return Math.abs(x + 0.3) - laneHalf(z) + Math.max(0, z - 64) * 2;
