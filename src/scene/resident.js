@@ -407,3 +407,5 @@ export class Resident {
     for (const k of JOINTS) this.j[k] = damp(this.j[k], target[k], rate, dt);
 
     // Apply
+    const j = this.j;
+    const anchor = this._poseAnchor(tmp);
