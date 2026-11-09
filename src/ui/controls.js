@@ -185,3 +185,5 @@ export function mountFocus({ focus }) {
   const baseTitle = document.title;
   const render = () => {
     setPreset(focus.preset);
+    const remaining = formatDuration(focus.remaining() / 1000);
+    $('focus-time').textContent = remaining;
