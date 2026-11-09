@@ -185,3 +185,5 @@ export class Atmosphere {
       uHorizon: { value: C('#c3d0d6') },
       uGround: { value: C('#8e8f88') },
       uSunDir: { value: new THREE.Vector3(0, 1, 0) },
+      uSunColor: { value: C('#fff0db') },
+      uMoonDir: { value: new THREE.Vector3(0, -1, 0) },
