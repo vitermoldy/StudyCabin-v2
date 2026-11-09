@@ -223,3 +223,5 @@ export class World {
   }
 
   _grassPush(dt) {
+    const push = this.terrain.grassPush.value;
+    let want = 0;
