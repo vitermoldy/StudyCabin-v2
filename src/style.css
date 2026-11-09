@@ -1,3 +1,5 @@
 @import '@fontsource-variable/instrument-sans/wght.css';
 
 /* Tokens printed by taste-skill `start.mjs brand` from the owner's reference colours. */
+:root {
+  --p-bg: #e4e5e1; --p-surface: #d6d8d3; --p-ink: #171716; --p-muted: #565a55;
