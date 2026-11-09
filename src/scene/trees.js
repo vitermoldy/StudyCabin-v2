@@ -21,3 +21,5 @@ function paint(geo, r, g, b, vary = 0) {
     const y = pos.getY(i);
     const k = 1 + vary * (y - 0.5);
     col[i * 3] = r * k;
+    col[i * 3 + 1] = g * k;
+    col[i * 3 + 2] = b * k;
