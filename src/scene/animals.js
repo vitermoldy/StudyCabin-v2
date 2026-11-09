@@ -535,3 +535,5 @@ function createFlocks(rand, count) {
         if (flapping) b.flap += dt * 13;
         const angle = flapping ? Math.sin(b.flap) * 0.75 : -0.1;
         for (const { wing, side } of b.wings) wing.rotation.x += (side * angle - wing.rotation.x) * ease(dt, 18);
+        b.root.position.set(b.x, b.y + Math.sin(time * 1.3 + b.bob) * 0.08, b.z);
+        if (Math.abs(b.x) > 96) {
