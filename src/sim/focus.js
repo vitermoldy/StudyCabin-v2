@@ -114,3 +114,5 @@ export class FocusTimer extends Emitter {
   /** Call often; finishes a block when its time is up. */
   tick() {
     if (this.running && Date.now() >= this.endAt) {
+      const finished = this.phase;
+      this._advancePhase(true);
