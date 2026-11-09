@@ -79,3 +79,5 @@ export class Ripples {
     };
     this.a = new THREE.WebGLRenderTarget(RES, RES, opts);
     this.b = new THREE.WebGLRenderTarget(RES, RES, opts);
+    this.camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+    this.scene = new THREE.Scene();
