@@ -687,3 +687,5 @@ export class Animals {
     this.walkers.forEach((w) => this.group.add(w.root));
     this.byName = Object.fromEntries(this.walkers.map((w) => [w.name, w]));
     this.flocks = createFlocks(rand, lowPower ? 4 : 6);
+    this.group.add(this.flocks.group);
+    this.owl = createOwl(rand);
