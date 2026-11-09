@@ -498,3 +498,5 @@ function createFlocks(rand, count) {
     birds.slice(0, size).forEach((b, i) => {
       const row = Math.ceil(i / 2);
       const side = i % 2 ? 1 : -1;
+      Object.assign(b, {
+        on: true,
