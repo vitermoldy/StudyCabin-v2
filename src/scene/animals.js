@@ -403,3 +403,5 @@ function createWalker(name, rand, inUse) {
       place(dt);
       pose(dt, time, true);
     },
+    /** The fawn keeps a couple of metres behind its mother and stops when she stops. */
+    follow(dt, time, leader, gap) {
