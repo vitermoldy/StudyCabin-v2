@@ -327,3 +327,5 @@ export class Cabin {
     ag.position.set(A.x, 0, A.z);
     ag.rotation.y = A.rot;
     this.group.add(ag);
+    this._soft(cushion, 0.78, 0.3, 0.74, 0.06, 0, FLOOR + 0.24, 0, { parent: ag });
+    this._soft(cushion, 0.78, 0.55, 0.18, 0.06, 0, FLOOR + 0.62, -0.32, { parent: ag });
