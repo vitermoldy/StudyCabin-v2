@@ -439,3 +439,6 @@ function createWalker(name, rand, inUse) {
       return LINES[key](withYoung ? 'A doe and her fawn' : kind.label, withYoung);
     },
   };
+}
+
+/** The route, direction and stop nearest the middle of the opening view, for the first animal. */
