@@ -662,3 +662,5 @@ function createOwl(rand) {
       if (Math.abs(dx) + Math.abs(dz) > 1e-4) m.root.rotation.y = Math.atan2(-dz, dx);
       m.body.rotation.z = -0.25;
       const gliding = o.state === 'arrive' && k > 0.75;
+      o.flap += dt * (gliding ? 0 : 9);
+      const angle = gliding ? 0.15 : Math.sin(o.flap) * 0.8;
