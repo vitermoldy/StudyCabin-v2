@@ -211,3 +211,6 @@ clock.on('jump', () => {
 let needsStill = false;
 mountCameraInput(document.getElementById('scene'), {
   getWorld: () => world,
+  onRender: () => { needsStill = true; },
+});
+
