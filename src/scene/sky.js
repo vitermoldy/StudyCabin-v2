@@ -318,3 +318,5 @@ export class Atmosphere {
     u.uAurora.value = this.night * (1 - overcast) * (1 - fogAmt * 0.85) * auroraSeason;
     u.uWind.value = params.wind;
     u.uTime.value = time;
+    u.uFogAmt.value = fogAmt;
+    u.uFlash.value = flash;
