@@ -94,3 +94,6 @@ export class CameraRig {
   }
 
   resetUser() {
+    Object.assign(this.user, { yaw: 0, tilt: 0, zoom: 1, panX: 0, panZ: 0 });
+  }
+
