@@ -365,3 +365,5 @@ startWorld()
       rig: {
         get view() { return world.rig.view; },
         resetUser: () => { world.rig.resetUser(); needsStill = true; },
+        setView: (id) => {
+          world.rig.setView(id);
