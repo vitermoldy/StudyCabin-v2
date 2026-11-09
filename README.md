@@ -23,3 +23,5 @@ shows a still picture and the music, timer and ambient sound still work.
 ## What is in it
 
 - **The forest.** An oval clearing in a wood of firs and broadleaf trees, thicker and taller the
+  further in, with bushes and ferns along the edge and three rings of far trees fading into the
+  haze behind. Teal and sage skies, green haze between the rows of trees, a warm low sun, green
