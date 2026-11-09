@@ -12,3 +12,6 @@ const RINGS = [
   { R: 84, seed: 97, tall: 10, spacing: 2.6, hill: 2, far: 0 },
   { R: 114, seed: 41, tall: 12, spacing: 3.4, hill: 4, far: 0.55 },
   { R: 152, seed: 23, tall: 14, spacing: 4.2, hill: 7, far: 1 },
+];
+
+function ringGeometry({ R, seed, tall, spacing, hill }) {
