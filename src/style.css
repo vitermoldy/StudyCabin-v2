@@ -232,3 +232,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; color: var(--ink);
   transition: background-color 120ms var(--ease), transform 90ms var(--ease);
 }
+.icon-btn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.08); transition-duration: 150ms; }
+.icon-btn:active:not(:disabled) { transform: translateY(1px) scale(.96); }
