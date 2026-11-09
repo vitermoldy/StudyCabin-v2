@@ -109,3 +109,6 @@ export class FocusTimer extends Emitter {
     this.remainingMs = this.lengthMs();
     this.running = keepRunning;
     if (keepRunning) this.endAt = Date.now() + this.remainingMs;
+  }
+
+  /** Call often; finishes a block when its time is up. */
