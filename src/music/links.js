@@ -13,3 +13,6 @@ export function parseLink(raw) {
   const text = String(raw || '').trim();
   if (!text) throw new LinkError('Paste a link first.');
   // A bare 11-character ID works too.
+  if (VIDEO_ID.test(text)) return { kind: 'video', videoId: text, listId: null, source: 'YouTube', url: `https://www.youtube.com/watch?v=${text}` };
+
+  if (/\s/.test(text) || !text.includes('.')) throw new LinkError('That is not a link. Copy it from the address bar or the Share button.');
