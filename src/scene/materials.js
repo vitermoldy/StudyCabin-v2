@@ -20,3 +20,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
     shader.uniforms.uSnowScale = local.uSnowScale;
     shader.uniforms.uWetScale = local.uWetScale;
     shader.vertexShader = shader.vertexShader
+      .replace('#include <common>', '#include <common>\nvarying float vUpness;')
+      .replace(
