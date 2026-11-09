@@ -82,3 +82,5 @@ export class CameraRig {
     const theta = Math.atan2(this.camera.position.x - this.target.x, this.camera.position.z - this.target.z);
     const rx = Math.cos(theta);
     const rz = -Math.sin(theta);
+    const fx = Math.sin(theta);
+    const fz = Math.cos(theta);
