@@ -299,3 +299,5 @@ function createWalker(name, rand, inUse) {
 
   function pose(dt, time, moving) {
     const k = dt > 0 ? ease(dt, 3) : 1;
+    const swing = moving ? kind.swing : 0;
+    model.legs.forEach((l, i) => {
