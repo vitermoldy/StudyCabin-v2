@@ -43,3 +43,5 @@ shows a still picture and the music, timer and ambient sound still work.
   snows. Lamps, the stove, the porch light and the fire bowl follow the hour and the weather.
 - **Clock.** 1 minute every second by default; also stopped, real time and 10 minutes a second.
   Jump to any hour from the Day panel or its timeline.
+- **Seasons.** Spring, summer, rainy season, autumn, winter: day length, temperature, grass, fern
+  and tree colours, petals, falling leaves, snow on the roof and the ground, ice on the pond.
