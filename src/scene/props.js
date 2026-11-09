@@ -8,3 +8,5 @@ import { groundHeight, pondPoint } from './ground.js';
 // and rain darkens them, like the cabin's own outdoor surfaces.
 
 /** A lumpy stone, one unit across, grey with moss on the faces that look up. */
+function stoneGeometry(seed) {
+  const r = rng(seed);
