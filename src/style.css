@@ -356,3 +356,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   min-height: 44px; padding: 0 var(--s-2); border: 0; border-bottom: 1px solid var(--line);
   background: none; color: var(--ink); text-align: left; font-size: 15px;
   transition: background-color 120ms var(--ease);
+}
+.timeline button:hover { background: rgba(255, 255, 255, 0.05); transition-duration: 150ms; }
