@@ -281,3 +281,5 @@ function lowPowerFlies() {
   return matchMedia('(max-width: 700px), (pointer: coarse)').matches;
 }
 
+/** Where the fireflies hang: over the clearing, most of them near the trees and the water. */
+function fireflyGeometry(count) {
