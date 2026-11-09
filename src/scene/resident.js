@@ -400,3 +400,5 @@ export class Resident {
         hipY: 0.92 + 0.018 * Math.cos(ph * 2), spineX: 0.04,
       });
     } else {
+      if (this.pose === 'walkLoop') target = POSES.stand(t);
+      else target = this._targetJoints(t);
