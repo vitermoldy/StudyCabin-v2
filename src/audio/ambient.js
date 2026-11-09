@@ -195,3 +195,5 @@ export class Ambient extends Emitter {
    * `season`.
    */
   update(dt, env) {
+    this.env = env;
+    if (!this.ctx || !this.enabled || this.ctx.state !== 'running') return;
