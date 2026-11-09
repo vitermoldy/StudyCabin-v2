@@ -123,3 +123,5 @@ function buildGeometry() {
   const idx = [];
   for (let j = 0; j < NZ; j++) {
     for (let i = 0; i < NX; i++) {
+      const a = j * (NX + 1) + i;
+      const b = a + 1;
