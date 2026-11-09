@@ -229,3 +229,5 @@ export class WeatherFX {
           float beat = t * (0.35 + aSeed.z * 0.45) + aSeed.x * 40.0;
           float glow = pow(max(0.0, sin(beat)), 6.0);
           vec4 mv = modelViewMatrix * vec4(p, 1.0);
+          float far = smoothstep(70.0, 25.0, -mv.z);
+          vA = step(aId, uAmount) * glow * far;
