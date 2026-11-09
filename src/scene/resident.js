@@ -107,3 +107,5 @@ export class Resident {
       guitar: new THREE.MeshStandardMaterial({ color: '#b07a45', roughness: 0.5 }),
       guitarDark: new THREE.MeshStandardMaterial({ color: '#3a2a20', roughness: 0.6 }),
     };
+    this._build();
+    this.j = POSES.stand(0, 0.5);
