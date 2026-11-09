@@ -35,3 +35,5 @@ shows a still picture and the music, timer and ambient sound still work.
   wood on its own trail, stops to graze, drink at the pond, look round or sit up, and goes back in
   on the other side. Rain sends most of them under cover; a storm sends all of them. Flocks of
   birds cross over the trees by day, an owl comes to the roof ridge after dark, fireflies light up
+  over the grass on warm nights. The animal in view gets a line in the story at the bottom left.
+- **The cabin and the resident.** A sage board cabin with a standing-seam roof, glass front, deck,
