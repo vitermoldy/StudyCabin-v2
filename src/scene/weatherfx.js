@@ -129,3 +129,5 @@ export class WeatherFX {
       const u = { ...this.common, uAmount: { value: 0 }, uBox: { value: new THREE.Vector3(46, 14, 40) }, uColA: { value: new THREE.Color(colA) }, uColB: { value: new THREE.Color(colB) } };
       const pts = new THREE.Points(
         seeds(700, 1, seed),
+        new THREE.ShaderMaterial({
+          uniforms: u,
