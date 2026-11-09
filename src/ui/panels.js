@@ -19,3 +19,5 @@ export class Panels extends Emitter {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && this.current) {
         e.preventDefault();
+        this.close();
+      }
