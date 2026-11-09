@@ -133,3 +133,6 @@ export class CameraRig {
       this.target.lerpVectors(this.from.target, baseTarget, k);
     } else {
       this.pos.copy(basePos);
+      this.target.copy(baseTarget);
+    }
+
