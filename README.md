@@ -109,3 +109,5 @@ shows a still picture and the music, timer and ambient sound still work.
 ## Credits
 
 YouTube and YouTube Music marks: Gil Barbara's SVG Logos and Simple Icons (CC0), trademarks of
+Google LLC. Typeface: Instrument Sans (SIL OFL) via Fontsource. 3D: three.js (MIT). The forest
+colours, the far treeline and the animal models follow the owner's own SongPlay scene.
