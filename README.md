@@ -55,3 +55,5 @@ shows a still picture and the music, timer and ambient sound still work.
   playlist. Links line up in the queue dropdown (reorder, remove, clear); next, previous,
   shuffle, repeat, seek and volume. The queue is kept in the browser.
 - **Focus timer.** 25/5 or 50/10 blocks with a long break; the resident studies at the desk while
+  it runs and takes a break with you. A bell at the end of each block.
+- **Ambient sound.** Leaves and branches in the wind, rain, wind, birds, crickets, frogs from the
