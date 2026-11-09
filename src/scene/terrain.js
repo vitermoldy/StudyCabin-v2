@@ -150,3 +150,5 @@ export class Terrain {
     const blades = lowPower ? 34 : 64;
     for (let b = 0; b < blades; b++) {
       const bx = (rand() - 0.5) * 1.12;
+      const bz = (rand() - 0.5) * 1.12;
+      const ang = rand() * Math.PI * 2;
