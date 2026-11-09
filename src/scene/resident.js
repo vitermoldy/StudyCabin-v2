@@ -197,3 +197,5 @@ export class Resident {
       const thigh = capsule(0.07, 0.3, m.pants);
       thigh.position.y = -0.21;
       th.add(thigh);
+      const kn = new THREE.Group();
+      kn.position.y = -0.43;
