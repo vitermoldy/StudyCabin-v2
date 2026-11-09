@@ -205,3 +205,7 @@ const KINDS = {
   fox: { make: makeFox, routes: 'fox', speed: 1.6, stride: 0.75, swing: 0.55, stopFor: [3, 7], away: [30, 80], label: 'A fox' },
   hare: { make: makeHare, routes: 'hare', speed: 1.5, stride: 0.7, swing: 0, stopFor: [3, 8], away: [20, 60], hops: true, label: 'A hare' },
   squirrel: { make: makeSquirrel, routes: 'squirrel', speed: 2.1, stride: 0.4, swing: 0, stopFor: [2, 5], away: [15, 45], hops: true, label: 'A squirrel' },
+};
+
+const KEEN = { doe: 'deer', buck: 'deer', fawn: 'deer', fox: 'fox', hare: 'hare', squirrel: 'squirrel' };
+
