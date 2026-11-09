@@ -569,3 +569,5 @@ function makeOwl() {
     const e = new THREE.Mesh(ball, eyeMat);
     e.scale.setScalar(0.018);
     e.position.set(0.098, 0.01, side * 0.032);
+    head.add(e);
+    lids.push(e);
