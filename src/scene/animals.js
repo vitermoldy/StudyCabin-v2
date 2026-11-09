@@ -53,3 +53,6 @@ function leg(material, length, top, bottom, [x, y, z]) {
   mesh.castShadow = true;
   pivot.add(mesh);
   return pivot;
+}
+
+function stick(material, length, radius, [x, y, z], tiltZ, tiltX = 0) {
