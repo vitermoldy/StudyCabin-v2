@@ -12,3 +12,5 @@ export const SPEEDS = {
 export const SPEED_LABELS = {
   paused: 'Stopped',
   real: 'Real time',
+  normal: '1 minute a second',
+  fast: '10 minutes a second',
