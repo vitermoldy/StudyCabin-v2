@@ -68,3 +68,5 @@ const FRAG = /* glsl */ `
     float fres = (0.04 + 0.96 * pow(1.0 - ndv, 5.0)) * 0.9;
     vec3 R = reflect(-V, N);
     R.y = abs(R.y);
+    vec3 sky = mix(uHorizon, uZenith, pow(clamp(R.y, 0.0, 1.0), 0.6));
+    // The wood stands all round the pond: low reflections are trees, dark under the sky.
