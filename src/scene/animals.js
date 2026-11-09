@@ -284,3 +284,5 @@ function createWalker(name, rand, inUse) {
     a.route = null;
   }
 
+  function place(dt) {
+    const u = Math.min(1, Math.max(0, a.s / a.path.length));
