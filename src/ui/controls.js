@@ -142,3 +142,5 @@ export function mountSound({ ambient }) {
     input.className = 'range';
     input.type = 'range';
     input.id = id;
+    input.min = '0';
+    input.max = '100';
