@@ -693,3 +693,5 @@ export class Animals {
     this.opened = false;
     this.recent = [];
     // The doe brings her fawn in spring and summer.
+    this._onPlan = (walker) => {
+      this.recent.unshift(walker);
