@@ -290,3 +290,5 @@ function frame(now) {
   if (gameDt > 30) jumped = true;
   climate.update(dt, gameDt);
   refreshActivity({ teleport: jumped });
+  const timeJumped = jumped;
+  jumped = false;
