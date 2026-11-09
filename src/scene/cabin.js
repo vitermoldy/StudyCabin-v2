@@ -77,3 +77,5 @@ export class Cabin {
 
   _legs(mat, cx, cz, w, d, h, y0 = FLOOR, t = 0.045, parent = this.group) {
     for (const sx of [-1, 1]) {
+      for (const sz of [-1, 1]) {
+        this._cb(mat, t, h, t, cx + sx * (w / 2 - t), y0 + h / 2, cz + sz * (d / 2 - t), { parent });
