@@ -28,3 +28,6 @@ export class FocusTimer extends Emitter {
       this.running = false;
       this._advancePhase(false);
     }
+  }
+
+  get config() {
