@@ -45,3 +45,5 @@ export const BREAK_ACTIVITY = { id: 'break', word: 'Break', line: 'A short break
 
 /** The scheduled entry for a time of day, before weather changes. */
 export function entryAt(minutes) {
+  const m = ((minutes % 1440) + 1440) % 1440;
+  return DAY.find((a) => m >= a.start && m < a.end) || DAY[0];
