@@ -177,3 +177,5 @@ export class MusicPlayer extends Emitter {
     const p = this.player;
     if (item.kind === 'playlist') {
       const opts = { list: item.listId, listType: 'playlist', index: 0 };
+      if (autoplay) p.loadPlaylist(opts);
+      else p.cuePlaylist(opts);
