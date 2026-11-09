@@ -110,3 +110,5 @@ export function deckTexture() {
   return finish(c, { repeat: [1 / 1.15, 1 / 1.15] });
 }
 
+/** Warm interior floorboards. */
+export function floorTexture() {
