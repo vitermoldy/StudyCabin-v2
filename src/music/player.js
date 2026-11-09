@@ -263,3 +263,5 @@ export class MusicPlayer extends Emitter {
     if (this._ready) this.player.seekTo(seconds, true);
   }
 
+  progress() {
+    if (!this._ready || !this.player.getDuration) return { time: 0, duration: 0 };
