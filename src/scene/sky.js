@@ -197,3 +197,5 @@ export class Atmosphere {
       uWind: { value: 0.3 },
       uFlash: { value: 0 },
       uGlow: { value: 1 },
+      uFogAmt: { value: 0.2 },
+      uAurora: { value: 0 },
