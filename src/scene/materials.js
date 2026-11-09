@@ -34,3 +34,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
         '#include <map_fragment>',
         `#include <map_fragment>
         float snowAmt = clamp(uSnow * uSnowScale * smoothstep(0.3, 0.75, vUpness), 0.0, 1.0);
+        diffuseColor.rgb *= 1.0 - uWet * uWetScale * 0.24;
+        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.88, 0.9, 0.92), snowAmt);`,
