@@ -313,3 +313,5 @@ function createWalker(name, rand, inUse) {
     }
     model.body.rotation.z += (a.bodyAim - model.body.rotation.z) * k;
     model.neck.rotation.z += (a.neckAim + (moving ? 0.05 * Math.sin(a.step * 2) : 0) - model.neck.rotation.z) * k;
+    model.head.rotation.z += (a.headAim - model.head.rotation.z) * k;
+    model.head.rotation.y += (a.lookAim - model.head.rotation.y) * k;
