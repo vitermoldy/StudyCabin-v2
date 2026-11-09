@@ -189,3 +189,5 @@ export class Cabin {
     const over = 0.55;
     const hRun = run + over;
     const len = hRun / Math.cos(alpha);
+    const w = 15.3;
+    for (const side of [1, -1]) {
