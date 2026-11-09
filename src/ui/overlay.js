@@ -65,3 +65,5 @@ export class Overlay {
     if (this.meta.textContent !== meta) this.meta.textContent = meta;
   }
 
+  /** CSS-pixel rectangles of the three words, for sampling the scene behind them. */
+  rects() {
