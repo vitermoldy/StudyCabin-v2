@@ -301,3 +301,5 @@ export class Cabin {
     bulb.position.set(x, FLOOR + 2.04, z);
   }
 
+  _living() {
+    const { sofa, cushion, rug, wood, woodDark, metal, ceramic, print, books, trim, stoveGlass } = this.mat;
