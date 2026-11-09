@@ -145,3 +145,5 @@ function makeHare() {
   const fur = coat('#a8865e');
   const pale = coat('#eee6da');
   const root = new THREE.Group();
+  const body = new THREE.Group();
+  root.add(body);
