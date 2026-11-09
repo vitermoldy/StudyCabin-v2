@@ -28,3 +28,5 @@ export const SEASONS = {
     label: 'Spring',
     sunrise: 375, sunset: 1125, noonElevation: 55,
     temp: [16, 4],
+    grass: '#6f9a3e', soil: '#584a35', mud: '#3d3428', foliage: '#78993f', fern: '#5f8a34',
+    snow: 0, petals: 1, leaves: 0, warmth: 0.75,
