@@ -35,3 +35,6 @@ const DROP_FRAG = /* glsl */ `
     d = 0.5 - cos(d * 3.14159265) * 0.5;
     info.r -= d * uStrength;
     gl_FragColor = info;
+  }
+`;
+
