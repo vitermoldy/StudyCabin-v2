@@ -51,3 +51,5 @@ async function startWorld() {
 }
 
 function showStill() {
+  html.classList.remove('is-live');
+  document.getElementById('nogl').hidden = false;
