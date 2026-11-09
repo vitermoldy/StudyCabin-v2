@@ -33,3 +33,5 @@ export class CameraRig {
     const v = VIEWS[id];
     const cam = this.camera;
     outTarget.set(...v.target);
+    outPos.set(...v.pos);
+    if (id === 'window' && follow && follow.z < 7.5) {
