@@ -31,3 +31,5 @@ export class Panels extends Emitter {
     button.addEventListener('click', (e) => this.toggle(id, button, e.detail === 0));
   }
 
+  /** `keyboard`: opened with Enter or Space, so focus moves into the panel. */
+  toggle(id, opener, keyboard = false) {
