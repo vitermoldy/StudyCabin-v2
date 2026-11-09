@@ -86,3 +86,5 @@ export class Cabin {
   // ------------------------------------------------------------ materials
   _makeMaterials() {
     const fab = fabricTexture();
+    this.mat = {
+      siding: weathered(std('#f6f9f1', { map: sidingTexture(), roughness: 0.86 }), { snow: 0.6 }),
