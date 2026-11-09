@@ -275,3 +275,5 @@ function frame(now) {
   if (scenePaused) {
     // The scene stands still, but a hand-moved camera still redraws it.
     if (world && (needsStill || world.rig.settling)) {
+      needsStill = false;
+      world.rig.update(Math.min(realDt, 0.1), elapsed, world.resident.head);
