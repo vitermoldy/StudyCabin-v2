@@ -320,3 +320,5 @@ export class MusicPlayer extends Emitter {
     this.status = 'paused';
     this.emit('change');
     const failed = this.current;
+    // Skip to the next link after the reason has been shown.
+    setTimeout(() => {
