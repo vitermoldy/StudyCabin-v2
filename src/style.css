@@ -279,3 +279,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .switch:hover::before { background: rgba(228, 229, 225, 0.3); }
 .switch[aria-checked="true"]:hover::before { background: color-mix(in oklab, var(--action) 86%, white); }
 
+.choices { margin: var(--s-4) 0 0; padding: 0; border: 0; min-width: 0; }
+.choices legend { padding: 0; }
