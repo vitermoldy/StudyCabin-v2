@@ -233,3 +233,5 @@ export class Cabin {
 
   _annex() {
     const { siding, roof, trim } = this.mat;
+    this._bx(siding, ANNEX.x0, ANNEX.x1, 0.05, ANNEX.h, ANNEX.z0, ANNEX.z1);
+    this._bx(roof, ANNEX.x0 - 0.2, ANNEX.x1 + 0.08, ANNEX.h, ANNEX.h + 0.1, ANNEX.z0 - 0.25, ANNEX.z1 + 0.3);
