@@ -20,3 +20,5 @@ function stoneGeometry(seed) {
   const nor = geo.attributes.normal;
   const col = new Float32Array(pos.count * 3);
   const grey = new THREE.Color('#77786f');
+  const moss = new THREE.Color('#5b6b34');
+  const c = new THREE.Color();
