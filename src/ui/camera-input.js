@@ -35,3 +35,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     }
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (pointers.size === 1) {
+      moved = 0;
+      if (e.shiftKey) {
