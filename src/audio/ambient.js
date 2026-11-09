@@ -240,3 +240,5 @@ export class Ambient extends Emitter {
 
     // Frogs from the pond on warm evenings.
     const frogs = m.wildlife * (env.frogs ?? 0);
+    if (frogs > 0.05 && now > this._nextFrog) {
+      this._croak(frogs);
