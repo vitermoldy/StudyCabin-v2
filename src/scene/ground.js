@@ -92,3 +92,6 @@ export function trailLoop(count = 10) {
     pts.push({ x: p.x, y: groundHeight(p.x, p.z), z: p.z });
   }
   return pts;
+}
+
+// The lane in front of the cabin that stays clear of trees, out to where the camera stands on a
