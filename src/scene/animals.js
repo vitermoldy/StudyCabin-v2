@@ -309,3 +309,5 @@ function createWalker(name, rand, inUse) {
       model.body.position.y = air * 0.16;
       a.bodyAim = moving ? -0.25 * Math.cos(a.hop) : a.stop?.pose === 'sit' ? 0.55 : 0.2;
     } else {
+      model.body.position.y = moving ? Math.abs(Math.sin(a.step)) * 0.018 : 0;
+    }
