@@ -90,3 +90,5 @@ export function route(fromSpot, toSpot, from = null) {
   const exitHub = a ? hubOf(areaA, a.via[0]) : null;
   if (exitHub) pts.push(exitHub);
 
+  const chain = { in: 0, deck: 1, yard: 2 };
+  const steps = [];
