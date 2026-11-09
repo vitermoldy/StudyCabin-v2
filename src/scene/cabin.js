@@ -325,3 +325,5 @@ export class Cabin {
     const A = F.armchair;
     const ag = new THREE.Group();
     ag.position.set(A.x, 0, A.z);
+    ag.rotation.y = A.rot;
+    this.group.add(ag);
