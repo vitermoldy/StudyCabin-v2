@@ -158,3 +158,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .dock__tabs { display: flex; gap: 2px; }
 .dock__btn, .dock__tab {
   position: relative; display: flex; align-items: center; justify-content: center;
+  border: 0; background: transparent; color: var(--ink); border-radius: 3px;
+  transition: background-color 120ms var(--ease), color 120ms var(--ease), transform 90ms var(--ease);
