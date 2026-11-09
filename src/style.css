@@ -289,3 +289,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   border: 1px solid var(--line-strong); border-radius: var(--r-sm);
   font-size: 15px; font-weight: 500;
   transition: background-color 120ms var(--ease), border-color 120ms var(--ease);
+}
+.choice:hover span { background: rgba(255, 255, 255, 0.06); transition-duration: 150ms; }
