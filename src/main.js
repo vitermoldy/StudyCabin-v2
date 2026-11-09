@@ -310,3 +310,5 @@ function frame(now) {
       minutes: clock.minutes,
       climate,
       activity,
+      follow: world.rig.view === 'follow',
+      jumped: timeJumped,
