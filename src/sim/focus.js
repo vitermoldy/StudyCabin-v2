@@ -36,3 +36,6 @@ export class FocusTimer extends Emitter {
 
   get phaseLabel() {
     return PHASE_LABEL[this.phase];
+  }
+
+  /** 'focus' or 'break' while running, else null: the resident reads this. */
