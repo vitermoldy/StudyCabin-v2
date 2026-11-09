@@ -135,3 +135,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const li = document.createElement('li');
     li.className = 'qrow';
     if (i === player.current) li.classList.add('is-current');
+    if (item.status === 'error') li.classList.add('is-error');
+    const thumb = thumbFor(item);
