@@ -151,3 +151,5 @@ export class Ripples {
       this.dropMat.uniforms.uStrength.value = d.s;
       this._pass(this.dropMat);
     }
+    this.queue.length = 0;
+    for (let i = 0; i < steps; i++) this._pass(this.updateMat);
