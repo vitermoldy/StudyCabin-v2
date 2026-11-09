@@ -394,3 +394,5 @@ export class Resident {
       const s = Math.sin(ph);
       const c = Math.cos(ph);
       target = base({
+        thL: 0.42 * s, thR: -0.42 * s,
+        knL: 0.12 + 0.62 * Math.max(0, -c), knR: 0.12 + 0.62 * Math.max(0, c),
