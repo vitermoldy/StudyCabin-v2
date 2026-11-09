@@ -89,3 +89,5 @@ function makeDeer({ buck = false, fawn = false } = {}) {
   neck.add(blob(hide, [0.09, 0.28, 0.08], [0.1, 0.22, 0], -0.45));
   const head = new THREE.Group();
   head.position.set(0.21, 0.48, 0);
+  neck.add(head);
+  head.add(blob(hide, [0.15, 0.085, 0.075], [0.07, 0, 0], -0.35));
