@@ -196,3 +196,5 @@ export class Climate extends Emitter {
     const s = SEASONS[this.season];
     const lookRate = Math.max(0.5, rate * 0.6);
     for (const key of LOOK_COLOURS) {
+      const t = hexToRgb(s[key]);
+      const c = this.look[key];
