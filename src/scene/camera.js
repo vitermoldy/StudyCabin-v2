@@ -12,3 +12,5 @@ export class CameraRig {
   constructor(camera) {
     this.camera = camera;
     this.view = 'clearing';
+    this.pos = new THREE.Vector3();
+    this.target = new THREE.Vector3();
