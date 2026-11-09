@@ -20,3 +20,5 @@ function base(o = {}) {
   return {
     hipY: 0.93, spineX: 0, spineZ: 0, headX: 0, headY: 0,
     shLx: 0.05, shLz: 0.09, elL: -0.18, shRx: 0.05, shRz: -0.09, elR: -0.18,
+    thL: 0, knL: 0.02, thR: 0, knR: 0.02, lie: 0, ...o,
+  };
