@@ -263,3 +263,6 @@ export class Atmosphere {
   update({ minutes, season, params, time, flash, cameraPos }) {
     const u = this.uniforms;
     Atmosphere.sunDirection(minutes, season, this.sunDir);
+    Atmosphere.sunDirection((minutes + 720) % 1440, season, this.moonDir);
+    this.moonDir.x *= -1; // the moon crosses the other way round, so it is not a second sun
+
