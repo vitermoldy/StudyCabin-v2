@@ -90,3 +90,5 @@ export class Terrain {
         .replace('#include <common>', '#include <common>\nattribute vec3 aMix; attribute float aShade; varying vec3 vMix; varying float vShade; varying float vUp; varying vec3 vWorldG;')
         .replace('#include <begin_vertex>', '#include <begin_vertex>\n vMix = aMix; vShade = aShade;\n vWorldG = (modelMatrix * vec4(position, 1.0)).xyz;')
         .replace('#include <defaultnormal_vertex>', '#include <defaultnormal_vertex>\n vUp = inverseTransformDirection(transformedNormal, viewMatrix).y;');
+      shader.fragmentShader = shader.fragmentShader
+        .replace(
