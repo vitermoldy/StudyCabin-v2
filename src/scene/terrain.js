@@ -19,3 +19,5 @@ function buildGround() {
   const pos = [];
   const mix = [];
   const shade = [];
+  for (let j = 0; j <= NZ; j++) {
+    const z = CLEARING.z + warp((j / NZ) * 2 - 1) * 480;
