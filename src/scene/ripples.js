@@ -25,3 +25,5 @@ const QUAD_VERT = /* glsl */ `
   void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }
 `;
 
+const DROP_FRAG = /* glsl */ `
+  precision highp float;
