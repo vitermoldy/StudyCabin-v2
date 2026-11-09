@@ -193,3 +193,5 @@ export class Terrain {
         .replace(
           '#include <begin_vertex>',
           `#include <begin_vertex>
+          float hh = position.y;
+          vTip = clamp(hh / 0.5, 0.0, 1.0);
