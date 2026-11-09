@@ -195,3 +195,5 @@ export class Resident {
       th.position.set(0.095 * side, -0.02, 0);
       this.hips.add(th);
       const thigh = capsule(0.07, 0.3, m.pants);
+      thigh.position.y = -0.21;
+      th.add(thigh);
