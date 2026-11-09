@@ -370,3 +370,5 @@ export class Ambient extends Emitter {
 
   /** A fox's bark: two or three sharp yips. */
   _bark(level) {
+    const ctx = this.ctx;
+    const now = ctx.currentTime + 0.05;
