@@ -184,3 +184,5 @@ function makeSquirrel() {
   head.add(blob(fur, [0.05, 0.045, 0.042], [0, 0, 0]));
   eyes(head, 0.03, 0.015, 0.032, 0.008);
   for (const side of [-1, 1]) {
+    const ear = new THREE.Mesh(new THREE.ConeGeometry(0.014, 0.04, 5), fur);
+    ear.position.set(-0.01, 0.045, side * 0.022);
