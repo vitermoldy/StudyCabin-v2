@@ -216,3 +216,5 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
     dockWords.setAttribute('aria-label', on ? 'Hide the big words' : 'Show the big words');
   };
   wordsSwitch.addEventListener('click', () => { onWords(!wordsShown()); sync(); });
+  dockWords.addEventListener('click', () => { onWords(!wordsShown()); sync(); });
+  $('cam-reset').addEventListener('click', () => rig.resetUser && rig.resetUser());
