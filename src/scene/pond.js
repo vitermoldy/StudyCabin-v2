@@ -208,3 +208,5 @@ export class Pond {
     ]);
     const mat = new THREE.ShaderMaterial({
       uniforms: this.uniforms,
+      vertexShader: VERT,
+      fragmentShader: FRAG,
