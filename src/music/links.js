@@ -55,3 +55,5 @@ let apiPromise = null;
 
 /** Loads the YouTube IFrame API once; rejects after 15 s. */
 export function loadYouTubeApi() {
+  if (window.YT && window.YT.Player) return Promise.resolve(window.YT);
+  if (apiPromise) return apiPromise;
