@@ -375,3 +375,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .keys dd { margin: 0; color: var(--muted); }
 #fullscreen { margin-top: var(--s-3); }
 
+/* toast and fallback */
+.toast {
