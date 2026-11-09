@@ -282,3 +282,5 @@ export class Atmosphere {
     this.horizon.copy(this._tmpA).lerp(this._tmpB, overcast);
 
     // Fog pulls the whole sky toward a soft grey of the same brightness.
+    const fogAmt = clamp(params.fog, 0, 1);
+    const grey = this._tmpA.copy(this.horizon);
