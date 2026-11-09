@@ -46,3 +46,5 @@ export const TRAIL_LOOP = trailLoop(16);
  */
 export const SPOTS = {
   bed: { area: 'in', via: [p(3.0, SPINE_Z), p(3.0, -1.35)], at: p(3.1, -1.35), face: Math.PI / 2 },
+  bedside: { area: 'in', via: [p(3.0, SPINE_Z), p(3.0, -0.9)], at: p(3.05, -0.9), face: 0.15 },
+  cook: { area: 'in', via: [p(-3.65, SPINE_Z), p(-3.65, -1.82)], at: p(-5.35, -1.82), face: 0 },
