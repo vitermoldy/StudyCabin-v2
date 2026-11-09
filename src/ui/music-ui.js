@@ -153,3 +153,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       ph.appendChild(svgUse('i-music'));
       li.appendChild(ph);
     }
+    const main = document.createElement('button');
+    main.type = 'button';
