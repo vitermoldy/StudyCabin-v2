@@ -112,3 +112,5 @@ function makeFox() {
   const dark = coat('#2a1a12');
   const pale = coat('#f0e6d8');
   const root = new THREE.Group();
+  const body = new THREE.Group();
+  root.add(body);
