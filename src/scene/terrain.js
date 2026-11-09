@@ -176,3 +176,5 @@ export class Terrain {
       push(r0, 0); push(r1, 0.55); push(l1, 0.55);
       push(l1, 0.55); push(r1, 0.55); push(tip, 1);
     }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
