@@ -411,3 +411,5 @@ export class Cabin {
     this._cyl(metal, 0.01, 0.01, 0.42, D.x - 0.58, top + 0.22, D.z + 0.15, 6);
     const head = this._m(new THREE.ConeGeometry(0.09, 0.12, 18, 1, true), this.shades.desk, { cast: false });
     head.material.side = THREE.DoubleSide;
+    head.position.set(D.x - 0.5, top + 0.44, D.z + 0.08);
+    head.rotation.x = 0.5;
