@@ -193,3 +193,5 @@ export function printTexture() {
       ctx.lineTo(x, base - h);
       ctx.lineTo(x + 5, base);
     }
+    ctx.lineTo(256, 192);
+    ctx.closePath();
