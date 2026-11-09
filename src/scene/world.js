@@ -203,3 +203,5 @@ export class World {
     this.fx.update({
       time: t,
       params: p,
+      look: climate.look,
+      camera: this.camera,
