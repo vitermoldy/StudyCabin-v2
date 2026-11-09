@@ -658,3 +658,5 @@ function createOwl(rand) {
       const p = tmp.copy(o.from).multiplyScalar((1 - k) * (1 - k)).addScaledVector(o.mid, 2 * k * (1 - k)).addScaledVector(o.to, k * k);
       const dx = p.x - m.root.position.x;
       const dz = p.z - m.root.position.z;
+      m.root.position.copy(p);
+      if (Math.abs(dx) + Math.abs(dz) > 1e-4) m.root.rotation.y = Math.atan2(-dz, dx);
