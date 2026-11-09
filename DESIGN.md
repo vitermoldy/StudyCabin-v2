@@ -70,3 +70,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Sentence-case labels, no tracked capitals | taste-skill rule; the reference's tracked caps are dropped, its layout kept. |
 | "↳" before "Add music" (R-08) | The reference's own glyph for its one top-right action; used once. |
 | Dark ground behind the canvas | The page is a scene that runs through day and night; the ground only shows before the first frame. |
+| Lightning is a soft sky brightening, at most one flash every 8 s, off under reduced motion | Storm atmosphere without a flashing hazard. |
+| Thick lawn of fine blades, dark at the root, light at the tip, parting round the pointer | The owner's grass reference. In v2 the blades are a little shorter, sparse under the trees, with a touch of gold at the tips as in SongPlay's meadow. |
