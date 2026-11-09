@@ -224,3 +224,5 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
   document.addEventListener('fullscreenchange', () => {
     fs.textContent = document.fullscreenElement ? 'Leave full screen' : 'Full screen';
   });
+  sync();
+  return { setView, sync };
