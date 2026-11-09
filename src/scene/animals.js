@@ -241,3 +241,5 @@ function createWalker(name, rand, inUse) {
     path: null,
     route: null,
     s: 0,
+    stops: [],
+    stop: null,
