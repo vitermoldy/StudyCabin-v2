@@ -263,3 +263,6 @@ export class World {
     if (!hit || pondE(hit.x, hit.z) > 0.98 || groundHeight(hit.x, hit.z) > WATER_Y - 0.02) return false;
     this.ripples.drop(hit.x, hit.z, 0.35, strength);
     return true;
+  }
+
+  render(frameMs = 16) {
