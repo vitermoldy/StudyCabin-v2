@@ -18,3 +18,5 @@ function stoneGeometry(seed) {
   }
   geo.computeVertexNormals();
   const nor = geo.attributes.normal;
+  const col = new Float32Array(pos.count * 3);
+  const grey = new THREE.Color('#77786f');
