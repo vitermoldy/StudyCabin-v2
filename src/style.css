@@ -253,3 +253,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   font-size: 16px; color: var(--ink);
   transition: border-color 140ms var(--ease), box-shadow 140ms var(--ease);
 }
+.input::placeholder { color: #8e8f8c; }
+.input:focus { outline: none; border-color: var(--action); box-shadow: 0 0 0 3px rgba(217, 160, 91, 0.3); }
