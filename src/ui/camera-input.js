@@ -80,3 +80,6 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     html.classList.add('is-dragging');
     if (mode === 'orbit') w.rig.orbit(dx, dy);
     else if (mode === 'pan') w.rig.pan(dx, dy);
+    onRender();
+  });
+
