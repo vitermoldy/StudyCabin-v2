@@ -415,3 +415,6 @@ export class Cabin {
     head.rotation.x = 0.5;
     // chair, its back to the room
     this._chair(D.x, 1.66, 0, woodDark);
+  }
+
+  _deckFurniture() {
