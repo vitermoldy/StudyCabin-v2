@@ -111,3 +111,5 @@ export function inLane(x, z) {
  * How far a point lies inside the forest, in metres: 0 or less is the open clearing. Trees are
  * planted by it, and the ground darkens under the canopy with it.
  */
+export function forestDepth(x, z) {
+  const u = (x - CLEARING.x) / CLEARING.rx;
