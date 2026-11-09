@@ -239,3 +239,5 @@ export class Atmosphere {
     this.zenith = new THREE.Color();
     this.fogColor = new THREE.Color();
     this.sunColor = new THREE.Color();
+    this._tmpA = new THREE.Color();
+    this._tmpB = new THREE.Color();
