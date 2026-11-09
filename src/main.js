@@ -165,3 +165,6 @@ function setScenePaused(on, { announce = false } = {}) {
   lastFrame = performance.now();
 }
 pauseBtn.addEventListener('click', () => setScenePaused(!scenePaused, { announce: true }));
+setScenePaused(scenePaused);
+if (reduced) setTimeout(() => toast('The scene is still because your system asks for less motion. Press play at the top right to start it.', 7000), 1200);
+
