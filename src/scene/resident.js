@@ -262,3 +262,5 @@ export class Resident {
     this.activity = activity;
     const target = activity.spot;
     if (teleport || !this.spot) {
+      this._place(target);
+      this.pose = activity.pose;
