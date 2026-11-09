@@ -348,3 +348,4 @@ export class Atmosphere {
     // A little more exposure at night so the scene never goes black.
     this.renderer.toneMappingExposure = lerp(1.0, 1.45, this.night) * (1 - storm * 0.05);
   }
+}
