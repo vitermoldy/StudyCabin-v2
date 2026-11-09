@@ -444,3 +444,5 @@ export class Cabin {
     const f = F.fireBowl;
     const pts = [];
     for (let i = 0; i <= 10; i++) {
+      const a = (i / 10) * Math.PI * 0.5;
+      pts.push(new THREE.Vector2(0.05 + Math.sin(a) * 0.5, 0.42 - Math.cos(a) * 0.3));
