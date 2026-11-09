@@ -729,3 +729,5 @@ export class Animals {
     const night = ctx.night;
     eyeMat.color.copy(EYE_DARK).lerp(EYE_SHINE, night * 0.9);
     if (!this.opened) this._open(ctx);
+    if (dt <= 0) return;
+    const c = { ...ctx, onPlan: this._onPlan };
