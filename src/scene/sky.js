@@ -181,3 +181,5 @@ export class Atmosphere {
     this.scene = scene;
     this.renderer = renderer;
     this.uniforms = {
+      uZenith: { value: C('#6a8fb8') },
+      uHorizon: { value: C('#c3d0d6') },
