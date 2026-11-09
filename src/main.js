@@ -357,3 +357,5 @@ startWorld()
   .then((w) => {
     world = w;
     world.onThunder = (s) => ambient.thunder(s);
+    world.resident.setSeason(climate.season);
+    world.resident.setActivity(activity, { teleport: true });
