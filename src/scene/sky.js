@@ -81,3 +81,5 @@ const FRAG = /* glsl */ `
     vec3 d = normalize(vDir);
     float h = d.y;
     float up = clamp(h, 0.0, 1.0);
+    // The trees hide the lowest band, so the sky turns to its upper colour sooner than over the sea.
+    vec3 col = mix(uHorizon, uZenith, pow(up, 0.42));
