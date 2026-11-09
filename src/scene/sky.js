@@ -233,3 +233,5 @@ export class Atmosphere {
     this.sunDir = new THREE.Vector3();
     this.moonDir = new THREE.Vector3();
     this.dayFactor = 1;
+    this.night = 0;
+    this.overcast = 0;
