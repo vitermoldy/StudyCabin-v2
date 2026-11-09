@@ -30,3 +30,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
         '#include <common>',
         '#include <common>\nvarying float vUpness;\nuniform float uSnow; uniform float uWet; uniform float uSnowScale; uniform float uWetScale;',
       )
+      .replace(
+        '#include <map_fragment>',
