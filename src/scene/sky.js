@@ -48,3 +48,5 @@ const FRAG = /* glsl */ `
       vec3 c = mix(vec3(0.12, 1.0, 0.55), vec3(0.1, 0.78, 0.82), smoothstep(0.0, 0.14, hgt));
       c = mix(c, vec3(0.95, 0.42, 0.55), smoothstep(0.08, 0.3, hgt) * 0.4);
       col += c * curtain * rays * (0.55 - fi * 0.13);
+    }
+    // they hang over the hills behind the cabin, fading toward the viewer's back
