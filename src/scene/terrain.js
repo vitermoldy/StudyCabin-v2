@@ -10,3 +10,6 @@ export { groundHeight, WATER_Y };
 function warp(u) {
   const a = Math.abs(u);
   return Math.sign(u) * (0.1 * a + 0.9 * a * a);
+}
+
+/** One sheet of ground out to the hills, finest round the clearing. */
