@@ -179,3 +179,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .panel {
   position: fixed; left: 50%; z-index: 10;
   bottom: calc(var(--edge) + var(--dock-h) + 10px);
+  width: min(440px, calc(100vw - 2 * var(--edge)));
+  max-height: calc(100vh - var(--dock-h) - 2 * var(--edge) - 84px);
