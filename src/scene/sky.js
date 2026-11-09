@@ -326,3 +326,5 @@ export class Atmosphere {
     this.dome.position.copy(cameraPos);
 
     // Lights.
+    const sunUp = smoothstep(-0.03, 0.08, sy);
+    const moonUp = smoothstep(-0.02, 0.15, this.moonDir.y) * this.night;
