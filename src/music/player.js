@@ -103,3 +103,5 @@ export class MusicPlayer extends Emitter {
   setVolume(v) {
     this.volume = clamp(Math.round(v), 0, 100);
     if (this._ready) this.player.setVolume(this.volume);
+    this.persist();
+    this.emit('change');
