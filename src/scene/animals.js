@@ -699,3 +699,5 @@ export class Animals {
         const fawn = this.byName.fawn;
         fawn.plan(walker.a.route, false);
         // The same curve as the doe, a couple of metres behind her.
+        fawn.a.path = walker.a.path;
+        fawn.a.s = Math.max(0, walker.a.s - 1.9);
