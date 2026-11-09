@@ -197,3 +197,5 @@ export class Ambient extends Emitter {
   update(dt, env) {
     this.env = env;
     if (!this.ctx || !this.enabled || this.ctx.state !== 'running') return;
+    const now = this.ctx.currentTime;
+    this._t += dt;
