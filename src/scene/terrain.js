@@ -205,3 +205,5 @@ export class Terrain {
             float near = uPush.z * smoothstep(2.4, 0.2, dd);
             windW.xz += (away / max(dd, 0.001)) * near * h2 * 1.6;
             windW.y -= near * h2 * 0.5;
+            mat3 imx = mat3(instanceMatrix);
+            transformed += (transpose(imx) * windW) / max(dot(imx[0], imx[0]), 0.0001);
