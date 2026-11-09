@@ -337,3 +337,5 @@ export class Terrain {
     for (let i = 0; i < 9000 && spots.length < max; i++) {
       const x = CLEARING.x + (r() * 2 - 1) * 62;
       const z = CLEARING.z + (r() * 2 - 1) * 62;
+      const d = forestDepth(x, z);
+      if (d < -1.5 || d > 18) continue;
