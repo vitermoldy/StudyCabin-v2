@@ -270,3 +270,5 @@ function createWalker(name, rand, inUse) {
       a.stop = first;
       a.timer = kind.stopFor[1];
     }
+    inUse.add(route);
+    model.root.visible = true;
