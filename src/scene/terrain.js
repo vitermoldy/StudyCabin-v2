@@ -345,3 +345,5 @@ export class Terrain {
       spots.push([x, z]);
     }
     const mesh = new THREE.InstancedMesh(geo, mat, spots.length);
+    const m = new THREE.Matrix4();
+    const q = new THREE.Quaternion();
