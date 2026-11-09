@@ -53,3 +53,6 @@ export class Cabin {
     const mesh = this._m(geo, mat, opts);
     mesh.position.set((x0 + x1) / 2, (y0 + y1) / 2, (z0 + z1) / 2);
     return mesh;
+  }
+
+  /** Box by centre and size, inside an optional parent group. */
