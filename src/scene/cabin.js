@@ -475,3 +475,6 @@ export class Cabin {
       stove: mk('#ff8a3c', F.stove.x, FLOOR + 0.55, F.stove.z + 0.6, 6),
       fire: mk('#ff9a4a', F.fireBowl.x, FLOOR + 0.95, F.fireBowl.z, 10),
     };
+    this.maxLight = { kitchen: 9, living: 7, bed: 5, desk: 3.2, stove: 3.2, fire: 7 };
+  }
+
