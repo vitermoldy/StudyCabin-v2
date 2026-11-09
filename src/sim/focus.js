@@ -116,3 +116,5 @@ export class FocusTimer extends Emitter {
     if (this.running && Date.now() >= this.endAt) {
       const finished = this.phase;
       this._advancePhase(true);
+      this._commit();
+      this.emit('finished', finished);
