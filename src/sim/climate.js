@@ -20,3 +20,5 @@ export const SEASONS = {
     sunrise: 405, sunset: 1080, noonElevation: 40,
     temp: [12, 4],
     grass: '#a3843f', soil: '#6a4a2c', mud: '#43311f', foliage: '#c0702c', fern: '#a0602a',
+    snow: 0, petals: 0, leaves: 1, warmth: 0.6,
+    odds: { clear: 0.2, cloudy: 0.3, fog: 0.25, rain: 0.2, storm: 0.05 },
