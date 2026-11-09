@@ -110,3 +110,5 @@ export class Ambient extends Emitter {
     // Crickets: a high tone gated by a fast pulse, switched on and off in bursts.
     const carrier = ctx.createOscillator();
     carrier.frequency.value = 4400;
+    const am = gain(0);
+    const lfo = ctx.createOscillator();
