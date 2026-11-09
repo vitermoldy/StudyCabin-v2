@@ -289,3 +289,5 @@ function fireflyGeometry(count) {
   const id = [];
   for (let i = 0; i < 20000 && pos.length < count * 3; i++) {
     const x = CLEARING.x + (r() * 2 - 1) * CLEARING.rx * 1.2;
+    const z = CLEARING.z + (r() * 2 - 1) * CLEARING.rz * 1.2;
+    const d = forestDepth(x, z);
