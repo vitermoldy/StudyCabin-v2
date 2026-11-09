@@ -77,3 +77,6 @@ function pick(odds, random = Math.random) {
     if (r <= 0) return id;
   }
   return entries[entries.length - 1][0];
+}
+
+function hexToRgb(hex) {
