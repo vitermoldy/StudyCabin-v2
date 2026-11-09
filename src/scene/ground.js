@@ -86,3 +86,5 @@ export function trailDistance(x, z) {
 
 /** Points along the path round the pond, for the resident's walk. */
 export function trailLoop(count = 10) {
+  const pts = [];
+  for (let i = 0; i < count; i++) {
