@@ -677,3 +677,5 @@ function createOwl(rand) {
 }
 
 export class Animals {
+  constructor(scene, { lowPower = false } = {}) {
+    const rand = rng(7);
