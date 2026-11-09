@@ -131,3 +131,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     qToggle.focus();
   });
 
+  function row(item, i) {
+    const li = document.createElement('li');
