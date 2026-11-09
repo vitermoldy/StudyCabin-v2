@@ -144,3 +144,5 @@ export function mountSound({ ambient }) {
     input.id = id;
     input.min = '0';
     input.max = '100';
+    input.step = '1';
+    const out = document.createElement('output');
