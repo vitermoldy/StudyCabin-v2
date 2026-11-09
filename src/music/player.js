@@ -291,3 +291,5 @@ export class MusicPlayer extends Emitter {
         const k = list.indexOf(this._seekToVideo);
         this._seekToVideo = null;
         if (k > 0) this.player.playVideoAt(k);
+      }
+    } else if (s === YT.PlayerState.PAUSED) {
