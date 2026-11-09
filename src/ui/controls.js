@@ -52,3 +52,5 @@ export function mountDay({ clock, onJump }) {
   const scrubOut = $('time-scrub-out');
   scrub.addEventListener('input', () => {
     const m = Number(scrub.value);
+    scrubOut.textContent = formatClock(m);
+    onJump(m, true);
