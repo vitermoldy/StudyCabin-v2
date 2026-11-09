@@ -79,3 +79,5 @@ function hubOf(area, point) {
 
 /** A polyline from spot a to spot b (both spot ids). */
 export function route(fromSpot, toSpot, from = null) {
+  const a = SPOTS[fromSpot];
+  const b = SPOTS[toSpot];
