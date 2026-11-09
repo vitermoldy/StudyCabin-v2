@@ -166,3 +166,6 @@ function lilies(scene) {
     m.compose(new THREE.Vector3(p.x, WATER_Y + 0.006, p.z), q, new THREE.Vector3(p.s, 1, p.s));
     padMesh.setMatrixAt(i, m);
   });
+  padMesh.receiveShadow = true;
+  scene.add(padMesh);
+
