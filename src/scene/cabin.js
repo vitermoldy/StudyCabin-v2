@@ -228,3 +228,6 @@ export class Cabin {
     const steps = [[6.6, 6.95, 0.34], [6.95, 7.3, 0.18], [7.3, 7.65, 0.04]];
     for (const [z0, z1, top] of steps) this._bx(deck, -1.25, 1.25, top - 0.12, top, z0, z1);
     this._bx(deckWood, -1.3, -1.25, -0.05, FLOOR, 6.6, 7.65);
+    this._bx(deckWood, 1.25, 1.3, -0.05, FLOOR, 6.6, 7.65);
+  }
+
