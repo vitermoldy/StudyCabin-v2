@@ -124,3 +124,6 @@ export class CameraRig {
     if (followPoint) this.followTarget.lerp(followPoint, 1 - Math.exp(-2.5 * dt));
     const basePos = tmpA;
     const baseTarget = tmpB;
+    this._resolve(this.view, basePos, baseTarget, this.view === 'follow' || this.view === 'window' ? this.followTarget : null);
+
+    if (this.travel < 1) {
