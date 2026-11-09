@@ -63,3 +63,6 @@ export class Panels extends Emitter {
     if (returnFocus && this.opener && document.body.contains(this.opener)) this.opener.focus({ preventScroll: true });
     this.opener = null;
     this.emit('close', id);
+  }
+
+  _hide(id) {
