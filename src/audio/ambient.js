@@ -293,3 +293,5 @@ export class Ambient extends Emitter {
   _croak(level) {
     const ctx = this.ctx;
     const now = ctx.currentTime;
+    const o = ctx.createOscillator();
+    o.type = 'sawtooth';
