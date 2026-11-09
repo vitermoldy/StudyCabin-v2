@@ -202,3 +202,5 @@ export class Pond {
         uRipple: { value: null },
         uLand: { value: new THREE.Color('#1d2a20') },
         uRippleArea: { value: new THREE.Vector4(0, 0, 1, 0) },
+        uIce: { value: 0 },
+        uSnow: { value: 0 },
