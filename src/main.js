@@ -361,3 +361,5 @@ startWorld()
     world.resident.setActivity(activity, { teleport: true });
     const view = prefs.view in VIEWS ? prefs.view : FIRST_VIEW;
     world.rig.view = view;
+    viewApi = mountView({
+      rig: {
