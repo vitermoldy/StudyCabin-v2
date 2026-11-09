@@ -88,3 +88,5 @@ export function mountDay({ clock, onJump }) {
     if (document.activeElement !== scrub) {
       scrub.value = String(Math.floor(clock.minutes / 5) * 5);
       scrubOut.textContent = formatClock(Number(scrub.value));
+    }
+    const cur = entryAt(clock.minutes).id === 'sleep' ? 'sleep-early' : entryAt(clock.minutes).id;
