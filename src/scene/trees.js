@@ -204,3 +204,5 @@ export class Trees {
       mesh.castShadow = shadows;
       mesh.receiveShadow = true;
       mesh.frustumCulled = false;
+      scene.add(mesh);
+      return mesh;
