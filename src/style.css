@@ -212,3 +212,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .field__error { margin-top: var(--s-2); font-size: var(--t-small); color: #f0b37a; }
 
 /* buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-2);
