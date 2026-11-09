@@ -175,3 +175,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .dock__btn + .dock__tabs, .dock__tabs + .dock__btn { border-left: 1px solid var(--line); padding-left: 2px; }
 .dock__tabs + .dock__btn { border-left: 1px solid var(--line); }
 
+/* ------------------------------------------------------------ panels */
+.panel {
