@@ -197,3 +197,5 @@ export function printTexture() {
     ctx.closePath();
     ctx.fill();
   }
+  const t = finish(c);
+  t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
