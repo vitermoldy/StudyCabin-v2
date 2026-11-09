@@ -295,3 +295,5 @@ export class Atmosphere {
     u.uZenith.value.copy(this.zenith);
     u.uHorizon.value.copy(this.horizon);
     this.fogColor.copy(this.horizon).lerp(this.zenith, 0.12);
+    u.uGround.value.copy(this.fogColor).multiplyScalar(0.8);
+    this.fog.color.copy(this.fogColor);
