@@ -56,3 +56,5 @@ export class Cabin {
   }
 
   /** Box by centre and size, inside an optional parent group. */
+  _cb(mat, w, h, d, x, y, z, opts) {
+    const geo = metricBoxUV(new THREE.BoxGeometry(w, h, d), w, h, d);
