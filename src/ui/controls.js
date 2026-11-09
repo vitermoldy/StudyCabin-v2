@@ -203,3 +203,6 @@ export function mountFocus({ focus }) {
   focus.on('change', render);
   render();
   return render;
+}
+
+export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
