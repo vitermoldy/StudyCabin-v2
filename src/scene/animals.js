@@ -203,3 +203,5 @@ const KINDS = {
   buck: { make: () => makeDeer({ buck: true }), routes: 'deer', speed: 0.95, stride: 1.7, swing: 0.34, stopFor: [6, 12], away: [60, 140], label: 'A buck' },
   fawn: { make: () => makeDeer({ fawn: true }), routes: 'deer', speed: 1.05, stride: 1.0, swing: 0.42, stopFor: [0, 0], away: [0, 0], label: 'A fawn', follows: 'doe' },
   fox: { make: makeFox, routes: 'fox', speed: 1.6, stride: 0.75, swing: 0.55, stopFor: [3, 7], away: [30, 80], label: 'A fox' },
+  hare: { make: makeHare, routes: 'hare', speed: 1.5, stride: 0.7, swing: 0, stopFor: [3, 8], away: [20, 60], hops: true, label: 'A hare' },
+  squirrel: { make: makeSquirrel, routes: 'squirrel', speed: 2.1, stride: 0.4, swing: 0, stopFor: [2, 5], away: [15, 45], hops: true, label: 'A squirrel' },
