@@ -10,3 +10,5 @@ const newId = () => `q${Date.now().toString(36)}${(uid++).toString(36)}`;
  * status: idle | loading-api | loading | playing | paused | buffering | ended | api-error
  */
 export class MusicPlayer extends Emitter {
+  constructor(host) {
+    super();
