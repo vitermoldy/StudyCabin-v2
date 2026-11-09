@@ -198,3 +198,5 @@ export class Climate extends Emitter {
     for (const key of LOOK_COLOURS) {
       const t = hexToRgb(s[key]);
       const c = this.look[key];
+      for (let i = 0; i < 3; i++) c[i] = damp(c[i], t[i], lookRate, dt);
+    }
