@@ -288,3 +288,5 @@ export class Resident {
       this.path = null;
       this.pose = activity.pose;
       return;
+    }
+    this.pose = 'walk';
