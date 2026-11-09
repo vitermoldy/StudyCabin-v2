@@ -200,3 +200,5 @@ export class WeatherFX {
             float d = length(gl_PointCoord - 0.5);
             float a = smoothstep(0.5, 0.0, d) * vA * (0.1 + uLight * 0.24);
             if (a < 0.005) discard;
+            gl_FragColor = vec4(vec3(0.78, 0.79, 0.8) * (0.25 + uLight * 0.75), a);
+            #include <colorspace_fragment>
