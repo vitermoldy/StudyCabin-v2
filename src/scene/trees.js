@@ -69,3 +69,5 @@ function broadleafGeometry() {
     for (let i = 0; i < p.count; i++) {
       const k = 0.88 + r() * 0.24;
       p.setXYZ(i, p.getX(i) * k, p.getY(i) * k * 0.86, p.getZ(i) * k);
+    }
+    blob.translate(x, y, z);
