@@ -148,3 +148,5 @@ clock.on('jump', () => {
   jumped = true;
 });
 
+// ------------------------------------------------------------ UI
+const updateDay = mountDay({ clock, onJump: jumpTo });
