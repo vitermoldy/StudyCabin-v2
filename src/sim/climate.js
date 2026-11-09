@@ -187,3 +187,5 @@ export class Climate extends Emitter {
       this._setWeather(this._roll());
       this.nextChange = this._now() + this._span();
       this.persist();
+    }
+    // Blend toward the target over about 20 game minutes, never slower than 6 real seconds.
