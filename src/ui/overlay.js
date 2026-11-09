@@ -53,3 +53,5 @@ export class Overlay {
     // Only the characters that changed cross-fade.
     this.clock.textContent = '';
     [...text].forEach((ch, i) => {
+      const s = document.createElement('span');
+      s.textContent = ch;
