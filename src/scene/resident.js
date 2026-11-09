@@ -280,3 +280,5 @@ export class Resident {
       this.path = [from, { ...to }];
     } else {
       const startSpot = this.path ? null : this.spot;
+      this.path = route(startSpot || this._nearestSpot(), target, from);
+    }
