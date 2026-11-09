@@ -105,3 +105,5 @@ export class World {
       this.dpr = next;
       this.renderer.setPixelRatio(next);
       this.resize();
+      this._cooldown = 3;
+    }
