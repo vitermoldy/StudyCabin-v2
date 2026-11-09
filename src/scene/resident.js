@@ -442,3 +442,5 @@ export class Resident {
 
   /** Distance from the sliding door, for opening it. */
   get doorDistance() {
+    return Math.hypot(this.pos.x, this.pos.z - 3.0);
+  }
