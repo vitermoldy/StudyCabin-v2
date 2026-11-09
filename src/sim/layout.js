@@ -63,3 +63,5 @@ export const SPOTS = {
   trail: { area: 'yard', via: [p(1.5, 8.8, 0.02)], at: TRAIL_LOOP[0], face: 0.5 },
 };
 
+// Area connections.
+const DOOR_IN = p(0, SPINE_Z);
