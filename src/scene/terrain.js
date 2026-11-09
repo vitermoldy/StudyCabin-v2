@@ -146,3 +146,5 @@ export class Terrain {
     const rand = rng(7);
     const pos = [];
     const col = [];
+    const nrm = [];
+    const blades = lowPower ? 34 : 64;
