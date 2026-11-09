@@ -417,3 +417,5 @@ function createWalker(name, rand, inUse) {
         a.step += (ds / kind.stride) * Math.PI * 2;
         a.state = 'move';
         a.neckAim = 0;
+        a.headAim = 0;
+        a.bodyAim = 0;
