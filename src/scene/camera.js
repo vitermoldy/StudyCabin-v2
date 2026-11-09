@@ -20,3 +20,5 @@ export class CameraRig {
     this.pointer = new THREE.Vector2();
     this.pointerSmooth = new THREE.Vector2();
     this.followTarget = new THREE.Vector3();
+    this.entrance = 1; // 1 = start pulled back, eases to 0
+    this.reduced = false;
