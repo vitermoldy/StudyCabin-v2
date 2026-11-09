@@ -75,3 +75,5 @@ export class Clock extends Emitter {
   jumpTo(minutes, { sameDay = false } = {}) {
     const target = ((minutes % 1440) + 1440) % 1440;
     if (!sameDay && target < this.minutes - 0.5) {
+      this.day += 1;
+      this.emit('day', this.day);
