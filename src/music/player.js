@@ -20,3 +20,5 @@ export class MusicPlayer extends Emitter {
     this.loop = saved.loop === true;
     this.shuffle = saved.shuffle === true;
     this.status = 'idle';
+    this.nowTitle = '';
+    this.apiError = '';
