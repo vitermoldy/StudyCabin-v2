@@ -176,3 +176,5 @@ export class WeatherFX {
 
     // Smoke from the stove flue.
     this.smokeU = { ...this.common, uAmount: { value: 0 }, uOrigin: { value: flueTop.clone() } };
+    const smoke = new THREE.Points(
+      seeds(70, 1, 13),
