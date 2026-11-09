@@ -42,3 +42,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Thicker, green-tinted fog | SongPlay's "air between the rows of trees": each row further back paler, so the wood reads in depth. |
 | Three rings of fir silhouettes with mist at their feet | SongPlay's far treeline, bent into rings so the camera can turn all the way round without finding the end of the forest. |
 | Firs stay dark green; broadleaf crowns follow the season; bushes and ferns along the edge | Pine and moss greens from SongPlay; the edge planting makes the clearing run into the wood instead of stopping at a wall. |
+| A pond in front of the cabin instead of the sea | Keeps v1's water (clear edge, caustics, the ripple simulation the owner asked for) in a forest setting, and gives the deer somewhere to drink. It freezes in winter. |
+| Animals on game trails, by the hour, the weather and the season | The owner asked for animals that pass by. Deer at dawn and dusk, the fox at night, the squirrel by day, as they live; rain sends them under cover. Trees keep the trails open. |
