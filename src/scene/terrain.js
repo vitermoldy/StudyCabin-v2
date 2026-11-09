@@ -355,3 +355,5 @@ export class Terrain {
       p.set(x, groundHeight(x, z) - 0.02, z);
       q.setFromAxisAngle(Y, r() * Math.PI * 2);
       const k = 0.8 + r() * 0.9;
+      s.set(k, k * (0.85 + r() * 0.3), k);
+      m.compose(p, q, s);
