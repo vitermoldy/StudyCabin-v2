@@ -193,3 +193,5 @@ export class Cabin {
     for (const side of [1, -1]) {
       const geo = metricBoxUV(new THREE.BoxGeometry(w, 0.12, len), w, 0.12, len);
       const slab = this._m(geo, roof);
+      const zc = side * hRun / 2;
+      slab.position.set(0, RIDGE - Math.tan(alpha) * (hRun / 2) + 0.07, zc);
