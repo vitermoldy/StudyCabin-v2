@@ -33,3 +33,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
     const s = (i / n) * circ;
     let top = 0;
     while (first < trees.length && trees[first].s + trees[first].w * 1.2 < s) first++;
+    for (let k = first; k < trees.length && trees[k].s - trees[k].w * 1.2 < s; k++) {
+      const t = trees[k];
