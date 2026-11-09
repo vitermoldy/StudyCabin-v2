@@ -77,3 +77,5 @@ export function loadYouTubeApi() {
       s.remove();
       reject(new Error('network'));
     };
+    document.head.appendChild(s);
+  });
