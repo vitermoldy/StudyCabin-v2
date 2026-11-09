@@ -240,3 +240,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .icon-btn--main:disabled { background: rgba(228, 229, 225, 0.2); color: rgba(23, 23, 22, 0.6); }
 .toggle {
   height: 44px; padding: 0 var(--s-3); border: 1px solid var(--line-strong); border-radius: var(--r-sm);
+  background: transparent; color: var(--ink); font-size: var(--t-small); font-weight: 500;
+  transition: background-color 120ms var(--ease), border-color 120ms var(--ease), color 120ms var(--ease);
