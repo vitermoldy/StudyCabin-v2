@@ -40,3 +40,5 @@ async function startWorld() {
   const canvas = document.getElementById('scene');
   const w = new World(canvas, { reducedMotion: reduced });
   w.onShaderFail = () => {
+    world = null;
+    showStill();
