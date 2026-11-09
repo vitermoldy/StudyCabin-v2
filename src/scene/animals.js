@@ -731,3 +731,5 @@ export class Animals {
     if (!this.opened) this._open(ctx);
     if (dt <= 0) return;
     const c = { ...ctx, onPlan: this._onPlan };
+    for (const w of this.walkers) {
+      if (w.kind.follows) w.follow(dt, time, this.byName[w.kind.follows], 1.9);
