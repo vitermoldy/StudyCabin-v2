@@ -387,3 +387,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .toast:empty { padding: 0; border: 0; }
 .nogl {
   position: fixed; left: var(--edge); top: 40%; z-index: 4; max-width: 380px;
+  padding: var(--s-3) var(--s-4); background: var(--plate); border-radius: var(--r-sm); font-size: 15px;
+}
+
