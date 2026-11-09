@@ -131,3 +131,5 @@ export class CameraRig {
       const k = easeInOut(this.travel);
       this.pos.lerpVectors(this.from.pos, basePos, k);
       this.target.lerpVectors(this.from.target, baseTarget, k);
+    } else {
+      this.pos.copy(basePos);
