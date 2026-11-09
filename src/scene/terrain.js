@@ -73,3 +73,6 @@ const WIND_GLSL = /* glsl */ `
   float gust = pow(roll * 0.5 + 0.5, 2.0);
   float flutter = sin(uTime * 3.7 + ip.x * 1.9 + ip.z * 2.3) * 0.1;
   float s = (0.25 + gust * 0.9 + flutter) * (0.2 + uWind * 1.05);
+`;
+
+export class Terrain {
