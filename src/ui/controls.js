@@ -140,3 +140,5 @@ export function mountSound({ ambient }) {
     label.textContent = layer.label;
     const input = document.createElement('input');
     input.className = 'range';
+    input.type = 'range';
+    input.id = id;
