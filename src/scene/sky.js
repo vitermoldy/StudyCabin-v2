@@ -261,3 +261,5 @@ export class Atmosphere {
   }
 
   update({ minutes, season, params, time, flash, cameraPos }) {
+    const u = this.uniforms;
+    Atmosphere.sunDirection(minutes, season, this.sunDir);
