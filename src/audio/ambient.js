@@ -14,3 +14,5 @@ export const LAYERS = [
  * no audio files. Nothing is created until the visitor turns sound on.
  */
 export class Ambient extends Emitter {
+  constructor() {
+    super();
