@@ -285,3 +285,5 @@ export class World {
       let max = 0;
       let min = 1;
       let n = 0;
+      // Sample a 4 x 3 grid of small blocks across the rectangle.
+      for (let gy = 0; gy < 3; gy++) {
