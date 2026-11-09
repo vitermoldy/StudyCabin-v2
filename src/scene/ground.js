@@ -67,3 +67,5 @@ export function pondPoint(e, a) {
 
 // The path round the pond and the short spur that joins it to the deck steps.
 export const TRAIL_E = 1.32;
+export const TRAIL_START = Math.atan2((7.65 - POND.z) / POND.rz, (0 - POND.x) / POND.rx);
+const SPUR_A = { x: 0, z: 7.6 };
