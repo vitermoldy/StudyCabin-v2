@@ -63,3 +63,5 @@ export class Cabin {
     return mesh;
   }
 
+  _soft(mat, w, h, d, r, x, y, z, opts) {
+    const mesh = this._m(new RoundedBoxGeometry(w, h, d, 3, r), mat, opts);
