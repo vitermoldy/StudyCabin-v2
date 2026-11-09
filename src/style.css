@@ -362,3 +362,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .timeline__now { font-size: var(--t-label); font-weight: 500; color: var(--action); }
 .timeline [aria-current="true"] .timeline__t { color: var(--action); }
 .timeline [aria-current="true"] .timeline__what { font-weight: 500; }
+#sync-clock { margin-top: var(--s-3); }
+
+/* focus */
