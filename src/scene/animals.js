@@ -153,3 +153,5 @@ function makeHare() {
   const neck = new THREE.Group();
   neck.position.set(0.1, 0.18, 0);
   body.add(neck);
+  const head = new THREE.Group();
+  head.position.set(0.04, 0.05, 0);
