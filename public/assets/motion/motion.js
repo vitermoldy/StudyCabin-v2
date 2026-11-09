@@ -154,3 +154,5 @@ function counts() {
       clearTimeout(timer);
       timer = setTimeout(() => {
         if (state !== 'armed') return;
+        if (onScreen()) { state = 'done'; stop(); span.textContent = p.raw; } else watch();
+      }, 6000);
