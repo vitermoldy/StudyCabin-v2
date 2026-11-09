@@ -21,3 +21,5 @@ export function webglAvailable() {
     const c = document.createElement('canvas');
     return !!(window.WebGL2RenderingContext && c.getContext('webgl2'));
   } catch {
+    return false;
+  }
