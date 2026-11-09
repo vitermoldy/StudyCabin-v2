@@ -57,3 +57,6 @@ export function pondE(x, z) {
   const u = (x - POND.x) / POND.rx;
   const v = (z - POND.z) / POND.rz;
   return Math.hypot(u, v) / pondWobble(Math.atan2(v, u));
+}
+
+/** The point on ring `e` round the pond at angle `a` (radians, in the oval's own frame). */
