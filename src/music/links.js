@@ -16,3 +16,5 @@ export function parseLink(raw) {
   if (VIDEO_ID.test(text)) return { kind: 'video', videoId: text, listId: null, source: 'YouTube', url: `https://www.youtube.com/watch?v=${text}` };
 
   if (/\s/.test(text) || !text.includes('.')) throw new LinkError('That is not a link. Copy it from the address bar or the Share button.');
+  let url;
+  try {
