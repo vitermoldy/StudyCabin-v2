@@ -370,3 +370,5 @@ export class Terrain {
   }
 
   update(look, { caustic = 0.5 } = {}) {
+    this.uniforms.uCaustic.value = caustic;
+    this.uniforms.uSoil.value.setRGB(look.soil[0], look.soil[1], look.soil[2], THREE.SRGBColorSpace);
