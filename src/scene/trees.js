@@ -217,3 +217,5 @@ export class Trees {
     this._target = new THREE.Color();
   }
 
+  /** Crowns follow the season's foliage colour (sRGB triple from Climate.look). */
+  update(look) {
