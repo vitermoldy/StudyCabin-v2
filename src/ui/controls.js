@@ -98,3 +98,5 @@ export function mountDay({ clock, onJump }) {
         if (on) r.b.setAttribute('aria-current', 'true');
         else r.b.removeAttribute('aria-current');
       }
+    }
+  };
