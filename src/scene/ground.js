@@ -40,3 +40,6 @@ export function fbm(x, y, oct = 4) {
     a *= 0.5;
   }
   return v;
+}
+
+/** The pond's surface height. */
