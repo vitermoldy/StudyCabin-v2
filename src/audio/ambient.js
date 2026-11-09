@@ -297,3 +297,5 @@ export class Ambient extends Emitter {
     o.type = 'sawtooth';
     const base = 110 + Math.random() * 90;
     o.frequency.setValueAtTime(base, now);
+    o.frequency.linearRampToValueAtTime(base * 0.92, now + 0.35);
+    const f = ctx.createBiquadFilter();
