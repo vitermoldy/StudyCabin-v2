@@ -43,3 +43,5 @@ const FRAG = /* glsl */ `
     vec3 V = normalize(cameraPosition - vWorld);
     vec2 p = vWorld.xz;
     float t = uTime;
+    float water = 1.0 - uIce;
+    // Cat's-paws from the wind and rain on an otherwise still surface.
