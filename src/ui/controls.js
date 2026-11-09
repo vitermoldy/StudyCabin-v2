@@ -136,3 +136,5 @@ export function mountSound({ ambient }) {
     const id = `mix-${layer.id}`;
     const label = document.createElement('label');
     label.className = 'label';
+    label.htmlFor = id;
+    label.textContent = layer.label;
