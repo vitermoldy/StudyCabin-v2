@@ -275,3 +275,6 @@ export class WeatherFX {
   }
 }
 
+const tmp = new THREE.Vector3();
+
+function lowPowerFlies() {
