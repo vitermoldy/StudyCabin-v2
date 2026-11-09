@@ -110,3 +110,5 @@ export class Treeline {
             c *= 0.9 + 0.2 * vn(vec2(atan(vXZ.y - ${CLEARING.z.toFixed(1)}, vXZ.x - ${CLEARING.x.toFixed(1)}) * 160.0, vT * 6.0));
             // snow on the far crowns in winter
             c = mix(c, uFog * 1.12, uSnow * 0.35 * smoothstep(0.2, 1.0, vT));
+            // mist pooling at the foot of the trees
+            float mist = 1.0 - smoothstep(-0.25, 0.55, vT);
