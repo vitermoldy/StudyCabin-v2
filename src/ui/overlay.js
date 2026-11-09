@@ -9,3 +9,5 @@ import { formatClock } from '../core/emitter.js';
 export class Overlay {
   constructor({ reducedMotion }) {
     this.word = document.getElementById('word-activity');
+    this.at = document.querySelector('.big--b');
+    this.timeWrap = document.getElementById('word-time');
