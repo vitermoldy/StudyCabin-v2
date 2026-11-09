@@ -135,3 +135,6 @@ export class Terrain {
     this.grass = this._buildGrass(lowPower);
     scene.add(this.grass);
     this.ferns = this._buildFerns(lowPower);
+    scene.add(this.ferns);
+  }
+
