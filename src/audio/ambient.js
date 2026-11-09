@@ -116,3 +116,5 @@ export class Ambient extends Emitter {
     lfo.frequency.value = 27;
     const lfoDepth = gain(0.5);
     lfo.connect(lfoDepth).connect(am.gain);
+    this.cricketGate = gain(0);
+    this.cricketLevel = gain(0);
