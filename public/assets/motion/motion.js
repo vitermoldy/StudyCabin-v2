@@ -254,3 +254,5 @@ document.addEventListener('click', e => {
   const box = btn.parentElement;
   if (btn.classList.contains('m-own')) {
     const paused = !btn.classList.contains('is-paused');
+    btn.__show(paused);
+    setPaused(box, paused);
