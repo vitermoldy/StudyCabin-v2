@@ -272,3 +272,5 @@ export class Ambient extends Emitter {
   _bird(level) {
     const ctx = this.ctx;
     const now = ctx.currentTime;
+    const notes = 2 + Math.floor(Math.random() * 4);
+    const base = 2600 + Math.random() * 1500;
