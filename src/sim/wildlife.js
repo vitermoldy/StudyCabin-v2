@@ -88,3 +88,6 @@ const WEATHER = {
   fox: { rain: 0.4, snow: 0.8 },
   hare: { rain: 0.1, snow: 0.5 },
   squirrel: { rain: 0.05, snow: 0.3 },
+};
+
+const SEASON = {
