@@ -24,3 +24,6 @@ export function titleOf(item) {
   if (!item) return '';
   if (item.title) return item.title;
   return item.kind === 'playlist' ? 'YouTube playlist' : 'YouTube video';
+}
+
+export function mountMusic(player, panels, { onPlayingChange }) {
