@@ -93,3 +93,6 @@ const FRAG = /* glsl */ `
     float skyUp = smoothstep(0.02, 0.25, up);
     vec3 night = galaxy(d) * 0.3;
     float stars = starLayer(d, 260.0, 0.0035, 0.0) * 1.3 + starLayer(d, 520.0, 0.01 + exp(-pow(dot(d, normalize(vec3(0.42, 0.5, 0.76))), 2.0) / 0.02) * 0.03, 17.0) * 0.55;
+    night += vec3(stars);
+
+    // Clouds: puffy lumps that catch the sun on one side, plus thin high streaks.
