@@ -321,3 +321,5 @@ export class Cabin {
     this._cb(this.mat.books, 0.3, 0.05, 0.22, C.x - 0.25, FLOOR + 0.445, C.z);
     this._cb(trim, 0.26, 0.04, 0.2, C.x - 0.25, FLOOR + 0.49, C.z + 0.01).rotation.y = 0.2;
     this._cyl(ceramic, 0.045, 0.04, 0.09, C.x + 0.28, FLOOR + 0.465, C.z + 0.05, 12);
+    // armchair angled toward the glass
+    const A = F.armchair;
