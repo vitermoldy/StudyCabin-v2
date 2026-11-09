@@ -57,3 +57,5 @@ const FRAG = /* glsl */ `
   vec3 galaxy(vec3 d){
     vec3 n = normalize(vec3(0.42, 0.5, 0.76));
     float g = dot(d, n);
+    float band = exp(-g * g / 0.018);
+    vec2 q = vec2(atan(d.x, d.z) * 2.2, g * 9.0);
