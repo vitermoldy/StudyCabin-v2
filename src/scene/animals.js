@@ -674,3 +674,6 @@ function createOwl(rand) {
       return o.state === 'perch' ? 'An owl sits on the roof ridge' : null;
     },
   };
+}
+
+export class Animals {
