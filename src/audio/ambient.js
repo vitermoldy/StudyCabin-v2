@@ -399,3 +399,5 @@ export class Ambient extends Emitter {
     const ctx = this.ctx;
     const now = ctx.currentTime;
     const s = ctx.createBufferSource();
+    s.buffer = this.noise;
+    const f = ctx.createBiquadFilter();
