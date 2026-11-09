@@ -184,3 +184,5 @@ export class Trees {
     const m = new THREE.Matrix4();
     const q = new THREE.Quaternion();
     const s = new THREE.Vector3();
+    const p = new THREE.Vector3();
+    const c = new THREE.Color();
