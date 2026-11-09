@@ -10,3 +10,5 @@ const PHASE_LABEL = { focus: 'Focus', short: 'Short break', long: 'Long break' }
 
 const today = () => new Date().toISOString().slice(0, 10);
 
+/** A focus timer in real time (not the cabin's clock). */
+export class FocusTimer extends Emitter {
