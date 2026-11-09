@@ -407,3 +407,5 @@ export class Cabin {
     const p = this._m(new THREE.IcosahedronGeometry(0.11, 0), leaf);
     p.position.set(D.x + 0.58, top + 0.2, D.z + 0.12);
     // desk lamp
+    this._cyl(metal, 0.07, 0.08, 0.02, D.x - 0.58, top + 0.01, D.z + 0.15, 14);
+    this._cyl(metal, 0.01, 0.01, 0.42, D.x - 0.58, top + 0.22, D.z + 0.15, 6);
