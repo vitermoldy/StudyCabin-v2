@@ -56,3 +56,5 @@ export class Clock extends Emitter {
     while (this.minutes >= 1440) {
       this.minutes -= 1440;
       this.day += 1;
+      this.emit('day', this.day);
+    }
