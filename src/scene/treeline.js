@@ -55,3 +55,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
   }
   const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute('aT', new THREE.Float32BufferAttribute(tAttr, 1));
+  geo.setIndex(idx);
