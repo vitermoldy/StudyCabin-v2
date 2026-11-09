@@ -227,3 +227,5 @@ export class WeatherFX {
           p.y += sin(t * (0.4 + aSeed.y * 0.3) + aSeed.z * 6.28) * 0.3;
           // a slow glow up and down, off for most of each beat
           float beat = t * (0.35 + aSeed.z * 0.45) + aSeed.x * 40.0;
+          float glow = pow(max(0.0, sin(beat)), 6.0);
+          vec4 mv = modelViewMatrix * vec4(p, 1.0);
