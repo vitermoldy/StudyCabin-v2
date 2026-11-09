@@ -159,3 +159,5 @@ export function grassCover(x, z) {
 }
 
 /** Bare earth: the path and the muddy bank of the pond, 0..1. */
+export function bareEarth(x, z) {
+  return Math.max(smooth(0.65, 0.15, trailDistance(x, z)) * 0.9, smooth(1.22, 1.0, pondE(x, z)));
