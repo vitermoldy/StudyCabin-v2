@@ -17,3 +17,5 @@ export class Panels extends Emitter {
       p.querySelector('.panel__close').addEventListener('click', () => this.close());
     }
     document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.current) {
+        e.preventDefault();
