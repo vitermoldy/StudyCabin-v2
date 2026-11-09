@@ -751,3 +751,5 @@ export class Animals {
   }
 
   /** What the ambient sound should hear: the owl on the ridge, a fox out at night. */
+  get audible() {
+    const fox = this.byName.fox;
