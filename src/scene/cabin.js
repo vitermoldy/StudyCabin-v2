@@ -353,3 +353,5 @@ export class Cabin {
     shade.material.side = THREE.DoubleSide;
     shade.position.set(-2.85, FLOOR + 1.62, -2.35);
     // wood stove
+    const W = F.stove;
+    this._bx(metal, W.x - 0.28, W.x + 0.28, FLOOR + 0.12, FLOOR + 0.66, W.z - 0.25, W.z + 0.22);
