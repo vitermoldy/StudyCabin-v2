@@ -84,3 +84,5 @@ export class Cabin {
   }
 
   // ------------------------------------------------------------ materials
+  _makeMaterials() {
+    const fab = fabricTexture();
