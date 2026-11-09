@@ -123,3 +123,5 @@ export function fireflies({ night, params, season }) {
   return night * bySeason * (1 - Math.min(1, params.rain * 1.6)) * (1 - params.snow) * (1 - params.wind * 0.5);
 }
 
+/** 0..1: frogs calling from the pond in the warm evenings and nights. */
+export function frogs({ minutes, params, season, iced }) {
