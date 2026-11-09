@@ -247,3 +247,5 @@ function createWalker(name, rand, inUse) {
     hop: 0,
     yaw: 0,
     neckAim: 0,
+    headAim: 0,
+    bodyAim: 0,
