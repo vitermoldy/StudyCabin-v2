@@ -21,3 +21,5 @@ function seeds(count, perItem, seed) {
   const r = rng(seed);
   const s = new Float32Array(count * perItem * 3);
   const id = new Float32Array(count * perItem);
+  const end = new Float32Array(count * perItem);
+  for (let i = 0; i < count; i++) {
