@@ -35,3 +35,5 @@ function radios(fieldset, name, options, current, onPick) {
   };
 }
 
+function bindSwitch(button, get, set) {
+  const sync = () => button.setAttribute('aria-checked', String(!!get()));
