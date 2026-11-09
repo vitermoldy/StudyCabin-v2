@@ -47,3 +47,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
     const floor = groundHeight(x, z) + wave(s) - 0.5;
     pos.push(x, floor - 8, z, x, floor + top, z);
     tAttr.push(-8 / tall, top / tall);
+  }
+  const idx = [];
