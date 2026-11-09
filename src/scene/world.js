@@ -179,3 +179,5 @@ export class World {
       minutes,
       season: { ...climate.seasonInfo, id: climate.season },
       params: p,
+      time: t,
+      flash: this.flash,
