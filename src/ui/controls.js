@@ -189,3 +189,5 @@ export function mountFocus({ focus }) {
     $('focus-time').textContent = remaining;
     const round = focus.phase === 'focus' ? `, round ${focus.round} of ${focus.config.rounds}` : '';
     $('focus-phase').textContent = `${focus.phaseLabel}${round}`;
+    const fresh = !focus.running && focus.remaining() === focus.lengthMs();
+    const what = focus.phase === 'focus' ? 'focus' : 'break';
