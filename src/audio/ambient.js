@@ -437,3 +437,5 @@ export class Ambient extends Emitter {
     if (!AC) return;
     if (!this.chimeCtx) this.chimeCtx = this.ctx || new AC();
     const ctx = this.chimeCtx;
+    ctx.resume?.().catch?.(() => {});
+    const now = ctx.currentTime + 0.02;
