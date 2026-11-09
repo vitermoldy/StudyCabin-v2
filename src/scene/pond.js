@@ -47,3 +47,5 @@ const FRAG = /* glsl */ `
     // Cat's-paws from the wind and rain on an otherwise still surface.
     vec2 g = vec2(0.0);
     g += wgrad(p, vec2(0.15, -0.99), 2.6, 0.012, 0.9, t);
+    g += wgrad(p, vec2(-0.42, -0.9), 1.7, 0.008, 1.2, t);
+    g += wgrad(p, vec2(0.62, -0.78), 1.1, 0.005, 1.5, t);
