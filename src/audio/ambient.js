@@ -216,3 +216,5 @@ export class Ambient extends Emitter {
     set(this.g.rain, m.rain * env.rain * 0.55);
     set(this.g.rainLow, m.rain * (env.rain * 0.25 + env.storm * 0.35));
 
+    const gust = 0.6 + 0.4 * Math.sin(t * 0.23) * Math.sin(t * 0.61 + 1);
+    set(this.g.wind, m.wind * (0.08 + env.wind * 0.5) * gust, 0.8);
