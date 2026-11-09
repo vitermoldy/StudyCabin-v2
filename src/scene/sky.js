@@ -150,3 +150,5 @@ const OVERCAST = [
   { y: -0.08, zenith: C('#2d3936'), horizon: C('#45524e') },
   { y: 0.0, zenith: C('#4d5956'), horizon: C('#73746b') },
   { y: 0.12, zenith: C('#84908b'), horizon: C('#a4aca5') },
+  { y: 0.35, zenith: C('#9ba8a3'), horizon: C('#bcc6c0') },
+  { y: 1.0, zenith: C('#a1adaa'), horizon: C('#c2cbc6') },
