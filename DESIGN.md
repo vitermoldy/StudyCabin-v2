@@ -51,7 +51,7 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Leaves and branches replace the waves in the sound mixer | The forest's own steady sound, following the wind; the other layers stay as in v1. |
 | The print above the sofa shows misty fir ridges | The cabin's one picture follows the place it now stands in. |
 | A new poster and share image, rendered from the scene (a misty summer morning, the doe and her fawn at the pond) | The poster shows before the scene draws and when WebGL is missing; it has to be the forest. |
-| Every wall of the main room is glass in thin dark frames, the gables too; the annex stays solid | Asked for
+| Every wall of the main room is glass in thin dark frames, the gables too; the annex stays solid | Asked for by
 
 ## v1 decisions kept (R-31)
 
