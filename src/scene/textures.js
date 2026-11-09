@@ -201,3 +201,6 @@ export function printTexture() {
   t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
   t.repeat.set(1, 1);
   return t;
+}
+
+/** Spines of books on a shelf. */
