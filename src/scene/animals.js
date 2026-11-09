@@ -330,3 +330,5 @@ function createWalker(name, rand, inUse) {
     } else if (poseName === 'look') {
       a.neckAim = 0.15;
       a.headAim = 0;
+      a.lookAim = 0.9 * Math.sin(time * 0.6 + a.wave);
+    } else {
