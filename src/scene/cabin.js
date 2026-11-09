@@ -254,3 +254,5 @@ export class Cabin {
         if ((i + (y > 2.2 ? 1 : 0)) % 2) this._cyl(ceramic, 0.07, 0.06, 0.16, x, y + 0.12, -2.86, 12);
         else this._cyl(ceramic, 0.12, 0.07, 0.07, x, y + 0.075, -2.86, 14);
       }
+    }
+    // island with a pot on the hob
