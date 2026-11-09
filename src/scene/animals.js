@@ -138,3 +138,6 @@ function makeFox() {
   tail.add(blob(pale, [0.07, 0.05, 0.05], [-0.42, -0.13, 0], 0.3));
   const legs = [[0.18, 0.06], [0.18, -0.06], [-0.18, 0.06], [-0.18, -0.06]].map(([x, z]) => leg(dark, 0.33, 0.026, 0.018, [x, 0.34, z]));
   legs.forEach((l) => root.add(l));
+  return { root, body, neck, head, legs, tail, ears: null };
+}
+
