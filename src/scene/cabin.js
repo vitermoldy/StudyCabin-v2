@@ -426,3 +426,5 @@ export class Cabin {
       this.group.add(g);
       this._cb(deckWood, 0.66, 0.05, 0.6, 0, FLOOR + 0.36, 0.02, { parent: g });
       const back = this._cb(deckWood, 0.66, 0.62, 0.05, 0, FLOOR + 0.66, -0.3, { parent: g });
+      back.rotation.x = -0.32;
+      for (const sx of [-0.33, 0.33]) {
