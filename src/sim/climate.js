@@ -12,3 +12,5 @@ export const SEASONS = {
     temp: [25, 4],
     grass: '#76893a', soil: '#5b4a33', mud: '#3f3527', foliage: '#56713a', fern: '#4f6e2e',
     snow: 0, petals: 0, leaves: 0, warmth: 1,
+    odds: { clear: 0.5, cloudy: 0.27, fog: 0.06, rain: 0.11, storm: 0.06 },
+    line: 'Long days, warm evenings, fireflies over the grass after dark.',
