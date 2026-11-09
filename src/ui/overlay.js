@@ -20,3 +20,5 @@ export class Overlay {
     this.inks = new Map();
   }
 
+  setWord(text) {
+    if (text === this.currentWord) return;
