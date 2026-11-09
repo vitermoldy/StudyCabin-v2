@@ -187,3 +187,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   background: rgba(19, 19, 18, 0.9);
   -webkit-backdrop-filter: blur(16px) saturate(1.1);
   backdrop-filter: blur(16px) saturate(1.1);
+  border: 1px solid var(--line); border-radius: var(--r-md);
+  opacity: 0; visibility: hidden; transform: translate(-50%, 6px);
