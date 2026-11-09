@@ -252,3 +252,5 @@ export class Atmosphere {
       const since = (((minutes - sunset) % 1440) + 1440) % 1440;
       theta = Math.PI + (since / (1440 - dayLen)) * Math.PI;
     }
+    const peak = THREE.MathUtils.degToRad(noonElevation);
+    const el = Math.sin(theta) * (Math.sin(theta) >= 0 ? peak : 0.6);
