@@ -228,3 +228,5 @@ addEventListener('pointerdown', wake, { once: true });
 addEventListener('keydown', wake, { once: true });
 
 // Keyboard shortcuts (never while typing).
+addEventListener('keydown', (e) => {
+  const t = e.target;
