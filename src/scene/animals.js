@@ -450,3 +450,5 @@ function openingRoute(routes) {
       if (!stops.length) continue;
       const [x, z] = route.pts[stops[0].at];
       const score = Math.abs(x + 1) + Math.abs(z - 13) * 0.4;
+      if (!best || score < best.score) best = { route, reverse, score };
+    }
