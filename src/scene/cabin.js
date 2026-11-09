@@ -362,3 +362,5 @@ export class Cabin {
     this._cyl(woodDark, 0.2, 0.17, 0.3, W.x + 0.75, FLOOR + 0.15, W.z + 0.1, 14);
   }
 
+  _bedroom() {
+    const { wood, linen, duvet, cushion, woodDark, ceramic } = this.mat;
