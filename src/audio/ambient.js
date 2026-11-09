@@ -172,3 +172,5 @@ export class Ambient extends Emitter {
   }
 
   setDuck(on) {
+    this.duckWhenMusic = !!on;
+    this._applyMaster(0.4);
