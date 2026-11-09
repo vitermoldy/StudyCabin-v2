@@ -129,3 +129,5 @@ export class CameraRig {
     if (this.travel < 1) {
       this.travel = Math.min(1, this.travel + dt / this.travelTime);
       const k = easeInOut(this.travel);
+      this.pos.lerpVectors(this.from.pos, basePos, k);
+      this.target.lerpVectors(this.from.target, baseTarget, k);
