@@ -42,3 +42,5 @@ function pineGeometry() {
     parts.push(paint(cone, 0.62 * shade, 0.8 * shade, 0.62 * shade, 0.2));
   });
   const g = mergeGeometries(parts);
+  g.computeVertexNormals();
+  return g;
