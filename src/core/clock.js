@@ -73,3 +73,5 @@ export class Clock extends Emitter {
 
   /** Move the clock to a time of day. Moving backwards starts the next day. */
   jumpTo(minutes, { sameDay = false } = {}) {
+    const target = ((minutes % 1440) + 1440) % 1440;
+    if (!sameDay && target < this.minutes - 0.5) {
