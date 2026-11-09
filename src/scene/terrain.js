@@ -361,3 +361,5 @@ export class Terrain {
       const tone = (0.8 + r() * 0.35) * (1 - canopy(x, z) * 0.3);
       c.setRGB(tone, tone, tone);
       mesh.setColorAt(i, c);
+    });
+    mesh.instanceMatrix.needsUpdate = true;
