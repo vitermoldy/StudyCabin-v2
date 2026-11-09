@@ -47,3 +47,5 @@ export class MusicPlayer extends Emitter {
     }
     const item = { id: newId(), ...parsed, title: '', author: '', thumb: '', status: 'ready', error: '' };
     this.queue.push(item);
+    this.persist();
+    this.emit('change');
