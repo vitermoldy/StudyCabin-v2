@@ -14,3 +14,5 @@ export const WORLD = {
  */
 export function weathered(material, { snow = 1, wet = 1 } = {}) {
   const local = { uSnowScale: { value: snow }, uWetScale: { value: wet } };
+  material.onBeforeCompile = (shader) => {
+    shader.uniforms.uSnow = WORLD.uSnow;
