@@ -106,3 +106,5 @@ export class Climate extends Emitter {
       snow: s.snow,
       petals: s.petals,
       leaves: s.leaves,
+      warmth: s.warmth,
+    };
