@@ -668,3 +668,5 @@ function createOwl(rand) {
       if (o.t >= 1) {
         if (o.state === 'arrive') perch();
         else gone();
+      }
+    },
