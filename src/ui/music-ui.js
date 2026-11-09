@@ -41,3 +41,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const volOut = $('music-vol-out');
   const shuffle = $('shuffle');
   const loop = $('loop');
+  const qToggle = $('queue-toggle');
+  const qList = $('queue-list');
