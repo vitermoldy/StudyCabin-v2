@@ -70,3 +70,5 @@ export function roofTexture() {
   grain(ctx, 256, 256, rand, 900, 0.05);
   const seams = 4;
   for (let i = 0; i < seams; i++) {
+    const x = Math.round((i * 256) / seams);
+    ctx.fillStyle = 'rgba(25,27,29,0.6)';
