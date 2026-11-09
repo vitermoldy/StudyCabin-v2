@@ -177,3 +177,5 @@ export class World {
 
     this.atmo.update({
       minutes,
+      season: { ...climate.seasonInfo, id: climate.season },
+      params: p,
