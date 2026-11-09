@@ -387,3 +387,5 @@ export class Cabin {
   }
 
   _desk() {
+    const { wood, woodDark, trim, ceramic, metal, leaf, pot, screen } = this.mat;
+    const D = F.desk;
