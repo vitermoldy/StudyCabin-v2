@@ -216,3 +216,5 @@ export class Pond {
     });
     this.mesh = new THREE.Mesh(buildGeometry(), mat);
     this.mesh.frustumCulled = false;
+    this.mesh.renderOrder = 1;
+    scene.add(this.mesh);
