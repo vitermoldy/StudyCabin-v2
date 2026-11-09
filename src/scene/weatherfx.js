@@ -81,3 +81,5 @@ export class WeatherFX {
         fragmentShader: /* glsl */ `
           uniform float uLight; uniform float uAmount; varying float vA;
           void main(){
+            if (vA < 0.01) discard;
+            gl_FragColor = vec4(vec3(0.72, 0.76, 0.8) * (0.35 + uLight * 0.65), vA * (0.26 + uAmount * 0.22));
