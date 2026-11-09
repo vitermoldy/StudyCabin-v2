@@ -92,3 +92,5 @@ export function mountDay({ clock, onJump }) {
     const cur = entryAt(clock.minutes).id === 'sleep' ? 'sleep-early' : entryAt(clock.minutes).id;
     if (cur !== lastId) {
       lastId = cur;
+      for (const r of rows) {
+        const on = r.a.id === cur;
