@@ -381,3 +381,5 @@ function createWalker(name, rand, inUse) {
         return;
       }
       a.neckAim = 0;
+      a.headAim = 0;
+      a.bodyAim = 0;
