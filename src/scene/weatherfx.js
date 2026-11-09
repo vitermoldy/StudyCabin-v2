@@ -266,3 +266,5 @@ export class WeatherFX {
     // Centre the weather a little in front of the camera.
     const fwd = camera.getWorldDirection(tmp).multiplyScalar(14);
     c.uCenter.value.copy(camera.position).add(fwd);
+    c.uCenter.value.y = Math.max(8, camera.position.y + 3);
+    this.rainU.uAmount.value = Math.min(1, params.rain * 1.05);
