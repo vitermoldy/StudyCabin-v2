@@ -181,3 +181,5 @@ export class Cabin {
     this._bx(this.shades.porch, 1.17, 1.29, GLASS_TOP + 0.1, GLASS_TOP + 0.2, 3.2, 3.24, { cast: false });
   }
 
+  _roof() {
+    const { roof, trim } = this.mat;
