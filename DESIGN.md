@@ -48,3 +48,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | The animal in view gets one sentence in the story line | Says what is happening without a new control or panel (RHYTHM 1). |
 | The owl on the roof ridge, fireflies, frogs | Night needs life too: something to see (the owl's shape, the fireflies) and to hear (hoots, frogs, crickets). |
 | Eyeshine after dark | Animals stay findable at night without lighting them up. |
+| Leaves and branches replace the waves in the sound mixer | The forest's own steady sound, following the wind; the other layers stay as in v1. |
+| The print above the sofa shows misty fir ridges | The cabin's one picture follows the place it now stands in. |
