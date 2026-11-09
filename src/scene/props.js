@@ -76,3 +76,5 @@ export class Props {
     scene.add(log);
     const stump = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.42, 0.55, 10), [bark, cut, cut]);
     const sx = -19.2;
+    const sz = 22.6;
+    stump.position.set(sx, groundHeight(sx, sz) + 0.22, sz);
