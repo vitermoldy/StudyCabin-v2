@@ -84,3 +84,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 - Panels: fade with a 6 px rise, 200 ms open, 120 ms close (motion.md tokens).
 - Camera views: a 1.4 s eased move between presets (where you are looking changed).
 - Animals walk at their own pace and stop for a few seconds at a time; birds cross in about
+  twenty seconds; fireflies glow up and fade on slow beats of a few seconds, never in step (a
+  living place, not an effect).
