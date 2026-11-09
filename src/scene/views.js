@@ -10,3 +10,6 @@ export const VIEWS = {
   window: { label: 'Window', pos: [0.5, 1.95, 6.6], target: [0, 1.25, -1.0], width: 7.5 },
   pond: { label: 'Pond', pos: [7.5, 5.5, 27], target: [5, 1.2, 9], width: 16 },
   follow: { label: 'Follow', pos: [0, 2.4, 9], target: [0, 1.4, 0], width: 7 },
+};
+
+export const VIEW_IDS = Object.keys(VIEWS);
