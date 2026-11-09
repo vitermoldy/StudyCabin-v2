@@ -160,3 +160,5 @@ function lilies(scene) {
   const padMesh = new THREE.InstancedMesh(padGeo, padMat, pads.length);
   const m = new THREE.Matrix4();
   const q = new THREE.Quaternion();
+  const Y = new THREE.Vector3(0, 1, 0);
+  pads.forEach((p, i) => {
