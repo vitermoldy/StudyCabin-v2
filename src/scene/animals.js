@@ -163,3 +163,5 @@ function makeHare() {
   head.add(ears);
   for (const side of [-1, 1]) ears.add(blob(fur, [0.022, 0.095, 0.014], [0, 0.08, side * 0.03], 0.15));
   // A big hare, so it still shows over the clearing's grass.
+  root.scale.setScalar(1.7);
+  return { root, body, neck, head, legs: [], tail: null, ears };
