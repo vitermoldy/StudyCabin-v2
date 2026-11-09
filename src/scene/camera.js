@@ -120,3 +120,5 @@ export class CameraRig {
     if (Math.abs(cam.fov - fov) > 0.01) {
       cam.fov = fov;
       cam.updateProjectionMatrix();
+    }
+    if (followPoint) this.followTarget.lerp(followPoint, 1 - Math.exp(-2.5 * dt));
