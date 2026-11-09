@@ -267,3 +267,5 @@ addEventListener('keydown', (e) => {
 
 // ------------------------------------------------------------ loop
 function frame(now) {
+  requestAnimationFrame(frame);
+  // Up to one game day of catch-up after the tab was hidden.
