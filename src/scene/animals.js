@@ -235,3 +235,5 @@ function createWalker(name, rand, inUse) {
   const kind = KINDS[name];
   const model = kind.make();
   model.root.visible = false;
+  const a = {
+    state: 'away',
