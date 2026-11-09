@@ -39,3 +39,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const seekTime = $('seek-time');
   const vol = $('music-vol');
   const volOut = $('music-vol-out');
+  const shuffle = $('shuffle');
+  const loop = $('loop');
