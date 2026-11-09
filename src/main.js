@@ -295,3 +295,5 @@ function frame(now) {
   overlay.setTime(clock.minutes);
 
   uiIn -= realDt;
+  if (uiIn <= 0) {
+    uiIn = 0.25;
