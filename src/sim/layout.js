@@ -92,3 +92,5 @@ export function route(fromSpot, toSpot, from = null) {
 
   const chain = { in: 0, deck: 1, yard: 2 };
   const steps = [];
+  const ca = chain[areaA];
+  const cb = chain[areaB];
