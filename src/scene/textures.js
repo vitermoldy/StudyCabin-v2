@@ -59,3 +59,6 @@ export function sidingTexture() {
     ctx.fillRect(x + 5, 0, 1, 256);
   }
   return finish(c, { repeat: [1 / 1.2, 1 / 1.2] });
+}
+
+/** Standing-seam metal roof: seams every 0.45 m along the slope. */
