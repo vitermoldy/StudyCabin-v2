@@ -361,3 +361,5 @@ export class Ambient extends Emitter {
       const g = ctx.createGain();
       const amp = 0.09 * level * (1 - (i / knocks) * 0.6);
       g.gain.setValueAtTime(0.0001, t0);
+      g.gain.exponentialRampToValueAtTime(amp, t0 + 0.002);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.02);
