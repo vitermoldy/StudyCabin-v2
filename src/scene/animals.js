@@ -613,3 +613,5 @@ function createOwl(rand) {
     m.wings.forEach(({ wing }) => { wing.visible = false; });
     m.root.visible = true;
   }
+  function gone() {
+    o.state = 'away';
