@@ -182,3 +182,5 @@ export class Resident {
       hand.scale.set(0.85, 1.15, 0.7);
       hand.castShadow = true;
       el.add(hand);
+      const grip = new THREE.Group();
+      grip.position.y = -0.29;
