@@ -177,3 +177,5 @@ const MOSS = C('#2c3a1e');
  * the clock and the weather.
  */
 export class Atmosphere {
+  constructor(scene, renderer) {
+    this.scene = scene;
