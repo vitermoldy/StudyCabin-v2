@@ -67,3 +67,5 @@ export class WeatherFX {
           attribute vec3 aSeed; attribute float aId; attribute float aEnd;
           varying float vA;
           ${WRAP}
+          void main(){
+            vec3 vel = vec3(uWind * 6.0, -14.0 - aSeed.z * 4.0, -uWind * 1.5);
