@@ -697,3 +697,5 @@ export class Animals {
       this.recent.unshift(walker);
       if (walker.name === 'doe' && (this.season === 'spring' || this.season === 'summer') && rand() < 0.75) {
         const fawn = this.byName.fawn;
+        fawn.plan(walker.a.route, false);
+        // The same curve as the doe, a couple of metres behind her.
