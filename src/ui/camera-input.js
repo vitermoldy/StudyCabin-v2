@@ -68,3 +68,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
       onRender();
       return;
     }
+    if (moved < 5) return;
+    if (mode === 'ripple') {
