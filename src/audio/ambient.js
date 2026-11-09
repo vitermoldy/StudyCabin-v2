@@ -412,3 +412,5 @@ export class Ambient extends Emitter {
     s.start(now, Math.random() * 3, dur + 0.02);
   }
 
+  thunder(strength = 1) {
+    if (!this.ctx || !this.enabled || this.ctx.state !== 'running') return;
