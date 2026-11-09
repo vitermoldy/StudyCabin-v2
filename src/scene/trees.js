@@ -142,3 +142,5 @@ export class Trees {
     const r = rng(42);
     const pines = [];
     const broad = [];
+    const cell = lowPower ? 3.6 : 2.7;
+    for (let z = CLEARING.z - REACH; z < CLEARING.z + REACH; z += cell) {
