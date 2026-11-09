@@ -405,3 +405,5 @@ function createWalker(name, rand, inUse) {
     },
     /** The fawn keeps a couple of metres behind its mother and stops when she stops. */
     follow(dt, time, leader, gap) {
+      const L = leader.a;
+      if (a.state === 'away') return;
