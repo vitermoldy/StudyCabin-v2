@@ -24,3 +24,6 @@ export function parseLink(raw) {
   }
   const host = url.hostname.toLowerCase().replace(/^(www\.|m\.)/, '');
   const known = ['youtube.com', 'music.youtube.com', 'youtu.be', 'youtube-nocookie.com'];
+  if (!known.includes(host)) throw new LinkError('Only YouTube and YouTube Music links can play here.');
+  const source = host === 'music.youtube.com' ? 'YouTube Music' : 'YouTube';
+
