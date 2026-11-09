@@ -517,3 +517,5 @@ function createFlocks(rand, count) {
 
   return {
     group,
+    update(dt, time, ctx) {
+      wait -= dt;
