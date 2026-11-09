@@ -42,3 +42,5 @@ const POSES = {
     shRx: -0.62 + 0.08 * Math.sin(t * 3.1), shRz: -0.14 + 0.1 * Math.cos(t * 3.1), elR: -0.95 + 0.12 * Math.sin(t * 3.1 + 1),
   }),
   standDrink: (t) => {
+    const p = (t % 9) / 9;
+    const lift = p > 0.55 && p < 0.8 ? Math.sin(((p - 0.55) / 0.25) * Math.PI) : 0;
