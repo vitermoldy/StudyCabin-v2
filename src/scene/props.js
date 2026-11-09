@@ -57,3 +57,5 @@ export class Props {
         m.compose(new THREE.Vector3(p.x, groundHeight(p.x, p.z) - p.s * 0.08, p.z), q, new THREE.Vector3(p.s, p.s, p.s));
         mesh.setMatrixAt(i, m);
       });
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
