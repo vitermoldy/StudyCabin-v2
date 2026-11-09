@@ -448,3 +448,5 @@ export class Resident {
 
 const tmp = new THREE.Vector3();
 
+function turn(current, target, maxStep) {
+  let d = target - current;
