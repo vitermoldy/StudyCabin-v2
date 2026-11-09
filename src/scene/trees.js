@@ -164,3 +164,5 @@ export class Trees {
         if (d < 0 || roll > 0.4 + Math.min(d / 8, 1) * 0.42) continue;
         if (onTrail(px, pz, 1.5)) continue;
         const grow = 0.85 + Math.min(d / 20, 1) * 0.35;
+        const pine = r() < 0.56 + (d > 14 ? 0.16 : 0);
+        const h = (pine ? 7 + r() * 7 : 6 + r() * 4.5) * grow;
