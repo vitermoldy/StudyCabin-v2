@@ -336,3 +336,6 @@ function createWalker(name, rand, inUse) {
       a.headAim = 0;
       a.lookAim = 0.4 * Math.sin(time * 0.8 + a.wave);
     }
+  }
+
+  return {
