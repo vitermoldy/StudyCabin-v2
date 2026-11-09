@@ -64,3 +64,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
 export class Treeline {
   constructor(scene) {
     this.colors = {
+      nearTop: new THREE.Color(),
+      nearLow: new THREE.Color(),
