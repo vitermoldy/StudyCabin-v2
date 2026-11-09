@@ -15,3 +15,5 @@ export const DAY = [
   { id: 'study-am', start: h(8, 20), end: h(10, 40), word: 'Study', line: 'Studying at the desk by the glass', spot: 'desk', pose: 'sitType' },
   {
     id: 'walk', start: h(10, 40), end: h(11, 40), word: 'Walk', line: 'A walk round the pond', spot: 'trail', pose: 'walkLoop',
+    wet: { word: 'Reading', line: 'Reading on the sofa while the weather passes', spot: 'sofa', pose: 'sitRead' },
+  },
