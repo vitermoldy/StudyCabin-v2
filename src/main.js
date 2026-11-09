@@ -36,3 +36,5 @@ html.classList.toggle('is-clear', !wordsShown);
 let world = null;
 async function startWorld() {
   const { World, webglAvailable } = await import('./scene/world.js');
+  if (!webglAvailable()) throw new Error('no webgl');
+  const canvas = document.getElementById('scene');
