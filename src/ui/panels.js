@@ -46,3 +46,5 @@ export class Panels extends Emitter {
     this.current = id;
     this.opener = opener || this.tabs.find((t) => t.dataset.panel === id);
     this._syncButtons();
+    if (keyboard) {
+      const target = (panel.dataset.focus && panel.querySelector(panel.dataset.focus)) || panel.querySelector(FOCUSABLE);
