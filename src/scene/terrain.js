@@ -84,3 +84,5 @@ export class Terrain {
       uCaustic: { value: 0.5 },
     };
     const mat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.97, metalness: 0 });
+    mat.onBeforeCompile = (shader) => {
+      Object.assign(shader.uniforms, this.uniforms, { uSnow: WORLD.uSnow, uWet: WORLD.uWet, uTime: WORLD.uTime });
