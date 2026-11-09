@@ -268,3 +268,5 @@ export class Cabin {
     this._legs(woodDark, T.x, T.z, T.w - 0.08, T.d - 0.08, 0.71);
     this._chair(T.x, 0.42, 0);
     this._chair(T.x - 0.38, 2.02, Math.PI);
+    this._chair(T.x + 0.38, 2.02, Math.PI);
+    this._cyl(ceramic, 0.13, 0.08, 0.06, T.x + 0.25, FLOOR + 0.79, T.z - 0.1, 14);
