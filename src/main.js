@@ -132,3 +132,5 @@ function refreshActivity({ teleport = false } = {}) {
   overlay.setWord(activity.word);
 }
 
+function storyText() {
+  const s = SEASONS[climate.season].label;
