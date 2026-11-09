@@ -370,3 +370,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 
 /* view */
 .keys { margin: 0; display: grid; gap: var(--s-1); }
+.keys div { display: grid; grid-template-columns: 72px 1fr; gap: var(--s-3); font-size: var(--t-small); }
+.keys dt { color: var(--ink); font-weight: 500; }
