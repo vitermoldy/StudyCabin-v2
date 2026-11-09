@@ -138,3 +138,6 @@ export function groundHeight(x, z) {
   const r = Math.hypot(x - CLEARING.x, z - CLEARING.z);
   y += smooth(58, 175, r) * (2.5 + fbm(x * 0.009 + 3, z * 0.009, 4) * 16) * (1 - inLane(x, z));
   y += (vnoise(x * 0.8, z * 0.8) - 0.5) * 0.05;
+  return y;
+}
+
