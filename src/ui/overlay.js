@@ -94,3 +94,5 @@ export class Overlay {
       if (next !== prev || !el.dataset.ink) {
         this.inks.set(el, next);
         el.dataset.ink = next;
+      }
+    });
