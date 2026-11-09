@@ -44,3 +44,5 @@ export class Panels extends Emitter {
     panel.inert = false;
     panel.dataset.open = 'true';
     this.current = id;
+    this.opener = opener || this.tabs.find((t) => t.dataset.panel === id);
+    this._syncButtons();
