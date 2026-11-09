@@ -247,3 +247,6 @@ export class Climate extends Emitter {
       nextChange: this.nextChange,
     });
   }
+}
+
+export { clamp, lerp };
