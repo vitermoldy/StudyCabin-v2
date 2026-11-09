@@ -181,3 +181,5 @@ export class World {
       params: p,
       time: t,
       flash: this.flash,
+      cameraPos: this.camera.position,
+    });
