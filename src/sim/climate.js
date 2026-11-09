@@ -219,3 +219,5 @@ export class Climate extends Emitter {
     return Math.round(mean + amp * diurnal + WEATHERS[this.weather].temp);
   }
 
+  /** True when the weather keeps the resident indoors. */
+  get badWeather() {
