@@ -5,3 +5,6 @@ import {
   CLEARING, WATER_Y, bareEarth, canopy, fbm, forestDepth, grassCover, groundHeight, smooth, vnoise,
 } from './ground.js';
 
+export { groundHeight, WATER_Y };
+
+function warp(u) {
