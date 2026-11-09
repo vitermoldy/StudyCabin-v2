@@ -178,3 +178,5 @@ export class Trees {
     this.leafColor = leafMat.userData.uLeaf.value;
     this.leafMat = leafMat;
 
+    const pineGeo = pineGeometry();
+    const broadGeo = broadleafGeometry();
