@@ -211,3 +211,5 @@ export class World {
       fireflies: this.fireflies,
     });
     // Glass reflects more by day, shows the lit room at night.
+    const glass = this.cabin.mat.glass;
+    glass.opacity = 0.08 + this.atmo.dayFactor * 0.16 * (1 - smoothstep(0.3, 1, this.cabin.state.living + this.cabin.state.kitchen) * 0.4);
