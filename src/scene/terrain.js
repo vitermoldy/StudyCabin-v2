@@ -100,3 +100,5 @@ export class Terrain {
           ${CAUSTIC}`,
         )
         .replace(
+          '#include <map_fragment>',
+          `#include <map_fragment>
