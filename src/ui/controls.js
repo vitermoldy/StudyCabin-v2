@@ -166,3 +166,5 @@ export function mountSound({ ambient }) {
       s.input.value = String(Math.round(ambient.mix[s.layer.id] * 100));
       s.out.textContent = `${s.input.value}%`;
       s.input.disabled = !ambient.enabled;
+    }
+    vol.disabled = !ambient.enabled;
