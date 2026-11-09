@@ -56,3 +56,6 @@ const UPDATE_FRAG = /* glsl */ `
     float edge = smoothstep(0.0, 0.06, vUv.x) * smoothstep(1.0, 0.94, vUv.x) * smoothstep(0.0, 0.06, vUv.y) * smoothstep(1.0, 0.94, vUv.y);
     info.rg *= mix(0.0, 1.0, wet) * mix(0.96, 1.0, edge);
     gl_FragColor = info;
+  }
+`;
+
