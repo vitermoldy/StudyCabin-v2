@@ -202,3 +202,5 @@ export class Trees {
       mesh.instanceMatrix.needsUpdate = true;
       if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
       mesh.castShadow = shadows;
+      mesh.receiveShadow = true;
+      mesh.frustumCulled = false;
