@@ -134,3 +134,5 @@ function refreshActivity({ teleport = false } = {}) {
 
 function storyText() {
   const s = SEASONS[climate.season].label;
+  // An animal in the clearing gets its own sentence, after the resident and the weather.
+  const seen = world?.animals.sighting();
