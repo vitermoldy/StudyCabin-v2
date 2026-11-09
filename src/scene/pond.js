@@ -182,3 +182,5 @@ function lilies(scene) {
 }
 
 export class Pond {
+  constructor(scene) {
+    this.uniforms = THREE.UniformsUtils.merge([
