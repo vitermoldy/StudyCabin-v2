@@ -144,3 +144,5 @@ export class Ambient extends Emitter {
       }
     }
     this._applyMaster(0.4);
+    if (!on && this.ctx) {
+      setTimeout(() => {
