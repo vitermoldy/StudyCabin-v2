@@ -5,3 +5,5 @@ import { formatClock } from '../core/emitter.js';
  * "<activity> at <time>". The word blurs in letter by letter when the
  * resident starts something new; the ink flips between light and dark so the
  * words keep 3:1 against whatever the scene shows behind them.
+ */
+export class Overlay {
