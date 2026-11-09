@@ -22,3 +22,5 @@ export class CameraRig {
     this.followTarget = new THREE.Vector3();
     this.entrance = 1; // 1 = start pulled back, eases to 0
     this.reduced = false;
+    // The visitor's own turn, tilt, zoom and slide on top of the chosen view.
+    this.user = { yaw: 0, tilt: 0, zoom: 1, panX: 0, panZ: 0 };
