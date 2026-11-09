@@ -110,3 +110,5 @@ function makeDeer({ buck = false, fawn = false } = {}) {
 function makeFox() {
   const fur = coat('#c8642a');
   const dark = coat('#2a1a12');
+  const pale = coat('#f0e6d8');
+  const root = new THREE.Group();
