@@ -343,3 +343,5 @@ export class Cabin {
       this._bx(woodDark, bx0, bx1, y - 0.03, y, -3.0, -3.0 + B.d);
       if (i < 4) this._bx(books, bx0 + 0.04, bx1 - 0.04, y, y + 0.32, -2.96, -2.72, { cast: false });
     }
+    // print above the sofa
+    this._bx(trim, S.x - 0.66, S.x + 0.66, FLOOR + 1.45, FLOOR + 2.45, -3.0, -2.97);
