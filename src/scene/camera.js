@@ -71,3 +71,5 @@ export class CameraRig {
 
   /** Drag to turn: pixels moved. */
   orbit(dx, dy) {
+    this.user.yaw -= dx * 0.0055;
+    this.user.tilt = clamp(this.user.tilt - dy * 0.0045, -1.2, 1.2);
