@@ -124,3 +124,5 @@ export function mountWeather({ climate }) {
 
 export function mountSound({ ambient }) {
   const onBtn = $('amb-on');
+  const vol = $('amb-vol');
+  const volOut = $('amb-vol-out');
