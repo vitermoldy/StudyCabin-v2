@@ -27,3 +27,5 @@ shows a still picture and the music, timer and ambient sound still work.
   haze behind. Teal and sage skies, green haze between the rows of trees, a warm low sun, green
   moonlight.
 - **The pond.** Still, dark water in front of the cabin that mirrors the sky and the ring of trees,
+  with lily pads (flowers in spring and summer), stones on the bank and a path round it. Tap the
+  pond to ring it, Shift+drag to draw ripples; raindrops ring it by themselves. It freezes in
