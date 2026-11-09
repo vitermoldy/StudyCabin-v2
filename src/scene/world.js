@@ -277,3 +277,5 @@ export class World {
   sampleLuminance(rects) {
     const gl = this.renderer.getContext();
     const ratio = this.renderer.getPixelRatio();
+    const H = gl.drawingBufferHeight;
+    const out = [];
