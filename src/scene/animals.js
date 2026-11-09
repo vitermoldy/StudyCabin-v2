@@ -683,3 +683,5 @@ export class Animals {
     this.group = new THREE.Group();
     scene.add(this.group);
     this.inUse = new Set();
+    this.walkers = Object.keys(KINDS).map((name) => createWalker(name, rand, this.inUse));
+    this.walkers.forEach((w) => this.group.add(w.root));
