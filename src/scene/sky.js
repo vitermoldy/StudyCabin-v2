@@ -74,3 +74,6 @@ const FRAG = /* glsl */ `
     float on = step(1.0 - density, r);
     float size = 0.32 + hash3(cell + 7.1) * 0.18;
     float glow = smoothstep(size, 0.0, length(fract(sp) - 0.5));
+    return on * glow * (0.35 + hash3(cell + 3.3) * 0.65);
+  }
+
