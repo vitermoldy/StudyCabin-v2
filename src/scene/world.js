@@ -143,3 +143,5 @@ export class World {
     const spot = res.spot;
     const at = (a, b) => minutes >= a * 60 && minutes < b * 60;
     const evening = at(17, 23.5);
+    const on = (cond, level = 1) => (cond ? level : 0);
+    const dark = darkness > 0.42;
