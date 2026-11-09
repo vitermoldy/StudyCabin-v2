@@ -153,3 +153,5 @@ export class WeatherFX {
             }`,
           fragmentShader: /* glsl */ `
             uniform float uLight; uniform vec3 uColA; uniform vec3 uColB;
+            varying float vA; varying float vRot; varying float vMix;
+            void main(){
