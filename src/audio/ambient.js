@@ -422,3 +422,5 @@ export class Ambient extends Emitter {
     f.type = 'lowpass';
     f.frequency.setValueAtTime(420, now);
     f.frequency.exponentialRampToValueAtTime(90, now + 3.5);
+    const g = ctx.createGain();
+    const peak = 0.9 * strength * this.mix.rain;
