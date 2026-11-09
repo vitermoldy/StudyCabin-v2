@@ -215,3 +215,6 @@ const LINES = {
   look: (who, two) => `${who} ${two ? 'stop' : 'stops'} to look round`,
   sit: (who) => `${who} sits up in the grass`,
   move: (who, two) => `${who} ${two ? 'are' : 'is'} crossing the clearing`,
+};
+
+function buildCurve(route, reverse) {
