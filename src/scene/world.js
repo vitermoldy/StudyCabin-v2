@@ -191,3 +191,5 @@ export class World {
     this.treeline.update({ fog: this.atmo.fogColor, snow: WORLD.uSnow.value, flash: this.flash });
     this._grassPush(dt);
     this._rain(dt, p.rain);
+    this.ripples.step(2);
+    this.pond.update({ time: t, params: p, atmo: this.atmo, look: climate.look, rippleTexture: this.ripples.texture });
