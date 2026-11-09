@@ -30,3 +30,5 @@ export class Overlay {
     said.textContent = text;
     el.appendChild(said);
     [...text].forEach((ch, i) => {
+      const s = document.createElement('span');
+      s.className = 'ch';
