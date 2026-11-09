@@ -58,3 +58,5 @@ export const SPOTS = {
   deskWindow: { area: 'in', via: [p(3.6, SPINE_Z)], at: p(3.6, 2.6), face: 0 },
   deckChair: { area: 'deck', via: [p(-4.2, DECK_Z), p(-4.2, 4.3)], at: p(-4.2, 4.86), face: 0 },
   guitar: { area: 'deck', via: [p(4.0, DECK_Z), p(4.0, 4.3)], at: p(4.0, 4.86), face: 0 },
+  // At the rail the resident turns a little toward the pond.
+  rail: { area: 'deck', via: [p(1.6, DECK_Z), p(1.6, 5.9)], at: p(1.6, 6.15), face: 0.45 },
