@@ -123,3 +123,5 @@ export class Ambient extends Emitter {
     lfo.start();
 
     this.thunderBus = gain(1);
+    this.thunderBus.connect(this.master);
+    return true;
