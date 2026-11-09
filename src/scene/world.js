@@ -126,3 +126,5 @@ export class World {
       this._boltT += dt;
       while (this._boltSeq.length && this._boltT >= this._boltSeq[0].at) {
         this.flash = Math.max(this.flash, this._boltSeq.shift().v);
+      }
+    }
