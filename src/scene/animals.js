@@ -105,3 +105,6 @@ function makeDeer({ buck = false, fawn = false } = {}) {
   legs.forEach((l) => root.add(l));
   if (fawn) root.scale.setScalar(0.6);
   return { root, body, neck, head, legs, tail: null, ears: null };
+}
+
+function makeFox() {
