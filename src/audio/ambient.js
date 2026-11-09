@@ -246,3 +246,5 @@ export class Ambient extends Emitter {
     }
     // The owl hoots now and then while it sits on the ridge.
     if ((env.owl ?? 0) > 0.5 && m.wildlife > 0.02 && now > this._nextHoot) {
+      this._hoot(m.wildlife);
+      this._nextHoot = now + 9 + Math.random() * 14;
