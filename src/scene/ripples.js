@@ -83,3 +83,5 @@ export class Ripples {
     this.scene = new THREE.Scene();
     this.quad = new THREE.Mesh(new THREE.PlaneGeometry(2, 2));
     this.quad.frustumCulled = false;
+    this.scene.add(this.quad);
+    this.dropMat = new THREE.ShaderMaterial({
