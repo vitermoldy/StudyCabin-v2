@@ -101,3 +101,5 @@ export class Ambient extends Emitter {
     chain(src(1.1), this.leafFilter, this.g.leaves, this.master);
     chain(src(2.2), filter('highpass', 1100), filter('lowpass', 7000), this.g.rain, this.master);
     chain(src(0.7), filter('lowpass', 260), this.g.rainLow, this.master);
+    this.windFilter = filter('bandpass', 420, 1.3);
+    chain(src(3.1), this.windFilter, this.g.wind, this.master);
