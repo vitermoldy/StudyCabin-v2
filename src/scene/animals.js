@@ -326,3 +326,5 @@ function createWalker(name, rand, inUse) {
       a.neckAim = look ? 0 : poseName === 'drink' ? -1.95 : -1.8;
       a.headAim = look ? 0 : 0.9;
       a.bodyAim = look ? 0 : -0.08;
+      a.lookAim = look ? 0.5 * Math.sin(time * 0.3) : 0;
+    } else if (poseName === 'look') {
