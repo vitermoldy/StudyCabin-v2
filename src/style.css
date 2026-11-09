@@ -410,3 +410,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
     left: 8px; right: 8px; width: auto; transform: translateY(6px);
     bottom: calc(max(8px, env(safe-area-inset-bottom)) + var(--dock-h) + 8px);
     max-height: calc(100dvh - var(--dock-h) - 96px);
+    padding: var(--s-2) var(--s-4) var(--s-4);
+  }
