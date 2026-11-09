@@ -345,3 +345,5 @@ export class Ambient extends Emitter {
 
   /** A woodpecker: a quick roll of knocks on dead wood, fading toward the end. */
   _drum(level) {
+    const ctx = this.ctx;
+    const now = ctx.currentTime + 0.05;
