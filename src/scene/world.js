@@ -28,3 +28,5 @@ export function webglAvailable() {
 export class World {
   constructor(canvas, { reducedMotion = false } = {}) {
     this.canvas = canvas;
+    this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
+    this.renderer.shadowMap.enabled = true;
