@@ -75,3 +75,5 @@ export function loadYouTubeApi() {
       clearTimeout(timer);
       apiPromise = null;
       s.remove();
+      reject(new Error('network'));
+    };
