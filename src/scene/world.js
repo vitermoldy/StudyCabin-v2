@@ -225,3 +225,5 @@ export class World {
   _grassPush(dt) {
     const push = this.terrain.grassPush.value;
     let want = 0;
+    if (this.pointerOn) {
+      this.raycaster.setFromCamera(this.pointerNdc, this.camera);
