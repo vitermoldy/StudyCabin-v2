@@ -177,3 +177,5 @@ export function mountFocus({ focus }) {
   const startBtn = $('focus-start');
   const setPreset = radios($('focus-group'), 'focus-length', Object.entries(PRESETS).map(([k, p]) => [k, p.label]), focus.preset, (v) => focus.setPreset(v));
   const heroBtn = $('hero-focus');
+  startBtn.addEventListener('click', () => focus.toggle());
+  heroBtn.addEventListener('click', () => focus.toggle());
