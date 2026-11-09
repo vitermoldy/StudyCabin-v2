@@ -103,3 +103,5 @@ export class Resident {
       shoe: new THREE.MeshStandardMaterial({ color: '#2a2725', roughness: 0.8 }),
       book: new THREE.MeshStandardMaterial({ color: '#ece6da', roughness: 0.9 }),
       cover: new THREE.MeshStandardMaterial({ color: '#7d4a36', roughness: 0.8 }),
+      mug: new THREE.MeshStandardMaterial({ color: '#e7e2d8', roughness: 0.4 }),
+      guitar: new THREE.MeshStandardMaterial({ color: '#b07a45', roughness: 0.5 }),
