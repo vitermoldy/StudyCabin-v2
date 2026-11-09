@@ -93,3 +93,5 @@ function capsule(r, len, mat) {
 
 export class Resident {
   constructor(scene) {
+    this.root = new THREE.Group();
+    scene.add(this.root);
