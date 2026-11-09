@@ -154,3 +154,5 @@ export function grassCover(x, z) {
   let cover = 1 - smooth(-1, 5, forestDepth(x, z)) * 0.74;
   cover *= smooth(1.06, 1.25, e);
   cover *= smooth(0.25, 0.65, trailDistance(x, z));
+  const patchy = fbm(x * 0.07 + 3.1, z * 0.07, 3);
+  return smooth(0.22, 0.5, cover * (0.55 + patchy));
