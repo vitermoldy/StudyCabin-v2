@@ -202,3 +202,5 @@ const refreshWords = () => {
 };
 for (const ev of ['season', 'weather', 'weather-mode']) climate.on(ev, refreshWords);
 clock.on('speed', refreshWords);
+clock.on('jump', () => {
+  overlay.setTime(clock.minutes);
