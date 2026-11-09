@@ -250,3 +250,5 @@ export class Ambient extends Emitter {
       this._nextHoot = now + 9 + Math.random() * 14;
     }
     // A woodpecker drums somewhere in the wood by day, most in spring.
+    const drumSeason = { spring: 1, summer: 0.6, autumn: 0.5, rainy: 0.3, winter: 0.4 }[env.season] ?? 0.5;
+    if (env.day > 0.6 && env.rain < 0.2 && m.wildlife > 0.02 && now > this._nextDrum) {
