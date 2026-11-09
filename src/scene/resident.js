@@ -62,3 +62,5 @@ const POSES = {
   sitDrink: (t, seat) => {
     const p = (t % 8) / 8;
     const lift = p > 0.5 && p < 0.78 ? Math.sin(((p - 0.5) / 0.28) * Math.PI) : 0;
+    return sitBase(seat, { spineX: -0.05, shRx: -0.4 - 0.8 * lift, shRz: -0.18, elR: -1.5 - 0.7 * lift, headX: 0.05 - 0.25 * lift, shLx: -0.25, elL: -1.0, headY: 0.18 * Math.sin(t * 0.15) });
+  },
