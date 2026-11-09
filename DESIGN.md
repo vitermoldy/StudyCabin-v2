@@ -14,3 +14,5 @@ direction. The cabin itself is unchanged in v2.
 screen for hours, in a cinematic misty-forest style taken from the owner's SongPlay scene and the
 cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 
+- ENERGY 3: giant type over a full-bleed scene, as in the reference.
+- RHYTHM 1: one screen, one scene; every panel uses the same template on purpose, so the scene is
