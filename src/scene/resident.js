@@ -385,3 +385,6 @@ export class Resident {
     if (!this.path && this.spot && this.pose !== 'walkLoop') {
       const want = this.pose === 'sleep' ? 0 : SPOTS[this.spot].face;
       this.facing = turn(this.facing, want, 4 * dt);
+    }
+
+    // Joint targets
