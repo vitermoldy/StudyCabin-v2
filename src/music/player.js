@@ -318,3 +318,5 @@ export class MusicPlayer extends Emitter {
       this.persist();
     }
     this.status = 'paused';
+    this.emit('change');
+    const failed = this.current;
