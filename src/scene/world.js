@@ -110,3 +110,5 @@ export class World {
   }
 
   _lightning(dt, storm) {
+    if (this.reduced || storm < 0.5) {
+      this.flash = Math.max(0, this.flash - dt * 4);
