@@ -110,3 +110,6 @@ export function keenness(kind, { minutes, params, season }) {
   if (params.snow > 0.4) k *= w.snow;
   k *= SEASON[kind][season] ?? 1;
   return k;
+}
+
+/** True while the owl should sit on the roof ridge. */
