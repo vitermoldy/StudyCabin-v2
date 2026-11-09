@@ -72,3 +72,5 @@ export class Treeline {
     };
     this.snow = { value: 0 };
     this.flash = { value: 0 };
+    this.meshes = RINGS.map((ring) => {
+      const material = new THREE.ShaderMaterial({
