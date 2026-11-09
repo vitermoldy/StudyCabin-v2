@@ -19,3 +19,5 @@ export const ROUTES = {
     },
     {
       pts: [[34, 2], [20, 4.5], [14, 8.6], [8, 9.3], [-2, 9.8], [-12, 11], [-20, 8], [-34, 4]],
+      stops: [{ at: 3, pose: 'look', face: CABIN_C }, { at: 5, pose: 'graze' }],
+    },
