@@ -306,3 +306,5 @@ export class Atmosphere {
     const lowness = 1 - smoothstep(0.02, 0.4, sy);
     this.sunColor.copy(SUN_HIGH).lerp(SUN_LOW, lowness);
     u.uSunColor.value.copy(this.sunColor);
+    u.uSunDir.value.copy(this.sunDir);
+    u.uMoonDir.value.copy(this.moonDir);
