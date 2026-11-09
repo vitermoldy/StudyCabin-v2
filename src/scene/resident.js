@@ -224,3 +224,5 @@ export class Resident {
     const spineB = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.21, 0.02), m.cover);
     book.add(pageL, pageR, spineB);
     book.position.set(0, 0.0, 0.36);
+    book.rotation.x = -0.9;
+    this.chest.add(book);
