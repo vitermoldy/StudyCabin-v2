@@ -234,3 +234,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     let msg = '';
     if (player.status === 'api-error') msg = player.apiError;
     else if (player.status === 'loading-api') msg = 'Loading the YouTube player…';
+    else if (!has) msg = 'Nothing queued yet. Paste a link above and it starts here.';
+    else if (player.status === 'ended') msg = 'That was the last link. Add another, or turn on Repeat.';
