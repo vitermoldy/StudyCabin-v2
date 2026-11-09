@@ -198,3 +198,5 @@ climate.on('weather', () => refreshActivity());
 const refreshWords = () => {
   const s = storyText();
   overlay.setStory(s.line, s.meta);
+  updateWeather();
+};
