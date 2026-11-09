@@ -149,3 +149,5 @@ export class Cabin {
       const x0 = side > 0 ? 6.97 : CABIN.x0;
       this._bx(panel, x0, x0 + 0.03, FLOOR, WALL_TOP, CABIN.z0, FRONT, { cast: false });
       // dark corner boards
+      this._bx(trim, side * 7.0 - (side > 0 ? 0 : 0.16), side * 7.0 + (side > 0 ? 0.16 : 0), 0.05, WALL_TOP, 2.98, 3.16);
+      this._bx(trim, side * 7.0 - (side > 0 ? 0 : 0.16), side * 7.0 + (side > 0 ? 0.16 : 0), 0.05, WALL_TOP, -3.18, -3.02);
