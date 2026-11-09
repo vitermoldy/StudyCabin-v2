@@ -222,3 +222,5 @@ export class MusicPlayer extends Emitter {
     this._advance(1);
   }
 
+  prev() {
+    if (this._ready && this.player.getCurrentTime && this.player.getCurrentTime() > 4) {
