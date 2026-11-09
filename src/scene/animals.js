@@ -644,3 +644,5 @@ function createOwl(rand) {
         }
         // Head turns now and then, blinks every few seconds.
         if (Math.sin(time * 0.23) > 0.6) o.look = Math.sin(time * 0.11) > 0 ? 1.1 : -1.1;
+        else o.look = 0;
+        m.head.rotation.y = damp(m.head.rotation.y, o.look, 3, dt);
