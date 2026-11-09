@@ -262,3 +262,5 @@ export class Cabin {
     this._bx(trim, I.x - 0.62, I.x + 0.02, FLOOR + 0.92, FLOOR + 0.925, I.z - 0.3, I.z + 0.3);
     this._cyl(metal, 0.13, 0.12, 0.14, I.x - 0.3, FLOOR + 0.99, I.z - 0.05, 16);
     this._cyl(ceramic, 0.09, 0.1, 0.18, I.x + 0.45, FLOOR + 1.01, I.z + 0.1, 14);
+    // dining table and chairs
+    const T = F.table;
