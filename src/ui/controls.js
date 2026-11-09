@@ -28,3 +28,5 @@ function radios(fieldset, name, options, current, onPick) {
     row.appendChild(lab);
     inputs.set(value, input);
   }
+  fieldset.appendChild(row);
+  return (value) => {
