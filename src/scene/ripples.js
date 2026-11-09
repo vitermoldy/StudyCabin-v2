@@ -132,3 +132,5 @@ export class Ripples {
   _pass(material) {
     material.uniforms.uTex.value = this.a.texture;
     this.quad.material = material;
+    this.renderer.setRenderTarget(this.b);
+    this.renderer.render(this.scene, this.camera);
