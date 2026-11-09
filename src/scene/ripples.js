@@ -99,3 +99,5 @@ export class Ripples {
         uSize: { value: RIPPLE_AREA.size },
       },
       vertexShader: QUAD_VERT,
+      fragmentShader: UPDATE_FRAG,
+      depthTest: false,
