@@ -253,3 +253,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       nowSrc.hidden = false;
     } else {
       nowTitle.textContent = 'No song playing';
+      nowSub.textContent = '';
+      nowSrc.hidden = true;
