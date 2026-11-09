@@ -47,3 +47,5 @@ export class CameraRig {
     }
     // Pull back far enough that `width` metres fit across.
     const dir = outPos.clone().sub(outTarget);
+    const dist0 = dir.length();
+    dir.normalize();
