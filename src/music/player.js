@@ -126,3 +126,5 @@ export class MusicPlayer extends Emitter {
     this.status = 'loading-api';
     this.apiError = '';
     this.emit('change');
+    this._creating = (async () => {
+      try {
