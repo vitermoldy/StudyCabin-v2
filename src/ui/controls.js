@@ -26,3 +26,5 @@ function radios(fieldset, name, options, current, onPick) {
     span.textContent = label;
     lab.append(input, span);
     row.appendChild(lab);
+    inputs.set(value, input);
+  }
