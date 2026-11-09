@@ -397,3 +397,5 @@ export class Ambient extends Emitter {
 
   _crackle() {
     const ctx = this.ctx;
+    const now = ctx.currentTime;
+    const s = ctx.createBufferSource();
