@@ -193,3 +193,5 @@ export function mountFocus({ focus }) {
     const what = focus.phase === 'focus' ? 'focus' : 'break';
     const label = focus.running ? `Pause ${what}` : fresh ? `Start ${what}` : `Resume ${what}`;
     if (startBtn.textContent !== label) startBtn.textContent = label;
+    if (heroBtn.textContent !== label) heroBtn.textContent = label;
+    $('focus-done').textContent = focus.done
