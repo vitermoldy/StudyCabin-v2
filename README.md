@@ -25,3 +25,5 @@ shows a still picture and the music, timer and ambient sound still work.
 - **The forest.** An oval clearing in a wood of firs and broadleaf trees, thicker and taller the
   further in, with bushes and ferns along the edge and three rings of far trees fading into the
   haze behind. Teal and sage skies, green haze between the rows of trees, a warm low sun, green
+  moonlight.
+- **The pond.** Still, dark water in front of the cabin that mirrors the sky and the ring of trees,
