@@ -234,3 +234,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 }
 .icon-btn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.08); transition-duration: 150ms; }
 .icon-btn:active:not(:disabled) { transform: translateY(1px) scale(.96); }
+.icon-btn:disabled { color: rgba(228, 229, 225, 0.35); }
+.icon-btn--main { width: 52px; height: 52px; background: var(--ink); color: var(--bg); }
