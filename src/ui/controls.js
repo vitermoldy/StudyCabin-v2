@@ -73,3 +73,5 @@ export function mountDay({ clock, onJump }) {
     w.textContent = a.line;
     const now = document.createElement('span');
     now.className = 'timeline__now';
+    b.append(t, w, now);
+    b.setAttribute('aria-label', `Go to ${formatClock(a.start)}: ${a.line}`);
