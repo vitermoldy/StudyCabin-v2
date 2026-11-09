@@ -152,3 +152,5 @@ export function grassCover(x, z) {
   const e = pondE(x, z);
   if (e < 1.06) return 0;
   let cover = 1 - smooth(-1, 5, forestDepth(x, z)) * 0.74;
+  cover *= smooth(1.06, 1.25, e);
+  cover *= smooth(0.25, 0.65, trailDistance(x, z));
