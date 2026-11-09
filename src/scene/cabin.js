@@ -191,3 +191,5 @@ export class Cabin {
     const len = hRun / Math.cos(alpha);
     const w = 15.3;
     for (const side of [1, -1]) {
+      const geo = metricBoxUV(new THREE.BoxGeometry(w, 0.12, len), w, 0.12, len);
+      const slab = this._m(geo, roof);
