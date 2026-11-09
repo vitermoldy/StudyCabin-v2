@@ -43,3 +43,5 @@ export class Clock extends Emitter {
 
   setSpeed(id) {
     if (!(id in SPEEDS) || id === this.speed) return;
+    this.speed = id;
+    this.emit('speed', id);
