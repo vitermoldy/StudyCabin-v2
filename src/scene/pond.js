@@ -240,3 +240,5 @@ export class Pond {
     u.uZenith.value.copy(atmo.zenith);
     u.uHorizon.value.copy(atmo.horizon);
     u.uLand.value.copy(this.landBase).multiplyScalar(0.18 + atmo.dayFactor * 0.6).lerp(atmo.fogColor, 0.3);
+    u.uSunDir.value.copy(atmo.sunDir);
+    u.uSunColor.value.copy(atmo.sunColor);
