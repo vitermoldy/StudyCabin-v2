@@ -119,3 +119,5 @@ function swayShader(material, { leaves = false } = {}) {
 }
 
 function segmentDistance(px, pz, [ax, az], [bx, bz]) {
+  const dx = bx - ax;
+  const dz = bz - az;
