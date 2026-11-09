@@ -341,3 +341,5 @@ function frame(now) {
       frogs: frogs({ minutes: m, params: p, season: climate.season, iced: world ? world.pond.ice : climate.look.snow }),
       owl: heard.owl,
       fox: heard.fox,
+    });
+  }
