@@ -22,3 +22,6 @@ const EYE_SHINE = new THREE.Color('#e9f2b8');
 // A touch of the coat's own colour as emissive keeps an animal readable in low light without
 // making it glow.
 function coat(hex) {
+  return new THREE.MeshStandardMaterial({ color: hex, emissive: hex, emissiveIntensity: 0.05, roughness: 0.92, metalness: 0 });
+}
+
