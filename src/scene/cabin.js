@@ -147,3 +147,5 @@ export class Cabin {
       geo.translate(side > 0 ? 7.12 : -7.0, 0, 0);
       this._m(geo, siding);
       const x0 = side > 0 ? 6.97 : CABIN.x0;
+      this._bx(panel, x0, x0 + 0.03, FLOOR, WALL_TOP, CABIN.z0, FRONT, { cast: false });
+      // dark corner boards
