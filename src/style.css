@@ -197,3 +197,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   opacity: 1; visibility: visible; transform: translate(-50%, 0);
   transition: opacity 200ms var(--ease), transform 200ms var(--ease), visibility 0s;
 }
+.panel__head {
+  position: sticky; top: calc(-1 * var(--s-3)); z-index: 2;
