@@ -110,3 +110,5 @@ export class Cabin {
       counter: std('#d9d5cc', { roughness: 0.38 }),
       cabinet: std('#7e604a', { roughness: 0.7 }),
       ceramic: std('#e6e1d6', { roughness: 0.35 }),
+      leaf: std('#4f6a44', { roughness: 0.8 }),
+      pot: std('#b19f88', { roughness: 0.8 }),
