@@ -33,3 +33,5 @@ function seeds(count, perItem, seed) {
       s[o * 3 + 1] = b;
       s[o * 3 + 2] = c;
       id[o] = order;
+      end[o] = k;
+    }
