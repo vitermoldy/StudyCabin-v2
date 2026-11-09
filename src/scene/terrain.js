@@ -144,3 +144,5 @@ export class Terrain {
    */
   _buildGrass(lowPower) {
     const rand = rng(7);
+    const pos = [];
+    const col = [];
