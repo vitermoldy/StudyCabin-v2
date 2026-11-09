@@ -355,3 +355,5 @@ function createWalker(name, rand, inUse) {
       if (a.state === 'away') {
         if (kind.follows) return;
         a.timer -= dt;
+        if (a.timer > 0) return;
+        if (rand() < keenness(KEEN[name], ctx)) {
