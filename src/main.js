@@ -104,3 +104,5 @@ function inkFromPoster() {
     }
   };
   if (img.complete && img.naturalWidth) apply();
+  else img.addEventListener('load', apply, { once: true });
+  addEventListener('resize', apply);
