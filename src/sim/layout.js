@@ -83,3 +83,5 @@ export function route(fromSpot, toSpot, from = null) {
   const b = SPOTS[toSpot];
   const pts = [];
   if (from) pts.push({ ...from });
+  else if (a) pts.push({ ...a.at });
+  if (a) for (let i = a.via.length - 1; i >= 0; i--) pts.push({ ...a.via[i] });
