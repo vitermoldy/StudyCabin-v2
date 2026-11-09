@@ -82,3 +82,4 @@ export class Props {
     stump.receiveShadow = true;
     scene.add(stump);
   }
+}
