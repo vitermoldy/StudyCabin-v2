@@ -56,3 +56,5 @@ export class World {
     this.treeline = new Treeline(this.scene);
     this.props = new Props(this.scene);
     this.pond = new Pond(this.scene);
+    this.ripples = new Ripples(this.renderer);
+    this.pond.setRipples(this.ripples.texture, RIPPLE_AREA);
