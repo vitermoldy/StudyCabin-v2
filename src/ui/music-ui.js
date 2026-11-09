@@ -55,3 +55,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
 
   panels.registerOpener('music', openMusic);
 
+  function showError(msg) {
+    err.textContent = msg;
