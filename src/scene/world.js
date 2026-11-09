@@ -62,3 +62,5 @@ export class World {
     this.raycaster = new THREE.Raycaster();
     this.waterPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -WATER_Y);
     this._rainDrops = 0;
+    this.groundPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -0.3);
+    this.fireflies = 0;
