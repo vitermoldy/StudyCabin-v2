@@ -124,3 +124,5 @@ export class Resident {
 
   _build() {
     const m = this.mat;
+    const r = this.root;
+    this.body = new THREE.Group(); // tilts when lying down
