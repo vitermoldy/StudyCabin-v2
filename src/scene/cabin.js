@@ -298,3 +298,6 @@ export class Cabin {
     cone.position.set(x, FLOOR + 2.12, z);
     cone.material.side = THREE.DoubleSide;
     const bulb = this._m(new THREE.SphereGeometry(0.05, 12, 8), shade, { cast: false });
+    bulb.position.set(x, FLOOR + 2.04, z);
+  }
+
