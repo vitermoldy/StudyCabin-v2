@@ -203,3 +203,5 @@ export class Atmosphere {
     const mat = new THREE.ShaderMaterial({
       uniforms: this.uniforms,
       vertexShader: VERT,
+      fragmentShader: FRAG,
+      side: THREE.BackSide,
