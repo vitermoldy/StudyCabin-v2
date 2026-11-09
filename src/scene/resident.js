@@ -74,3 +74,6 @@ const POSES = {
     shLx: -0.75, shLz: 0.62, elL: -1.15,
     shRx: -0.45, shRz: -0.3, elR: -1.25 + 0.22 * Math.sin(t * 7.5),
   }),
+  sleep: (t) => base({ lie: 1, hipY: 0.62, spineX: 0.012 * Math.sin(t * 1.1), shLx: 0, shLz: 0.12, elL: -0.1, shRx: 0, shRz: -0.12, elR: -0.1, thL: -0.08, knL: 0.15, thR: -0.04, knR: 0.08, headY: 0.25 }),
+};
+
