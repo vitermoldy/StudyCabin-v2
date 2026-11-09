@@ -172,3 +172,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   content: ""; position: absolute; left: 14px; right: 14px; bottom: 2px; height: 2px; background: var(--action);
 }
 .dock__words[aria-pressed="false"] { color: rgba(228, 229, 225, 0.55); }
+.dock__btn + .dock__tabs, .dock__tabs + .dock__btn { border-left: 1px solid var(--line); padding-left: 2px; }
+.dock__tabs + .dock__btn { border-left: 1px solid var(--line); }
+
