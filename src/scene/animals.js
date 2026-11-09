@@ -654,3 +654,5 @@ function createOwl(rand) {
       }
       // In the air: along a gentle curve, flapping, then gliding the last part in.
       o.t = Math.min(1, o.t + dt / 7);
+      const k = o.t;
+      const p = tmp.copy(o.from).multiplyScalar((1 - k) * (1 - k)).addScaledVector(o.mid, 2 * k * (1 - k)).addScaledVector(o.to, k * k);
