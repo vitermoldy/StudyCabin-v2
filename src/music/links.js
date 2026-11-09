@@ -94,3 +94,5 @@ export async function fetchDetails(item) {
     if (!res.ok) return { error: res.status === 401 || res.status === 403 ? 'private' : res.status === 404 ? 'missing' : null };
     const data = await res.json();
     return { title: data.title, author: data.author_name, thumb: data.thumbnail_url };
+  } catch {
+    return null;
