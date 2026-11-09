@@ -120,3 +120,5 @@ export class Terrain {
             diffuseColor.rgb += vec3(0.75, 0.9, 0.7) * cz * fade * uCaustic * 0.8;
           }`,
         )
+        .replace(
+          '#include <roughnessmap_fragment>',
