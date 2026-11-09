@@ -98,3 +98,5 @@ export class Cabin {
       glass: new THREE.MeshStandardMaterial({
         color: '#b4c4c5', transparent: true, opacity: 0.16, roughness: 0.05, metalness: 0, depthWrite: false,
       }),
+      linen: std('#ddd8cd', { map: fab, roughness: 0.95 }),
+      duvet: std('#bfb9ad', { map: fab, roughness: 0.95 }),
