@@ -149,3 +149,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       li.appendChild(img);
     } else {
       const ph = document.createElement('span');
+      ph.className = 'qrow__thumb qrow__thumb--list';
+      ph.appendChild(svgUse('i-music'));
