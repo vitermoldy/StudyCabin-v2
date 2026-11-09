@@ -204,3 +204,5 @@ export class MusicPlayer extends Emitter {
     if (!this._ready || this.current < 0 || this.status === 'ended' || this.status === 'api-error') {
       this.play(this.current < 0 ? 0 : this.current);
       return;
+    }
+    if (this.isPlaying) this.player.pauseVideo();
