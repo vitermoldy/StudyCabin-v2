@@ -182,3 +182,5 @@ export class WeatherFX {
         uniforms: this.smokeU,
         transparent: true,
         depthWrite: false,
+        vertexShader: /* glsl */ `
+          uniform float uTime; uniform float uWind; uniform float uAmount; uniform vec3 uOrigin; uniform float uScale;
