@@ -248,3 +248,5 @@ export class Pond {
     // The pond freezes as winter sets in and thaws as it goes.
     this.ice = Math.min(1, Math.max(0, (look.snow - 0.35) / 0.5));
     u.uIce.value = this.ice;
+    u.uSnow.value = look.snow * (0.4 + params.snow * 0.6);
+    const L = this.lilies;
