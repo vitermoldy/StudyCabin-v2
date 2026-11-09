@@ -50,3 +50,5 @@ export class WeatherFX {
       uTime: { value: 0 },
       uWind: { value: 0.3 },
       uCenter: { value: new THREE.Vector3(0, 8, 10) },
+      uLight: { value: 1 },
+      uScale: { value: 400 },
