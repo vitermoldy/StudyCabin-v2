@@ -615,3 +615,5 @@ function createOwl(rand) {
   }
   function gone() {
     o.state = 'away';
+    o.wait = 20 + rand() * 40;
+    m.root.visible = false;
