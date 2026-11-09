@@ -252,3 +252,5 @@ export function metricBoxUV(geo, w, h, d) {
       uv.setXY(idx, uv.getX(idx) * dims[f][0], uv.getY(idx) * dims[f][1]);
     }
   }
+  uv.needsUpdate = true;
+  return geo;
