@@ -36,7 +36,7 @@ shows a still picture and the music, timer and ambient sound still work.
   on the other side. Rain sends most of them under cover; a storm sends all of them. Flocks of
   birds cross over the trees by day, an owl comes to the roof ridge after dark, fireflies light up
   over the grass on warm nights. The animal in view gets a line in the story at the bottom left.
-- **The cabin and the resident.** A cabin
+- **The cabin and the resident.** A cabin with
   glass. The resident follows a daily routine (sleep, coffee, breakfast, study, a walk round the
   pond, cooking, reading, guitar, journal) and swaps outdoor plans for indoor ones when it rains or
   snows. Lamps, the stove, the porch light and the fire bowl follow the hour and the weather.
