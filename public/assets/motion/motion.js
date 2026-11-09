@@ -53,3 +53,5 @@ function nav() {
   bar.addEventListener('pointerleave', () => { clearTimeout(t); bar.classList.remove('m-menu-open'); });
 }
 
+/* ---------------------------------------------------------------- tabs */
+function tabs() {
