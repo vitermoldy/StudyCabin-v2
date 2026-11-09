@@ -165,3 +165,6 @@ function sample(table, y, key, out) {
     }
   }
   return out.copy(table[table.length - 1][key]);
+}
+
+const SUN_LOW = C('#ffa868');
