@@ -152,3 +152,5 @@ export class World {
     this.cabin.set({
       kitchen: on(awake && dark && (spot === 'cook' || spot === 'dine' || evening), spot === 'cook' || spot === 'dine' ? 1 : 0.55),
       living: on(awake && dark && (['sofa', 'armchair', 'shelf', 'stove', 'window'].includes(spot) || evening), 1),
+      bed: (activity.id === 'wake' || activity.id === 'bedtime' || (asleep && at(23, 23.15))) && darkness > 0.3 ? 0.85 : asleep && darkness > 0.5 ? 0.14 : 0,
+      desk: on(spot === 'desk' && !res.path && darkness > 0.25, 1),
