@@ -134,3 +134,5 @@ export function mountSound({ ambient }) {
     const row = document.createElement('div');
     row.className = 'slider-row';
     const id = `mix-${layer.id}`;
+    const label = document.createElement('label');
+    label.className = 'label';
