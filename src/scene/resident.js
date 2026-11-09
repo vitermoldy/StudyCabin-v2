@@ -368,3 +368,5 @@ export class Resident {
         const step = 0.95 * speedUp * dt;
         if (dist <= step) {
           this.pos.set(target.x, 0, target.z);
+          this.loopIndex = (this.loopIndex + 1) % TRAIL_LOOP.length;
+          if (this.loopIndex % 4 === 0) this.loopPause = 4 + Math.random() * 3;
