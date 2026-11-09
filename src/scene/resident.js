@@ -297,3 +297,5 @@ export class Resident {
     let bd = Infinity;
     for (const [id, s] of Object.entries(SPOTS)) {
       const d = Math.hypot(s.at.x - this.pos.x, s.at.z - this.pos.z);
+      if (d < bd) { bd = d; best = id; }
+    }
