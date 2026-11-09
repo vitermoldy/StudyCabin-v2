@@ -155,3 +155,5 @@ function makeHare() {
   body.add(neck);
   const head = new THREE.Group();
   head.position.set(0.04, 0.05, 0);
+  neck.add(head);
+  head.add(blob(fur, [0.075, 0.068, 0.065], [0, 0, 0]));
