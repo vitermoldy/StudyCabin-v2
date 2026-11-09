@@ -163,3 +163,5 @@ function sample(table, y, key, out) {
       const t = (y - a.y) / (b.y - a.y);
       return out.copy(a[key]).lerp(b[key], t * t * (3 - 2 * t));
     }
+  }
+  return out.copy(table[table.length - 1][key]);
