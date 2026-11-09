@@ -701,3 +701,5 @@ export class Animals {
         // The same curve as the doe, a couple of metres behind her.
         fawn.a.path = walker.a.path;
         fawn.a.s = Math.max(0, walker.a.s - 1.9);
+        fawn.a.stops = [];
+      }
