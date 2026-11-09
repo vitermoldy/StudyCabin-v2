@@ -227,3 +227,5 @@ export class Ambient extends Emitter {
     set(this.g.wildlife, 1, 0.3);
     set(this.cricketLevel, crickets * 0.018, 1.2);
     this._cricketGate -= dt;
+    if (this._cricketGate <= 0) {
+      const onFor = 0.25 + Math.random() * 0.5;
