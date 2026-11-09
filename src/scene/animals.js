@@ -735,3 +735,5 @@ export class Animals {
       if (w.kind.follows) w.follow(dt, time, this.byName[w.kind.follows], 1.9);
       else w.update(dt, time, c);
     }
+    this.flocks.update(dt, time, ctx);
+    this.owl.update(dt, time, ctx);
