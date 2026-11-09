@@ -58,3 +58,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     moved += Math.abs(dx) + Math.abs(dy);
     const w = getWorld();
     if (!w) return;
+    if (mode === 'pinch' && pointers.size >= 2) {
+      const d = spread();
