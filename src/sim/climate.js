@@ -102,3 +102,5 @@ export class Climate extends Emitter {
     for (const k of PARAM_KEYS) this.params[k] = target[k];
     const s = SEASONS[this.season];
     this.look = {
+      ...Object.fromEntries(LOOK_COLOURS.map((k) => [k, hexToRgb(s[k])])),
+      snow: s.snow,
