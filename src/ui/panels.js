@@ -61,3 +61,5 @@ export class Panels extends Emitter {
     this.current = null;
     this._syncButtons();
     if (returnFocus && this.opener && document.body.contains(this.opener)) this.opener.focus({ preventScroll: true });
+    this.opener = null;
+    this.emit('close', id);
