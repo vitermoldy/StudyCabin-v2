@@ -243,3 +243,5 @@ export class Climate extends Emitter {
       season: this.season,
       autoSeason: this.autoSeason,
       weatherMode: this.weatherMode,
+      weather: this.weather,
+      nextChange: this.nextChange,
