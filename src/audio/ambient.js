@@ -242,3 +242,5 @@ export class Ambient extends Emitter {
     const frogs = m.wildlife * (env.frogs ?? 0);
     if (frogs > 0.05 && now > this._nextFrog) {
       this._croak(frogs);
+      this._nextFrog = now + (0.4 + Math.random() * 2.2) / (0.5 + frogs);
+    }
