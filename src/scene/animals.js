@@ -512,3 +512,6 @@ function createFlocks(rand, count) {
       b.root.visible = true;
       b.root.rotation.set(0, dir > 0 ? 0 : Math.PI, 0);
       b.root.scale.setScalar(1.3 + rand() * 0.4);
+    });
+  }
+
