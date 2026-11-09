@@ -27,3 +27,6 @@ const FRAG = /* glsl */ `
   uniform sampler2D uRipple; uniform vec4 uRippleArea; uniform vec3 uLand;
   uniform float uIce; uniform float uSnow;
   varying vec3 vWorld; varying float vDepth;
+  #include <fog_pars_fragment>
+
+  // slope of one sine train a*sin(k dot(d,p) + w t)
