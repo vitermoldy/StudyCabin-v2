@@ -122,3 +122,5 @@ export class Resident {
     this.season = 'spring';
   }
 
+  _build() {
+    const m = this.mat;
