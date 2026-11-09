@@ -36,3 +36,5 @@ export class World {
     // A GPU that rejects a shader would leave a black canvas: fall back to the still picture.
     this.onShaderFail = null;
     this.renderer.debug.onShaderError = (gl, program, vs, fs) => {
+      console.warn('StudyCabin: a shader did not compile; showing the still picture.', gl.getProgramInfoLog(program) || '');
+      if (this.onShaderFail) this.onShaderFail();
