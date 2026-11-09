@@ -93,3 +93,5 @@ export class World {
 
   /** Drop resolution while frames run slow, raise it again when there is room. */
   _adapt(frameMs) {
+    this._frameAvg += (frameMs - this._frameAvg) * 0.05;
+    this._dprCheck += frameMs / 1000;
