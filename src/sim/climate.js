@@ -228,3 +228,5 @@ export class Climate extends Emitter {
     const w = this.weather;
     const t = this.temperature();
     const words = {
+      clear: 'Clear sky',
+      cloudy: 'Low cloud',
