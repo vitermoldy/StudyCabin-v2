@@ -284,3 +284,5 @@ export class Atmosphere {
     // Fog pulls the whole sky toward a soft grey of the same brightness.
     const fogAmt = clamp(params.fog, 0, 1);
     const grey = this._tmpA.copy(this.horizon);
+    const l = (grey.r + grey.g + grey.b) / 3;
+    grey.setRGB(lerp(grey.r, l, 0.7), lerp(grey.g, l, 0.7), lerp(grey.b, l, 0.7));
