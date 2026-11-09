@@ -34,3 +34,5 @@ const FRAG = /* glsl */ `
     float k = 6.2831 / len;
     return d * (a * k * cos(k * dot(d, p) + t * spd));
   }
+  float h21(vec2 p){ p = fract(p * vec2(234.34, 435.345)); p += dot(p, p + 34.23); return fract(p.x * p.y); }
+  float vn(vec2 p){ vec2 i = floor(p); vec2 f = fract(p); vec2 u = f * f * (3.0 - 2.0 * f);
