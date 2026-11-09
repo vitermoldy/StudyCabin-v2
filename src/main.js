@@ -196,3 +196,5 @@ climate.on('season', (id) => {
 climate.on('weather', () => refreshActivity());
 // Words follow a change at once, not on the next scene frame.
 const refreshWords = () => {
+  const s = storyText();
+  overlay.setStory(s.line, s.meta);
