@@ -84,3 +84,5 @@ export class Overlay {
     [this.word, this.at, this.timeWrap].forEach((el, i) => {
       const s = samples[i];
       if (!s) return;
+      const light = Math.min(ratio(L_LIGHT, s.max), ratio(L_LIGHT, s.mean));
+      const dark = Math.min(ratio(L_DARK, s.min), ratio(L_DARK, s.mean));
