@@ -548,3 +548,6 @@ function createFlocks(rand, count) {
 // The owl: flies in after dark to the roof ridge, sits there turning its head and blinking, and
 // flies back into the wood before dawn or when the weather turns.
 const RIDGE_TOP = FLOOR + CABIN.ridge + 0.17;
+const PERCH = new THREE.Vector3(-3.4, RIDGE_TOP, 0);
+
+function makeOwl() {
