@@ -54,3 +54,5 @@ const POSES = {
     shLx: -0.62, shLz: 0.14, elL: -0.95 + 0.05 * Math.max(0, Math.sin(t * 13)),
     shRx: -0.62, shRz: -0.14, elR: -0.95 + 0.05 * Math.max(0, Math.sin(t * 11 + 2)),
   }),
+  sitWrite: (t, seat) => sitBase(seat, {
+    spineX: 0.26, headX: 0.45,
