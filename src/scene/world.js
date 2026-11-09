@@ -275,3 +275,5 @@ export class World {
    * rectangle. Called right after render, so the drawing buffer is still there.
    */
   sampleLuminance(rects) {
+    const gl = this.renderer.getContext();
+    const ratio = this.renderer.getPixelRatio();
