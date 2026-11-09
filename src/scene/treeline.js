@@ -120,3 +120,5 @@ export class Treeline {
           }
         `,
       });
+      const mesh = new THREE.Mesh(ringGeometry(ring), material);
+      mesh.frustumCulled = false;
