@@ -96,3 +96,5 @@ export class Treeline {
           }
         `,
         fragmentShader: /* glsl */ `
+          uniform vec3 uNearTop; uniform vec3 uNearLow; uniform vec3 uFarTop; uniform vec3 uFarLow; uniform vec3 uFog;
+          uniform float uMix; uniform float uSnow; uniform float uFlash;
