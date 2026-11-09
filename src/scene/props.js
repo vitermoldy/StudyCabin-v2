@@ -66,3 +66,5 @@ export class Props {
     const bark = weathered(new THREE.MeshStandardMaterial({ color: '#4a3a2c', roughness: 0.95 }), { snow: 1, wet: 0.7 });
     const cut = new THREE.MeshStandardMaterial({ color: '#a08460', roughness: 0.9 });
     const logGeo = new THREE.CylinderGeometry(0.26, 0.32, 5.2, 10, 1);
+    const log = new THREE.Mesh(logGeo, [bark, cut, cut]);
+    const lx = -16.5;
