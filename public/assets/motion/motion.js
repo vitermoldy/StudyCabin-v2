@@ -362,3 +362,5 @@ function enter() {
     masks = maskWords(h1);
     // .is-entering ends the CSS hold: the words are held by their animations from here, and the
     // picture starts its CSS settle in the same frame
+    hero.classList.add('is-entering');
+    const lines = masks ? masks.lines : [[h1]];
