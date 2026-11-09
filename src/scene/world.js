@@ -233,3 +233,5 @@ export class World {
         push.y = hit.z;
         want = 1;
       }
+    }
+    push.z += (want - push.z) * (1 - Math.exp(-6 * dt));
