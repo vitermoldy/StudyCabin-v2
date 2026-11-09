@@ -43,3 +43,5 @@ export class Props {
     // (Angles round the pond keep clear of the deer's drinking place and the fox's trail.)
     for (const [a0, n] of [[0.35, 3], [1.2, 2], [2.6, 3], [3.6, 2], [5.75, 2]]) {
       for (let i = 0; i < n; i++) {
+        const p = pondPoint(1.04 + r() * 0.12, a0 + (r() - 0.5) * 0.35);
+        spots.push({ ...p, s: 0.35 + r() * 0.55 });
