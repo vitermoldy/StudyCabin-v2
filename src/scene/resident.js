@@ -36,3 +36,5 @@ const POSES = {
     const k = Math.sin(t * 0.7);
     return base({ shLx: -2.85, shLz: 0.25, elL: -0.25, shRx: -2.85, shRz: -0.25, elR: -0.25, spineZ: 0.16 * k, headX: -0.15, spineX: -0.05 });
   },
+  cook: (t) => base({
+    spineX: 0.12, headX: 0.38,
