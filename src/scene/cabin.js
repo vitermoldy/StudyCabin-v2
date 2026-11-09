@@ -281,3 +281,5 @@ export class Cabin {
     for (const [x, z] of [[I.x, I.z], [T.x, T.z]]) this._pendant(x, z, this.shades.kitchen);
   }
 
+  _chair(x, z, rot, mat = this.mat.wood) {
+    const g = new THREE.Group();
