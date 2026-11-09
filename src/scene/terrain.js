@@ -357,3 +357,5 @@ export class Terrain {
       const k = 0.8 + r() * 0.9;
       s.set(k, k * (0.85 + r() * 0.3), k);
       m.compose(p, q, s);
+      mesh.setMatrixAt(i, m);
+      const tone = (0.8 + r() * 0.35) * (1 - canopy(x, z) * 0.3);
