@@ -8,3 +8,6 @@
 import { POND } from '../scene/ground.js';
 
 const POND_C = [POND.x, POND.z];
+const CABIN_C = [0, 1];
+const FIRE_C = [-7.4, 5.25];
+
