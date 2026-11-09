@@ -571,3 +571,5 @@ function makeOwl() {
     e.position.set(0.098, 0.01, side * 0.032);
     head.add(e);
     lids.push(e);
+    const tuft = new THREE.Mesh(new THREE.ConeGeometry(0.02, 0.07, 5), plumage);
+    tuft.position.set(-0.01, 0.09, side * 0.05);
