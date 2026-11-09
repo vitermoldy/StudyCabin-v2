@@ -138,3 +138,5 @@ const C = (hex) => new THREE.Color(hex);
 // deep teal at night, a teal blue hour, a peach horizon at sunset, sage haze by day.
 const CLEAR = [
   { y: -0.3, zenith: C('#050f12'), horizon: C('#14302e') },
+  { y: -0.08, zenith: C('#16384a'), horizon: C('#44706a') },
+  { y: 0.0, zenith: C('#2c6070'), horizon: C('#e8b98a') },
