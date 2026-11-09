@@ -31,3 +31,5 @@ export const DAY = [
     wet: { line: 'Playing guitar in the armchair', spot: 'armchair', pose: 'sitGuitar' },
     cold: { line: 'Playing guitar in the armchair', spot: 'armchair', pose: 'sitGuitar' },
   },
+  { id: 'dinner-cook', start: h(18, 0), end: h(18, 50), word: 'Dinner', line: 'Cooking dinner', spot: 'cook', pose: 'cook' },
+  { id: 'dinner', start: h(18, 50), end: h(19, 30), word: 'Dinner', line: 'Dinner at the table', spot: 'dine', pose: 'sitEat' },
