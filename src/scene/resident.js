@@ -246,3 +246,5 @@ export class Resident {
     guitar.add(bodyA, bodyB, neckG, hole);
     guitar.position.set(-0.05, -0.06, 0.24);
     guitar.rotation.set(0, 0, 0.32);
+    guitar.traverse((o) => { if (o.isMesh) o.castShadow = true; });
+    this.spine.add(guitar);
