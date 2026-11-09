@@ -10,3 +10,5 @@ export const SEASONS = {
     label: 'Summer',
     sunrise: 330, sunset: 1185, noonElevation: 68,
     temp: [25, 4],
+    grass: '#76893a', soil: '#5b4a33', mud: '#3f3527', foliage: '#56713a', fern: '#4f6e2e',
+    snow: 0, petals: 0, leaves: 0, warmth: 1,
