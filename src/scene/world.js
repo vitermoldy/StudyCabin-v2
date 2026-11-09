@@ -220,3 +220,6 @@ export class World {
   setPointer(x, y, on = true) {
     this.pointerNdc.set((x / this.width) * 2 - 1, -(y / this.height) * 2 + 1);
     this.pointerOn = on;
+  }
+
+  _grassPush(dt) {
