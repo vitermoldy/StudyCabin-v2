@@ -73,3 +73,6 @@ export class FocusTimer extends Emitter {
     if (!this.running) return;
     this.remainingMs = Math.max(0, this.endAt - Date.now());
     this.running = false;
+    this._commit();
+  }
+
