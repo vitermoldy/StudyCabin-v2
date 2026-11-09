@@ -213,3 +213,5 @@ export class Terrain {
         .replace('#include <common>', '#include <common>\nuniform float uSnow; varying float vTip;')
         .replace(
           '#include <color_fragment>',
+          `#include <color_fragment>
+          // seed heads catch a little gold toward the tips, as in a forest meadow
