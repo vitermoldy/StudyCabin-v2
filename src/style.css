@@ -310,3 +310,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .player__now { display: flex; gap: var(--s-3); align-items: flex-start; margin-top: var(--s-3); min-height: 48px; }
 .player__src { margin-top: 3px; }
 .player__title { font-size: 16px; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.player__sub { font-size: var(--t-label); color: var(--muted); margin-top: 2px; }
+.player__bar { display: flex; align-items: center; gap: var(--s-3); }
