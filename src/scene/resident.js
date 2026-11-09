@@ -444,3 +444,7 @@ export class Resident {
   get doorDistance() {
     return Math.hypot(this.pos.x, this.pos.z - 3.0);
   }
+}
+
+const tmp = new THREE.Vector3();
+
