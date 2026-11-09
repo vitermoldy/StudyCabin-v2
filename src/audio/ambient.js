@@ -142,3 +142,5 @@ export class Ambient extends Emitter {
       } catch {
         /* resumed on the next gesture */
       }
+    }
+    this._applyMaster(0.4);
