@@ -202,3 +202,5 @@ export class WeatherFX {
             if (a < 0.005) discard;
             gl_FragColor = vec4(vec3(0.78, 0.79, 0.8) * (0.25 + uLight * 0.75), a);
             #include <colorspace_fragment>
+          }`,
+      }),
