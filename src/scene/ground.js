@@ -124,3 +124,5 @@ export function forestDepth(x, z) {
 /** Height of the ground. */
 export function groundHeight(x, z) {
   let y = 0;
+  const e = pondE(x, z);
+  if (e < 1) y -= 1.25 * Math.pow(1 - e * e, 0.75);
