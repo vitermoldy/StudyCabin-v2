@@ -75,3 +75,5 @@ function makeDeer({ buck = false, fawn = false } = {}) {
   body.add(blob(hide, [0.24, 0.23, 0.18], [-0.27, 0.95, 0]));
   body.add(blob(hide, [0.22, 0.25, 0.18], [0.28, 0.94, 0]));
   body.add(blob(pale, [0.06, 0.09, 0.05], [-0.5, 1.03, 0], 0.5));
+  if (fawn) {
+    // white spots along the back
