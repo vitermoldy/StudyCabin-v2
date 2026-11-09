@@ -309,3 +309,5 @@ export class Cabin {
     const sx0 = S.x - S.w / 2;
     const sx1 = S.x + S.w / 2;
     this._soft(sofa, S.w, 0.36, S.d, 0.06, S.x, FLOOR + 0.2, S.z);
+    this._soft(sofa, S.w, 0.5, 0.26, 0.08, S.x, FLOOR + 0.6, S.z - S.d / 2 + 0.13);
+    this._soft(sofa, 0.22, 0.6, S.d, 0.07, sx0 + 0.11, FLOOR + 0.32, S.z);
