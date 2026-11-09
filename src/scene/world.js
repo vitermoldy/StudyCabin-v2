@@ -199,3 +199,5 @@ export class World {
     const wild = { minutes, params: p, season: climate.season, day: this.atmo.dayFactor, night: this.atmo.night, jumped };
     this.animals.update(dt, t, wild);
     // Fireflies follow the night and the warmth; they ease in rather than switching on.
+    this.fireflies += (fireflies(wild) - this.fireflies) * (1 - Math.exp(-dt * 0.5));
+    this.fx.update({
