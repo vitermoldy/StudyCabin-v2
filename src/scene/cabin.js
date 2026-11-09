@@ -397,3 +397,5 @@ export class Cabin {
     const lid = new THREE.Group();
     lid.position.set(D.x, top + 0.02, D.z + 0.0);
     lid.rotation.x = -0.32;
+    this.group.add(lid);
+    this._bx(trim, -0.2, 0.2, 0, 0.27, -0.006, 0.006, { parent: lid });
