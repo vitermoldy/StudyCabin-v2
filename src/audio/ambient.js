@@ -270,3 +270,5 @@ export class Ambient extends Emitter {
   }
 
   _bird(level) {
+    const ctx = this.ctx;
+    const now = ctx.currentTime;
