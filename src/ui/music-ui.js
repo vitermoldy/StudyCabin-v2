@@ -37,3 +37,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const nextBtn = $('next');
   const seek = $('seek');
   const seekTime = $('seek-time');
+  const vol = $('music-vol');
+  const volOut = $('music-vol-out');
