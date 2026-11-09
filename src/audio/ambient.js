@@ -305,3 +305,5 @@ export class Ambient extends Emitter {
     const g = ctx.createGain();
     g.gain.setValueAtTime(0.0001, now);
     const pulses = 5 + Math.floor(Math.random() * 6);
+    const gap = 0.032 + Math.random() * 0.012;
+    const peak = 0.05 * level;
