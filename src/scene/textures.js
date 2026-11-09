@@ -130,3 +130,5 @@ export function floorTexture() {
     ctx.fillStyle = 'rgba(50,32,20,0.55)';
     ctx.fillRect(0, r * rh + rh - 1, 256, 1);
   }
+  grain(ctx, 256, 256, rand, 1300, 0.05);
+  return finish(c, { repeat: [1 / 1.1, 1 / 1.1] });
