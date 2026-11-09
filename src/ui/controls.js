@@ -119,3 +119,6 @@ export function mountWeather({ climate }) {
     $('season-line').textContent = SEASONS[climate.season].line;
     const now = `${climate.describe()}${climate.weatherMode === 'auto' ? ', following the season' : ''}`;
     if ($('weather-now').textContent !== now) $('weather-now').textContent = now;
+  };
+}
+
