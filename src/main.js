@@ -265,3 +265,5 @@ addEventListener('keydown', (e) => {
   }
 });
 
+// ------------------------------------------------------------ loop
+function frame(now) {
