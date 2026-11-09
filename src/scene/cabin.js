@@ -378,3 +378,5 @@ export class Cabin {
     this.duvet = this._soft(duvet, B.w + 0.04, 0.1, 1.5, 0.05, B.x, FLOOR + 0.58, -1.6);
     this.duvetFold = this._soft(duvet, B.w + 0.04, 0.08, 0.32, 0.04, B.x, FLOOR + 0.66, -1.0);
     for (const n of [F.nightL, F.nightR]) {
+      this._bx(woodDark, n.x - 0.24, n.x + 0.24, FLOOR, FLOOR + 0.46, n.z - 0.22, n.z + 0.22);
+      this._cyl(ceramic, 0.07, 0.09, 0.22, n.x, FLOOR + 0.57, n.z, 14);
