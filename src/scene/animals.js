@@ -611,3 +611,5 @@ function createOwl(rand) {
     m.root.rotation.set(0, facing, 0);
     m.body.rotation.z = 0;
     m.wings.forEach(({ wing }) => { wing.visible = false; });
+    m.root.visible = true;
+  }
