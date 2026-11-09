@@ -12,3 +12,5 @@ function stoneGeometry(seed) {
   const r = rng(seed);
   const geo = new THREE.IcosahedronGeometry(0.5, 1);
   const pos = geo.attributes.position;
+  for (let i = 0; i < pos.count; i++) {
+    const k = 0.8 + r() * 0.35;
