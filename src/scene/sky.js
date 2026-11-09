@@ -116,3 +116,6 @@ const FRAG = /* glsl */ `
     col += night * uStars * skyUp * (1.0 - max(cover, cirrus));
     col += aurora(d, uTime) * uAurora * (1.0 - cover * 0.85);
 
+    float disc = smoothstep(0.99935, 0.99965, sd) * uSunVis;
+    col += uSunColor * disc * 5.0 * (1.0 - cover * 0.96);
+
