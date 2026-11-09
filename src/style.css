@@ -422,3 +422,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 @media (prefers-reduced-motion: reduce) {
   .panel, .panel[data-open="true"] { transform: translate(-50%, 0); transition: opacity 120ms linear, visibility 0s; }
   .chip:active, .dock__btn:active, .dock__tab:active, .icon-btn:active { transform: none; }
+  #scene, .poster { transition: none; }
+}
