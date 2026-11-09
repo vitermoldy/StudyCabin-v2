@@ -404,3 +404,6 @@ export class Resident {
       else target = this._targetJoints(t);
     }
     const rate = moving ? 14 : 5.5;
+    for (const k of JOINTS) this.j[k] = damp(this.j[k], target[k], rate, dt);
+
+    // Apply
