@@ -53,3 +53,5 @@ shows a still picture and the music, timer and ambient sound still work.
   night, and northern lights on clear nights (strongest in winter).
 - **Music.** Paste a YouTube or YouTube Music link: a song, a video, an album or a public
   playlist. Links line up in the queue dropdown (reorder, remove, clear); next, previous,
+  shuffle, repeat, seek and volume. The queue is kept in the browser.
+- **Focus timer.** 25/5 or 50/10 blocks with a long break; the resident studies at the desk while
