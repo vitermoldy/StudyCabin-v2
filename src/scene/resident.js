@@ -218,3 +218,5 @@ export class Resident {
     const pageL = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.2, 0.012), m.book);
     pageL.position.set(0.072, 0, 0);
     pageL.rotation.y = -0.25;
+    const pageR = pageL.clone();
+    pageR.position.x = -0.072;
