@@ -43,3 +43,5 @@ export class World {
     this.dpr = this.maxDpr;
     this.renderer.setPixelRatio(this.dpr);
 
+    this.scene = new THREE.Scene();
+    this.camera = new THREE.PerspectiveCamera(42, 1, 0.1, 2600);
