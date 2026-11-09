@@ -286,3 +286,5 @@ export class Resident {
     this.spot = target;
     if (this.path.length < 2) {
       this.path = null;
+      this.pose = activity.pose;
+      return;
