@@ -9,3 +9,7 @@ import { allTrails } from '../sim/wildlife.js';
 // broadleaf trees whose crowns follow the season, with low bushes along the edge so the clearing
 // runs into the wood instead of stopping at a wall. Trees stand thicker and taller the deeper into
 // the wood; the animals' trails stay open. All of them sway a little with the wind, more toward
+// the top. Only the trees near the cabin cast shadows (the sun's shadow map covers no more).
+
+const flat = (g) => (g.index ? g.toNonIndexed() : g);
+
