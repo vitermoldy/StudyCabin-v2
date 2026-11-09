@@ -97,3 +97,5 @@ export class Ambient extends Emitter {
     // The wood: a low rush of branches under the gusts, and the high rustle of leaves.
     this.canopyFilter = filter('lowpass', 520);
     chain(src(0.3), this.canopyFilter, this.g.canopy, this.master);
+    this.leafFilter = filter('bandpass', 3000, 0.8);
+    chain(src(1.1), this.leafFilter, this.g.leaves, this.master);
