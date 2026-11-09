@@ -19,3 +19,6 @@ export const SPEED_LABELS = {
 function realMinutes() {
   const d = new Date();
   return d.getHours() * 60 + d.getMinutes() + d.getSeconds() / 60;
+}
+
+export class Clock extends Emitter {
