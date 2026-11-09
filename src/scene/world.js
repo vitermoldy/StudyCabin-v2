@@ -122,3 +122,5 @@ export class World {
       this._boltT = 0;
       if (this.onThunder) setTimeout(() => this.onThunder(storm), 700 + Math.random() * 2200);
     }
+    if (this._boltSeq.length) {
+      this._boltT += dt;
