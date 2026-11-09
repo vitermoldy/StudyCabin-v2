@@ -53,7 +53,7 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | A new poster and share image, rendered from the scene (a misty summer morning, the doe and her fawn at the pond) | The poster shows before the scene draws and when WebGL is missing; it has to be the forest. |
 | Every wall of the main room is glass in thin dark frames, the gables too; the annex stays solid | Asked for by the owner: the rooms and the resident show from every side, daylight falls in from all of them. The annex is the one closed room. |
 | The camera moves like a map: drag moves across the land, right-drag turns, scroll zooms toward the pointer | Asked for by the owner ("like moving a map, not stuck on the house"); the reach covers the clearing and the forest round it. |
-| Dragging down past level ground tips the gaze up, to about 75 degrees | Asked for by the owner, to see the sky; the camera itself stays above the ground. The Milky Way and the aurora were reworked so nothing pinches or streaks at
+| Dragging down past level ground tips the gaze up, to about 75 degrees | Asked for by the owner, to see the sky; the camera itself stays above the ground. The Milky Way and the aurora were reworked so nothing pinches or streaks at the
 
 ## v1 decisions kept (R-31)
 
