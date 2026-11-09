@@ -28,3 +28,6 @@ export class Panels extends Emitter {
 
   registerOpener(id, button) {
     this.extraOpeners.set(button, id);
+    button.addEventListener('click', (e) => this.toggle(id, button, e.detail === 0));
+  }
+
