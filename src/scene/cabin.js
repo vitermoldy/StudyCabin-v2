@@ -345,3 +345,5 @@ export class Cabin {
     }
     // print above the sofa
     this._bx(trim, S.x - 0.66, S.x + 0.66, FLOOR + 1.45, FLOOR + 2.45, -3.0, -2.97);
+    this._bx(print, S.x - 0.62, S.x + 0.62, FLOOR + 1.49, FLOOR + 2.41, -2.97, -2.96, { cast: false });
+    // floor lamp
