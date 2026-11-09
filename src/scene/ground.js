@@ -107,3 +107,5 @@ export function inLane(x, z) {
   return smooth(3, -3, laneEdge(x, z));
 }
 
+/**
+ * How far a point lies inside the forest, in metres: 0 or less is the open clearing. Trees are
