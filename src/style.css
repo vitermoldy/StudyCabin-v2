@@ -43,3 +43,5 @@ html { -webkit-text-size-adjust: 100%; color-scheme: dark; }
 body {
   overflow: hidden;
   background: #1d201f;
+  color: var(--ink);
+  font-family: var(--font-text);
