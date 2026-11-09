@@ -23,3 +23,5 @@ function paint(geo, r, g, b, vary = 0) {
     col[i * 3] = r * k;
     col[i * 3 + 1] = g * k;
     col[i * 3 + 2] = b * k;
+  }
+  geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
