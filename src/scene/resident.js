@@ -214,3 +214,5 @@ export class Resident {
 
     // Props
     this.props = {};
+    const book = new THREE.Group();
+    const pageL = new THREE.Mesh(new THREE.BoxGeometry(0.14, 0.2, 0.012), m.book);
