@@ -421,3 +421,5 @@ function createWalker(name, rand, inUse) {
         a.bodyAim = 0;
       } else {
         a.state = 'stop';
+        stopPose(time + 1.3, a.stop?.pose ?? 'graze');
+      }
