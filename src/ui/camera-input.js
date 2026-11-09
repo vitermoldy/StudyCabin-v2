@@ -100,3 +100,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
   canvas.addEventListener('pointerup', end);
   canvas.addEventListener('pointercancel', end);
 
+  canvas.addEventListener('wheel', (e) => {
+    const w = getWorld();
