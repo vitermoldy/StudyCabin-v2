@@ -286,3 +286,5 @@ function frame(now) {
   elapsed += dt;
 
   // The clock runs on real elapsed time, so a hidden tab catches up on return.
+  const gameDt = clock.tick(realDt);
+  if (gameDt > 30) jumped = true;
