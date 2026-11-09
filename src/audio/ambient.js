@@ -70,3 +70,5 @@ export class Ambient extends Emitter {
       const s = ctx.createBufferSource();
       s.buffer = buf;
       s.loop = true;
+      s.start(0, offset);
+      return s;
