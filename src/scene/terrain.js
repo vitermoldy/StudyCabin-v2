@@ -324,3 +324,5 @@ export class Terrain {
             vec3 windW = vec3(wdir.x, 0.0, wdir.y) * s * reach * 0.12 + vec3(0.0, sin(uTime * 2.3 + ip.x * 3.1) * 0.015 * reach * (0.3 + uWind), 0.0);
             mat3 imx = mat3(instanceMatrix);
             transformed += (transpose(imx) * windW) / max(dot(imx[0], imx[0]), 0.0001);
+          #endif`,
+        );
