@@ -69,3 +69,5 @@ export function activityAt(minutes, conditions, focusPhase = null) {
 }
 
 export function isOutside(spot) {
+  return spot === 'deckChair' || spot === 'guitar' || spot === 'rail' || spot === 'trail';
+}
