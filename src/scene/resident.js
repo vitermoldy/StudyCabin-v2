@@ -272,3 +272,5 @@ export class Resident {
       this.pose = activity.pose;
       return;
     }
+    // Stand up and walk from wherever the resident is now.
+    const from = { x: this.pos.x, y: this.pos.y, z: this.pos.z };
