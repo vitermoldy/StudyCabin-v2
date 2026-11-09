@@ -154,3 +154,5 @@ export class Cabin {
     }
   }
 
+  _front() {
+    const { siding, trim, glass } = this.mat;
