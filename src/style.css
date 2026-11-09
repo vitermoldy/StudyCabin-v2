@@ -170,3 +170,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .dock__tab[aria-expanded="true"] { color: var(--action); background: rgba(217, 160, 91, 0.1); }
 .dock__tab[aria-expanded="true"]::after {
   content: ""; position: absolute; left: 14px; right: 14px; bottom: 2px; height: 2px; background: var(--action);
+}
+.dock__words[aria-pressed="false"] { color: rgba(228, 229, 225, 0.55); }
