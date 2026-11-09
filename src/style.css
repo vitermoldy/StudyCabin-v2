@@ -74,3 +74,5 @@ svg.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
   position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; display: block;
 }
 #scene { z-index: 0; opacity: 0; transition: opacity 900ms var(--ease); pointer-events: auto; touch-action: none; cursor: grab; }
+html.is-dragging #scene { cursor: grabbing; }
+#cam-reset { margin-top: var(--s-3); }
