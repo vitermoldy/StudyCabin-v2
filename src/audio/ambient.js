@@ -218,3 +218,6 @@ export class Ambient extends Emitter {
 
     const gust = 0.6 + 0.4 * Math.sin(t * 0.23) * Math.sin(t * 0.61 + 1);
     set(this.g.wind, m.wind * (0.08 + env.wind * 0.5) * gust, 0.8);
+    this.windFilter.frequency.setTargetAtTime(300 + gust * 380 + env.wind * 200, now, 0.8);
+
+    const seasonBirds = { spring: 1, summer: 0.8, autumn: 0.45, rainy: 0.35, winter: 0.2 }[env.season] ?? 0.5;
