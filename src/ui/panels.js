@@ -90,3 +90,5 @@ export function toast(text, ms = 3600) {
     setTimeout(() => {
       if (!el.classList.contains('is-on')) el.textContent = '';
     }, 250);
+  }, ms);
+}
