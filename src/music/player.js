@@ -241,3 +241,5 @@ export class MusicPlayer extends Emitter {
   _advance(dir) {
     const n = this.queue.length;
     if (!n) return;
+    let next;
+    if (this.shuffle && n > 1 && dir > 0) {
