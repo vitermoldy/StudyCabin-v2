@@ -234,3 +234,5 @@ export class Resident {
     this.props.mug = mug;
 
     const guitar = new THREE.Group();
+    const bodyA = new THREE.Mesh(new THREE.CylinderGeometry(0.19, 0.19, 0.09, 20), m.guitar);
+    bodyA.rotation.x = Math.PI / 2;
