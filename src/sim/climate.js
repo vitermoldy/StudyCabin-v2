@@ -202,3 +202,6 @@ export class Climate extends Emitter {
     }
     for (const key of ['snow', 'petals', 'leaves', 'warmth']) {
       this.look[key] = damp(this.look[key], s[key], lookRate, dt);
+    }
+  }
+
