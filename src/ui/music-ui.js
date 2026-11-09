@@ -157,3 +157,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     main.type = 'button';
     main.className = 'qrow__main';
     const isCurrent = i === player.current;
+    main.setAttribute('aria-label', `${isCurrent && player.isPlaying ? 'Playing' : 'Play'} ${titleOf(item)}`);
+    if (isCurrent) main.setAttribute('aria-current', 'true');
