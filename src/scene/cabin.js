@@ -9,3 +9,5 @@ import {
 } from './textures.js';
 
 const WALL_TOP = FLOOR + CABIN.wall; // 3.55
+const RIDGE = FLOOR + CABIN.ridge; // 5.85
+const GLASS_TOP = FLOOR + 2.6;
