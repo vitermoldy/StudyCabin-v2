@@ -180,3 +180,5 @@ export class Trees {
 
     const pineGeo = pineGeometry();
     const broadGeo = broadleafGeometry();
+    const near = (t) => Math.hypot(t.x, t.z - 3) < SHADOW_REACH;
+    const m = new THREE.Matrix4();
