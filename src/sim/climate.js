@@ -63,3 +63,6 @@ export const WEATHERS = {
   fog: { label: 'Fog', cloud: 0.55, fog: 1, rain: 0, snow: 0, wind: 0.1, storm: 0, temp: -1.5 },
   rain: { label: 'Rain', cloud: 0.92, fog: 0.5, rain: 0.62, snow: 0, wind: 0.5, storm: 0, temp: -3 },
   storm: { label: 'Storm', cloud: 1, fog: 0.58, rain: 1, snow: 0, wind: 1, storm: 1, temp: -4 },
+  snow: { label: 'Snow', cloud: 0.86, fog: 0.55, rain: 0, snow: 0.85, wind: 0.35, storm: 0, temp: -2 },
+};
+
