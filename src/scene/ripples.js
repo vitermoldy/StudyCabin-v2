@@ -139,3 +139,5 @@ export class Ripples {
     this.b = t;
   }
 
+  step(steps = 2) {
+    if (!this.ok) return;
