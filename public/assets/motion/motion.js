@@ -242,3 +242,5 @@ function loops() {
   els.forEach(el => {
     el.__mLoop = true;
     io.observe(el);
+    pauseButton(el);
+    hostOf(el).addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') restart(el); });   // a mouse or pen, never a tap
