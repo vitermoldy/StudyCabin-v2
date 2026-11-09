@@ -98,3 +98,5 @@ export class Climate extends Emitter {
 
     // Blended values the scene reads every frame.
     this.params = {};
+    const target = WEATHERS[this.weather];
+    for (const k of PARAM_KEYS) this.params[k] = target[k];
