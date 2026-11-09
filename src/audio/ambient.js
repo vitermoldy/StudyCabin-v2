@@ -265,3 +265,5 @@ export class Ambient extends Emitter {
     set(this.g.fire, m.fire * env.fire, 0.3);
     if (env.fire > 0.1 && now > this._nextCrackle) {
       this._crackle();
+      this._nextCrackle = now + 0.03 + Math.random() * 0.22;
+    }
