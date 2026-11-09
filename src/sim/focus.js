@@ -20,3 +20,5 @@ export class FocusTimer extends Emitter {
     this.round = Number.isInteger(s.round) && s.round > 0 ? s.round : 1;
     this.running = s.running === true && Number.isFinite(s.endAt);
     this.endAt = Number.isFinite(s.endAt) ? s.endAt : 0;
+    this.remainingMs = Number.isFinite(s.remainingMs) ? s.remainingMs : this.lengthMs();
+    this.doneDate = s.doneDate || today();
