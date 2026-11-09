@@ -163,3 +163,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     t.className = 'qrow__title';
     t.textContent = titleOf(item);
     const meta = document.createElement('span');
+    meta.className = 'qrow__meta';
+    const icon = document.createElement('img');
