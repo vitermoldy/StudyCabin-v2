@@ -55,3 +55,5 @@ export function sidingTexture() {
     ctx.fillRect(x, 0, 2, 256); // shadow beside the batten
     ctx.fillStyle = 'rgba(205,212,200,0.35)';
     ctx.fillRect(x + 2, 0, 3, 256); // batten edge catching light
+    ctx.fillStyle = 'rgba(30,34,30,0.25)';
+    ctx.fillRect(x + 5, 0, 1, 256);
