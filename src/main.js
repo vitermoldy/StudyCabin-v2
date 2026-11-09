@@ -82,3 +82,5 @@ function inkFromPoster() {
       const samples = overlay.rects().map((r) => {
         let sum = 0;
         let max = 0;
+        let min = 1;
+        let n = 0;
