@@ -29,3 +29,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
   canvas.addEventListener('pointerdown', (e) => {
     const w = getWorld();
     try {
+      canvas.setPointerCapture(e.pointerId);
+    } catch {
