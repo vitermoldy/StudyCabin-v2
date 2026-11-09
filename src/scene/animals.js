@@ -527,3 +527,5 @@ function createFlocks(rand, count) {
         wait = 12 + rand() * 20;
       }
       for (const b of birds) {
+        if (!b.on) continue;
+        b.x += b.dir * b.speed * dt;
