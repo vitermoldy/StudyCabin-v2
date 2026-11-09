@@ -12,3 +12,5 @@ export const LAYERS = [
 /**
  * Ambient sound, made in the browser from filtered noise and oscillators:
  * no audio files. Nothing is created until the visitor turns sound on.
+ */
+export class Ambient extends Emitter {
