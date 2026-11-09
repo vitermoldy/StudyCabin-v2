@@ -126,3 +126,5 @@ function makeFox() {
   head.add(blob(pale, [0.09, 0.035, 0.04], [0.12, -0.025, 0]));
   head.add(blob(dark, [0.018, 0.018, 0.018], [0.21, -0.02, 0]));
   eyes(head, 0.1, 0.03, 0.045, 0.012);
+  for (const side of [-1, 1]) {
+    const ear = new THREE.Mesh(new THREE.ConeGeometry(0.035, 0.09, 6), fur);
