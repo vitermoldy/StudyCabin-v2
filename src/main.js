@@ -34,3 +34,5 @@ html.classList.toggle('is-clear', !wordsShown);
 
 // ------------------------------------------------------------ the scene
 let world = null;
+async function startWorld() {
+  const { World, webglAvailable } = await import('./scene/world.js');
