@@ -28,3 +28,5 @@
 */
 const html = document.documentElement;
 const reducedQ = matchMedia('(prefers-reduced-motion: reduce)');
+const reduced = () => reducedQ.matches;
+const shot = () => /HeadlessChrome/.test(navigator.userAgent) && html.dataset.motion !== 'live';
