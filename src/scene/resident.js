@@ -113,3 +113,5 @@ export class Resident {
     this.facing = 0;
     this.path = null;
     this.spot = null;
+    this.pose = 'stand';
+    this.walkPhase = 0;
