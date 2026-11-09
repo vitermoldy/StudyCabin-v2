@@ -186,3 +186,5 @@ export class Ambient extends Emitter {
   _applyMaster(tc) {
     if (!this.ctx) return;
     const duck = this.musicPlaying && this.duckWhenMusic ? 0.4 : 1;
+    const v = this.enabled ? this.volume * this.volume * duck : 0;
+    this.master.gain.setTargetAtTime(v, this.ctx.currentTime, tc);
