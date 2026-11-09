@@ -84,3 +84,5 @@ function inkFromPoster() {
         let max = 0;
         let min = 1;
         let n = 0;
+        for (let gy = 0; gy < 4; gy++) {
+          for (let gx = 0; gx < 8; gx++) {
