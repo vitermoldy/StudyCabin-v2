@@ -141,3 +141,5 @@ export class World {
     const asleep = activity.pose === 'sleep';
     const awake = !asleep;
     const spot = res.spot;
+    const at = (a, b) => minutes >= a * 60 && minutes < b * 60;
+    const evening = at(17, 23.5);
