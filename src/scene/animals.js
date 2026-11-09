@@ -268,3 +268,5 @@ function createWalker(name, rand, inUse) {
       a.s = first.s;
       a.state = 'stop';
       a.stop = first;
+      a.timer = kind.stopFor[1];
+    }
