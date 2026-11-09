@@ -158,3 +158,5 @@ export class Trees {
           if (roll < 0.42 && !onTrail(px, pz, 1.1)) {
             const h = 0.9 + r() * 1.1;
             broad.push({ x: px, z: pz, y: groundHeight(px, pz) - h * 0.3, h, w: h * (1.5 + r() * 0.5), yaw, tone });
+          }
+          continue;
