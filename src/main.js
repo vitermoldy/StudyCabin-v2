@@ -92,3 +92,5 @@ function inkFromPoster() {
             const l = 0.2126 * lin(R) + 0.7152 * lin(G) + 0.0722 * lin(B);
             sum += l;
             max = Math.max(max, l);
+            min = Math.min(min, l);
+            n++;
