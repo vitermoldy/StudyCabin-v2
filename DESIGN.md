@@ -11,3 +11,6 @@ glass). The words in those screenshots are ignored, at the owner's request; thei
 direction. The cabin itself is unchanged in v2.
 
 **Design Read.** Reading this as: an ambient study app (software) for people who study or work at a
+screen for hours, in a cinematic misty-forest style taken from the owner's SongPlay scene and the
+cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
+
