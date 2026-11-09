@@ -143,3 +143,5 @@ export class Ripples {
     if (!this.ok) return;
     const r = this.renderer;
     const prev = r.getRenderTarget();
+    const auto = r.autoClear;
+    r.autoClear = false;
