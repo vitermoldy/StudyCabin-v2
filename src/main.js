@@ -102,3 +102,5 @@ function inkFromPoster() {
     } catch {
       /* the poster could not be read: keep the default ink */
     }
+  };
+  if (img.complete && img.naturalWidth) apply();
