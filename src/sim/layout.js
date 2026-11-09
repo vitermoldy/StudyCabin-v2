@@ -102,3 +102,5 @@ export function route(fromSpot, toSpot, from = null) {
     if (cb === 0) steps.push(DECK_HUB, DOOR_MID, DOOR_IN);
   }
   for (const s of steps) pts.push({ ...s });
+  pts.push(hubOf(areaB, b.via[0]));
+  for (const v of b.via) pts.push({ ...v });
