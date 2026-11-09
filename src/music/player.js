@@ -85,3 +85,5 @@ export class MusicPlayer extends Emitter {
     const to = index + dir;
     if (to < 0 || to >= this.queue.length) return;
     const [it] = this.queue.splice(index, 1);
+    this.queue.splice(to, 0, it);
+    if (this.current === index) this.current = to;
