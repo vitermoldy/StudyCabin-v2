@@ -66,3 +66,5 @@ export class World {
     this.fireflies = 0;
     this.pointerNdc = new THREE.Vector2();
     this.pointerOn = false;
+    this._push = new THREE.Vector3();
+    this.cabin = new Cabin(this.scene);
