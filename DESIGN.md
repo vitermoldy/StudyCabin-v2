@@ -34,3 +34,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 
 ## v2: the forest, decisions and their reasons (R-31)
 
+| Decision | Reason |
+| --- | --- |
