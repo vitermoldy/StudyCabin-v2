@@ -129,3 +129,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 
 /* ------------------------------------------------------------ top right */
 .top {
+  position: fixed; top: var(--edge); right: var(--edge); z-index: 8;
+  display: flex; gap: var(--s-2); align-items: center;
