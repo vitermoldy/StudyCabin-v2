@@ -42,3 +42,5 @@ export class Ambient extends Emitter {
     if (this.ctx) return true;
     const AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return false;
+    const ctx = new AC();
+    this.ctx = ctx;
