@@ -312,3 +312,5 @@ export class MusicPlayer extends Emitter {
 
   _onError(code) {
     const item = this.item;
+    if (item) {
+      item.status = 'error';
