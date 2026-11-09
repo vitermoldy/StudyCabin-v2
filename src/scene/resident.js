@@ -331,3 +331,5 @@ export class Resident {
       while (remaining > 0 && this.path) {
         const target = this.path[this.pathIndex];
         const dx = target.x - this.pos.x;
+        const dz = target.z - this.pos.z;
+        const dist = Math.hypot(dx, dz);
