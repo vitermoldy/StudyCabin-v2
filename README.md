@@ -37,3 +37,5 @@ shows a still picture and the music, timer and ambient sound still work.
   birds cross over the trees by day, an owl comes to the roof ridge after dark, fireflies light up
   over the grass on warm nights. The animal in view gets a line in the story at the bottom left.
 - **The cabin and the resident.** A sage board cabin with a standing-seam roof, glass front, deck,
+  fire bowl and stove; inside a kitchen, table, sofa, armchair, bookcase, bed and a desk by the
+  glass. The resident follows a daily routine (sleep, coffee, breakfast, study, a walk round the
