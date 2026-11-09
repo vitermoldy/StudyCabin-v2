@@ -270,3 +270,5 @@ export class Resident {
     }
     if (target === this.spot && !this.path) {
       this.pose = activity.pose;
+      return;
+    }
