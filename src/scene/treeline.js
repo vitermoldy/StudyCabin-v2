@@ -129,3 +129,5 @@ export class Treeline {
   }
 
   /**
+   * Colours from the haze: the nearest ring a dark fir green a little lighter than the 3D trees,
+   * each further one closer to the haze itself (the ratios come from SongPlay's forest themes).
