@@ -299,3 +299,5 @@ export class World {
           }
           blk /= buf.length / 4;
           sum += blk;
+          max = Math.max(max, blk);
+          min = Math.min(min, blk);
