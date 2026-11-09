@@ -211,3 +211,5 @@ const KEEN = { doe: 'deer', buck: 'deer', fawn: 'deer', fox: 'fox', hare: 'hare'
 
 const LINES = {
   graze: (who, two) => `${who} ${two ? 'are' : 'is'} grazing in the clearing`,
+  drink: (who, two) => `${who} ${two ? 'are' : 'is'} drinking at the pond`,
+  look: (who, two) => `${who} ${two ? 'stop' : 'stops'} to look round`,
