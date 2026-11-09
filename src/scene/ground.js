@@ -9,3 +9,6 @@
 export const smooth = (a, b, v) => {
   const t = Math.min(1, Math.max(0, (v - a) / (b - a)));
   return t * t * (3 - 2 * t);
+};
+
+function hash(x, y) {
