@@ -52,3 +52,5 @@ export class FocusTimer extends Emitter {
     return this.config[phase === 'focus' ? 'focus' : phase === 'short' ? 'short' : 'long'] * 60000;
   }
 
+  remaining() {
+    return this.running ? Math.max(0, this.endAt - Date.now()) : this.remainingMs;
