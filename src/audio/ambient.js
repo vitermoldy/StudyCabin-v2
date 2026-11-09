@@ -44,3 +44,5 @@ export class Ambient extends Emitter {
     if (!AC) return false;
     const ctx = new AC();
     this.ctx = ctx;
+    const len = ctx.sampleRate * 4;
+    const buf = ctx.createBuffer(1, len, ctx.sampleRate);
