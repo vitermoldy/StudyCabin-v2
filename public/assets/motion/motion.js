@@ -178,3 +178,5 @@ function counts() {
         state = 'run';
         stop();
         const t0 = performance.now();
+        const step = now => {
+          const k = Math.min(1, (now - t0) / ms);
