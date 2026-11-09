@@ -60,3 +60,5 @@ function showStill() {
  * Without the live scene, the words sit on the poster: pick their ink from the picture under
  * them, as the scene does from its rendered pixels, so they keep 3:1 over a bright misty sky.
  */
+function inkFromPoster() {
+  const img = document.getElementById('poster');
