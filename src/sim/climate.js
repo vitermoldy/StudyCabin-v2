@@ -85,3 +85,5 @@ function hexToRgb(hex) {
 }
 
 export class Climate extends Emitter {
+  constructor(clock) {
+    super();
