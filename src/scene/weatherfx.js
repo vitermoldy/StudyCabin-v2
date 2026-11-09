@@ -44,3 +44,5 @@ function seeds(count, perItem, seed) {
   return geo;
 }
 
+export class WeatherFX {
+  constructor(scene, flueTop) {
