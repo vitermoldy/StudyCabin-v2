@@ -399,3 +399,5 @@ startWorld()
       onWords: setWords,
       wordsShown: () => wordsShown,
       onFullscreen: toggleFullscreen,
+    });
+    html.dataset.ready = '1';
