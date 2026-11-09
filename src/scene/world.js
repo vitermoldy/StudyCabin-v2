@@ -283,3 +283,5 @@ export class World {
     for (const r of rects) {
       let sum = 0;
       let max = 0;
+      let min = 1;
+      let n = 0;
