@@ -13,3 +13,5 @@ function canvas(w, h) {
 
 function finish(c, { repeat = [1, 1], srgb = true } = {}) {
   const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  t.repeat.set(repeat[0], repeat[1]);
