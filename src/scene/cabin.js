@@ -372,3 +372,5 @@ export class Cabin {
     this._bx(wood, x0, x1, FLOOR + 0.1, FLOOR + 0.32, z0, z1);
     this._bx(woodDark, x0 + 0.05, x1 - 0.05, FLOOR, FLOOR + 0.1, z0 + 0.05, z1 - 0.05);
     this._soft(linen, B.w - 0.06, 0.22, B.d - 0.08, 0.05, B.x, FLOOR + 0.43, B.z);
+    this._bx(wood, x0 - 0.03, x1 + 0.03, FLOOR + 0.1, FLOOR + 1.12, -3.0, -2.92);
+    for (const dx of [-0.42, 0.42]) this._soft(cushion, 0.68, 0.16, 0.38, 0.07, B.x + dx, FLOOR + 0.62, -2.62);
