@@ -19,3 +19,5 @@ import { fireflies } from '../sim/wildlife.js';
 export function webglAvailable() {
   try {
     const c = document.createElement('canvas');
+    return !!(window.WebGL2RenderingContext && c.getContext('webgl2'));
+  } catch {
