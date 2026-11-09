@@ -132,3 +132,6 @@ export class Resident {
     const pelvis = capsule(0.13, 0.12, m.pants);
     pelvis.rotation.z = Math.PI / 2;
     pelvis.position.y = 0.02;
+    this.hips.add(pelvis);
+
+    this.spine = new THREE.Group();
