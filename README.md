@@ -10,3 +10,5 @@ colours of the SongPlay scene.
 
 ## Run it
 
+```bash
+npm install
