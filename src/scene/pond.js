@@ -81,3 +81,5 @@ const FRAG = /* glsl */ `
     float depth = max(vDepth, 0.0);
     float absorb = 1.0 - exp(-depth * 2.4);
     vec3 body = mix(uShallow, uDeep, smoothstep(0.05, 0.9, depth)) * uLight;
+    float spec = pow(sd, mix(600.0, 140.0, clamp(uRain + uChop * 0.5, 0.0, 1.0))) * 1.3 + pow(sd, 40.0) * 0.12;
+    float mspec = pow(max(dot(R, uMoonDir), 0.0), 220.0) * 1.1;
