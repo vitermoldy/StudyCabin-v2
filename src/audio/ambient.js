@@ -258,3 +258,6 @@ export class Ambient extends Emitter {
     // A fox out in the clearing after dark barks once in a while.
     if ((env.fox ?? 0) > 0.5 && env.night > 0.5 && m.wildlife > 0.02 && now > this._nextBark) {
       if (Math.random() < 0.5) this._bark(m.wildlife);
+      this._nextBark = now + 18 + Math.random() * 30;
+    }
+
