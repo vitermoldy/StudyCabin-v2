@@ -182,3 +182,5 @@ export class Trees {
     const broadGeo = broadleafGeometry();
     const near = (t) => Math.hypot(t.x, t.z - 3) < SHADOW_REACH;
     const m = new THREE.Matrix4();
+    const q = new THREE.Quaternion();
+    const s = new THREE.Vector3();
