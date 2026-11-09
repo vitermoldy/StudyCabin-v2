@@ -351,3 +351,5 @@ function createWalker(name, rand, inUse) {
     get position() {
       return model.root.position;
     },
+    update(dt, time, ctx) {
+      if (a.state === 'away') {
