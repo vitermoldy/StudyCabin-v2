@@ -66,3 +66,5 @@ export class Panels extends Emitter {
   }
 
   _hide(id) {
+    const panel = this.panels.get(id);
+    if (!panel) return;
