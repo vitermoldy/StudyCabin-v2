@@ -328,3 +328,5 @@ export class Atmosphere {
     // Lights.
     const sunUp = smoothstep(-0.03, 0.08, sy);
     const moonUp = smoothstep(-0.02, 0.15, this.moonDir.y) * this.night;
+    const useMoon = sunUp < 0.02;
+    const dir = useMoon ? this.moonDir : this.sunDir;
