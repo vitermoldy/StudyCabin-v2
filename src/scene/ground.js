@@ -141,3 +141,5 @@ export function groundHeight(x, z) {
   return y;
 }
 
+/** The cabin, its deck and the steps, with a little room round them. */
+export function onCabin(x, z, pad = 0) {
