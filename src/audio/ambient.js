@@ -162,3 +162,6 @@ export class Ambient extends Emitter {
     this.volume = clamp(v, 0, 1);
     this._applyMaster(0.15);
     this.persist();
+    this.emit('change');
+  }
+
