@@ -146,3 +146,5 @@ export function onCabin(x, z, pad = 0) {
   return x > -11 - pad && x < 10 + pad && z > -3.6 - pad && z < 7.9 + pad;
 }
 
+/** How thickly grass covers a point, 0..1. The deck, the path and the pond stay clear. */
+export function grassCover(x, z) {
