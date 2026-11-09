@@ -95,3 +95,5 @@ shows a still picture and the music, timer and ambient sound still work.
 - YouTube mixes (lists starting with RD), Liked videos and Watch later cannot be embedded; a song
   link copied from a YouTube Music mix plays as that one song.
 - The video plays in the Music panel at about 400 by 225 px. When the panel is closed the player
+  keeps playing out of sight.
+- The scene is heavy on purpose (a full forest and about a million grass triangles on a desktop,
