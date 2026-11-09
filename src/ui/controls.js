@@ -71,3 +71,5 @@ export function mountDay({ clock, onJump }) {
     const w = document.createElement('span');
     w.className = 'timeline__what';
     w.textContent = a.line;
+    const now = document.createElement('span');
+    now.className = 'timeline__now';
