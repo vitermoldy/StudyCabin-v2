@@ -54,3 +54,5 @@ export const SPOTS = {
   desk: { area: 'in', via: [p(4.35, SPINE_Z), p(4.35, 1.28), p(5.6, 1.28)], at: p(5.6, 1.66), face: 0 },
   stove: { area: 'in', via: [p(1.95, SPINE_Z), p(1.95, -1.7)], at: p(0.68, -1.72), face: Math.PI },
   shelf: { area: 'in', via: [p(-2.85, SPINE_Z), p(-2.85, -2.12)], at: p(-3.05, -2.12), face: Math.PI },
+  window: { area: 'in', via: [p(-2.3, SPINE_Z)], at: p(-2.3, 2.6), face: 0 },
+  deskWindow: { area: 'in', via: [p(3.6, SPINE_Z)], at: p(3.6, 2.6), face: 0 },
