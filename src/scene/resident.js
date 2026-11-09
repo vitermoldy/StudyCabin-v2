@@ -388,3 +388,5 @@ export class Resident {
     }
 
     // Joint targets
+    let target;
+    if (moving) {
