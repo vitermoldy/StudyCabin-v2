@@ -11,3 +11,5 @@ export class LinkError extends Error {}
  */
 export function parseLink(raw) {
   const text = String(raw || '').trim();
+  if (!text) throw new LinkError('Paste a link first.');
+  // A bare 11-character ID works too.
