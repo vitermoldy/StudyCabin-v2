@@ -204,3 +204,5 @@ export class Ambient extends Emitter {
     const set = (g, v, tc = 0.6) => g.gain.setTargetAtTime(v, now, tc);
 
     // The wood in the wind: gusts come and go every ten seconds or so; bare branches in winter
+    // rustle less, dry autumn leaves more.
+    const sway = Math.pow(0.5 + 0.5 * Math.sin(t * 0.37) * Math.sin(t * 0.13 + 1), 1.4);
