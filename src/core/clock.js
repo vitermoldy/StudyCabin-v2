@@ -77,3 +77,5 @@ export class Clock extends Emitter {
     if (!sameDay && target < this.minutes - 0.5) {
       this.day += 1;
       this.emit('day', this.day);
+    }
+    this.minutes = target;
