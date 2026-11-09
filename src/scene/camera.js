@@ -76,3 +76,5 @@ export class CameraRig {
   }
 
   /** Drag to slide the view over the ground: pixels moved. */
+  pan(dx, dy) {
+    const dist = this.pos.distanceTo(this.target) * this.userS.zoom;
