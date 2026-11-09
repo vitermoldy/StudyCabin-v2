@@ -171,3 +171,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     icon.height = 12;
     meta.appendChild(icon);
     const metaText = document.createElement('span');
+    if (item.status === 'error') metaText.textContent = item.error;
+    else if (isCurrent && player.isPlaying) metaText.textContent = item.kind === 'playlist' ? 'Playlist, playing now' : 'Playing now';
