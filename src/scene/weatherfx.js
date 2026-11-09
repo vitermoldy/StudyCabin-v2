@@ -223,3 +223,5 @@ export class WeatherFX {
           vec3 p = position;
           float t = uTime;
           p.x += sin(t * (0.21 + aSeed.x * 0.2) + aSeed.y * 6.28) * 0.9;
+          p.z += cos(t * (0.17 + aSeed.z * 0.2) + aSeed.x * 6.28) * 0.9;
+          p.y += sin(t * (0.4 + aSeed.y * 0.3) + aSeed.z * 6.28) * 0.3;
