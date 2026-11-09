@@ -301,3 +301,5 @@ export class Terrain {
         }
       }
     }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
