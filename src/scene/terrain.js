@@ -305,3 +305,6 @@ export class Terrain {
     geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
     geo.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
     geo.setAttribute('normal', new THREE.Float32BufferAttribute(nrm, 3));
+    geo.computeBoundingSphere();
+
+    const mat = new THREE.MeshLambertMaterial({ color: 0x4f6e2e, vertexColors: true, side: THREE.DoubleSide });
