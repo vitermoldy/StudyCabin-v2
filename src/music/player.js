@@ -37,3 +37,5 @@ export class MusicPlayer extends Emitter {
   }
 
   // ------------------------------------------------------------ queue
+  /** Adds a link. Returns the new item or throws LinkError. */
+  add(raw, { playNow = false } = {}) {
