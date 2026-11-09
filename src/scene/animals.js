@@ -172,3 +172,5 @@ function makeSquirrel() {
   const pale = coat('#e8d6bc');
   const root = new THREE.Group();
   const body = new THREE.Group();
+  root.add(body);
+  body.add(blob(fur, [0.1, 0.075, 0.065], [0, 0.1, 0], 0.35));
