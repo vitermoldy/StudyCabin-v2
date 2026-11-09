@@ -305,3 +305,5 @@ function createWalker(name, rand, inUse) {
       l.rotation.z = moving ? Math.sin(phase) * swing : l.rotation.z * (1 - k);
     });
     if (kind.hops) {
+      const air = moving ? Math.max(0, Math.sin(a.hop)) : 0;
+      model.body.position.y = air * 0.16;
