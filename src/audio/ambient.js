@@ -276,3 +276,5 @@ export class Ambient extends Emitter {
     const base = 2600 + Math.random() * 1500;
     for (let i = 0; i < notes; i++) {
       const o = ctx.createOscillator();
+      const g = ctx.createGain();
+      const t0 = now + i * (0.11 + Math.random() * 0.05);
