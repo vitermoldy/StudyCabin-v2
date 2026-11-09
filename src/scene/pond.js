@@ -152,3 +152,5 @@ function lilies(scene) {
     const x = POND.x + u * POND.rx;
     const z = POND.z + v * POND.rz;
     if (pondE(x, z) > 0.9) continue;
+    pads.push({ x, z, s: 0.12 + r() * 0.12, yaw: r() * Math.PI * 2 });
+  }
