@@ -134,3 +134,5 @@ export class Ripples {
     this.quad.material = material;
     this.renderer.setRenderTarget(this.b);
     this.renderer.render(this.scene, this.camera);
+    const t = this.a;
+    this.a = this.b;
