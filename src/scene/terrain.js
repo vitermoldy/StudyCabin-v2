@@ -226,3 +226,5 @@ export class Terrain {
       const cover = grassCover(x, z);
       if (cover < 0.05 || r() > cover * 1.15) return;
       spots.push([x, z, scale]);
+    };
+    // Thick in the clearing round the cabin and the pond.
