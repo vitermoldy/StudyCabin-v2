@@ -180,3 +180,5 @@ export class Resident {
       const hand = new THREE.Mesh(new THREE.SphereGeometry(0.045, 10, 8), m.skin);
       hand.position.y = -0.27;
       hand.scale.set(0.85, 1.15, 0.7);
+      hand.castShadow = true;
+      el.add(hand);
