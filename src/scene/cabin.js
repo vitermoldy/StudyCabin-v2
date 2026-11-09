@@ -507,3 +507,5 @@ export class Cabin {
     this.shades.porch.emissiveIntensity = s.porch * 2;
     this.mat.screen.emissiveIntensity = s.screen * 0.9;
     this.door.position.x = -1.86 * s.door;
+    const sl = s.sleeping;
+    this.duvet.scale.y = 1 + sl * 1.6;
