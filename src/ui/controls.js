@@ -214,3 +214,5 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
     wordsSwitch.setAttribute('aria-checked', String(on));
     dockWords.setAttribute('aria-pressed', String(on));
     dockWords.setAttribute('aria-label', on ? 'Hide the big words' : 'Show the big words');
+  };
+  wordsSwitch.addEventListener('click', () => { onWords(!wordsShown()); sync(); });
