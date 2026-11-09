@@ -72,3 +72,5 @@ const STEP_LOW = p(0, 7.55, 0.02);
 const YARD_HUB = p(0.6, 8.3, 0.02);
 
 function hubOf(area, point) {
+  if (area === 'in') return p(point.x, SPINE_Z);
+  if (area === 'deck') return p(point.x, DECK_Z);
