@@ -333,3 +333,5 @@ export class Resident {
         const dx = target.x - this.pos.x;
         const dz = target.z - this.pos.z;
         const dist = Math.hypot(dx, dz);
+        if (dist < 1e-4 || remaining >= dist) {
+          this.pos.set(target.x, target.y, target.z);
