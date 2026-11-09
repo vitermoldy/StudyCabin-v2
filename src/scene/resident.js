@@ -209,3 +209,6 @@ export class Resident {
       kn.add(foot);
       return { th, kn };
     };
+    this.legL = leg(1);
+    this.legR = leg(-1);
+
