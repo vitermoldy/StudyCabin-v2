@@ -123,3 +123,7 @@ html.is-live .poster { opacity: 0; }
 .story__title { font-size: var(--t-label); font-weight: 500; line-height: 1.4; color: var(--muted); }
 .story__line { margin-top: var(--s-1); font-size: 17px; line-height: 1.45; color: var(--ink); }
 .story__meta { margin-top: var(--s-2); font-size: var(--t-label); font-weight: 500; color: var(--muted); }
+.story .btn-row { margin-top: var(--s-3); }
+
+html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; visibility: hidden; }
+
