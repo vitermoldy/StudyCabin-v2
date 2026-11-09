@@ -121,3 +121,5 @@ export class FocusTimer extends Emitter {
     }
   }
 
+  _commit() {
+    save('focus', {
