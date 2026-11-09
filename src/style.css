@@ -177,3 +177,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 
 /* ------------------------------------------------------------ panels */
 .panel {
+  position: fixed; left: 50%; z-index: 10;
+  bottom: calc(var(--edge) + var(--dock-h) + 10px);
