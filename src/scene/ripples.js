@@ -105,3 +105,5 @@ export class Ripples {
     });
     this.queue = [];
     this.ok = true;
+    // Start flat.
+    const prev = renderer.getRenderTarget();
