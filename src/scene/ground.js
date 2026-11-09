@@ -90,3 +90,5 @@ export function trailLoop(count = 10) {
   for (let i = 0; i < count; i++) {
     const p = pondPoint(TRAIL_E, TRAIL_START + (i / count) * Math.PI * 2);
     pts.push({ x: p.x, y: groundHeight(p.x, p.z), z: p.z });
+  }
+  return pts;
