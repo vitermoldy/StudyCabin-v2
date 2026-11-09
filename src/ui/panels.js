@@ -52,3 +52,6 @@ export class Panels extends Emitter {
       if (target) target.focus({ preventScroll: true });
     }
     this.emit('open', id);
+  }
+
+  close(returnFocus = true) {
