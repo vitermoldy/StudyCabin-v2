@@ -207,3 +207,5 @@ export class WeatherFX {
     );
 
     // Fireflies on warm nights: low over the grass, thickest along the edge of the wood and over
+    // the pond, each one drifting and blinking on its own slow beat (yellow-green, a few warmer,
+    // as in SongPlay's night).
