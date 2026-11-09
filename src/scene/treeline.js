@@ -139,3 +139,5 @@ export class Treeline {
     c.nearLow.copy(fog).multiply(FIR).multiplyScalar(0.78);
     c.farTop.copy(fog).multiply(FIR_FAR).multiplyScalar(0.8);
     c.farLow.copy(fog).multiplyScalar(1.02);
+    this.snow.value = snow;
+    this.flash.value = flash;
