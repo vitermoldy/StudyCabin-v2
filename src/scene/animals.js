@@ -332,3 +332,5 @@ function createWalker(name, rand, inUse) {
       a.headAim = 0;
       a.lookAim = 0.9 * Math.sin(time * 0.6 + a.wave);
     } else {
+      a.neckAim = kind.hops ? -0.55 : 0.1;
+      a.headAim = 0;
