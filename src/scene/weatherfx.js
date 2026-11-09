@@ -217,3 +217,5 @@ export class WeatherFX {
       blending: THREE.AdditiveBlending,
       vertexShader: /* glsl */ `
         uniform float uTime; uniform float uScale; uniform float uAmount;
+        attribute vec3 aSeed; attribute float aId;
+        varying float vA; varying float vWarm;
