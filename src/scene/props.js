@@ -28,3 +28,6 @@ function stoneGeometry(seed) {
   }
   geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
   return geo;
+}
+
+export class Props {
