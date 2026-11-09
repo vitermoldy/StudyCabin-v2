@@ -30,3 +30,5 @@ function paint(geo, r, g, b, vary = 0) {
 
 /** A pine 1 unit tall: trunk plus four stacked cones. */
 function pineGeometry() {
+  const parts = [];
+  const trunk = new THREE.CylinderGeometry(0.018, 0.03, 0.3, 6);
