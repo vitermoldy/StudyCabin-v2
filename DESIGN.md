@@ -6,3 +6,5 @@ the owner's SongPlay v2 scene (a forest clearing in teal, sage and moss under a 
 animals that pass now and then: birds, deer, crickets, a fox and others.
 
 v1's direction came from the owner's four reference screenshots (a sage-green board cabin with a
+standing-seam roof, fog on the hills behind, a warm lit interior seen through floor-to-ceiling
+glass). The words in those screenshots are ignored, at the owner's request; their look is the
