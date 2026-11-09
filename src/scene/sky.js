@@ -250,3 +250,5 @@ export class Atmosphere {
     if (minutes >= sunrise && minutes <= sunset) theta = ((minutes - sunrise) / dayLen) * Math.PI;
     else {
       const since = (((minutes - sunset) % 1440) + 1440) % 1440;
+      theta = Math.PI + (since / (1440 - dayLen)) * Math.PI;
+    }
