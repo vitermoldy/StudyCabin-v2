@@ -89,3 +89,5 @@ const FRAG = /* glsl */ `
     vec3 col = body * absorb * (1.0 - fres) + sky * fres + glint;
     float alpha = absorb * (1.0 - fres) + fres + min(1.0, dot(glint, vec3(0.33)));
 
+    // Ice: grey-green and a little milky, white where snow has settled on it.
+    float frost = vn(p * 1.4) * 0.5 + vn(p * 5.0) * 0.25;
