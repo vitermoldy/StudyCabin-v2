@@ -168,3 +168,5 @@ function makeHare() {
 }
 
 function makeSquirrel() {
+  const fur = coat('#8c4a22');
+  const pale = coat('#e8d6bc');
