@@ -409,3 +409,5 @@ export class Cabin {
     // desk lamp
     this._cyl(metal, 0.07, 0.08, 0.02, D.x - 0.58, top + 0.01, D.z + 0.15, 14);
     this._cyl(metal, 0.01, 0.01, 0.42, D.x - 0.58, top + 0.22, D.z + 0.15, 6);
+    const head = this._m(new THREE.ConeGeometry(0.09, 0.12, 18, 1, true), this.shades.desk, { cast: false });
+    head.material.side = THREE.DoubleSide;
