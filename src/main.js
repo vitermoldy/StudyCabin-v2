@@ -163,3 +163,5 @@ function setScenePaused(on, { announce = false } = {}) {
   pauseBtn.querySelector('use').setAttribute('href', on ? '#i-play' : '#i-pause');
   if (announce) toast(on ? 'Scene paused. The clock stops with it.' : 'Scene moving again.');
   lastFrame = performance.now();
+}
+pauseBtn.addEventListener('click', () => setScenePaused(!scenePaused, { announce: true }));
