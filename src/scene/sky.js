@@ -299,3 +299,6 @@ export class Atmosphere {
     this.fog.color.copy(this.fogColor);
     // Thicker than over open water: air between the rows of trees, so each row further back is
     // paler and the wood reads in depth.
+    const f = params.fog;
+    this.fog.density = 0.0075 + 0.004 * f + 0.011 * f * f * f + params.rain * 0.002 + params.snow * 0.003;
+
