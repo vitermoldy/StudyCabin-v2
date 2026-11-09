@@ -260,3 +260,5 @@ addEventListener('keydown', (e) => {
   } else if (['1', '2', '3', '4', '5'].includes(k) && world) {
     const id = VIEW_IDS[Number(k) - 1];
     world.rig.setView(id);
+    viewApi?.setView(id);
+    save('view', { ...load('view', {}), view: id });
