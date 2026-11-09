@@ -116,3 +116,5 @@ export class World {
     }
     this._nextBolt -= dt;
     if (this._nextBolt <= 0) {
+      this._nextBolt = 8 + Math.random() * 14;
+      // A soft double pulse, never more than two flashes in a second.
