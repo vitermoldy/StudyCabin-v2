@@ -204,3 +204,6 @@ export class WeatherFX {
             #include <colorspace_fragment>
           }`,
       }),
+    );
+
+    // Fireflies on warm nights: low over the grass, thickest along the edge of the wood and over
