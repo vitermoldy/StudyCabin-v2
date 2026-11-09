@@ -38,3 +38,5 @@ const DROP_FRAG = /* glsl */ `
   }
 `;
 
+const UPDATE_FRAG = /* glsl */ `
+  precision highp float;
