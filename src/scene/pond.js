@@ -61,3 +61,6 @@ const FRAG = /* glsl */ `
       float hD = texture2D(uRipple, ruv - vec2(0.0, e)).r;
       float hU = texture2D(uRipple, ruv + vec2(0.0, e)).r;
       g += vec2(hR - hL, hU - hD) * 3.0 * water;
+    }
+    vec3 N = normalize(vec3(-g.x * 1.3, 1.0, -g.y * 1.3));
+
