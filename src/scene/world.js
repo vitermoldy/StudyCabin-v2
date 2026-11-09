@@ -131,3 +131,5 @@ export class World {
     this.flash = Math.max(0, this.flash - dt * 3.2);
   }
 
+  /** Decide lamps, stove, fire and door from the time, weather and resident. */
+  _house(state) {
