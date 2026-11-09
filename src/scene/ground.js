@@ -130,3 +130,5 @@ export function groundHeight(x, z) {
   const fd = forestDepth(x, z);
   const yard = smooth(15, 5, Math.hypot(x * 0.8, z - 2.5));
   const pondNear = smooth(1.7, 1.15, e);
+  // The meadow rolls a little, away from the cabin and the pond.
+  y += (1 - yard) * (1 - pondNear) * fbm(x * 0.06 + 5.2, z * 0.06 + 1.3, 3) * 0.55;
