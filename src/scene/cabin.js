@@ -473,3 +473,5 @@ export class Cabin {
       bed: mk(warm, F.bed.x, FLOOR + 1.1, -2.45, 7),
       desk: mk('#ffd7a3', F.desk.x - 0.45, FLOOR + 1.12, F.desk.z - 0.05, 5),
       stove: mk('#ff8a3c', F.stove.x, FLOOR + 0.55, F.stove.z + 0.6, 6),
+      fire: mk('#ff9a4a', F.fireBowl.x, FLOOR + 0.95, F.fireBowl.z, 10),
+    };
