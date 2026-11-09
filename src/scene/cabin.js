@@ -430,3 +430,5 @@ export class Cabin {
       for (const sx of [-0.33, 0.33]) {
         this._cb(deckWood, 0.06, 0.06, 0.7, sx, FLOOR + 0.6, 0.0, { parent: g });
         this._cb(deckWood, 0.05, 0.36, 0.05, sx, FLOOR + 0.18, 0.28, { parent: g });
+        this._cb(deckWood, 0.05, 0.36, 0.05, sx, FLOOR + 0.18, -0.24, { parent: g });
+      }
