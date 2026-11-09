@@ -32,3 +32,5 @@ export class MusicPlayer extends Emitter {
     return this.queue[this.current] || null;
   }
 
+  get isPlaying() {
+    return this.status === 'playing' || this.status === 'buffering';
