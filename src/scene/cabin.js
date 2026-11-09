@@ -88,3 +88,5 @@ export class Cabin {
     const fab = fabricTexture();
     this.mat = {
       siding: weathered(std('#f6f9f1', { map: sidingTexture(), roughness: 0.86 }), { snow: 0.6 }),
+      trim: std('#2b2f2d', { roughness: 0.6 }),
+      roof: weathered(std('#f2f4f5', { map: roofTexture(), roughness: 0.52, metalness: 0.12 }), { snow: 1 }),
