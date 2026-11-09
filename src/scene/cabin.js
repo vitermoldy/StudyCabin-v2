@@ -395,3 +395,5 @@ export class Cabin {
     // laptop: its screen faces the chair, away from the glass
     this._bx(trim, D.x - 0.2, D.x + 0.2, top, top + 0.02, D.z - 0.28, D.z + 0.0);
     const lid = new THREE.Group();
+    lid.position.set(D.x, top + 0.02, D.z + 0.0);
+    lid.rotation.x = -0.32;
