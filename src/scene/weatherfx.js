@@ -77,3 +77,5 @@ export class WeatherFX {
             float far = smoothstep(42.0, 18.0, -mv.z);
             vA = on * far * (1.0 - aEnd * 0.7);
             gl_Position = projectionMatrix * mv;
+          }`,
+        fragmentShader: /* glsl */ `
