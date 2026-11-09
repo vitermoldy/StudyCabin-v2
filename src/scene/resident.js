@@ -409,3 +409,5 @@ export class Resident {
     // Apply
     const j = this.j;
     const anchor = this._poseAnchor(tmp);
+    // Blend the root onto the bed while lying down.
+    this.root.position.lerpVectors(this.pos, anchor, clamp(j.lie, 0, 1));
