@@ -17,3 +17,5 @@ function readAll() {
   return cache;
 }
 
+let timer = 0;
+function flush() {
