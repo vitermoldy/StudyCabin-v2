@@ -423,3 +423,5 @@ function createWalker(name, rand, inUse) {
         a.state = 'stop';
         stopPose(time + 1.3, a.stop?.pose ?? 'graze');
       }
+      if (a.s >= a.path.length) {
+        leave();
