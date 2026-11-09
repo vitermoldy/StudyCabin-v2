@@ -69,3 +69,5 @@ export class CameraRig {
     this.resetUser();
   }
 
+  /** Drag to turn: pixels moved. */
+  orbit(dx, dy) {
