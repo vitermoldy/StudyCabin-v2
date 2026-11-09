@@ -152,3 +152,6 @@ clock.on('jump', () => {
 const updateDay = mountDay({ clock, onJump: jumpTo });
 const updateWeather = mountWeather({ climate });
 mountSound({ ambient });
+const renderFocus = mountFocus({ focus });
+mountMusic(music, panels, { onPlayingChange: (on) => ambient.setMusicPlaying(on) });
+
