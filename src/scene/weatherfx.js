@@ -211,3 +211,5 @@ export class WeatherFX {
     // as in SongPlay's night).
     this.flyU = { uTime: this.common.uTime, uScale: this.common.uScale, uAmount: { value: 0 } };
     const flies = new THREE.Points(fireflyGeometry(lowPowerFlies() ? 170 : 340), new THREE.ShaderMaterial({
+      uniforms: this.flyU,
+      transparent: true,
