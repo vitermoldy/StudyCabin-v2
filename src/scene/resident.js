@@ -188,3 +188,6 @@ export class Resident {
       return { sh, el, grip };
     };
     this.armL = arm(1);
+    this.armR = arm(-1);
+
+    const leg = (side) => {
