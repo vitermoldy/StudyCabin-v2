@@ -10,3 +10,5 @@ const WRAP = /* glsl */ `
   vec3 wrapBox(vec3 p, vec3 center, vec3 box){ return center + mod(p - center + box * 0.5, box) - box * 0.5; }
   float insideCabin(vec3 p){
     // the roof and walls keep the weather out
+    vec3 lo = vec3(-7.7, -1.0, -3.8);
+    vec3 hi = vec3(7.7, 6.0, 3.75);
