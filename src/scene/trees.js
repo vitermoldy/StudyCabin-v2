@@ -208,3 +208,5 @@ export class Trees {
       return mesh;
     };
     this.meshes = [
+      grove(pineGeo, pineMat, pines.filter(near), true),
+      grove(pineGeo, pineMat, pines.filter((t) => !near(t)), false),
