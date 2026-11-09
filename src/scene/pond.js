@@ -210,3 +210,5 @@ export class Pond {
       uniforms: this.uniforms,
       vertexShader: VERT,
       fragmentShader: FRAG,
+      transparent: true,
+      fog: true,
