@@ -504,3 +504,5 @@ function createFlocks(rand, count) {
         x: -dir * (90 + row * 1.6 + rand()),
         y: y + row * 0.3 * side + rand() * 0.3,
         z: z + row * 1.1 * side,
+        speed: speed * (0.96 + rand() * 0.08),
+        flap: rand() * 6,
