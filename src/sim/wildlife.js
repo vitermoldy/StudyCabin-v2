@@ -33,3 +33,5 @@ export const ROUTES = {
     },
     {
       pts: [[-34, 3], [-18, 9], [-11.8, 9.4], [-6, 9.8], [1, 10], [6, 9.6], [11.5, 9.3], [18, 7.2], [34, 1]],
+      stops: [{ at: 2, pose: 'look', face: FIRE_C }, { at: 5, pose: 'look', face: POND_C }],
+    },
