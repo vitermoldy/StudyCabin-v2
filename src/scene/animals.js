@@ -275,3 +275,5 @@ function createWalker(name, rand, inUse) {
     place(0);
   }
 
+  function leave() {
+    a.state = 'away';
