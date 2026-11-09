@@ -37,3 +37,5 @@ export function sidingTexture() {
   ctx.fillStyle = '#9aa197';
   ctx.fillRect(0, 0, 256, 256);
   const boards = 6;
+  const bw = 256 / boards;
+  for (let i = 0; i < boards; i++) {
