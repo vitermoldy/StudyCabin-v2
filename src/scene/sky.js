@@ -323,3 +323,6 @@ export class Atmosphere {
     u.uCloudLit.value.copy(this.horizon).lerp(this._tmpB.setRGB(1, 1, 1), 0.25 * day).lerp(this.sunColor, 0.15 * day * (1 - overcast));
     u.uCloudDark.value.copy(this.zenith).lerp(this.horizon, 0.4).multiplyScalar(0.72);
 
+    this.dome.position.copy(cameraPos);
+
+    // Lights.
