@@ -483,3 +483,5 @@ function createFlocks(rand, count) {
   const birds = Array.from({ length: count }, () => ({ ...makeBird(material), on: false }));
   const group = new THREE.Group();
   birds.forEach((b) => {
+    b.root.visible = false;
+    b.root.traverse((o) => { o.castShadow = false; });
