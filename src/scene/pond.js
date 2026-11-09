@@ -225,3 +225,5 @@ export class Pond {
   }
 
   /** Hook up the ripple simulation (its texture and the patch it covers). */
+  setRipples(texture, area) {
+    this.uniforms.uRipple.value = texture;
