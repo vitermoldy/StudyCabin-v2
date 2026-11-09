@@ -46,3 +46,6 @@ export function saveNow() {
   if (timer) {
     clearTimeout(timer);
     flush();
+  }
+}
+
