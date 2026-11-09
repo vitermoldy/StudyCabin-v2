@@ -299,3 +299,5 @@ export class Terrain {
           col.push(s * 0.95, s, s * 0.85);
           nrm.push(dx * 0.25, 1, dz * 0.25);
         }
+      }
+    }
