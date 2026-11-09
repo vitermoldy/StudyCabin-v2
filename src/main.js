@@ -90,3 +90,5 @@ function inkFromPoster() {
             const y = Math.min(H - 1, Math.max(0, Math.round(r.y + (r.h * (gy + 0.5)) / 4)));
             const [R, G, B] = ctx.getImageData(x, y, 1, 1).data;
             const l = 0.2126 * lin(R) + 0.7152 * lin(G) + 0.0722 * lin(B);
+            sum += l;
+            max = Math.max(max, l);
