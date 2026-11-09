@@ -140,3 +140,6 @@ export class Climate extends Emitter {
   }
 
   get weatherInfo() {
+    return WEATHERS[this.weather];
+  }
+
