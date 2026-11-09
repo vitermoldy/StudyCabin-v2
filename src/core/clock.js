@@ -7,3 +7,6 @@ export const SPEEDS = {
   real: 1 / 60,
   normal: 1, // the brief: one game minute every real second
   fast: 10,
+};
+
+export const SPEED_LABELS = {
