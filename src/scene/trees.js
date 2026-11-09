@@ -53,3 +53,5 @@ function broadleafGeometry() {
   const trunk = new THREE.CylinderGeometry(0.025, 0.045, 0.5, 7);
   trunk.translate(0, 0.25, 0);
   trunkParts.push(flat(trunk));
+  for (const [ang, tilt] of [[0.4, 0.6], [2.6, -0.55]]) {
+    const limb = new THREE.CylinderGeometry(0.012, 0.022, 0.28, 5);
