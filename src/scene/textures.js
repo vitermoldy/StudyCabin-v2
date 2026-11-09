@@ -114,3 +114,5 @@ export function deckTexture() {
 export function floorTexture() {
   const [c, ctx] = canvas(256, 256);
   const rand = rng(41);
+  const rows = 6;
+  const rh = 256 / rows;
