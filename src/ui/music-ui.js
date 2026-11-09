@@ -97,3 +97,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     player.setVolume(Number(vol.value));
   });
   let seeking = false;
+  seek.addEventListener('input', () => {
+    seeking = true;
