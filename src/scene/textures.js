@@ -158,3 +158,5 @@ export function panelTexture() {
 /** A soft knit / linen weave used on fabrics. */
 export function fabricTexture() {
   const [c, ctx] = canvas(64, 64);
+  const rand = rng(61);
+  ctx.fillStyle = '#d8d8d8';
