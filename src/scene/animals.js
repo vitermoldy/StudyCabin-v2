@@ -755,3 +755,4 @@ export class Animals {
     const fox = this.byName.fox;
     return { owl: this.owl.perched ? 1 : 0, fox: fox.visible ? 1 : 0 };
   }
+}
