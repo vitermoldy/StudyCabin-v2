@@ -306,3 +306,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center;
   padding: var(--s-5); font-size: var(--t-small); color: var(--muted);
 }
+.player__state[hidden] { display: none; }
+.player__now { display: flex; gap: var(--s-3); align-items: flex-start; margin-top: var(--s-3); min-height: 48px; }
