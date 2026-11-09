@@ -478,3 +478,5 @@ export class Cabin {
     this.maxLight = { kitchen: 9, living: 7, bed: 5, desk: 3.2, stove: 3.2, fire: 7 };
   }
 
+  // ------------------------------------------------------------ state
+  /** Targets for every lamp and moving part, each 0..1. */
