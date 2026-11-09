@@ -72,3 +72,6 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Dark ground behind the canvas | The page is a scene that runs through day and night; the ground only shows before the first frame. |
 | Lightning is a soft sky brightening, at most one flash every 8 s, off under reduced motion | Storm atmosphere without a flashing hazard. |
 | Thick lawn of fine blades, dark at the root, light at the tip, parting round the pointer | The owner's grass reference. In v2 the blades are a little shorter, sparse under the trees, with a touch of gold at the tips as in SongPlay's meadow. |
+| Northern lights green to teal with a rose top, galaxy band, two star layers | Asked for by the owner. The reference's violet is left out (taste-skill: never violet); green aurora is the natural colour. |
+| Drag, slide and zoom the camera by hand, double-click to reset | Asked for by the owner; the five views stay as starting points. |
+
