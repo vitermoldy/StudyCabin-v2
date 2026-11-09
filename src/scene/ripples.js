@@ -75,3 +75,5 @@ export class Ripples {
       wrapS: THREE.ClampToEdgeWrapping,
       wrapT: THREE.ClampToEdgeWrapping,
       depthBuffer: false,
+      stencilBuffer: false,
+    };
