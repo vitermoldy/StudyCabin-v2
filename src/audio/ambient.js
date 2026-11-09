@@ -284,3 +284,5 @@ export class Ambient extends Emitter {
       g.gain.exponentialRampToValueAtTime(0.045 * level, t0 + 0.015);
       g.gain.exponentialRampToValueAtTime(0.0001, t0 + 0.09);
       o.connect(g).connect(this.g.wildlife);
+      o.start(t0);
+      o.stop(t0 + 0.1);
