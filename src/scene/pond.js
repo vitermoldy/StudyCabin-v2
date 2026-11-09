@@ -244,3 +244,5 @@ export class Pond {
     u.uSunColor.value.copy(atmo.sunColor);
     u.uSunVis.value = atmo.uniforms.uSunVis.value;
     u.uMoonDir.value.copy(atmo.moonDir);
+    u.uMoonVis.value = atmo.uniforms.uMoonVis.value * (1 - atmo.overcast * 0.8);
+    // The pond freezes as winter sets in and thaws as it goes.
