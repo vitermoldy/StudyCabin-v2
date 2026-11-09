@@ -142,3 +142,5 @@ const CLEAR = [
   { y: 0.0, zenith: C('#2c6070'), horizon: C('#e8b98a') },
   { y: 0.12, zenith: C('#4a82a4'), horizon: C('#e6dcc2') },
   { y: 0.35, zenith: C('#5d90aa'), horizon: C('#b4cec4') },
+  { y: 1.0, zenith: C('#5a8aa6'), horizon: C('#b9d2c8') },
+];
