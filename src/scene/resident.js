@@ -231,3 +231,6 @@ export class Resident {
     const mug = new THREE.Mesh(new THREE.CylinderGeometry(0.042, 0.038, 0.09, 12), m.mug);
     mug.position.set(0, -0.02, 0.04);
     this.armR.grip.add(mug);
+    this.props.mug = mug;
+
+    const guitar = new THREE.Group();
