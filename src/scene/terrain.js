@@ -279,3 +279,5 @@ export class Terrain {
       const L = 0.55 + rand() * 0.3;
       const rise = 0.85 + rand() * 0.25;
       const dx = Math.cos(ang);
+      const dz = Math.sin(ang);
+      const point = (t, side) => {
