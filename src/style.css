@@ -238,3 +238,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .icon-btn--main { width: 52px; height: 52px; background: var(--ink); color: var(--bg); }
 .icon-btn--main:hover:not(:disabled) { background: #fff; }
 .icon-btn--main:disabled { background: rgba(228, 229, 225, 0.2); color: rgba(23, 23, 22, 0.6); }
+.toggle {
+  height: 44px; padding: 0 var(--s-3); border: 1px solid var(--line-strong); border-radius: var(--r-sm);
