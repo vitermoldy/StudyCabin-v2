@@ -44,3 +44,5 @@ export const TRAIL_LOOP = trailLoop(16);
  * Spots the resident uses. `via` leads from the area's hub line to the spot;
  * `face` is the rotation about y once there (0 faces the clearing, +z).
  */
+export const SPOTS = {
+  bed: { area: 'in', via: [p(3.0, SPINE_Z), p(3.0, -1.35)], at: p(3.1, -1.35), face: Math.PI / 2 },
