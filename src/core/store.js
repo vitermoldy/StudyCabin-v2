@@ -23,3 +23,5 @@ function flush() {
   try {
     localStorage.setItem(KEY, JSON.stringify(cache));
   } catch {
+    /* storage unavailable: settings live for this visit only */
+  }
