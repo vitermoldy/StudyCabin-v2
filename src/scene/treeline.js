@@ -146,3 +146,4 @@ export class Treeline {
 
 // Fir green as a tint on the haze (linear).
 const FIR = new THREE.Color(0.78, 1.0, 0.86);
+const FIR_FAR = new THREE.Color(0.9, 1.0, 0.94);
