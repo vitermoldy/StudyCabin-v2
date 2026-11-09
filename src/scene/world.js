@@ -86,3 +86,5 @@ export class World {
     const h = this.canvas.clientHeight || window.innerHeight;
     this.width = w;
     this.height = h;
+    this.renderer.setSize(w, h, false);
+    this.camera.aspect = w / h;
