@@ -316,3 +316,5 @@ export class MusicPlayer extends Emitter {
       item.status = 'error';
       item.error = ERROR_TEXT[code] || 'This video cannot play here.';
       this.persist();
+    }
+    this.status = 'paused';
