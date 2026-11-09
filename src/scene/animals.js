@@ -377,3 +377,5 @@ function createWalker(name, rand, inUse) {
           a.lookAim = 0;
         }
         place(dt);
+        pose(dt, time, false);
+        return;
