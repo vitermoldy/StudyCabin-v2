@@ -140,3 +140,5 @@ export class Ambient extends Emitter {
       try {
         await this.ctx.resume();
       } catch {
+        /* resumed on the next gesture */
+      }
