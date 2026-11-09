@@ -32,3 +32,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
       )
       .replace(
         '#include <map_fragment>',
+        `#include <map_fragment>
+        float snowAmt = clamp(uSnow * uSnowScale * smoothstep(0.3, 0.75, vUpness), 0.0, 1.0);
