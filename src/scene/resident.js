@@ -366,3 +366,5 @@ export class Resident {
         const dz = target.z - this.pos.z;
         const dist = Math.hypot(dx, dz);
         const step = 0.95 * speedUp * dt;
+        if (dist <= step) {
+          this.pos.set(target.x, 0, target.z);
