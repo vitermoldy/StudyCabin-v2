@@ -227,3 +227,5 @@ export class World {
     let want = 0;
     if (this.pointerOn) {
       this.raycaster.setFromCamera(this.pointerNdc, this.camera);
+      const hit = this.raycaster.ray.intersectPlane(this.groundPlane, tmpHit);
+      if (hit && hit.distanceTo(this.camera.position) < 70) {
