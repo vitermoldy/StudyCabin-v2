@@ -95,3 +95,5 @@ export class Ambient extends Emitter {
       wildlife: gain(), fire: gain(), fireLow: gain(),
     };
     // The wood: a low rush of branches under the gusts, and the high rustle of leaves.
+    this.canopyFilter = filter('lowpass', 520);
+    chain(src(0.3), this.canopyFilter, this.g.canopy, this.master);
