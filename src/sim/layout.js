@@ -40,3 +40,5 @@ const p = (x, z, y = FLOOR) => ({ x, y, z });
 // where the spur from the deck steps meets it.
 export const TRAIL_LOOP = trailLoop(16);
 
+/**
+ * Spots the resident uses. `via` leads from the area's hub line to the spot;
