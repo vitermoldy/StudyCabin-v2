@@ -183,3 +183,5 @@ export class Atmosphere {
     this.uniforms = {
       uZenith: { value: C('#6a8fb8') },
       uHorizon: { value: C('#c3d0d6') },
+      uGround: { value: C('#8e8f88') },
+      uSunDir: { value: new THREE.Vector3(0, 1, 0) },
