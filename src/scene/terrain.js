@@ -82,3 +82,5 @@ export class Terrain {
       uMud: { value: new THREE.Color('#3f3527') },
       uVeg: { value: new THREE.Color('#76893a') },
       uCaustic: { value: 0.5 },
+    };
+    const mat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.97, metalness: 0 });
