@@ -39,3 +39,5 @@ export const ROUTES = {
   hare: [
     {
       pts: [[-34, 12], [-20, 12], [-10, 16], [-6, 20], [-20, 24], [-32, 26]],
+      stops: [{ at: 1, pose: 'sit' }, { at: 2, pose: 'sit' }, { at: 3, pose: 'sit' }],
+    },
