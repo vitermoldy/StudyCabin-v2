@@ -173,3 +173,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const metaText = document.createElement('span');
     if (item.status === 'error') metaText.textContent = item.error;
     else if (isCurrent && player.isPlaying) metaText.textContent = item.kind === 'playlist' ? 'Playlist, playing now' : 'Playing now';
+    else metaText.textContent = item.kind === 'playlist' ? 'Playlist' : item.author || item.source;
+    meta.appendChild(metaText);
