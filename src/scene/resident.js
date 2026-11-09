@@ -186,3 +186,5 @@ export class Resident {
       grip.position.y = -0.29;
       el.add(grip);
       return { sh, el, grip };
+    };
+    this.armL = arm(1);
