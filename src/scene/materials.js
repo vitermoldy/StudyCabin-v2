@@ -22,3 +22,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
     shader.vertexShader = shader.vertexShader
       .replace('#include <common>', '#include <common>\nvarying float vUpness;')
       .replace(
+        '#include <defaultnormal_vertex>',
+        '#include <defaultnormal_vertex>\n vUpness = inverseTransformDirection(transformedNormal, viewMatrix).y;',
