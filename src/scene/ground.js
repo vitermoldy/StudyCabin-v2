@@ -62,3 +62,6 @@ export function pondE(x, z) {
 /** The point on ring `e` round the pond at angle `a` (radians, in the oval's own frame). */
 export function pondPoint(e, a) {
   const w = pondWobble(a) * e;
+  return { x: POND.x + Math.cos(a) * w * POND.rx, z: POND.z + Math.sin(a) * w * POND.rz };
+}
+
