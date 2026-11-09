@@ -279,3 +279,5 @@ export class MusicPlayer extends Emitter {
     const item = this.item;
     if (s === YT.PlayerState.PLAYING) {
       this.status = 'playing';
+      const data = this.player.getVideoData?.() || {};
+      this.nowTitle = data.title || '';
