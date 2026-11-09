@@ -179,3 +179,5 @@ export function printTexture() {
   ctx.fillStyle = '#e9e5dc';
   ctx.fillRect(0, 0, 256, 192);
   ctx.fillStyle = '#c98f5a';
+  ctx.beginPath();
+  ctx.arc(170, 78, 18, 0, Math.PI * 2);
