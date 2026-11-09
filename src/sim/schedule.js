@@ -13,3 +13,5 @@ export const DAY = [
   },
   { id: 'breakfast', start: h(7, 50), end: h(8, 20), word: 'Breakfast', line: 'Breakfast at the table', spot: 'dine', pose: 'sitEat' },
   { id: 'study-am', start: h(8, 20), end: h(10, 40), word: 'Study', line: 'Studying at the desk by the glass', spot: 'desk', pose: 'sitType' },
+  {
+    id: 'walk', start: h(10, 40), end: h(11, 40), word: 'Walk', line: 'A walk round the pond', spot: 'trail', pose: 'walkLoop',
