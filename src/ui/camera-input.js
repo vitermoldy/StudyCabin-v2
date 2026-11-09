@@ -102,3 +102,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
 
   canvas.addEventListener('wheel', (e) => {
     const w = getWorld();
+    if (!w) return;
+    e.preventDefault();
