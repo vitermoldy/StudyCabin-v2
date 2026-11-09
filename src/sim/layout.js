@@ -17,3 +17,5 @@ export const FURNITURE = {
   counter: { x: -5.35, z: -2.72, w: 3.1, d: 0.62 },
   island: { x: -5.4, z: -0.82, w: 1.7, d: 0.78 },
   table: { x: -5.0, z: 1.22, w: 1.5, d: 0.84 },
+  shelf: { x: -3.05, z: -2.82, w: 1.05, d: 0.34 },
+  sofa: { x: -1.5, z: -1.85, w: 2.1, d: 0.92 },
