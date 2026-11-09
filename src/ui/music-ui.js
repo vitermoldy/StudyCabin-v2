@@ -137,3 +137,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     if (i === player.current) li.classList.add('is-current');
     if (item.status === 'error') li.classList.add('is-error');
     const thumb = thumbFor(item);
+    if (thumb) {
+      const img = document.createElement('img');
