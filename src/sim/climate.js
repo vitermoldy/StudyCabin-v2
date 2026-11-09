@@ -53,3 +53,7 @@ export const SEASONS = {
   },
 };
 
+const LOOK_COLOURS = ['grass', 'soil', 'mud', 'foliage', 'fern'];
+
+export const WEATHER_ORDER = ['clear', 'cloudy', 'fog', 'rain', 'storm', 'snow'];
+
