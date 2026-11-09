@@ -279,3 +279,5 @@ export class World {
     const ratio = this.renderer.getPixelRatio();
     const H = gl.drawingBufferHeight;
     const out = [];
+    const buf = new Uint8Array(4 * 12 * 6);
+    for (const r of rects) {
