@@ -135,3 +135,5 @@ export class Treeline {
   update({ fog, snow, flash }) {
     const c = this.colors;
     c.fog.copy(fog);
+    c.nearTop.copy(fog).multiply(FIR).multiplyScalar(0.42);
+    c.nearLow.copy(fog).multiply(FIR).multiplyScalar(0.78);
