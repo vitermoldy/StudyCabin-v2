@@ -152,3 +152,6 @@ const OVERCAST = [
   { y: 0.12, zenith: C('#84908b'), horizon: C('#a4aca5') },
   { y: 0.35, zenith: C('#9ba8a3'), horizon: C('#bcc6c0') },
   { y: 1.0, zenith: C('#a1adaa'), horizon: C('#c2cbc6') },
+];
+
+function sample(table, y, key, out) {
