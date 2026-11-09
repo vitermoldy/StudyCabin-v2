@@ -112,3 +112,5 @@ export class Cabin {
       ceramic: std('#e6e1d6', { roughness: 0.35 }),
       leaf: std('#4f6a44', { roughness: 0.8 }),
       pot: std('#b19f88', { roughness: 0.8 }),
+      print: std('#ffffff', { map: printTexture(), roughness: 0.9 }),
+      books: std('#ffffff', { map: booksTexture(), roughness: 0.9 }),
