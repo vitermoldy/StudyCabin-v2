@@ -20,3 +20,6 @@ npm run preview    # serves dist/
 Needs a browser with WebGL 2 (any current Chrome, Edge, Firefox or Safari). Without it the page
 shows a still picture and the music, timer and ambient sound still work.
 
+## What is in it
+
+- **The forest.** An oval clearing in a wood of firs and broadleaf trees, thicker and taller the
