@@ -180,3 +180,5 @@ export class WeatherFX {
       seeds(70, 1, 13),
       new THREE.ShaderMaterial({
         uniforms: this.smokeU,
+        transparent: true,
+        depthWrite: false,
