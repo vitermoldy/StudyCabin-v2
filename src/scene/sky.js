@@ -237,3 +237,5 @@ export class Atmosphere {
     this.overcast = 0;
     this.horizon = new THREE.Color();
     this.zenith = new THREE.Color();
+    this.fogColor = new THREE.Color();
+    this.sunColor = new THREE.Color();
