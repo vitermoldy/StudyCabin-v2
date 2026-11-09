@@ -24,3 +24,5 @@ export const SEASONS = {
     odds: { clear: 0.2, cloudy: 0.3, fog: 0.25, rain: 0.2, storm: 0.05 },
     line: 'Gold grass in the clearing, leaves on the wind, fog most mornings.',
   },
+  spring: {
+    label: 'Spring',
