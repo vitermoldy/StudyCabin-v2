@@ -24,3 +24,5 @@ export class Overlay {
     if (text === this.currentWord) return;
     this.currentWord = text;
     const el = this.word;
+    el.textContent = '';
+    const said = document.createElement('span');
