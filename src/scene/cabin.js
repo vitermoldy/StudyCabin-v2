@@ -399,3 +399,5 @@ export class Cabin {
     lid.rotation.x = -0.32;
     this.group.add(lid);
     this._bx(trim, -0.2, 0.2, 0, 0.27, -0.006, 0.006, { parent: lid });
+    this._bx(screen, -0.185, 0.185, 0.015, 0.255, -0.012, -0.007, { parent: lid, cast: false });
+    // notebook, pen, mug, plant
