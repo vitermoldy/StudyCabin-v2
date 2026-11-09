@@ -60,3 +60,5 @@ function stick(material, length, radius, [x, y, z], tiltZ, tiltX = 0) {
   geometry.translate(0, length / 2, 0);
   const mesh = new THREE.Mesh(geometry, material);
   mesh.position.set(x, y, z);
+  mesh.rotation.set(tiltX, 0, tiltZ);
+  return mesh;
