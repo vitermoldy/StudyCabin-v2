@@ -128,3 +128,5 @@ export class Ambient extends Emitter {
   }
 
   /** Turn sound on or off. Must run from a click or key press the first time. */
+  async setEnabled(on) {
+    this.enabled = !!on;
