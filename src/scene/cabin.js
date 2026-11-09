@@ -422,3 +422,5 @@ export class Cabin {
     // low lounge chairs facing the clearing
     for (const c of [F.deckChair, F.deckChair2]) {
       const g = new THREE.Group();
+      g.position.set(c.x, 0, c.z);
+      this.group.add(g);
