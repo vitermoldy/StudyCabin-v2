@@ -435,3 +435,5 @@ export class Ambient extends Emitter {
   chime() {
     const AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return;
+    if (!this.chimeCtx) this.chimeCtx = this.ctx || new AC();
+    const ctx = this.chimeCtx;
