@@ -49,3 +49,5 @@ export function sidingTexture() {
     }
   }
   grain(ctx, 256, 256, rand, 1400, 0.05);
+  for (let i = 0; i < boards; i++) {
+    const x = Math.round(i * bw);
