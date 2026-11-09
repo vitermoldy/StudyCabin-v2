@@ -102,3 +102,5 @@ const SEASON = {
  * @param {'deer'|'fox'|'hare'|'squirrel'} kind
  * @param {{minutes:number, params:{rain:number, snow:number, storm:number}, season:string}} env
  */
+export function keenness(kind, { minutes, params, season }) {
+  if (params.storm > 0.4) return 0;
