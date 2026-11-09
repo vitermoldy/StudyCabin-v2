@@ -96,3 +96,5 @@ export class MusicPlayer extends Emitter {
     this.queue = [];
     this.current = -1;
     this._stop();
+    this.persist();
+    this.emit('change');
