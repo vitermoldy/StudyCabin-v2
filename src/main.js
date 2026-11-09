@@ -329,3 +329,5 @@ function frame(now) {
     const atmo = world?.atmo;
     const m = clock.minutes;
     const heard = world ? world.animals.audible : { owl: 0, fox: 0 };
+    ambient.update(0.1, {
+      rain: p.rain,
