@@ -145,3 +145,5 @@ export class Climate extends Emitter {
 
   setSeason(id, { fromAuto = false } = {}) {
     if (!(id in SEASONS)) return;
+    const changed = id !== this.season;
+    this.season = id;
