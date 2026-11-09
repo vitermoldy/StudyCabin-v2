@@ -426,3 +426,4 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 }
 @media (prefers-reduced-motion: reduce) and (max-width: 699px) {
   .panel, .panel[data-open="true"] { transform: none; }
+}
