@@ -54,3 +54,5 @@ export function entryAt(minutes) {
  * @param {number} minutes  time of day
  * @param {{badWeather:boolean, cold:boolean}} conditions
  * @param {'focus'|'break'|null} focusPhase  set while the focus timer runs
+ */
+export function activityAt(minutes, conditions, focusPhase = null) {
