@@ -192,3 +192,5 @@ function makeSquirrel() {
   const tail = new THREE.Group();
   tail.position.set(-0.09, 0.09, 0);
   body.add(tail);
+  [[-0.05, 0.05, 0.05], [-0.07, 0.13, 0.055], [-0.04, 0.21, 0.05], [0.01, 0.25, 0.042]].forEach(([x, y, r]) => tail.add(blob(fur, [r, r * 1.2, r * 0.8], [x, y, 0])));
+  root.scale.setScalar(1.6);
