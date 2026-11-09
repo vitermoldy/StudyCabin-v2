@@ -364,3 +364,5 @@ export class Resident {
         const target = TRAIL_LOOP[(this.loopIndex + 1) % TRAIL_LOOP.length];
         const dx = target.x - this.pos.x;
         const dz = target.z - this.pos.z;
+        const dist = Math.hypot(dx, dz);
+        const step = 0.95 * speedUp * dt;
