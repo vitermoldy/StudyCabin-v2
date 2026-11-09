@@ -242,3 +242,5 @@ export class Resident {
     const neckG = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.05, 0.03), m.guitarDark);
     neckG.position.set(0.58, 0, 0.03);
     const hole = new THREE.Mesh(new THREE.CircleGeometry(0.05, 16), m.guitarDark);
+    hole.position.set(0.12, 0, 0.047);
+    guitar.add(bodyA, bodyB, neckG, hole);
