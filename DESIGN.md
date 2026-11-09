@@ -64,3 +64,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Black dock at the bottom centre | The reference's black "HOME" bar, grown into the app's controls. |
 | Small text on dark plates | Text under 24px must hold 4.5:1 over sky, fog and night; a plate guarantees it. |
 | Amber accent only on: active state, focus ring, primary button, the playing row | One warm note, like the lamps; never on large areas. |
+| Glass blur on the open panel only (R-10) | Keeps the scene readable behind the one open panel; nothing else is frosted. |
+| No shadows on UI (R-12) | The scene has real shadows; flat panels keep the two apart. |
