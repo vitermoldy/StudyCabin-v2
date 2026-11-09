@@ -133,3 +133,5 @@ export class World {
 
   /** Decide lamps, stove, fire and door from the time, weather and resident. */
   _house(state) {
+    const { minutes, climate, activity } = state;
+    const atmo = this.atmo;
