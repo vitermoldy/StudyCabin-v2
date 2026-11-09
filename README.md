@@ -97,7 +97,7 @@ shows a still picture and the music, timer and ambient sound still work.
 | `src/scene/trees.js`, `treeline.js` | The 3D forest and the rings of far trees |
 | `src/scene/pond.js`, `ripples.js` | The pond's water, ice and lily pads; the ripple simulation |
 | `src/scene/terrain.js`, `props.js` | The ground, grass and ferns; stones, the fallen trunk and the stump |
-| `src/scene/pets.js`
+| `src/scene/pets.js` |
 
 ## Known limits
 
