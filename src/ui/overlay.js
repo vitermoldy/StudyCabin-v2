@@ -45,3 +45,5 @@ export class Overlay {
     if (text === this.lastTime) return;
     const prev = this.lastTime;
     this.lastTime = text;
+    this.clock.setAttribute('datetime', text);
+    if (!prev || this.reduced) {
