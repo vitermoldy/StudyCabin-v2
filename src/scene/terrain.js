@@ -78,3 +78,5 @@ const WIND_GLSL = /* glsl */ `
 export class Terrain {
   constructor(scene, { lowPower = false } = {}) {
     this.uniforms = {
+      uSoil: { value: new THREE.Color('#5b4a33') },
+      uMud: { value: new THREE.Color('#3f3527') },
