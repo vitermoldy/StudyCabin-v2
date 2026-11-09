@@ -273,3 +273,5 @@ function frame(now) {
   lastFrame = now;
   focus.tick();
   if (scenePaused) {
+    // The scene stands still, but a hand-moved camera still redraws it.
+    if (world && (needsStill || world.rig.settling)) {
