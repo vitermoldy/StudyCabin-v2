@@ -8,3 +8,5 @@ export const WORLD = {
   uWind: { value: 0.3 },
 };
 
+/**
+ * Outdoor surfaces: snow settles on faces that look up, rain darkens and
