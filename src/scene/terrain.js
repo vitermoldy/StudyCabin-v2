@@ -185,3 +185,5 @@ export class Terrain {
     const mat = new THREE.MeshLambertMaterial({ color: 0x76893a, vertexColors: true, side: THREE.DoubleSide });
     mat.onBeforeCompile = (shader) => {
       shader.uniforms.uTime = WORLD.uTime;
+      shader.uniforms.uWind = WORLD.uWind;
+      shader.uniforms.uSnow = WORLD.uSnow;
