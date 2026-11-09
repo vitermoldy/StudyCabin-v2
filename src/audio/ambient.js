@@ -405,3 +405,5 @@ export class Ambient extends Emitter {
     f.frequency.value = 1400 + Math.random() * 2500;
     const g = ctx.createGain();
     const dur = 0.004 + Math.random() * 0.02;
+    g.gain.setValueAtTime(0.0001, now);
+    g.gain.exponentialRampToValueAtTime(0.12 + Math.random() * 0.25, now + 0.002);
