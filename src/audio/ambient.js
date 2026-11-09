@@ -238,3 +238,5 @@ export class Ambient extends Emitter {
       this._nextBird = now + 1.2 + Math.random() * 4 / (0.4 + birds);
     }
 
+    // Frogs from the pond on warm evenings.
+    const frogs = m.wildlife * (env.frogs ?? 0);
