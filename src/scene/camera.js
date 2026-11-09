@@ -49,3 +49,5 @@ export class CameraRig {
     const dir = outPos.clone().sub(outTarget);
     const dist0 = dir.length();
     dir.normalize();
+    const hfov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(cam.fov) / 2) * cam.aspect);
+    const need = v.width / 2 / Math.tan(hfov / 2);
