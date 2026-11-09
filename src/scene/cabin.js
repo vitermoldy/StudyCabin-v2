@@ -131,3 +131,5 @@ export class Cabin {
     this._bx(floor, CABIN.x0, CABIN.x1, FLOOR - 0.03, FLOOR, CABIN.z0, FRONT);
     this._bx(ceiling, CABIN.x0, CABIN.x1, WALL_TOP, WALL_TOP + 0.06, CABIN.z0, FRONT, { cast: false });
     // back wall
+    this._bx(siding, -7.15, 7.15, 0.05, WALL_TOP, -3.15, -3.03);
+    this._bx(panel, CABIN.x0, CABIN.x1, FLOOR, WALL_TOP, -3.03, -3.0, { cast: false });
