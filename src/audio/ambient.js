@@ -431,3 +431,5 @@ export class Ambient extends Emitter {
     s.start(now, Math.random() * 2, 4.4);
   }
 
+  /** Two soft bell notes for the end of a focus or break block. Works with ambient off. */
+  chime() {
