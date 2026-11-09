@@ -703,3 +703,6 @@ export class Animals {
         fawn.a.s = Math.max(0, walker.a.s - 1.9);
         fawn.a.stops = [];
       }
+    };
+  }
+
