@@ -170,3 +170,6 @@ export function mountSound({ ambient }) {
     vol.disabled = !ambient.enabled;
   };
   ambient.on('change', render);
+  render();
+}
+
