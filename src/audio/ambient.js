@@ -372,3 +372,5 @@ export class Ambient extends Emitter {
   _bark(level) {
     const ctx = this.ctx;
     const now = ctx.currentTime + 0.05;
+    const f = ctx.createBiquadFilter();
+    f.type = 'bandpass';
