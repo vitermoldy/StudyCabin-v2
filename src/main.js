@@ -333,3 +333,5 @@ function frame(now) {
       rain: p.rain,
       wind: p.wind,
       storm: p.storm,
+      day: atmo ? atmo.dayFactor : smoothstep(330, 480, m) * (1 - smoothstep(1080, 1200, m)),
+      night: atmo ? atmo.night : 1 - smoothstep(300, 420, m) + smoothstep(1140, 1260, m),
