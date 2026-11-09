@@ -5,3 +5,5 @@ import { load, save } from './store.js';
 export const SPEEDS = {
   paused: 0,
   real: 1 / 60,
+  normal: 1, // the brief: one game minute every real second
+  fast: 10,
