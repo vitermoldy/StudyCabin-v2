@@ -303,3 +303,5 @@ export class World {
           min = Math.min(min, blk);
           n++;
         }
+      }
+      out.push({ mean: sum / n, max, min });
