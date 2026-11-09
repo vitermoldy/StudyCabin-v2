@@ -38,3 +38,6 @@ export class Clock extends Emitter {
 
   /** Hours as a float, 0..24. */
   get hours() {
+    return this.minutes / 60;
+  }
+
