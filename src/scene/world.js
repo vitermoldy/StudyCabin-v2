@@ -14,3 +14,6 @@ import { Treeline } from './treeline.js';
 import { Animals } from './animals.js';
 import { Props } from './props.js';
 import { POND, WATER_Y, groundHeight, pondE } from './ground.js';
+import { fireflies } from '../sim/wildlife.js';
+
+export function webglAvailable() {
