@@ -199,3 +199,5 @@ export class Cabin {
       // barge boards on both gable ends
       for (const ex of [-1, 1]) {
         const bg = new THREE.BoxGeometry(0.06, 0.22, len);
+        const b = this._m(bg, trim);
+        b.position.set(ex * (w / 2 + 0.02), slab.position.y - 0.03, zc);
