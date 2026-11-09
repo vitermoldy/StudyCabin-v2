@@ -214,3 +214,6 @@ export class Atmosphere {
     scene.add(this.dome);
 
     this.fog = new THREE.FogExp2(0xc3c6c4, 0.004);
+    scene.fog = this.fog;
+
+    this.hemi = new THREE.HemisphereLight(0xc8d2d8, 0x6f6a60, 1);
