@@ -28,3 +28,5 @@ export class Overlay {
     const said = document.createElement('span');
     said.className = 'sr-only';
     said.textContent = text;
+    el.appendChild(said);
+    [...text].forEach((ch, i) => {
