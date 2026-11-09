@@ -685,3 +685,5 @@ export class Animals {
     this.inUse = new Set();
     this.walkers = Object.keys(KINDS).map((name) => createWalker(name, rand, this.inUse));
     this.walkers.forEach((w) => this.group.add(w.root));
+    this.byName = Object.fromEntries(this.walkers.map((w) => [w.name, w]));
+    this.flocks = createFlocks(rand, lowPower ? 4 : 6);
