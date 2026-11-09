@@ -17,3 +17,5 @@ function buildGround() {
   const NX = 280;
   const NZ = 260;
   const pos = [];
+  const mix = [];
+  const shade = [];
