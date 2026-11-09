@@ -22,3 +22,5 @@ export class Ambient extends Emitter {
     this.mix = { leaves: 0.8, rain: 0.8, wind: 0.6, wildlife: 0.7, fire: 0.8, ...(saved.mix || {}) };
     this.duckWhenMusic = saved.duck !== false;
     this.musicPlaying = false;
+    this.ctx = null;
+    this._t = 0;
