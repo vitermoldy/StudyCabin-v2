@@ -226,3 +226,6 @@ export class Resident {
     book.position.set(0, 0.0, 0.36);
     book.rotation.x = -0.9;
     this.chest.add(book);
+    this.props.book = book;
+
+    const mug = new THREE.Mesh(new THREE.CylinderGeometry(0.042, 0.038, 0.09, 12), m.mug);
