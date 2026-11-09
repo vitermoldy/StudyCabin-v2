@@ -69,3 +69,5 @@ export function loadYouTubeApi() {
       resolve(window.YT);
     };
     const s = document.createElement('script');
+    s.src = 'https://www.youtube.com/iframe_api';
+    s.async = true;
