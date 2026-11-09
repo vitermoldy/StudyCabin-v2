@@ -36,3 +36,5 @@ export class Cabin {
   }
 
   // ------------------------------------------------------------ helpers
+  _m(geo, mat, { cast = true, receive = true, parent = this.group } = {}) {
+    const mesh = new THREE.Mesh(geo, mat);
