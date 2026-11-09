@@ -224,3 +224,5 @@ export class Atmosphere {
     const coarse = matchMedia('(max-width: 700px)').matches;
     this.sun.shadow.mapSize.set(coarse ? 1024 : 2048, coarse ? 1024 : 2048);
     const sc = this.sun.shadow.camera;
+    sc.left = -19; sc.right = 19; sc.top = 15; sc.bottom = -13; sc.near = 5; sc.far = 160;
+    this.sun.shadow.bias = -0.0005;
