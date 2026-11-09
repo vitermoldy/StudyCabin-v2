@@ -158,3 +158,5 @@ export class Terrain {
       const dx = Math.cos(ang);
       const dz = Math.sin(ang);
       const px = -dz * w;
+      const pz = dx * w;
+      const at = (f, side) => {
