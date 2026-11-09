@@ -107,3 +107,5 @@ export function route(fromSpot, toSpot, from = null) {
   pts.push({ ...b.at });
 
   // Drop points that repeat the one before.
+  const out = [];
+  for (const q of pts) {
