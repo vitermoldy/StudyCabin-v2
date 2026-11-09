@@ -42,3 +42,6 @@ export class Cabin {
     mesh.receiveShadow = receive;
     parent.add(mesh);
     return mesh;
+  }
+
+  /** Axis-aligned box from bounds, UVs in metres. */
