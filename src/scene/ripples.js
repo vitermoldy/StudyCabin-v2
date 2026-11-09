@@ -42,3 +42,5 @@ const UPDATE_FRAG = /* glsl */ `
   precision highp float;
   uniform sampler2D uTex; uniform vec2 uDelta; uniform vec2 uOrigin; uniform float uSize;
   varying vec2 vUv;
+  ${POND_GLSL}
+  void main(){
