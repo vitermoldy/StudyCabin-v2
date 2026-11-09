@@ -277,3 +277,5 @@ function createWalker(name, rand, inUse) {
 
   function leave() {
     a.state = 'away';
+    a.timer = kind.away[0] + rand() * (kind.away[1] - kind.away[0]);
+    model.root.visible = false;
