@@ -14,3 +14,5 @@ function radios(fieldset, name, options, current, onPick) {
   row.className = 'choices__row';
   const inputs = new Map();
   for (const [value, label] of options) {
+    const lab = document.createElement('label');
+    lab.className = 'choice';
