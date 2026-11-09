@@ -172,3 +172,5 @@ export class Terrain {
         nrm.push(dx * 0.3, 1, dz * 0.3);
       };
       const l0 = at(0, -1), r0 = at(0, 1), l1 = at(0.55, -1), r1 = at(0.55, 1);
+      push(l0, 0); push(r0, 0); push(l1, 0.55);
+      push(r0, 0); push(r1, 0.55); push(l1, 0.55);
