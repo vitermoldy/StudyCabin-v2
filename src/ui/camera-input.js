@@ -31,3 +31,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     try {
       canvas.setPointerCapture(e.pointerId);
     } catch {
+      /* not capturable: fine */
+    }
