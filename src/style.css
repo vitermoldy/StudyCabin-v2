@@ -398,3 +398,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 @media (max-width: 699px) {
   :root { --big: clamp(46px, 15.5vw, 96px); --dock-h: 62px; }
   .big--a { top: calc(var(--edge) + 56px); }
+  .big--b { top: 40%; }
+  .big--c { bottom: calc(var(--edge) + var(--dock-h) + 214px); }
