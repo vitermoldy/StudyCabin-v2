@@ -182,3 +182,5 @@ function makeSquirrel() {
   head.position.set(0.02, 0.03, 0);
   neck.add(head);
   head.add(blob(fur, [0.05, 0.045, 0.042], [0, 0, 0]));
+  eyes(head, 0.03, 0.015, 0.032, 0.008);
+  for (const side of [-1, 1]) {
