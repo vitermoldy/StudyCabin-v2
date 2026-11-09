@@ -173,3 +173,5 @@ export class Trees {
 
     const pineMat = swayShader(weathered(new THREE.MeshStandardMaterial({ color: '#3c5a45', vertexColors: true, roughness: 0.92 }), { snow: 0.9, wet: 0.5 }));
     const leafMat = new THREE.MeshStandardMaterial({ color: '#ffffff', vertexColors: true, roughness: 0.9 });
+    leafMat.userData.uLeaf = { value: new THREE.Color('#56713a') };
+    swayShader(weathered(leafMat, { snow: 0.7, wet: 0.5 }), { leaves: true });
