@@ -543,3 +543,6 @@ function createFlocks(rand, count) {
       }
     },
   };
+}
+
+// The owl: flies in after dark to the roof ridge, sits there turning its head and blinking, and
