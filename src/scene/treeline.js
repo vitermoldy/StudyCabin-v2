@@ -27,3 +27,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
   const step = spacing / 6;
   const n = Math.ceil(circ / step);
   const pos = [];
+  const tAttr = [];
+  let first = 0;
