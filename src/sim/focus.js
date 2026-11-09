@@ -6,3 +6,7 @@ export const PRESETS = {
   long: { label: '50 min focus, 10 min break', focus: 50, short: 10, long: 20, rounds: 3 },
 };
 
+const PHASE_LABEL = { focus: 'Focus', short: 'Short break', long: 'Long break' };
+
+const today = () => new Date().toISOString().slice(0, 10);
+
