@@ -248,3 +248,5 @@ export class Resident {
     guitar.rotation.set(0, 0, 0.32);
     guitar.traverse((o) => { if (o.isMesh) o.castShadow = true; });
     this.spine.add(guitar);
+    this.props.guitar = guitar;
+    for (const p of Object.values(this.props)) p.visible = false;
