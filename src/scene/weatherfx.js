@@ -163,3 +163,5 @@ export class WeatherFX {
               float a = smoothstep(0.5, 0.4, d) * vA;
               if (a < 0.01) discard;
               gl_FragColor = vec4(mix(uColA, uColB, vMix) * (0.3 + uLight * 0.7), a);
+              #include <colorspace_fragment>
+            }`,
