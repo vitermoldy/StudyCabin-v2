@@ -136,3 +136,5 @@ export function groundHeight(x, z) {
   y += smooth(-3, 26, fd) * (0.5 + fbm(x * 0.035, z * 0.035, 4) * 2.6);
   // Hills round the whole wood, kept low down the camera's lane.
   const r = Math.hypot(x - CLEARING.x, z - CLEARING.z);
+  y += smooth(58, 175, r) * (2.5 + fbm(x * 0.009 + 3, z * 0.009, 4) * 16) * (1 - inLane(x, z));
+  y += (vnoise(x * 0.8, z * 0.8) - 0.5) * 0.05;
