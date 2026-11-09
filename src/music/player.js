@@ -62,3 +62,5 @@ export class MusicPlayer extends Emitter {
     return item;
   }
 
+  remove(index) {
+    if (index < 0 || index >= this.queue.length) return;
