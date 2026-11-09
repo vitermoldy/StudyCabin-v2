@@ -98,3 +98,5 @@ const FRAG = /* glsl */ `
 
     alpha = clamp(alpha, 0.0, 1.0) * smoothstep(-0.01, 0.03, vDepth);
     gl_FragColor = vec4(col / max(alpha, 0.001), alpha);
+    #include <tonemapping_fragment>
+    #include <colorspace_fragment>
