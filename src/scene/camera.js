@@ -104,3 +104,5 @@ export class CameraRig {
 
   /** True while the camera is still easing toward where the visitor put it. */
   get settling() {
+    const a = this.user;
+    const b = this.userS;
