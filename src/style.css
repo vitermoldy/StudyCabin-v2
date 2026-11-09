@@ -16,3 +16,5 @@
   --surface: var(--p-inv-surface);
   --ink: var(--p-inv-ink);
   --muted: #a7a8a3;
+  --action: var(--p-inv-action);
+  --action-ink: var(--p-inv-action-ink);
