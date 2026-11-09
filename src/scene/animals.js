@@ -343,3 +343,5 @@ function createWalker(name, rand, inUse) {
     kind,
     a,
     root: model.root,
+    plan,
+    leave,
