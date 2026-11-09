@@ -51,3 +51,7 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const nowSub = $('now-sub');
   const nowSrc = $('now-src');
   const openMusic = $('open-music');
+  const openMusicText = $('open-music-text');
+
+  panels.registerOpener('music', openMusic);
+
