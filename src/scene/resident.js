@@ -117,3 +117,5 @@ export class Resident {
     this.walkPhase = 0;
     this.speed = 1.25;
     this.loopIndex = 0;
+    this.loopPause = 0;
+    this.head = new THREE.Vector3();
