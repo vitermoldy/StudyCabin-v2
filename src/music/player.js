@@ -272,3 +272,6 @@ export class MusicPlayer extends Emitter {
     this.status = 'idle';
     this.nowTitle = '';
     if (this._ready) this.player.stopVideo();
+  }
+
+  _onState(s) {
