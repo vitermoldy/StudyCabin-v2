@@ -76,3 +76,5 @@ export class Overlay {
   /**
    * Pick the ink with the better worst-case contrast over the sampled area.
    * samples: [{mean, max, min}] relative luminance.
+   */
+  applyInk(samples) {
