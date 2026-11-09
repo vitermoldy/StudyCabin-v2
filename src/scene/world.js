@@ -209,3 +209,5 @@ export class World {
       stove: this.cabin.state.stove,
       viewportHeight: this.height * this.dpr,
       fireflies: this.fireflies,
+    });
+    // Glass reflects more by day, shows the lit room at night.
