@@ -231,3 +231,5 @@ function buildCurve(route, reverse) {
   return { curve, length, stops };
 }
 
+function createWalker(name, rand, inUse) {
+  const kind = KINDS[name];
