@@ -347,3 +347,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .qrow.is-error .qrow__meta { color: #f0b37a; }
 .qrow__tools { display: flex; }
 .qrow__tools .icon-btn { width: 40px; border-radius: var(--r-sm); }
+.queue__empty[hidden] { display: none; }
+
+/* day */
