@@ -261,3 +261,5 @@ document.addEventListener('click', e => {
 });
 
 /* ---------------------------------------------------------------- switches */
+document.addEventListener('click', e => {
+  const sw = e.target.closest('.m-switch');
