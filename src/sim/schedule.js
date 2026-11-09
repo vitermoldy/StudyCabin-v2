@@ -29,3 +29,5 @@ export const DAY = [
   {
     id: 'guitar', start: h(16, 50), end: h(18, 0), word: 'Guitar', line: 'Playing guitar on the deck', spot: 'guitar', pose: 'sitGuitar',
     wet: { line: 'Playing guitar in the armchair', spot: 'armchair', pose: 'sitGuitar' },
+    cold: { line: 'Playing guitar in the armchair', spot: 'armchair', pose: 'sitGuitar' },
+  },
