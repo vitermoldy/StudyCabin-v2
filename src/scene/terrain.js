@@ -203,3 +203,5 @@ export class Terrain {
             vec2 away = ip.xz - uPush.xy;
             float dd = length(away);
             float near = uPush.z * smoothstep(2.4, 0.2, dd);
+            windW.xz += (away / max(dd, 0.001)) * near * h2 * 1.6;
+            windW.y -= near * h2 * 0.5;
