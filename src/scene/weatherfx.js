@@ -178,3 +178,5 @@ export class WeatherFX {
     this.smokeU = { ...this.common, uAmount: { value: 0 }, uOrigin: { value: flueTop.clone() } };
     const smoke = new THREE.Points(
       seeds(70, 1, 13),
+      new THREE.ShaderMaterial({
+        uniforms: this.smokeU,
