@@ -392,3 +392,5 @@ export class Resident {
     if (moving) {
       const ph = this.walkPhase;
       const s = Math.sin(ph);
+      const c = Math.cos(ph);
+      target = base({
