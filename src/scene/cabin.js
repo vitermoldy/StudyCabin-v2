@@ -493,3 +493,5 @@ export class Cabin {
     const flick = (seed) => 0.86 + Math.sin(time * 9.1 + seed) * 0.05 + Math.sin(time * 23.7 + seed * 3) * 0.05 + Math.sin(time * 4.3 + seed) * 0.04;
     for (const id of ['kitchen', 'living', 'bed', 'desk']) {
       this.lights[id].intensity = s[id] * this.maxLight[id];
+      this.shades[id].emissiveIntensity = s[id] * 1.6;
+    }
