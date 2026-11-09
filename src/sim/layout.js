@@ -13,3 +13,5 @@ export const SPINE_Z = 2.3; // free strip inside the glass
 export const DECK_Z = 3.75; // free strip on the deck
 
 // Furniture, shared by the cabin builder and the resident's routes.
+export const FURNITURE = {
+  counter: { x: -5.35, z: -2.72, w: 3.1, d: 0.62 },
