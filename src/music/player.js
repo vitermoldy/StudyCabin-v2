@@ -165,3 +165,5 @@ export class MusicPlayer extends Emitter {
   async _load(index, autoplay) {
     const item = this.queue[index];
     if (!item) return;
+    this.current = index;
+    this.nowTitle = '';
