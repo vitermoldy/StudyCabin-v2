@@ -135,3 +135,5 @@ export class Resident {
     this.hips.add(pelvis);
 
     this.spine = new THREE.Group();
+    this.spine.position.y = 0.05;
+    this.hips.add(this.spine);
