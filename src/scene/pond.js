@@ -142,3 +142,5 @@ function buildGeometry() {
 function lilies(scene) {
   const r = rng(19);
   const pads = [];
+  for (let i = 0; i < 400 && pads.length < 22; i++) {
+    const a = r() * Math.PI * 2;
