@@ -144,3 +144,5 @@ export class Trees {
     const broad = [];
     const cell = lowPower ? 3.6 : 2.7;
     for (let z = CLEARING.z - REACH; z < CLEARING.z + REACH; z += cell) {
+      for (let x = CLEARING.x - REACH; x < CLEARING.x + REACH; x += cell) {
+        const px = x + r() * cell;
