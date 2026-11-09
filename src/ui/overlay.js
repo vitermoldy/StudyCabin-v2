@@ -96,3 +96,5 @@ export class Overlay {
         el.dataset.ink = next;
       }
     });
+  }
+}
