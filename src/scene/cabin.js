@@ -166,3 +166,5 @@ export class Cabin {
     for (const [a, b] of panes) {
       const pane = this._bx(glass, a, b, FLOOR + 0.05, GLASS_TOP - 0.06, 3.01, 3.03, { cast: false, receive: false });
       pane.renderOrder = 2;
+    }
+    // sliding door: glass and a thin frame
