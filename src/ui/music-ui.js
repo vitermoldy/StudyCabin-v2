@@ -238,3 +238,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     else if (player.status === 'ended') msg = 'That was the last link. Add another, or turn on Repeat.';
     else if (player.status === 'idle') msg = `Press play to start “${titleOf(item || q[0])}”.`;
     state.textContent = msg;
+    state.hidden = !msg;
+
+    // Now playing
