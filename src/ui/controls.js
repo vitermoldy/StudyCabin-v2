@@ -226,3 +226,4 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
   });
   sync();
   return { setView, sync };
+}
