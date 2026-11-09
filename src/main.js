@@ -238,3 +238,5 @@ addEventListener('keydown', (e) => {
     music.toggle();
   } else if (k === 'h') {
     setWords(!wordsShown);
+    viewApi?.sync();
+  } else if (k === 'p') {
