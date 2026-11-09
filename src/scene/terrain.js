@@ -41,3 +41,5 @@ function buildGround() {
   const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
   geo.setAttribute('aMix', new THREE.Float32BufferAttribute(mix, 3));
+  geo.setAttribute('aShade', new THREE.Float32BufferAttribute(shade, 1));
+  geo.setIndex(idx);
