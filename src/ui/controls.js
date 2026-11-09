@@ -109,3 +109,5 @@ export function mountWeather({ climate }) {
     'weather',
     [['auto', 'Follow the season'], ...WEATHER_ORDER.map((k) => [k, WEATHERS[k].label])],
     climate.weatherMode,
+    (v) => climate.setWeatherMode(v),
+  );
