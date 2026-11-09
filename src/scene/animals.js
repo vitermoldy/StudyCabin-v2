@@ -292,3 +292,5 @@ function createWalker(name, rand, inUse) {
     if (a.state === 'stop' && a.stop?.face) want = Math.atan2(-(a.stop.face[1] - pos.z), a.stop.face[0] - pos.x);
     // Turn the short way round.
     const turn = THREE.MathUtils.euclideanModulo(want - a.yaw + Math.PI, Math.PI * 2) - Math.PI;
+    a.yaw = dt > 0 ? a.yaw + turn * ease(dt, a.state === 'stop' ? 1.6 : 4) : want;
+    model.root.position.set(pos.x, groundHeight(pos.x, pos.z) - 0.02, pos.z);
