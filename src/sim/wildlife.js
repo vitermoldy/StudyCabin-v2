@@ -75,3 +75,5 @@ function band(m, a, b, fade = 40) {
 
 // How keen each kind is to come out, by the hour: deer at dawn and dusk, the fox from dusk into
 // the night, the hare round the edges of the day, the squirrel by day.
+const HOURS = {
+  deer: (m) => Math.max(band(m, h(4, 30), h(10)), band(m, h(16), h(21, 30)), 0.3),
