@@ -146,3 +146,5 @@ export class Ambient extends Emitter {
     this._applyMaster(0.4);
     if (!on && this.ctx) {
       setTimeout(() => {
+        if (!this.enabled && this.ctx.state === 'running') this.ctx.suspend().catch(() => {});
+      }, 900);
