@@ -327,3 +327,5 @@ function frame(now) {
     audioIn = 0.1;
     const p = climate.params;
     const atmo = world?.atmo;
+    const m = clock.minutes;
+    const heard = world ? world.animals.audible : { owl: 0, fox: 0 };
