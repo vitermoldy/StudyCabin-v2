@@ -126,3 +126,5 @@ export function groundHeight(x, z) {
   let y = 0;
   const e = pondE(x, z);
   if (e < 1) y -= 1.25 * Math.pow(1 - e * e, 0.75);
+  else y += 0.05 * smooth(1, 1.12, e) * smooth(1.5, 1.2, e);
+  const fd = forestDepth(x, z);
