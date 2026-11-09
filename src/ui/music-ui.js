@@ -184,3 +184,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const tool = (icon, label, fn, disabled) => {
       const b = document.createElement('button');
       b.type = 'button';
+      b.className = 'icon-btn';
+      b.setAttribute('aria-label', label);
