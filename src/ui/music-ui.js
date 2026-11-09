@@ -70,3 +70,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     e.preventDefault();
     clearError();
     try {
+      const item = player.add(input.value);
+      input.value = '';
