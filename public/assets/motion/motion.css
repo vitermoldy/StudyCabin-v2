@@ -14,3 +14,5 @@
   Under prefers-reduced-motion colours still change and a press still shows; nothing moves or scales.
 */
 
+:root {
+  --m-in: 150ms;                              /* hover in: buttons, links, nav, tabs */
