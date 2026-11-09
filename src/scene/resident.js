@@ -91,3 +91,5 @@ function capsule(r, len, mat) {
   return m;
 }
 
+export class Resident {
+  constructor(scene) {
