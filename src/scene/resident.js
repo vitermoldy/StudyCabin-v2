@@ -25,3 +25,6 @@ function base(o = {}) {
 }
 
 function sitBase(seat, o = {}) {
+  return base({ hipY: seat + 0.02, thL: -1.5, knL: 1.48, thR: -1.45, knR: 1.42, shLx: -0.3, elL: -0.9, shRx: -0.3, elR: -0.9, spineX: 0.04, ...o });
+}
+
