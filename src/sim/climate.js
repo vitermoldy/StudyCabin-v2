@@ -18,3 +18,5 @@ export const SEASONS = {
   autumn: {
     label: 'Autumn',
     sunrise: 405, sunset: 1080, noonElevation: 40,
+    temp: [12, 4],
+    grass: '#a3843f', soil: '#6a4a2c', mud: '#43311f', foliage: '#c0702c', fern: '#a0602a',
