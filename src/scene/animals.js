@@ -297,3 +297,5 @@ function createWalker(name, rand, inUse) {
     model.root.rotation.y = a.yaw;
   }
 
+  function pose(dt, time, moving) {
+    const k = dt > 0 ? ease(dt, 3) : 1;
