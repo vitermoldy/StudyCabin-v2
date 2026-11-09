@@ -26,3 +26,5 @@ function stoneGeometry(seed) {
     c.copy(grey).lerp(moss, THREE.MathUtils.smoothstep(nor.getY(i), 0.35, 0.85) * 0.8);
     col.set([c.r, c.g, c.b], i * 3);
   }
+  geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  return geo;
