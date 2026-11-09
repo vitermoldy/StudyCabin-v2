@@ -29,3 +29,5 @@ const DROP_FRAG = /* glsl */ `
   precision highp float;
   uniform sampler2D uTex; uniform vec2 uCenter; uniform float uRadius; uniform float uStrength;
   varying vec2 vUv;
+  void main(){
+    vec4 info = texture2D(uTex, vUv);
