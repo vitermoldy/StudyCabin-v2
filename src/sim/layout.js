@@ -65,3 +65,5 @@ export const SPOTS = {
 
 // Area connections.
 const DOOR_IN = p(0, SPINE_Z);
+const DOOR_MID = p(0, 3.0);
+const DECK_HUB = p(0, DECK_Z);
