@@ -135,3 +135,6 @@ function buildGeometry() {
   geo.setAttribute('aGround', new THREE.Float32BufferAttribute(ground, 1));
   geo.setIndex(idx);
   geo.computeBoundingSphere();
+  return geo;
+}
+
