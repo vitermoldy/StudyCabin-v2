@@ -194,3 +194,5 @@ export class Trees {
         p.set(t.x, t.y, t.z);
         q.setFromAxisAngle(Y, t.yaw);
         s.set(t.w, t.h, t.w);
+        m.compose(p, q, s);
+        mesh.setMatrixAt(i, m);
