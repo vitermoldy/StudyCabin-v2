@@ -434,3 +434,5 @@ export class Cabin {
       }
     }
     // a wooden chair and a small table on the right
+    this._chair(F.guitarChair.x, F.guitarChair.z, 0, deckWood);
+    this._chair(F.guitarChair.x + 1.65, F.guitarChair.z, 0, deckWood);
