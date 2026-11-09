@@ -50,3 +50,5 @@ export function entryAt(minutes) {
 }
 
 /**
+ * The activity to show right now.
+ * @param {number} minutes  time of day
