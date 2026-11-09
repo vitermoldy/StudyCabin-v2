@@ -424,3 +424,5 @@ export class Ambient extends Emitter {
     f.frequency.exponentialRampToValueAtTime(90, now + 3.5);
     const g = ctx.createGain();
     const peak = 0.9 * strength * this.mix.rain;
+    g.gain.setValueAtTime(0.0001, now);
+    g.gain.exponentialRampToValueAtTime(Math.max(0.0002, peak), now + 0.18);
