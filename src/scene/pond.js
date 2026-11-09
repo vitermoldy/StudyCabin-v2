@@ -133,3 +133,5 @@ function buildGeometry() {
   const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
   geo.setAttribute('aGround', new THREE.Float32BufferAttribute(ground, 1));
+  geo.setIndex(idx);
+  geo.computeBoundingSphere();
