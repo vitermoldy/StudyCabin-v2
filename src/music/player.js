@@ -188,3 +188,6 @@ export class MusicPlayer extends Emitter {
     if (index < 0) index = 0;
     if (!this.queue[index]) return;
     return this._load(index, true);
+  }
+
+  _cue(index) {
