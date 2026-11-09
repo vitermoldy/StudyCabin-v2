@@ -13,3 +13,5 @@ export class Overlay {
     this.timeWrap = document.getElementById('word-time');
     this.clock = document.getElementById('clock');
     this.story = document.getElementById('story-line');
+    this.meta = document.getElementById('story-meta');
+    this.reduced = reducedMotion;
