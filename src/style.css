@@ -9,3 +9,6 @@
   --font-display: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif;
   --font-text: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif;
   --display-weight: 400;
+  --display-tracking: -0.045em;
+
+  /* The controls sit on dark plates, so they read the inverse palette. */
