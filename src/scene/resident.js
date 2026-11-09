@@ -423,3 +423,6 @@ export class Resident {
     this.legL.th.rotation.x = j.thL;
     this.legL.kn.rotation.x = j.knL;
     this.legR.th.rotation.x = j.thR;
+    this.legR.kn.rotation.x = j.knR;
+
+    const props = moving ? [] : PROPS_FOR[this.pose] || [];
