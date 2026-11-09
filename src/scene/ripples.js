@@ -123,3 +123,5 @@ export class Ripples {
   drop(x, z, radius = 1.6, strength = 0.5) {
     if (!this.ok) return;
     const u = (x - RIPPLE_AREA.x0) / RIPPLE_AREA.size;
+    const v = (z - RIPPLE_AREA.z0) / RIPPLE_AREA.size;
+    if (u < 0.02 || u > 0.98 || v < 0.02 || v > 0.98) return;
