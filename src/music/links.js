@@ -53,3 +53,5 @@ export function parseLink(raw) {
 
 let apiPromise = null;
 
+/** Loads the YouTube IFrame API once; rejects after 15 s. */
+export function loadYouTubeApi() {
