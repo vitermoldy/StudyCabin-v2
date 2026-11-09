@@ -27,3 +27,5 @@ function buildGround() {
       mix.push(bareEarth(x, z), grassCover(x, z), vnoise(x * 0.35, z * 0.35));
       shade.push(canopy(x, z));
     }
+  }
+  const idx = [];
