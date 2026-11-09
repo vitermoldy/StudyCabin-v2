@@ -230,3 +230,5 @@ export class Pond {
     this.uniforms.uRippleArea.value.set(area.x0, area.z0, area.size, texture ? 1 : 0);
   }
 
+  update({ time, params, atmo, look, rippleTexture }) {
+    const u = this.uniforms;
