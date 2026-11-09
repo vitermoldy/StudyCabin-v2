@@ -6,3 +6,5 @@ const FOCUSABLE = 'button:not([disabled]), input:not([disabled]), [href], select
 export class Panels extends Emitter {
   constructor() {
     super();
+    this.tabs = [...document.querySelectorAll('.dock__tab')];
+    this.panels = new Map(this.tabs.map((t) => [t.dataset.panel, document.getElementById(t.getAttribute('aria-controls'))]));
