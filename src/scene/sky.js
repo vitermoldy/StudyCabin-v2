@@ -302,3 +302,5 @@ export class Atmosphere {
     const f = params.fog;
     this.fog.density = 0.0075 + 0.004 * f + 0.011 * f * f * f + params.rain * 0.002 + params.snow * 0.003;
 
+    // Sun colour and strength.
+    const lowness = 1 - smoothstep(0.02, 0.4, sy);
