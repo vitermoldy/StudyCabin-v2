@@ -103,3 +103,5 @@ export function mountDay({ clock, onJump }) {
 }
 
 export function mountWeather({ climate }) {
+  const setSeason = radios($('season-group'), 'season', SEASON_ORDER.map((k) => [k, SEASONS[k].label]), climate.season, (v) => climate.setSeason(v));
+  const setWeather = radios(
