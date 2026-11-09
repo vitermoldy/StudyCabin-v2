@@ -76,3 +76,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     } catch (ex) {
       if (ex instanceof LinkError) {
         showError(ex.message);
+        input.focus();
+      } else {
