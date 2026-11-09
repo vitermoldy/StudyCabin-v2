@@ -11,3 +11,5 @@ const POND_C = [POND.x, POND.z];
 const CABIN_C = [0, 1];
 const FIRE_C = [-7.4, 5.25];
 
+export const ROUTES = {
+  deer: [
