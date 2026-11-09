@@ -166,3 +166,5 @@ export class Terrain {
       };
       const tip = [bx + dx * lean, h * (1 - lean * 0.25), bz + dz * lean];
       const push = (v, f) => {
+        pos.push(...v);
+        const c = 0.12 + Math.pow(f, 0.8) * 0.95;
