@@ -116,3 +116,6 @@ export class Ripples {
   }
 
   get texture() {
+    return this.ok ? this.a.texture : null;
+  }
+
