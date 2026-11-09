@@ -270,3 +270,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     shuffle.setAttribute('aria-pressed', String(player.shuffle));
     loop.setAttribute('aria-pressed', String(player.loop));
     vol.value = player.volume;
+    volOut.textContent = `${player.volume}%`;
+
+    // The top-right chip says what is on.
