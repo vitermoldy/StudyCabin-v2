@@ -244,3 +244,5 @@ export class World {
     while (this._rainDrops >= 1) {
       this._rainDrops -= 1;
       const a = Math.random() * Math.PI * 2;
+      const e = Math.sqrt(Math.random()) * 0.95;
+      const x = POND.x + Math.cos(a) * e * POND.rx;
