@@ -26,3 +26,5 @@ export class Panels extends Emitter {
     document.getElementById('scene').addEventListener('pointerdown', () => this.close(false));
   }
 
+  registerOpener(id, button) {
+    this.extraOpeners.set(button, id);
