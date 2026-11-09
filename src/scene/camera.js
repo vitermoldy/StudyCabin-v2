@@ -37,3 +37,5 @@ export class CameraRig {
     if (id === 'window' && follow && follow.z < 7.5) {
       const fx = clamp(follow.x, -4.4, 4.4);
       outPos.x += fx - outTarget.x;
+      outTarget.x = fx;
+    }
