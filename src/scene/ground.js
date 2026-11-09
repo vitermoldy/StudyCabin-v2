@@ -122,3 +122,5 @@ export function forestDepth(x, z) {
 }
 
 /** Height of the ground. */
+export function groundHeight(x, z) {
+  let y = 0;
