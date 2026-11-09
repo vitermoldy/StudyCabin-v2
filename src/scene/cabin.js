@@ -292,3 +292,5 @@ export class Cabin {
     return g;
   }
 
+  _pendant(x, z, shade) {
+    this._cyl(this.mat.metal, 0.006, 0.006, WALL_TOP - (FLOOR + 2.2), x, (WALL_TOP + FLOOR + 2.2) / 2, z, 6, { cast: false });
