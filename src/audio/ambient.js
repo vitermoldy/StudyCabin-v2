@@ -167,3 +167,5 @@ export class Ambient extends Emitter {
 
   setMix(id, v) {
     this.mix[id] = clamp(v, 0, 1);
+    this.persist();
+    this.emit('change');
