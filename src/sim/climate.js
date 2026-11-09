@@ -66,3 +66,6 @@ export const WEATHERS = {
   snow: { label: 'Snow', cloud: 0.86, fog: 0.55, rain: 0, snow: 0.85, wind: 0.35, storm: 0, temp: -2 },
 };
 
+const PARAM_KEYS = ['cloud', 'fog', 'rain', 'snow', 'wind', 'storm'];
+
+function pick(odds, random = Math.random) {
