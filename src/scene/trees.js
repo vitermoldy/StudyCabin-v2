@@ -206,3 +206,5 @@ export class Trees {
       mesh.frustumCulled = false;
       scene.add(mesh);
       return mesh;
+    };
+    this.meshes = [
