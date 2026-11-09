@@ -599,3 +599,5 @@ function createOwl(rand) {
     o.from.copy(from);
     o.to.copy(to);
     o.mid.copy(from).lerp(to, 0.5);
+    o.mid.y = Math.max(from.y, to.y) + 3;
+    o.t = 0;
