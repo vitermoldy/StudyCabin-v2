@@ -103,3 +103,5 @@ const FRAG = /* glsl */ `
     #include <fog_fragment>
   }`;
 
+function buildGeometry() {
+  const x0 = POND.x - POND.rx * 1.2;
