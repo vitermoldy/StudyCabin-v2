@@ -66,3 +66,5 @@ export class Ambient extends Emitter {
     this.master.gain.value = 0;
     this.master.connect(ctx.destination);
 
+    const src = (offset) => {
+      const s = ctx.createBufferSource();
