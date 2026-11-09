@@ -88,3 +88,6 @@ export class World {
     this.height = h;
     this.renderer.setSize(w, h, false);
     this.camera.aspect = w / h;
+    this.camera.updateProjectionMatrix();
+  }
+
