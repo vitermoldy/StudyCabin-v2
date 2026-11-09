@@ -231,3 +231,5 @@ export class WeatherFX {
           vec4 mv = modelViewMatrix * vec4(p, 1.0);
           float far = smoothstep(70.0, 25.0, -mv.z);
           vA = step(aId, uAmount) * glow * far;
+          vWarm = step(0.8, aSeed.y);
+          gl_PointSize = clamp(0.2 * uScale / max(-mv.z, 0.5), 3.0, 18.0);
