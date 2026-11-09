@@ -146,3 +146,5 @@ export class MusicPlayer extends Emitter {
               onError: (e) => this._onError(e.data),
             },
           });
+        });
+        return true;
