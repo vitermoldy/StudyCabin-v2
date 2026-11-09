@@ -205,3 +205,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
 
   function focusRow(index, toolIndex) {
     requestAnimationFrame(() => {
+      const li = qItems.children[index];
+      if (!li) {
