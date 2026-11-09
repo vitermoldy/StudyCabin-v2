@@ -59,3 +59,5 @@ export function loadYouTubeApi() {
   if (apiPromise) return apiPromise;
   apiPromise = new Promise((resolve, reject) => {
     const timer = setTimeout(() => {
+      apiPromise = null;
+      reject(new Error('timeout'));
