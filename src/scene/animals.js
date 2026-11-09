@@ -666,3 +666,5 @@ function createOwl(rand) {
       const angle = gliding ? 0.15 : Math.sin(o.flap) * 0.8;
       m.wings.forEach(({ wing, side }) => { wing.rotation.x = side * angle; });
       if (o.t >= 1) {
+        if (o.state === 'arrive') perch();
+        else gone();
