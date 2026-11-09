@@ -291,3 +291,5 @@ export class Ambient extends Emitter {
 
   /** A frog's call: a short rattle of pulses on a low buzzing tone. */
   _croak(level) {
+    const ctx = this.ctx;
+    const now = ctx.currentTime;
