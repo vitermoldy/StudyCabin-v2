@@ -308,3 +308,5 @@ export class Atmosphere {
     u.uSunColor.value.copy(this.sunColor);
     u.uSunDir.value.copy(this.sunDir);
     u.uMoonDir.value.copy(this.moonDir);
+    u.uSunVis.value = smoothstep(-0.06, 0.04, sy) * (1 - overcast * 0.85);
+    u.uGlow.value = 0.6 + lowness * 1.4;
