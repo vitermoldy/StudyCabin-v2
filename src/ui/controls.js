@@ -96,3 +96,5 @@ export function mountDay({ clock, onJump }) {
         const on = r.a.id === cur;
         r.now.textContent = on ? 'Now' : '';
         if (on) r.b.setAttribute('aria-current', 'true');
+        else r.b.removeAttribute('aria-current');
+      }
