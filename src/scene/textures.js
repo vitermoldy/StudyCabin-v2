@@ -28,3 +28,6 @@ function grain(ctx, w, h, rand, amount, alpha = 0.06) {
     ctx.fillStyle = `rgba(${l},${l},${l},${alpha * rand()})`;
     ctx.fillRect(x, y, 1 + rand() * 2, 1 + rand() * 6);
   }
+}
+
+/** Vertical board-and-batten siding: one tile is 1.2 m wide, 1.2 m tall. */
