@@ -160,3 +160,5 @@ export class World {
       porch: on(darkness > 0.6 && (minutes >= 17 * 60 || minutes < 30), 1),
       sleeping: on(asleep && !res.path, 1),
       door: on(res.doorDistance < 1.5, 1),
+    });
+    this.stoveLit = this.cabin.state.stove;
