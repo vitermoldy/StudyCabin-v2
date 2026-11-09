@@ -267,3 +267,5 @@ export class Terrain {
   }
 
   /** Ferns along the edge of the wood and under the first trees: fronds arching out of a crown. */
+  _buildFerns(lowPower) {
+    const rand = rng(31);
