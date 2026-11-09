@@ -18,3 +18,6 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 - RHYTHM 1: one screen, one scene; every panel uses the same template on purpose, so the scene is
   the only thing that changes.
 - MOTION 3: the product is a living place (clock, weather, seasons, a resident, animals passing).
+  Interface motion stays small (hover step, panel fade, a word blurring in when the activity
+  changes).
+
