@@ -91,3 +91,5 @@ export class World {
     this.camera.updateProjectionMatrix();
   }
 
+  /** Drop resolution while frames run slow, raise it again when there is room. */
+  _adapt(frameMs) {
