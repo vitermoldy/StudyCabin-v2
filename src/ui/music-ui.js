@@ -78,3 +78,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
         showError(ex.message);
         input.focus();
       } else {
+        showError('Something went wrong reading that link. Try copying it again.');
+      }
