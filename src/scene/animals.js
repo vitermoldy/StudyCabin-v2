@@ -446,3 +446,5 @@ function openingRoute(routes) {
   let best = null;
   for (const route of routes) {
     for (const reverse of [false, true]) {
+      const { stops } = buildCurve(route, reverse);
+      if (!stops.length) continue;
