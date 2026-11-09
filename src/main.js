@@ -129,3 +129,6 @@ function refreshActivity({ teleport = false } = {}) {
     activity = next;
     if (world) world.resident.setActivity(activity, { teleport });
   }
+  overlay.setWord(activity.word);
+}
+
