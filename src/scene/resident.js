@@ -417,3 +417,5 @@ export class Resident {
     this.spine.rotation.set(j.spineX, 0, j.spineZ);
     this.headG.rotation.set(j.headX, j.headY, 0);
     this.armL.sh.rotation.set(j.shLx, 0, j.shLz);
+    this.armL.el.rotation.x = j.elL;
+    this.armR.sh.rotation.set(j.shRx, 0, j.shRz);
