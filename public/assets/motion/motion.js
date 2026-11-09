@@ -348,3 +348,5 @@ function enter() {
   const anims = [];
   let masks = null, over = false;
   const finish = () => {
+    if (over) return;
+    over = true;
