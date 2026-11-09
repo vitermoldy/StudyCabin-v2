@@ -51,3 +51,5 @@ shows a still picture and the music, timer and ambient sound still work.
   grass and the crowns.
 - **Sky.** Clouds at every hour, sunrise and sunset colours, moon, a Milky Way band and stars at
   night, and northern lights on clear nights (strongest in winter).
+- **Music.** Paste a YouTube or YouTube Music link: a song, a video, an album or a public
+  playlist. Links line up in the queue dropdown (reorder, remove, clear); next, previous,
