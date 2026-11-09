@@ -272,3 +272,6 @@ export class WeatherFX {
     this.petalU.uAmount.value = look.petals * (0.25 + params.wind * 0.75) * (1 - params.rain) * 0.6;
     this.leafU.uAmount.value = look.leaves * (0.3 + params.wind * 0.7) * (1 - params.rain * 0.6) * 0.7;
     this.smokeU.uAmount.value = stove;
+  }
+}
+
