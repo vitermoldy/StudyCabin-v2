@@ -113,3 +113,5 @@ let activity = activityAt(clock.minutes, conditions(), focus.residentPhase);
 let scenePaused = reduced; // under reduced motion the scene waits for a press
 let lastFrame = performance.now();
 let elapsed = 0;
+let sampleIn = 0.3;
+let audioIn = 0;
