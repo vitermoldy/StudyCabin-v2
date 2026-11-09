@@ -205,3 +205,5 @@ export class Cabin {
       }
       // fascia along the eave
       const eaveY = RIDGE - Math.tan(alpha) * hRun;
+      this._cb(trim, w + 0.1, 0.18, 0.06, 0, eaveY - 0.02, side * (hRun + 0.02));
+    }
