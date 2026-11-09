@@ -68,7 +68,7 @@ shows a still picture and the music, timer and ambient sound still work.
   with a mixer. It turns down while music plays.
 - **Camera.** Five views (clearing, deck, window, pond, follow the resident), plus your own, moved
   like a map: drag to move across the land (well beyond the cabin), right-drag or Ctrl+drag to
-  turn, and keep dragging down past level ground to look up at the sky; scroll or
+  turn, and keep dragging down past level ground to look up at the sky; scroll or pinch
 
 ## Keys
 
