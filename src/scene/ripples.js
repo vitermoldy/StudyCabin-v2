@@ -69,3 +69,5 @@ export class Ripples {
     if (!canFloat) return;
     const opts = {
       type: THREE.HalfFloatType,
+      format: THREE.RGBAFormat,
+      minFilter: THREE.LinearFilter,
