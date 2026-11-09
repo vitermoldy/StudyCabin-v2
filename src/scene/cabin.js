@@ -195,3 +195,5 @@ export class Cabin {
       const slab = this._m(geo, roof);
       const zc = side * hRun / 2;
       slab.position.set(0, RIDGE - Math.tan(alpha) * (hRun / 2) + 0.07, zc);
+      slab.rotation.x = side * alpha;
+      // barge boards on both gable ends
