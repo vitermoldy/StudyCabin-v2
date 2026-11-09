@@ -303,3 +303,5 @@ function fireflyGeometry(count) {
   geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
   geo.setAttribute('aSeed', new THREE.Float32BufferAttribute(seed, 3));
   geo.setAttribute('aId', new THREE.Float32BufferAttribute(id, 1));
+  return geo;
+}
