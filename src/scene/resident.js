@@ -97,3 +97,5 @@ export class Resident {
     scene.add(this.root);
     this.mat = {
       skin: new THREE.MeshStandardMaterial({ color: '#c9987a', roughness: 0.7 }),
+      hair: new THREE.MeshStandardMaterial({ color: '#33261f', roughness: 0.9 }),
+      top: new THREE.MeshStandardMaterial({ color: OUTFIT.spring, roughness: 0.95 }),
