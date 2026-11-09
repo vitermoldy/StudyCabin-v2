@@ -236,3 +236,5 @@ addEventListener('keydown', (e) => {
   if (k === ' ' && !(t instanceof HTMLButtonElement)) {
     e.preventDefault();
     music.toggle();
+  } else if (k === 'h') {
+    setWords(!wordsShown);
