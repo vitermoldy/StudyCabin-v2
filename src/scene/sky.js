@@ -146,3 +146,5 @@ const CLEAR = [
 ];
 // Cloud cover: a cool green-grey of the same brightness (SongPlay's rain tint, #5c6a66).
 const OVERCAST = [
+  { y: -0.3, zenith: C('#0e1514'), horizon: C('#1a2422') },
+  { y: -0.08, zenith: C('#2d3936'), horizon: C('#45524e') },
