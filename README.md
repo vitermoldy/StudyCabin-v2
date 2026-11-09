@@ -49,3 +49,5 @@ shows a still picture and the music, timer and ambient sound still work.
 - **Weather.** Follows the season, or pick clear, cloudy, fog, rain, storm or snow. Rain streaks,
   storm lightning (soft, at most two flashes a second), snowfall, fog in the trees, wind in the
   grass and the crowns.
+- **Sky.** Clouds at every hour, sunrise and sunset colours, moon, a Milky Way band and stars at
+  night, and northern lights on clear nights (strongest in winter).
