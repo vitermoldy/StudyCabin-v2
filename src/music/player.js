@@ -81,3 +81,5 @@ export class MusicPlayer extends Emitter {
     this.emit('change');
   }
 
+  move(index, dir) {
+    const to = index + dir;
