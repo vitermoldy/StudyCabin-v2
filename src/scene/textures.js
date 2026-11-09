@@ -84,3 +84,6 @@ export function roofTexture() {
     ctx.fillRect(rand() * 256, 0, 1 + rand() * 3, 256);
   }
   return finish(c, { repeat: [1 / 1.8, 1 / 1.8] });
+}
+
+/** Grey weathered deck planks, 0.14 m wide, laid along x. */
