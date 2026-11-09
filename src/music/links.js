@@ -61,3 +61,5 @@ export function loadYouTubeApi() {
     const timer = setTimeout(() => {
       apiPromise = null;
       reject(new Error('timeout'));
+    }, 15000);
+    const prev = window.onYouTubeIframeAPIReady;
