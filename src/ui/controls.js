@@ -173,3 +173,5 @@ export function mountSound({ ambient }) {
   render();
 }
 
+export function mountFocus({ focus }) {
+  const startBtn = $('focus-start');
