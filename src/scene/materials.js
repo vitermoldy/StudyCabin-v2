@@ -26,3 +26,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
         '#include <defaultnormal_vertex>\n vUpness = inverseTransformDirection(transformedNormal, viewMatrix).y;',
       );
     shader.fragmentShader = shader.fragmentShader
+      .replace(
+        '#include <common>',
