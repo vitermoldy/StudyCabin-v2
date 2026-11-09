@@ -210,3 +210,5 @@ export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
   const wordsSwitch = $('words-on');
   const dockWords = $('dock-words');
   const sync = () => {
+    const on = wordsShown();
+    wordsSwitch.setAttribute('aria-checked', String(on));
