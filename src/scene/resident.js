@@ -153,3 +153,5 @@ export class Resident {
     const head = new THREE.Mesh(new THREE.SphereGeometry(0.105, 20, 14), m.skin);
     head.position.y = 0.1;
     head.scale.set(0.95, 1.08, 1);
+    head.castShadow = true;
+    this.headG.add(head);
