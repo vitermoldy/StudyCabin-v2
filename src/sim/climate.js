@@ -116,3 +116,5 @@ export class Climate extends Emitter {
     return this.clock.day * 1440 + this.clock.minutes;
   }
 
+  _span() {
+    return 120 + Math.random() * 260;
