@@ -249,3 +249,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       if (item.status === 'error') bits.push(item.error);
       nowSub.textContent = bits.join(' · ') || item.source;
       nowSrc.src = ICON[item.source] || ICON.YouTube;
+      nowSrc.alt = item.source;
+      nowSrc.hidden = false;
