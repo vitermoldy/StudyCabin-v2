@@ -61,3 +61,5 @@ export class WeatherFX {
       new THREE.ShaderMaterial({
         uniforms: this.rainU,
         transparent: true,
+        depthWrite: false,
+        vertexShader: /* glsl */ `
