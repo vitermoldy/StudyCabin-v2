@@ -160,3 +160,5 @@ export function mountSound({ ambient }) {
   });
   const render = () => {
     onBtn.setAttribute('aria-checked', String(ambient.enabled));
+    vol.value = String(Math.round(ambient.volume * 100));
+    volOut.textContent = `${vol.value}%`;
