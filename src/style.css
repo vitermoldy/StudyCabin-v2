@@ -220,3 +220,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .btn--primary { background: var(--action); color: var(--action-ink); }
 .btn--secondary { background: var(--bg); color: var(--ink); border-color: var(--line-strong); }
 .btn:disabled { opacity: 0.5; }
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; }
+.link-btn {
