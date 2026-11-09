@@ -12,3 +12,6 @@ function svgUse(id) {
   const use = document.createElementNS(ns, 'use');
   use.setAttribute('href', `#${id}`);
   svg.appendChild(use);
+  return svg;
+}
+
