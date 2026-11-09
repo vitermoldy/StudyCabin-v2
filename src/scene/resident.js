@@ -302,3 +302,5 @@ export class Resident {
     return best;
   }
 
+  _place(spotId) {
+    const s = SPOTS[spotId];
