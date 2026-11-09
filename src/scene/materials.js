@@ -40,3 +40,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
       .replace(
         '#include <roughnessmap_fragment>',
         `#include <roughnessmap_fragment>
+        roughnessFactor = mix(roughnessFactor, roughnessFactor * 0.45, uWet * uWetScale);
+        roughnessFactor = mix(roughnessFactor, 0.85, snowAmt);`,
