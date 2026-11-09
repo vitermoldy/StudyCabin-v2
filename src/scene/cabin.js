@@ -185,3 +185,5 @@ export class Cabin {
     const { roof, trim } = this.mat;
     const run = 3.15;
     const rise = RIDGE - WALL_TOP;
+    const alpha = Math.atan2(rise, run);
+    const over = 0.55;
