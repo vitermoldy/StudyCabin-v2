@@ -248,3 +248,6 @@ export class World {
       const x = POND.x + Math.cos(a) * e * POND.rx;
       const z = POND.z + Math.sin(a) * e * POND.rz;
       this.ripples.drop(x, z, 0.12 + Math.random() * 0.1, 0.2 + Math.random() * 0.15);
+    }
+  }
+
