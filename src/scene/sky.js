@@ -77,3 +77,5 @@ const FRAG = /* glsl */ `
     return on * glow * (0.35 + hash3(cell + 3.3) * 0.65);
   }
 
+  void main(){
+    vec3 d = normalize(vDir);
