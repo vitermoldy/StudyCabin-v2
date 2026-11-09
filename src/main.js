@@ -306,3 +306,5 @@ function frame(now) {
 
   if (world) {
     const speedUp = clock.rate >= 10 ? 2.2 : 1;
+    world.update(dt, elapsed, {
+      minutes: clock.minutes,
