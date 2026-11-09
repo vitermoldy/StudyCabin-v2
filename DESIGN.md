@@ -86,3 +86,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 - Animals walk at their own pace and stop for a few seconds at a time; birds cross in about
   twenty seconds; fireflies glow up and fade on slow beats of a few seconds, never in step (a
   living place, not an effect).
+- Scene pause (corner disc, P key) freezes the whole scene, animals included; under reduced motion
+  the scene starts paused, cameras cut instead of moving and lightning is off.
