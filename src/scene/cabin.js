@@ -347,3 +347,5 @@ export class Cabin {
     this._bx(trim, S.x - 0.66, S.x + 0.66, FLOOR + 1.45, FLOOR + 2.45, -3.0, -2.97);
     this._bx(print, S.x - 0.62, S.x + 0.62, FLOOR + 1.49, FLOOR + 2.41, -2.97, -2.96, { cast: false });
     // floor lamp
+    this._cyl(metal, 0.16, 0.16, 0.03, -2.85, FLOOR + 0.015, -2.35, 16);
+    this._cyl(metal, 0.012, 0.012, 1.55, -2.85, FLOOR + 0.8, -2.35, 6);
