@@ -205,3 +205,5 @@ export class Climate extends Emitter {
     }
   }
 
+  /** Sun direction parameters for the current time. */
+  sun(minutes = this.clock.minutes) {
