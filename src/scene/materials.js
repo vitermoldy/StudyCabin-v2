@@ -18,3 +18,5 @@ export function weathered(material, { snow = 1, wet = 1 } = {}) {
     shader.uniforms.uSnow = WORLD.uSnow;
     shader.uniforms.uWet = WORLD.uWet;
     shader.uniforms.uSnowScale = local.uSnowScale;
+    shader.uniforms.uWetScale = local.uWetScale;
+    shader.vertexShader = shader.vertexShader
