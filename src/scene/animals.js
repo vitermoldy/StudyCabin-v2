@@ -341,3 +341,5 @@ function createWalker(name, rand, inUse) {
   return {
     name,
     kind,
+    a,
+    root: model.root,
