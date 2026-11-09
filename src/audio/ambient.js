@@ -256,3 +256,5 @@ export class Ambient extends Emitter {
       this._nextDrum = now + 25 + Math.random() * 50;
     }
     // A fox out in the clearing after dark barks once in a while.
+    if ((env.fox ?? 0) > 0.5 && env.night > 0.5 && m.wildlife > 0.02 && now > this._nextBark) {
+      if (Math.random() < 0.5) this._bark(m.wildlife);
