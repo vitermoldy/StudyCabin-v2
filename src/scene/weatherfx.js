@@ -253,3 +253,6 @@ export class WeatherFX {
       o.frustumCulled = false;
       o.renderOrder = 5;
       scene.add(o);
+    }
+  }
+
