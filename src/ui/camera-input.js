@@ -24,3 +24,6 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
   };
 
+  canvas.addEventListener('contextmenu', (e) => e.preventDefault());
+
+  canvas.addEventListener('pointerdown', (e) => {
