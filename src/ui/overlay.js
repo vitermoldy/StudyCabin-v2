@@ -78,3 +78,5 @@ export class Overlay {
    * samples: [{mean, max, min}] relative luminance.
    */
   applyInk(samples) {
+    const L_LIGHT = 0.9; // #f4f3ef
+    const L_DARK = 0.0118; // #1b1c1a
