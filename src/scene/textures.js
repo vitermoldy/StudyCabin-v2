@@ -160,3 +160,5 @@ export function fabricTexture() {
   const [c, ctx] = canvas(64, 64);
   const rand = rng(61);
   ctx.fillStyle = '#d8d8d8';
+  ctx.fillRect(0, 0, 64, 64);
+  for (let y = 0; y < 64; y += 2) {
