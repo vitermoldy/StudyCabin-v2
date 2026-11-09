@@ -141,3 +141,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       const img = document.createElement('img');
       img.className = 'qrow__thumb';
       img.src = thumb;
+      img.alt = '';
+      img.width = 56;
