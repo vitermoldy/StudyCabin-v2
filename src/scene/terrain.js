@@ -102,3 +102,5 @@ export class Terrain {
         .replace(
           '#include <map_fragment>',
           `#include <map_fragment>
+          // The forest floor: loam, darker under the canopy, with moss where it stays damp.
+          vec3 soil = uSoil * (0.85 + vMix.z * 0.3);
