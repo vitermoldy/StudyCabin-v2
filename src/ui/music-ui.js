@@ -245,3 +245,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       nowTitle.textContent = item.kind === 'playlist' && player.nowTitle ? player.nowTitle : titleOf(item);
       const bits = [];
       if (item.kind === 'playlist') bits.push(`From ${titleOf(item)}`);
+      else if (item.author) bits.push(item.author);
+      if (item.status === 'error') bits.push(item.error);
