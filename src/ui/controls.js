@@ -158,3 +158,5 @@ export function mountSound({ ambient }) {
     err.textContent = msg;
     err.hidden = false;
   });
+  const render = () => {
+    onBtn.setAttribute('aria-checked', String(ambient.enabled));
