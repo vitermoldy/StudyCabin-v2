@@ -79,3 +79,6 @@ export function loadYouTubeApi() {
     };
     document.head.appendChild(s);
   });
+  return apiPromise;
+}
+
