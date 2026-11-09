@@ -340,3 +340,6 @@ export class Ambient extends Emitter {
         o.start(now + at);
         o.stop(now + at + dur + 0.05);
       }
+    }
+  }
+
