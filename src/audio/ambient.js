@@ -191,3 +191,5 @@ export class Ambient extends Emitter {
   }
 
   /**
+   * env: { rain, wind, storm, day, night, fire, owl, fox, frogs } all 0..1, plus `morning` and
+   * `season`.
