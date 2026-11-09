@@ -148,3 +148,5 @@ export function mountSound({ ambient }) {
     const out = document.createElement('output');
     out.className = 'slider-row__value';
     out.htmlFor = id;
+    input.addEventListener('input', () => ambient.setMix(layer.id, Number(input.value) / 100));
+    row.append(label, input, out);
