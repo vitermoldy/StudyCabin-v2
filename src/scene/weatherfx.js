@@ -139,3 +139,5 @@ export class WeatherFX {
             varying float vA; varying float vRot; varying float vMix;
             ${WRAP}
             void main(){
+              vec3 vel = vec3(0.6 + uWind * 3.5, -0.75 - aSeed.y * 0.4, -0.2 - uWind * 0.6);
+              vec3 p = aSeed * uBox + vel * uTime;
