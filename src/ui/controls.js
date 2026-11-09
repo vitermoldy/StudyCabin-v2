@@ -150,3 +150,5 @@ export function mountSound({ ambient }) {
     out.htmlFor = id;
     input.addEventListener('input', () => ambient.setMix(layer.id, Number(input.value) / 100));
     row.append(label, input, out);
+    mix.appendChild(row);
+    return { layer, input, out };
