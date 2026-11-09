@@ -100,3 +100,5 @@ html.is-live .poster { opacity: 0; }
 .big[data-ink="dark"] { color: var(--big-dark); }
 .big--a { top: calc(var(--edge) * 0.7); left: 0; }
 .big--b { right: 0; top: 47%; transform: translateY(-50%); }
+.big--c { right: 0; bottom: max(26px, calc(var(--edge) * 0.8)); }
+.big .ch, .big time, .big time span { display: inline-block; vertical-align: top; }
