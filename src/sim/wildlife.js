@@ -98,3 +98,5 @@ const SEASON = {
 };
 
 /**
+ * 0..1: how likely an animal of this kind is to come out now.
+ * @param {'deer'|'fox'|'hare'|'squirrel'} kind
