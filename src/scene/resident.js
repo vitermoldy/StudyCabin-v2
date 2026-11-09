@@ -81,3 +81,6 @@ const PROPS_FOR = {
   sitRead: ['book'],
   sitDrink: ['mug'],
   standDrink: ['mug'],
+  sitGuitar: ['guitar'],
+};
+
