@@ -79,3 +79,5 @@ const FRAG = /* glsl */ `
 
   void main(){
     vec3 d = normalize(vDir);
+    float h = d.y;
+    float up = clamp(h, 0.0, 1.0);
