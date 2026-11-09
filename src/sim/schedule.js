@@ -62,3 +62,5 @@ export function activityAt(minutes, conditions, focusPhase = null) {
     const a = focusPhase === 'focus' ? FOCUS_ACTIVITY : BREAK_ACTIVITY;
     return { ...a, start: base.start, end: base.end, key: a.id };
   }
+  let resolved = base;
+  if (conditions.badWeather && base.wet) resolved = { ...base, ...base.wet };
