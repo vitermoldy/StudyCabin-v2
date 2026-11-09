@@ -14,3 +14,5 @@ const GLASS_TOP = FLOOR + 2.6;
 const FRONT = CABIN.z1; // 3.0
 
 /** The cabin: shell, glass, interior, deck furniture and every lamp. */
+export class Cabin {
+  constructor(scene) {
