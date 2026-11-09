@@ -324,3 +324,5 @@ export class Ambient extends Emitter {
     const now = ctx.currentTime + 0.05;
     const f = ctx.createBiquadFilter();
     f.type = 'lowpass';
+    f.frequency.value = 1100;
+    f.connect(this.g.wildlife);
