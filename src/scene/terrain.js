@@ -52,3 +52,5 @@ function buildGround() {
 const CAUSTIC = /* glsl */ `
   float caustic(vec2 p, float t){
     vec2 i = p;
+    float c = 1.0;
+    float inten = 0.005;
