@@ -437,3 +437,6 @@ export class Resident {
   }
 
   get isSleeping() {
+    return this.pose === 'sleep' && !this.path;
+  }
+
