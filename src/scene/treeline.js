@@ -39,3 +39,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
       if (out >= 1) continue;
       const tiers = (out * 3) % 1;
       top = Math.max(top, t.h * (1 - out) - t.h * 0.09 * tiers);
+    }
+    // The seam sits behind the long camera views (toward +z), out of sight.
