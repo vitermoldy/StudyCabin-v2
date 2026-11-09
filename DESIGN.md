@@ -28,3 +28,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 - Palette: the owner's own colours through `start.mjs brand` (mist `#e4e5e1`, ink `#171716`, lamp
   amber `#d9a05b`). Amber is the lamp light in the reference interiors, the one warm note in a
   green-grey scene.
+- Type: Instrument Sans (the dealt third pairing), self-hosted (fontsource), one variable file,
+  weights 400 to 600.
