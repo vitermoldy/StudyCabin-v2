@@ -25,3 +25,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
     trees.push({ s, h, w: h * (0.2 + rand() * 0.08) });
   }
   const step = spacing / 6;
+  const n = Math.ceil(circ / step);
+  const pos = [];
