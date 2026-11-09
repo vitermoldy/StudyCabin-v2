@@ -73,3 +73,5 @@ function band(m, a, b, fade = 40) {
   return Math.max(0, 1 - gap / fade);
 }
 
+// How keen each kind is to come out, by the hour: deer at dawn and dusk, the fox from dusk into
+// the night, the hare round the edges of the day, the squirrel by day.
