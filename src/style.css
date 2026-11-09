@@ -12,3 +12,5 @@
   --display-tracking: -0.045em;
 
   /* The controls sit on dark plates, so they read the inverse palette. */
+  --bg: var(--p-inv-bg);
+  --surface: var(--p-inv-surface);
