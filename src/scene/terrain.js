@@ -114,3 +114,5 @@ export class Terrain {
           // Under the pond: the floor goes dark green with depth and catches caustics.
           float under = ${WATER_Y.toFixed(3)} - vWorldG.y;
           if (under > 0.0) {
+            diffuseColor.rgb *= mix(vec3(0.8, 0.88, 0.78), vec3(0.32, 0.42, 0.34), smoothstep(0.0, 1.0, under));
+            float cz = caustic(mod(vWorldG.xz * 2.6, 6.28318) - 250.0, uTime * 0.6);
