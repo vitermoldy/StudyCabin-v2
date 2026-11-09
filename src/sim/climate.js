@@ -71,3 +71,5 @@ const PARAM_KEYS = ['cloud', 'fog', 'rain', 'snow', 'wind', 'storm'];
 function pick(odds, random = Math.random) {
   const entries = Object.entries(odds);
   const total = entries.reduce((s, [, p]) => s + p, 0);
+  let r = random() * total;
+  for (const [id, p] of entries) {
