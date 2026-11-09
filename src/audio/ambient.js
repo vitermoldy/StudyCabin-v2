@@ -50,3 +50,5 @@ export class Ambient extends Emitter {
     // Pinkish noise (Paul Kellet's filter) so the base is softer than white.
     let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
     for (let i = 0; i < len; i++) {
+      const w = Math.random() * 2 - 1;
+      b0 = 0.99886 * b0 + w * 0.0555179;
