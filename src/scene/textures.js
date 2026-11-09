@@ -120,3 +120,5 @@ export function floorTexture() {
     let x = -rand() * 200;
     while (x < 256) {
       const len = 140 + rand() * 180;
+      const tone = 0.85 + rand() * 0.2;
+      ctx.fillStyle = `rgb(${Math.round(176 * tone)},${Math.round(136 * tone)},${Math.round(98 * tone)})`;
