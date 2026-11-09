@@ -381,3 +381,5 @@ export class Resident {
       this.pos.y = groundHeight(this.pos.x, this.pos.z);
     }
 
+    // Turn to face the spot once arrived.
+    if (!this.path && this.spot && this.pose !== 'walkLoop') {
