@@ -228,3 +228,5 @@ export class Terrain {
       spots.push([x, z, scale]);
     };
     // Thick in the clearing round the cabin and the pond.
+    const near = lowPower ? 1.15 : 0.82;
+    const inNear = (x, z) => x > -32 && x < 34 && z > -16 && z < 36;
