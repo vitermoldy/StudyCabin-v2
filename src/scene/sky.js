@@ -38,3 +38,5 @@ const FRAG = /* glsl */ `
     if (d.y < 0.015) return vec3(0.0);
     float az = atan(d.x, -d.z);
     vec3 col = vec3(0.0);
+    for (int i = 0; i < 3; i++) {
+      float fi = float(i);
