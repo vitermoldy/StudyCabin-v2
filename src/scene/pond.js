@@ -250,3 +250,5 @@ export class Pond {
     u.uIce.value = this.ice;
     u.uSnow.value = look.snow * (0.4 + params.snow * 0.6);
     const L = this.lilies;
+    const show = this.ice < 0.15;
+    L.padMesh.visible = show;
