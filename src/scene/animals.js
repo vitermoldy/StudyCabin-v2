@@ -130,3 +130,5 @@ function makeFox() {
     const ear = new THREE.Mesh(new THREE.ConeGeometry(0.035, 0.09, 6), fur);
     ear.position.set(-0.01, 0.1, side * 0.04);
     head.add(ear);
+  }
+  const tail = new THREE.Group();
