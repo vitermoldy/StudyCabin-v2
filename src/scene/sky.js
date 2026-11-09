@@ -29,3 +29,5 @@ const FRAG = /* glsl */ `
   uniform vec3 uCloudLit; uniform vec3 uCloudDark;
   uniform float uSunVis; uniform float uMoonVis; uniform float uStars; uniform float uCloud;
   uniform float uTime; uniform float uWind; uniform float uFlash; uniform float uGlow; uniform float uFogAmt;
+  uniform float uAurora;
+  varying vec3 vDir;
