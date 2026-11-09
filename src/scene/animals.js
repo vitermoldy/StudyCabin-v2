@@ -500,3 +500,5 @@ function createFlocks(rand, count) {
       const side = i % 2 ? 1 : -1;
       Object.assign(b, {
         on: true,
+        dir,
+        x: -dir * (90 + row * 1.6 + rand()),
