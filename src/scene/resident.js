@@ -374,3 +374,5 @@ export class Resident {
           this.pos.x += (dx / dist) * step;
           this.pos.z += (dz / dist) * step;
           this.facing = turn(this.facing, Math.atan2(dx, dz), 5 * dt);
+          moving = true;
+          this.walkPhase += step * 4.6;
