@@ -413,3 +413,5 @@ export class Resident {
     this.root.position.lerpVectors(this.pos, anchor, clamp(j.lie, 0, 1));
     this.root.rotation.y = this.facing * (1 - j.lie);
     this.body.position.y = j.hipY;
+    this.body.rotation.x = -Math.PI / 2 * j.lie;
+    this.spine.rotation.set(j.spineX, 0, j.spineZ);
