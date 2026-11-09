@@ -88,3 +88,5 @@ export function toast(text, ms = 3600) {
   toastTimer = setTimeout(() => {
     el.classList.remove('is-on');
     setTimeout(() => {
+      if (!el.classList.contains('is-on')) el.textContent = '';
+    }, 250);
