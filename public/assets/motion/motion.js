@@ -91,3 +91,6 @@ function tabs() {
     new ResizeObserver(() => { instant = true; place(); }).observe(list);
     document.fonts?.ready.then(() => { instant = true; place(); });
   });
+}
+
+/* ---------------------------------------------------------------- numbers */
