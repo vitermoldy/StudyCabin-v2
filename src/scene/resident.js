@@ -205,3 +205,5 @@ export class Resident {
       kn.add(shin);
       const foot = new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.06, 0.22), m.shoe);
       foot.position.set(0, -0.44, 0.05);
+      foot.castShadow = true;
+      kn.add(foot);
