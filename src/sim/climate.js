@@ -113,3 +113,6 @@ export class Climate extends Emitter {
   }
 
   _now() {
+    return this.clock.day * 1440 + this.clock.minutes;
+  }
+
