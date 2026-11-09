@@ -144,3 +144,5 @@ function lilies(scene) {
   const pads = [];
   for (let i = 0; i < 400 && pads.length < 22; i++) {
     const a = r() * Math.PI * 2;
+    const e = 0.55 + r() * 0.33;
+    // most of them on the far side, out of the way of the rings near the path
