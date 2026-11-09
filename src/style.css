@@ -96,3 +96,5 @@ html.is-live .poster { opacity: 0; }
   font-variant-numeric: tabular-nums; white-space: nowrap;
   color: var(--big-light);
   transition: color 700ms var(--ease), opacity 400ms var(--ease);
+}
+.big[data-ink="dark"] { color: var(--big-dark); }
