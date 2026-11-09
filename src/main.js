@@ -182,3 +182,5 @@ function toggleFullscreen() {
 }
 
 focus.on('finished', (phase) => {
+  ambient.chime();
+  toast(phase === 'focus' ? 'Focus block done. Time for a break.' : 'Break over. Back to the desk.');
