@@ -24,3 +24,5 @@ function realMinutes() {
 export class Clock extends Emitter {
   constructor() {
     super();
+    const saved = load('clock', null);
+    this.minutes = saved && Number.isFinite(saved.minutes) ? saved.minutes : realMinutes();
