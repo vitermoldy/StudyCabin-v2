@@ -183,3 +183,5 @@ export class Cabin {
 
   _roof() {
     const { roof, trim } = this.mat;
+    const run = 3.15;
+    const rise = RIDGE - WALL_TOP;
