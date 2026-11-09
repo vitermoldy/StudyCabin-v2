@@ -86,3 +86,5 @@ const PROPS_FOR = {
 
 function capsule(r, len, mat) {
   const m = new THREE.Mesh(new THREE.CapsuleGeometry(r, len, 6, 12), mat);
+  m.castShadow = true;
+  m.receiveShadow = true;
