@@ -69,3 +69,6 @@ const DOOR_MID = p(0, 3.0);
 const DECK_HUB = p(0, DECK_Z);
 const STEP_TOP = p(0, 6.45);
 const STEP_LOW = p(0, 7.55, 0.02);
+const YARD_HUB = p(0.6, 8.3, 0.02);
+
+function hubOf(area, point) {
