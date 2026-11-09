@@ -53,3 +53,5 @@ export const ROUTES = {
     },
     {
       pts: [[36, 16], [19.5, 13.2], [15.6, 8.2], [22, 2], [33, -1]],
+      stops: [{ at: 1, pose: 'sit' }, { at: 2, pose: 'sit' }],
+    },
