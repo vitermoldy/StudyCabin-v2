@@ -317,3 +317,6 @@ function createWalker(name, rand, inUse) {
     model.head.rotation.y += (a.lookAim - model.head.rotation.y) * k;
     if (model.tail) model.tail.rotation.z = 0.12 * Math.sin(time * 2.1 + a.wave);
     if (model.ears) model.ears.rotation.z = Math.sin(time * 1.7 + a.wave) > 0.93 ? -0.35 : 0;
+  }
+
+  function stopPose(time, poseName) {
