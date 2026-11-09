@@ -91,3 +91,5 @@ export class Clock extends Emitter {
 
   persist() {
     save('clock', { minutes: this.minutes, day: this.day, speed: this.speed });
+  }
+}
