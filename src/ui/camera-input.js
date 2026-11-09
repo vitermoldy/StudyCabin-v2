@@ -15,3 +15,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
   let lastRipple = 0;
 
   const two = () => [...pointers.values()].slice(0, 2);
+  const spread = () => {
+    const [a, b] = two();
