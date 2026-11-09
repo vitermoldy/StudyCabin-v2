@@ -98,3 +98,6 @@ export async function fetchDetails(item) {
     return null;
   } finally {
     clearTimeout(timer);
+  }
+}
+
