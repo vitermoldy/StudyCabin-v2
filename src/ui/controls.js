@@ -195,3 +195,5 @@ export function mountFocus({ focus }) {
     if (startBtn.textContent !== label) startBtn.textContent = label;
     if (heroBtn.textContent !== label) heroBtn.textContent = label;
     $('focus-done').textContent = focus.done
+      ? `${focus.done} focus ${focus.done === 1 ? 'block' : 'blocks'} finished today.`
+      : 'No focus blocks finished today.';
