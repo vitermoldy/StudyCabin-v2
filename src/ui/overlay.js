@@ -92,3 +92,5 @@ export class Overlay {
       if (prev === 'light' && dark > light * 1.25) next = 'dark';
       if (prev === 'dark' && light > dark * 1.25) next = 'light';
       if (next !== prev || !el.dataset.ink) {
+        this.inks.set(el, next);
+        el.dataset.ink = next;
