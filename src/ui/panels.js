@@ -70,3 +70,6 @@ export class Panels extends Emitter {
     if (!panel) return;
     if (panel.contains(document.activeElement)) document.activeElement.blur();
     panel.dataset.open = 'false';
+    panel.inert = true;
+  }
+
