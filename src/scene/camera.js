@@ -122,3 +122,5 @@ export class CameraRig {
       cam.updateProjectionMatrix();
     }
     if (followPoint) this.followTarget.lerp(followPoint, 1 - Math.exp(-2.5 * dt));
+    const basePos = tmpA;
+    const baseTarget = tmpB;
