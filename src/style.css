@@ -141,3 +141,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   transition: background-color 120ms var(--ease), border-color 120ms var(--ease), transform 90ms var(--ease);
 }
 .chip:hover { background: #262624; border-color: var(--line-strong); transition-duration: 150ms; }
+.chip:active { transform: translateY(1px) scale(.985); }
+.chip__glyph { color: var(--action); font-size: 17px; line-height: 1; }
