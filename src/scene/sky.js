@@ -341,3 +341,5 @@ export class Atmosphere {
     this.sun.castShadow = this.sun.intensity > 0.05;
 
     this.hemi.color.copy(this.zenith).lerp(this.horizon, 0.5).lerp(this._tmpB.setRGB(1, 1, 1), 0.2);
+    // Light bounced up from the forest floor is green, not grey.
+    this.hemi.groundColor.copy(this.horizon).multiplyScalar(0.4).lerp(MOSS, 0.45 * day);
