@@ -189,3 +189,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   backdrop-filter: blur(16px) saturate(1.1);
   border: 1px solid var(--line); border-radius: var(--r-md);
   opacity: 0; visibility: hidden; transform: translate(-50%, 6px);
+  transition: opacity 120ms var(--ease), transform 120ms var(--ease), visibility 0s linear 120ms;
+  scrollbar-width: thin; scrollbar-color: rgba(228, 229, 225, 0.25) transparent;
