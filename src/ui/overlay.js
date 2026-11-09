@@ -60,3 +60,5 @@ export class Overlay {
     });
   }
 
+  setStory(line, meta) {
+    if (this.story.textContent !== line) this.story.textContent = line;
