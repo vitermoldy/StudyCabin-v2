@@ -183,3 +183,5 @@ export function mountFocus({ focus }) {
   $('focus-reset').addEventListener('click', () => focus.reset());
   const dockLabel = $('dock-focus-label');
   const baseTitle = document.title;
+  const render = () => {
+    setPreset(focus.preset);
