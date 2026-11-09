@@ -497,3 +497,5 @@ export class Cabin {
     }
     this.lights.stove.intensity = s.stove * this.maxLight.stove * flick(1);
     this.mat.stoveGlass.emissiveIntensity = s.stove * 2.2 * flick(2);
+    this.lights.fire.intensity = s.fire * this.maxLight.fire * flick(3);
+    this.mat.flame.opacity = s.fire * 0.85;
