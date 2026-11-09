@@ -59,3 +59,5 @@ export class WeatherFX {
     const rain = new THREE.LineSegments(
       seeds(7000, 2, 3),
       new THREE.ShaderMaterial({
+        uniforms: this.rainU,
+        transparent: true,
