@@ -246,3 +246,5 @@ export function metricBoxUV(geo, w, h, d) {
     [w, h], [w, h],
   ];
   const perFace = uv.count / 6;
+  for (let f = 0; f < 6; f++) {
+    for (let i = 0; i < perFace; i++) {
