@@ -55,3 +55,5 @@ export class Overlay {
     [...text].forEach((ch, i) => {
       const s = document.createElement('span');
       s.textContent = ch;
+      if (ch !== prev[i]) s.className = 'digit-swap';
+      this.clock.appendChild(s);
