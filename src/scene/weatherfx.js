@@ -52,3 +52,6 @@ export class WeatherFX {
       uCenter: { value: new THREE.Vector3(0, 8, 10) },
       uLight: { value: 1 },
       uScale: { value: 400 },
+    };
+
+    // Rain: short streaks.
