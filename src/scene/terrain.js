@@ -264,3 +264,6 @@ export class Terrain {
     mesh.receiveShadow = true;
     mesh.frustumCulled = false;
     return mesh;
+  }
+
+  /** Ferns along the edge of the wood and under the first trees: fronds arching out of a crown. */
