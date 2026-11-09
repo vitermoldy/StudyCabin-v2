@@ -733,3 +733,5 @@ export class Animals {
     const c = { ...ctx, onPlan: this._onPlan };
     for (const w of this.walkers) {
       if (w.kind.follows) w.follow(dt, time, this.byName[w.kind.follows], 1.9);
+      else w.update(dt, time, c);
+    }
