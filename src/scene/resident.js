@@ -191,3 +191,5 @@ export class Resident {
     this.armR = arm(-1);
 
     const leg = (side) => {
+      const th = new THREE.Group();
+      th.position.set(0.095 * side, -0.02, 0);
