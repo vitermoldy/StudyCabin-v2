@@ -104,3 +104,5 @@ function swayShader(material, { leaves = false } = {}) {
           vec3 base = instanceMatrix[3].xyz;
           float hh = position.y;
           float ph = base.x * 0.21 + base.z * 0.17;
+          float s = (sin(uTime * 0.9 + ph) * 0.6 + sin(uTime * 2.1 + ph * 1.7) * 0.25) * (0.15 + uWind * 0.85);
+          transformed.x += s * hh * hh * 0.07;
