@@ -17,3 +17,5 @@ import { POND, WATER_Y, groundHeight, pondE } from './ground.js';
 import { fireflies } from '../sim/wildlife.js';
 
 export function webglAvailable() {
+  try {
+    const c = document.createElement('canvas');
