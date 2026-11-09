@@ -156,3 +156,6 @@ export function grassCover(x, z) {
   cover *= smooth(0.25, 0.65, trailDistance(x, z));
   const patchy = fbm(x * 0.07 + 3.1, z * 0.07, 3);
   return smooth(0.22, 0.5, cover * (0.55 + patchy));
+}
+
+/** Bare earth: the path and the muddy bank of the pond, 0..1. */
