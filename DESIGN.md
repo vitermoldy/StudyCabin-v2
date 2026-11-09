@@ -58,3 +58,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | --- | --- |
 | Live WebGL scene (Three.js) instead of photographs | The owner asked for a house where time, weather, seasons and a person change; only a live scene can show that. |
 | Giant words: activity top left, "at" on the right, the clock bottom right | The reference's three-word composition, turned into live state: "Coffee at 07:42". |
+| Word blurs in letter by letter when the activity changes | The reference shows letters arriving out of blur; here it marks that the resident started something new. |
+| Big type switches between light and dark ink | The scene behind it goes from night to bright fog; the page samples the rendered pixels under each word and keeps 3:1 or better. |
