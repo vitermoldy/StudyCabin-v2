@@ -64,3 +64,5 @@ export class CameraRig {
     if (!VIEWS[id] || id === this.view) return;
     this.from.pos.copy(this.camera.position);
     this.from.target.copy(this.target);
+    this.view = id;
+    this.travel = this.reduced ? 1 : 0;
