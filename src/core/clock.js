@@ -10,3 +10,5 @@ export const SPEEDS = {
 };
 
 export const SPEED_LABELS = {
+  paused: 'Stopped',
+  real: 'Real time',
