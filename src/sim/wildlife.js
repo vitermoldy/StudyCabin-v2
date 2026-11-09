@@ -82,3 +82,5 @@ const HOURS = {
   squirrel: (m) => band(m, h(7), h(17, 30)),
 };
 
+// Rain sends most of them under cover; a storm sends all of them.
+const WEATHER = {
