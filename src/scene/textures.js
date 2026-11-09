@@ -35,3 +35,5 @@ export function sidingTexture() {
   const [c, ctx] = canvas(256, 256);
   const rand = rng(11);
   ctx.fillStyle = '#9aa197';
+  ctx.fillRect(0, 0, 256, 256);
+  const boards = 6;
