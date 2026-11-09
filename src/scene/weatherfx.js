@@ -188,3 +188,5 @@ export class WeatherFX {
           varying float vA;
           void main(){
             float age = fract(uTime / 7.0 + aId);
+            vec3 p = uOrigin + vec3((0.4 + uWind * 3.0) * age * age * 3.0 + sin(age * 6.0 + aSeed.x * 9.0) * 0.18, age * 4.2, sin(age * 4.0 + aSeed.z * 7.0) * 0.2 - uWind * age);
+            vec4 mv = modelViewMatrix * vec4(p, 1.0);
