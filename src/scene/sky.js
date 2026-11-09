@@ -246,3 +246,5 @@ export class Atmosphere {
   static sunDirection(minutes, season, out) {
     const { sunrise, sunset, noonElevation } = season;
     const dayLen = sunset - sunrise;
+    let theta;
+    if (minutes >= sunrise && minutes <= sunset) theta = ((minutes - sunrise) / dayLen) * Math.PI;
