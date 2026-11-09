@@ -36,3 +36,5 @@ function blob(material, [sx, sy, sz], [x, y, z], tilt = 0) {
 
 function eyes(head, x, y, z, r) {
   for (const side of [-1, 1]) {
+    const e = new THREE.Mesh(ball, eyeMat);
+    e.scale.setScalar(r);
