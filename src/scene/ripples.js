@@ -63,3 +63,5 @@ export class Ripples {
   constructor(renderer) {
     this.renderer = renderer;
     this.ok = false;
+    const gl = renderer.getContext();
+    // three.js is WebGL 2 only now; float targets still need this extension.
