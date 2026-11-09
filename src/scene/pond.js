@@ -74,3 +74,6 @@ const FRAG = /* glsl */ `
     float treeTop = 0.3 + 0.12 * vn(vec2(az * 9.0, 1.0)) + 0.06 * vn(vec2(az * 31.0, 3.0));
     float trees = 1.0 - smoothstep(treeTop - 0.04, treeTop + 0.02, R.y);
     sky = mix(sky, uLand, trees);
+    float sd = max(dot(R, uSunDir), 0.0);
+    sky += uSunColor * pow(sd, 5.0) * 0.25 * uSunVis * (1.0 - trees);
+
