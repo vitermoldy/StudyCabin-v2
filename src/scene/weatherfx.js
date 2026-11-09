@@ -192,3 +192,5 @@ export class WeatherFX {
             vec4 mv = modelViewMatrix * vec4(p, 1.0);
             vA = uAmount * smoothstep(0.0, 0.12, age) * (1.0 - age);
             gl_PointSize = (0.35 + age * 1.6) * uScale / max(-mv.z, 0.5);
+            gl_Position = projectionMatrix * mv;
+          }`,
