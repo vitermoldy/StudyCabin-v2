@@ -16,3 +16,5 @@ export class MusicPlayer extends Emitter {
     const saved = load('music', {});
     this.queue = Array.isArray(saved.queue) ? saved.queue.filter((q) => q && (q.videoId || q.listId)).map((q) => ({ ...q, status: q.status === 'error' ? 'error' : 'ready' })) : [];
     this.current = Number.isInteger(saved.current) && saved.current < this.queue.length ? saved.current : -1;
+    this.volume = Number.isFinite(saved.volume) ? clamp(saved.volume, 0, 100) : 70;
+    this.loop = saved.loop === true;
