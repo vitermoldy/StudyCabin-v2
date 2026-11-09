@@ -337,3 +337,5 @@ export class Resident {
           this.pos.set(target.x, target.y, target.z);
           remaining -= dist;
           this.pathIndex++;
+          if (this.pathIndex >= this.path.length) {
+            this.path = null;
