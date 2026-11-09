@@ -81,3 +81,5 @@ export class Ripples {
     this.b = new THREE.WebGLRenderTarget(RES, RES, opts);
     this.camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
     this.scene = new THREE.Scene();
+    this.quad = new THREE.Mesh(new THREE.PlaneGeometry(2, 2));
+    this.quad.frustumCulled = false;
