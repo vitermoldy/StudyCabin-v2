@@ -21,3 +21,5 @@ export function vnoise(x, y) {
   const yi = Math.floor(y);
   const xf = x - xi;
   const yf = y - yi;
+  const u = xf * xf * (3 - 2 * xf);
+  const v = yf * yf * (3 - 2 * yf);
