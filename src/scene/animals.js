@@ -180,3 +180,5 @@ function makeSquirrel() {
   body.add(neck);
   const head = new THREE.Group();
   head.position.set(0.02, 0.03, 0);
+  neck.add(head);
+  head.add(blob(fur, [0.05, 0.045, 0.042], [0, 0, 0]));
