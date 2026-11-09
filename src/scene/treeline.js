@@ -66,3 +66,5 @@ export class Treeline {
     this.colors = {
       nearTop: new THREE.Color(),
       nearLow: new THREE.Color(),
+      farTop: new THREE.Color(),
+      farLow: new THREE.Color(),
