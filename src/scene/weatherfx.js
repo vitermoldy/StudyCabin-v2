@@ -245,3 +245,5 @@ export class WeatherFX {
           if (a < 0.01) discard;
           vec3 c = mix(vec3(0.84, 0.96, 0.48), vec3(1.0, 0.88, 0.54), vWarm);
           gl_FragColor = vec4(c * (0.9 + core), a);
+          #include <colorspace_fragment>
+        }`,
