@@ -42,3 +42,5 @@ export function save(section, value) {
   if (!timer) timer = setTimeout(flush, 250);
 }
 
+export function saveNow() {
+  if (timer) {
