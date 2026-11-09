@@ -183,3 +183,5 @@ export class Climate extends Emitter {
 
   /** dt in real seconds, gameDt in game minutes. */
   update(dt, gameDt) {
+    if (this.weatherMode === 'auto' && this._now() >= this.nextChange) {
+      this._setWeather(this._roll());
