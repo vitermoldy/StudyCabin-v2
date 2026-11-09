@@ -339,3 +339,5 @@ export class Cabin {
     this._bx(woodDark, bx0, bx0 + 0.03, FLOOR, FLOOR + 2.0, -3.0, -3.0 + B.d);
     this._bx(woodDark, bx1 - 0.03, bx1, FLOOR, FLOOR + 2.0, -3.0, -3.0 + B.d);
     for (let i = 0; i < 5; i++) {
+      const y = FLOOR + 0.05 + i * 0.48;
+      this._bx(woodDark, bx0, bx1, y - 0.03, y, -3.0, -3.0 + B.d);
