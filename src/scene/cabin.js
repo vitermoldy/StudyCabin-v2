@@ -122,3 +122,6 @@ export class Cabin {
     for (const id of ['kitchen', 'living', 'bed', 'desk', 'porch']) {
       this.shades[id] = new THREE.MeshStandardMaterial({ color: '#e7dcc6', emissive: '#ffcf8f', emissiveIntensity: 0, roughness: 0.8 });
     }
+  }
+
+  // ------------------------------------------------------------ shell
