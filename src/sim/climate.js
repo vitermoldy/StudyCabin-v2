@@ -100,3 +100,5 @@ export class Climate extends Emitter {
     this.params = {};
     const target = WEATHERS[this.weather];
     for (const k of PARAM_KEYS) this.params[k] = target[k];
+    const s = SEASONS[this.season];
+    this.look = {
