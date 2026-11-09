@@ -38,3 +38,5 @@ export class World {
     this.renderer.debug.onShaderError = (gl, program, vs, fs) => {
       console.warn('StudyCabin: a shader did not compile; showing the still picture.', gl.getProgramInfoLog(program) || '');
       if (this.onShaderFail) this.onShaderFail();
+    };
+    this.maxDpr = Math.min(window.devicePixelRatio || 1, 1.5);
