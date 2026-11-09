@@ -95,3 +95,5 @@ export class Resident {
   constructor(scene) {
     this.root = new THREE.Group();
     scene.add(this.root);
+    this.mat = {
+      skin: new THREE.MeshStandardMaterial({ color: '#c9987a', roughness: 0.7 }),
