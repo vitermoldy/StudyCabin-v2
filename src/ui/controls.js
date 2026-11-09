@@ -22,3 +22,5 @@ function radios(fieldset, name, options, current, onPick) {
     input.value = value;
     input.checked = value === current;
     input.addEventListener('change', () => input.checked && onPick(value));
+    const span = document.createElement('span');
+    span.textContent = label;
