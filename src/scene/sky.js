@@ -195,3 +195,5 @@ export class Atmosphere {
       uCloud: { value: 0.2 },
       uTime: { value: 0 },
       uWind: { value: 0.3 },
+      uFlash: { value: 0 },
+      uGlow: { value: 1 },
