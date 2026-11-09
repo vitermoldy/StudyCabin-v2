@@ -80,3 +80,5 @@ export class Treeline {
           uNearLow: { value: this.colors.nearLow },
           uFarTop: { value: this.colors.farTop },
           uFarLow: { value: this.colors.farLow },
+          uFog: { value: this.colors.fog },
+          uMix: { value: ring.far },
