@@ -138,3 +138,5 @@ const SHADOW_REACH = 34;
 const REACH = 74;
 
 export class Trees {
+  constructor(scene, { lowPower = false } = {}) {
+    const r = rng(42);
