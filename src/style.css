@@ -314,3 +314,6 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .player__bar { display: flex; align-items: center; gap: var(--s-3); }
 .player__time { flex: none; font-size: var(--t-label); color: var(--muted); font-variant-numeric: tabular-nums; }
 .player__controls { display: flex; align-items: center; gap: var(--s-1); flex-wrap: wrap; }
+.player__controls .toggle:first-of-type { margin-left: auto; }
+
+.queue { margin-top: var(--s-3); }
