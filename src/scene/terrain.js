@@ -365,3 +365,5 @@ export class Terrain {
     mesh.instanceMatrix.needsUpdate = true;
     if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
     mesh.receiveShadow = true;
+    mesh.frustumCulled = false;
+    return mesh;
