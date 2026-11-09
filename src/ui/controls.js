@@ -56,3 +56,5 @@ export function mountDay({ clock, onJump }) {
     onJump(m, true);
   });
   $('sync-clock').addEventListener('click', () => {
+    const d = new Date();
+    onJump(d.getHours() * 60 + d.getMinutes(), true);
