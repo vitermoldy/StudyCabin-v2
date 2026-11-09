@@ -311,3 +311,5 @@ export class Resident {
   }
 
   _targetJoints(t) {
+    const seat = SEAT[this.spot] ?? 0.5;
+    const fn = POSES[this.pose] || POSES.stand;
