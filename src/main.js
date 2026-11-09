@@ -98,3 +98,5 @@ function inkFromPoster() {
         }
         return { mean: sum / n, max, min };
       });
+      overlay.applyInk(samples);
+    } catch {
