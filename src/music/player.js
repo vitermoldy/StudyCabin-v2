@@ -113,3 +113,5 @@ export class MusicPlayer extends Emitter {
     this.emit('change');
   }
 
+  setShuffle(on) {
+    this.shuffle = !!on;
