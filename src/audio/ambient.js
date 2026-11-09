@@ -24,3 +24,5 @@ export class Ambient extends Emitter {
     this.musicPlaying = false;
     this.ctx = null;
     this._t = 0;
+    this._nextBird = 0;
+    this._nextCrackle = 0;
