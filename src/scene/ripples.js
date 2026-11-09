@@ -113,3 +113,6 @@ export class Ripples {
       renderer.clear(true, false, false);
     }
     renderer.setRenderTarget(prev);
+  }
+
+  get texture() {
