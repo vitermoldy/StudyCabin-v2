@@ -43,3 +43,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
       else mode = 'orbit';
     } else if (pointers.size === 2) {
       mode = 'pinch';
+      pinchDist = spread();
+      pinchMid = middle();
