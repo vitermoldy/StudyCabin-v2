@@ -207,3 +207,5 @@ export class World {
       camera: this.camera,
       light: 0.15 + this.atmo.dayFactor * 0.85,
       stove: this.cabin.state.stove,
+      viewportHeight: this.height * this.dpr,
+      fireflies: this.fireflies,
