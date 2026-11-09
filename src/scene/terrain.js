@@ -164,3 +164,5 @@ export class Terrain {
         const width = (1 - f * 0.8) * side;
         return [bx + dx * bend + px * width, h * f * (1 - lean * 0.25 * f), bz + dz * bend + pz * width];
       };
+      const tip = [bx + dx * lean, h * (1 - lean * 0.25), bz + dz * lean];
+      const push = (v, f) => {
