@@ -179,3 +179,6 @@ function lilies(scene) {
     return f;
   });
   return { padMesh, padMat, flowers };
+}
+
+export class Pond {
