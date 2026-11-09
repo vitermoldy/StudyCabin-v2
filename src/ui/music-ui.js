@@ -223,3 +223,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const playing = player.isPlaying;
 
     // The queue list
+    const focusedIndex = [...qItems.children].findIndex((li) => li.contains(document.activeElement));
+    qItems.replaceChildren(...q.map(row));
