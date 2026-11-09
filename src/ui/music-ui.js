@@ -243,3 +243,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     // Now playing
     if (item) {
       nowTitle.textContent = item.kind === 'playlist' && player.nowTitle ? player.nowTitle : titleOf(item);
+      const bits = [];
+      if (item.kind === 'playlist') bits.push(`From ${titleOf(item)}`);
