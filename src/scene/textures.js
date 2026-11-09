@@ -15,3 +15,5 @@ function finish(c, { repeat = [1, 1], srgb = true } = {}) {
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
   t.repeat.set(repeat[0], repeat[1]);
+  t.anisotropy = 4;
+  if (srgb) t.colorSpace = THREE.SRGBColorSpace;
