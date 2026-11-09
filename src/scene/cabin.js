@@ -118,3 +118,5 @@ export class Cabin {
       screen: new THREE.MeshStandardMaterial({ color: '#1b1d1f', emissive: '#d6e4ee', emissiveIntensity: 0, roughness: 0.3 }),
       flame: new THREE.MeshBasicMaterial({ color: '#ffb35c', transparent: true, opacity: 0, depthWrite: false }),
     };
+    this.shades = {};
+    for (const id of ['kitchen', 'living', 'bed', 'desk', 'porch']) {
