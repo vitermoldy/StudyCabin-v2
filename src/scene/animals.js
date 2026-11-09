@@ -165,3 +165,6 @@ function makeHare() {
   // A big hare, so it still shows over the clearing's grass.
   root.scale.setScalar(1.7);
   return { root, body, neck, head, legs: [], tail: null, ears };
+}
+
+function makeSquirrel() {
