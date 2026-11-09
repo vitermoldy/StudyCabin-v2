@@ -364,3 +364,5 @@ export class Cabin {
 
   _bedroom() {
     const { wood, linen, duvet, cushion, woodDark, ceramic } = this.mat;
+    const B = F.bed;
+    const x0 = B.x - B.w / 2;
