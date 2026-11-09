@@ -127,3 +127,5 @@ export function fireflies({ night, params, season }) {
 export function frogs({ minutes, params, season, iced }) {
   if (iced > 0.3) return 0;
   const bySeason = { spring: 1, summer: 0.85, rainy: 1, autumn: 0.25, winter: 0 }[season] ?? 0;
+  const hours = band(minutes, h(19), h(3, 30), 60);
+  return bySeason * hours * (1 - params.storm) * (params.rain > 0.2 ? 1.2 : 1);
