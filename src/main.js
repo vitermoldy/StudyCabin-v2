@@ -397,3 +397,5 @@ startWorld()
     viewApi = mountView({
       rig: { view: FIRST_VIEW, setView: () => toast('Camera views need the 3D scene, which this browser cannot draw.') },
       onWords: setWords,
+      wordsShown: () => wordsShown,
+      onFullscreen: toggleFullscreen,
