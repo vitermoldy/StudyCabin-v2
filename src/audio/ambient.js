@@ -120,3 +120,6 @@ export class Ambient extends Emitter {
     this.cricketLevel = gain(0);
     carrier.connect(am).connect(this.cricketGate).connect(this.cricketLevel).connect(this.master);
     carrier.start();
+    lfo.start();
+
+    this.thunderBus = gain(1);
