@@ -17,3 +17,5 @@ function paint(geo, r, g, b, vary = 0) {
   const n = geo.attributes.position.count;
   const col = new Float32Array(n * 3);
   const pos = geo.attributes.position;
+  for (let i = 0; i < n; i++) {
+    const y = pos.getY(i);
