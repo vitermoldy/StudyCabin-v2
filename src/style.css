@@ -7,3 +7,5 @@
   --p-inv-bg: #171716; --p-inv-surface: #232321; --p-inv-ink: #e4e5e1; --p-inv-muted: #8e8f8c;
   --p-inv-accent: #d9a05b; --p-inv-accent-ink: #111111; --p-inv-action: #d9a05b; --p-inv-action-ink: #111111;
   --font-display: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif;
+  --font-text: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif;
+  --display-weight: 400;
