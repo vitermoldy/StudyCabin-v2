@@ -482,3 +482,6 @@ export class Cabin {
   /** Targets for every lamp and moving part, each 0..1. */
   set(values) {
     Object.assign(this.target, values);
+  }
+
+  update(dt, time) {
