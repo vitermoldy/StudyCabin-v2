@@ -11,3 +11,5 @@ const SIZE = Math.max(POND.rx, POND.rz) * 2.5;
 export const RIPPLE_AREA = { x0: POND.x - SIZE / 2, z0: POND.z - SIZE / 2, size: SIZE };
 const RES = 256;
 
+// The same uneven oval as pondE() in ground.js.
+const POND_GLSL = /* glsl */ `
