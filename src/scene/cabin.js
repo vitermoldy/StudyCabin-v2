@@ -31,3 +31,5 @@ export class Cabin {
     this._deckFurniture();
     this._lights();
 
+    this.state = { kitchen: 0, living: 0, bed: 0, desk: 0, stove: 0, fire: 0, porch: 0, screen: 0, door: 0, sleeping: 0 };
+    this.target = { ...this.state };
