@@ -114,3 +114,5 @@ export class CameraRig {
   }
 
   update(dt, t, followPoint) {
+    const cam = this.camera;
+    // Wider lens on tall screens.
