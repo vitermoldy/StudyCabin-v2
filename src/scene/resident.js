@@ -255,3 +255,6 @@ export class Resident {
   setSeason(id) {
     if (OUTFIT[id]) this.mat.top.color.set(OUTFIT[id]);
     this.season = id;
+  }
+
+  /** Go to a spot and take a pose. `teleport` skips the walk (after a time jump). */
