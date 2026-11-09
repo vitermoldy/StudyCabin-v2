@@ -258,3 +258,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     }
 
     // Controls
+    const label = playing ? 'Pause music' : 'Play music';
+    for (const b of [playBtn, dockPlay]) {
