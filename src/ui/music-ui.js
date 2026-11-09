@@ -161,3 +161,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     if (isCurrent) main.setAttribute('aria-current', 'true');
     const t = document.createElement('span');
     t.className = 'qrow__title';
+    t.textContent = titleOf(item);
+    const meta = document.createElement('span');
