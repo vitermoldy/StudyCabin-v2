@@ -167,3 +167,5 @@ export class World {
   update(dt, t, state) {
     const { minutes, climate, activity, follow = true, jumped = false } = state;
     const p = climate.params;
+    WORLD.uTime.value = t;
+    WORLD.uWind.value = p.wind;
