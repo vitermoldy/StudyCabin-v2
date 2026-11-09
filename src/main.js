@@ -391,3 +391,5 @@ startWorld()
       world.render();
     }
   })
+  .catch((err) => {
+    console.error('StudyCabin: the 3D scene could not start.', err);
