@@ -26,3 +26,5 @@ export class Clock extends Emitter {
     super();
     const saved = load('clock', null);
     this.minutes = saved && Number.isFinite(saved.minutes) ? saved.minutes : realMinutes();
+    this.day = saved && Number.isInteger(saved.day) && saved.day > 0 ? saved.day : 1;
+    this.speed = saved && saved.speed in SPEEDS ? saved.speed : 'normal';
