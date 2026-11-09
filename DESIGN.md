@@ -36,3 +36,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 
 | Decision | Reason |
 | --- | --- |
+| An oval clearing in a wood, the cabin at its back, the trees closing in behind and to the sides | "In the middle of a forest": the wood is on every side, the clearing gives the cabin and the animals room to be seen. |
+| A lane kept open in front of the cabin, down the clearing | The long views pull the camera back on narrow screens; the lane keeps trunks out of the shot on a phone held upright. |
