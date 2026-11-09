@@ -115,3 +115,6 @@ export function keenness(kind, { minutes, params, season }) {
 /** True while the owl should sit on the roof ridge. */
 export function owlOut({ minutes, params, night }) {
   return night > 0.6 && band(minutes, h(20, 30), h(5, 15), 0) > 0.5 && params.storm < 0.3 && params.rain < 0.6;
+}
+
+/** 0..1: how many fireflies light up over the grass. */
