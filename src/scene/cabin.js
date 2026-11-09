@@ -28,3 +28,6 @@ export class Cabin {
     this._living();
     this._bedroom();
     this._desk();
+    this._deckFurniture();
+    this._lights();
+
