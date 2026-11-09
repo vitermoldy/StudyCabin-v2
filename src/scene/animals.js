@@ -433,3 +433,5 @@ function createWalker(name, rand, inUse) {
     /** A line about this animal while it is out in the clearing; `withYoung` for the doe. */
     sighting(withYoung = false) {
       if (!model.root.visible) return null;
+      const p = model.root.position;
+      if (forestDepth(p.x, p.z) > 1.5) return null;
