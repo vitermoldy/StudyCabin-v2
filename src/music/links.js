@@ -67,3 +67,5 @@ export function loadYouTubeApi() {
       clearTimeout(timer);
       if (typeof prev === 'function') prev();
       resolve(window.YT);
+    };
+    const s = document.createElement('script');
