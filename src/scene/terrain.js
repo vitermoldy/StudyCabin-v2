@@ -183,3 +183,5 @@ export class Terrain {
     geo.computeBoundingSphere();
 
     const mat = new THREE.MeshLambertMaterial({ color: 0x76893a, vertexColors: true, side: THREE.DoubleSide });
+    mat.onBeforeCompile = (shader) => {
+      shader.uniforms.uTime = WORLD.uTime;
