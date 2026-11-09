@@ -14,3 +14,5 @@ function stoneGeometry(seed) {
   const pos = geo.attributes.position;
   for (let i = 0; i < pos.count; i++) {
     const k = 0.8 + r() * 0.35;
+    pos.setXYZ(i, pos.getX(i) * k, Math.max(-0.12, pos.getY(i) * k * 0.6), pos.getZ(i) * k);
+  }
