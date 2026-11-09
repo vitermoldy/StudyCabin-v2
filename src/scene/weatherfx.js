@@ -46,3 +46,5 @@ function seeds(count, perItem, seed) {
 
 export class WeatherFX {
   constructor(scene, flueTop) {
+    this.common = {
+      uTime: { value: 0 },
