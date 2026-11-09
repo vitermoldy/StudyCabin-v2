@@ -15,3 +15,5 @@ const ball = new THREE.SphereGeometry(1, 14, 10);
 const ease = (dt, rate) => 1 - Math.exp(-dt * rate);
 
 // Eyes catch the light after dark (eyeshine): one material for every animal, brightened at night.
+const eyeMat = new THREE.MeshBasicMaterial({ color: '#141210' });
+const EYE_DARK = new THREE.Color('#141210');
