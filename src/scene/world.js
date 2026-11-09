@@ -97,3 +97,5 @@ export class World {
     this._dprCheck += frameMs / 1000;
     if (this._cooldown > 0) this._cooldown -= frameMs / 1000;
     if (this._dprCheck < 2 || this._cooldown > 0) return;
+    this._dprCheck = 0;
+    let next = this.dpr;
