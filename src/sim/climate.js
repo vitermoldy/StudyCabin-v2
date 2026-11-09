@@ -163,3 +163,5 @@ export class Climate extends Emitter {
   }
 
   setWeatherMode(mode) {
+    if (mode !== 'auto' && !(mode in WEATHERS)) return;
+    this.weatherMode = mode;
