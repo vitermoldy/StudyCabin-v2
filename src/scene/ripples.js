@@ -5,3 +5,6 @@ import { POND } from './ground.js';
 // (madebyevan.com/webgl-water): every texel keeps a height and a velocity, each
 // step pulls it toward the average of its neighbours, and drops push it down.
 // It covers the pond; the pond shader reads it for normals, so pointer taps and
+// raindrops leave rings on the surface, and the rings die out against the bank.
+
+const SIZE = Math.max(POND.rx, POND.rz) * 2.5;
