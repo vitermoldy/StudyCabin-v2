@@ -319,3 +319,5 @@ export class Cabin {
     this._bx(wood, C.x - C.w / 2, C.x + C.w / 2, FLOOR + 0.36, FLOOR + 0.42, C.z - C.d / 2, C.z + C.d / 2);
     this._bx(woodDark, C.x - C.w / 2 + 0.06, C.x + C.w / 2 - 0.06, FLOOR, FLOOR + 0.36, C.z - 0.12, C.z + 0.12);
     this._cb(this.mat.books, 0.3, 0.05, 0.22, C.x - 0.25, FLOOR + 0.445, C.z);
+    this._cb(trim, 0.26, 0.04, 0.2, C.x - 0.25, FLOOR + 0.49, C.z + 0.01).rotation.y = 0.2;
+    this._cyl(ceramic, 0.045, 0.04, 0.09, C.x + 0.28, FLOOR + 0.465, C.z + 0.05, 12);
