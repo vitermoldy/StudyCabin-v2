@@ -174,3 +174,5 @@ export class WeatherFX {
     this.petalU = petals.u;
     this.leafU = leaves.u;
 
+    // Smoke from the stove flue.
+    this.smokeU = { ...this.common, uAmount: { value: 0 }, uOrigin: { value: flueTop.clone() } };
