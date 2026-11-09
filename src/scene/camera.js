@@ -152,3 +152,6 @@ export class CameraRig {
       if (this.pos.y < floor) this.pos.y = floor;
       const inCabin = this.pos.x > -10.8 && this.pos.x < 7.6 && this.pos.z > -3.6 && this.pos.z < 3.6 && this.pos.y < 6.4;
       if (inCabin) this.pos.z = this.pos.z > -0.2 ? 3.6 : -3.6;
+    }
+
+    // Entrance: the camera settles a little closer once, on load.
