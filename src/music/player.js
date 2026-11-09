@@ -209,3 +209,5 @@ export class MusicPlayer extends Emitter {
     else this.player.playVideo();
   }
 
+  next() {
+    const item = this.item;
