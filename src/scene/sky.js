@@ -279,3 +279,6 @@ export class Atmosphere {
     this.zenith.copy(this._tmpA).lerp(this._tmpB, overcast);
     sample(CLEAR, sy, 'horizon', this._tmpA);
     sample(OVERCAST, sy, 'horizon', this._tmpB);
+    this.horizon.copy(this._tmpA).lerp(this._tmpB, overcast);
+
+    // Fog pulls the whole sky toward a soft grey of the same brightness.
