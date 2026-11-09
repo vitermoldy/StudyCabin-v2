@@ -312,3 +312,5 @@ function frame(now) {
       activity,
       follow: world.rig.view === 'follow',
       jumped: timeJumped,
+      residentOptions: { speedUp },
+    });
