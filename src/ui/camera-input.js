@@ -111,3 +111,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
 
   canvas.addEventListener('dblclick', () => {
     const w = getWorld();
+    if (w) {
+      w.rig.resetUser();
