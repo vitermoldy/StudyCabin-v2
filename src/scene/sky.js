@@ -228,3 +228,6 @@ export class Atmosphere {
     this.sun.shadow.bias = -0.0005;
     this.sun.shadow.normalBias = 0.035;
     this.sun.target.position.set(-0.5, 0, 2.5);
+    scene.add(this.sun, this.sun.target);
+
+    this.sunDir = new THREE.Vector3();
