@@ -391,3 +391,5 @@ export class Cabin {
     const D = F.desk;
     this._bx(wood, D.x - D.w / 2, D.x + D.w / 2, FLOOR + 0.72, FLOOR + 0.76, D.z - D.d / 2, D.z + D.d / 2);
     this._legs(woodDark, D.x, D.z, D.w - 0.04, D.d - 0.04, 0.72, FLOOR, 0.04);
+    const top = FLOOR + 0.76;
+    // laptop: its screen faces the chair, away from the glass
