@@ -231,3 +231,5 @@ export class Ambient extends Emitter {
       const onFor = 0.25 + Math.random() * 0.5;
       this.cricketGate.gain.setTargetAtTime(1, now, 0.02);
       this.cricketGate.gain.setTargetAtTime(0, now + onFor, 0.03);
+      this._cricketGate = onFor + 0.3 + Math.random() * 0.9;
+    }
