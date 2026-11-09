@@ -15,3 +15,5 @@ export class Overlay {
     this.story = document.getElementById('story-line');
     this.meta = document.getElementById('story-meta');
     this.reduced = reducedMotion;
+    this.currentWord = '';
+    this.lastTime = '';
