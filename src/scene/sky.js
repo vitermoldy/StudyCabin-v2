@@ -86,3 +86,6 @@ const FRAG = /* glsl */ `
     col = mix(col, uHorizon, uFogAmt * (1.0 - smoothstep(0.0, 0.4, up)));
     if (h < 0.0) col = mix(uHorizon, uGround, smoothstep(0.0, -0.25, h));
 
+    float sd = max(dot(d, uSunDir), 0.0);
+    col += uSunColor * (pow(sd, 5.0) * 0.32 * uGlow + pow(sd, 64.0) * 0.45) * uSunVis;
+
