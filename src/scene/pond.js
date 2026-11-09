@@ -171,3 +171,5 @@ function lilies(scene) {
 
   const flowerMat = new THREE.MeshStandardMaterial({ color: '#f3e6ea', roughness: 0.6, emissive: '#3a3034', emissiveIntensity: 0.3 });
   const flowerGeo = new THREE.SphereGeometry(1, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2);
+  const flowers = pads.filter((_, i) => i % 5 === 1).map((p) => {
+    const f = new THREE.Mesh(flowerGeo, flowerMat);
