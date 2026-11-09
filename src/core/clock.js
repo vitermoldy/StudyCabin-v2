@@ -58,3 +58,5 @@ export class Clock extends Emitter {
       this.day += 1;
       this.emit('day', this.day);
     }
+    const whole = Math.floor(this.minutes);
+    if (whole !== this._lastMinute) {
