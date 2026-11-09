@@ -34,3 +34,6 @@ export const FURNITURE = {
 };
 
 const f = FURNITURE;
+const p = (x, z, y = FLOOR) => ({ x, y, z });
+
+// The path round the pond, walked during the late-morning walk. It starts
