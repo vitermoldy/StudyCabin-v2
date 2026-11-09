@@ -99,3 +99,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   let seeking = false;
   seek.addEventListener('input', () => {
     seeking = true;
+    const { duration } = player.progress();
+    seekTime.textContent = `${formatDuration((Number(seek.value) / 100) * duration)} / ${formatDuration(duration)}`;
