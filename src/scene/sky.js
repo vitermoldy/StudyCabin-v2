@@ -128,3 +128,5 @@ const FRAG = /* glsl */ `
     col = mix(col, cloudCol, cover);
     col += vec3(0.7, 0.76, 0.9) * uFlash * (0.25 + cover * 0.75);
     gl_FragColor = vec4(col, 1.0);
+    #include <tonemapping_fragment>
+    #include <colorspace_fragment>
