@@ -15,3 +15,5 @@ const flat = (g) => (g.index ? g.toNonIndexed() : g);
 
 function paint(geo, r, g, b, vary = 0) {
   const n = geo.attributes.position.count;
+  const col = new Float32Array(n * 3);
+  const pos = geo.attributes.position;
