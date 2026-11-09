@@ -72,3 +72,5 @@ const FRAG = /* glsl */ `
     vec3 cell = floor(sp);
     float r = hash3(cell);
     float on = step(1.0 - density, r);
+    float size = 0.32 + hash3(cell + 7.1) * 0.18;
+    float glow = smoothstep(size, 0.0, length(fract(sp) - 0.5));
