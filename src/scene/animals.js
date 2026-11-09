@@ -65,3 +65,5 @@ function stick(material, length, radius, [x, y, z], tiltZ, tiltX = 0) {
 }
 
 function makeDeer({ buck = false, fawn = false } = {}) {
+  const hide = coat(buck ? '#8f5e34' : fawn ? '#b98a52' : '#a87240');
+  const dark = coat('#3a2618');
