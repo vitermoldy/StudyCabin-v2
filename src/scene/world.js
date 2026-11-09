@@ -139,3 +139,5 @@ export class World {
     const darkness = clamp(1 - atmo.dayFactor + atmo.overcast * 0.4 + p.rain * 0.2 + p.fog * 0.15, 0, 1);
     const res = this.resident;
     const asleep = activity.pose === 'sleep';
+    const awake = !asleep;
+    const spot = res.spot;
