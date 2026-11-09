@@ -297,3 +297,5 @@ function fireflyGeometry(count) {
     if (r() > want) continue;
     pos.push(x, groundHeight(x, z) + 0.3 + Math.pow(r(), 1.6) * 2.4, z);
     seed.push(r(), r(), r());
+    id.push(r());
+  }
