@@ -16,3 +16,5 @@ function radios(fieldset, name, options, current, onPick) {
   for (const [value, label] of options) {
     const lab = document.createElement('label');
     lab.className = 'choice';
+    const input = document.createElement('input');
+    input.type = 'radio';
