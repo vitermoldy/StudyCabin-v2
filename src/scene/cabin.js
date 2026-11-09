@@ -168,3 +168,5 @@ export class Cabin {
       pane.renderOrder = 2;
     }
     // sliding door: glass and a thin frame
+    this.door = new THREE.Group();
+    this.door.position.set(0, 0, 2.93);
