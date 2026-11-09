@@ -139,3 +139,5 @@ export class Resident {
     this.hips.add(this.spine);
     const torso = capsule(0.16, 0.3, m.top);
     torso.position.y = 0.26;
+    torso.scale.set(1, 1, 0.78);
+    this.spine.add(torso);
