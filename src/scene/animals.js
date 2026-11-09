@@ -243,3 +243,5 @@ function createWalker(name, rand, inUse) {
     s: 0,
     stops: [],
     stop: null,
+    step: 0,
+    hop: 0,
