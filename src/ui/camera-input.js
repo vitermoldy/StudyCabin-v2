@@ -62,3 +62,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
       const d = spread();
       w.rig.zoomBy(pinchDist / d);
       pinchDist = d;
+      const m = middle();
+      w.rig.pan(m.x - pinchMid.x, m.y - pinchMid.y);
