@@ -68,3 +68,6 @@ export class Clock extends Emitter {
       this._saveIn = 5;
       this.persist();
     }
+    return passed;
+  }
+
