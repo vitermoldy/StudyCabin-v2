@@ -195,3 +195,5 @@ export class World {
     this.pond.update({ time: t, params: p, atmo: this.atmo, look: climate.look, rippleTexture: this.ripples.texture });
     this._house({ minutes, climate, activity });
     this.cabin.update(dt, t);
+    this.resident.update(dt, t, state.residentOptions);
+    const wild = { minutes, params: p, season: climate.season, day: this.atmo.dayFactor, night: this.atmo.night, jumped };
