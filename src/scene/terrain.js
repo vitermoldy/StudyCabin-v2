@@ -335,3 +335,5 @@ export class Terrain {
     const spots = [];
     const max = lowPower ? 320 : 720;
     for (let i = 0; i < 9000 && spots.length < max; i++) {
+      const x = CLEARING.x + (r() * 2 - 1) * 62;
+      const z = CLEARING.z + (r() * 2 - 1) * 62;
