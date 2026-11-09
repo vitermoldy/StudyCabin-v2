@@ -100,3 +100,6 @@ export function mountDay({ clock, onJump }) {
       }
     }
   };
+}
+
+export function mountWeather({ climate }) {
