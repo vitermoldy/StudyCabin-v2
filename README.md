@@ -61,3 +61,7 @@ shows a still picture and the music, timer and ambient sound still work.
   stove fire and thunder, all made in the browser from the weather, the hour and who is about,
   with a mixer. It turns down while music plays.
 - **Camera.** Five views (clearing, deck, window, pond, follow the resident), plus your own: drag
+  to turn, right-drag or Ctrl+drag to slide, scroll or pinch to zoom, double-click to reset.
+
+## Keys
+
