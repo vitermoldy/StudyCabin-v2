@@ -58,3 +58,5 @@ export class World {
     this.pond = new Pond(this.scene);
     this.ripples = new Ripples(this.renderer);
     this.pond.setRipples(this.ripples.texture, RIPPLE_AREA);
+    this.animals = new Animals(this.scene, { lowPower });
+    this.raycaster = new THREE.Raycaster();
