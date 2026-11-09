@@ -141,3 +141,5 @@ function storyText() {
   return { line, meta };
 }
 
+function jumpTo(minutes, sameDay) {
+  clock.jumpTo(minutes, { sameDay });
