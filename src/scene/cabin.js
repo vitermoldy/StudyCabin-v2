@@ -450,3 +450,5 @@ export class Cabin {
     const bowl = this._m(new THREE.LatheGeometry(pts, 28), metal);
     bowl.material = metal;
     bowl.position.set(f.x, FLOOR, f.z);
+    this._cyl(metal, 0.14, 0.2, 0.14, f.x, FLOOR + 0.07, f.z, 16);
+    this.flames = [];
