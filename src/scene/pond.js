@@ -234,3 +234,5 @@ export class Pond {
     const u = this.uniforms;
     if (rippleTexture) u.uRipple.value = rippleTexture;
     u.uTime.value = time;
+    u.uChop.value = params.wind * 0.7 + params.storm * 0.3;
+    u.uRain.value = params.rain;
