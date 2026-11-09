@@ -281,3 +281,5 @@ export class World {
     const out = [];
     const buf = new Uint8Array(4 * 12 * 6);
     for (const r of rects) {
+      let sum = 0;
+      let max = 0;
