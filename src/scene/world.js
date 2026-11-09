@@ -266,3 +266,5 @@ export class World {
   }
 
   render(frameMs = 16) {
+    this.renderer.render(this.scene, this.camera);
+    this._adapt(frameMs);
