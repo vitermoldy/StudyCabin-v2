@@ -50,3 +50,5 @@ function buildGround() {
 // Caustics: the bright net light draws on the pond's floor where the sun reaches it (the
 // water-turbulence pattern, a few warped sine iterations).
 const CAUSTIC = /* glsl */ `
+  float caustic(vec2 p, float t){
+    vec2 i = p;
