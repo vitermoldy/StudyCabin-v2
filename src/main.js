@@ -159,3 +159,5 @@ const pauseBtn = document.getElementById('scene-pause');
 function setScenePaused(on, { announce = false } = {}) {
   scenePaused = on;
   pauseBtn.setAttribute('aria-pressed', String(on));
+  pauseBtn.setAttribute('aria-label', on ? 'Move the scene' : 'Pause the scene');
+  pauseBtn.querySelector('use').setAttribute('href', on ? '#i-play' : '#i-pause');
