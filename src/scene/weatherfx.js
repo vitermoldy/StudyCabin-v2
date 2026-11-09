@@ -239,3 +239,5 @@ export class WeatherFX {
         varying float vA; varying float vWarm;
         void main(){
           float d = length(gl_PointCoord - 0.5);
+          float core = smoothstep(0.16, 0.0, d);
+          float halo = smoothstep(0.5, 0.05, d) * 0.45;
