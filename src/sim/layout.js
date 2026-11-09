@@ -56,3 +56,5 @@ export const SPOTS = {
   shelf: { area: 'in', via: [p(-2.85, SPINE_Z), p(-2.85, -2.12)], at: p(-3.05, -2.12), face: Math.PI },
   window: { area: 'in', via: [p(-2.3, SPINE_Z)], at: p(-2.3, 2.6), face: 0 },
   deskWindow: { area: 'in', via: [p(3.6, SPINE_Z)], at: p(3.6, 2.6), face: 0 },
+  deckChair: { area: 'deck', via: [p(-4.2, DECK_Z), p(-4.2, 4.3)], at: p(-4.2, 4.86), face: 0 },
+  guitar: { area: 'deck', via: [p(4.0, DECK_Z), p(4.0, 4.3)], at: p(4.0, 4.86), face: 0 },
