@@ -101,3 +101,5 @@ function makeDeer({ buck = false, fawn = false } = {}) {
       head.add(stick(dark, 0.14, 0.011, [-0.15, 0.3, side * 0.1], 0.3, -side * 0.2));
     }
   }
+  const legs = [[0.3, 0.08], [0.3, -0.08], [-0.3, 0.08], [-0.3, -0.08]].map(([x, z]) => leg(hide, 0.86, 0.042, 0.022, [x, 0.88, z]));
+  legs.forEach((l) => root.add(l));
