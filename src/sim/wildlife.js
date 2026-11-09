@@ -45,3 +45,5 @@ export const ROUTES = {
       pts: [[32, 20], [18, 18.6], [16.5, 12], [24, 6], [34, 4]],
       stops: [{ at: 1, pose: 'sit' }, { at: 2, pose: 'sit' }],
     },
+  ],
+  squirrel: [
