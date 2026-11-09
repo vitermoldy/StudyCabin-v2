@@ -379,3 +379,5 @@ startWorld()
     world.update(0.016, 0, { minutes: clock.minutes, climate, activity, follow: view === 'follow', jumped: true });
     world.render();
     // Pick the words' ink from this first frame, and name an animal already in view, even if the
+    // scene starts paused (reduced motion) and the loop below never samples it.
+    if (wordsShown) overlay.applyInk(world.sampleLuminance(overlay.rects()));
