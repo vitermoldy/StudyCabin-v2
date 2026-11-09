@@ -283,3 +283,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
 
   // Progress while the music panel is open.
   setInterval(() => {
+    if (panels.current !== 'music' || seeking) return;
+    const { time, duration } = player.progress();
