@@ -316,3 +316,5 @@ export class Terrain {
         .replace('#include <common>', '#include <common>\nuniform float uTime; uniform float uWind; varying float vTip;')
         .replace(
           '#include <begin_vertex>',
+          `#include <begin_vertex>
+          vTip = clamp(length(position.xz) / 0.7, 0.0, 1.0);
