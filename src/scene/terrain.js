@@ -215,3 +215,5 @@ export class Terrain {
           '#include <color_fragment>',
           `#include <color_fragment>
           // seed heads catch a little gold toward the tips, as in a forest meadow
+          diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * vec3(1.25, 1.05, 0.55), pow(vTip, 3.0) * 0.35);
+          diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.88, 0.9, 0.92), uSnow * 0.55 * vTip);`,
