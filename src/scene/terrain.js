@@ -256,3 +256,5 @@ export class Terrain {
       m.compose(p, q, s);
       mesh.setMatrixAt(i, m);
       const tone = (0.82 + fbm(x * 0.05, z * 0.05, 2) * 0.32 + r() * 0.05) * (1 - canopy(x, z) * 0.4);
+      c.setRGB(tone * (0.97 + r() * 0.06), tone, tone * (0.9 + r() * 0.1));
+      mesh.setColorAt(i, c);
