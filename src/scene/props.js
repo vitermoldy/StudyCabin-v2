@@ -72,3 +72,5 @@ export class Props {
     log.position.set(lx, groundHeight(lx, lz) + 0.22, lz);
     log.rotation.set(0, 0.5, Math.PI / 2);
     log.castShadow = true;
+    log.receiveShadow = true;
+    scene.add(log);
