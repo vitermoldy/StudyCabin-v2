@@ -88,3 +88,6 @@ shows a still picture and the music, timer and ambient sound still work.
 | `src/scene/pond.js`, `ripples.js` | The pond's water, ice and lily pads; the ripple simulation |
 | `src/scene/terrain.js`, `props.js` | The ground, grass and ferns; stones, the fallen trunk and the stump |
 
+## Known limits
+
+- Some music videos refuse to play outside YouTube (YouTube error 101/150). The queue shows the
