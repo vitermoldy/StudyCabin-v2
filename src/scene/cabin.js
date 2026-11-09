@@ -187,3 +187,5 @@ export class Cabin {
     const rise = RIDGE - WALL_TOP;
     const alpha = Math.atan2(rise, run);
     const over = 0.55;
+    const hRun = run + over;
+    const len = hRun / Math.cos(alpha);
