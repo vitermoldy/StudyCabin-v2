@@ -164,3 +164,5 @@ export class Cabin {
     for (const x of posts) this._bx(trim, x - 0.035, x + 0.035, FLOOR, GLASS_TOP, 2.97, 3.08);
     const panes = [[-6.93, -3.67], [-3.57, -1.03], [1.03, 3.57], [3.67, 6.93]];
     for (const [a, b] of panes) {
+      const pane = this._bx(glass, a, b, FLOOR + 0.05, GLASS_TOP - 0.06, 3.01, 3.03, { cast: false, receive: false });
+      pane.renderOrder = 2;
