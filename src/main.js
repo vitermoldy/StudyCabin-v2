@@ -155,3 +155,5 @@ mountSound({ ambient });
 const renderFocus = mountFocus({ focus });
 mountMusic(music, panels, { onPlayingChange: (on) => ambient.setMusicPlaying(on) });
 
+const pauseBtn = document.getElementById('scene-pause');
+function setScenePaused(on, { announce = false } = {}) {
