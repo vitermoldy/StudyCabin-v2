@@ -23,3 +23,5 @@ function buildGround() {
     const z = CLEARING.z + warp((j / NZ) * 2 - 1) * 480;
     for (let i = 0; i <= NX; i++) {
       const x = CLEARING.x + warp((i / NX) * 2 - 1) * 520;
+      pos.push(x, groundHeight(x, z), z);
+      mix.push(bareEarth(x, z), grassCover(x, z), vnoise(x * 0.35, z * 0.35));
