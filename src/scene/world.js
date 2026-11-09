@@ -26,3 +26,5 @@ export function webglAvailable() {
 }
 
 export class World {
+  constructor(canvas, { reducedMotion = false } = {}) {
+    this.canvas = canvas;
