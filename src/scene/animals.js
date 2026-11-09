@@ -716,3 +716,5 @@ export class Animals {
     for (const name of order) {
       if (keenness(KEEN[name], ctx) < 0.6) continue;
       const w = this.byName[name];
+      const pick = openingRoute(ROUTES[w.kind.routes]);
+      w.plan(pick.route, pick.reverse, { atStop: true });
