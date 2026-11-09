@@ -287,3 +287,5 @@ function fireflyGeometry(count) {
   const pos = [];
   const seed = [];
   const id = [];
+  for (let i = 0; i < 20000 && pos.length < count * 3; i++) {
+    const x = CLEARING.x + (r() * 2 - 1) * CLEARING.rx * 1.2;
