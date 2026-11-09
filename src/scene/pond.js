@@ -8,3 +8,5 @@ import { POND, WATER_Y, groundHeight, pondE } from './ground.js';
 
 const VERT = /* glsl */ `
   attribute float aGround;
+  varying vec3 vWorld; varying float vDepth;
+  #include <fog_pars_vertex>
