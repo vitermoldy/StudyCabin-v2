@@ -207,3 +207,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     requestAnimationFrame(() => {
       const li = qItems.children[index];
       if (!li) {
+        qToggle.focus();
+        return;
