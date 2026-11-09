@@ -413,3 +413,5 @@ export class Cabin {
     head.material.side = THREE.DoubleSide;
     head.position.set(D.x - 0.5, top + 0.44, D.z + 0.08);
     head.rotation.x = 0.5;
+    // chair, its back to the room
+    this._chair(D.x, 1.66, 0, woodDark);
