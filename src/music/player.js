@@ -337,3 +337,4 @@ export class MusicPlayer extends Emitter {
       shuffle: this.shuffle,
     });
   }
+}
