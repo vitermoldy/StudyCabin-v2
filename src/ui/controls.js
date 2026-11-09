@@ -152,3 +152,5 @@ export function mountSound({ ambient }) {
     row.append(label, input, out);
     mix.appendChild(row);
     return { layer, input, out };
+  });
+  bindSwitch($('amb-duck'), () => ambient.duckWhenMusic, (v) => ambient.setDuck(v));
