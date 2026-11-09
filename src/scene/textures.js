@@ -238,3 +238,5 @@ export function dotTexture() {
  * Rescale the UVs of a BoxGeometry so one UV unit is one metre on every face.
  * Box faces come in the order +x, -x, +y, -y, +z, -z, four vertices each.
  */
+export function metricBoxUV(geo, w, h, d) {
+  const uv = geo.attributes.uv;
