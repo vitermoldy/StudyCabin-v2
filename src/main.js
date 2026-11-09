@@ -314,3 +314,5 @@ function frame(now) {
       jumped: timeJumped,
       residentOptions: { speedUp },
     });
+    world.render(realDt * 1000);
+    sampleIn -= realDt;
