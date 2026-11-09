@@ -81,3 +81,5 @@ function makeDeer({ buck = false, fawn = false } = {}) {
       const x = -0.32 + (i % 5) * 0.15;
       const side = i < 5 ? 1 : -1;
       body.add(blob(pale, [0.03, 0.022, 0.012], [x, 1.08 - (i % 2) * 0.04, side * 0.16]));
+    }
+  }
