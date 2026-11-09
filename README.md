@@ -91,3 +91,5 @@ shows a still picture and the music, timer and ambient sound still work.
 ## Known limits
 
 - Some music videos refuse to play outside YouTube (YouTube error 101/150). The queue shows the
+  reason on that row and moves to the next link.
+- YouTube mixes (lists starting with RD), Liked videos and Watch later cannot be embedded; a song
