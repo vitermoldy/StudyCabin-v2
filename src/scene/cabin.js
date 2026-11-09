@@ -368,3 +368,5 @@ export class Cabin {
     const x0 = B.x - B.w / 2;
     const x1 = B.x + B.w / 2;
     const z0 = B.z - B.d / 2;
+    const z1 = B.z + B.d / 2;
+    this._bx(wood, x0, x1, FLOOR + 0.1, FLOOR + 0.32, z0, z1);
