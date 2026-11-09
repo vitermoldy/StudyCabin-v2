@@ -297,3 +297,5 @@ export class Atmosphere {
     this.fogColor.copy(this.horizon).lerp(this.zenith, 0.12);
     u.uGround.value.copy(this.fogColor).multiplyScalar(0.8);
     this.fog.color.copy(this.fogColor);
+    // Thicker than over open water: air between the rows of trees, so each row further back is
+    // paler and the wood reads in depth.
