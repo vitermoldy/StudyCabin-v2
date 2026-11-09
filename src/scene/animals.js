@@ -718,3 +718,5 @@ export class Animals {
       const w = this.byName[name];
       const pick = openingRoute(ROUTES[w.kind.routes]);
       w.plan(pick.route, pick.reverse, { atStop: true });
+      this._onPlan(w);
+      return;
