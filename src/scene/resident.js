@@ -356,3 +356,5 @@ export class Resident {
     }
 
     // The walk goes round the pond on the path, stopping now and then to look at the water.
+    if (!this.path && this.pose === 'walkLoop') {
+      if (this.loopPause > 0) {
