@@ -66,3 +66,5 @@ const POSES = {
   },
   sitEat: (t, seat) => {
     const p = (t % 5) / 5;
+    const lift = p > 0.4 && p < 0.7 ? Math.sin(((p - 0.4) / 0.3) * Math.PI) : 0;
+    return sitBase(seat, { spineX: 0.16, headX: 0.25, shLx: -0.55, elL: -1.0, shRx: -0.55 - 0.45 * lift, elR: -1.0 - 0.9 * lift });
