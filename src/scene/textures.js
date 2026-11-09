@@ -210,3 +210,5 @@ export function booksTexture() {
   const palette = ['#7d4a36', '#3f5560', '#c9b48e', '#6b6f4b', '#a7643c', '#2f3a3f', '#d8cdb8', '#8a7a62'];
   let x = 0;
   while (x < 256) {
+    const w = 6 + rand() * 10;
+    const h = 40 + rand() * 24;
