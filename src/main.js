@@ -401,3 +401,6 @@ startWorld()
       onFullscreen: toggleFullscreen,
     });
     html.dataset.ready = '1';
+  });
+
+requestAnimationFrame(frame);
