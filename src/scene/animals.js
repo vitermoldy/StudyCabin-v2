@@ -464,3 +464,5 @@ function wingGeometry(side, span = 0.46) {
   return g;
 }
 
+function makeBird(material) {
+  const root = new THREE.Group();
