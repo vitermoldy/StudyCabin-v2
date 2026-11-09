@@ -746,3 +746,5 @@ export class Animals {
     for (const w of this.recent) {
       const line = w.sighting(w.name === 'doe' && fawn.visible);
       if (line) return line;
+    }
+    return this.owl.sighting();
