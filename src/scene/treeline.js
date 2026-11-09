@@ -104,3 +104,5 @@ export class Treeline {
             return mix(mix(h21(i), h21(i + vec2(1, 0)), u.x), mix(h21(i + vec2(0, 1)), h21(i + vec2(1, 1)), u.x), u.y); }
           void main() {
             vec3 top = mix(uNearTop, uFarTop, uMix);
+            vec3 low = mix(uNearLow, uFarLow, uMix);
+            vec3 c = mix(low, top, smoothstep(-0.2, 1.1, vT));
