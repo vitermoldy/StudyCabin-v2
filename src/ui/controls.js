@@ -146,3 +146,5 @@ export function mountSound({ ambient }) {
     input.max = '100';
     input.step = '1';
     const out = document.createElement('output');
+    out.className = 'slider-row__value';
+    out.htmlFor = id;
