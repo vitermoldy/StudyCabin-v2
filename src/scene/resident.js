@@ -128,3 +128,5 @@ export class Resident {
     this.body = new THREE.Group(); // tilts when lying down
     r.add(this.body);
     this.hips = new THREE.Group();
+    this.body.add(this.hips);
+    const pelvis = capsule(0.13, 0.12, m.pants);
