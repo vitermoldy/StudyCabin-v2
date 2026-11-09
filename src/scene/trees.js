@@ -92,3 +92,5 @@ function swayShader(material, { leaves = false } = {}) {
   material.onBeforeCompile = (shader, renderer) => {
     if (prev) prev(shader, renderer);
     shader.uniforms.uTime = WORLD.uTime;
+    shader.uniforms.uWind = WORLD.uWind;
+    if (leaves) shader.uniforms.uLeaf = material.userData.uLeaf;
