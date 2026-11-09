@@ -214,3 +214,5 @@ export class Pond {
       fog: true,
       depthWrite: true,
     });
+    this.mesh = new THREE.Mesh(buildGeometry(), mat);
+    this.mesh.frustumCulled = false;
