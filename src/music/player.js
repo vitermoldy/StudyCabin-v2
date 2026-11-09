@@ -150,3 +150,5 @@ export class MusicPlayer extends Emitter {
         return true;
       } catch (err) {
         this.status = 'api-error';
+        this.apiError = err && err.message === 'timeout'
+          ? 'YouTube took too long to answer. Check the connection, then try again.'
