@@ -394,3 +394,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 @media (max-width: 1199px) {
   .story { bottom: calc(var(--edge) + var(--dock-h) + 14px); }
   .big--c { bottom: calc(var(--edge) + var(--dock-h) + 8px); }
+}
+@media (max-width: 699px) {
