@@ -161,3 +161,5 @@ function makeHare() {
   const ears = new THREE.Group();
   ears.position.set(-0.02, 0.05, 0);
   head.add(ears);
+  for (const side of [-1, 1]) ears.add(blob(fur, [0.022, 0.095, 0.014], [0, 0.08, side * 0.03], 0.15));
+  // A big hare, so it still shows over the clearing's grass.
