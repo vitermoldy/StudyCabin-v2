@@ -77,3 +77,5 @@ export class Ripples {
       depthBuffer: false,
       stencilBuffer: false,
     };
+    this.a = new THREE.WebGLRenderTarget(RES, RES, opts);
+    this.b = new THREE.WebGLRenderTarget(RES, RES, opts);
