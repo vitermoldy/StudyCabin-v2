@@ -156,3 +156,5 @@ export class Terrain {
       const h = 0.24 + Math.pow(rand(), 0.7) * 0.4;
       const w = 0.012 + rand() * 0.01;
       const dx = Math.cos(ang);
+      const dz = Math.sin(ang);
+      const px = -dz * w;
