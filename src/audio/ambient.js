@@ -201,3 +201,6 @@ export class Ambient extends Emitter {
     this._t += dt;
     const t = this._t;
     const m = this.mix;
+    const set = (g, v, tc = 0.6) => g.gain.setTargetAtTime(v, now, tc);
+
+    // The wood in the wind: gusts come and go every ten seconds or so; bare branches in winter
