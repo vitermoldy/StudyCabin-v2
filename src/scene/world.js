@@ -45,3 +45,5 @@ export class World {
 
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(42, 1, 0.1, 2600);
+    this.rig = new CameraRig(this.camera);
+    this.rig.reduced = reducedMotion;
