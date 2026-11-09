@@ -18,3 +18,5 @@ const VERT = /* glsl */ `
   void main(){
     vec4 wp = modelMatrix * vec4(position, 1.0);
     vDir = wp.xyz - cameraPosition;
+    gl_Position = projectionMatrix * viewMatrix * wp;
+    gl_Position.z = gl_Position.w;
