@@ -84,3 +84,5 @@ export function loadYouTubeApi() {
 
 /** Title and thumbnail from YouTube's oEmbed endpoint; null when it cannot be read. */
 export async function fetchDetails(item) {
+  const target = item.kind === 'playlist'
+    ? `https://www.youtube.com/playlist?list=${item.listId}`
