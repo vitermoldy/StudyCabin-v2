@@ -304,3 +304,5 @@ export class Atmosphere {
 
     // Sun colour and strength.
     const lowness = 1 - smoothstep(0.02, 0.4, sy);
+    this.sunColor.copy(SUN_HIGH).lerp(SUN_LOW, lowness);
+    u.uSunColor.value.copy(this.sunColor);
