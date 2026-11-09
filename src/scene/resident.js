@@ -290,3 +290,6 @@ export class Resident {
       return;
     }
     this.pose = 'walk';
+  }
+
+  _nearestSpot() {
