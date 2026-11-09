@@ -95,3 +95,6 @@ const SEASON = {
   fox: {},
   hare: { winter: 0.7 },
   squirrel: { winter: 0.5 },
+};
+
+/**
