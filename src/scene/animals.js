@@ -681,3 +681,5 @@ export class Animals {
     const rand = rng(7);
     this.rand = rand;
     this.group = new THREE.Group();
+    scene.add(this.group);
+    this.inUse = new Set();
