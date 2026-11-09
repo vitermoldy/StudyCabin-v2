@@ -136,3 +136,6 @@ export class Ripples {
     this.renderer.render(this.scene, this.camera);
     const t = this.a;
     this.a = this.b;
+    this.b = t;
+  }
+
