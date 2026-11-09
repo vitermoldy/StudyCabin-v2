@@ -72,3 +72,5 @@ const POSES = {
   sitGuitar: (t, seat) => sitBase(seat, {
     spineX: 0.1, headX: 0.32, headY: 0.32,
     shLx: -0.75, shLz: 0.62, elL: -1.15,
+    shRx: -0.45, shRz: -0.3, elR: -1.25 + 0.22 * Math.sin(t * 7.5),
+  }),
