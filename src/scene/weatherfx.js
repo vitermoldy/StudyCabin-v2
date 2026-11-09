@@ -143,3 +143,5 @@ export class WeatherFX {
               vec3 p = aSeed * uBox + vel * uTime;
               p.x += sin(uTime * 1.1 + aSeed.z * 40.0) * 0.8;
               p.y += sin(uTime * 1.7 + aSeed.x * 17.0) * 0.25;
+              p = wrapBox(p, uCenter, uBox);
+              vec4 mv = modelViewMatrix * vec4(p, 1.0);
