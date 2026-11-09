@@ -474,3 +474,6 @@ function makeBird(material) {
     return { wing, side };
   });
   return { root, wings };
+}
+
+// Flocks of two to six cross over the trees, flapping and gliding, every so often by day. None
