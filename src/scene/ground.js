@@ -115,3 +115,5 @@ export function forestDepth(x, z) {
   const u = (x - CLEARING.x) / CLEARING.rx;
   const v = (z - CLEARING.z) / CLEARING.rz;
   const a = Math.atan2(v, u);
+  const w = 1 + 0.08 * Math.sin(a * 5 + 1.7) + 0.05 * Math.sin(a * 9 + 0.4) + 0.03 * Math.sin(x * 0.35 + z * 0.2);
+  let d = (Math.hypot(u, v) / w - 1) * 16;
