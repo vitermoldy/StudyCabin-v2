@@ -59,3 +59,5 @@ const UPDATE_FRAG = /* glsl */ `
   }
 `;
 
+export class Ripples {
+  constructor(renderer) {
