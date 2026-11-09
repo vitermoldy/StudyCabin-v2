@@ -191,3 +191,5 @@ export class Terrain {
       shader.vertexShader = shader.vertexShader
         .replace('#include <common>', '#include <common>\nuniform float uTime; uniform float uWind; uniform vec3 uPush; varying float vTip;')
         .replace(
+          '#include <begin_vertex>',
+          `#include <begin_vertex>
