@@ -218,3 +218,5 @@ export class Pond {
     this.mesh.frustumCulled = false;
     this.mesh.renderOrder = 1;
     scene.add(this.mesh);
+    this.lilies = lilies(scene);
+    this.landBase = new THREE.Color('#22301f');
