@@ -329,3 +329,5 @@ export class Resident {
       const spd = this.speed * speedUp;
       let remaining = spd * dt;
       while (remaining > 0 && this.path) {
+        const target = this.path[this.pathIndex];
+        const dx = target.x - this.pos.x;
