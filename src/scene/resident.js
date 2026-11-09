@@ -38,3 +38,5 @@ const POSES = {
   },
   cook: (t) => base({
     spineX: 0.12, headX: 0.38,
+    shLx: -0.55, shLz: 0.12, elL: -1.05,
+    shRx: -0.62 + 0.08 * Math.sin(t * 3.1), shRz: -0.14 + 0.1 * Math.cos(t * 3.1), elR: -0.95 + 0.12 * Math.sin(t * 3.1 + 1),
