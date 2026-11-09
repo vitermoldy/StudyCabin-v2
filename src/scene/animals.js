@@ -281,3 +281,6 @@ function createWalker(name, rand, inUse) {
     model.root.visible = false;
     // The fawn walks its mother's route; only she frees it.
     if (a.route && !kind.follows) inUse.delete(a.route);
+    a.route = null;
+  }
+
