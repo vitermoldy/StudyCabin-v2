@@ -89,3 +89,6 @@ export class MusicPlayer extends Emitter {
     if (this.current === index) this.current = to;
     else if (this.current === to) this.current = index;
     this.persist();
+    this.emit('change');
+  }
+
