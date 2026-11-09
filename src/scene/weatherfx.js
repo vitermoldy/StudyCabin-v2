@@ -88,3 +88,5 @@ export class WeatherFX {
       }),
     );
 
+    // Snow: soft discs drifting down.
+    this.snowU = { ...this.common, uAmount: { value: 0 }, uBox: { value: new THREE.Vector3(50, 22, 46) } };
