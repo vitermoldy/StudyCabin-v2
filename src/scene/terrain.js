@@ -220,3 +220,5 @@ export class Terrain {
         );
     };
 
+    const r = rng(99);
+    const spots = [];
