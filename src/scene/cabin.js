@@ -143,3 +143,5 @@ export class Cabin {
     shape.closePath();
     for (const side of [-1, 1]) {
       const geo = new THREE.ExtrudeGeometry(shape, { depth: 0.12, bevelEnabled: false });
+      geo.rotateY(-Math.PI / 2);
+      geo.translate(side > 0 ? 7.12 : -7.0, 0, 0);
