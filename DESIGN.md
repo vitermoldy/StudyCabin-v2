@@ -24,3 +24,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 ## The deal (taste-skill 2.5.1, unchanged from v1)
 
 - Kind: software (page type software, site-kind software). The live scene is the hero and the
+  page's one effect; it carries `data-enter="off"` because the scene has its own load motion.
+- Palette: the owner's own colours through `start.mjs brand` (mist `#e4e5e1`, ink `#171716`, lamp
