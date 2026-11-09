@@ -6,3 +6,5 @@
  * draws a trail of ripples.
  */
 export function mountCameraInput(canvas, { getWorld, onRender }) {
+  const html = document.documentElement;
+  const pointers = new Map();
