@@ -111,3 +111,6 @@ export class CameraRig {
 
   setPointer(x, y) {
     this.pointer.set(x, y);
+  }
+
+  update(dt, t, followPoint) {
