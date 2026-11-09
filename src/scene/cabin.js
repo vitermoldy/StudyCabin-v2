@@ -274,3 +274,5 @@ export class Cabin {
     this._cyl(pot, 0.2, 0.16, 0.42, -6.55, FLOOR + 0.21, 2.5, 16);
     for (let i = 0; i < 7; i++) {
       const s = this._m(new THREE.IcosahedronGeometry(0.28 - i * 0.015, 0), leaf);
+      s.position.set(-6.55 + Math.sin(i * 2.1) * 0.18, FLOOR + 0.75 + i * 0.17, 2.5 + Math.cos(i * 2.1) * 0.15);
+      s.scale.set(1, 0.8, 1);
