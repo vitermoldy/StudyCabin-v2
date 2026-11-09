@@ -353,3 +353,5 @@ overlay.setTime(clock.minutes);
   overlay.setStory(s.line, s.meta);
 }
 
+startWorld()
+  .then((w) => {
