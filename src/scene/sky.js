@@ -312,3 +312,5 @@ export class Atmosphere {
     u.uGlow.value = 0.6 + lowness * 1.4;
     u.uMoonVis.value = this.night * smoothstep(-0.05, 0.1, this.moonDir.y);
     u.uStars.value = this.night * (1 - overcast * 0.9) * (1 - fogAmt * 0.8);
+    // a few clouds are always about; overcast fills the sky
+    u.uCloud.value = 0.3 + params.cloud * 0.7;
