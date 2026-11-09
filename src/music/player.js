@@ -105,3 +105,6 @@ export class MusicPlayer extends Emitter {
     if (this._ready) this.player.setVolume(this.volume);
     this.persist();
     this.emit('change');
+  }
+
+  setLoop(on) {
