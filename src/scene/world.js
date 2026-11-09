@@ -64,3 +64,5 @@ export class World {
     this._rainDrops = 0;
     this.groundPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -0.3);
     this.fireflies = 0;
+    this.pointerNdc = new THREE.Vector2();
+    this.pointerOn = false;
