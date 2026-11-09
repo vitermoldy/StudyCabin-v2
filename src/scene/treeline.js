@@ -8,3 +8,5 @@ import { CLEARING, groundHeight } from './ground.js';
 // round. Each fir is a spike whose slope steps out three times, so the outline reads as tiers of
 // boughs even far away and in fog. The colours are set every frame from the sky's haze.
 
+const RINGS = [
+  { R: 84, seed: 97, tall: 10, spacing: 2.6, hill: 2, far: 0 },
