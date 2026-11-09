@@ -67,3 +67,5 @@ export class Overlay {
 
   /** CSS-pixel rectangles of the three words, for sampling the scene behind them. */
   rects() {
+    return [this.word, this.at, this.timeWrap].map((el) => {
+      const r = el.getBoundingClientRect();
