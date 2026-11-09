@@ -115,3 +115,5 @@ html.is-live .poster { opacity: 0; }
 
 .story {
   position: absolute; left: 0; bottom: var(--edge);
+  width: min(380px, 100%);
+  padding: var(--s-3) var(--s-4) var(--s-4);
