@@ -99,3 +99,6 @@ export class CameraRig {
 
   get userMoved() {
     const u = this.user;
+    return Math.abs(u.yaw) > 0.001 || Math.abs(u.tilt) > 0.001 || Math.abs(u.zoom - 1) > 0.001 || Math.abs(u.panX) > 0.01 || Math.abs(u.panZ) > 0.01;
+  }
+
