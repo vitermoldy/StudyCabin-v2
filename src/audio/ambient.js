@@ -414,3 +414,5 @@ export class Ambient extends Emitter {
 
   thunder(strength = 1) {
     if (!this.ctx || !this.enabled || this.ctx.state !== 'running') return;
+    const ctx = this.ctx;
+    const now = ctx.currentTime;
