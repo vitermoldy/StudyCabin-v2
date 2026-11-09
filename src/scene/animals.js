@@ -228,3 +228,6 @@ function buildCurve(route, reverse) {
     .map((s) => ({ ...s, at: reverse ? n - 1 - s.at : s.at }))
     .map((s) => ({ ...s, s: lengths[s.at * 24] }))
     .sort((a, b) => a.s - b.s);
+  return { curve, length, stops };
+}
+
