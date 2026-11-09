@@ -485,3 +485,5 @@ export class Cabin {
   }
 
   update(dt, time) {
+    const s = this.state;
+    for (const k of Object.keys(this.target)) {
