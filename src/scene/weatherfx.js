@@ -155,3 +155,5 @@ export class WeatherFX {
             uniform float uLight; uniform vec3 uColA; uniform vec3 uColB;
             varying float vA; varying float vRot; varying float vMix;
             void main(){
+              vec2 c = gl_PointCoord - 0.5;
+              float s = sin(vRot), co = cos(vRot);
