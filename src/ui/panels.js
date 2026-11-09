@@ -77,3 +77,6 @@ export class Panels extends Emitter {
     for (const t of this.tabs) t.setAttribute('aria-expanded', String(t.dataset.panel === this.current));
     for (const [btn, id] of this.extraOpeners) btn.setAttribute('aria-expanded', String(id === this.current));
   }
+}
+
+let toastTimer = 0;
