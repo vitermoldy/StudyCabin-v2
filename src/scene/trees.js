@@ -83,3 +83,6 @@ function broadleafGeometry() {
   const g = mergeGeometries([trunkG, crownG]);
   g.computeVertexNormals();
   return g;
+}
+
+function swayShader(material, { leaves = false } = {}) {
