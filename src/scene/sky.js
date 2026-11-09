@@ -199,3 +199,5 @@ export class Atmosphere {
       uGlow: { value: 1 },
       uFogAmt: { value: 0.2 },
       uAurora: { value: 0 },
+    };
+    const mat = new THREE.ShaderMaterial({
