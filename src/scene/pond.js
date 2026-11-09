@@ -238,3 +238,5 @@ export class Pond {
     u.uRain.value = params.rain;
     u.uLight.value = 0.1 + atmo.dayFactor * 0.9 * (1 - params.storm * 0.35);
     u.uZenith.value.copy(atmo.zenith);
+    u.uHorizon.value.copy(atmo.horizon);
+    u.uLand.value.copy(this.landBase).multiplyScalar(0.18 + atmo.dayFactor * 0.6).lerp(atmo.fogColor, 0.3);
