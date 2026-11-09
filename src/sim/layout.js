@@ -50,3 +50,5 @@ export const SPOTS = {
   cook: { area: 'in', via: [p(-3.65, SPINE_Z), p(-3.65, -1.82)], at: p(-5.35, -1.82), face: 0 },
   dine: { area: 'in', via: [p(-3.85, SPINE_Z), p(-3.85, 0.42)], at: p(-5.0, 0.42), face: 0 },
   sofa: { area: 'in', via: [p(-2.85, SPINE_Z), p(-2.85, -1.0), p(-1.55, -1.0)], at: p(-1.55, -1.72), face: 0 },
+  armchair: { area: 'in', via: [p(0.95, SPINE_Z), p(1.15, 0.95)], at: p(0.98, 0.22), face: f.armchair.rot },
+  desk: { area: 'in', via: [p(4.35, SPINE_Z), p(4.35, 1.28), p(5.6, 1.28)], at: p(5.6, 1.66), face: 0 },
