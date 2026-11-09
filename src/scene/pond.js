@@ -16,3 +16,5 @@ const VERT = /* glsl */ `
     vWorld = wp.xyz;
     vec4 mvPosition = viewMatrix * wp;
     gl_Position = projectionMatrix * mvPosition;
+    #include <fog_vertex>
+  }
