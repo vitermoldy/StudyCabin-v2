@@ -257,3 +257,5 @@ export class World {
    */
   poke(x, y, strength = 0.55) {
     if (!this.ripples.ok || this.pond.ice > 0.5) return false;
+    const ndc = new THREE.Vector2((x / this.width) * 2 - 1, -(y / this.height) * 2 + 1);
+    this.raycaster.setFromCamera(ndc, this.camera);
