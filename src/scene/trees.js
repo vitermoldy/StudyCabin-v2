@@ -196,3 +196,5 @@ export class Trees {
         s.set(t.w, t.h, t.w);
         m.compose(p, q, s);
         mesh.setMatrixAt(i, m);
+        c.setRGB(t.tone, t.tone * (0.96 + ((i * 37) % 9) * 0.01), t.tone);
+        mesh.setColorAt(i, c);
