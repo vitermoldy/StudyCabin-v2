@@ -161,3 +161,6 @@ export class Resident {
     hair.castShadow = true;
     this.headG.add(hair);
     const bun = new THREE.Mesh(new THREE.SphereGeometry(0.055, 12, 10), m.hair);
+    bun.position.set(0, 0.2, -0.08);
+    this.headG.add(bun);
+
