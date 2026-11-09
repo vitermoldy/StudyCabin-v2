@@ -106,3 +106,5 @@ export class Treeline {
             vec3 top = mix(uNearTop, uFarTop, uMix);
             vec3 low = mix(uNearLow, uFarLow, uMix);
             vec3 c = mix(low, top, smoothstep(-0.2, 1.1, vT));
+            // a faint grain of crowns, so the band is not one flat card
+            c *= 0.9 + 0.2 * vn(vec2(atan(vXZ.y - ${CLEARING.z.toFixed(1)}, vXZ.x - ${CLEARING.x.toFixed(1)}) * 160.0, vT * 6.0));
