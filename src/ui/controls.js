@@ -86,3 +86,5 @@ export function mountDay({ clock, onJump }) {
     $('day-clock').textContent = formatClock(clock.minutes);
     $('day-num').textContent = `Day ${clock.day}`;
     if (document.activeElement !== scrub) {
+      scrub.value = String(Math.floor(clock.minutes / 5) * 5);
+      scrubOut.textContent = formatClock(Number(scrub.value));
