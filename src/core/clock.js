@@ -81,3 +81,5 @@ export class Clock extends Emitter {
     this.minutes = target;
     this._lastMinute = Math.floor(target);
     this.emit('jump', target);
+    this.emit('minute', this._lastMinute);
+    this.persist();
