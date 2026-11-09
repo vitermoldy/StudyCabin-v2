@@ -459,3 +459,5 @@ export class Cabin {
     }
   }
 
+  _lights() {
+    const mk = (color, x, y, z, distance) => {
