@@ -197,3 +197,5 @@ export class World {
     this.cabin.update(dt, t);
     this.resident.update(dt, t, state.residentOptions);
     const wild = { minutes, params: p, season: climate.season, day: this.atmo.dayFactor, night: this.atmo.night, jumped };
+    this.animals.update(dt, t, wild);
+    // Fireflies follow the night and the warmth; they ease in rather than switching on.
