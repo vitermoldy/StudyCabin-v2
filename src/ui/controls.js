@@ -12,3 +12,5 @@ const $ = (id) => document.getElementById(id);
 function radios(fieldset, name, options, current, onPick) {
   const row = document.createElement('div');
   row.className = 'choices__row';
+  const inputs = new Map();
+  for (const [value, label] of options) {
