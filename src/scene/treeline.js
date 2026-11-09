@@ -59,3 +59,6 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
   geo.setIndex(idx);
   geo.computeBoundingSphere();
   return geo;
+}
+
+export class Treeline {
