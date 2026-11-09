@@ -188,3 +188,5 @@ export class Pond {
       {
         uTime: { value: 0 },
         uChop: { value: 0.3 },
+        uRain: { value: 0 },
+        uLight: { value: 1 },
