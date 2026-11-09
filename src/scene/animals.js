@@ -636,3 +636,5 @@ function createOwl(rand) {
         o.wait -= dt;
         if (o.wait <= 0) fly(tmp.set(-46, 15, -32 + rand() * 20), PERCH, 'arrive');
         return;
+      }
+      if (o.state === 'perch') {
