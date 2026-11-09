@@ -289,3 +289,5 @@ export class Terrain {
         return [dx * r0 - dz * w * side, Math.max(0, y), dz * r0 + dx * w * side];
       };
       for (let k = 0; k < segs; k++) {
+        const t0 = k / segs;
+        const t1 = (k + 1) / segs;
