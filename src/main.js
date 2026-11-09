@@ -145,3 +145,6 @@ function jumpTo(minutes, sameDay) {
   clock.jumpTo(minutes, { sameDay });
 }
 clock.on('jump', () => {
+  jumped = true;
+});
+
