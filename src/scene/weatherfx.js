@@ -48,3 +48,5 @@ export class WeatherFX {
   constructor(scene, flueTop) {
     this.common = {
       uTime: { value: 0 },
+      uWind: { value: 0.3 },
+      uCenter: { value: new THREE.Vector3(0, 8, 10) },
