@@ -307,3 +307,5 @@ export class Cabin {
     // sofa facing the glass
     const S = F.sofa;
     const sx0 = S.x - S.w / 2;
+    const sx1 = S.x + S.w / 2;
+    this._soft(sofa, S.w, 0.36, S.d, 0.06, S.x, FLOOR + 0.2, S.z);
