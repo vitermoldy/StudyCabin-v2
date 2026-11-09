@@ -6,3 +6,5 @@ export class Emitter {
     if (!this._handlers.has(type)) this._handlers.set(type, new Set());
     this._handlers.get(type).add(fn);
     return () => this._handlers.get(type)?.delete(fn);
+  }
+  emit(type, payload) {
