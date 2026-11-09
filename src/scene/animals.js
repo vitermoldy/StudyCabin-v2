@@ -288,3 +288,5 @@ function createWalker(name, rand, inUse) {
     const u = Math.min(1, Math.max(0, a.s / a.path.length));
     a.path.curve.getPointAt(u, pos);
     a.path.curve.getTangentAt(u, tan);
+    let want = Math.atan2(-tan.z, tan.x);
+    if (a.state === 'stop' && a.stop?.face) want = Math.atan2(-(a.stop.face[1] - pos.z), a.stop.face[0] - pos.x);
