@@ -338,3 +338,5 @@ export class Ambient extends Emitter {
         g.gain.exponentialRampToValueAtTime(0.0001, now + at + dur);
         o.connect(g).connect(f);
         o.start(now + at);
+        o.stop(now + at + dur + 0.05);
+      }
