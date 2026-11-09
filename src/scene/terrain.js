@@ -295,3 +295,5 @@ export class Terrain {
         const shade = (t) => 0.35 + t * 0.75;
         for (const [v, t] of [[a, t0], [b, t0], [c, t1], [b, t0], [d, t1], [c, t1]]) {
           pos.push(...v);
+          const s = shade(t);
+          col.push(s * 0.95, s, s * 0.85);
