@@ -740,3 +740,5 @@ export class Animals {
     this.recent = this.recent.filter((w) => w.visible).slice(0, 6);
   }
 
+  /** One line about the animal in view, or null. */
+  sighting() {
