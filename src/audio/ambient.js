@@ -301,3 +301,5 @@ export class Ambient extends Emitter {
     const f = ctx.createBiquadFilter();
     f.type = 'bandpass';
     f.frequency.value = 600 + Math.random() * 300;
+    f.Q.value = 2.2;
+    const g = ctx.createGain();
