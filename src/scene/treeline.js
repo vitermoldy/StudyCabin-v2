@@ -126,3 +126,6 @@ export class Treeline {
       scene.add(mesh);
       return mesh;
     });
+  }
+
+  /**
