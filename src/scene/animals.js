@@ -361,3 +361,5 @@ function createWalker(name, rand, inUse) {
           if (free.length) {
             plan(free[Math.floor(rand() * free.length)], rand() < 0.5);
             ctx.onPlan?.(this);
+            return;
+          }
