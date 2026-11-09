@@ -314,3 +314,5 @@ export class Terrain {
       shader.uniforms.uSnow = WORLD.uSnow;
       shader.vertexShader = shader.vertexShader
         .replace('#include <common>', '#include <common>\nuniform float uTime; uniform float uWind; varying float vTip;')
+        .replace(
+          '#include <begin_vertex>',
