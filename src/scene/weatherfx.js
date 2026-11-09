@@ -69,3 +69,5 @@ export class WeatherFX {
           ${WRAP}
           void main(){
             vec3 vel = vec3(uWind * 6.0, -14.0 - aSeed.z * 4.0, -uWind * 1.5);
+            vec3 p = aSeed * uBox + vel * uTime;
+            p = wrapBox(p, uCenter, uBox);
