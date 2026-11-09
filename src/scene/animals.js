@@ -93,3 +93,5 @@ function makeDeer({ buck = false, fawn = false } = {}) {
   head.add(blob(hide, [0.15, 0.085, 0.075], [0.07, 0, 0], -0.35));
   head.add(blob(dark, [0.03, 0.03, 0.03], [0.21, -0.05, 0]));
   eyes(head, 0.08, 0.035, 0.058, 0.014);
+  for (const side of [-1, 1]) {
+    head.add(blob(hide, [0.03, 0.08, 0.02], [-0.03, 0.08, side * 0.06], 0.6));
