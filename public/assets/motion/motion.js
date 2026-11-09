@@ -354,3 +354,5 @@ function enter() {
     masks?.restore();
     hero.classList.remove('is-entering');
     done();
+  };
+  // the fonts first (a line set in the fallback face breaks elsewhere), 250ms at most: the words are
