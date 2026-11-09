@@ -121,3 +121,6 @@ const FRAG = /* glsl */ `
 
     float md = dot(d, uMoonDir);
     float moon = smoothstep(0.99925, 0.9995, md) * uMoonVis;
+    col += vec3(0.82, 0.85, 0.9) * moon * 1.4 * (1.0 - cover * 0.92);
+    col += vec3(0.45, 0.5, 0.58) * pow(max(md, 0.0), 260.0) * uMoonVis * 0.3 * (1.0 - cover);
+
