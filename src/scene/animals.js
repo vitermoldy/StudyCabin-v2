@@ -363,3 +363,5 @@ function createWalker(name, rand, inUse) {
             ctx.onPlan?.(this);
             return;
           }
+        }
+        a.timer = 6 + rand() * 12;
