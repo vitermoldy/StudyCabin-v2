@@ -59,3 +59,6 @@ export class Props {
       });
       mesh.castShadow = true;
       mesh.receiveShadow = true;
+      scene.add(mesh);
+    });
+
