@@ -105,3 +105,6 @@ export class Ambient extends Emitter {
     chain(src(3.1), this.windFilter, this.g.wind, this.master);
     chain(src(1.7), filter('lowpass', 170), this.g.fireLow, this.master);
     this.g.wildlife.connect(this.master);
+    this.g.fire.connect(this.master);
+
+    // Crickets: a high tone gated by a fast pulse, switched on and off in bursts.
