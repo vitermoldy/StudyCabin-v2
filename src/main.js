@@ -252,3 +252,5 @@ addEventListener('keydown', (e) => {
     if (k === 'arrowdown') world.rig.orbit(0, step);
     needsStill = true;
   } else if (world && (k === '+' || k === '=' || k === '-' || k === '_')) {
+    world.rig.zoomBy(k === '+' || k === '=' ? 0.85 : 1.18);
+    needsStill = true;
