@@ -279,3 +279,5 @@ function frame(now) {
       world.rig.update(Math.min(realDt, 0.1), elapsed, world.resident.head);
       world.render(16);
       if (wordsShown) overlay.applyInk(world.sampleLuminance(overlay.rects()));
+    }
+    return;
