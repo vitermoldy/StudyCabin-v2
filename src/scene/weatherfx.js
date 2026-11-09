@@ -184,3 +184,5 @@ export class WeatherFX {
         depthWrite: false,
         vertexShader: /* glsl */ `
           uniform float uTime; uniform float uWind; uniform float uAmount; uniform vec3 uOrigin; uniform float uScale;
+          attribute vec3 aSeed; attribute float aId;
+          varying float vA;
