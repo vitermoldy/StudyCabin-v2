@@ -327,3 +327,5 @@ export class Resident {
     let moving = false;
     if (this.path && walkOn) {
       const spd = this.speed * speedUp;
+      let remaining = spd * dt;
+      while (remaining > 0 && this.path) {
