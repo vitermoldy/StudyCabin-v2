@@ -143,3 +143,5 @@ export class Climate extends Emitter {
     return WEATHERS[this.weather];
   }
 
+  setSeason(id, { fromAuto = false } = {}) {
+    if (!(id in SEASONS)) return;
