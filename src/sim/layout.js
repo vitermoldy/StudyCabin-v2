@@ -85,3 +85,5 @@ export function route(fromSpot, toSpot, from = null) {
   if (from) pts.push({ ...from });
   else if (a) pts.push({ ...a.at });
   if (a) for (let i = a.via.length - 1; i >= 0; i--) pts.push({ ...a.via[i] });
+  const areaA = a ? a.area : 'in';
+  const areaB = b.area;
