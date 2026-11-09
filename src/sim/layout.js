@@ -4,3 +4,5 @@
 
 import { trailLoop } from '../scene/ground.js';
 
+export const FLOOR = 0.5; // interior floor and deck top
+export const CABIN = { x0: -7, x1: 7, z0: -3, z1: 3, wall: 3.05, ridge: 5.35 };
