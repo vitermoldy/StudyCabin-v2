@@ -140,3 +140,5 @@ export class CameraRig {
     for (const k of Object.keys(this.user)) this.userS[k] = damp(this.userS[k], this.user[k], 12, dt);
     const us = this.userS;
     if (Math.abs(us.yaw) + Math.abs(us.tilt) + Math.abs(us.zoom - 1) + Math.abs(us.panX) + Math.abs(us.panZ) > 1e-4) {
+      this.target.x += us.panX;
+      this.target.z += us.panZ;
