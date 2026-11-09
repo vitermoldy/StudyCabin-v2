@@ -287,3 +287,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .choice span {
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--s-3);
   border: 1px solid var(--line-strong); border-radius: var(--r-sm);
+  font-size: 15px; font-weight: 500;
+  transition: background-color 120ms var(--ease), border-color 120ms var(--ease);
