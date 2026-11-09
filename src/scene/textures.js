@@ -183,3 +183,5 @@ export function printTexture() {
   ctx.arc(170, 78, 18, 0, Math.PI * 2);
   ctx.fill();
   // three ridges of firs, paler with distance
+  for (const [base, tall, colour] of [[112, 26, '#b3bfb4'], [138, 34, '#7f9585'], [168, 44, '#3f5547']]) {
+    ctx.fillStyle = colour;
