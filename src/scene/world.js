@@ -6,7 +6,7 @@ import { Terrain } from './terrain.js';
 import { Pond } from './pond.js';
 import { Cabin } from './cabin.js';
 import { Resident } from './resident.js';
-import
+import {
 import { WeatherFX } from './weatherfx.js';
 import { CameraRig } from './camera.js';
 import { Ripples, RIPPLE_AREA } from './ripples.js';
