@@ -264,3 +264,5 @@ function createWalker(name, rand, inUse) {
     a.state = 'move';
     a.since = 0;
     if (atStop && a.stops.length) {
+      const first = a.stops.shift();
+      a.s = first.s;
