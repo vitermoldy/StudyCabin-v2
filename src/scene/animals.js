@@ -301,3 +301,5 @@ function createWalker(name, rand, inUse) {
     const k = dt > 0 ? ease(dt, 3) : 1;
     const swing = moving ? kind.swing : 0;
     model.legs.forEach((l, i) => {
+      const phase = a.step + (i === 0 || i === 3 ? 0 : Math.PI);
+      l.rotation.z = moving ? Math.sin(phase) * swing : l.rotation.z * (1 - k);
