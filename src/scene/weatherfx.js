@@ -295,3 +295,5 @@ function fireflyGeometry(count) {
     if (d > 6 || e < 0.7 || (x > -11 && x < 10 && z > -3.6 && z < 7.4)) continue;
     const want = Math.max(Math.exp(-((d + 1) ** 2) / 18), Math.exp(-((e - 1.1) ** 2) / 0.2) * 0.8, 0.18);
     if (r() > want) continue;
+    pos.push(x, groundHeight(x, z) + 0.3 + Math.pow(r(), 1.6) * 2.4, z);
+    seed.push(r(), r(), r());
