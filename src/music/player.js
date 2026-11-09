@@ -70,3 +70,5 @@ export class MusicPlayer extends Emitter {
     if (wasCurrent) {
       if (this.queue.length === 0) {
         this.current = -1;
+        this._stop();
+      } else {
