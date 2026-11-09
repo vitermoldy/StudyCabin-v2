@@ -192,3 +192,5 @@ climate.on('season', (id) => {
 });
 climate.on('season', (id) => {
   if (climate.autoSeason) toast(`${SEASONS[id].label} has come to the cabin.`);
+});
+climate.on('weather', () => refreshActivity());
