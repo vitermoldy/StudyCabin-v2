@@ -147,3 +147,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       img.loading = 'lazy';
       img.decoding = 'async';
       li.appendChild(img);
+    } else {
+      const ph = document.createElement('span');
