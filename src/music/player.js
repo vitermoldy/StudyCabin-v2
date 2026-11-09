@@ -29,3 +29,6 @@ export class MusicPlayer extends Emitter {
   }
 
   get item() {
+    return this.queue[this.current] || null;
+  }
+
