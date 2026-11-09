@@ -343,3 +343,5 @@ export class Resident {
             if (this.spot === 'trail') { this.loopIndex = 0; this.loopPause = 0; }
           }
         } else {
+          const k = remaining / dist;
+          this.pos.x += dx * k;
