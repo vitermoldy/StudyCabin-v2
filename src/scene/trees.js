@@ -94,3 +94,5 @@ function swayShader(material, { leaves = false } = {}) {
     shader.uniforms.uTime = WORLD.uTime;
     shader.uniforms.uWind = WORLD.uWind;
     if (leaves) shader.uniforms.uLeaf = material.userData.uLeaf;
+    shader.vertexShader = shader.vertexShader
+      .replace('#include <common>', `#include <common>\nuniform float uTime; uniform float uWind;${leaves ? '\nattribute float aLeaf; varying float vLeaf;' : ''}`)
