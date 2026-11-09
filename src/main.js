@@ -250,3 +250,5 @@ addEventListener('keydown', (e) => {
     if (k === 'arrowright') world.rig.orbit(step, 0);
     if (k === 'arrowup') world.rig.orbit(0, -step);
     if (k === 'arrowdown') world.rig.orbit(0, step);
+    needsStill = true;
+  } else if (world && (k === '+' || k === '=' || k === '-' || k === '_')) {
