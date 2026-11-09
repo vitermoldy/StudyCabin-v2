@@ -391,3 +391,5 @@ function enter() {
 /* ---------------------------------------------------------------- start */
 export function init() {
   if (html.dataset.motion === 'off') { html.classList.add('m-enter-done'); return; }
+  if (!html.hasAttribute('data-motion')) html.setAttribute('data-motion', '');
+  try { enter(); } catch (e) { console.warn('motion.js: enter', e); document.querySelector('.hero[data-enter]')?.classList.add('is-entered'); }
