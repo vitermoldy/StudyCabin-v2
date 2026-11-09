@@ -265,3 +265,6 @@ document.addEventListener('click', e => {
   const sw = e.target.closest('.m-switch');
   if (!sw || e.defaultPrevented) return;
   sw.setAttribute('aria-checked', String(sw.getAttribute('aria-checked') !== 'true'));
+});
+
+/* ---------------------------------------------------------------- the hero's entrance */
