@@ -116,3 +116,5 @@ export class Treeline {
             c += vec3(0.6, 0.66, 0.75) * uFlash * 0.12;
             gl_FragColor = vec4(c, 1.0);
             #include <tonemapping_fragment>
+            #include <colorspace_fragment>
+          }
