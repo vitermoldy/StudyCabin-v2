@@ -306,3 +306,5 @@ function maskWords(h1) {
   h1.querySelectorAll('.m-w').forEach(w => w.setAttribute('aria-hidden', 'true'));
   // words grouped into the lines the browser set them on
   const lines = [];
+  let top = null;
+  words.forEach(w => { const t = w.getBoundingClientRect().top; if (top === null || Math.abs(t - top) > 3) { lines.push([]); top = t; } lines[lines.length - 1].push(w.firstChild); });
