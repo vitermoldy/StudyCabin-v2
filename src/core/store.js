@@ -30,3 +30,5 @@ function flush() {
 export function load(section, fallback) {
   const all = readAll();
   const value = all[section];
+  if (value === undefined || value === null) return fallback;
+  if (fallback && typeof fallback === 'object' && !Array.isArray(fallback)) {
