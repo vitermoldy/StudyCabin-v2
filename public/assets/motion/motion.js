@@ -298,3 +298,5 @@ function maskWords(h1) {
       w.append(i); frag.append(w); words.push(w);
     });
     n.replaceWith(frag);
+  });
+  walk(copy);
