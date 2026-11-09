@@ -104,3 +104,5 @@ const FRAG = /* glsl */ `
     cover = max(cover, smoothstep(0.86, 1.0, uCloud) * 0.92);
     vec2 cuv = d.xz / (h + 0.3) * vec2(0.5, 2.6) + drift * 1.6;
     float cirrus = smoothstep(0.55, 0.85, fbm(cuv + 21.0)) * 0.35 * (1.0 - uFogAmt);
+    float horizonFade = smoothstep(-0.03, 0.1, h);
+    cover *= horizonFade;
