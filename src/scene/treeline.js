@@ -29,3 +29,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
   const pos = [];
   const tAttr = [];
   let first = 0;
+  for (let i = 0; i <= n; i++) {
+    const s = (i / n) * circ;
