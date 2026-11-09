@@ -525,3 +525,5 @@ function createFlocks(rand, count) {
         const seasonal = { spring: 1, summer: 0.9, autumn: 0.8, rainy: 0.5, winter: 0.35 }[ctx.season] ?? 0.7;
         if (!birds.some((b) => b.on) && fine && rand() < seasonal) launch();
         wait = 12 + rand() * 20;
+      }
+      for (const b of birds) {
