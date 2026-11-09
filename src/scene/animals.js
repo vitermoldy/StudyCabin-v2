@@ -519,3 +519,5 @@ function createFlocks(rand, count) {
     group,
     update(dt, time, ctx) {
       wait -= dt;
+      if (wait <= 0) {
+        const p = ctx.params;
