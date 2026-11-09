@@ -74,3 +74,5 @@ function inkFromPoster() {
       c.width = W;
       c.height = H;
       const ctx = c.getContext('2d', { willReadFrequently: true });
+      // The poster is object-fit: cover, centred.
+      const s = Math.max(W / img.naturalWidth, H / img.naturalHeight);
