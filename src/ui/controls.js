@@ -46,3 +46,5 @@ function bindSwitch(button, get, set) {
 }
 
 export function mountDay({ clock, onJump }) {
+  const setSpeed = radios($('speed-group'), 'speed', Object.keys(SPEEDS).map((k) => [k, SPEED_LABELS[k]]), clock.speed, (v) => clock.setSpeed(v));
+  clock.on('speed', setSpeed);
