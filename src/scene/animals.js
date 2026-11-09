@@ -253,3 +253,6 @@ function createWalker(name, rand, inUse) {
     wave: rand() * 6,
     since: 0,
   };
+  const pos = new THREE.Vector3();
+  const tan = new THREE.Vector3();
+
