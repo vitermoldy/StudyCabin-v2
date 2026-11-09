@@ -264,3 +264,5 @@ export class Cabin {
     this._cyl(ceramic, 0.09, 0.1, 0.18, I.x + 0.45, FLOOR + 1.01, I.z + 0.1, 14);
     // dining table and chairs
     const T = F.table;
+    this._bx(wood, T.x - T.w / 2, T.x + T.w / 2, FLOOR + 0.71, FLOOR + 0.76, T.z - T.d / 2, T.z + T.d / 2);
+    this._legs(woodDark, T.x, T.z, T.w - 0.08, T.d - 0.08, 0.71);
