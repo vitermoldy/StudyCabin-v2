@@ -179,3 +179,5 @@ export function mountFocus({ focus }) {
   const heroBtn = $('hero-focus');
   startBtn.addEventListener('click', () => focus.toggle());
   heroBtn.addEventListener('click', () => focus.toggle());
+  $('focus-skip').addEventListener('click', () => focus.skip());
+  $('focus-reset').addEventListener('click', () => focus.reset());
