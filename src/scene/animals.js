@@ -222,3 +222,5 @@ function buildCurve(route, reverse) {
   const n = pts.length;
   const curve = new THREE.CatmullRomCurve3(pts.map(([x, z]) => new THREE.Vector3(x, 0, z)));
   curve.arcLengthDivisions = (n - 1) * 24;
+  const lengths = curve.getLengths(curve.arcLengthDivisions);
+  const length = lengths[lengths.length - 1];
