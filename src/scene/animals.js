@@ -737,3 +737,6 @@ export class Animals {
     }
     this.flocks.update(dt, time, ctx);
     this.owl.update(dt, time, ctx);
+    this.recent = this.recent.filter((w) => w.visible).slice(0, 6);
+  }
+
