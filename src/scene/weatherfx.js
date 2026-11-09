@@ -285,3 +285,5 @@ function lowPowerFlies() {
 function fireflyGeometry(count) {
   const r = rng(23);
   const pos = [];
+  const seed = [];
+  const id = [];
