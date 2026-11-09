@@ -54,3 +54,5 @@ const CAUSTIC = /* glsl */ `
     vec2 i = p;
     float c = 1.0;
     float inten = 0.005;
+    for (int n = 0; n < 4; n++) {
+      float tt = t * (1.0 - (3.5 / float(n + 1)));
