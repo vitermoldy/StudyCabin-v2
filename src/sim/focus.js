@@ -78,3 +78,6 @@ export class FocusTimer extends Emitter {
 
   toggle() {
     if (this.running) this.pause();
+    else this.start();
+  }
+
