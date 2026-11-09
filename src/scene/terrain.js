@@ -349,3 +349,5 @@ export class Terrain {
     const q = new THREE.Quaternion();
     const s = new THREE.Vector3();
     const p = new THREE.Vector3();
+    const c = new THREE.Color();
+    const Y = new THREE.Vector3(0, 1, 0);
