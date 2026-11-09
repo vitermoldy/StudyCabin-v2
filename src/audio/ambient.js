@@ -18,3 +18,5 @@ export class Ambient extends Emitter {
     super();
     const saved = load('ambient', {});
     this.enabled = saved.on === true;
+    this.volume = Number.isFinite(saved.volume) ? clamp(saved.volume, 0, 1) : 0.6;
+    this.mix = { leaves: 0.8, rain: 0.8, wind: 0.6, wildlife: 0.7, fire: 0.8, ...(saved.mix || {}) };
