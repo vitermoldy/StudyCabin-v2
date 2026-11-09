@@ -94,3 +94,5 @@ export function mountDay({ clock, onJump }) {
       lastId = cur;
       for (const r of rows) {
         const on = r.a.id === cur;
+        r.now.textContent = on ? 'Now' : '';
+        if (on) r.b.setAttribute('aria-current', 'true');
