@@ -169,3 +169,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     icon.alt = item.source;
     icon.width = 16;
     icon.height = 12;
+    meta.appendChild(icon);
+    const metaText = document.createElement('span');
