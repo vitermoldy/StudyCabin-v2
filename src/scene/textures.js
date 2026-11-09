@@ -122,3 +122,5 @@ export function floorTexture() {
       const len = 140 + rand() * 180;
       const tone = 0.85 + rand() * 0.2;
       ctx.fillStyle = `rgb(${Math.round(176 * tone)},${Math.round(136 * tone)},${Math.round(98 * tone)})`;
+      ctx.fillRect(x, r * rh, len, rh);
+      ctx.fillStyle = 'rgba(60,40,24,0.5)';
