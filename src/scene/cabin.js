@@ -137,3 +137,5 @@ export class Cabin {
     const shape = new THREE.Shape();
     shape.moveTo(-3.15, 0.05);
     shape.lineTo(3.12, 0.05);
+    shape.lineTo(3.12, WALL_TOP);
+    shape.lineTo(0, RIDGE);
