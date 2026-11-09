@@ -16,3 +16,5 @@ const FRONT = CABIN.z1; // 3.0
 /** The cabin: shell, glass, interior, deck furniture and every lamp. */
 export class Cabin {
   constructor(scene) {
+    this.group = new THREE.Group();
+    scene.add(this.group);
