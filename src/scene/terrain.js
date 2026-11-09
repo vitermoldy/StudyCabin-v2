@@ -367,3 +367,6 @@ export class Terrain {
     mesh.receiveShadow = true;
     mesh.frustumCulled = false;
     return mesh;
+  }
+
+  update(look, { caustic = 0.5 } = {}) {
