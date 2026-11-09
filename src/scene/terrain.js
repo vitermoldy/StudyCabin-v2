@@ -39,3 +39,5 @@ function buildGround() {
     }
   }
   const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute('aMix', new THREE.Float32BufferAttribute(mix, 3));
