@@ -337,3 +337,5 @@ function frame(now) {
       night: atmo ? atmo.night : 1 - smoothstep(300, 420, m) + smoothstep(1140, 1260, m),
       morning: m > 300 && m < 660,
       season: climate.season,
+      fire: world ? world.cabin.state.stove * (isOutside(world.resident.spot) ? 0.35 : 1) : 0,
+      frogs: frogs({ minutes: m, params: p, season: climate.season, iced: world ? world.pond.ice : climate.look.snow }),
