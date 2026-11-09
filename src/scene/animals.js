@@ -9,3 +9,6 @@ import { CABIN, FLOOR } from '../sim/layout.js';
 // flocks of birds cross over the trees by day; an owl comes to the roof ridge at night. After the
 // animals in SongPlay: each is a few soft shapes lit by the scene's own lights, coming out of the
 // wood on one side, stopping once or twice (graze, drink, look round, sit up) and going back in on
+// the other. Every model faces +x with its feet at y = 0.
+
+const ball = new THREE.SphereGeometry(1, 14, 10);
