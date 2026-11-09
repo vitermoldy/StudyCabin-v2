@@ -216,3 +216,5 @@ mountCameraInput(document.getElementById('scene'), {
 
 // Pointer for the camera's small answer to the mouse.
 addEventListener('pointermove', (e) => {
+  if (!world || e.pointerType !== 'mouse') return;
+  world.rig.setPointer((e.clientX / innerWidth) * 2 - 1, -((e.clientY / innerHeight) * 2 - 1));
