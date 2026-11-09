@@ -135,3 +135,5 @@ export class Climate extends Emitter {
     }
   }
 
+  get seasonInfo() {
+    return SEASONS[this.season];
