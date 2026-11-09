@@ -250,3 +250,5 @@ export class Cabin {
     for (const y of [FLOOR + 1.55, FLOOR + 2.0]) {
       this._bx(wood, -6.0, -3.9, y, y + 0.04, -3.0, -2.74);
       for (let i = 0; i < 5; i++) {
+        const x = -5.8 + i * 0.42;
+        if ((i + (y > 2.2 ? 1 : 0)) % 2) this._cyl(ceramic, 0.07, 0.06, 0.16, x, y + 0.12, -2.86, 12);
