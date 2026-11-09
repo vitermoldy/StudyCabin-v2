@@ -260,3 +260,5 @@ function createWalker(name, rand, inUse) {
     a.route = route;
     a.path = buildCurve(route, reverse);
     a.s = 0;
+    a.stops = [...a.path.stops];
+    a.state = 'move';
