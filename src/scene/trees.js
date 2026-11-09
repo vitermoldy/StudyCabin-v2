@@ -49,3 +49,5 @@ function pineGeometry() {
 /** A broadleaf tree 1 unit tall: trunk, two limbs and a cloud of crown lumps. */
 function broadleafGeometry() {
   const trunkParts = [];
+  const crownParts = [];
+  const trunk = new THREE.CylinderGeometry(0.025, 0.045, 0.5, 7);
