@@ -30,3 +30,5 @@ const FRAG = /* glsl */ `
   #include <fog_pars_fragment>
 
   // slope of one sine train a*sin(k dot(d,p) + w t)
+  vec2 wgrad(vec2 p, vec2 d, float len, float a, float spd, float t){
+    float k = 6.2831 / len;
