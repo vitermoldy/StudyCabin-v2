@@ -297,3 +297,5 @@ function frame(now) {
   uiIn -= realDt;
   if (uiIn <= 0) {
     uiIn = 0.25;
+    const s = storyText();
+    overlay.setStory(s.line, s.meta);
