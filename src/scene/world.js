@@ -50,3 +50,5 @@ export class World {
     this.reduced = reducedMotion;
 
     this.atmo = new Atmosphere(this.scene, this.renderer);
+    const lowPower = matchMedia('(max-width: 700px), (pointer: coarse)').matches;
+    this.terrain = new Terrain(this.scene, { lowPower });
