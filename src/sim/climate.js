@@ -185,3 +185,5 @@ export class Climate extends Emitter {
   update(dt, gameDt) {
     if (this.weatherMode === 'auto' && this._now() >= this.nextChange) {
       this._setWeather(this._roll());
+      this.nextChange = this._now() + this._span();
+      this.persist();
