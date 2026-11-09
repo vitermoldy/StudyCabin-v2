@@ -277,3 +277,5 @@ export class Atmosphere {
     sample(CLEAR, sy, 'zenith', this._tmpA);
     sample(OVERCAST, sy, 'zenith', this._tmpB);
     this.zenith.copy(this._tmpA).lerp(this._tmpB, overcast);
+    sample(CLEAR, sy, 'horizon', this._tmpA);
+    sample(OVERCAST, sy, 'horizon', this._tmpB);
