@@ -157,3 +157,5 @@ export class Resident {
     this.headG.add(head);
     const hair = new THREE.Mesh(new THREE.SphereGeometry(0.113, 20, 14, 0, Math.PI * 2, 0, Math.PI * 0.62), m.hair);
     hair.position.set(0, 0.115, -0.012);
+    hair.rotation.x = -0.25;
+    hair.castShadow = true;
