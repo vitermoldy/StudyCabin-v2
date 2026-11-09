@@ -171,3 +171,5 @@ export class MusicPlayer extends Emitter {
     item.error = '';
     this.persist();
     this.emit('change');
+    if (!(await this._ensurePlayer())) return;
+    this.status = autoplay ? 'loading' : 'paused';
