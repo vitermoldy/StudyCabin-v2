@@ -87,3 +87,6 @@ export function route(fromSpot, toSpot, from = null) {
   if (a) for (let i = a.via.length - 1; i >= 0; i--) pts.push({ ...a.via[i] });
   const areaA = a ? a.area : 'in';
   const areaB = b.area;
+  const exitHub = a ? hubOf(areaA, a.via[0]) : null;
+  if (exitHub) pts.push(exitHub);
+
