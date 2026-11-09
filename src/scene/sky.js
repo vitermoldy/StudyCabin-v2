@@ -288,3 +288,5 @@ export class Atmosphere {
     grey.setRGB(lerp(grey.r, l, 0.7), lerp(grey.g, l, 0.7), lerp(grey.b, l, 0.7));
     this.horizon.lerp(grey, fogAmt * 0.6);
     this.zenith.lerp(this.horizon, fogAmt * 0.55);
+    const darken = 1 - storm * 0.38 - params.rain * 0.1;
+    this.horizon.multiplyScalar(darken);
