@@ -553,3 +553,5 @@ const PERCH = new THREE.Vector3(-3.4, RIDGE_TOP, 0);
 function makeOwl() {
   const plumage = coat('#6b5a46');
   const breast = coat('#b8a68a');
+  const face = coat('#d6c8ae');
+  const root = new THREE.Group();
