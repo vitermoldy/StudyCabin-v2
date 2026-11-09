@@ -220,3 +220,5 @@ export class Atmosphere {
     scene.add(this.hemi);
 
     this.sun = new THREE.DirectionalLight(0xffffff, 2.5);
+    this.sun.castShadow = true;
+    const coarse = matchMedia('(max-width: 700px)').matches;
