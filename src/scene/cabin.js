@@ -116,3 +116,5 @@ export class Cabin {
       books: std('#ffffff', { map: booksTexture(), roughness: 0.9 }),
       stoveGlass: new THREE.MeshStandardMaterial({ color: '#120c08', emissive: '#ff7a2e', emissiveIntensity: 0, roughness: 0.3 }),
       screen: new THREE.MeshStandardMaterial({ color: '#1b1d1f', emissive: '#d6e4ee', emissiveIntensity: 0, roughness: 0.3 }),
+      flame: new THREE.MeshBasicMaterial({ color: '#ffb35c', transparent: true, opacity: 0, depthWrite: false }),
+    };
