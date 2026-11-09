@@ -134,3 +134,5 @@ export function groundHeight(x, z) {
   y += (1 - yard) * (1 - pondNear) * fbm(x * 0.06 + 5.2, z * 0.06 + 1.3, 3) * 0.55;
   // The forest floor rises and humps under the trees.
   y += smooth(-3, 26, fd) * (0.5 + fbm(x * 0.035, z * 0.035, 4) * 2.6);
+  // Hills round the whole wood, kept low down the camera's lane.
+  const r = Math.hypot(x - CLEARING.x, z - CLEARING.z);
