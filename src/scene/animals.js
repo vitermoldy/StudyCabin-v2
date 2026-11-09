@@ -365,3 +365,5 @@ function createWalker(name, rand, inUse) {
           }
         }
         a.timer = 6 + rand() * 12;
+        return;
+      }
