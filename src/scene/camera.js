@@ -102,3 +102,5 @@ export class CameraRig {
     return Math.abs(u.yaw) > 0.001 || Math.abs(u.tilt) > 0.001 || Math.abs(u.zoom - 1) > 0.001 || Math.abs(u.panX) > 0.01 || Math.abs(u.panZ) > 0.01;
   }
 
+  /** True while the camera is still easing toward where the visitor put it. */
+  get settling() {
