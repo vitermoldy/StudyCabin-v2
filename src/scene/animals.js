@@ -481,3 +481,5 @@ function makeBird(material) {
 function createFlocks(rand, count) {
   const material = new THREE.MeshBasicMaterial({ color: '#1b2420', side: THREE.DoubleSide });
   const birds = Array.from({ length: count }, () => ({ ...makeBird(material), on: false }));
+  const group = new THREE.Group();
+  birds.forEach((b) => {
