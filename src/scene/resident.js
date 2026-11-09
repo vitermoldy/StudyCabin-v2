@@ -32,3 +32,5 @@ function sitBase(seat, o = {}) {
 const POSES = {
   stand: (t) => base({ spineX: 0.015 * Math.sin(t * 1.4), headY: 0.15 * Math.sin(t * 0.21) }),
   walk: () => base(),
+  stretch: (t) => {
+    const k = Math.sin(t * 0.7);
