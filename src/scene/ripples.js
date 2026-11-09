@@ -91,3 +91,5 @@ export class Ripples {
       depthTest: false,
       depthWrite: false,
     });
+    this.updateMat = new THREE.ShaderMaterial({
+      uniforms: {
