@@ -237,3 +237,5 @@ export class WeatherFX {
         }`,
       fragmentShader: /* glsl */ `
         varying float vA; varying float vWarm;
+        void main(){
+          float d = length(gl_PointCoord - 0.5);
