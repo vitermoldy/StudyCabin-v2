@@ -94,3 +94,5 @@ export class Cabin {
       found: std('#3a3936', { roughness: 0.95 }),
       floor: std('#ffffff', { map: floorTexture(), roughness: 0.62 }),
       panel: std('#f4ece2', { map: panelTexture(), roughness: 0.82 }),
+      ceiling: std('#d9c8b6', { map: panelTexture(), roughness: 0.85 }),
+      glass: new THREE.MeshStandardMaterial({
