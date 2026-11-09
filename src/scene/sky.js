@@ -314,3 +314,5 @@ export class Atmosphere {
     u.uStars.value = this.night * (1 - overcast * 0.9) * (1 - fogAmt * 0.8);
     // a few clouds are always about; overcast fills the sky
     u.uCloud.value = 0.3 + params.cloud * 0.7;
+    const auroraSeason = { winter: 1, autumn: 0.8, spring: 0.6, rainy: 0.45, summer: 0.35 }[season.id] ?? 0.6;
+    u.uAurora.value = this.night * (1 - overcast) * (1 - fogAmt * 0.85) * auroraSeason;
