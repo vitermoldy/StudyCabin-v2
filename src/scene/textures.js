@@ -47,3 +47,5 @@ export function sidingTexture() {
       ctx.fillStyle = `rgba(60,66,58,${0.04 + rand() * 0.07})`;
       ctx.fillRect(i * bw + rand() * bw, 0, 1 + rand() * 2, 256);
     }
+  }
+  grain(ctx, 256, 256, rand, 1400, 0.05);
