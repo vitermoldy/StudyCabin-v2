@@ -326,3 +326,5 @@ export class Terrain {
             transformed += (transpose(imx) * windW) / max(dot(imx[0], imx[0]), 0.0001);
           #endif`,
         );
+      shader.fragmentShader = shader.fragmentShader
+        .replace('#include <common>', '#include <common>\nuniform float uSnow; varying float vTip;')
