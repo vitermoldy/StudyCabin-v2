@@ -376,3 +376,5 @@ export class Cabin {
     for (const dx of [-0.42, 0.42]) this._soft(cushion, 0.68, 0.16, 0.38, 0.07, B.x + dx, FLOOR + 0.62, -2.62);
     // duvet: flat when the bed is made, raised while someone sleeps
     this.duvet = this._soft(duvet, B.w + 0.04, 0.1, 1.5, 0.05, B.x, FLOOR + 0.58, -1.6);
+    this.duvetFold = this._soft(duvet, B.w + 0.04, 0.08, 0.32, 0.04, B.x, FLOOR + 0.66, -1.0);
+    for (const n of [F.nightL, F.nightR]) {
