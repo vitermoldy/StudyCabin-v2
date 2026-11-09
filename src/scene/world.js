@@ -193,3 +193,5 @@ export class World {
     this._rain(dt, p.rain);
     this.ripples.step(2);
     this.pond.update({ time: t, params: p, atmo: this.atmo, look: climate.look, rippleTexture: this.ripples.texture });
+    this._house({ minutes, climate, activity });
+    this.cabin.update(dt, t);
