@@ -339,3 +339,5 @@ function frame(now) {
       season: climate.season,
       fire: world ? world.cabin.state.stove * (isOutside(world.resident.spot) ? 0.35 : 1) : 0,
       frogs: frogs({ minutes: m, params: p, season: climate.season, iced: world ? world.pond.ice : climate.look.snow }),
+      owl: heard.owl,
+      fox: heard.fox,
