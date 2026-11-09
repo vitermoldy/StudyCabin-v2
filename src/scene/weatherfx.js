@@ -249,3 +249,5 @@ export class WeatherFX {
         }`,
     }));
     this.objects = [rain, snow, petals.pts, leaves.pts, smoke, flies];
+    for (const o of this.objects) {
+      o.frustumCulled = false;
