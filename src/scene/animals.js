@@ -134,3 +134,5 @@ function makeFox() {
   const tail = new THREE.Group();
   tail.position.set(-0.28, 0.4, 0);
   body.add(tail);
+  tail.add(blob(fur, [0.24, 0.075, 0.075], [-0.2, -0.05, 0], 0.3));
+  tail.add(blob(pale, [0.07, 0.05, 0.05], [-0.42, -0.13, 0], 0.3));
