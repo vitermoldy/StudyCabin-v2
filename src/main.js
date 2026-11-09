@@ -271,3 +271,5 @@ function frame(now) {
   // Up to one game day of catch-up after the tab was hidden.
   const realDt = Math.min(1440, Math.max(0, (now - lastFrame) / 1000));
   lastFrame = now;
+  focus.tick();
+  if (scenePaused) {
