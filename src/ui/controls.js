@@ -181,3 +181,5 @@ export function mountFocus({ focus }) {
   heroBtn.addEventListener('click', () => focus.toggle());
   $('focus-skip').addEventListener('click', () => focus.skip());
   $('focus-reset').addEventListener('click', () => focus.reset());
+  const dockLabel = $('dock-focus-label');
+  const baseTitle = document.title;
