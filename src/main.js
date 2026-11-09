@@ -395,3 +395,5 @@ startWorld()
     console.error('StudyCabin: the 3D scene could not start.', err);
     showStill();
     viewApi = mountView({
+      rig: { view: FIRST_VIEW, setView: () => toast('Camera views need the 3D scene, which this browser cannot draw.') },
+      onWords: setWords,
