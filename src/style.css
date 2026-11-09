@@ -47,3 +47,5 @@ body {
   font-family: var(--font-text);
   font-size: var(--t-body);
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
