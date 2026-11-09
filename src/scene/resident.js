@@ -351,3 +351,5 @@ export class Resident {
           remaining = 0;
         }
       }
+      moving = true;
+      this.walkPhase += spd * dt * 4.6;
