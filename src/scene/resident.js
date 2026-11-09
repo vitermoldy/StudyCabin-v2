@@ -174,3 +174,5 @@ export class Resident {
       const el = new THREE.Group();
       el.position.y = -0.29;
       sh.add(el);
+      const fore = capsule(0.044, 0.18, m.top);
+      fore.position.y = -0.12;
