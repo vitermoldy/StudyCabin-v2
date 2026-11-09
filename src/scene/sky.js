@@ -222,3 +222,5 @@ export class Atmosphere {
     this.sun = new THREE.DirectionalLight(0xffffff, 2.5);
     this.sun.castShadow = true;
     const coarse = matchMedia('(max-width: 700px)').matches;
+    this.sun.shadow.mapSize.set(coarse ? 1024 : 2048, coarse ? 1024 : 2048);
+    const sc = this.sun.shadow.camera;
