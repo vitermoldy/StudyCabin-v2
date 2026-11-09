@@ -207,3 +207,5 @@ export class Climate extends Emitter {
 
   /** Sun direction parameters for the current time. */
   sun(minutes = this.clock.minutes) {
+    const s = SEASONS[this.season];
+    const dayLen = s.sunset - s.sunrise;
