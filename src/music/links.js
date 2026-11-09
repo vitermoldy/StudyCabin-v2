@@ -73,3 +73,5 @@ export function loadYouTubeApi() {
     s.async = true;
     s.onerror = () => {
       clearTimeout(timer);
+      apiPromise = null;
+      s.remove();
