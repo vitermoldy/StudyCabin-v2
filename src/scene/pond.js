@@ -51,3 +51,5 @@ const FRAG = /* glsl */ `
     g += wgrad(p, vec2(0.62, -0.78), 1.1, 0.005, 1.5, t);
     g += wgrad(p, vec2(-0.85, -0.52), 0.7, 0.003, 1.9, t);
     float gust = 0.55 + 0.45 * vn(p * 0.35 + vec2(t * 0.15, -t * 0.08));
+    g *= (0.12 + uChop * 0.9 * gust + uRain * 0.45) * exp(-length(cameraPosition - vWorld) / 60.0) * water;
+    // Rings from the ripple simulation.
