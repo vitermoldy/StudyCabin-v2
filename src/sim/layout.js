@@ -21,3 +21,5 @@ export const FURNITURE = {
   sofa: { x: -1.5, z: -1.85, w: 2.1, d: 0.92 },
   coffeeTable: { x: -1.5, z: -0.42, w: 1.1, d: 0.6 },
   armchair: { x: 0.95, z: 0.18, rot: -0.42 },
+  stove: { x: 0.65, z: -2.55 },
+  bed: { x: 4.6, z: -1.95, w: 1.72, d: 2.12 },
