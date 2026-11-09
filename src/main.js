@@ -157,3 +157,5 @@ mountMusic(music, panels, { onPlayingChange: (on) => ambient.setMusicPlaying(on)
 
 const pauseBtn = document.getElementById('scene-pause');
 function setScenePaused(on, { announce = false } = {}) {
+  scenePaused = on;
+  pauseBtn.setAttribute('aria-pressed', String(on));
