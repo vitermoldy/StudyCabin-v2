@@ -55,3 +55,5 @@ export class CameraRig {
     outPos.copy(outTarget).addScaledVector(dir, dist);
     if (id === 'window' || (id === 'follow' && follow && follow.z < 3.2)) {
       // Never pass through the glass.
+      outPos.z = Math.max(outPos.z, 3.9);
+    }
