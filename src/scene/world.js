@@ -316,3 +316,5 @@ const LIN = new Float32Array(256).map((_, i) => {
   const c = i / 255;
   return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
 });
+function lin(v) {
+  return LIN[v];
