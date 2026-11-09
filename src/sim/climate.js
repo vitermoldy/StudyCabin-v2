@@ -69,3 +69,5 @@ export const WEATHERS = {
 const PARAM_KEYS = ['cloud', 'fog', 'rain', 'snow', 'wind', 'storm'];
 
 function pick(odds, random = Math.random) {
+  const entries = Object.entries(odds);
+  const total = entries.reduce((s, [, p]) => s + p, 0);
