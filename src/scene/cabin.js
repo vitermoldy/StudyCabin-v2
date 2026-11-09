@@ -401,3 +401,5 @@ export class Cabin {
     this._bx(trim, -0.2, 0.2, 0, 0.27, -0.006, 0.006, { parent: lid });
     this._bx(screen, -0.185, 0.185, 0.015, 0.255, -0.012, -0.007, { parent: lid, cast: false });
     // notebook, pen, mug, plant
+    this._bx(ceramic, D.x - 0.62, D.x - 0.34, top, top + 0.015, D.z - 0.25, D.z - 0.03).rotation.y = 0.12;
+    this._cyl(ceramic, 0.045, 0.04, 0.1, D.x + 0.36, top + 0.05, D.z - 0.18, 12);
