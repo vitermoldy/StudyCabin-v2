@@ -316,3 +316,5 @@ function frame(now) {
     });
     world.render(realDt * 1000);
     sampleIn -= realDt;
+    if (sampleIn <= 0 && wordsShown) {
+      sampleIn = 0.8;
