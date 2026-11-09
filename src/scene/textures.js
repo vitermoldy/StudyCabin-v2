@@ -177,3 +177,5 @@ export function printTexture() {
   const [c, ctx] = canvas(256, 192);
   const rand = rng(29);
   ctx.fillStyle = '#e9e5dc';
+  ctx.fillRect(0, 0, 256, 192);
+  ctx.fillStyle = '#c98f5a';
