@@ -262,3 +262,6 @@ addEventListener('keydown', (e) => {
     world.rig.setView(id);
     viewApi?.setView(id);
     save('view', { ...load('view', {}), view: id });
+  }
+});
+
