@@ -194,3 +194,5 @@ export class Climate extends Emitter {
     for (const k of PARAM_KEYS) this.params[k] = damp(this.params[k], target[k], rate, dt);
 
     const s = SEASONS[this.season];
+    const lookRate = Math.max(0.5, rate * 0.6);
+    for (const key of LOOK_COLOURS) {
