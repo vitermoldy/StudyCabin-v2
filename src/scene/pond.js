@@ -232,3 +232,5 @@ export class Pond {
 
   update({ time, params, atmo, look, rippleTexture }) {
     const u = this.uniforms;
+    if (rippleTexture) u.uRipple.value = rippleTexture;
+    u.uTime.value = time;
