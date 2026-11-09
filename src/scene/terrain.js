@@ -341,3 +341,5 @@ export class Terrain {
       if (d < -1.5 || d > 18) continue;
       // in drifts, thickest a few metres into the wood
       const want = smooth(-1.5, 2, d) * smooth(18, 6, d) * smooth(0.35, 0.65, fbm(x * 0.09 + 4, z * 0.09, 3));
+      if (r() > want) continue;
+      spots.push([x, z]);
