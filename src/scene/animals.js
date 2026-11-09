@@ -429,3 +429,5 @@ function createWalker(name, rand, inUse) {
       }
       place(dt);
       pose(dt, time, moving);
+    },
+    /** A line about this animal while it is out in the clearing; `withYoung` for the doe. */
