@@ -34,3 +34,5 @@ function pineGeometry() {
   const trunk = new THREE.CylinderGeometry(0.018, 0.03, 0.3, 6);
   trunk.translate(0, 0.15, 0);
   parts.push(paint(trunk, 0.36, 0.27, 0.2));
+  const tiers = [[0.2, 0.2, 0.42], [0.36, 0.16, 0.34], [0.52, 0.12, 0.28], [0.68, 0.08, 0.26]];
+  tiers.forEach(([y, r, h], i) => {
