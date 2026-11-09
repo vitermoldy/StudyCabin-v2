@@ -375,3 +375,5 @@ function createWalker(name, rand, inUse) {
           a.state = 'move';
           a.stop = null;
           a.lookAim = 0;
+        }
+        place(dt);
