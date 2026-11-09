@@ -416,3 +416,5 @@ export class Ambient extends Emitter {
     if (!this.ctx || !this.enabled || this.ctx.state !== 'running') return;
     const ctx = this.ctx;
     const now = ctx.currentTime;
+    const s = ctx.createBufferSource();
+    s.buffer = this.noise;
