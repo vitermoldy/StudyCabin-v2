@@ -193,3 +193,5 @@ export class MusicPlayer extends Emitter {
   _cue(index) {
     if (!this._ready) {
       this.current = index;
+      this.emit('change');
+      return;
