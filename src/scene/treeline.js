@@ -68,3 +68,5 @@ export class Treeline {
       nearLow: new THREE.Color(),
       farTop: new THREE.Color(),
       farLow: new THREE.Color(),
+      fog: new THREE.Color(),
+    };
