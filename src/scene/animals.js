@@ -188,3 +188,5 @@ function makeSquirrel() {
     ear.position.set(-0.01, 0.045, side * 0.022);
     head.add(ear);
   }
+  // The tail curls up over the back.
+  const tail = new THREE.Group();
