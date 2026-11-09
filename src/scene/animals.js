@@ -442,3 +442,5 @@ function createWalker(name, rand, inUse) {
 }
 
 /** The route, direction and stop nearest the middle of the opening view, for the first animal. */
+function openingRoute(routes) {
+  let best = null;
