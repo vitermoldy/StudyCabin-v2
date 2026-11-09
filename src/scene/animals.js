@@ -508,3 +508,5 @@ function createFlocks(rand, count) {
         flap: rand() * 6,
         glide: 0,
         bob: rand() * 6,
+      });
+      b.root.visible = true;
