@@ -8,3 +8,6 @@ import { POND } from './ground.js';
 // raindrops leave rings on the surface, and the rings die out against the bank.
 
 const SIZE = Math.max(POND.rx, POND.rz) * 2.5;
+export const RIPPLE_AREA = { x0: POND.x - SIZE / 2, z0: POND.z - SIZE / 2, size: SIZE };
+const RES = 256;
+
