@@ -38,3 +38,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | --- | --- |
 | An oval clearing in a wood, the cabin at its back, the trees closing in behind and to the sides | "In the middle of a forest": the wood is on every side, the clearing gives the cabin and the animals room to be seen. |
 | A lane kept open in front of the cabin, down the clearing | The long views pull the camera back on narrow screens; the lane keeps trunks out of the shot on a phone held upright. |
+| Sky by sun height in SongPlay's forest colours: deep teal at night, teal blue hour, peach sunset horizon, sage haze by day; green-grey cloud cover | The owner asked for SongPlay's atmosphere; its themes are discrete, the cabin's day is continuous, so the colours become the stops of the sky's table. |
+| Thicker, green-tinted fog | SongPlay's "air between the rows of trees": each row further back paler, so the wood reads in depth. |
