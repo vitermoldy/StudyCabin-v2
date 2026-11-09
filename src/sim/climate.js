@@ -123,3 +123,5 @@ export class Climate extends Emitter {
   _roll() {
     const odds = { ...SEASONS[this.season].odds };
     // Weather tends to stay: the current one gets extra weight.
+    if (this.weather && odds[this.weather]) odds[this.weather] += 0.35;
+    return pick(odds);
