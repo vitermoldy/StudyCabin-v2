@@ -6,3 +6,5 @@ import { Terrain } from './terrain.js';
 import { Pond } from './pond.js';
 import { Cabin } from './cabin.js';
 import { Resident } from './resident.js';
+import { WeatherFX } from './weatherfx.js';
+import { CameraRig } from './camera.js';
