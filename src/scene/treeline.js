@@ -124,3 +124,5 @@ export class Treeline {
       mesh.frustumCulled = false;
       mesh.renderOrder = -4;
       scene.add(mesh);
+      return mesh;
+    });
