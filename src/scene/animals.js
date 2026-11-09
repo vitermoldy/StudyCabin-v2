@@ -479,3 +479,5 @@ function makeBird(material) {
 // Flocks of two to six cross over the trees, flapping and gliding, every so often by day. None
 // set out in rain, fog or after dark; a flock already in the air flies on.
 function createFlocks(rand, count) {
+  const material = new THREE.MeshBasicMaterial({ color: '#1b2420', side: THREE.DoubleSide });
+  const birds = Array.from({ length: count }, () => ({ ...makeBird(material), on: false }));
