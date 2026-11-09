@@ -107,3 +107,6 @@ export class World {
       this.resize();
       this._cooldown = 3;
     }
+  }
+
+  _lightning(dt, storm) {
