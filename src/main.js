@@ -363,3 +363,5 @@ startWorld()
     world.rig.view = view;
     viewApi = mountView({
       rig: {
+        get view() { return world.rig.view; },
+        resetUser: () => { world.rig.resetUser(); needsStill = true; },
