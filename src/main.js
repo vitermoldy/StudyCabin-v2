@@ -38,3 +38,5 @@ async function startWorld() {
   const { World, webglAvailable } = await import('./scene/world.js');
   if (!webglAvailable()) throw new Error('no webgl');
   const canvas = document.getElementById('scene');
+  const w = new World(canvas, { reducedMotion: reduced });
+  w.onShaderFail = () => {
