@@ -23,3 +23,6 @@ export class Panels extends Emitter {
       }
     });
     // Clicking the scene closes the open panel.
+    document.getElementById('scene').addEventListener('pointerdown', () => this.close(false));
+  }
+
