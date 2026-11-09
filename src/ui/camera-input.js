@@ -10,3 +10,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
   const pointers = new Map();
   let mode = null;
   let moved = 0;
+  let pinchDist = 0;
+  let pinchMid = null;
