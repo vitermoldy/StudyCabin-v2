@@ -77,3 +77,5 @@ const POSES = {
   sleep: (t) => base({ lie: 1, hipY: 0.62, spineX: 0.012 * Math.sin(t * 1.1), shLx: 0, shLz: 0.12, elL: -0.1, shRx: 0, shRz: -0.12, elR: -0.1, thL: -0.08, knL: 0.15, thR: -0.04, knR: 0.08, headY: 0.25 }),
 };
 
+const PROPS_FOR = {
+  sitRead: ['book'],
