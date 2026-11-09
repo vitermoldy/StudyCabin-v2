@@ -5,3 +5,5 @@ import { groundHeight, POND } from './ground.js';
 
 const OUTFIT = {
   summer: '#e4ded2',
+  spring: '#9ba78b',
+  rainy: '#b8954f',
