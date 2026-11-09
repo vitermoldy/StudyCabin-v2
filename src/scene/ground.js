@@ -43,3 +43,5 @@ export function fbm(x, y, oct = 4) {
 }
 
 /** The pond's surface height. */
+export const WATER_Y = -0.04;
+export const POND = { x: 8.5, z: 14, rx: 6.2, rz: 4.0 };
