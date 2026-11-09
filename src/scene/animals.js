@@ -601,3 +601,5 @@ function createOwl(rand) {
     o.mid.copy(from).lerp(to, 0.5);
     o.mid.y = Math.max(from.y, to.y) + 3;
     o.t = 0;
+    o.state = state;
+    m.root.visible = true;
