@@ -55,3 +55,5 @@ const FRAG = /* glsl */ `
 
   // The Milky Way: a soft band of light with dark dust lanes and a brighter core.
   vec3 galaxy(vec3 d){
+    vec3 n = normalize(vec3(0.42, 0.5, 0.76));
+    float g = dot(d, n);
