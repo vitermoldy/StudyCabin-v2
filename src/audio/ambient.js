@@ -428,3 +428,6 @@ export class Ambient extends Emitter {
     g.gain.exponentialRampToValueAtTime(Math.max(0.0002, peak), now + 0.18);
     g.gain.exponentialRampToValueAtTime(0.0001, now + 4.2);
     s.connect(f).connect(g).connect(this.thunderBus);
+    s.start(now, Math.random() * 2, 4.4);
+  }
+
