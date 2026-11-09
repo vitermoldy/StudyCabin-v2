@@ -20,3 +20,5 @@ const reduced = prefersReducedMotion();
 const FIRST_VIEW = 'clearing';
 
 // ------------------------------------------------------------ simulation
+const clock = new Clock();
+const climate = new Climate(clock);
