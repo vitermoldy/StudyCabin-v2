@@ -70,3 +70,6 @@ function band(m, a, b, fade = 40) {
   const inside = a <= b ? m >= a && m <= b : m >= a || m <= b;
   if (inside) return 1;
   const gap = Math.min(Math.abs(m - a), Math.abs(m - b), 1440 - Math.abs(m - a), 1440 - Math.abs(m - b));
+  return Math.max(0, 1 - gap / fade);
+}
+
