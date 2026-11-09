@@ -35,3 +35,6 @@ export class Panels extends Emitter {
   toggle(id, opener, keyboard = false) {
     if (this.current === id) this.close();
     else this.open(id, opener, { keyboard });
+  }
+
+  open(id, opener = null, { keyboard = false } = {}) {
