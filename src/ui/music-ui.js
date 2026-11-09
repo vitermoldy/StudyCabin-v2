@@ -128,3 +128,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     qClear.textContent = 'Clear the queue';
     player.clear();
     toast('Queue cleared.');
+    qToggle.focus();
+  });
+
