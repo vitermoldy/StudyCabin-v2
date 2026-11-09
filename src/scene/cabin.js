@@ -296,3 +296,5 @@ export class Cabin {
     this._cyl(this.mat.metal, 0.006, 0.006, WALL_TOP - (FLOOR + 2.2), x, (WALL_TOP + FLOOR + 2.2) / 2, z, 6, { cast: false });
     const cone = this._m(new THREE.ConeGeometry(0.22, 0.2, 24, 1, true), shade, { cast: false });
     cone.position.set(x, FLOOR + 2.12, z);
+    cone.material.side = THREE.DoubleSide;
+    const bulb = this._m(new THREE.SphereGeometry(0.05, 12, 8), shade, { cast: false });
