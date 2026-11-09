@@ -293,3 +293,5 @@ export class Resident {
   }
 
   _nearestSpot() {
+    let best = 'sofa';
+    let bd = Infinity;
