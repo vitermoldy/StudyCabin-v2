@@ -175,3 +175,5 @@ function setWords(on) {
 }
 
 let viewApi = null;
+function toggleFullscreen() {
+  if (!document.fullscreenEnabled) return;
