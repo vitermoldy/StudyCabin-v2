@@ -16,3 +16,5 @@ export const SEASONS = {
     line: 'Long days, warm evenings, fireflies over the grass after dark.',
   },
   autumn: {
+    label: 'Autumn',
+    sunrise: 405, sunset: 1080, noonElevation: 40,
