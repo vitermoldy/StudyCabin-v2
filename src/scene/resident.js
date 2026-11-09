@@ -207,3 +207,5 @@ export class Resident {
       foot.position.set(0, -0.44, 0.05);
       foot.castShadow = true;
       kn.add(foot);
+      return { th, kn };
+    };
