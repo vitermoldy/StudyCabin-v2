@@ -133,3 +133,5 @@ export class Treeline {
    * each further one closer to the haze itself (the ratios come from SongPlay's forest themes).
    */
   update({ fog, snow, flash }) {
+    const c = this.colors;
+    c.fog.copy(fog);
