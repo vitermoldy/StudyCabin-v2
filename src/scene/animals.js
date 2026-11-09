@@ -209,3 +209,5 @@ const KINDS = {
 
 const KEEN = { doe: 'deer', buck: 'deer', fawn: 'deer', fox: 'fox', hare: 'hare', squirrel: 'squirrel' };
 
+const LINES = {
+  graze: (who, two) => `${who} ${two ? 'are' : 'is'} grazing in the clearing`,
