@@ -40,3 +40,5 @@ const FRAG = /* glsl */ `
     vec3 col = vec3(0.0);
     for (int i = 0; i < 3; i++) {
       float fi = float(i);
+      float edge = 0.075 + fi * 0.06 + sin(az * (1.6 + fi * 0.5) + t * 0.035 + fi * 2.1) * 0.045
+        + (vnoise(vec2(az * 3.0 + fi * 7.0, t * 0.03)) - 0.5) * 0.06;
