@@ -384,3 +384,6 @@ export class Cabin {
       s.material.side = THREE.DoubleSide;
       s.position.set(n.x, FLOOR + 0.78, n.z);
     }
+  }
+
+  _desk() {
