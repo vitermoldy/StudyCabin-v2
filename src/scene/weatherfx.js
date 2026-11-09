@@ -37,3 +37,5 @@ function seeds(count, perItem, seed) {
     }
   }
   const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(new Float32Array(count * perItem * 3), 3));
+  geo.setAttribute('aSeed', new THREE.Float32BufferAttribute(s, 3));
