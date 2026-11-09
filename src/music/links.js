@@ -49,3 +49,7 @@ export function parseLink(raw) {
     ? `https://www.youtube.com/playlist?list=${listId}`
     : `https://www.youtube.com/watch?v=${videoId}`;
   return { kind, videoId, listId, source, url: clean };
+}
+
+let apiPromise = null;
+
