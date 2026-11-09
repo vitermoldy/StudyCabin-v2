@@ -452,3 +452,5 @@ export class Cabin {
     bowl.position.set(f.x, FLOOR, f.z);
     this._cyl(metal, 0.14, 0.2, 0.14, f.x, FLOOR + 0.07, f.z, 16);
     this.flames = [];
+    for (let i = 0; i < 4; i++) {
+      const fl = this._m(new THREE.ConeGeometry(0.11 - i * 0.012, 0.42, 10), flame, { cast: false, receive: false });
