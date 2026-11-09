@@ -748,3 +748,6 @@ export class Animals {
       if (line) return line;
     }
     return this.owl.sighting();
+  }
+
+  /** What the ambient sound should hear: the owl on the ridge, a fox out at night. */
