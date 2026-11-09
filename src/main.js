@@ -299,3 +299,5 @@ function frame(now) {
     uiIn = 0.25;
     const s = storyText();
     overlay.setStory(s.line, s.meta);
+    if (panels.current === 'day') updateDay();
+    if (panels.current === 'weather') updateWeather();
