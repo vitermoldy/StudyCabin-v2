@@ -197,3 +197,6 @@ export class MusicPlayer extends Emitter {
       return;
     }
     return this._load(index, false);
+  }
+
+  toggle() {
