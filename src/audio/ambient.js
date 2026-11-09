@@ -392,3 +392,6 @@ export class Ambient extends Emitter {
       o.connect(g).connect(f);
       o.start(t0);
       o.stop(t0 + 0.22);
+    }
+  }
+
