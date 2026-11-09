@@ -143,3 +143,5 @@ export class Resident {
     this.spine.add(torso);
     this.chest = new THREE.Group();
     this.chest.position.y = 0.47;
+    this.spine.add(this.chest);
+    const neck = capsule(0.05, 0.06, m.skin);
