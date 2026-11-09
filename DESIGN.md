@@ -30,3 +30,7 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
   green-grey scene.
 - Type: Instrument Sans (the dealt third pairing), self-hosted (fontsource), one variable file,
   weights 400 to 600.
+- Radius: sharp (4 / 6 / 8). The reference bar is an almost square black block.
+
+## v2: the forest, decisions and their reasons (R-31)
+
