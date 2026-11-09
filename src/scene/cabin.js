@@ -287,3 +287,5 @@ export class Cabin {
     g.rotation.y = rot;
     this.group.add(g);
     this._cb(mat, 0.46, 0.04, 0.44, 0, FLOOR + 0.45, 0, { parent: g });
+    this._cb(mat, 0.46, 0.42, 0.04, 0, FLOOR + 0.7, -0.21, { parent: g });
+    this._legs(this.mat.woodDark, 0, 0, 0.44, 0.42, 0.43, FLOOR, 0.04, g);
