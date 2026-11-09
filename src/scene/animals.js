@@ -539,3 +539,5 @@ function createFlocks(rand, count) {
         if (Math.abs(b.x) > 96) {
           b.on = false;
           b.root.visible = false;
+        }
+      }
