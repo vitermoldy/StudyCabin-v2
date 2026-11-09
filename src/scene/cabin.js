@@ -170,3 +170,5 @@ export class Cabin {
     // sliding door: glass and a thin frame
     this.door = new THREE.Group();
     this.door.position.set(0, 0, 2.93);
+    this.group.add(this.door);
+    const dg = this._bx(glass, -0.93, 0.93, FLOOR + 0.05, GLASS_TOP - 0.06, -0.01, 0.01, { cast: false, receive: false, parent: this.door });
