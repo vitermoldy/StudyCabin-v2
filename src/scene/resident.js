@@ -48,3 +48,5 @@ const POSES = {
   },
   reach: (t) => base({ shRx: -2.35 + 0.08 * Math.sin(t * 0.9), shRz: -0.12, elR: -0.3, headX: -0.28, spineX: -0.05 }),
   crouch: (t) => base({ hipY: 0.5, thL: -1.95, knL: 2.35, thR: -1.85, knR: 2.3, spineX: 0.55, headX: 0.15, shLx: -0.9, elL: -0.6, shRx: -1.0 + 0.15 * Math.sin(t * 1.3), elR: -0.5 }),
+  sitRead: (t, seat) => sitBase(seat, { spineX: 0.12, headX: 0.42 + 0.03 * Math.sin(t * 0.3), shLx: -0.62, shLz: 0.3, elL: -1.45, shRx: -0.62, shRz: -0.3, elR: -1.45 }),
+  sitType: (t, seat) => sitBase(seat, {
