@@ -56,3 +56,5 @@ function showStill() {
   inkFromPoster();
 }
 
+/**
+ * Without the live scene, the words sit on the poster: pick their ink from the picture under
