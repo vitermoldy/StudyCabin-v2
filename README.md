@@ -78,7 +78,7 @@ shows a still picture and the music, timer and ambient sound still work.
 | --- | --- |
 | Space | Play or pause music |
 | 1 to 5 | Clearing, deck, window, pond, follow |
-| Arrows |
+| Arrows | Move
 | R | Reset the camera |
 | H | Show or hide the big words |
 | P | Pause or move the scene |
