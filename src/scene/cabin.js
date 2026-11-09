@@ -108,3 +108,5 @@ export class Cabin {
       deckWood: weathered(std('#87827a', { roughness: 0.85 }), { snow: 0.8 }),
       metal: std('#1f2121', { roughness: 0.45, metalness: 0.5 }),
       counter: std('#d9d5cc', { roughness: 0.38 }),
+      cabinet: std('#7e604a', { roughness: 0.7 }),
+      ceramic: std('#e6e1d6', { roughness: 0.35 }),
