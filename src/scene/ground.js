@@ -81,3 +81,6 @@ function segmentDistance(px, pz, ax, az, bx, bz) {
 /** Rough distance in metres from the trodden path. */
 export function trailDistance(x, z) {
   const ring = Math.abs(pondE(x, z) - TRAIL_E) * Math.min(POND.rx, POND.rz) * 1.15;
+  return Math.min(ring, segmentDistance(x, z, SPUR_A.x, SPUR_A.z, SPUR_B.x, SPUR_B.z));
+}
+
