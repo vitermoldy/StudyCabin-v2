@@ -79,3 +79,6 @@ export class World {
     this._dprCheck = 0;
     this._cooldown = 0;
     this.resize();
+  }
+
+  resize() {
