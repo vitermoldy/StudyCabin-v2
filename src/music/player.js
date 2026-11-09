@@ -6,3 +6,5 @@ let uid = 0;
 const newId = () => `q${Date.now().toString(36)}${(uid++).toString(36)}`;
 
 /**
+ * The music queue and the YouTube embed that plays it.
+ * status: idle | loading-api | loading | playing | paused | buffering | ended | api-error
