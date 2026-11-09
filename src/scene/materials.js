@@ -12,3 +12,5 @@ export const WORLD = {
  * Outdoor surfaces: snow settles on faces that look up, rain darkens and
  * shines them. `snow` scales how much snow this surface holds.
  */
+export function weathered(material, { snow = 1, wet = 1 } = {}) {
+  const local = { uSnowScale: { value: snow }, uWetScale: { value: wet } };
