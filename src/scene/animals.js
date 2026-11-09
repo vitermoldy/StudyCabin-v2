@@ -17,3 +17,6 @@ const ease = (dt, rate) => 1 - Math.exp(-dt * rate);
 // Eyes catch the light after dark (eyeshine): one material for every animal, brightened at night.
 const eyeMat = new THREE.MeshBasicMaterial({ color: '#141210' });
 const EYE_DARK = new THREE.Color('#141210');
+const EYE_SHINE = new THREE.Color('#e9f2b8');
+
+// A touch of the coat's own colour as emissive keeps an animal readable in low light without
