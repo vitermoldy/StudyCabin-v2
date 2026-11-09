@@ -137,3 +137,5 @@ export class WeatherFX {
             uniform float uTime; uniform float uWind; uniform float uAmount; uniform vec3 uCenter; uniform vec3 uBox; uniform float uScale;
             attribute vec3 aSeed; attribute float aId;
             varying float vA; varying float vRot; varying float vMix;
+            ${WRAP}
+            void main(){
