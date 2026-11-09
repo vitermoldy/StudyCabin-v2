@@ -73,3 +73,5 @@ export class World {
 
     this.flash = 0;
     this._nextBolt = 6;
+    this._boltSeq = [];
+    this.onThunder = null;
