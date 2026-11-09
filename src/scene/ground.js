@@ -38,3 +38,5 @@ export function fbm(x, y, oct = 4) {
     x = x * 2.02 + 13.7;
     y = y * 2.02 + 7.3;
     a *= 0.5;
+  }
+  return v;
