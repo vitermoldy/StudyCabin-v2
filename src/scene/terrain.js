@@ -110,3 +110,5 @@ export class Terrain {
           vec3 earth = mix(soil, uMud, clamp(vMix.x + uWet * 0.3, 0.0, 1.0));
           vec3 veg = mix(earth, uVeg * (0.38 + vMix.z * 0.16) * (1.0 - vShade * 0.35), smoothstep(0.0, 0.6, vMix.y));
           float snowAmt = uSnow * smoothstep(0.55, 0.85, vUp) * (1.0 - vShade * 0.4);
+          diffuseColor.rgb = mix(veg, vec3(0.9, 0.92, 0.94), snowAmt * 0.92);
+          // Under the pond: the floor goes dark green with depth and catches caustics.
