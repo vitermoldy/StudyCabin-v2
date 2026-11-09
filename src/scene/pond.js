@@ -222,3 +222,6 @@ export class Pond {
     this.landBase = new THREE.Color('#22301f');
     this.ice = 0;
     this._padColor = new THREE.Color();
+  }
+
+  /** Hook up the ripple simulation (its texture and the patch it covers). */
