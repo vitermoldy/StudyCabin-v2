@@ -7,3 +7,5 @@ import { formatClock } from '../core/emitter.js';
  * words keep 3:1 against whatever the scene shows behind them.
  */
 export class Overlay {
+  constructor({ reducedMotion }) {
+    this.word = document.getElementById('word-activity');
