@@ -247,3 +247,5 @@ export class WeatherFX {
           gl_FragColor = vec4(c * (0.9 + core), a);
           #include <colorspace_fragment>
         }`,
+    }));
+    this.objects = [rain, snow, petals.pts, leaves.pts, smoke, flies];
