@@ -75,3 +75,5 @@ export class Cabin {
     return mesh;
   }
 
+  _legs(mat, cx, cz, w, d, h, y0 = FLOOR, t = 0.045, parent = this.group) {
+    for (const sx of [-1, 1]) {
