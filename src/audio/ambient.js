@@ -136,3 +136,5 @@ export class Ambient extends Emitter {
         this.emit('error', 'This browser cannot play generated sound.');
         this.emit('change');
         return;
+      }
+      try {
