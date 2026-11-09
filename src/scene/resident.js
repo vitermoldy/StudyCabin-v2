@@ -353,3 +353,6 @@ export class Resident {
       }
       moving = true;
       this.walkPhase += spd * dt * 4.6;
+    }
+
+    // The walk goes round the pond on the path, stopping now and then to look at the water.
