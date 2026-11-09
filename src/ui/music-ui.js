@@ -87,3 +87,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   });
 
   const togglePlay = () => player.toggle();
+  playBtn.addEventListener('click', togglePlay);
+  dockPlay.addEventListener('click', togglePlay);
