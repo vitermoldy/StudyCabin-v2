@@ -383,3 +383,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   font-size: 15px; opacity: 0; pointer-events: none;
   transition: opacity 200ms var(--ease), transform 200ms var(--ease);
 }
+.toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+.toast:empty { padding: 0; border: 0; }
