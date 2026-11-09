@@ -103,3 +103,5 @@ export async function fetchDetails(item) {
 
 export function thumbFor(item) {
   if (item.thumb) return item.thumb;
+  if (item.videoId) return `https://i.ytimg.com/vi/${item.videoId}/mqdefault.jpg`;
+  return null;
