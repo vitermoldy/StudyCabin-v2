@@ -177,3 +177,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     meta.appendChild(metaText);
     main.append(t, meta);
     main.addEventListener('click', () => player.play(i));
+    li.appendChild(main);
+
+    const tools = document.createElement('div');
