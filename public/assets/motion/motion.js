@@ -190,3 +190,5 @@ function counts() {
     items.push(el);
   });
   // measured only once the fonts are in; the resize observer measures again when a hidden stat shows
+  fontsIn().then(() => items.forEach(el => { el.__mCount.arm(); ro.observe(el); io.observe(el); }));
+  // a printed page never scrolls the stats into view: each prints its own number
