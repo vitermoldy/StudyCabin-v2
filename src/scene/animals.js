@@ -40,3 +40,6 @@ function eyes(head, x, y, z, r) {
     e.scale.setScalar(r);
     e.position.set(x, y, side * z);
     head.add(e);
+  }
+}
+
