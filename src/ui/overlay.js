@@ -57,3 +57,6 @@ export class Overlay {
       s.textContent = ch;
       if (ch !== prev[i]) s.className = 'digit-swap';
       this.clock.appendChild(s);
+    });
+  }
+
