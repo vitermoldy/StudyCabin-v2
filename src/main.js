@@ -170,3 +170,5 @@ if (reduced) setTimeout(() => toast('The scene is still because your system asks
 
 function setWords(on) {
   wordsShown = on;
+  html.classList.toggle('is-clear', !on);
+  save('view', { ...load('view', {}), words: on });
