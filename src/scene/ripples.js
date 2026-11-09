@@ -89,3 +89,5 @@ export class Ripples {
       vertexShader: QUAD_VERT,
       fragmentShader: DROP_FRAG,
       depthTest: false,
+      depthWrite: false,
+    });
