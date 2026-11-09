@@ -7,3 +7,5 @@ export const DAY = [
   { id: 'wake', start: h(6, 30), end: h(6, 45), word: 'Waking', line: 'Up and stretching by the bed', spot: 'bedside', pose: 'stretch' },
   { id: 'coffee-make', start: h(6, 45), end: h(7, 10), word: 'Coffee', line: 'Making coffee in the kitchen', spot: 'cook', pose: 'cook' },
   {
+    id: 'coffee', start: h(7, 10), end: h(7, 50), word: 'Coffee', line: 'Coffee on the deck', spot: 'deckChair', pose: 'sitDrink',
+    wet: { line: 'Coffee in the armchair, rain on the glass', spot: 'armchair', pose: 'sitDrink' },
