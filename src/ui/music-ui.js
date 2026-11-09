@@ -95,3 +95,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   loop.addEventListener('click', () => player.setLoop(!player.loop));
   vol.addEventListener('input', () => {
     player.setVolume(Number(vol.value));
+  });
+  let seeking = false;
