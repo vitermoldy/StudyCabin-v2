@@ -33,3 +33,5 @@ export class Panels extends Emitter {
 
   /** `keyboard`: opened with Enter or Space, so focus moves into the panel. */
   toggle(id, opener, keyboard = false) {
+    if (this.current === id) this.close();
+    else this.open(id, opener, { keyboard });
