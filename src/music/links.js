@@ -27,3 +27,5 @@ export function parseLink(raw) {
   if (!known.includes(host)) throw new LinkError('Only YouTube and YouTube Music links can play here.');
   const source = host === 'music.youtube.com' ? 'YouTube Music' : 'YouTube';
 
+  let videoId = null;
+  const parts = url.pathname.split('/').filter(Boolean);
