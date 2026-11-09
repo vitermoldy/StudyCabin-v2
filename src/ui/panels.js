@@ -73,3 +73,5 @@ export class Panels extends Emitter {
     panel.inert = true;
   }
 
+  _syncButtons() {
+    for (const t of this.tabs) t.setAttribute('aria-expanded', String(t.dataset.panel === this.current));
