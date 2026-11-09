@@ -622,3 +622,5 @@ function createOwl(rand) {
   return {
     root: m.root,
     get perched() {
+      return o.state === 'perch';
+    },
