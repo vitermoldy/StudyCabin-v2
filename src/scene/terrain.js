@@ -187,3 +187,5 @@ export class Terrain {
       shader.uniforms.uTime = WORLD.uTime;
       shader.uniforms.uWind = WORLD.uWind;
       shader.uniforms.uSnow = WORLD.uSnow;
+      shader.uniforms.uPush = this.grassPush;
+      shader.vertexShader = shader.vertexShader
