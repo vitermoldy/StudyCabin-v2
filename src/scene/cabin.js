@@ -133,3 +133,5 @@ export class Cabin {
     // back wall
     this._bx(siding, -7.15, 7.15, 0.05, WALL_TOP, -3.15, -3.03);
     this._bx(panel, CABIN.x0, CABIN.x1, FLOOR, WALL_TOP, -3.03, -3.0, { cast: false });
+    // gable side walls
+    const shape = new THREE.Shape();
