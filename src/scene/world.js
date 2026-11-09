@@ -172,3 +172,6 @@ export class World {
     WORLD.uSnow.value = climate.look.snow * (0.55 + p.snow * 0.45);
     WORLD.uWet.value = clamp(p.rain * 1.2, 0, 1);
 
+    this._lightning(dt, p.storm);
+    this.rig.update(dt, t, this.resident.head);
+
