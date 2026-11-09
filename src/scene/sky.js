@@ -159,3 +159,5 @@ function sample(table, y, key, out) {
   for (let i = 1; i < table.length; i++) {
     if (y <= table[i].y) {
       const a = table[i - 1];
+      const b = table[i];
+      const t = (y - a.y) / (b.y - a.y);
