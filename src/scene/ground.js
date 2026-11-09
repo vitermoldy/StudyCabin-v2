@@ -150,3 +150,5 @@ export function onCabin(x, z, pad = 0) {
 export function grassCover(x, z) {
   if (onCabin(x, z, 0.1)) return 0;
   const e = pondE(x, z);
+  if (e < 1.06) return 0;
+  let cover = 1 - smooth(-1, 5, forestDepth(x, z)) * 0.74;
