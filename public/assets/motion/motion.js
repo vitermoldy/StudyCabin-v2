@@ -186,3 +186,5 @@ function counts() {
         requestAnimationFrame(step);
       },
     };
+    el.__mCount = ctl;
+    items.push(el);
