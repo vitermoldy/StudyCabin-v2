@@ -33,3 +33,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     } catch {
       /* not capturable: fine */
     }
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pointers.size === 1) {
