@@ -45,3 +45,5 @@ shows a still picture and the music, timer and ambient sound still work.
   Jump to any hour from the Day panel or its timeline.
 - **Seasons.** Spring, summer, rainy season, autumn, winter: day length, temperature, grass, fern
   and tree colours, petals, falling leaves, snow on the roof and the ground, ice on the pond.
+  Optionally moves on every 7 game days.
+- **Weather.** Follows the season, or pick clear, cloudy, fog, rain, storm or snow. Rain streaks,
