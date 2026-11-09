@@ -217,3 +217,5 @@ export class MusicPlayer extends Emitter {
       if (list.length && at >= 0 && at < list.length - 1) {
         this.player.nextVideo();
         return;
+      }
+    }
