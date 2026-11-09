@@ -292,3 +292,5 @@ function maskWords(h1) {
     const frag = document.createDocumentFragment();
     n.textContent.split(/(\s+)/).forEach(part => {
       if (!part) return;
+      if (/^\s+$/.test(part)) { frag.append(part); return; }
+      const w = document.createElement('span'), i = document.createElement('span');
