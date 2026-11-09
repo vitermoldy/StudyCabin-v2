@@ -98,3 +98,5 @@ export function route(fromSpot, toSpot, from = null) {
     if (ca === 0) steps.push(DOOR_IN, DOOR_MID, DECK_HUB);
     if (cb === 2) steps.push(STEP_TOP, STEP_LOW, YARD_HUB);
   } else if (ca > cb) {
+    if (ca === 2) steps.push(YARD_HUB, STEP_LOW, STEP_TOP, DECK_HUB);
+    if (cb === 0) steps.push(DECK_HUB, DOOR_MID, DOOR_IN);
