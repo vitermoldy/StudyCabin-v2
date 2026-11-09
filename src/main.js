@@ -125,3 +125,5 @@ function conditions() {
 
 function refreshActivity({ teleport = false } = {}) {
   const next = activityAt(clock.minutes, conditions(), focus.residentPhase);
+  if (next.key !== activity.key || teleport) {
+    activity = next;
