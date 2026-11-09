@@ -38,3 +38,6 @@ export class Overlay {
       el.appendChild(s);
       if (!this.reduced) requestAnimationFrame(() => s.classList.add('is-in'));
     });
+  }
+
+  setTime(minutes) {
