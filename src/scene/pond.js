@@ -150,3 +150,5 @@ function lilies(scene) {
     const u = Math.cos(a) * e;
     const v = Math.sin(a) * e;
     const x = POND.x + u * POND.rx;
+    const z = POND.z + v * POND.rz;
+    if (pondE(x, z) > 0.9) continue;
