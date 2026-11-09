@@ -102,3 +102,5 @@ export class Cabin {
       duvet: std('#bfb9ad', { map: fab, roughness: 0.95 }),
       sofa: std('#b6ae9f', { map: fab, roughness: 0.95 }),
       cushion: std('#d1c9ba', { map: fab, roughness: 0.95 }),
+      rug: std('#8f8577', { map: fab, roughness: 1 }),
+      wood: std('#a7825f', { roughness: 0.7 }),
