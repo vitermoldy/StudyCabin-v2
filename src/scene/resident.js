@@ -276,3 +276,5 @@ export class Resident {
     const from = { x: this.pos.x, y: this.pos.y, z: this.pos.z };
     const to = SPOTS[target].at;
     const near = Math.hypot(to.x - from.x, to.z - from.z) < 1.7 && Math.abs(to.y - from.y) < 0.1 && !this.path;
+    if (near) {
+      this.path = [from, { ...to }];
