@@ -26,3 +26,5 @@ export class Ambient extends Emitter {
     this._t = 0;
     this._nextBird = 0;
     this._nextCrackle = 0;
+    this._cricketGate = 0;
+    this._nextFrog = 0;
