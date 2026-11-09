@@ -20,3 +20,5 @@ function setIcon(button, id) {
   if (use && use.getAttribute('href') !== `#${id}`) use.setAttribute('href', `#${id}`);
 }
 
+export function titleOf(item) {
+  if (!item) return '';
