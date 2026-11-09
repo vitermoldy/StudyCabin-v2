@@ -308,3 +308,6 @@ export class Resident {
     this.pos.set(s.at.x, s.at.y, s.at.z);
     this.facing = s.face;
     if (spotId === 'trail') this.loopIndex = 0;
+  }
+
+  _targetJoints(t) {
