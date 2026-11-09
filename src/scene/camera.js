@@ -31,3 +31,5 @@ export class CameraRig {
   /** Base position and target for a view at the current aspect. */
   _resolve(id, outPos, outTarget, follow = null) {
     const v = VIEWS[id];
+    const cam = this.camera;
+    outTarget.set(...v.target);
