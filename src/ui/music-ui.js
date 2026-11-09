@@ -47,3 +47,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const qEmpty = $('queue-empty');
   const qClear = $('queue-clear');
   const qLabel = $('queue-label');
+  const nowTitle = $('now-title');
+  const nowSub = $('now-sub');
