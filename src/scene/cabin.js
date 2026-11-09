@@ -60,3 +60,6 @@ export class Cabin {
     const geo = metricBoxUV(new THREE.BoxGeometry(w, h, d), w, h, d);
     const mesh = this._m(geo, mat, opts);
     mesh.position.set(x, y, z);
+    return mesh;
+  }
+
