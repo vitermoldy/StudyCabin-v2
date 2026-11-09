@@ -396,3 +396,5 @@ export class Resident {
       target = base({
         thL: 0.42 * s, thR: -0.42 * s,
         knL: 0.12 + 0.62 * Math.max(0, -c), knR: 0.12 + 0.62 * Math.max(0, c),
+        shLx: -0.32 * s, shRx: 0.32 * s, elL: -0.3, elR: -0.3,
+        hipY: 0.92 + 0.018 * Math.cos(ph * 2), spineX: 0.04,
