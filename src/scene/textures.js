@@ -116,3 +116,5 @@ export function floorTexture() {
   const rand = rng(41);
   const rows = 6;
   const rh = 256 / rows;
+  for (let r = 0; r < rows; r++) {
+    let x = -rand() * 200;
