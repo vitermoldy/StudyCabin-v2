@@ -154,3 +154,5 @@ export class MusicPlayer extends Emitter {
           ? 'YouTube took too long to answer. Check the connection, then try again.'
           : 'YouTube did not load. Check the connection or an ad blocker, then try again.';
         this.emit('change');
+        return false;
+      } finally {
