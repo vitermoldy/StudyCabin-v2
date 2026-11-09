@@ -281,3 +281,5 @@ function frame(now) {
       if (wordsShown) overlay.applyInk(world.sampleLuminance(overlay.rects()));
     }
     return;
+  }
+  const dt = Math.min(realDt, 0.1);
