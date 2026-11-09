@@ -44,3 +44,6 @@ function pineGeometry() {
   const g = mergeGeometries(parts);
   g.computeVertexNormals();
   return g;
+}
+
+/** A broadleaf tree 1 unit tall: trunk, two limbs and a cloud of crown lumps. */
