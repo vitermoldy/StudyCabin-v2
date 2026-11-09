@@ -5,3 +5,5 @@ const LIST_ID = /^[A-Za-z0-9_-]{10,64}$/;
 
 export class LinkError extends Error {}
 
+/**
+ * @returns {{kind:'video'|'playlist', videoId:string|null, listId:string|null, source:'YouTube'|'YouTube Music', url:string}}
