@@ -380,3 +380,5 @@ export class Cabin {
     for (const n of [F.nightL, F.nightR]) {
       this._bx(woodDark, n.x - 0.24, n.x + 0.24, FLOOR, FLOOR + 0.46, n.z - 0.22, n.z + 0.22);
       this._cyl(ceramic, 0.07, 0.09, 0.22, n.x, FLOOR + 0.57, n.z, 14);
+      const s = this._m(new THREE.CylinderGeometry(0.12, 0.16, 0.2, 18, 1, true), this.shades.bed, { cast: false });
+      s.material.side = THREE.DoubleSide;
