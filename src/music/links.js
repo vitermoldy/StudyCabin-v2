@@ -108,3 +108,5 @@ export function thumbFor(item) {
 }
 
 export const ERROR_TEXT = {
+  2: 'YouTube could not read this link.',
+  5: 'This video cannot play in the browser player.',
