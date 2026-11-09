@@ -54,3 +54,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     const dx = e.clientX - p.x;
     const dy = e.clientY - p.y;
     p.x = e.clientX;
+    p.y = e.clientY;
+    moved += Math.abs(dx) + Math.abs(dy);
