@@ -29,3 +29,5 @@ export const FURNITURE = {
   deckChair: { x: -4.2, z: 4.95 },
   deckChair2: { x: -2.9, z: 4.95 },
   deckTable: { x: 4.85, z: 5.05 },
+  guitarChair: { x: 4.0, z: 4.95 },
+  fireBowl: { x: -7.4, z: 5.25 },
