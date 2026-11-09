@@ -52,3 +52,5 @@ const UPDATE_FRAG = /* glsl */ `
     info.g *= 0.992;
     info.r += info.g;
     // Rings die out against the bank and at the edges of the simulated patch.
+    float wet = smoothstep(1.0, 0.94, pondE(uOrigin + vUv * uSize));
+    float edge = smoothstep(0.0, 0.06, vUv.x) * smoothstep(1.0, 0.94, vUv.x) * smoothstep(0.0, 0.06, vUv.y) * smoothstep(1.0, 0.94, vUv.y);
