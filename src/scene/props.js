@@ -37,3 +37,5 @@ export class Props {
     const geos = [stoneGeometry(1), stoneGeometry(2), stoneGeometry(3)];
     const m = new THREE.Matrix4();
     const q = new THREE.Quaternion();
+    const e = new THREE.Euler();
+    // Stones on the bank, in small groups, none across the path.
