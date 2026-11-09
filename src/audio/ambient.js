@@ -261,3 +261,5 @@ export class Ambient extends Emitter {
       this._nextBark = now + 18 + Math.random() * 30;
     }
 
+    set(this.g.fireLow, m.fire * env.fire * 0.22);
+    set(this.g.fire, m.fire * env.fire, 0.3);
