@@ -32,3 +32,5 @@
   --t-body: 16px; --t-small: 14px; --t-label: 13px;
 
   --edge: clamp(16px, 2.3vw, 40px); /* fixed controls sit this far from the screen edge */
+  --gut: clamp(16px, 4.45vw, 72px); /* the hero content margin (.wrap): 64px at 1440 */
+  --dock-h: 64px;
