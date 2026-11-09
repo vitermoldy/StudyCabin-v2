@@ -440,3 +440,5 @@ export class Resident {
     return this.pose === 'sleep' && !this.path;
   }
 
+  /** Distance from the sliding door, for opening it. */
+  get doorDistance() {
