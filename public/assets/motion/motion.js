@@ -20,3 +20,5 @@
     text after 6 s on screen. A headless screenshot (HeadlessChrome) sees the final number unless
     <html data-motion="live">.
   - loops: [data-m-loop] marks a panel (or any box) whose CSS keyframe loops the page wrote itself;
+    they pause off screen, restart when the pointer enters the card around them, and get the
+    system's pause button (one per panel, shared with ui.js). ui.js restarts its own fragments.
