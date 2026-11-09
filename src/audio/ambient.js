@@ -307,3 +307,5 @@ export class Ambient extends Emitter {
     const pulses = 5 + Math.floor(Math.random() * 6);
     const gap = 0.032 + Math.random() * 0.012;
     const peak = 0.05 * level;
+    for (let i = 0; i < pulses; i++) {
+      const t0 = now + i * gap;
