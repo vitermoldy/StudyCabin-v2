@@ -115,3 +115,6 @@ let lastFrame = performance.now();
 let elapsed = 0;
 let sampleIn = 0.3;
 let audioIn = 0;
+let uiIn = 0;
+let jumped = true;
+
