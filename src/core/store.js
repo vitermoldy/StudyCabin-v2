@@ -6,3 +6,5 @@ const KEY = 'studycabin:v2';
 let cache = null;
 
 function readAll() {
+  if (cache) return cache;
+  try {
