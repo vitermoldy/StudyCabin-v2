@@ -35,3 +35,5 @@ function seeds(count, perItem, seed) {
       id[o] = order;
       end[o] = k;
     }
+  }
+  const geo = new THREE.BufferGeometry();
