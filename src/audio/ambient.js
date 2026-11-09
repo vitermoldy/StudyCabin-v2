@@ -318,3 +318,5 @@ export class Ambient extends Emitter {
     o.stop(now + pulses * gap + 0.05);
   }
 
+  /** The owl: hoo, then a pause, then hoo-hoo-hooo, soft and low. */
+  _hoot(level) {
