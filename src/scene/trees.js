@@ -19,3 +19,5 @@ function paint(geo, r, g, b, vary = 0) {
   const pos = geo.attributes.position;
   for (let i = 0; i < n; i++) {
     const y = pos.getY(i);
+    const k = 1 + vary * (y - 0.5);
+    col[i * 3] = r * k;
