@@ -312,3 +312,5 @@ export class Terrain {
       shader.uniforms.uTime = WORLD.uTime;
       shader.uniforms.uWind = WORLD.uWind;
       shader.uniforms.uSnow = WORLD.uSnow;
+      shader.vertexShader = shader.vertexShader
+        .replace('#include <common>', '#include <common>\nuniform float uTime; uniform float uWind; varying float vTip;')
