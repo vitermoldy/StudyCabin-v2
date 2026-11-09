@@ -303,3 +303,5 @@ export class Ambient extends Emitter {
     f.frequency.value = 600 + Math.random() * 300;
     f.Q.value = 2.2;
     const g = ctx.createGain();
+    g.gain.setValueAtTime(0.0001, now);
+    const pulses = 5 + Math.floor(Math.random() * 6);
