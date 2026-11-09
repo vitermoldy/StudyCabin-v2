@@ -291,3 +291,5 @@ export class Terrain {
       for (let k = 0; k < segs; k++) {
         const t0 = k / segs;
         const t1 = (k + 1) / segs;
+        const a = point(t0, -1), b = point(t0, 1), c = point(t1, -1), d = point(t1, 1);
+        const shade = (t) => 0.35 + t * 0.75;
