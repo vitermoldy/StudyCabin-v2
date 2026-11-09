@@ -239,3 +239,5 @@ function createWalker(name, rand, inUse) {
     state: 'away',
     timer: 4 + rand() * 20,
     path: null,
+    route: null,
+    s: 0,
