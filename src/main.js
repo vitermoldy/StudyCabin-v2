@@ -387,3 +387,5 @@ startWorld()
       html.dataset.ready = '1';
     });
     if (scenePaused) {
+      // Draw one still frame so the paused scene is not empty.
+      world.render();
