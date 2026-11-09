@@ -70,3 +70,5 @@ export class Treeline {
       farLow: new THREE.Color(),
       fog: new THREE.Color(),
     };
+    this.snow = { value: 0 };
+    this.flash = { value: 0 };
