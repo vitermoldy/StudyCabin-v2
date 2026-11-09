@@ -255,3 +255,5 @@ export class World {
    * A press or drag on the screen: where it meets the pond, drop a ripple.
    * x, y in CSS pixels. Returns true when it touched open water.
    */
+  poke(x, y, strength = 0.55) {
+    if (!this.ripples.ok || this.pond.ice > 0.5) return false;
