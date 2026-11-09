@@ -432,3 +432,5 @@ export class Resident {
     this.moving = moving;
   }
 
+  get isInside() {
+    return this.pos.z < 3.0 && this.pos.x > -7 && this.pos.x < 7;
