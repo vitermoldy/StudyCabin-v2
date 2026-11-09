@@ -211,3 +211,5 @@ export class MusicPlayer extends Emitter {
 
   next() {
     const item = this.item;
+    if (item && item.kind === 'playlist' && this._ready) {
+      const list = this.player.getPlaylist?.() || [];
