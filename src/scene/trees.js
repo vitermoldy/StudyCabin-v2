@@ -38,3 +38,5 @@ function pineGeometry() {
   tiers.forEach(([y, r, h], i) => {
     const cone = new THREE.ConeGeometry(r, h, 8, 1);
     cone.translate(0, y + h / 2, 0);
+    const shade = 0.8 + i * 0.07;
+    parts.push(paint(cone, 0.62 * shade, 0.8 * shade, 0.62 * shade, 0.2));
