@@ -42,3 +42,5 @@ export const TRAIL_LOOP = trailLoop(16);
 
 /**
  * Spots the resident uses. `via` leads from the area's hub line to the spot;
+ * `face` is the rotation about y once there (0 faces the clearing, +z).
+ */
