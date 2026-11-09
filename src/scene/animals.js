@@ -656,3 +656,5 @@ function createOwl(rand) {
       o.t = Math.min(1, o.t + dt / 7);
       const k = o.t;
       const p = tmp.copy(o.from).multiplyScalar((1 - k) * (1 - k)).addScaledVector(o.mid, 2 * k * (1 - k)).addScaledVector(o.to, k * k);
+      const dx = p.x - m.root.position.x;
+      const dz = p.z - m.root.position.z;
