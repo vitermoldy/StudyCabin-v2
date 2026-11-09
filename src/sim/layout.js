@@ -111,3 +111,5 @@ export function route(fromSpot, toSpot, from = null) {
   for (const q of pts) {
     const last = out[out.length - 1];
     if (!last || Math.hypot(q.x - last.x, q.z - last.z) > 0.02 || Math.abs(q.y - last.y) > 0.02) out.push(q);
+  }
+  return out;
