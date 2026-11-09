@@ -113,3 +113,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     const w = getWorld();
     if (w) {
       w.rig.resetUser();
+      onRender();
+    }
