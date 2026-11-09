@@ -216,3 +216,5 @@ function restart(loop) {
 function setPaused(box, paused) {
   box.querySelectorAll('[data-m-loop]').forEach(l => l.classList.toggle('is-m-paused', paused));
   if (box.matches('[data-m-loop]')) box.classList.toggle('is-m-paused', paused);
+}
+function pauseButton(loop) {
