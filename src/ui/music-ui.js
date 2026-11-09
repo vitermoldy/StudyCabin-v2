@@ -266,3 +266,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     }
     prevBtn.disabled = !has;
     nextBtn.disabled = !has || (q.length < 2 && !(item && item.kind === 'playlist'));
+    seek.disabled = !(player.status === 'playing' || player.status === 'paused' || player.status === 'buffering');
+    shuffle.setAttribute('aria-pressed', String(player.shuffle));
