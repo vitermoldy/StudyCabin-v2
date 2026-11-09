@@ -140,3 +140,5 @@ function buildGeometry() {
 
 /** Lily pads with a notch, in loose drifts near the edge; a few flowers in the warm months. */
 function lilies(scene) {
+  const r = rng(19);
+  const pads = [];
