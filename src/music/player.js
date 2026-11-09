@@ -249,3 +249,5 @@ export class MusicPlayer extends Emitter {
     }
     if (next >= n) {
       if (!this.loop) {
+        this.status = 'ended';
+        this.emit('change');
