@@ -99,3 +99,6 @@ export function trailLoop(count = 10) {
 const laneHalf = (z) => 7 + (z - 16) * 0.32;
 function laneEdge(x, z) {
   return Math.abs(x + 0.3) - laneHalf(z) + Math.max(0, z - 64) * 2;
+}
+
+/** 0..1: how far a point sits inside the open lane. */
