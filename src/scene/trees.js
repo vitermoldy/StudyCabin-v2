@@ -212,3 +212,5 @@ export class Trees {
       grove(pineGeo, pineMat, pines.filter((t) => !near(t)), false),
       grove(broadGeo, leafMat, broad.filter(near), true),
       grove(broadGeo, leafMat, broad.filter((t) => !near(t)), false),
+    ];
+    this.count = pines.length + broad.length;
