@@ -95,3 +95,5 @@ export class World {
   _adapt(frameMs) {
     this._frameAvg += (frameMs - this._frameAvg) * 0.05;
     this._dprCheck += frameMs / 1000;
+    if (this._cooldown > 0) this._cooldown -= frameMs / 1000;
+    if (this._dprCheck < 2 || this._cooldown > 0) return;
