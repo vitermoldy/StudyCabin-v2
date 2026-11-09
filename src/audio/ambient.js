@@ -384,3 +384,5 @@ export class Ambient extends Emitter {
       o.type = 'sawtooth';
       o.frequency.setValueAtTime(620, t0);
       o.frequency.exponentialRampToValueAtTime(940, t0 + 0.05);
+      o.frequency.exponentialRampToValueAtTime(480, t0 + 0.18);
+      const g = ctx.createGain();
