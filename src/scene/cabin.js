@@ -333,3 +333,5 @@ export class Cabin {
     this._legs(woodDark, 0, 0, 0.7, 0.66, 0.1, FLOOR, 0.04, ag);
     // bookcase
     const B = F.shelf;
+    const bx0 = B.x - B.w / 2;
+    const bx1 = B.x + B.w / 2;
