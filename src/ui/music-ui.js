@@ -262,3 +262,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     for (const b of [playBtn, dockPlay]) {
       b.disabled = !has;
       b.setAttribute('aria-label', label);
+      setIcon(b, playing ? 'i-pause' : 'i-play');
+    }
