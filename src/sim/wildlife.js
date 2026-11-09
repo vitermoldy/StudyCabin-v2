@@ -58,3 +58,5 @@ export const ROUTES = {
   ],
 };
 
+/** Every route as a list of [x, z] points, for keeping the trails clear of trees. */
+export function allTrails() {
