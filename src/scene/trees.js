@@ -112,3 +112,5 @@ function swayShader(material, { leaves = false } = {}) {
     if (leaves) {
       shader.fragmentShader = shader.fragmentShader
         .replace('#include <common>', '#include <common>\nuniform vec3 uLeaf; varying float vLeaf;')
+        .replace('#include <color_fragment>', '#include <color_fragment>\n diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * uLeaf * 1.15, vLeaf);');
+    }
