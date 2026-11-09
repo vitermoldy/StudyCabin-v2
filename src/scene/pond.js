@@ -220,3 +220,5 @@ export class Pond {
     scene.add(this.mesh);
     this.lilies = lilies(scene);
     this.landBase = new THREE.Color('#22301f');
+    this.ice = 0;
+    this._padColor = new THREE.Color();
