@@ -368,3 +368,5 @@ export class Ambient extends Emitter {
     }
   }
 
+  /** A fox's bark: two or three sharp yips. */
+  _bark(level) {
