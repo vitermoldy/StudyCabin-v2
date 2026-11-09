@@ -61,3 +61,5 @@ const UPDATE_FRAG = /* glsl */ `
 
 export class Ripples {
   constructor(renderer) {
+    this.renderer = renderer;
+    this.ok = false;
