@@ -454,3 +454,5 @@ export class Ambient extends Emitter {
     });
   }
 
+  persist() {
+    save('ambient', { on: this.enabled, volume: this.volume, mix: this.mix, duck: this.duckWhenMusic });
