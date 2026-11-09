@@ -7,3 +7,5 @@
 // cabin so the long camera views look down the clearing instead of into trunks.
 
 export const smooth = (a, b, v) => {
+  const t = Math.min(1, Math.max(0, (v - a) / (b - a)));
+  return t * t * (3 - 2 * t);
