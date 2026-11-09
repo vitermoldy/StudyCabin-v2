@@ -506,3 +506,5 @@ function createFlocks(rand, count) {
         z: z + row * 1.1 * side,
         speed: speed * (0.96 + rand() * 0.08),
         flap: rand() * 6,
+        glide: 0,
+        bob: rand() * 6,
