@@ -32,3 +32,5 @@ export class Overlay {
     [...text].forEach((ch, i) => {
       const s = document.createElement('span');
       s.className = 'ch';
+      s.setAttribute('aria-hidden', 'true');
+      s.textContent = ch;
