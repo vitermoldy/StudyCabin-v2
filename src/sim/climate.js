@@ -171,3 +171,5 @@ export class Climate extends Emitter {
     } else {
       this._setWeather(mode);
     }
+    this.emit('weather-mode', mode);
+    this.persist();
