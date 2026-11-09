@@ -101,3 +101,5 @@ export class World {
     let next = this.dpr;
     if (this._frameAvg > 24 && this.dpr > 0.6) next = Math.max(0.6, this.dpr - 0.2);
     else if (this._frameAvg < 12 && this.dpr < this.maxDpr) next = Math.min(this.maxDpr, this.dpr + 0.1);
+    if (next !== this.dpr) {
+      this.dpr = next;
