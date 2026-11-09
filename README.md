@@ -83,3 +83,5 @@ shows a still picture and the music, timer and ambient sound still work.
 | --- | --- |
 | `src/scene/ground.js` | The land in plain numbers: the clearing, the pond, the path, grass and canopy cover |
 | `src/sim/wildlife.js` | The animals' trails, their hours, weather and seasons; fireflies, frogs, the owl's hours |
+| `src/scene/animals.js` | The animal models and how they walk, stop and leave; bird flocks; the owl |
+| `src/scene/trees.js`, `treeline.js` | The 3D forest and the rings of far trees |
