@@ -290,3 +290,4 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   }, 500);
 
   return { render };
+}
