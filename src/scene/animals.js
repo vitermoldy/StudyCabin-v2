@@ -714,3 +714,5 @@ export class Animals {
     this.opened = true;
     const order = ['doe', 'fox', 'hare', 'squirrel', 'buck'];
     for (const name of order) {
+      if (keenness(KEEN[name], ctx) < 0.6) continue;
+      const w = this.byName[name];
