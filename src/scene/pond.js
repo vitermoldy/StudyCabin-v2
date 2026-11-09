@@ -111,3 +111,5 @@ function buildGeometry() {
   const NX = 96;
   const NZ = 64;
   const pos = [];
+  const ground = [];
+  for (let j = 0; j <= NZ; j++) {
