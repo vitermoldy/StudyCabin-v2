@@ -25,3 +25,5 @@ function coat(hex) {
   return new THREE.MeshStandardMaterial({ color: hex, emissive: hex, emissiveIntensity: 0.05, roughness: 0.92, metalness: 0 });
 }
 
+function blob(material, [sx, sy, sz], [x, y, z], tilt = 0) {
+  const mesh = new THREE.Mesh(ball, material);
