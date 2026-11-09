@@ -150,3 +150,5 @@ clock.on('jump', () => {
 
 // ------------------------------------------------------------ UI
 const updateDay = mountDay({ clock, onJump: jumpTo });
+const updateWeather = mountWeather({ climate });
+mountSound({ ambient });
