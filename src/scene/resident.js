@@ -109,3 +109,5 @@ export class Resident {
     };
     this._build();
     this.j = POSES.stand(0, 0.5);
+    this.pos = new THREE.Vector3(SPOTS.bed.at.x, SPOTS.bed.at.y, SPOTS.bed.at.z);
+    this.facing = 0;
