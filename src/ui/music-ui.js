@@ -112,3 +112,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const open = qToggle.getAttribute('aria-expanded') !== 'true';
     qToggle.setAttribute('aria-expanded', String(open));
     qList.hidden = !open;
+  });
+  let clearArmed = 0;
