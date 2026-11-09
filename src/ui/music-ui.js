@@ -165,3 +165,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const meta = document.createElement('span');
     meta.className = 'qrow__meta';
     const icon = document.createElement('img');
+    icon.src = ICON[item.source] || ICON.YouTube;
+    icon.alt = item.source;
