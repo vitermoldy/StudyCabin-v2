@@ -307,3 +307,6 @@ export class World {
       out.push({ mean: sum / n, max, min });
     }
     return out;
+  }
+}
+
