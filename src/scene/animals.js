@@ -45,3 +45,5 @@ function eyes(head, x, y, z, r) {
 
 // A leg hanging from its pivot at the hip or shoulder; swinging the pivot walks it.
 function leg(material, length, top, bottom, [x, y, z]) {
+  const geometry = new THREE.CylinderGeometry(top, bottom, length, 6);
+  geometry.translate(0, -length / 2, 0);
