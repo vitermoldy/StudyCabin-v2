@@ -86,3 +86,5 @@ function inkFromPoster() {
         let n = 0;
         for (let gy = 0; gy < 4; gy++) {
           for (let gx = 0; gx < 8; gx++) {
+            const x = Math.min(W - 1, Math.max(0, Math.round(r.x + (r.w * (gx + 0.5)) / 8)));
+            const y = Math.min(H - 1, Math.max(0, Math.round(r.y + (r.h * (gy + 0.5)) / 4)));
