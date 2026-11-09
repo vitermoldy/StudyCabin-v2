@@ -140,3 +140,5 @@ export class Terrain {
 
   /**
    * The clearing's grass: patches of many thin curved blades, laid on a jittered grid so the
+   * cover reads as one soft field, sparse and darker under the trees.
+   */
