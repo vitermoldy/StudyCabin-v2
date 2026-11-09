@@ -166,3 +166,5 @@ export class Resident {
 
     const arm = (side) => {
       const sh = new THREE.Group();
+      sh.position.set(0.2 * side, -0.02, 0);
+      this.chest.add(sh);
