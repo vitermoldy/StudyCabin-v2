@@ -21,3 +21,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
   const wave = (s) => hill * (0.5 + 0.5 * (0.55 * Math.sin(s * 0.03 + phases[0]) + 0.3 * Math.sin(s * 0.071 + phases[1]) + 0.15 * Math.sin(s * 0.17 + phases[2])));
   const trees = [];
   for (let s = 0; s < circ; s += spacing * (0.45 + rand() * 0.8)) {
+    const h = tall * (0.55 + rand() * 0.65);
+    trees.push({ s, h, w: h * (0.2 + rand() * 0.08) });
