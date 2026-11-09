@@ -89,3 +89,5 @@ const FRAG = /* glsl */ `
     float sd = max(dot(d, uSunDir), 0.0);
     col += uSunColor * (pow(sd, 5.0) * 0.32 * uGlow + pow(sd, 64.0) * 0.45) * uSunVis;
 
+    // Night sky: galaxy, two layers of stars, northern lights.
+    float skyUp = smoothstep(0.02, 0.25, up);
