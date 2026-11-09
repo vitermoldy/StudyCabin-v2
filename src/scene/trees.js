@@ -59,3 +59,5 @@ function broadleafGeometry() {
     limb.rotateZ(tilt);
     limb.rotateY(ang);
     limb.translate(0, 0.42, 0);
+    trunkParts.push(flat(limb));
+  }
