@@ -438,3 +438,5 @@ export class Cabin {
     this._chair(F.guitarChair.x + 1.65, F.guitarChair.z, 0, deckWood);
     const t = F.deckTable;
     this._cyl(deckWood, 0.3, 0.3, 0.04, t.x, FLOOR + 0.55, t.z, 20);
+    this._cyl(deckWood, 0.04, 0.04, 0.53, t.x, FLOOR + 0.27, t.z, 8);
+    this._cyl(ceramic, 0.045, 0.04, 0.1, t.x + 0.1, FLOOR + 0.62, t.z - 0.05, 12);
