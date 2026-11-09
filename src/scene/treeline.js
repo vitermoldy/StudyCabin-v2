@@ -84,3 +84,5 @@ export class Treeline {
           uMix: { value: ring.far },
           uSnow: this.snow,
           uFlash: this.flash,
+        },
+        vertexShader: /* glsl */ `
