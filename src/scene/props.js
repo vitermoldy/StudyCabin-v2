@@ -31,3 +31,5 @@ function stoneGeometry(seed) {
 }
 
 export class Props {
+  constructor(scene) {
+    const r = rng(83);
