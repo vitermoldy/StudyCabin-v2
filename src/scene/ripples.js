@@ -141,3 +141,5 @@ export class Ripples {
 
   step(steps = 2) {
     if (!this.ok) return;
+    const r = this.renderer;
+    const prev = r.getRenderTarget();
