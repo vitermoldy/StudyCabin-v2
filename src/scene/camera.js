@@ -41,3 +41,5 @@ export class CameraRig {
     }
     if (id === 'follow' && follow) {
       outTarget.copy(follow);
+      outTarget.y -= 0.25;
+      const inside = follow.z < 3.2;
