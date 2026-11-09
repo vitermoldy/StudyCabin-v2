@@ -310,3 +310,5 @@ export class World {
   }
 }
 
+const WHITE = new THREE.Color(1, 1, 1);
+const tmpHit = new THREE.Vector3();
