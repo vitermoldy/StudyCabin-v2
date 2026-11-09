@@ -164,3 +164,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .dock__btn { width: 52px; }
 .dock__tab { flex-direction: column; gap: 3px; min-width: 66px; padding: 0 var(--s-2); font-size: var(--t-label); font-weight: 500; line-height: 1.1; }
 .dock__tab span { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.dock__btn:hover:not(:disabled), .dock__tab:hover { background: rgba(255, 255, 255, 0.07); transition-duration: 150ms; }
+.dock__btn:active:not(:disabled), .dock__tab:active { transform: translateY(1px) scale(.985); }
