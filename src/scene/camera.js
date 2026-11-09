@@ -109,3 +109,5 @@ export class CameraRig {
     return Math.abs(a.yaw - b.yaw) + Math.abs(a.tilt - b.tilt) + Math.abs(a.zoom - b.zoom) + Math.abs(a.panX - b.panX) * 0.1 + Math.abs(a.panZ - b.panZ) * 0.1 > 0.0005 || this.travel < 1;
   }
 
+  setPointer(x, y) {
+    this.pointer.set(x, y);
