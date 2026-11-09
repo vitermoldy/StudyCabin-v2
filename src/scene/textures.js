@@ -91,3 +91,5 @@ export function deckTexture() {
   const [c, ctx] = canvas(256, 256);
   const rand = rng(37);
   const rows = 8;
+  const rh = 256 / rows;
+  for (let r = 0; r < rows; r++) {
