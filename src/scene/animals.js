@@ -149,3 +149,5 @@ function makeHare() {
   root.add(body);
   body.add(blob(fur, [0.15, 0.12, 0.11], [0, 0.13, 0], 0.25));
   for (const side of [-1, 1]) body.add(blob(fur, [0.08, 0.07, 0.04], [-0.06, 0.08, side * 0.08]));
+  body.add(blob(pale, [0.045, 0.045, 0.045], [-0.15, 0.15, 0]));
+  const neck = new THREE.Group();
