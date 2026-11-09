@@ -218,3 +218,5 @@ function setPaused(box, paused) {
   if (box.matches('[data-m-loop]')) box.classList.toggle('is-m-paused', paused);
 }
 function pauseButton(loop) {
+  const box = boxOf(loop);
+  if (box.querySelector(':scope > .loop-pause')) return;   // ui.js or the page put one there: it is shared
