@@ -86,3 +86,6 @@ export class Clock extends Emitter {
   }
 
   syncToReal() {
+    this.jumpTo(realMinutes(), { sameDay: true });
+  }
+
