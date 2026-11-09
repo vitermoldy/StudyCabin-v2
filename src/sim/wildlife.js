@@ -29,3 +29,5 @@ export const ROUTES = {
   fox: [
     {
       pts: [[36, 18], [18, 21.5], [10, 21.2], [0, 19], [-6, 17], [-18, 19], [-34, 21]],
+      stops: [{ at: 2, pose: 'look', face: CABIN_C }, { at: 4, pose: 'sit' }],
+    },
