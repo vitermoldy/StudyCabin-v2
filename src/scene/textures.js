@@ -166,3 +166,5 @@ export function fabricTexture() {
     ctx.fillRect(0, y, 64, 1);
   }
   for (let x = 0; x < 64; x += 2) {
+    ctx.fillStyle = `rgba(255,255,255,${0.03 + rand() * 0.03})`;
+    ctx.fillRect(x, 0, 1, 64);
