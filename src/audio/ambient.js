@@ -441,3 +441,5 @@ export class Ambient extends Emitter {
     const now = ctx.currentTime + 0.02;
     [[784, 0], [1175, 0.32]].forEach(([freq, delay]) => {
       for (const [mult, amp] of [[1, 0.22], [2.76, 0.05], [5.4, 0.02]]) {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
