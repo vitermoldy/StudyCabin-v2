@@ -90,3 +90,5 @@ export class Cabin {
       siding: weathered(std('#f6f9f1', { map: sidingTexture(), roughness: 0.86 }), { snow: 0.6 }),
       trim: std('#2b2f2d', { roughness: 0.6 }),
       roof: weathered(std('#f2f4f5', { map: roofTexture(), roughness: 0.52, metalness: 0.12 }), { snow: 1 }),
+      deck: weathered(std('#f2ece4', { map: deckTexture(), roughness: 0.9 }), { snow: 0.85 }),
+      found: std('#3a3936', { roughness: 0.95 }),
