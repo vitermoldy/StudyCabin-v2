@@ -233,3 +233,5 @@ export class WeatherFX {
           vA = step(aId, uAmount) * glow * far;
           vWarm = step(0.8, aSeed.y);
           gl_PointSize = clamp(0.2 * uScale / max(-mv.z, 0.5), 3.0, 18.0);
+          gl_Position = projectionMatrix * mv;
+        }`,
