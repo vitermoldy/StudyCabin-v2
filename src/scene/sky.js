@@ -20,3 +20,6 @@ const VERT = /* glsl */ `
     vDir = wp.xyz - cameraPosition;
     gl_Position = projectionMatrix * viewMatrix * wp;
     gl_Position.z = gl_Position.w;
+  }
+`;
+
