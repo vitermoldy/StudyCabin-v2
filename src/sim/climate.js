@@ -236,3 +236,6 @@ export class Climate extends Emitter {
       snow: 'Snow falling',
     }[w];
     return `${words}, ${t}°`;
+  }
+
+  persist() {
