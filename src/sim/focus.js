@@ -14,3 +14,5 @@ const today = () => new Date().toISOString().slice(0, 10);
 export class FocusTimer extends Emitter {
   constructor() {
     super();
+    const s = load('focus', {});
+    this.preset = s.preset in PRESETS ? s.preset : 'short';
