@@ -25,3 +25,6 @@ function flush() {
   } catch {
     /* storage unavailable: settings live for this visit only */
   }
+}
+
+export function load(section, fallback) {
