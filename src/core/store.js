@@ -14,3 +14,6 @@ function readAll() {
   } catch {
     cache = {};
   }
+  return cache;
+}
+
