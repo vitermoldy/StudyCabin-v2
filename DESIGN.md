@@ -60,3 +60,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Giant words: activity top left, "at" on the right, the clock bottom right | The reference's three-word composition, turned into live state: "Coffee at 07:42". |
 | Word blurs in letter by letter when the activity changes | The reference shows letters arriving out of blur; here it marks that the resident started something new. |
 | Big type switches between light and dark ink | The scene behind it goes from night to bright fog; the page samples the rendered pixels under each word and keeps 3:1 or better. |
+| Four thin vertical lines | Taken from the reference; they mark the 4-column grid the words and panels sit on (R-07 purpose). |
+| Black dock at the bottom centre | The reference's black "HOME" bar, grown into the app's controls. |
