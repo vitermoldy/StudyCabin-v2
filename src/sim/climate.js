@@ -34,3 +34,5 @@ export const SEASONS = {
     line: 'Blossom in the air, birds at dawn, frogs in the pond at night.',
   },
   rainy: {
+    label: 'Rainy season',
+    sunrise: 360, sunset: 1110, noonElevation: 60,
