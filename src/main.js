@@ -15,3 +15,5 @@ import { mountDay, mountWeather, mountSound, mountFocus, mountView } from './ui/
 import { mountCameraInput } from './ui/camera-input.js';
 import { VIEWS, VIEW_IDS } from './scene/views.js';
 
+const html = document.documentElement;
+const reduced = prefersReducedMotion();
