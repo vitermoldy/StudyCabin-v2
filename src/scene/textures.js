@@ -26,3 +26,5 @@ function grain(ctx, w, h, rand, amount, alpha = 0.06) {
     const y = rand() * h;
     const l = rand() > 0.5 ? 255 : 0;
     ctx.fillStyle = `rgba(${l},${l},${l},${alpha * rand()})`;
+    ctx.fillRect(x, y, 1 + rand() * 2, 1 + rand() * 6);
+  }
