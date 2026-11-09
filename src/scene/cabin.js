@@ -335,3 +335,5 @@ export class Cabin {
     const B = F.shelf;
     const bx0 = B.x - B.w / 2;
     const bx1 = B.x + B.w / 2;
+    this._bx(woodDark, bx0, bx1, FLOOR, FLOOR + 2.0, -3.0, -3.0 + B.d - 0.32);
+    this._bx(woodDark, bx0, bx0 + 0.03, FLOOR, FLOOR + 2.0, -3.0, -3.0 + B.d);
