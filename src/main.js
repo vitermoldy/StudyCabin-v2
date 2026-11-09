@@ -8,3 +8,5 @@ import { frogs } from './sim/wildlife.js';
 import { FocusTimer } from './sim/focus.js';
 import { Ambient } from './audio/ambient.js';
 import { MusicPlayer } from './music/player.js';
+import { Overlay } from './ui/overlay.js';
+import { Panels, toast } from './ui/panels.js';
