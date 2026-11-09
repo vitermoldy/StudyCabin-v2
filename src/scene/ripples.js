@@ -93,3 +93,5 @@ export class Ripples {
     });
     this.updateMat = new THREE.ShaderMaterial({
       uniforms: {
+        uTex: { value: null },
+        uDelta: { value: new THREE.Vector2(1 / RES, 1 / RES) },
