@@ -15,3 +15,5 @@ const RES = 256;
 const POND_GLSL = /* glsl */ `
   float pondE(vec2 p){
     vec2 q = (p - vec2(${POND.x.toFixed(3)}, ${POND.z.toFixed(3)})) / vec2(${POND.rx.toFixed(3)}, ${POND.rz.toFixed(3)});
+    float a = atan(q.y, q.x);
+    return length(q) / (1.0 + 0.07 * sin(3.0 * a + 0.8) + 0.04 * sin(5.0 * a + 2.1));
