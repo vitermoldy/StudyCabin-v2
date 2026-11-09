@@ -372,3 +372,5 @@ export class Resident {
           if (this.loopIndex % 4 === 0) this.loopPause = 4 + Math.random() * 3;
         } else {
           this.pos.x += (dx / dist) * step;
+          this.pos.z += (dz / dist) * step;
+          this.facing = turn(this.facing, Math.atan2(dx, dz), 5 * dt);
