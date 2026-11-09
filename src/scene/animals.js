@@ -609,3 +609,5 @@ function createOwl(rand) {
     o.state = 'perch';
     m.root.position.copy(PERCH);
     m.root.rotation.set(0, facing, 0);
+    m.body.rotation.z = 0;
+    m.wings.forEach(({ wing }) => { wing.visible = false; });
