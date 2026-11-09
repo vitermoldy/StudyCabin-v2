@@ -48,3 +48,5 @@ export class Ambient extends Emitter {
     const buf = ctx.createBuffer(1, len, ctx.sampleRate);
     const data = buf.getChannelData(0);
     // Pinkish noise (Paul Kellet's filter) so the base is softer than white.
+    let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+    for (let i = 0; i < len; i++) {
