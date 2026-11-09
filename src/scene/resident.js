@@ -176,3 +176,5 @@ export class Resident {
       sh.add(el);
       const fore = capsule(0.044, 0.18, m.top);
       fore.position.y = -0.12;
+      el.add(fore);
+      const hand = new THREE.Mesh(new THREE.SphereGeometry(0.045, 10, 8), m.skin);
