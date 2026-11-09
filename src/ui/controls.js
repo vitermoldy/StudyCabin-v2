@@ -115,3 +115,5 @@ export function mountWeather({ climate }) {
   climate.on('season', setSeason);
   climate.on('weather-mode', setWeather);
   climate.on('auto-season', syncAuto);
+  return function update() {
+    $('season-line').textContent = SEASONS[climate.season].line;
