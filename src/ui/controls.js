@@ -191,3 +191,5 @@ export function mountFocus({ focus }) {
     $('focus-phase').textContent = `${focus.phaseLabel}${round}`;
     const fresh = !focus.running && focus.remaining() === focus.lengthMs();
     const what = focus.phase === 'focus' ? 'focus' : 'break';
+    const label = focus.running ? `Pause ${what}` : fresh ? `Start ${what}` : `Resume ${what}`;
+    if (startBtn.textContent !== label) startBtn.textContent = label;
