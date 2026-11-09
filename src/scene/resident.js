@@ -147,3 +147,5 @@ export class Resident {
     const neck = capsule(0.05, 0.06, m.skin);
     neck.position.y = 0.07;
     this.chest.add(neck);
+    this.headG = new THREE.Group();
+    this.headG.position.y = 0.13;
