@@ -81,3 +81,5 @@ function hubOf(area, point) {
 export function route(fromSpot, toSpot, from = null) {
   const a = SPOTS[fromSpot];
   const b = SPOTS[toSpot];
+  const pts = [];
+  if (from) pts.push({ ...from });
