@@ -409,3 +409,5 @@ function createWalker(name, rand, inUse) {
       if (a.state === 'away') return;
       const target = L.state === 'away' ? a.path.length + 1 : L.s - gap;
       const ahead = target - a.s;
+      const moving = ahead > 0.05;
+      a.stop = L.state === 'stop' && !moving ? L.stop : null;
