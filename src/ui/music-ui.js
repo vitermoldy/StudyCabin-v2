@@ -33,3 +33,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   const state = $('player-state');
   const playBtn = $('playpause');
   const dockPlay = $('dock-play');
+  const prevBtn = $('prev');
+  const nextBtn = $('next');
