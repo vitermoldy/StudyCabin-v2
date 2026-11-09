@@ -112,3 +112,5 @@ export class Terrain {
           float snowAmt = uSnow * smoothstep(0.55, 0.85, vUp) * (1.0 - vShade * 0.4);
           diffuseColor.rgb = mix(veg, vec3(0.9, 0.92, 0.94), snowAmt * 0.92);
           // Under the pond: the floor goes dark green with depth and catches caustics.
+          float under = ${WATER_Y.toFixed(3)} - vWorldG.y;
+          if (under > 0.0) {
