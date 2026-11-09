@@ -8,3 +8,5 @@ import { VIEWS } from '../scene/views.js';
 
 const $ = (id) => document.getElementById(id);
 
+/** Builds a row of radio chips inside a fieldset. */
+function radios(fieldset, name, options, current, onPick) {
