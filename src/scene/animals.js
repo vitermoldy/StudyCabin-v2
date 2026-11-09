@@ -744,3 +744,5 @@ export class Animals {
   sighting() {
     const fawn = this.byName.fawn;
     for (const w of this.recent) {
+      const line = w.sighting(w.name === 'doe' && fawn.visible);
+      if (line) return line;
