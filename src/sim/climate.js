@@ -93,3 +93,6 @@ export class Climate extends Emitter {
     this.autoSeason = saved.autoSeason !== false;
     this.weatherMode = saved.weatherMode === 'auto' || saved.weatherMode in WEATHERS ? saved.weatherMode : 'auto';
     this.weather = saved.weather in WEATHERS ? saved.weather : this._roll();
+    if (this.weatherMode !== 'auto') this.weather = this.weatherMode;
+    this.nextChange = Number.isFinite(saved.nextChange) ? saved.nextChange : this._now() + this._span();
+
