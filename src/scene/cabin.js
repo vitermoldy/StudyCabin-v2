@@ -283,3 +283,5 @@ export class Cabin {
 
   _chair(x, z, rot, mat = this.mat.wood) {
     const g = new THREE.Group();
+    g.position.set(x, 0, z);
+    g.rotation.y = rot;
