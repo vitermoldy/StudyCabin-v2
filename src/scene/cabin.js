@@ -355,3 +355,5 @@ export class Cabin {
     // wood stove
     const W = F.stove;
     this._bx(metal, W.x - 0.28, W.x + 0.28, FLOOR + 0.12, FLOOR + 0.66, W.z - 0.25, W.z + 0.22);
+    this._legs(metal, W.x, W.z, 0.5, 0.42, 0.12, FLOOR, 0.035);
+    this._bx(stoveGlass, W.x - 0.17, W.x + 0.17, FLOOR + 0.24, FLOOR + 0.52, W.z + 0.22, W.z + 0.225, { cast: false });
