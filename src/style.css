@@ -205,3 +205,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 }
 .panel h2 { font-size: 20px; font-weight: 500; letter-spacing: -0.01em; }
 .subhead { margin: var(--s-6) 0 var(--s-3); font-size: 16px; font-weight: 500; }
+.label { display: block; margin-bottom: var(--s-2); font-size: var(--t-label); font-weight: 500; color: var(--muted); }
+.hint { margin-top: var(--s-2); font-size: var(--t-small); line-height: 1.5; color: var(--muted); }
