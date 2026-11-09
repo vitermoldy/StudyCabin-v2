@@ -35,3 +35,5 @@ const jump = (el, on) => { el.classList.toggle('is-jump', on); };
 /* ---------------------------------------------------------------- nav */
 function nav() {
   const bar = document.querySelector('.nav');
+  const links = bar?.querySelector('.nav__links');
+  if (!links || bar.dataset.mNav) return;
