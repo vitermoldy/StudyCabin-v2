@@ -22,3 +22,5 @@ export class MusicPlayer extends Emitter {
     this.status = 'idle';
     this.nowTitle = '';
     this.apiError = '';
+    this.player = null;
+    this._ready = false;
