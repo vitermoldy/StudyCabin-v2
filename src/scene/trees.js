@@ -108,3 +108,5 @@ function swayShader(material, { leaves = false } = {}) {
           transformed.x += s * hh * hh * 0.07;
           transformed.z += s * hh * hh * 0.03;
         #endif`,
+      );
+    if (leaves) {
