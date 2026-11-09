@@ -42,3 +42,5 @@ export function formatDuration(totalSeconds) {
 /** Deterministic pseudo random generator (mulberry32). */
 export function rng(seed) {
   let a = seed >>> 0;
+  return () => {
+    a |= 0;
