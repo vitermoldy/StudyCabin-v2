@@ -126,3 +126,5 @@ const FRAG = /* glsl */ `
 
     col = mix(col, mix(uCloudLit, cloudCol, 0.5), cirrus);
     col = mix(col, cloudCol, cover);
+    col += vec3(0.7, 0.76, 0.9) * uFlash * (0.25 + cover * 0.75);
+    gl_FragColor = vec4(col, 1.0);
