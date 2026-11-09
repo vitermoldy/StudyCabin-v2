@@ -59,3 +59,5 @@ shows a still picture and the music, timer and ambient sound still work.
 - **Ambient sound.** Leaves and branches in the wind, rain, wind, birds, crickets, frogs from the
   pond, the owl's hoot while it sits on the roof, a woodpecker by day, a fox's bark at night, the
   stove fire and thunder, all made in the browser from the weather, the hour and who is about,
+  with a mixer. It turns down while music plays.
+- **Camera.** Five views (clearing, deck, window, pond, follow the resident), plus your own: drag
