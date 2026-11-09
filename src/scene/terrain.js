@@ -133,3 +133,5 @@ export class Terrain {
 
     this.grassPush = { value: new THREE.Vector3(0, 0, 0) };
     this.grass = this._buildGrass(lowPower);
+    scene.add(this.grass);
+    this.ferns = this._buildFerns(lowPower);
