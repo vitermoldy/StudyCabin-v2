@@ -86,3 +86,5 @@ html.is-live .poster { opacity: 0; }
 }
 .lines span { width: 1px; background: rgba(255, 255, 255, 0.13); }
 
+/* ------------------------------------------------------------ the big words */
+.hero { position: relative; height: 100vh; height: 100dvh; z-index: 2; pointer-events: none; overflow: clip; }
