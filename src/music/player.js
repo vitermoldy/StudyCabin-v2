@@ -260,3 +260,6 @@ export class MusicPlayer extends Emitter {
   }
 
   seek(seconds) {
+    if (this._ready) this.player.seekTo(seconds, true);
+  }
+
