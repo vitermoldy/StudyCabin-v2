@@ -268,3 +268,5 @@ export class MusicPlayer extends Emitter {
     return { time: this.player.getCurrentTime() || 0, duration: this.player.getDuration() || 0 };
   }
 
+  _stop() {
+    this.status = 'idle';
