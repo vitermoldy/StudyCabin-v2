@@ -80,3 +80,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       } else {
         showError('Something went wrong reading that link. Try copying it again.');
       }
+    }
+  });
