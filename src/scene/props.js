@@ -16,3 +16,5 @@ function stoneGeometry(seed) {
     const k = 0.8 + r() * 0.35;
     pos.setXYZ(i, pos.getX(i) * k, Math.max(-0.12, pos.getY(i) * k * 0.6), pos.getZ(i) * k);
   }
+  geo.computeVertexNormals();
+  const nor = geo.attributes.normal;
