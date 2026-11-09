@@ -60,3 +60,5 @@ export class CameraRig {
     return outPos;
   }
 
+  setView(id) {
+    if (!VIEWS[id] || id === this.view) return;
