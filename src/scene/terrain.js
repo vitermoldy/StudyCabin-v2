@@ -138,3 +138,5 @@ export class Terrain {
     scene.add(this.ferns);
   }
 
+  /**
+   * The clearing's grass: patches of many thin curved blades, laid on a jittered grid so the
