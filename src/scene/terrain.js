@@ -254,3 +254,5 @@ export class Terrain {
       const tall = 0.72 + r() * 0.25 + fbm(x * 0.12, z * 0.12, 2) * 0.4;
       s.set(scale, tall * (scale > 1 ? 1.2 : 1), scale);
       m.compose(p, q, s);
+      mesh.setMatrixAt(i, m);
+      const tone = (0.82 + fbm(x * 0.05, z * 0.05, 2) * 0.32 + r() * 0.05) * (1 - canopy(x, z) * 0.4);
