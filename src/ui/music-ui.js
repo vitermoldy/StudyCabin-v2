@@ -84,3 +84,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   });
   input.addEventListener('input', () => {
     if (!err.hidden && !input.value) clearError();
+  });
+
+  const togglePlay = () => player.toggle();
