@@ -33,3 +33,6 @@ export class Clock extends Emitter {
   }
 
   get rate() {
+    return SPEEDS[this.speed];
+  }
+
