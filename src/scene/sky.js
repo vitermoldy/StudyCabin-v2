@@ -14,3 +14,5 @@ const NOISE = /* glsl */ `
 `;
 
 const VERT = /* glsl */ `
+  varying vec3 vDir;
+  void main(){
