@@ -102,3 +102,5 @@ function laneEdge(x, z) {
 }
 
 /** 0..1: how far a point sits inside the open lane. */
+export function inLane(x, z) {
+  if (z < 16 || z > 72) return 0;
