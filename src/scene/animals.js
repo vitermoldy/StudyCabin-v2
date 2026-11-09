@@ -389,3 +389,5 @@ function createWalker(name, rand, inUse) {
       a.s += ds;
       a.step += (ds / kind.stride) * Math.PI * 2;
       a.hop += ds * 7;
+      if (a.stops.length && a.s >= a.stops[0].s && hurry === 1) {
+        a.stop = a.stops.shift();
