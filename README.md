@@ -57,3 +57,5 @@ shows a still picture and the music, timer and ambient sound still work.
 - **Focus timer.** 25/5 or 50/10 blocks with a long break; the resident studies at the desk while
   it runs and takes a break with you. A bell at the end of each block.
 - **Ambient sound.** Leaves and branches in the wind, rain, wind, birds, crickets, frogs from the
+  pond, the owl's hoot while it sits on the roof, a woodpecker by day, a fox's bark at night, the
+  stove fire and thunder, all made in the browser from the weather, the hour and who is about,
