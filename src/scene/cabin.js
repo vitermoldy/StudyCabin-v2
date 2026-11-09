@@ -323,3 +323,5 @@ export class Cabin {
     this._cyl(ceramic, 0.045, 0.04, 0.09, C.x + 0.28, FLOOR + 0.465, C.z + 0.05, 12);
     // armchair angled toward the glass
     const A = F.armchair;
+    const ag = new THREE.Group();
+    ag.position.set(A.x, 0, A.z);
