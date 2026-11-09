@@ -158,3 +158,5 @@ export class CameraRig {
     if (this.entrance > 0) this.entrance = Math.max(0, this.entrance - dt / 1.6);
     const settle = this.reduced ? 0 : easeInOut(this.entrance) * 0.06;
 
+    // A slow breathing drift and a small answer to the pointer.
+    this.pointerSmooth.x = damp(this.pointerSmooth.x, this.pointer.x, 2.5, dt);
