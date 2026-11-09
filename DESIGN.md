@@ -75,3 +75,6 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 | Northern lights green to teal with a rose top, galaxy band, two star layers | Asked for by the owner. The reference's violet is left out (taste-skill: never violet); green aurora is the natural colour. |
 | Drag, slide and zoom the camera by hand, double-click to reset | Asked for by the owner; the five views stay as starting points. |
 
+## Motion and why
+
+- Scene entrance: the canvas fades over the poster still and the camera settles 6% closer over
