@@ -138,3 +138,5 @@ export class MusicPlayer extends Emitter {
             playerVars: { playsinline: 1, rel: 0, modestbranding: 1, origin: location.origin },
             events: {
               onReady: () => {
+                this._ready = true;
+                this.player.setVolume(this.volume);
