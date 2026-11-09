@@ -75,3 +75,5 @@ function pick(odds, random = Math.random) {
   for (const [id, p] of entries) {
     r -= p;
     if (r <= 0) return id;
+  }
+  return entries[entries.length - 1][0];
