@@ -98,3 +98,5 @@ function swayShader(material, { leaves = false } = {}) {
       .replace('#include <common>', `#include <common>\nuniform float uTime; uniform float uWind;${leaves ? '\nattribute float aLeaf; varying float vLeaf;' : ''}`)
       .replace(
         '#include <begin_vertex>',
+        `#include <begin_vertex>
+        ${leaves ? 'vLeaf = aLeaf;' : ''}
