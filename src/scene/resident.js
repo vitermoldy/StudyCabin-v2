@@ -304,3 +304,5 @@ export class Resident {
 
   _place(spotId) {
     const s = SPOTS[spotId];
+    this.spot = spotId;
+    this.pos.set(s.at.x, s.at.y, s.at.z);
