@@ -295,3 +295,5 @@ export class Ambient extends Emitter {
     const now = ctx.currentTime;
     const o = ctx.createOscillator();
     o.type = 'sawtooth';
+    const base = 110 + Math.random() * 90;
+    o.frequency.setValueAtTime(base, now);
