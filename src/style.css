@@ -327,3 +327,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 }
 .queue__toggle:hover { background: #2b2b29; transition-duration: 150ms; }
 .queue__toggle svg { transition: transform 200ms var(--ease); }
+.queue__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.queue__list { margin-top: var(--s-2); }
