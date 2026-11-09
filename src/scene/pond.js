@@ -206,3 +206,5 @@ export class Pond {
         uSnow: { value: 0 },
       },
     ]);
+    const mat = new THREE.ShaderMaterial({
+      uniforms: this.uniforms,
