@@ -60,3 +60,6 @@ export class Ambient extends Emitter {
       data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + w * 0.5362) * 0.11;
       b6 = w * 0.115926;
     }
+    this.noise = buf;
+
+    this.master = ctx.createGain();
