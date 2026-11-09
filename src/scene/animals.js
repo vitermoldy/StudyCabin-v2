@@ -679,3 +679,5 @@ function createOwl(rand) {
 export class Animals {
   constructor(scene, { lowPower = false } = {}) {
     const rand = rng(7);
+    this.rand = rand;
+    this.group = new THREE.Group();
