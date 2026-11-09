@@ -25,3 +25,5 @@ function seeds(count, perItem, seed) {
   for (let i = 0; i < count; i++) {
     const a = r();
     const b = r();
+    const c = r();
+    const order = r();
