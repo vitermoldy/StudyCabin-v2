@@ -118,3 +118,5 @@ export class Ambient extends Emitter {
     lfo.connect(lfoDepth).connect(am.gain);
     this.cricketGate = gain(0);
     this.cricketLevel = gain(0);
+    carrier.connect(am).connect(this.cricketGate).connect(this.cricketLevel).connect(this.master);
+    carrier.start();
