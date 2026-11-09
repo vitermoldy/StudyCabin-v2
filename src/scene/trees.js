@@ -5,3 +5,5 @@ import { WORLD, weathered } from './materials.js';
 import { CLEARING, forestDepth, groundHeight, onCabin, pondE } from './ground.js';
 import { allTrails } from '../sim/wildlife.js';
 
+// The forest round the clearing: dark firs that keep their colour (and hold snow in winter) and
+// broadleaf trees whose crowns follow the season, with low bushes along the edge so the clearing
