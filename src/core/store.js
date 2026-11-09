@@ -37,3 +37,5 @@ export function load(section, fallback) {
   return value;
 }
 
+export function save(section, value) {
+  readAll()[section] = value;
