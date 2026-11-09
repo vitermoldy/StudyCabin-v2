@@ -107,3 +107,6 @@ export function deckTexture() {
     ctx.fillRect(0, r * rh + rh - 2, 256, 2);
   }
   grain(ctx, 256, 256, rand, 1600, 0.06);
+  return finish(c, { repeat: [1 / 1.15, 1 / 1.15] });
+}
+
