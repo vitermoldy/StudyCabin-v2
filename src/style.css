@@ -251,3 +251,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   width: 100%; min-width: 0; height: 48px; padding: 0 var(--s-3);
   background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--r-sm);
   font-size: 16px; color: var(--ink);
+  transition: border-color 140ms var(--ease), box-shadow 140ms var(--ease);
+}
