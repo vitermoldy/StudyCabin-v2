@@ -94,3 +94,5 @@ function inkFromPoster() {
             max = Math.max(max, l);
             min = Math.min(min, l);
             n++;
+          }
+        }
