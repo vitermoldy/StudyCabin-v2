@@ -37,3 +37,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     if (pointers.size === 1) {
       moved = 0;
       if (e.shiftKey) {
+        mode = 'ripple';
+        if (w) w.poke(e.clientX, e.clientY, 0.6);
