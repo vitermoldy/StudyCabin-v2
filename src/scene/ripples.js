@@ -44,3 +44,5 @@ const UPDATE_FRAG = /* glsl */ `
   varying vec2 vUv;
   ${POND_GLSL}
   void main(){
+    vec4 info = texture2D(uTex, vUv);
+    vec2 dx = vec2(uDelta.x, 0.0);
