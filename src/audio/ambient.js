@@ -169,3 +169,6 @@ export class Ambient extends Emitter {
     this.mix[id] = clamp(v, 0, 1);
     this.persist();
     this.emit('change');
+  }
+
+  setDuck(on) {
