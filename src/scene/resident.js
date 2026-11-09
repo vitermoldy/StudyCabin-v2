@@ -339,3 +339,5 @@ export class Resident {
           this.pathIndex++;
           if (this.pathIndex >= this.path.length) {
             this.path = null;
+            this.pose = this.activity.pose;
+            if (this.spot === 'trail') { this.loopIndex = 0; this.loopPause = 0; }
