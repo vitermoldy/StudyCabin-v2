@@ -57,3 +57,5 @@ export class Panels extends Emitter {
   close(returnFocus = true) {
     if (!this.current) return;
     const id = this.current;
+    this._hide(id);
+    this.current = null;
