@@ -689,3 +689,5 @@ export class Animals {
     this.flocks = createFlocks(rand, lowPower ? 4 : 6);
     this.group.add(this.flocks.group);
     this.owl = createOwl(rand);
+    this.group.add(this.owl.root);
+    this.opened = false;
