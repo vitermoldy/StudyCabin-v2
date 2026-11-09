@@ -146,3 +146,5 @@ export class CameraRig {
       sph.radius = clamp(sph.radius * us.zoom, 1.6, 190);
       sph.theta += us.yaw;
       sph.phi = clamp(sph.phi - us.tilt, 0.1, Math.PI / 2 - 0.02);
+      this.pos.copy(this.target).add(tmpE.setFromSpherical(sph));
+      // Stay above the ground and the pond, and outside the cabin.
