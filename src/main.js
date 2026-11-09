@@ -393,3 +393,5 @@ startWorld()
   })
   .catch((err) => {
     console.error('StudyCabin: the 3D scene could not start.', err);
+    showStill();
+    viewApi = mountView({
