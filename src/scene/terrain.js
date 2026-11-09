@@ -35,3 +35,5 @@ function buildGround() {
       const b = a + 1;
       const c = a + NX + 1;
       const d = c + 1;
+      idx.push(a, c, b, b, c, d);
+    }
