@@ -113,3 +113,5 @@ export function inLane(x, z) {
  */
 export function forestDepth(x, z) {
   const u = (x - CLEARING.x) / CLEARING.rx;
+  const v = (z - CLEARING.z) / CLEARING.rz;
+  const a = Math.atan2(v, u);
