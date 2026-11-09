@@ -57,3 +57,5 @@ function nav() {
 function tabs() {
   document.querySelectorAll('.tabs[role="tablist"], [role="tablist"].m-tabs').forEach(list => {
     if (!list.querySelector('[role="tab"]') || list.querySelector(':scope > .m-tab-ind')) return;
+    const ind = document.createElement('span');
+    ind.className = 'm-tab-ind';
