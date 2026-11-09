@@ -262,3 +262,5 @@ export class WeatherFX {
     c.uTime.value = time;
     c.uWind.value = params.wind;
     c.uLight.value = light;
+    c.uScale.value = viewportHeight * 0.5 / Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+    // Centre the weather a little in front of the camera.
