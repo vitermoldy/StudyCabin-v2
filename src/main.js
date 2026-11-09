@@ -200,3 +200,5 @@ const refreshWords = () => {
   overlay.setStory(s.line, s.meta);
   updateWeather();
 };
+for (const ev of ['season', 'weather', 'weather-mode']) climate.on(ev, refreshWords);
+clock.on('speed', refreshWords);
