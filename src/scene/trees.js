@@ -150,3 +150,5 @@ export class Trees {
         const roll = r();
         const tone = 0.82 + r() * 0.34;
         const yaw = r() * Math.PI * 2;
+        if (Math.hypot(px - CLEARING.x, pz - CLEARING.z) > REACH) continue;
+        const d = forestDepth(px, pz);
