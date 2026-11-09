@@ -454,3 +454,6 @@ function openingRoute(routes) {
     }
   }
   return best;
+}
+
+// One bird: a small body and two swept wings that flap round the line of flight.
