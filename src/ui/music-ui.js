@@ -209,3 +209,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       if (!li) {
         qToggle.focus();
         return;
+      }
+      const btns = li.querySelectorAll('.qrow__tools .icon-btn');
