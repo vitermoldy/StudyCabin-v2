@@ -127,3 +127,6 @@ export class Ripples {
     if (u < 0.02 || u > 0.98 || v < 0.02 || v > 0.98) return;
     if (this.queue.length > 24) this.queue.shift();
     this.queue.push({ u, v, r: radius / RIPPLE_AREA.size, s: strength });
+  }
+
+  _pass(material) {
