@@ -132,3 +132,5 @@ function makeFox() {
     head.add(ear);
   }
   const tail = new THREE.Group();
+  tail.position.set(-0.28, 0.4, 0);
+  body.add(tail);
