@@ -79,3 +79,5 @@ export class WeatherFX {
             gl_Position = projectionMatrix * mv;
           }`,
         fragmentShader: /* glsl */ `
+          uniform float uLight; uniform float uAmount; varying float vA;
+          void main(){
