@@ -66,3 +66,5 @@ export class Clock extends Emitter {
     this._saveIn -= dt;
     if (this._saveIn <= 0) {
       this._saveIn = 5;
+      this.persist();
+    }
