@@ -32,3 +32,6 @@ function radios(fieldset, name, options, current, onPick) {
   return (value) => {
     const i = inputs.get(value);
     if (i && !i.checked) i.checked = true;
+  };
+}
+
