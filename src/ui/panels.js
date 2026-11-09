@@ -38,3 +38,5 @@ export class Panels extends Emitter {
   }
 
   open(id, opener = null, { keyboard = false } = {}) {
+    if (this.current && this.current !== id) this._hide(this.current);
+    const panel = this.panels.get(id);
