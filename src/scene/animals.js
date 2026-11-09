@@ -393,3 +393,5 @@ function createWalker(name, rand, inUse) {
         a.stop = a.stops.shift();
         a.state = 'stop';
         a.timer = kind.stopFor[0] + rand() * (kind.stopFor[1] - kind.stopFor[0]);
+      } else if (a.stops.length && a.s >= a.stops[0].s) {
+        a.stops.shift();
