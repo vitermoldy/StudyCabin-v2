@@ -10,3 +10,5 @@ export class Emitter {
   emit(type, payload) {
     const set = this._handlers.get(type);
     if (!set) return;
+    for (const fn of [...set]) fn(payload);
+  }
