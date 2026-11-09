@@ -216,3 +216,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   display: inline-flex; align-items: center; justify-content: center; gap: var(--s-2);
   height: 44px; padding: 0 var(--s-5); border: 1px solid transparent; border-radius: var(--r-btn);
   font-size: 16px; font-weight: 500; white-space: nowrap;
+}
+.btn--primary { background: var(--action); color: var(--action-ink); }
