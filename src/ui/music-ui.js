@@ -232,3 +232,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
 
     // State over the video area (empty, loading, error, end)
     let msg = '';
+    if (player.status === 'api-error') msg = player.apiError;
+    else if (player.status === 'loading-api') msg = 'Loading the YouTube player…';
