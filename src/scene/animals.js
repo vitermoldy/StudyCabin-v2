@@ -379,3 +379,5 @@ function createWalker(name, rand, inUse) {
         place(dt);
         pose(dt, time, false);
         return;
+      }
+      a.neckAim = 0;
