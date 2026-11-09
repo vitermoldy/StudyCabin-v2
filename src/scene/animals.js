@@ -197,3 +197,5 @@ function makeSquirrel() {
   return { root, body, neck, head, legs: [], tail, ears: null };
 }
 
+// Kinds of walker. `routes` names the trails in ROUTES; `stopFor` is how long a stop lasts (s).
+const KINDS = {
