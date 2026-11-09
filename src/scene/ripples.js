@@ -46,3 +46,5 @@ const UPDATE_FRAG = /* glsl */ `
   void main(){
     vec4 info = texture2D(uTex, vUv);
     vec2 dx = vec2(uDelta.x, 0.0);
+    vec2 dy = vec2(0.0, uDelta.y);
+    float average = (texture2D(uTex, vUv - dx).r + texture2D(uTex, vUv - dy).r + texture2D(uTex, vUv + dx).r + texture2D(uTex, vUv + dy).r) * 0.25;
