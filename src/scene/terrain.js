@@ -275,3 +275,5 @@ export class Terrain {
     const fronds = 7;
     const segs = 8;
     for (let f = 0; f < fronds; f++) {
+      const ang = (f / fronds) * Math.PI * 2 + (rand() - 0.5) * 0.5;
+      const L = 0.55 + rand() * 0.3;
