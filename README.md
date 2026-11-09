@@ -81,3 +81,5 @@ shows a still picture and the music, timer and ambient sound still work.
 
 | File | What |
 | --- | --- |
+| `src/scene/ground.js` | The land in plain numbers: the clearing, the pond, the path, grass and canopy cover |
+| `src/sim/wildlife.js` | The animals' trails, their hours, weather and seasons; fireflies, frogs, the owl's hours |
