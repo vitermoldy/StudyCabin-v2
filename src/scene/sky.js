@@ -270,3 +270,5 @@ export class Atmosphere {
     const day = smoothstep(-0.1, 0.14, sy);
     this.dayFactor = day;
     this.night = 1 - smoothstep(-0.16, 0.02, sy);
+    const overcast = smoothstep(0.35, 0.95, params.cloud);
+    this.overcast = overcast;
