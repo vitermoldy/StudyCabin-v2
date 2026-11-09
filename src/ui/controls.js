@@ -206,3 +206,5 @@ export function mountFocus({ focus }) {
 }
 
 export function mountView({ rig, onWords, wordsShown, onFullscreen }) {
+  const setView = radios($('view-group'), 'view', Object.entries(VIEWS).map(([k, v]) => [k, k === 'follow' ? 'Follow the resident' : v.label]), rig.view, (v) => rig.setView(v));
+  const wordsSwitch = $('words-on');
