@@ -201,3 +201,5 @@ export class Cabin {
         const bg = new THREE.BoxGeometry(0.06, 0.22, len);
         const b = this._m(bg, trim);
         b.position.set(ex * (w / 2 + 0.02), slab.position.y - 0.03, zc);
+        b.rotation.x = side * alpha;
+      }
