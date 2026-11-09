@@ -330,3 +330,5 @@ export class Atmosphere {
     const moonUp = smoothstep(-0.02, 0.15, this.moonDir.y) * this.night;
     const useMoon = sunUp < 0.02;
     const dir = useMoon ? this.moonDir : this.sunDir;
+    this.sun.position.copy(this.sun.target.position).addScaledVector(dir, 70);
+    if (useMoon) {
