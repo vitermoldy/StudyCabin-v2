@@ -120,3 +120,6 @@ let jumped = true;
 
 function conditions() {
   const cold = climate.season === 'winter' || climate.temperature() < 9;
+  return { badWeather: climate.badWeather, cold };
+}
+
