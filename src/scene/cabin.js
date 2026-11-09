@@ -224,3 +224,5 @@ export class Cabin {
     for (let x = DECK.x0 + 0.4; x < DECK.x1; x += 2.4) {
       this._bx(found, x - 0.07, x + 0.07, -0.3, FLOOR - 0.1, DECK.z1 - 0.35, DECK.z1 - 0.21);
     }
+    // three steps down to the clearing
+    const steps = [[6.6, 6.95, 0.34], [6.95, 7.3, 0.18], [7.3, 7.65, 0.04]];
