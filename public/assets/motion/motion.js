@@ -316,3 +316,5 @@ function enterSteps(hero, h1, media) {
   // A picture, window or collage (or a box round one) is never opened: it stands as one block and
   // settles by itself (motion.css), even when it carries words of its own (a menu card, a note)
   const out = [];
+  const take = el => {
+    if (el === h1 || el.contains(h1) || out.includes(el) || el.matches('img, picture, video, canvas, .frame__img')) return;
