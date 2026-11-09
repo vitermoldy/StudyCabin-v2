@@ -150,3 +150,6 @@ export class Ambient extends Emitter {
       }, 900);
     }
     this.persist();
+    this.emit('change');
+  }
+
