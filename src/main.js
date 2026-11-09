@@ -80,3 +80,5 @@ function inkFromPoster() {
       const h = img.naturalHeight * s;
       ctx.drawImage(img, (W - w) / 2, (H - h) / 2, w, h);
       const samples = overlay.rects().map((r) => {
+        let sum = 0;
+        let max = 0;
