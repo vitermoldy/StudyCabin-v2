@@ -56,3 +56,5 @@ cabin screenshots, dial **ENERGY 3 / RHYTHM 1 / MOTION 3**.
 
 | Decision | Reason |
 | --- | --- |
+| Live WebGL scene (Three.js) instead of photographs | The owner asked for a house where time, weather, seasons and a person change; only a live scene can show that. |
+| Giant words: activity top left, "at" on the right, the clock bottom right | The reference's three-word composition, turned into live state: "Coffee at 07:42". |
