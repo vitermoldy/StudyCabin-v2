@@ -10,3 +10,5 @@ function readAll() {
   try {
     const raw = localStorage.getItem(KEY);
     cache = raw ? JSON.parse(raw) : {};
+    if (!cache || typeof cache !== 'object') cache = {};
+  } catch {
