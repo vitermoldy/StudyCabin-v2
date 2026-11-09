@@ -320,3 +320,5 @@ export class Terrain {
           vTip = clamp(length(position.xz) / 0.7, 0.0, 1.0);
           #ifdef USE_INSTANCING
             ${WIND_GLSL}
+            float reach = vTip * vTip;
+            vec3 windW = vec3(wdir.x, 0.0, wdir.y) * s * reach * 0.12 + vec3(0.0, sin(uTime * 2.3 + ip.x * 3.1) * 0.015 * reach * (0.3 + uWind), 0.0);
