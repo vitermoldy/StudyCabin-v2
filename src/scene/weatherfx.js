@@ -215,3 +215,5 @@ export class WeatherFX {
       transparent: true,
       depthWrite: false,
       blending: THREE.AdditiveBlending,
+      vertexShader: /* glsl */ `
+        uniform float uTime; uniform float uScale; uniform float uAmount;
