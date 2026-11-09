@@ -7,3 +7,5 @@ export class LinkError extends Error {}
 
 /**
  * @returns {{kind:'video'|'playlist', videoId:string|null, listId:string|null, source:'YouTube'|'YouTube Music', url:string}}
+ * @throws {LinkError} with a sentence the visitor can act on
+ */
