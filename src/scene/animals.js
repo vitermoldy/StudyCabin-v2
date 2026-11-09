@@ -367,3 +367,5 @@ function createWalker(name, rand, inUse) {
         a.timer = 6 + rand() * 12;
         return;
       }
+      a.since += dt;
+      if (a.state === 'stop') {
