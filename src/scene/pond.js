@@ -129,3 +129,5 @@ function buildGeometry() {
       const d = c + 1;
       idx.push(a, c, b, b, c, d);
     }
+  }
+  const geo = new THREE.BufferGeometry();
