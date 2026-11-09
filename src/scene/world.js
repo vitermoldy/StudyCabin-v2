@@ -103,3 +103,5 @@ export class World {
     else if (this._frameAvg < 12 && this.dpr < this.maxDpr) next = Math.min(this.maxDpr, this.dpr + 0.1);
     if (next !== this.dpr) {
       this.dpr = next;
+      this.renderer.setPixelRatio(next);
+      this.resize();
