@@ -561,3 +561,5 @@ function makeOwl() {
   body.add(blob(breast, [0.08, 0.14, 0.09], [0.06, 0.18, 0]));
   const head = new THREE.Group();
   head.position.set(0.01, 0.39, 0);
+  body.add(head);
+  head.add(blob(plumage, [0.1, 0.09, 0.1], [0, 0, 0]));
