@@ -272,3 +272,6 @@ export class Atmosphere {
     this.night = 1 - smoothstep(-0.16, 0.02, sy);
     const overcast = smoothstep(0.35, 0.95, params.cloud);
     this.overcast = overcast;
+    const storm = params.storm;
+
+    sample(CLEAR, sy, 'zenith', this._tmpA);
