@@ -190,3 +190,5 @@ focus.on('change', () => refreshActivity());
 climate.on('season', (id) => {
   if (world) world.resident.setSeason(id);
 });
+climate.on('season', (id) => {
+  if (climate.autoSeason) toast(`${SEASONS[id].label} has come to the cabin.`);
