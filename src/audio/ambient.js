@@ -210,3 +210,6 @@ export class Ambient extends Emitter {
     const foliage = { winter: 0.45, autumn: 1.15 }[env.season] ?? 1;
     set(this.g.canopy, m.leaves * air * (0.3 + sway * 0.7) * 0.75, 0.5);
     set(this.g.leaves, m.leaves * air * foliage * (0.15 + sway * 0.85) * 0.28, 0.35);
+    this.canopyFilter.frequency.setTargetAtTime(380 + sway * 360, now, 0.6);
+    this.leafFilter.frequency.setTargetAtTime(2400 + sway * 1600, now, 0.5);
+
