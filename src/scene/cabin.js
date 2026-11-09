@@ -96,3 +96,5 @@ export class Cabin {
       panel: std('#f4ece2', { map: panelTexture(), roughness: 0.82 }),
       ceiling: std('#d9c8b6', { map: panelTexture(), roughness: 0.85 }),
       glass: new THREE.MeshStandardMaterial({
+        color: '#b4c4c5', transparent: true, opacity: 0.16, roughness: 0.05, metalness: 0, depthWrite: false,
+      }),
