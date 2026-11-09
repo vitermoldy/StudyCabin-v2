@@ -103,3 +103,5 @@ export class Ripples {
       depthTest: false,
       depthWrite: false,
     });
+    this.queue = [];
+    this.ok = true;
