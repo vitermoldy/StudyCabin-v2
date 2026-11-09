@@ -264,3 +264,5 @@ export class Resident {
     if (teleport || !this.spot) {
       this._place(target);
       this.pose = activity.pose;
+      this.path = null;
+      this.j = this._targetJoints(0);
