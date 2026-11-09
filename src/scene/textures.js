@@ -223,3 +223,5 @@ export function booksTexture() {
 }
 
 /** Soft round sprite for snow, smoke and lights. */
+export function dotTexture() {
+  const [c, ctx] = canvas(64, 64);
