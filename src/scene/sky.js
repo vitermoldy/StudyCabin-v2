@@ -179,3 +179,5 @@ const MOSS = C('#2c3a1e');
 export class Atmosphere {
   constructor(scene, renderer) {
     this.scene = scene;
+    this.renderer = renderer;
+    this.uniforms = {
