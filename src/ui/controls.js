@@ -162,3 +162,5 @@ export function mountSound({ ambient }) {
     onBtn.setAttribute('aria-checked', String(ambient.enabled));
     vol.value = String(Math.round(ambient.volume * 100));
     volOut.textContent = `${vol.value}%`;
+    for (const s of sliders) {
+      s.input.value = String(Math.round(ambient.mix[s.layer.id] * 100));
