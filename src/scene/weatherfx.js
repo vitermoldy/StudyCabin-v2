@@ -221,3 +221,5 @@ export class WeatherFX {
         varying float vA; varying float vWarm;
         void main(){
           vec3 p = position;
+          float t = uTime;
+          p.x += sin(t * (0.21 + aSeed.x * 0.2) + aSeed.y * 6.28) * 0.9;
