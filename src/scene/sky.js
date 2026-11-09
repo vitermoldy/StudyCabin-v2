@@ -25,3 +25,5 @@ const VERT = /* glsl */ `
 
 const FRAG = /* glsl */ `
   uniform vec3 uZenith; uniform vec3 uHorizon; uniform vec3 uGround;
+  uniform vec3 uSunDir; uniform vec3 uSunColor; uniform vec3 uMoonDir;
+  uniform vec3 uCloudLit; uniform vec3 uCloudDark;
