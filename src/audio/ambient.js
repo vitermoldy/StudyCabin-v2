@@ -58,3 +58,5 @@ export class Ambient extends Emitter {
       b4 = 0.55 * b4 + w * 0.5329522;
       b5 = -0.7616 * b5 - w * 0.016898;
       data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + w * 0.5362) * 0.11;
+      b6 = w * 0.115926;
+    }
