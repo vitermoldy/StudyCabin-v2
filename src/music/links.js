@@ -82,3 +82,5 @@ export function loadYouTubeApi() {
   return apiPromise;
 }
 
+/** Title and thumbnail from YouTube's oEmbed endpoint; null when it cannot be read. */
+export async function fetchDetails(item) {
