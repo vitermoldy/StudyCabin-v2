@@ -270,3 +270,5 @@ export class Cabin {
     this._chair(T.x - 0.38, 2.02, Math.PI);
     this._chair(T.x + 0.38, 2.02, Math.PI);
     this._cyl(ceramic, 0.13, 0.08, 0.06, T.x + 0.25, FLOOR + 0.79, T.z - 0.1, 14);
+    // tall plant in the corner by the glass
+    this._cyl(pot, 0.2, 0.16, 0.42, -6.55, FLOOR + 0.21, 2.5, 16);
