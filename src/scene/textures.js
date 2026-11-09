@@ -24,3 +24,5 @@ function grain(ctx, w, h, rand, amount, alpha = 0.06) {
   for (let i = 0; i < amount; i++) {
     const x = rand() * w;
     const y = rand() * h;
+    const l = rand() > 0.5 ? 255 : 0;
+    ctx.fillStyle = `rgba(${l},${l},${l},${alpha * rand()})`;
