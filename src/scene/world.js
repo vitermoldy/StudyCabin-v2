@@ -201,7 +201,7 @@ export class World {
     this.pets.update(dt, t, {
       minutes,
       conditions: { badWeather: climate.badWeather, cold: climate.season === 'winter' || climate.temperature(minutes) < 9 },
-      speedUp:
+      speedUp: state.residentOptions?.speedUp
     const wild = { minutes, params: p, season: climate.season, day: this.atmo.dayFactor, night: this.atmo.night, jumped };
     this.animals.update(dt, t, wild);
     // Fireflies follow the night and the warmth; they ease in rather than switching on.
