@@ -98,3 +98,6 @@ export class MusicPlayer extends Emitter {
     this._stop();
     this.persist();
     this.emit('change');
+  }
+
+  setVolume(v) {
