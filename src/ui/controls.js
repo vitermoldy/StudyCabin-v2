@@ -84,3 +84,5 @@ export function mountDay({ clock, onJump }) {
   let lastId = '';
   return function update() {
     $('day-clock').textContent = formatClock(clock.minutes);
+    $('day-num').textContent = `Day ${clock.day}`;
+    if (document.activeElement !== scrub) {
