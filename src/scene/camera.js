@@ -51,3 +51,5 @@ export class CameraRig {
     dir.normalize();
     const hfov = 2 * Math.atan(Math.tan(THREE.MathUtils.degToRad(cam.fov) / 2) * cam.aspect);
     const need = v.width / 2 / Math.tan(hfov / 2);
+    const dist = Math.max(dist0, Math.min(need, dist0 * 2.6));
+    outPos.copy(outTarget).addScaledVector(dir, dist);
