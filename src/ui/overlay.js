@@ -22,3 +22,5 @@ export class Overlay {
 
   setWord(text) {
     if (text === this.currentWord) return;
+    this.currentWord = text;
+    const el = this.word;
