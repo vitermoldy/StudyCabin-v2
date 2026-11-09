@@ -13,3 +13,5 @@ import { allTrails } from '../sim/wildlife.js';
 
 const flat = (g) => (g.index ? g.toNonIndexed() : g);
 
+function paint(geo, r, g, b, vary = 0) {
+  const n = geo.attributes.position.count;
