@@ -224,3 +224,5 @@ export class Terrain {
     const spots = [];
     const consider = (x, z, scale) => {
       const cover = grassCover(x, z);
+      if (cover < 0.05 || r() > cover * 1.15) return;
+      spots.push([x, z, scale]);
