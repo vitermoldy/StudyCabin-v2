@@ -42,3 +42,5 @@ export class Panels extends Emitter {
     const panel = this.panels.get(id);
     if (!panel) return;
     panel.inert = false;
+    panel.dataset.open = 'true';
+    this.current = id;
