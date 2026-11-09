@@ -106,3 +106,5 @@ html.is-live .poster { opacity: 0; }
 @media (prefers-reduced-motion: no-preference) {
   .big .ch.is-in { animation: blur-in 900ms var(--ease) both; animation-delay: calc(var(--i) * 55ms); }
   .big .digit-swap { animation: digit 150ms var(--ease) both; }
+}
+@keyframes blur-in {
