@@ -30,3 +30,5 @@ function radios(fieldset, name, options, current, onPick) {
   }
   fieldset.appendChild(row);
   return (value) => {
+    const i = inputs.get(value);
+    if (i && !i.checked) i.checked = true;
