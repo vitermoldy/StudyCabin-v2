@@ -355,3 +355,5 @@ overlay.setTime(clock.minutes);
 
 startWorld()
   .then((w) => {
+    world = w;
+    world.onThunder = (s) => ambient.thunder(s);
