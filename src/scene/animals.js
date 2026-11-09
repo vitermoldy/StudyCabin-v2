@@ -585,3 +585,5 @@ function makeOwl() {
     return { wing, side };
   });
   root.scale.setScalar(1.25);
+  root.visible = false;
+  return { root, body, head, lids, wings };
