@@ -68,3 +68,5 @@ function inkFromPoster() {
   };
   const apply = () => {
     try {
+      const W = innerWidth;
+      const H = innerHeight;
