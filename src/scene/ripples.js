@@ -119,3 +119,5 @@ export class Ripples {
     return this.ok ? this.a.texture : null;
   }
 
+  /** A drop at a world point. radius in metres, strength roughly 0..1. */
+  drop(x, z, radius = 1.6, strength = 0.5) {
