@@ -271,3 +271,5 @@ export class Terrain {
     const rand = rng(31);
     const pos = [];
     const col = [];
+    const nrm = [];
+    const fronds = 7;
