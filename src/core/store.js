@@ -3,3 +3,6 @@
 // Its own key, so the beach cabin (v1) and this forest cabin never share settings on one origin.
 const KEY = 'studycabin:v2';
 
+let cache = null;
+
+function readAll() {
