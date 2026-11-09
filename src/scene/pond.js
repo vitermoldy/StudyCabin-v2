@@ -77,3 +77,5 @@ const FRAG = /* glsl */ `
     float sd = max(dot(R, uSunDir), 0.0);
     sky += uSunColor * pow(sd, 5.0) * 0.25 * uSunVis * (1.0 - trees);
 
+    // Clear over the floor at the edge, peat-dark in the middle.
+    float depth = max(vDepth, 0.0);
