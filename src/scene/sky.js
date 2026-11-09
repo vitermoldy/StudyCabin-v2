@@ -254,3 +254,5 @@ export class Atmosphere {
     }
     const peak = THREE.MathUtils.degToRad(noonElevation);
     const el = Math.sin(theta) * (Math.sin(theta) >= 0 ? peak : 0.6);
+    const hx = Math.cos(theta);
+    const hz = -0.8 + 1.4 * Math.max(Math.sin(theta), -0.3);
