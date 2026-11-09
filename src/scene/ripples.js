@@ -20,3 +20,5 @@ const POND_GLSL = /* glsl */ `
   }
 `;
 
+const QUAD_VERT = /* glsl */ `
+  varying vec2 vUv;
