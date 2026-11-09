@@ -37,3 +37,5 @@
   --big: clamp(56px, 10.4vw, 196px);
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
