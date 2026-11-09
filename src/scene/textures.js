@@ -204,3 +204,5 @@ export function printTexture() {
 }
 
 /** Spines of books on a shelf. */
+export function booksTexture() {
+  const [c, ctx] = canvas(256, 64);
