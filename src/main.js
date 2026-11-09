@@ -377,3 +377,5 @@ startWorld()
     addEventListener('resize', () => world.resize());
     // First frames, then fade the canvas over the poster.
     world.update(0.016, 0, { minutes: clock.minutes, climate, activity, follow: view === 'follow', jumped: true });
+    world.render();
+    // Pick the words' ink from this first frame, and name an animal already in view, even if the
