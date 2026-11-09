@@ -148,3 +148,5 @@ export class MusicPlayer extends Emitter {
           });
         });
         return true;
+      } catch (err) {
+        this.status = 'api-error';
