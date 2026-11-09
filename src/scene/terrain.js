@@ -45,3 +45,6 @@ function buildGround() {
   geo.setIndex(idx);
   geo.computeVertexNormals();
   return geo;
+}
+
+// Caustics: the bright net light draws on the pond's floor where the sun reaches it (the
