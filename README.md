@@ -79,3 +79,5 @@ shows a still picture and the music, timer and ambient sound still work.
 
 ## Where things live
 
+| File | What |
+| --- | --- |
