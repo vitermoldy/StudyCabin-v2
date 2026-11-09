@@ -84,3 +84,5 @@ export function trailDistance(x, z) {
   return Math.min(ring, segmentDistance(x, z, SPUR_A.x, SPUR_A.z, SPUR_B.x, SPUR_B.z));
 }
 
+/** Points along the path round the pond, for the resident's walk. */
+export function trailLoop(count = 10) {
