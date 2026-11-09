@@ -15,3 +15,5 @@ export const DECK_Z = 3.75; // free strip on the deck
 // Furniture, shared by the cabin builder and the resident's routes.
 export const FURNITURE = {
   counter: { x: -5.35, z: -2.72, w: 3.1, d: 0.62 },
+  island: { x: -5.4, z: -0.82, w: 1.7, d: 0.78 },
+  table: { x: -5.0, z: 1.22, w: 1.5, d: 0.84 },
