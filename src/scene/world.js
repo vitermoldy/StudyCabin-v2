@@ -150,3 +150,5 @@ export class World {
     const stoveLit = (cold && (at(15.5, 23.1) || at(6.6, 9.5))) || (season === 'rainy' && at(18.5, 22.8));
 
     this.cabin.set({
+      kitchen: on(awake && dark && (spot === 'cook' || spot === 'dine' || evening), spot === 'cook' || spot === 'dine' ? 1 : 0.55),
+      living: on(awake && dark && (['sofa', 'armchair', 'shelf', 'stove', 'window'].includes(spot) || evening), 1),
