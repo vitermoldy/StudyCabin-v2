@@ -12,3 +12,6 @@ import { Overlay } from './ui/overlay.js';
 import { Panels, toast } from './ui/panels.js';
 import { mountMusic } from './ui/music-ui.js';
 import { mountDay, mountWeather, mountSound, mountFocus, mountView } from './ui/controls.js';
+import { mountCameraInput } from './ui/camera-input.js';
+import { VIEWS, VIEW_IDS } from './scene/views.js';
+
