@@ -448,3 +448,5 @@ export class Cabin {
       pts.push(new THREE.Vector2(0.05 + Math.sin(a) * 0.5, 0.42 - Math.cos(a) * 0.3));
     }
     const bowl = this._m(new THREE.LatheGeometry(pts, 28), metal);
+    bowl.material = metal;
+    bowl.position.set(f.x, FLOOR, f.z);
