@@ -91,3 +91,5 @@ export class Climate extends Emitter {
     const saved = load('climate', {});
     this.season = saved.season in SEASONS ? saved.season : 'spring';
     this.autoSeason = saved.autoSeason !== false;
+    this.weatherMode = saved.weatherMode === 'auto' || saved.weatherMode in WEATHERS ? saved.weatherMode : 'auto';
+    this.weather = saved.weather in WEATHERS ? saved.weather : this._roll();
