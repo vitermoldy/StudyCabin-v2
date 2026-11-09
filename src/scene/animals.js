@@ -251,3 +251,5 @@ function createWalker(name, rand, inUse) {
     bodyAim: 0,
     lookAim: 0,
     wave: rand() * 6,
+    since: 0,
+  };
