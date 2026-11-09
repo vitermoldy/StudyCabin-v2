@@ -8,3 +8,5 @@ let cache = null;
 function readAll() {
   if (cache) return cache;
   try {
+    const raw = localStorage.getItem(KEY);
+    cache = raw ? JSON.parse(raw) : {};
