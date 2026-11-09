@@ -237,3 +237,5 @@ function createWalker(name, rand, inUse) {
   model.root.visible = false;
   const a = {
     state: 'away',
+    timer: 4 + rand() * 20,
+    path: null,
