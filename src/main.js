@@ -325,3 +325,5 @@ function frame(now) {
   audioIn -= dt;
   if (audioIn <= 0) {
     audioIn = 0.1;
+    const p = climate.params;
+    const atmo = world?.atmo;
