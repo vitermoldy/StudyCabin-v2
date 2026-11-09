@@ -170,3 +170,6 @@ export class CameraRig {
       .addScaledVector(UP, (this.pointerSmooth.y * 0.018 * dist + Math.sin(t * 0.07) * 0.006 * dist) * sway);
     cam.lookAt(this.target);
   }
+}
+
+const UP = new THREE.Vector3(0, 1, 0);
