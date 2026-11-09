@@ -157,3 +157,5 @@ export class WeatherFX {
             void main(){
               vec2 c = gl_PointCoord - 0.5;
               float s = sin(vRot), co = cos(vRot);
+              c = mat2(co, -s, s, co) * c;
+              float flip = abs(sin(vRot * 0.7)) * 0.7 + 0.3;
