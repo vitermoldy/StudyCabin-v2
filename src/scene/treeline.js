@@ -43,3 +43,5 @@ function ringGeometry({ R, seed, tall, spacing, hill }) {
     // The seam sits behind the long camera views (toward +z), out of sight.
     const a = Math.PI + (s / R);
     const x = CLEARING.x + Math.sin(a) * R;
+    const z = CLEARING.z - Math.cos(a) * R;
+    const floor = groundHeight(x, z) + wave(s) - 0.5;
