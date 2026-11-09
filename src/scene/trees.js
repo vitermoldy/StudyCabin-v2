@@ -152,3 +152,5 @@ export class Trees {
         const yaw = r() * Math.PI * 2;
         if (Math.hypot(px - CLEARING.x, pz - CLEARING.z) > REACH) continue;
         const d = forestDepth(px, pz);
+        if (onCabin(px, pz, 2) || pondE(px, pz) < 1.6) continue;
+        // Bushes fill the margin where the clearing meets the trees.
