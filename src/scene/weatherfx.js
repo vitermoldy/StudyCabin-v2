@@ -268,3 +268,5 @@ export class WeatherFX {
     c.uCenter.value.copy(camera.position).add(fwd);
     c.uCenter.value.y = Math.max(8, camera.position.y + 3);
     this.rainU.uAmount.value = Math.min(1, params.rain * 1.05);
+    this.snowU.uAmount.value = Math.min(1, params.snow);
+    this.petalU.uAmount.value = look.petals * (0.25 + params.wind * 0.75) * (1 - params.rain) * 0.6;
