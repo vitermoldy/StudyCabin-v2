@@ -20,3 +20,5 @@ export function parseLink(raw) {
   try {
     url = new URL(/^https?:\/\//i.test(text) ? text : `https://${text}`);
   } catch {
+    throw new LinkError('That is not a link. Copy it from the address bar or the Share button.');
+  }
