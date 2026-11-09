@@ -330,3 +330,5 @@ export class Ambient extends Emitter {
     for (const [at, dur, rise] of [[0, 0.34, 1], [0.62, 0.18, 1.02], [0.86, 0.18, 1.02], [1.12, 0.62, 0.98]]) {
       for (const [mult, amp] of [[1, 0.05], [2, 0.008]]) {
         const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.frequency.setValueAtTime(pitch * mult * rise, now + at);
