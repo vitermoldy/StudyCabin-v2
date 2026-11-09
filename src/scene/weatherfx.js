@@ -171,3 +171,6 @@ export class WeatherFX {
     };
     const petals = tumble(7, '#f0d6d3', '#fbf5ef');
     const leaves = tumble(9, '#c2702f', '#8f4a28');
+    this.petalU = petals.u;
+    this.leafU = leaves.u;
+
