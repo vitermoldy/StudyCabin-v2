@@ -141,3 +141,5 @@ export class Cabin {
     shape.lineTo(0, RIDGE);
     shape.lineTo(-3.15, WALL_TOP);
     shape.closePath();
+    for (const side of [-1, 1]) {
+      const geo = new THREE.ExtrudeGeometry(shape, { depth: 0.12, bevelEnabled: false });
