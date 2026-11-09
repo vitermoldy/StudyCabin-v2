@@ -307,3 +307,6 @@ export class MusicPlayer extends Emitter {
       this._advance(1);
       return;
     }
+    this.emit('change');
+  }
+
