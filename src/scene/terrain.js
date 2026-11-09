@@ -232,3 +232,5 @@ export class Terrain {
     const inNear = (x, z) => x > -32 && x < 34 && z > -16 && z < 36;
     for (let z = -16; z <= 36; z += near) {
       for (let x = -32; x <= 34; x += near) consider(x + (r() - 0.5) * near * 0.7, z + (r() - 0.5) * near * 0.7, 1);
+    }
+    // Further out: bigger, thinner patches on the forest floor.
