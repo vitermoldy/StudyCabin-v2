@@ -264,3 +264,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .switch-row { display: flex; align-items: center; justify-content: space-between; gap: var(--s-4); margin-top: var(--s-3); min-height: 44px; }
 .switch-row__label { font-size: 16px; }
 .switch {
+  position: relative; flex: none; width: 56px; height: 44px; border: 0; background: transparent; padding: 0;
+}
