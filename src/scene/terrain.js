@@ -248,3 +248,5 @@ export class Terrain {
     const p = new THREE.Vector3();
     const c = new THREE.Color();
     const Y = new THREE.Vector3(0, 1, 0);
+    spots.forEach(([x, z, scale], i) => {
+      p.set(x, groundHeight(x, z) - 0.03, z);
