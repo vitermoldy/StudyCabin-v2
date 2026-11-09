@@ -156,3 +156,5 @@ export class Cabin {
 
   _front() {
     const { siding, trim, glass } = this.mat;
+    this._bx(siding, -7.15, 7.15, GLASS_TOP, WALL_TOP, 2.98, 3.13);
+    this._bx(trim, -7.0, 7.0, FLOOR, FLOOR + 0.05, 2.95, 3.1);
