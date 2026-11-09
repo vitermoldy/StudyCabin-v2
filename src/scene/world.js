@@ -187,3 +187,5 @@ export class World {
     const sunVis = this.atmo.uniforms.uSunVis.value;
     const caustic = Math.max(0, 0.1 + sunVis * 0.6 * this.atmo.dayFactor - this.atmo.night * 0.1) * (1 - this.pond.ice);
     this.terrain.update(climate.look, { caustic });
+    this.trees.update(climate.look);
+    this.treeline.update({ fog: this.atmo.fogColor, snow: WORLD.uSnow.value, flash: this.flash });
