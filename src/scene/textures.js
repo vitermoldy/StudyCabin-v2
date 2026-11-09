@@ -101,3 +101,5 @@ export function deckTexture() {
       ctx.fillRect(x, r * rh, len, rh);
       ctx.fillStyle = 'rgba(30,26,22,0.6)';
       ctx.fillRect(x + len - 1, r * rh, 2, rh);
+      x += len;
+    }
