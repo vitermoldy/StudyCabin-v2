@@ -109,3 +109,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
     onRender();
   }, { passive: false });
 
+  canvas.addEventListener('dblclick', () => {
+    const w = getWorld();
