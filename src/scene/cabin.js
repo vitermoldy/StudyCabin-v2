@@ -231,3 +231,5 @@ export class Cabin {
     this._bx(deckWood, 1.25, 1.3, -0.05, FLOOR, 6.6, 7.65);
   }
 
+  _annex() {
+    const { siding, roof, trim } = this.mat;
