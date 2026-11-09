@@ -189,3 +189,5 @@ export class Atmosphere {
       uMoonDir: { value: new THREE.Vector3(0, -1, 0) },
       uCloudLit: { value: C('#d9dcdc') },
       uCloudDark: { value: C('#8d9396') },
+      uSunVis: { value: 1 },
+      uMoonVis: { value: 0 },
