@@ -20,3 +20,5 @@ function radios(fieldset, name, options, current, onPick) {
     input.type = 'radio';
     input.name = name;
     input.value = value;
+    input.checked = value === current;
+    input.addEventListener('change', () => input.checked && onPick(value));
