@@ -34,3 +34,5 @@ export class Overlay {
       s.className = 'ch';
       s.setAttribute('aria-hidden', 'true');
       s.textContent = ch;
+      s.style.setProperty('--i', i);
+      el.appendChild(s);
