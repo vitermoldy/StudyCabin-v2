@@ -50,3 +50,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
 
   canvas.addEventListener('pointermove', (e) => {
     const p = pointers.get(e.pointerId);
+    if (!p) return;
+    const dx = e.clientX - p.x;
