@@ -335,3 +335,5 @@ export class Resident {
         const dist = Math.hypot(dx, dz);
         if (dist < 1e-4 || remaining >= dist) {
           this.pos.set(target.x, target.y, target.z);
+          remaining -= dist;
+          this.pathIndex++;
