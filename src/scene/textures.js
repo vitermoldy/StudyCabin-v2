@@ -66,3 +66,5 @@ export function roofTexture() {
   const [c, ctx] = canvas(256, 256);
   const rand = rng(23);
   ctx.fillStyle = '#7b7f81';
+  ctx.fillRect(0, 0, 256, 256);
+  grain(ctx, 256, 256, rand, 900, 0.05);
