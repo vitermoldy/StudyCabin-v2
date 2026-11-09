@@ -10,3 +10,5 @@ const VERT = /* glsl */ `
   attribute float aGround;
   varying vec3 vWorld; varying float vDepth;
   #include <fog_pars_vertex>
+  void main(){
+    vec4 wp = modelMatrix * vec4(position, 1.0);
