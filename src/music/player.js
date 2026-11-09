@@ -234,3 +234,5 @@ export class MusicPlayer extends Emitter {
         this.player.previousVideo();
         return;
       }
+    }
+    this._advance(-1);
