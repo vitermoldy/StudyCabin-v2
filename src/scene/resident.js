@@ -318,3 +318,5 @@ export class Resident {
 
   /** Where the root sits for the current pose (sleep moves onto the bed). */
   _poseAnchor(out) {
+    if (this.pose === 'sleep') return out.set(F.bed.x, FLOOR, -1.78);
+    return out.copy(this.pos);
