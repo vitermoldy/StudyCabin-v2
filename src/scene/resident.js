@@ -284,3 +284,5 @@ export class Resident {
     }
     this.pathIndex = 1;
     this.spot = target;
+    if (this.path.length < 2) {
+      this.path = null;
