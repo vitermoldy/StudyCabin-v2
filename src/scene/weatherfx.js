@@ -122,3 +122,6 @@ export class WeatherFX {
             #include <colorspace_fragment>
           }`,
       }),
+    );
+
+    // Petals in spring, leaves in autumn: tumbling ovals.
