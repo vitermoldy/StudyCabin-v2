@@ -225,3 +225,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     // The queue list
     const focusedIndex = [...qItems.children].findIndex((li) => li.contains(document.activeElement));
     qItems.replaceChildren(...q.map(row));
+    if (focusedIndex >= 0 && !qItems.contains(document.activeElement)) focusRow(Math.min(focusedIndex, q.length - 1), 0);
+    qEmpty.hidden = has;
