@@ -122,3 +122,5 @@ export class MusicPlayer extends Emitter {
   // ------------------------------------------------------------ player
   async _ensurePlayer() {
     if (this._ready) return true;
+    if (this._creating) return this._creating;
+    this.status = 'loading-api';
