@@ -42,3 +42,5 @@ export const SEASONS = {
     odds: { cloudy: 0.15, fog: 0.1, rain: 0.5, storm: 0.25 },
     line: 'Warm rain most days, storms in the afternoon, the whole wood dripping.',
   },
+  winter: {
+    label: 'Winter',
