@@ -31,3 +31,5 @@ const DROP_FRAG = /* glsl */ `
   varying vec2 vUv;
   void main(){
     vec4 info = texture2D(uTex, vUv);
+    float d = max(0.0, 1.0 - length(uCenter - vUv) / uRadius);
+    d = 0.5 - cos(d * 3.14159265) * 0.5;
