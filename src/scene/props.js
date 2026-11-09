@@ -47,3 +47,5 @@ export class Props {
         spots.push({ ...p, s: 0.35 + r() * 0.55 });
       }
     }
+    // A few more out in the grass and at the edge of the wood, off the animals' trails.
+    for (const [x, z, s] of [[-14.5, 16.4, 1.1], [-13.2, 16.9, 0.6], [24.5, 9.5, 0.9], [-23.5, 10.5, 1.3], [14, 23.5, 0.7]]) spots.push({ x, z, s });
