@@ -299,3 +299,5 @@ export class Ambient extends Emitter {
     o.frequency.setValueAtTime(base, now);
     o.frequency.linearRampToValueAtTime(base * 0.92, now + 0.35);
     const f = ctx.createBiquadFilter();
+    f.type = 'bandpass';
+    f.frequency.value = 600 + Math.random() * 300;
