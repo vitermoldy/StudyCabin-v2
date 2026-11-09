@@ -78,3 +78,5 @@ export class Treeline {
         uniforms: {
           uNearTop: { value: this.colors.nearTop },
           uNearLow: { value: this.colors.nearLow },
+          uFarTop: { value: this.colors.farTop },
+          uFarLow: { value: this.colors.farLow },
