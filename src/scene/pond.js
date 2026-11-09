@@ -83,3 +83,6 @@ const FRAG = /* glsl */ `
     vec3 body = mix(uShallow, uDeep, smoothstep(0.05, 0.9, depth)) * uLight;
     float spec = pow(sd, mix(600.0, 140.0, clamp(uRain + uChop * 0.5, 0.0, 1.0))) * 1.3 + pow(sd, 40.0) * 0.12;
     float mspec = pow(max(dot(R, uMoonDir), 0.0), 220.0) * 1.1;
+    vec3 glint = (uSunColor * spec * uSunVis + vec3(0.6, 0.7, 0.68) * mspec * uMoonVis * 0.8) * (1.0 - trees * 0.9) * water;
+
+    // Premultiplied mix so the shallows stay see-through while reflections stay bright.
