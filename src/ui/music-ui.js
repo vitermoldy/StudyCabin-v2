@@ -155,3 +155,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     }
     const main = document.createElement('button');
     main.type = 'button';
+    main.className = 'qrow__main';
+    const isCurrent = i === player.current;
