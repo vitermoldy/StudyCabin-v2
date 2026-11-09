@@ -220,3 +220,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
     const q = player.queue;
     const item = player.item;
     const has = q.length > 0;
+    const playing = player.isPlaying;
+
+    // The queue list
