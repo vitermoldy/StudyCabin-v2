@@ -16,3 +16,5 @@ export const LAYERS = [
 export class Ambient extends Emitter {
   constructor() {
     super();
+    const saved = load('ambient', {});
+    this.enabled = saved.on === true;
