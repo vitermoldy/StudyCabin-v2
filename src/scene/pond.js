@@ -55,3 +55,5 @@ const FRAG = /* glsl */ `
     // Rings from the ripple simulation.
     vec2 ruv = (p - uRippleArea.xy) / uRippleArea.z;
     if (uRippleArea.w > 0.5 && ruv.x > 0.0 && ruv.y > 0.0 && ruv.x < 1.0 && ruv.y < 1.0) {
+      float e = 1.0 / 256.0;
+      float hL = texture2D(uRipple, ruv - vec2(e, 0.0)).r;
