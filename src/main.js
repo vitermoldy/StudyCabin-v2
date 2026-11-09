@@ -172,3 +172,6 @@ function setWords(on) {
   wordsShown = on;
   html.classList.toggle('is-clear', !on);
   save('view', { ...load('view', {}), words: on });
+}
+
+let viewApi = null;
