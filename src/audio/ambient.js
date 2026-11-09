@@ -267,3 +267,6 @@ export class Ambient extends Emitter {
       this._crackle();
       this._nextCrackle = now + 0.03 + Math.random() * 0.22;
     }
+  }
+
+  _bird(level) {
