@@ -273,3 +273,5 @@ export class World {
   /**
    * Mean relative luminance (0..1) of the rendered pixels under each CSS-pixel
    * rectangle. Called right after render, so the drawing buffer is still there.
+   */
+  sampleLuminance(rects) {
