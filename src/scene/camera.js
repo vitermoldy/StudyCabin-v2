@@ -150,3 +150,5 @@ export class CameraRig {
       // Stay above the ground and the pond, and outside the cabin.
       const floor = Math.max(groundHeight(this.pos.x, this.pos.z), WATER_Y) + 0.45;
       if (this.pos.y < floor) this.pos.y = floor;
+      const inCabin = this.pos.x > -10.8 && this.pos.x < 7.6 && this.pos.z > -3.6 && this.pos.z < 3.6 && this.pos.y < 6.4;
+      if (inCabin) this.pos.z = this.pos.z > -0.2 ? 3.6 : -3.6;
