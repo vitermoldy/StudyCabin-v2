@@ -118,3 +118,5 @@ let audioIn = 0;
 let uiIn = 0;
 let jumped = true;
 
+function conditions() {
+  const cold = climate.season === 'winter' || climate.temperature() < 9;
