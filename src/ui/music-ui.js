@@ -63,3 +63,6 @@ export function mountMusic(player, panels, { onPlayingChange }) {
   function clearError() {
     err.hidden = true;
     err.textContent = '';
+    input.removeAttribute('aria-invalid');
+  }
+
