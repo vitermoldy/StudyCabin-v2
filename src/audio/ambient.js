@@ -225,3 +225,5 @@ export class Ambient extends Emitter {
     const birds = m.wildlife * env.day * seasonBirds * (1 - env.rain * 0.85) * (env.morning ? 1 : 0.45);
     const crickets = m.wildlife * env.night * seasonCrickets * (1 - env.rain * 0.8);
     set(this.g.wildlife, 1, 0.3);
+    set(this.cricketLevel, crickets * 0.018, 1.2);
+    this._cricketGate -= dt;
