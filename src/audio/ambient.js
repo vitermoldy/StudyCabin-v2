@@ -84,3 +84,5 @@ export class Ambient extends Emitter {
       const g = ctx.createGain();
       g.gain.value = v;
       return g;
+    };
+    const chain = (...nodes) => {
