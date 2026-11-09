@@ -411,3 +411,5 @@ function createWalker(name, rand, inUse) {
       const ahead = target - a.s;
       const moving = ahead > 0.05;
       a.stop = L.state === 'stop' && !moving ? L.stop : null;
+      if (moving) {
+        const ds = Math.min(ahead, kind.speed * (ahead > 1 ? 1.35 : 1) * dt);
