@@ -62,3 +62,6 @@ const CAUSTIC = /* glsl */ `
     c /= 4.0;
     c = 1.17 - pow(c, 1.4);
     return clamp(pow(abs(c), 8.0), 0.0, 1.0);
+  }
+`;
+
