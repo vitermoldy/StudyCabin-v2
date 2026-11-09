@@ -74,3 +74,5 @@ export class Treeline {
     this.flash = { value: 0 };
     this.meshes = RINGS.map((ring) => {
       const material = new THREE.ShaderMaterial({
+        side: THREE.DoubleSide,
+        uniforms: {
