@@ -45,3 +45,5 @@ export class CameraRig {
       const inside = follow.z < 3.2;
       outPos.set(follow.x * 0.85 + 0.3, follow.y + 1.0, inside ? 6.6 : follow.z + 6.8);
     }
+    // Pull back far enough that `width` metres fit across.
+    const dir = outPos.clone().sub(outTarget);
