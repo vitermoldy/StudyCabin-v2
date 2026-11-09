@@ -240,3 +240,5 @@ export function dotTexture() {
  */
 export function metricBoxUV(geo, w, h, d) {
   const uv = geo.attributes.uv;
+  const dims = [
+    [d, h], [d, h],
