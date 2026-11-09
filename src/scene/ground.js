@@ -148,3 +148,5 @@ export function onCabin(x, z, pad = 0) {
 
 /** How thickly grass covers a point, 0..1. The deck, the path and the pond stay clear. */
 export function grassCover(x, z) {
+  if (onCabin(x, z, 0.1)) return 0;
+  const e = pondE(x, z);
