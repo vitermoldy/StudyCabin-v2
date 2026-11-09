@@ -127,3 +127,5 @@ export class CameraRig {
     this._resolve(this.view, basePos, baseTarget, this.view === 'follow' || this.view === 'window' ? this.followTarget : null);
 
     if (this.travel < 1) {
+      this.travel = Math.min(1, this.travel + dt / this.travelTime);
+      const k = easeInOut(this.travel);
