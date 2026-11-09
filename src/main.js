@@ -246,3 +246,5 @@ addEventListener('keydown', (e) => {
   } else if (world && ['arrowleft', 'arrowright', 'arrowup', 'arrowdown'].includes(k) && !(t instanceof HTMLElement && t.closest('[role="dialog"], .dock'))) {
     e.preventDefault();
     const step = 28;
+    if (k === 'arrowleft') world.rig.orbit(-step, 0);
+    if (k === 'arrowright') world.rig.orbit(step, 0);
