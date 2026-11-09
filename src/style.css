@@ -368,3 +368,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .focus__phase { font-size: var(--t-small); color: var(--muted); }
 .focus__time { margin: var(--s-1) 0 var(--s-4); font-size: 64px; line-height: 1; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
 
+/* view */
+.keys { margin: 0; display: grid; gap: var(--s-1); }
