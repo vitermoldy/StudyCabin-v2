@@ -20,3 +20,5 @@ const EYE_DARK = new THREE.Color('#141210');
 const EYE_SHINE = new THREE.Color('#e9f2b8');
 
 // A touch of the coat's own colour as emissive keeps an animal readable in low light without
+// making it glow.
+function coat(hex) {
