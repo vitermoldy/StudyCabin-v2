@@ -13,3 +13,5 @@ const RES = 256;
 
 // The same uneven oval as pondE() in ground.js.
 const POND_GLSL = /* glsl */ `
+  float pondE(vec2 p){
+    vec2 q = (p - vec2(${POND.x.toFixed(3)}, ${POND.z.toFixed(3)})) / vec2(${POND.rx.toFixed(3)}, ${POND.rz.toFixed(3)});
