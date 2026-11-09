@@ -10,3 +10,5 @@ function svgUse(id) {
   const svg = document.createElementNS(ns, 'svg');
   svg.setAttribute('aria-hidden', 'true');
   const use = document.createElementNS(ns, 'use');
+  use.setAttribute('href', `#${id}`);
+  svg.appendChild(use);
