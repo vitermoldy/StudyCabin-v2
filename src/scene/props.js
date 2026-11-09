@@ -10,3 +10,5 @@ import { groundHeight, pondPoint } from './ground.js';
 /** A lumpy stone, one unit across, grey with moss on the faces that look up. */
 function stoneGeometry(seed) {
   const r = rng(seed);
+  const geo = new THREE.IcosahedronGeometry(0.5, 1);
+  const pos = geo.attributes.position;
