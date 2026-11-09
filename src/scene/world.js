@@ -77,3 +77,5 @@ export class World {
     this.onThunder = null;
     this._frameAvg = 16;
     this._dprCheck = 0;
+    this._cooldown = 0;
+    this.resize();
