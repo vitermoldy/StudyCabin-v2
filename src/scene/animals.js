@@ -339,3 +339,5 @@ function createWalker(name, rand, inUse) {
   }
 
   return {
+    name,
+    kind,
