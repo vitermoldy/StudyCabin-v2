@@ -349,3 +349,5 @@ export class Ambient extends Emitter {
     const now = ctx.currentTime + 0.05;
     const knocks = 12 + Math.floor(Math.random() * 8);
     const rate = 16 + Math.random() * 5;
+    const f = ctx.createBiquadFilter();
+    f.type = 'bandpass';
