@@ -45,3 +45,5 @@ body {
   background: #1d201f;
   color: var(--ink);
   font-family: var(--font-text);
+  font-size: var(--t-body);
+  line-height: 1.5;
