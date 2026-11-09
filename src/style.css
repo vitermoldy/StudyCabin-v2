@@ -102,3 +102,5 @@ html.is-live .poster { opacity: 0; }
 .big--b { right: 0; top: 47%; transform: translateY(-50%); }
 .big--c { right: 0; bottom: max(26px, calc(var(--edge) * 0.8)); }
 .big .ch, .big time, .big time span { display: inline-block; vertical-align: top; }
+.big time { line-height: inherit; }
+@media (prefers-reduced-motion: no-preference) {
