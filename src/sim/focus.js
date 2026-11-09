@@ -44,3 +44,5 @@ export class FocusTimer extends Emitter {
     return this.phase === 'focus' ? 'focus' : 'break';
   }
 
+  get active() {
+    return this.running || this.remainingMs !== this.lengthMs();
