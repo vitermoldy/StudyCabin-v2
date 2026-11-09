@@ -8,3 +8,5 @@ export const SEASON_ORDER = ['spring', 'summer', 'rainy', 'autumn', 'winter'];
 export const SEASONS = {
   summer: {
     label: 'Summer',
+    sunrise: 330, sunset: 1185, noonElevation: 68,
+    temp: [25, 4],
