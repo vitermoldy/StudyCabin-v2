@@ -65,3 +65,6 @@ const FRAG = /* glsl */ `
     vec3 c = vec3(0.7, 0.75, 0.88) * band * (0.25 + cloud * 0.9) * (1.0 - dust * 0.75);
     c += vec3(1.0, 0.86, 0.68) * core * band * 0.55;
     return c;
+  }
+
+  float starLayer(vec3 d, float scale, float density, float seed){
