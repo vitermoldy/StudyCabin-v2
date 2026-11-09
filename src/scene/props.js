@@ -41,3 +41,5 @@ export class Props {
     // Stones on the bank, in small groups, none across the path.
     const spots = [];
     // (Angles round the pond keep clear of the deer's drinking place and the fox's trail.)
+    for (const [a0, n] of [[0.35, 3], [1.2, 2], [2.6, 3], [3.6, 2], [5.75, 2]]) {
+      for (let i = 0; i < n; i++) {
