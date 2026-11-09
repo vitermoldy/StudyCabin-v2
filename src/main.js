@@ -301,3 +301,6 @@ function frame(now) {
     overlay.setStory(s.line, s.meta);
     if (panels.current === 'day') updateDay();
     if (panels.current === 'weather') updateWeather();
+    if (panels.current === 'focus' || focus.running) renderFocus();
+  }
+
