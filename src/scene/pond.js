@@ -198,3 +198,5 @@ export class Pond {
         uSunColor: { value: new THREE.Color() },
         uSunVis: { value: 1 },
         uMoonDir: { value: new THREE.Vector3(0, -1, 0) },
+        uMoonVis: { value: 0 },
+        uRipple: { value: null },
