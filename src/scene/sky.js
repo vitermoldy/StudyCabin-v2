@@ -68,3 +68,5 @@ const FRAG = /* glsl */ `
   }
 
   float starLayer(vec3 d, float scale, float density, float seed){
+    vec3 sp = d * scale + seed;
+    vec3 cell = floor(sp);
