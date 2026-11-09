@@ -46,3 +46,5 @@ const FRAG = /* glsl */ `
       float curtain = smoothstep(-0.006, 0.012, hgt) * exp(-max(hgt, 0.0) * (7.0 - fi));
       float rays = 0.35 + 0.65 * pow(vnoise(vec2(az * 55.0 + fi * 19.0, t * 0.12 + fi)), 1.6);
       vec3 c = mix(vec3(0.12, 1.0, 0.55), vec3(0.1, 0.78, 0.82), smoothstep(0.0, 0.14, hgt));
+      c = mix(c, vec3(0.95, 0.42, 0.55), smoothstep(0.08, 0.3, hgt) * 0.4);
+      col += c * curtain * rays * (0.55 - fi * 0.13);
