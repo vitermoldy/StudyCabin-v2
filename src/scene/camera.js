@@ -148,3 +148,5 @@ export class CameraRig {
       sph.phi = clamp(sph.phi - us.tilt, 0.1, Math.PI / 2 - 0.02);
       this.pos.copy(this.target).add(tmpE.setFromSpherical(sph));
       // Stay above the ground and the pond, and outside the cabin.
+      const floor = Math.max(groundHeight(this.pos.x, this.pos.z), WATER_Y) + 0.45;
+      if (this.pos.y < floor) this.pos.y = floor;
