@@ -338,3 +338,6 @@ export class Atmosphere {
       this.sun.color.copy(this.sunColor);
       this.sun.intensity = 3.1 * sunUp * (1 - overcast * 0.78) * (1 - fogAmt * 0.3);
     }
+    this.sun.castShadow = this.sun.intensity > 0.05;
+
+    this.hemi.color.copy(this.zenith).lerp(this.horizon, 0.5).lerp(this._tmpB.setRGB(1, 1, 1), 0.2);
