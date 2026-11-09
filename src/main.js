@@ -234,3 +234,5 @@ addEventListener('keydown', (e) => {
   if (t instanceof HTMLElement && (t.closest('input, textarea, select') || t.isContentEditable)) return;
   const k = e.key.toLowerCase();
   if (k === ' ' && !(t instanceof HTMLButtonElement)) {
+    e.preventDefault();
+    music.toggle();
