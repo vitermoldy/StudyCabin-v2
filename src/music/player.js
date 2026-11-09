@@ -53,3 +53,5 @@ export class MusicPlayer extends Emitter {
       const it = this.queue.find((q) => q.id === item.id);
       if (!it) return;
       if (d && d.title) Object.assign(it, { title: d.title, author: d.author || '', thumb: d.thumb || '' });
+      if (d && d.error === 'private') Object.assign(it, { status: 'error', error: 'This video or list is private.' });
+      if (d && d.error === 'missing') Object.assign(it, { status: 'error', error: 'YouTube cannot find this video or list.' });
