@@ -118,3 +118,6 @@ export class Climate extends Emitter {
 
   _span() {
     return 120 + Math.random() * 260;
+  }
+
+  _roll() {
