@@ -64,3 +64,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
       pinchDist = d;
       const m = middle();
       w.rig.pan(m.x - pinchMid.x, m.y - pinchMid.y);
+      pinchMid = m;
+      onRender();
