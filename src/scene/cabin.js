@@ -294,3 +294,5 @@ export class Cabin {
 
   _pendant(x, z, shade) {
     this._cyl(this.mat.metal, 0.006, 0.006, WALL_TOP - (FLOOR + 2.2), x, (WALL_TOP + FLOOR + 2.2) / 2, z, 6, { cast: false });
+    const cone = this._m(new THREE.ConeGeometry(0.22, 0.2, 24, 1, true), shade, { cast: false });
+    cone.position.set(x, FLOOR + 2.12, z);
