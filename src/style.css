@@ -298,3 +298,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .add__row { display: flex; gap: var(--s-2); }
 .player { margin-top: var(--s-4); padding-top: var(--s-4); border-top: 1px solid var(--line); }
 .player__screen {
+  position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden;
+  background: #0d0d0c; border-radius: var(--r-sm); border: 1px solid var(--line);
