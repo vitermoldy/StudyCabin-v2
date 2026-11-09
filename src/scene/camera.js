@@ -162,3 +162,5 @@ export class CameraRig {
     this.pointerSmooth.x = damp(this.pointerSmooth.x, this.pointer.x, 2.5, dt);
     this.pointerSmooth.y = damp(this.pointerSmooth.y, this.pointer.y, 2.5, dt);
     const sway = this.reduced ? 0 : 1;
+    const dist = this.pos.distanceTo(this.target);
+    const right = tmpC.subVectors(this.target, this.pos).cross(UP).normalize();
