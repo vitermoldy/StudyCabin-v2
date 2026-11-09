@@ -234,3 +234,5 @@ export function dotTexture() {
   return finish(c, { srgb: false });
 }
 
+/**
+ * Rescale the UVs of a BoxGeometry so one UV unit is one metre on every face.
