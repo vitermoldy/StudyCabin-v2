@@ -36,3 +36,5 @@ export function parseLink(raw) {
 
   let listId = url.searchParams.get('list');
   if (listId && !LIST_ID.test(listId)) listId = null;
+  // Mixes (RD...), Liked videos (LL) and Watch later (WL) do not play outside YouTube.
+  const unplayableList = listId && (/^RD/.test(listId) || listId === 'LL' || listId === 'WL' || /^LM$/.test(listId));
