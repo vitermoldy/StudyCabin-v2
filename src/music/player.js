@@ -128,3 +128,5 @@ export class MusicPlayer extends Emitter {
     this.emit('change');
     this._creating = (async () => {
       try {
+        const YT = await loadYouTubeApi();
+        await new Promise((resolve) => {
