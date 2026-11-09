@@ -258,3 +258,5 @@ function createWalker(name, rand, inUse) {
 
   function plan(route, reverse, { atStop = false } = {}) {
     a.route = route;
+    a.path = buildCurve(route, reverse);
+    a.s = 0;
