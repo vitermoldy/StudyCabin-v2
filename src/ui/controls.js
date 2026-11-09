@@ -58,3 +58,6 @@ export function mountDay({ clock, onJump }) {
   $('sync-clock').addEventListener('click', () => {
     const d = new Date();
     onJump(d.getHours() * 60 + d.getMinutes(), true);
+  });
+
+  const list = $('timeline');
