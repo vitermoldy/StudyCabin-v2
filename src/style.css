@@ -333,3 +333,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .qrow {
   display: grid; grid-template-columns: 56px 1fr auto; gap: var(--s-3); align-items: center;
   padding: var(--s-2) 0; border-bottom: 1px solid var(--line);
+}
+.qrow__thumb { width: 56px; height: 32px; object-fit: cover; border-radius: 2px; background: #2a2a28; display: block; }
