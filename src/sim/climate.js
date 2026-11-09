@@ -59,3 +59,5 @@ export const WEATHER_ORDER = ['clear', 'cloudy', 'fog', 'rain', 'storm', 'snow']
 
 export const WEATHERS = {
   clear: { label: 'Clear', cloud: 0.12, fog: 0.16, rain: 0, snow: 0, wind: 0.25, storm: 0, temp: 1 },
+  cloudy: { label: 'Cloudy', cloud: 0.72, fog: 0.32, rain: 0, snow: 0, wind: 0.42, storm: 0, temp: -1 },
+  fog: { label: 'Fog', cloud: 0.55, fog: 1, rain: 0, snow: 0, wind: 0.1, storm: 0, temp: -1.5 },
