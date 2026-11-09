@@ -607,3 +607,5 @@ function createOwl(rand) {
   }
   function perch() {
     o.state = 'perch';
+    m.root.position.copy(PERCH);
+    m.root.rotation.set(0, facing, 0);
