@@ -4,3 +4,7 @@ import { SEASONS, SEASON_ORDER, WEATHERS, WEATHER_ORDER } from '../sim/climate.j
 import { DAY, entryAt } from '../sim/schedule.js';
 import { PRESETS } from '../sim/focus.js';
 import { LAYERS } from '../audio/ambient.js';
+import { VIEWS } from '../scene/views.js';
+
+const $ = (id) => document.getElementById(id);
+
