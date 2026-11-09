@@ -39,3 +39,5 @@ export class FocusTimer extends Emitter {
   }
 
   /** 'focus' or 'break' while running, else null: the resident reads this. */
+  get residentPhase() {
+    if (!this.running && this.remainingMs === this.lengthMs()) return null;
