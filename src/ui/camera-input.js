@@ -85,3 +85,5 @@ export function mountCameraInput(canvas, { getWorld, onRender }) {
 
   const end = (e) => {
     if (!pointers.has(e.pointerId)) return;
+    const tap = pointers.size === 1 && moved < 5 && mode !== 'pinch' && mode !== 'ripple';
+    pointers.delete(e.pointerId);
