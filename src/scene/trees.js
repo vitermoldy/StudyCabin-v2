@@ -90,3 +90,5 @@ function swayShader(material, { leaves = false } = {}) {
   // Two programs from one wrapper: give each its own cache key.
   material.customProgramCacheKey = () => (leaves ? 'tree-leaves' : 'tree-plain');
   material.onBeforeCompile = (shader, renderer) => {
+    if (prev) prev(shader, renderer);
+    shader.uniforms.uTime = WORLD.uTime;
