@@ -230,3 +230,5 @@ export class Climate extends Emitter {
     const words = {
       clear: 'Clear sky',
       cloudy: 'Low cloud',
+      fog: 'Fog in the trees',
+      rain: 'Rain',
