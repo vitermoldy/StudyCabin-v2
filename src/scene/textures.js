@@ -33,3 +33,5 @@ function grain(ctx, w, h, rand, amount, alpha = 0.06) {
 /** Vertical board-and-batten siding: one tile is 1.2 m wide, 1.2 m tall. */
 export function sidingTexture() {
   const [c, ctx] = canvas(256, 256);
+  const rand = rng(11);
+  ctx.fillStyle = '#9aa197';
