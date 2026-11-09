@@ -262,3 +262,5 @@ function createWalker(name, rand, inUse) {
     a.s = 0;
     a.stops = [...a.path.stops];
     a.state = 'move';
+    a.since = 0;
+    if (atStop && a.stops.length) {
