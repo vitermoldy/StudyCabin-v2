@@ -397,3 +397,5 @@ function createWalker(name, rand, inUse) {
         a.stops.shift();
       }
       if (a.s >= a.path.length) {
+        leave();
+        return;
