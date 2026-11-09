@@ -83,3 +83,6 @@ export class Clock extends Emitter {
     this.emit('jump', target);
     this.emit('minute', this._lastMinute);
     this.persist();
+  }
+
+  syncToReal() {
