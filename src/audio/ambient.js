@@ -30,3 +30,5 @@ export class Ambient extends Emitter {
     this._nextFrog = 0;
     this._nextHoot = 4;
     this._nextDrum = 30;
+    this._nextBark = 20;
+    this.env = null;
