@@ -152,3 +152,5 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
   position: fixed; left: 50%; bottom: var(--edge); transform: translateX(-50%); z-index: 9;
   display: flex; align-items: stretch; gap: 2px;
   height: var(--dock-h); padding: 6px;
+  background: var(--dock); border-radius: var(--r-sm);
+  outline: none;
