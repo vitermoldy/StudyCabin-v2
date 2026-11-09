@@ -155,3 +155,5 @@ const OVERCAST = [
 ];
 
 function sample(table, y, key, out) {
+  if (y <= table[0].y) return out.copy(table[0][key]);
+  for (let i = 1; i < table.length; i++) {
