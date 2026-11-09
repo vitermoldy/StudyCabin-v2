@@ -258,3 +258,6 @@ export class Atmosphere {
     const hz = -0.8 + 1.4 * Math.max(Math.sin(theta), -0.3);
     const hl = Math.hypot(hx, hz) || 1;
     return out.set((hx / hl) * Math.cos(el), Math.sin(el), (hz / hl) * Math.cos(el));
+  }
+
+  update({ minutes, season, params, time, flash, cameraPos }) {
