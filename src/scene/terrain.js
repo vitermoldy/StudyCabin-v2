@@ -318,3 +318,5 @@ export class Terrain {
           '#include <begin_vertex>',
           `#include <begin_vertex>
           vTip = clamp(length(position.xz) / 0.7, 0.0, 1.0);
+          #ifdef USE_INSTANCING
+            ${WIND_GLSL}
