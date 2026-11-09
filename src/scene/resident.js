@@ -378,3 +378,6 @@ export class Resident {
           this.walkPhase += step * 4.6;
         }
       }
+      this.pos.y = groundHeight(this.pos.x, this.pos.z);
+    }
+
