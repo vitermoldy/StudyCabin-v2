@@ -245,3 +245,5 @@ export class Climate extends Emitter {
       weatherMode: this.weatherMode,
       weather: this.weather,
       nextChange: this.nextChange,
+    });
+  }
