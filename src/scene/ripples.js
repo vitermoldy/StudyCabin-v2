@@ -130,3 +130,5 @@ export class Ripples {
   }
 
   _pass(material) {
+    material.uniforms.uTex.value = this.a.texture;
+    this.quad.material = material;
