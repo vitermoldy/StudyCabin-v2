@@ -389,3 +389,5 @@ startWorld()
     if (scenePaused) {
       // Draw one still frame so the paused scene is not empty.
       world.render();
+    }
+  })
