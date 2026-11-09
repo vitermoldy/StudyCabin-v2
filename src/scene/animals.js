@@ -373,3 +373,5 @@ function createWalker(name, rand, inUse) {
         stopPose(time, a.stop.pose);
         if (a.timer <= 0) {
           a.state = 'move';
+          a.stop = null;
+          a.lookAim = 0;
