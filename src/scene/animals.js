@@ -723,3 +723,5 @@ export class Animals {
     }
   }
 
+  /** ctx: { minutes, params, season, day, night, jumped } */
+  update(dt, time, ctx) {
