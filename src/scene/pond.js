@@ -156,3 +156,5 @@ function lilies(scene) {
   }
   const padGeo = new THREE.CircleGeometry(1, 18, 0.35, Math.PI * 2 - 0.45);
   padGeo.rotateX(-Math.PI / 2);
+  const padMat = new THREE.MeshStandardMaterial({ color: '#4f6e2e', roughness: 0.55, metalness: 0 });
+  const padMesh = new THREE.InstancedMesh(padGeo, padMat, pads.length);
