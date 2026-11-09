@@ -45,3 +45,5 @@ export class Props {
       for (let i = 0; i < n; i++) {
         const p = pondPoint(1.04 + r() * 0.12, a0 + (r() - 0.5) * 0.35);
         spots.push({ ...p, s: 0.35 + r() * 0.55 });
+      }
+    }
