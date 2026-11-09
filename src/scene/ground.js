@@ -53,3 +53,5 @@ export function pondWobble(a) {
 }
 
 /** 0 in the middle of the pond, 1 on its waterline, more than 1 outside it. */
+export function pondE(x, z) {
+  const u = (x - POND.x) / POND.rx;
