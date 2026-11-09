@@ -143,3 +143,5 @@ export function mountMusic(player, panels, { onPlayingChange }) {
       img.src = thumb;
       img.alt = '';
       img.width = 56;
+      img.height = 32;
+      img.loading = 'lazy';
