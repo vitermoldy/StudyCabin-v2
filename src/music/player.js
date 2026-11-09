@@ -57,3 +57,5 @@ export class MusicPlayer extends Emitter {
       if (d && d.error === 'missing') Object.assign(it, { status: 'error', error: 'YouTube cannot find this video or list.' });
       this.persist();
       this.emit('change');
+    });
+    if (playNow || this.current < 0 || this.status === 'ended') this.play(this.queue.length - 1);
