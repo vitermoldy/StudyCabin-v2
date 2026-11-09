@@ -5,3 +5,6 @@
 // the other. `stops` name a waypoint where the animal stands for a while (graze, drink, look, sit);
 // `face` is a point it turns toward while it stands. Routes are walked either way round.
 
+import { POND } from '../scene/ground.js';
+
+const POND_C = [POND.x, POND.z];
