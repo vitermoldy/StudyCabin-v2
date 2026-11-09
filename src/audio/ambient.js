@@ -328,3 +328,5 @@ export class Ambient extends Emitter {
     f.connect(this.g.wildlife);
     const pitch = 360 + Math.random() * 30;
     for (const [at, dur, rise] of [[0, 0.34, 1], [0.62, 0.18, 1.02], [0.86, 0.18, 1.02], [1.12, 0.62, 0.98]]) {
+      for (const [mult, amp] of [[1, 0.05], [2, 0.008]]) {
+        const o = ctx.createOscillator();
