@@ -60,4 +60,6 @@ export function saveNow() {
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
+  timer = 0;
+  try {
 addEventListener('pagehide', saveNow);
