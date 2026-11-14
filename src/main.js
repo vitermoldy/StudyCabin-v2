@@ -7,6 +7,7 @@ import { activityAt, isOutside } from './sim/schedule.js';
 import { frogs } from './sim/wildlife.js';
 import { FocusTimer, PRESETS } from './sim/focus.js';
 import { logEvent } from './core/cloud.js';
+import { mountCloud } from './ui/cloud-ui.js';
 import { Ambient } from './audio/ambient.js';
 import { MusicPlayer } from './music/player.js';
 import { Overlay } from './ui/overlay.js';
