@@ -3,6 +3,8 @@
 // Its own key, so the beach cabin (v1) and this forest cabin never share settings on one origin.
 const KEY = 'studycabin:v2';
 
+import { mirrorSave } from './cloud.js';
+
 let cache = null;
 
 function readAll() {
