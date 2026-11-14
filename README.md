@@ -120,6 +120,7 @@ both run side by side.
 | `src/scene/trees.js`, `treeline.js` | The 3D forest and the rings of far trees |
 | `src/scene/pond.js`, `ripples.js` | The pond's water, ice and lily pads; the ripple simulation |
 | `src/scene/terrain.js`, `props.js` | The ground, grass and ferns; stones, the fallen trunk and the stump |
+| `server/`, `src/core/cloud.js`, `src/ui/cloud-ui.js` | The server and database; the browser's link to it; the History block |
 | `src/scene/pets.js` | The dog and the cat: their models, the dog following the resident, the cat's day |
 
 ## Known limits
