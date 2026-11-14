@@ -62,4 +62,6 @@ export function replaceAll(text) {
   clearTimeout(timer);
   timer = 0;
   try {
+    localStorage.setItem(KEY, text);
+  } catch {
 addEventListener('pagehide', saveNow);
