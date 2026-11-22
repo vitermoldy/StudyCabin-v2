@@ -93,6 +93,9 @@ async function api(path, init) {
   return body;
 }
 
+/** A thrown ApiError means the server answered; anything else means it could not be reached. */
+const reached = (err) => err instanceof ApiError;
+
 function outbox() {
   try {
     const list = JSON.parse(read(OUTBOX_KEY) || '[]');
