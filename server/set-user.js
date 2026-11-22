@@ -34,3 +34,5 @@ if (found) {
   await pool.query('INSERT INTO users (username, password_hash, device_id, created_at) VALUES (?, ?, ?, UTC_TIMESTAMP())', [username, hash, device])
   console.log(
     free
+      ? `${project.name}: account ${username} created, holding the data already there (${free.saves ? 'a save and ' : ''}${free.events} events).`
+      : `${project.name}: account ${username} created. There was no earlier data.`,
