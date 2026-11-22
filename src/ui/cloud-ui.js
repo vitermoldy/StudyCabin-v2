@@ -132,6 +132,9 @@ function mountGate() {
         : 'The settings and music queue already in this browser move into your new account.';
     showError('');
     user.removeAttribute('aria-invalid');
+    pass.removeAttribute('aria-invalid');
+  }
+
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
