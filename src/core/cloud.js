@@ -201,6 +201,8 @@ async function enter(entry) {
     const remote = await api('/save').catch(() => ({ data: null }));
     if (remote.data) {
       frozen = true;
+      clearTimeout(saveTimer);
+      return remote.data;
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
