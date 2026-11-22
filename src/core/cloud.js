@@ -28,6 +28,8 @@ const write = (key, value) => {
     return false;
   }
 };
+const remove = (key) => {
+  try {
 
 let code = read(ID_KEY);
 if (!code || !/^[A-HJ-NP-Z2-9]{12}$/.test(code)) {
