@@ -65,7 +65,8 @@ export function mountCloud() {
   // Opening the focus panel fetches the latest history.
   document.querySelector('[data-panel="focus"]')?.addEventListener('click', () => void refresh());
 
-  $('cloud-copy').addEventListener('click', async () => {
+  $('account-leave').addEventListener('click', async () => {
+    const button = $('account-leave');
     try {
       await navigator.clipboard.writeText(recoveryCode());
       toast('Recovery code copied.');
