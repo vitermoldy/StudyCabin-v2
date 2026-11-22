@@ -306,6 +306,8 @@
       <button class="btn btn--primary gate__submit" id="gate-submit" type="submit">Sign in</button>
     </form>
     <p class="gate__switch" id="gate-switch-line" hidden><span id="gate-switch-text">No account yet?</span> <button class="link-btn" id="gate-switch" type="button">Create one</button></p>
+    <div id="gate-offline" hidden>
+      <p class="gate__state">The server is not reachable, so accounts cannot be used right now. Run <code>npm run server</code>, then try again.</p>
 
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="/assets/motion/motion.js"></script>
