@@ -9,6 +9,8 @@ import { toast } from './panels.js';
 const $ = (id) => document.getElementById(id);
 const minutes = (m) => (m >= 60 ? `${Math.floor(m / 60)} h ${Math.round(m % 60)} min` : `${Math.round(m)} min`);
 const clock = (t) => new Date(t).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+const joined = (iso) => new Date(iso).toLocaleDateString([], { day: 'numeric', month: 'long', year: 'numeric' });
+const WELCOME_KEY = 'studycabin:welcome';
 
 export function mountCloud() {
   let stats = null;
