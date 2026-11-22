@@ -36,7 +36,7 @@ export function mountCloud() {
     const summary = $('cloud-summary');
     if (!stats || !signedIn) {
       days.hidden = true;
-      summary.textContent = state.status === 'offline' ? '' : 'Focus blocks you finish appear here, day by day.';
+      summary.textContent = signedIn ? 'Focus blocks you finish appear here, day by day.' : '';
       return;
     }
     const max = Math.max(1, ...stats.perDay.map((d) => d.minutes));
