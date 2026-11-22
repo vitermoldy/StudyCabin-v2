@@ -237,6 +237,10 @@ async function authCall(path, body) {
     notify();
     throw new ApiError('The server is not reachable. Start it, then try again.', 0);
   }
+}
+
+export const signIn = (username, password) => authCall('/auth/login', { username, password });
+
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
