@@ -26,3 +26,5 @@ if (found) {
   await pool.query('DELETE FROM sessions WHERE user_id = ?', [found.id])
   console.log(`${project.name}: new password for ${found.username}. All its sessions were signed out.`)
 } else {
+  const [[free]] = await pool.query(
+    `SELECT d.id, (SELECT COUNT(*) FROM events e WHERE e.device_id = d.id) AS events, (SELECT COUNT(*) FROM saves s WHERE s.device_id = d.id) AS saves
