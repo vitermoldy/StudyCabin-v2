@@ -212,6 +212,8 @@ function mountGate() {
 
   async function check() {
     const save = await checkAccount();
+    if (save) applySave(save, `Signed in as ${cloudState().account?.username}.`);
+  }
   render();
   void refresh();
 }
