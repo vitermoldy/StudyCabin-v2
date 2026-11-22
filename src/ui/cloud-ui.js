@@ -198,6 +198,8 @@ function mountGate() {
 
   // A required sign-in has no "close": Escape does nothing while the server waits for
   // a password, and means "Use without an account" when the server is down.
+  gate.addEventListener('cancel', (event) => {
+    event.preventDefault();
   render();
   void refresh();
 }
