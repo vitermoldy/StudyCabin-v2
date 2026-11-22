@@ -205,6 +205,8 @@ async function enter(entry) {
       return remote.data;
     }
   }
+  void flushEvents();
+  if (saveText) void pushSave();
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
