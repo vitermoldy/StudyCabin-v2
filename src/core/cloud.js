@@ -75,6 +75,9 @@ export class ApiError extends Error {
   constructor(message, status) {
     super(message);
     this.status = status;
+  }
+}
+
 async function api(path, init) {
   const res = await fetch(`/api${path}`, { ...init, headers: { 'Content-Type': 'application/json', ...init?.headers } });
   const body = await res.json().catch(() => ({}));
