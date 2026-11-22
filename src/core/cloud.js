@@ -248,6 +248,8 @@ export const signUp = (username, password) => authCall('/auth/register', { usern
  * Sends the latest save, then signs out and forgets this account's code. The caller
  * removes the app's own save and reloads, so the next person starts clean. Throws,
  * and keeps everything, when the latest save cannot reach the server.
+ */
+export async function signOut() {
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
