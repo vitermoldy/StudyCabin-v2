@@ -23,3 +23,5 @@ if (rows.length === 0) {
     rows.map((r) => ({
       username: r.username,
       joined: when(r.created_at),
+      'last sign-in': when(r.last_login_at),
+      'last active': when(r.last_seen_at),
