@@ -73,6 +73,9 @@ export function forget() {
   } catch {
     /* storage unavailable: nothing was kept either */
   }
+}
+
+/** Replaces the whole save with the account's (signing in on another browser); reload after. */
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
