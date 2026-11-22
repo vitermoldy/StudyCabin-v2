@@ -244,6 +244,8 @@ export const signIn = (username, password) => authCall('/auth/login', { username
 /** A new account. What this browser already holds becomes the account's. */
 export const signUp = (username, password) => authCall('/auth/register', { username, password, device: code });
 
+/**
+ * Sends the latest save, then signs out and forgets this account's code. The caller
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
