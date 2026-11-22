@@ -191,6 +191,8 @@ export async function fetchStats(days = 14) {
  */
 async function enter(entry) {
   const same = entry.device === code;
+  account = entry.user;
+  auth = 'signed-in';
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
