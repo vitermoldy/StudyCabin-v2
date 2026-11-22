@@ -141,6 +141,8 @@ function mountGate() {
     const wanted = state.auth === 'signed-out' || (offline && !skipped) || (state.auth === 'checking' && gate.open);
     $('gate-checking').hidden = state.auth !== 'checking';
     form.hidden = state.auth !== 'signed-out';
+    $('gate-switch-line').hidden = state.auth !== 'signed-out';
+    $('gate-offline').hidden = !offline;
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
