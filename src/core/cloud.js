@@ -131,9 +131,8 @@ export async function flushEvents() {
     setStatus('online');
     notify();
   } catch (err) {
-    // A 4xx means the batch itself is unusable; drop it rather than retry it forever.
-    if (err.status >= 400 && err.status < 500 && err.status !== 429) write(OUTBOX_KEY, JSON.stringify(outbox().slice(batch.length)));
-    setStatus(err.status ? 'online' : 'offline');
+    // A 4xx other than 401 and 429 means the batch itself is unusable; drop it rather than retry it forever.
+    if (err instanceof ApiError && err.status >= 400 && err.status < 500 && err.status !== 401 && err.status !== 429) {
   } finally {
     flushing = false;
   }
