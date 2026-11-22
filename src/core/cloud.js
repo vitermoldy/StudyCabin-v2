@@ -227,6 +227,8 @@ export async function checkAccount() {
 }
 
 /** Failures carry a message meant for the person signing in. */
+async function authCall(path, body) {
+  try {
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
