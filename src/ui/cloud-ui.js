@@ -203,6 +203,8 @@ function mountGate() {
     if (cloudState().auth === 'unavailable') skip();
   });
 
+  function skip() {
+    skipped = true;
   render();
   void refresh();
 }
