@@ -191,6 +191,8 @@ function mountGate() {
     }
   });
 
+  $('gate-switch').addEventListener('click', () => {
+    setMode(mode === 'in' ? 'up' : 'in');
   render();
   void refresh();
 }
