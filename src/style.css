@@ -324,6 +324,7 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .gate__switch[hidden] { display: none; }
 .gate__switch .link-btn { font-size: var(--t-small); font-weight: 500; }
 .gate__actions { margin-top: var(--s-4); }
+.gate code { padding: 1px 5px; border-radius: var(--r-sm); background: rgba(228, 229, 225, 0.08); font: 500 14px/1.4 ui-monospace, "SFMono-Regular", Consolas, monospace; }
 .player { margin-top: var(--s-4); padding-top: var(--s-4); border-top: 1px solid var(--line); }
 .player__screen {
   position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden;
