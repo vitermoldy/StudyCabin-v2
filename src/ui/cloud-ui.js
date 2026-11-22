@@ -1,7 +1,5 @@
-// The "History" block in the focus panel: focus blocks kept on the server, the
-// recovery code for this browser, and restoring another browser's settings.
-import { cloudState, fetchStats, onCloud, recoveryCode, restoreFrom } from '../core/cloud.js';
-import { replaceAll } from '../core/store.js';
+// The "History" block in the focus panel (focus blocks kept on the server), the
+// account rows under it, and the sign-in screen. While the server runs, the cabin
 import { toast } from './panels.js';
 
 const $ = (id) => document.getElementById(id);
