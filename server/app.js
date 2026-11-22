@@ -64,8 +64,8 @@ export function createApi(getPool) {
   const touch = (device) => getPool().query('INSERT INTO devices (id) VALUES (?) ON DUPLICATE KEY UPDATE last_seen = CURRENT_TIMESTAMP', [device])
 
   api.put('/save', async (req, res) => {
-    const { device, data } = req.body ?? {}
-    if (!CODE.test(device ?? '')) return res.status(400).json({ error: 'Unknown device code.' })
+    const device = req.user.device
+    const { data } = req.body ?? {}
     if (typeof data !== 'string' || data.length === 0) return res.status(400).json({ error: 'The save is empty.' })
     const bytes = Buffer.byteLength(data)
     if (bytes > project.maxSaveBytes) return res.status(413).json({ error: 'The save is too large.' })
