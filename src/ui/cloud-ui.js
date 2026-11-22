@@ -22,7 +22,8 @@ export function mountCloud() {
         ? `Connected to the server.${state.lastSaved ? ` Settings last saved at ${clock(state.lastSaved)}.` : ''}${waiting}`
         : state.status === 'offline' || state.auth === 'unavailable'
           ? `The server is not reachable. Everything stays in this browser.${waiting}`
-          : 'Checking the server…';
+          : state.auth === 'checking'
+            ? 'Checking the server…'
     const days = $('cloud-days');
     const summary = $('cloud-summary');
     if (!stats) {
