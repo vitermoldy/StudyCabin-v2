@@ -89,6 +89,7 @@ async function api(path, init) {
       notify();
     }
     throw new ApiError(body.error || `HTTP ${res.status}`, res.status);
+  }
   return body;
 }
 
