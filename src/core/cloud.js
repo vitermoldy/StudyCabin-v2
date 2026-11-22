@@ -125,7 +125,7 @@ export async function flushEvents() {
   flushing = true;
   const batch = list.slice(0, 200);
   try {
-    await api('/events', { method: 'POST', body: JSON.stringify({ device: code, events: batch }) });
+    await api('/events', { method: 'POST', body: JSON.stringify({ events: batch }) });
     // Only what was sent leaves the queue; anything logged meanwhile stays.
     write(OUTBOX_KEY, JSON.stringify(outbox().slice(batch.length)));
     setStatus('online');
