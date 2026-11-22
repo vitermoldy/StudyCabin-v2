@@ -56,7 +56,8 @@ export function saveNow() {
   }
 }
 
-/** Replaces the whole save with another browser's (a restore by recovery code); reload after. */
+/** Writes and mirrors the save now, changed or not: signing in sends it to the account. */
+export function saveAll() {
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
