@@ -60,6 +60,9 @@ export function saveNow() {
 export function saveAll() {
   clearTimeout(timer);
   readAll();
+  flush();
+}
+
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
