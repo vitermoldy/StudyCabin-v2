@@ -147,6 +147,8 @@ function mountGate() {
     if (wanted && !gate.open) gate.showModal();
     else if (!wanted && gate.open) gate.close();
     // Focus moves only when what the screen asks for changes, never on every update.
+    if (gate.open && shown !== state.auth) {
+      if (state.auth === 'signed-out') user.focus();
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
