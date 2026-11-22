@@ -104,6 +104,8 @@ function mountGate() {
   const form = $('gate-form');
   const user = $('gate-user');
   const pass = $('gate-pass');
+  const submit = $('gate-submit');
+  const error = $('gate-error');
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
