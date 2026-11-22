@@ -271,4 +271,3 @@ document.addEventListener('visibilitychange', () => {
 setInterval(() => {
   if (outbox().length > 0) void flushEvents();
 }, 60_000);
-flushEvents();
