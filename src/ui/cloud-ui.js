@@ -233,5 +233,5 @@ function mountGate() {
   onCloud((state) => render(state));
   setMode('in');
   render();
-  void refresh();
+  void check();
 }
