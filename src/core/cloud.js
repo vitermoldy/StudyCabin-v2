@@ -187,6 +187,7 @@ export async function fetchStats(days = 14) {
  * should replace this browser's (the browser was holding someone else's data, or
  * none), or null when this browser's own save stays and is sent up as the account's.
  * After a non-null answer nothing is mirrored, so the old save cannot overwrite the
+ * account's on the way out of the page.
  */
 export async function restoreFrom(input) {
   const wanted = String(input).toUpperCase().replace(/[^A-Z0-9]/g, '');
