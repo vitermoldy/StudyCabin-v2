@@ -214,6 +214,8 @@ async function enter(entry) {
 export async function checkAccount() {
   auth = 'checking';
   notify();
+  try {
+    return await enter(await api('/auth/me'));
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
