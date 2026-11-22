@@ -78,6 +78,8 @@ export function mountCloud() {
       location.reload();
     } catch (e) {
       err.textContent = e instanceof Error ? e.message : 'Could not sign out. Try again.';
+      err.hidden = false;
+      button.disabled = false;
     }
   });
 
