@@ -84,7 +84,8 @@ export function mountCloud() {
     }
   });
 
-  $('cloud-restore').addEventListener('submit', async (event) => {
+  mountGate();
+  render();
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
