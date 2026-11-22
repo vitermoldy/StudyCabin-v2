@@ -135,6 +135,8 @@ function mountGate() {
     pass.removeAttribute('aria-invalid');
   }
 
+  function render(state = cloudState()) {
+    const offline = state.auth === 'unavailable';
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
