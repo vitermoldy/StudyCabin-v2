@@ -260,7 +260,7 @@ export async function signOut() {
   for (const key of [ID_KEY, OUTBOX_KEY, SAVED_KEY]) remove(key);
 }
 
-addEventListener('online', () => flushEvents());
+addEventListener('online', () => void flushEvents());
 addEventListener('pagehide', () => {
   if (saveText && !frozen) pushSave(true);
 });
