@@ -37,6 +37,8 @@ API on one port.
 
 While the server runs, the app asks for an account first (username and password, at least 6 characters). Signing
 up from a browser that already holds settings and a queue brings it into the new account; signing in elsewhere loads the account's;
+signing out removes it from that browser (it stays with the account). With the server off the app works as before
+and keeps everything in the browser. `npm run users` lists who has an account; `npm run set-user -- <username>
 settings copy) and `events` (one row per finished focus block, including a block that ended while the tab
 was closed).
 
