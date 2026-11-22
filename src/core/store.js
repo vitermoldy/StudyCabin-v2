@@ -71,6 +71,8 @@ export function forget() {
   try {
     localStorage.removeItem(KEY);
   } catch {
+    /* storage unavailable: nothing was kept either */
+  }
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
