@@ -16,7 +16,6 @@ export function mountCloud() {
   let stats = null;
 
   function render(state = cloudState()) {
-    $('cloud-code').textContent = recoveryCode();
     const waiting = state.pending > 0 ? ` ${state.pending} focus ${state.pending === 1 ? 'block waits' : 'blocks wait'} to be sent.` : '';
     $('cloud-status').textContent =
       state.status === 'online'
