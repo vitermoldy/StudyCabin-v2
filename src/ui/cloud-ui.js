@@ -175,6 +175,8 @@ function mountGate() {
       const welcome = mode === 'in' ? `Signed in as ${cloudState().account?.username}.` : `Account ${name} created. Welcome.`;
       if (save) {
         applySave(save, welcome);
+        return;
+      }
     } catch (e) {
       input.setAttribute('aria-invalid', 'true');
       err.textContent =
