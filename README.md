@@ -35,8 +35,8 @@ npm run dev            # /api is forwarded to the server
 The server needs Node 22 or newer and MySQL 8. After `npm run build`, `npm start` serves `dist/` and the
 API on one port.
 
-There are no accounts. Each browser gets a 12-character recovery code, under History; typed into another
-browser, it brings the settings and queue there. Tables: `devices` (one row per code), `saves` (the latest
+While the server runs, the app asks for an account first (username and password, at least 6 characters). Signing
+up from a browser that already holds settings and a queue brings it into the new account; signing in elsewhere loads the account's;
 settings copy) and `events` (one row per finished focus block, including a block that ended while the tab
 was closed).
 
