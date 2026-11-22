@@ -229,6 +229,8 @@ export async function checkAccount() {
 /** Failures carry a message meant for the person signing in. */
 async function authCall(path, body) {
   try {
+    return await enter(await api(path, { method: 'POST', body: JSON.stringify(body) }));
+  } catch (err) {
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
