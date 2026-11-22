@@ -100,6 +100,8 @@ function applySave(text, welcome) {
 }
 
 function mountGate() {
+  const gate = $('auth-gate');
+  const form = $('gate-form');
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
