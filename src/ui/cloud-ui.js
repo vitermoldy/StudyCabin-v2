@@ -115,6 +115,9 @@ function mountGate() {
   const label = () => (mode === 'in' ? 'Sign in' : 'Create account');
   function showError(text) {
     error.textContent = text;
+    error.hidden = !text;
+  }
+
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
