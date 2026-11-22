@@ -30,6 +30,8 @@ const write = (key, value) => {
 };
 const remove = (key) => {
   try {
+    localStorage.removeItem(key);
+  } catch {
 
 let code = read(ID_KEY);
 if (!code || !/^[A-HJ-NP-Z2-9]{12}$/.test(code)) {
