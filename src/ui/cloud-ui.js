@@ -74,6 +74,8 @@ export function mountCloud() {
     try {
       saveAll();
       await signOut();
+      forget();
+      location.reload();
     }
   });
 
