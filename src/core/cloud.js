@@ -189,13 +189,8 @@ export async function fetchStats(days = 14) {
  * After a non-null answer nothing is mirrored, so the old save cannot overwrite the
  * account's on the way out of the page.
  */
-export async function restoreFrom(input) {
-  const wanted = String(input).toUpperCase().replace(/[^A-Z0-9]/g, '');
-  if (!/^[A-HJ-NP-Z2-9]{12}$/.test(wanted)) throw Object.assign(new Error('Kode pemulihan terdiri dari 12 huruf dan angka.'), { code: 'format' });
-  const body = await api(`/save/${wanted}`).catch((err) => {
-    if (err.status) throw err;
-    throw Object.assign(new Error('Server tidak terhubung. Jalankan server dulu, lalu coba lagi.'), { code: 'offline' });
-  });
+async function enter(entry) {
+  const same = entry.device === code;
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
