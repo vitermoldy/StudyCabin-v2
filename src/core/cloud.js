@@ -59,6 +59,7 @@ const setStatus = (next) => {
     notify();
   }
 };
+const signedIn = () => auth === 'signed-in';
 
 /** Status, last time the save reached the server, and how many events wait to be sent. */
 export function cloudState() {
