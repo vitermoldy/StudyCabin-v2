@@ -216,6 +216,8 @@ export async function checkAccount() {
   notify();
   try {
     return await enter(await api('/auth/me'));
+  } catch (err) {
+    account = null;
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
