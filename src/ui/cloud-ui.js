@@ -18,7 +18,7 @@ export function mountCloud() {
   function render(state = cloudState()) {
     const waiting = state.pending > 0 ? ` ${state.pending} focus ${state.pending === 1 ? 'block waits' : 'blocks wait'} to be sent.` : '';
     $('cloud-status').textContent =
-      state.status === 'online'
+      state.auth === 'signed-in' && state.status !== 'offline'
         ? `Connected to the server.${state.lastSaved ? ` Settings last saved at ${clock(state.lastSaved)}.` : ''}${waiting}`
         : state.status === 'offline'
           ? `The server is not reachable. Everything stays in this browser.${waiting}`
