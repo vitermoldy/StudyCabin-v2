@@ -95,6 +95,8 @@ function applySave(text, welcome) {
     sessionStorage.setItem(WELCOME_KEY, welcome);
   } catch {
     /* no session storage: the reload still shows the cabin */
+  }
+  location.reload();
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
