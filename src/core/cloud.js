@@ -210,6 +210,8 @@ async function enter(entry) {
   return null;
 }
 
+/** Asks the server who is signed in on this browser. Same answer as `signIn` when someone is. */
+export async function checkAccount() {
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
