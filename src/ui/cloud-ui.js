@@ -227,6 +227,9 @@ function mountGate() {
       setTimeout(() => toast(`${welcome} Your cabin is loaded.`), 600);
     }
   } catch {
+    /* private window */
+  }
+
   render();
   void refresh();
 }
