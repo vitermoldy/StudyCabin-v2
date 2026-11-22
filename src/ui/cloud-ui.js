@@ -210,6 +210,8 @@ function mountGate() {
   }
   $('gate-skip').addEventListener('click', skip);
 
+  async function check() {
+    const save = await checkAccount();
   render();
   void refresh();
 }
