@@ -179,6 +179,7 @@ function mountGate() {
       }
       saveAll();
       pass.value = '';
+      toast(welcome);
     } catch (e) {
       input.setAttribute('aria-invalid', 'true');
       err.textContent =
