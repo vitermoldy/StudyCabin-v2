@@ -233,6 +233,8 @@ async function authCall(path, body) {
   } catch (err) {
     if (err instanceof ApiError && err.status < 500) throw err;
     auth = 'unavailable';
+    setStatus('offline');
+    notify();
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
