@@ -82,12 +82,8 @@ export function createApi(getPool) {
     res.json({ ok: true, savedAt: new Date().toISOString() })
   })
 
-  api.get('/save/:device', async (req, res) => {
-    const device = String(req.params.device).toUpperCase().replace(/[^A-Z0-9]/g, '')
-    if (!CODE.test(device)) return res.status(400).json({ error: 'A recovery code has 12 letters and digits.' })
-    const [rows] = await getPool().query('SELECT data, updated_at AS updatedAt FROM saves WHERE device_id = ?', [device])
-    if (!rows[0]) return res.status(404).json({ error: 'Nothing is saved under this code.' })
-    res.json({ data: rows[0].data, updatedAt: rows[0].updatedAt })
+  api.get('/save', async (req, res) => {
+    const [rows] = await getPool().query('SELECT data, updated_at AS updatedAt FROM saves WHERE device_id = ?', [req.user.device])
   })
 
   api.post('/events', async (req, res) => {
