@@ -15,3 +15,5 @@ const [rows] = await pool.query(
 )
 await pool.end()
 
+if (rows.length === 0) {
+  console.log(`${project.name}: no accounts yet in database ${config.db.database}.`)
