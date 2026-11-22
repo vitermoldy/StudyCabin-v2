@@ -149,6 +149,8 @@ function mountGate() {
     // Focus moves only when what the screen asks for changes, never on every update.
     if (gate.open && shown !== state.auth) {
       if (state.auth === 'signed-out') user.focus();
+      else if (offline) $('gate-retry').focus();
+    }
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
