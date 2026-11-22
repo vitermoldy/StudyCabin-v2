@@ -119,7 +119,7 @@ export function logEvent(kind, data) {
 
 let flushing = false;
 export async function flushEvents() {
-  if (flushing) return;
+  if (flushing || !signedIn()) return;
   const list = outbox();
   if (list.length === 0) return;
   flushing = true;
