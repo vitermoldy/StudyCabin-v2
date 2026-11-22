@@ -97,6 +97,9 @@ function applySave(text, welcome) {
     /* no session storage: the reload still shows the cabin */
   }
   location.reload();
+}
+
+function mountGate() {
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
