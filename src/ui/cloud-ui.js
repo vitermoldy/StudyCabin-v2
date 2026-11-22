@@ -110,6 +110,9 @@ function mountGate() {
   let busy = false;
   // "Use without an account" holds until the page reloads or the visitor asks to sign in.
   let skipped = false;
+  let shown = null;
+
+  const label = () => (mode === 'in' ? 'Sign in' : 'Create account');
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
