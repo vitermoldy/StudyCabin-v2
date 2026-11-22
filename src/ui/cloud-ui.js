@@ -151,6 +151,9 @@ function mountGate() {
       if (state.auth === 'signed-out') user.focus();
       else if (offline) $('gate-retry').focus();
     }
+    shown = gate.open ? state.auth : null;
+  }
+
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
