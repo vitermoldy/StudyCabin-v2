@@ -187,6 +187,7 @@ function mountGate() {
     } finally {
       busy = false;
       submit.disabled = false;
+      submit.textContent = label();
     }
   });
 
