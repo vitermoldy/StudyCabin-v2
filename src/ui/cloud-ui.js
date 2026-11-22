@@ -118,6 +118,8 @@ function mountGate() {
     error.hidden = !text;
   }
 
+  function setMode(next) {
+    mode = next;
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
