@@ -2,6 +2,8 @@
 // account rows under it, and the sign-in screen. While the server runs, the cabin
 // asks for an account first; when it cannot be reached the cabin still works and
 // keeps everything in this browser, as it did before accounts.
+import { ApiError, checkAccount, cloudState, fetchStats, onCloud, signIn, signOut, signUp } from '../core/cloud.js';
+import { forget, replaceAll, saveAll } from '../core/store.js';
 import { toast } from './panels.js';
 
 const $ = (id) => document.getElementById(id);
