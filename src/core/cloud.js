@@ -218,6 +218,8 @@ export async function checkAccount() {
     return await enter(await api('/auth/me'));
   } catch (err) {
     account = null;
+    // 401: the server works and nobody is signed in. A 5xx is the server or its database being down.
+    auth = err instanceof ApiError && err.status === 401 ? 'signed-out' : 'unavailable';
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
