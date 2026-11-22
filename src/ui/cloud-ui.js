@@ -120,6 +120,8 @@ function mountGate() {
 
   function setMode(next) {
     mode = next;
+    $('gate-h').textContent = next === 'in' ? 'Sign in to StudyCabin' : 'Create a StudyCabin account';
+    submit.textContent = label();
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
