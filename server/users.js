@@ -25,3 +25,5 @@ if (rows.length === 0) {
       joined: when(r.created_at),
       'last sign-in': when(r.last_login_at),
       'last active': when(r.last_seen_at),
+      'sign-ins': r.login_count,
+      events: Number(r.events),
