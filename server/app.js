@@ -88,8 +88,8 @@ export function createApi(getPool) {
   })
 
   api.post('/events', async (req, res) => {
-    const { device, events } = req.body ?? {}
-    if (!CODE.test(device ?? '')) return res.status(400).json({ error: 'Unknown device code.' })
+    const device = req.user.device
+    const { events } = req.body ?? {}
     if (!Array.isArray(events) || events.length === 0 || events.length > 200) return res.status(400).json({ error: 'Send 1 to 200 events.' })
     const now = Date.now()
     const rows = []
