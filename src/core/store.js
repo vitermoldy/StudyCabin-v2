@@ -65,6 +65,8 @@ export function saveAll() {
 
 /** Signing out: the settings leave this browser, and nothing is written again before the reload. */
 export function forget() {
+  frozen = true;
+  clearTimeout(timer);
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
