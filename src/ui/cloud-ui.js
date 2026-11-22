@@ -230,6 +230,8 @@ function mountGate() {
     /* private window */
   }
 
+  onCloud((state) => render(state));
+  setMode('in');
   render();
   void refresh();
 }
