@@ -108,6 +108,8 @@ function mountGate() {
   const error = $('gate-error');
   let mode = 'in';
   let busy = false;
+  // "Use without an account" holds until the page reloads or the visitor asks to sign in.
+  let skipped = false;
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
