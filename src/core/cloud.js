@@ -171,6 +171,7 @@ async function pushSave(leaving = false) {
 
 /** This account's totals from the server, or null when nobody is signed in or it cannot be reached. */
 export async function fetchStats(days = 14) {
+  if (!signedIn()) return null;
   try {
     const stats = await api(`/stats/${code}?days=${days}&today=${localDay()}`);
     setStatus('online');
