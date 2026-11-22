@@ -214,6 +214,8 @@ function mountGate() {
     const save = await checkAccount();
     if (save) applySave(save, `Signed in as ${cloudState().account?.username}.`);
   }
+  $('gate-retry').addEventListener('click', () => void check());
+  $('account-enter').addEventListener('click', () => {
   render();
   void refresh();
 }
