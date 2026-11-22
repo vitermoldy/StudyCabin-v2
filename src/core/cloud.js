@@ -252,6 +252,8 @@ export const signUp = (username, password) => authCall('/auth/register', { usern
 export async function signOut() {
   if (signedIn() && saveText && !frozen && !(await pushSave())) {
     throw new ApiError('The latest changes have not reached the server yet. Try again in a moment.', 0);
+  }
+  await flushEvents();
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
