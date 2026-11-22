@@ -224,6 +224,9 @@ export async function checkAccount() {
     notify();
     return null;
   }
+}
+
+/** Failures carry a message meant for the person signing in. */
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
