@@ -80,6 +80,7 @@ export function mountCloud() {
       err.textContent = e instanceof Error ? e.message : 'Could not sign out. Try again.';
       err.hidden = false;
       button.disabled = false;
+      button.textContent = 'Sign out';
     }
   });
 
