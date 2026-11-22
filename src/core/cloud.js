@@ -250,6 +250,8 @@ export const signUp = (username, password) => authCall('/auth/register', { usern
  * and keeps everything, when the latest save cannot reach the server.
  */
 export async function signOut() {
+  if (signedIn() && saveText && !frozen && !(await pushSave())) {
+    throw new ApiError('The latest changes have not reached the server yet. Try again in a moment.', 0);
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
