@@ -113,6 +113,8 @@ function mountGate() {
   let shown = null;
 
   const label = () => (mode === 'in' ? 'Sign in' : 'Create account');
+  function showError(text) {
+    error.textContent = text;
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
