@@ -91,6 +91,8 @@ export function mountCloud() {
 /** Puts the account's save in place of this browser's, then reloads into it. */
 function applySave(text, welcome) {
   replaceAll(text);
+  try {
+    sessionStorage.setItem(WELCOME_KEY, welcome);
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
