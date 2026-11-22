@@ -149,7 +149,7 @@ export function mirrorSave(text) {
   if (!text || frozen) return;
   saveText = text;
   clearTimeout(saveTimer);
-  saveTimer = setTimeout(pushSave, 2000);
+  if (signedIn()) saveTimer = setTimeout(() => void pushSave(), 2000);
 }
 
 /** `leaving`: the tab is being hidden or closed, so the request must outlive the page (keepalive). */
