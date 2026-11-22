@@ -195,6 +195,8 @@ async function enter(entry) {
   auth = 'signed-in';
   code = entry.device;
   write(ID_KEY, code);
+  setStatus('online');
+  notify();
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
