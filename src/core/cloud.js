@@ -207,6 +207,9 @@ async function enter(entry) {
   }
   void flushEvents();
   if (saveText) void pushSave();
+  return null;
+}
+
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
