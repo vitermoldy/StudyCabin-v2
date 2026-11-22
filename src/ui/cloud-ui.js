@@ -166,6 +166,8 @@ function mountGate() {
       showError(!name ? 'Enter your username.' : 'Enter your password.');
       (!name ? user : pass).focus();
       return;
+    }
+    busy = true;
     try {
       const text = await restoreFrom(input.value);
       replaceAll(text);
