@@ -218,6 +218,9 @@ function mountGate() {
   $('account-enter').addEventListener('click', () => {
     skipped = false;
     void check();
+  });
+
+  try {
   render();
   void refresh();
 }
