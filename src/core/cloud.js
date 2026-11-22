@@ -203,6 +203,8 @@ async function enter(entry) {
       frozen = true;
       clearTimeout(saveTimer);
       return remote.data;
+    }
+  }
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
