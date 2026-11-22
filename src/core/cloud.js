@@ -182,7 +182,6 @@ export async function fetchStats(days = 14) {
   }
 }
 
-let frozen = false;
 /**
  * Brings the save stored under another recovery code into this browser: the
  * caller writes `data` over its own save key and reloads. From then on this
