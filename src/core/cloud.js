@@ -193,6 +193,8 @@ async function enter(entry) {
   const same = entry.device === code;
   account = entry.user;
   auth = 'signed-in';
+  code = entry.device;
+  write(ID_KEY, code);
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
