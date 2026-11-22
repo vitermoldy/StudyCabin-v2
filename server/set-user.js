@@ -13,3 +13,5 @@ import project from './project.js'
 const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
 const [username = '', password = ''] = process.argv.slice(2)
 if (!USERNAME.test(username) || password.length < PASSWORD_MIN || password.length > PASSWORD_MAX) {
+  console.error(`Use: npm run set-user -- <username> <password>\nA username has 3 to 24 letters, digits, dots, underscores or hyphens; a password ${PASSWORD_MIN} to ${PASSWORD_MAX} characters.`)
+  process.exit(1)
