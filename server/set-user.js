@@ -24,3 +24,5 @@ if (found) {
   await pool.query('UPDATE users SET password_hash = ? WHERE id = ?', [hash, found.id])
   // A new password signs the account out everywhere.
   await pool.query('DELETE FROM sessions WHERE user_id = ?', [found.id])
+  console.log(`${project.name}: new password for ${found.username}. All its sessions were signed out.`)
+} else {
