@@ -173,7 +173,7 @@ async function pushSave(leaving = false) {
 export async function fetchStats(days = 14) {
   if (!signedIn()) return null;
   try {
-    const stats = await api(`/stats/${code}?days=${days}&today=${localDay()}`);
+    const stats = await api(`/stats?days=${days}&today=${localDay()}`);
     setStatus('online');
     return stats;
   } catch (err) {
