@@ -223,6 +223,8 @@ function mountGate() {
   try {
     const welcome = sessionStorage.getItem(WELCOME_KEY);
     if (welcome) {
+      sessionStorage.removeItem(WELCOME_KEY);
+      setTimeout(() => toast(`${welcome} Your cabin is loaded.`), 600);
   render();
   void refresh();
 }
