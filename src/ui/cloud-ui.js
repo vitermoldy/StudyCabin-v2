@@ -164,6 +164,8 @@ function mountGate() {
     pass.toggleAttribute('aria-invalid', !password);
     if (!name || !password) {
       showError(!name ? 'Enter your username.' : 'Enter your password.');
+      (!name ? user : pass).focus();
+      return;
     try {
       const text = await restoreFrom(input.value);
       replaceAll(text);
