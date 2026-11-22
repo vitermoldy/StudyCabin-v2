@@ -235,6 +235,8 @@ async function authCall(path, body) {
     auth = 'unavailable';
     setStatus('offline');
     notify();
+    throw new ApiError('The server is not reachable. Start it, then try again.', 0);
+  }
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
