@@ -197,6 +197,8 @@ async function enter(entry) {
   write(ID_KEY, code);
   setStatus('online');
   notify();
+  if (!same) {
+    const remote = await api('/save').catch(() => ({ data: null }));
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
