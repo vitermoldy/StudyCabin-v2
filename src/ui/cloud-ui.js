@@ -154,6 +154,7 @@ function mountGate() {
     shown = gate.open ? state.auth : null;
   }
 
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
