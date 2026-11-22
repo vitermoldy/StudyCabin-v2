@@ -39,6 +39,8 @@ While the server runs, the app asks for an account first (username and password,
 up from a browser that already holds settings and a queue brings it into the new account; signing in elsewhere loads the account's;
 signing out removes it from that browser (it stays with the account). With the server off the app works as before
 and keeps everything in the browser. `npm run users` lists who has an account; `npm run set-user -- <username>
+<password>` makes an account or sets a new password (there is no reset by email).
+Tables: `users` and `sessions` (accounts), `devices` (one row per account), `saves` (the latest
 settings copy) and `events` (one row per finished focus block, including a block that ended while the tab
 was closed).
 
