@@ -67,6 +67,8 @@ export function saveAll() {
 export function forget() {
   frozen = true;
   clearTimeout(timer);
+  timer = 0;
+  try {
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
