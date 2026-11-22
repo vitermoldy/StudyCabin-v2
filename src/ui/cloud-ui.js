@@ -200,6 +200,9 @@ function mountGate() {
   // a password, and means "Use without an account" when the server is down.
   gate.addEventListener('cancel', (event) => {
     event.preventDefault();
+    if (cloudState().auth === 'unavailable') skip();
+  });
+
   render();
   void refresh();
 }
