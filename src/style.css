@@ -306,6 +306,8 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 
 /* ------------------------------------------------------------ sign-in
    The panel plate again (same fill, line and sharp radius), centred: signing in is part
+   of the cabin, not a separate page. The backdrop only dims, so the scene stays in view. */
+.gate {
 .player { margin-top: var(--s-4); padding-top: var(--s-4); border-top: 1px solid var(--line); }
 .player__screen {
   position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden;
