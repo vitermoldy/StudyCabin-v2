@@ -24,6 +24,8 @@ export function mountCloud() {
           ? `The server is not reachable. Everything stays in this browser.${waiting}`
           : state.auth === 'checking'
             ? 'Checking the server…'
+            : `Sign in to keep your focus history.${waiting}`;
+    const signedIn = state.auth === 'signed-in' && state.account;
     const days = $('cloud-days');
     const summary = $('cloud-summary');
     if (!stats) {
