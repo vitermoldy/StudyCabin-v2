@@ -48,6 +48,7 @@ if (!code || !/^[A-HJ-NP-Z2-9]{12}$/.test(code)) {
 let status = 'unknown';
 // checking, signed-in, signed-out, or unavailable (the server or its database cannot be reached).
 let auth = 'checking';
+let account = null;
 let lastSaved = Number(read(SAVED_KEY)) || 0;
 const listeners = new Set();
 const notify = () => listeners.forEach((fn) => fn(cloudState()));
