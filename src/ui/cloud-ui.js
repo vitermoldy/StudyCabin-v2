@@ -130,6 +130,8 @@ function mountGate() {
       next === 'in'
         ? 'Your settings, music queue and focus history are kept with your account, on any browser.'
         : 'The settings and music queue already in this browser move into your new account.';
+    showError('');
+    user.removeAttribute('aria-invalid');
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
