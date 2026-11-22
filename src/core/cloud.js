@@ -220,6 +220,8 @@ export async function checkAccount() {
     account = null;
     // 401: the server works and nobody is signed in. A 5xx is the server or its database being down.
     auth = err instanceof ApiError && err.status === 401 ? 'signed-out' : 'unavailable';
+    setStatus(auth === 'signed-out' ? 'online' : 'offline');
+    notify();
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
