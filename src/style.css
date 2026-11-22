@@ -320,6 +320,8 @@ html.is-clear .big, html.is-clear .story, html.is-clear .lines { opacity: 0; vis
 .gate__form .field__error { margin-top: 0; }
 .gate__submit { width: 100%; }
 .gate__state { margin-top: var(--s-4); }
+.gate__switch { display: flex; align-items: center; flex-wrap: wrap; margin-top: var(--s-3); font-size: var(--t-small); color: var(--muted); }
+.gate__switch[hidden] { display: none; }
 .player { margin-top: var(--s-4); padding-top: var(--s-4); border-top: 1px solid var(--line); }
 .player__screen {
   position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden;
