@@ -86,6 +86,9 @@ export function mountCloud() {
 
   mountGate();
   render();
+}
+
+/** Puts the account's save in place of this browser's, then reloads into it. */
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
