@@ -205,6 +205,8 @@ function mountGate() {
 
   function skip() {
     skipped = true;
+    render();
+    toast('Everything stays in this browser until you sign in.');
   render();
   void refresh();
 }
