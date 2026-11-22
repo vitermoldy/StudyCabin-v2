@@ -164,7 +164,8 @@ async function pushSave(leaving = false) {
     notify();
     return true;
   } catch (err) {
-    setStatus(err.status ? 'online' : 'offline');
+    setStatus(reached(err) ? 'online' : 'offline');
+    return false;
   }
 }
 
