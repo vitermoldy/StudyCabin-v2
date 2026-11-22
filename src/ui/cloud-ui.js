@@ -126,6 +126,8 @@ function mountGate() {
     $('gate-pass-hint').hidden = next === 'in';
     $('gate-switch-text').textContent = next === 'in' ? 'No account yet?' : 'Already have an account?';
     $('gate-switch').textContent = next === 'in' ? 'Create one' : 'Sign in';
+    $('gate-lead').textContent =
+      next === 'in'
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
