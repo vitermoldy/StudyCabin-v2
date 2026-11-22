@@ -50,6 +50,7 @@ let status = 'unknown';
 let auth = 'checking';
 let account = null;
 let lastSaved = Number(read(SAVED_KEY)) || 0;
+let frozen = false;
 const listeners = new Set();
 const notify = () => listeners.forEach((fn) => fn(cloudState()));
 const setStatus = (next) => {
