@@ -38,3 +38,4 @@ if (found) {
       : `${project.name}: account ${username} created. There was no earlier data.`,
   )
 }
+await pool.end()
