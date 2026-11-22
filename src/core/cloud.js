@@ -183,10 +183,8 @@ export async function fetchStats(days = 14) {
 }
 
 /**
- * Brings the save stored under another recovery code into this browser: the
- * caller writes `data` over its own save key and reloads. From then on this
- * browser shares that code. Nothing is mirrored after this point, so the old
- * save cannot overwrite the restored one on the way out.
+ * Takes the account the server answered with. Returns the account's save when it
+ * should replace this browser's (the browser was holding someone else's data, or
  */
 export async function restoreFrom(input) {
   const wanted = String(input).toUpperCase().replace(/[^A-Z0-9]/g, '');
