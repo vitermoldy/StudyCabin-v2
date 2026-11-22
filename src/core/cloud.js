@@ -241,6 +241,9 @@ async function authCall(path, body) {
 
 export const signIn = (username, password) => authCall('/auth/login', { username, password });
 
+/** A new account. What this browser already holds becomes the account's. */
+export const signUp = (username, password) => authCall('/auth/register', { username, password, device: code });
+
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
