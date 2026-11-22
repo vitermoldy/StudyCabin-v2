@@ -171,9 +171,8 @@ function mountGate() {
     submit.disabled = true;
     submit.textContent = mode === 'in' ? 'Checking…' : 'Creating account…';
     try {
-      const text = await restoreFrom(input.value);
-      replaceAll(text);
-      location.reload();
+      const save = mode === 'in' ? await signIn(name, password) : await signUp(name, password);
+      const welcome = mode === 'in' ? `Signed in as ${cloudState().account?.username}.` : `Account ${name} created. Welcome.`;
     } catch (e) {
       input.setAttribute('aria-invalid', 'true');
       err.textContent =
