@@ -133,6 +133,8 @@ export async function flushEvents() {
   } catch (err) {
     // A 4xx other than 401 and 429 means the batch itself is unusable; drop it rather than retry it forever.
     if (err instanceof ApiError && err.status >= 400 && err.status < 500 && err.status !== 401 && err.status !== 429) {
+      write(OUTBOX_KEY, JSON.stringify(outbox().slice(batch.length)));
+    }
   } finally {
     flushing = false;
   }
