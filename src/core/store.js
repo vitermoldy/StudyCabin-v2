@@ -69,6 +69,8 @@ export function forget() {
   clearTimeout(timer);
   timer = 0;
   try {
+    localStorage.removeItem(KEY);
+  } catch {
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
