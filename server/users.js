@@ -29,3 +29,5 @@ if (rows.length === 0) {
       events: Number(r.events),
       save: r.save_bytes ? `${Math.ceil(r.save_bytes / 1024)} KB, ${when(r.saved_at)}` : '-',
     })),
+  )
+}
