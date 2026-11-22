@@ -122,6 +122,8 @@ function mountGate() {
     mode = next;
     $('gate-h').textContent = next === 'in' ? 'Sign in to StudyCabin' : 'Create a StudyCabin account';
     submit.textContent = label();
+    pass.autocomplete = next === 'in' ? 'current-password' : 'new-password';
+    $('gate-pass-hint').hidden = next === 'in';
     event.preventDefault();
     const input = $('cloud-input');
     const err = $('cloud-error');
