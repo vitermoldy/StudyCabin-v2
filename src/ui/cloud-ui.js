@@ -26,6 +26,8 @@ export function mountCloud() {
             ? 'Checking the server…'
             : `Sign in to keep your focus history.${waiting}`;
     const signedIn = state.auth === 'signed-in' && state.account;
+    $('account-in').hidden = !signedIn;
+    $('account-out-of').hidden = Boolean(signedIn);
     const days = $('cloud-days');
     const summary = $('cloud-summary');
     if (!stats) {
