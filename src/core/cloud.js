@@ -34,6 +34,7 @@ const remove = (key) => {
   } catch {
     /* blocked storage: nothing was kept either */
   }
+};
 
 let code = read(ID_KEY);
 if (!code || !/^[A-HJ-NP-Z2-9]{12}$/.test(code)) {
