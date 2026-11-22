@@ -156,10 +156,8 @@ function mountGate() {
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    const input = $('cloud-input');
-    const err = $('cloud-error');
-    err.hidden = true;
-    input.removeAttribute('aria-invalid');
+    if (busy) return;
+    showError('');
     try {
       const text = await restoreFrom(input.value);
       replaceAll(text);
