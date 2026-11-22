@@ -158,6 +158,8 @@ function mountGate() {
     event.preventDefault();
     if (busy) return;
     showError('');
+    const name = user.value.trim();
+    const password = pass.value;
     try {
       const text = await restoreFrom(input.value);
       replaceAll(text);
