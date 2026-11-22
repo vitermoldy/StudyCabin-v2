@@ -72,10 +72,8 @@ export function mountCloud() {
     button.disabled = true;
     button.textContent = 'Signing out…';
     try {
-      await navigator.clipboard.writeText(recoveryCode());
-      toast('Recovery code copied.');
-    } catch {
-      toast(`Your recovery code: ${recoveryCode()}`);
+      saveAll();
+      await signOut();
     }
   });
 
