@@ -30,6 +30,8 @@ export function mountCloud() {
     $('account-out-of').hidden = Boolean(signedIn);
     if (signedIn) {
       $('account-name').textContent = state.account.username;
+      $('account-since').textContent = joined(state.account.createdAt);
+    }
     const days = $('cloud-days');
     const summary = $('cloud-summary');
     if (!stats) {
