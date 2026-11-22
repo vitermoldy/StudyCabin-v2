@@ -168,6 +168,8 @@ function mountGate() {
       return;
     }
     busy = true;
+    submit.disabled = true;
+    submit.textContent = mode === 'in' ? 'Checking…' : 'Creating account…';
     try {
       const text = await restoreFrom(input.value);
       replaceAll(text);
