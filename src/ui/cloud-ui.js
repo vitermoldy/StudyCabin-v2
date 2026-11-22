@@ -34,7 +34,7 @@ export function mountCloud() {
     }
     const days = $('cloud-days');
     const summary = $('cloud-summary');
-    if (!stats) {
+    if (!stats || !signedIn) {
       days.hidden = true;
       summary.textContent = state.status === 'offline' ? '' : 'Focus blocks you finish appear here, day by day.';
       return;
