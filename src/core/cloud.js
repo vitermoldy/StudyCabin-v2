@@ -265,8 +265,8 @@ addEventListener('pagehide', () => {
   if (saveText && !frozen) void pushSave(true);
 });
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'hidden' && saveText && !frozen) pushSave(true);
-  else flushEvents();
+  if (document.visibilityState === 'hidden' && saveText && !frozen) void pushSave(true);
+  else void flushEvents();
 });
 setInterval(() => {
   if (outbox().length > 0) flushEvents();
