@@ -221,6 +221,8 @@ function mountGate() {
   });
 
   try {
+    const welcome = sessionStorage.getItem(WELCOME_KEY);
+    if (welcome) {
   render();
   void refresh();
 }
