@@ -231,6 +231,8 @@ async function authCall(path, body) {
   try {
     return await enter(await api(path, { method: 'POST', body: JSON.stringify(body) }));
   } catch (err) {
+    if (err instanceof ApiError && err.status < 500) throw err;
+    auth = 'unavailable';
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
