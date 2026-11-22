@@ -58,6 +58,8 @@ export function saveNow() {
 
 /** Writes and mirrors the save now, changed or not: signing in sends it to the account. */
 export function saveAll() {
+  clearTimeout(timer);
+  readAll();
 export function replaceAll(text) {
   frozen = true;
   clearTimeout(timer);
