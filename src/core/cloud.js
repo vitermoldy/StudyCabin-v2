@@ -44,9 +44,6 @@ if (!code || !/^[A-HJ-NP-Z2-9]{12}$/.test(code)) {
   write(ID_KEY, code);
 }
 
-/** The recovery code, grouped for reading: ABCD-EFGH-JKLM. */
-export const recoveryCode = () => code.match(/.{4}/g).join('-');
-
 // online: the last request reached the server. offline: it did not. unknown: nothing tried yet.
 let status = 'unknown';
 let lastSaved = Number(read(SAVED_KEY)) || 0;
