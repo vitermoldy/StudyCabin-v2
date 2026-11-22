@@ -46,6 +46,8 @@ if (!code || !/^[A-HJ-NP-Z2-9]{12}$/.test(code)) {
 
 // online: the last request reached the server. offline: it did not. unknown: nothing tried yet.
 let status = 'unknown';
+// checking, signed-in, signed-out, or unavailable (the server or its database cannot be reached).
+let auth = 'checking';
 let lastSaved = Number(read(SAVED_KEY)) || 0;
 const listeners = new Set();
 const notify = () => listeners.forEach((fn) => fn(cloudState()));
