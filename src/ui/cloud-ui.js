@@ -67,6 +67,8 @@ export function mountCloud() {
 
   $('account-leave').addEventListener('click', async () => {
     const button = $('account-leave');
+    const err = $('account-error');
+    err.hidden = true;
     try {
       await navigator.clipboard.writeText(recoveryCode());
       toast('Recovery code copied.');
