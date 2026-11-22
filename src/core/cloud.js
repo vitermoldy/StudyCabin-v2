@@ -222,6 +222,8 @@ export async function checkAccount() {
     auth = err instanceof ApiError && err.status === 401 ? 'signed-out' : 'unavailable';
     setStatus(auth === 'signed-out' ? 'online' : 'offline');
     notify();
+    return null;
+  }
   frozen = true;
   clearTimeout(saveTimer);
   code = wanted;
