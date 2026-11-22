@@ -183,6 +183,8 @@ function mountGate() {
     } catch (e) {
       showError(e instanceof Error ? e.message : 'Could not sign in. Try again.');
       if (e instanceof ApiError && e.status === 401) pass.select();
+      pass.setAttribute('aria-invalid', 'true');
+    } finally {
     }
   });
 
