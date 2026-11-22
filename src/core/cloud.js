@@ -262,7 +262,7 @@ export async function signOut() {
 
 addEventListener('online', () => void flushEvents());
 addEventListener('pagehide', () => {
-  if (saveText && !frozen) pushSave(true);
+  if (saveText && !frozen) void pushSave(true);
 });
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden' && saveText && !frozen) pushSave(true);
