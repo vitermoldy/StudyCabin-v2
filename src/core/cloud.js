@@ -63,7 +63,7 @@ const signedIn = () => auth === 'signed-in';
 
 /** Status, last time the save reached the server, events waiting, and who is signed in. */
 export function cloudState() {
-  return { status, lastSaved, pending: outbox().length };
+  return { status, lastSaved, pending: outbox().length, auth, account };
 }
 
 export function onCloud(fn) {
