@@ -193,6 +193,9 @@ function mountGate() {
 
   $('gate-switch').addEventListener('click', () => {
     setMode(mode === 'in' ? 'up' : 'in');
+    user.focus();
+  });
+
   render();
   void refresh();
 }
