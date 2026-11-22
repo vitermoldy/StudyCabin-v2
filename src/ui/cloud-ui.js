@@ -181,16 +181,8 @@ function mountGate() {
       pass.value = '';
       toast(welcome);
     } catch (e) {
-      input.setAttribute('aria-invalid', 'true');
-      err.textContent =
-        e.code === 'format' || e.status === 400
-          ? 'A recovery code has 12 letters and digits.'
-          : e.code === 'offline'
-            ? 'The server is not reachable. Start it, then try again.'
-            : e.status === 404
-              ? 'Nothing is saved under that code.'
-              : 'That code could not be used. Try again in a moment.';
-      err.hidden = false;
+      showError(e instanceof Error ? e.message : 'Could not sign in. Try again.');
+      if (e instanceof ApiError && e.status === 401) pass.select();
     }
   });
 
