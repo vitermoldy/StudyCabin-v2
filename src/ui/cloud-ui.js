@@ -69,6 +69,8 @@ export function mountCloud() {
     const button = $('account-leave');
     const err = $('account-error');
     err.hidden = true;
+    button.disabled = true;
+    button.textContent = 'Signing out…';
     try {
       await navigator.clipboard.writeText(recoveryCode());
       toast('Recovery code copied.');
