@@ -87,6 +87,8 @@ async function api(path, init) {
       auth = 'signed-out';
       account = null;
       notify();
+    }
+    throw new ApiError(body.error || `HTTP ${res.status}`, res.status);
   return body;
 }
 
